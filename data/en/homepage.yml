@@ -57,16 +57,20 @@ service:
 about:
   enable: true
   bg_image: images/background/about-bg.jpg
-  title: Who We Are?
-  content: Excepteur sint occaecat cupidatat non proident sunt culpa qui officia deserunt
-    mollit anim id est laborum.
+  title: We provide the best fitting solution for your Business
+  content: |-
+    We believe, that our strategy will revolutionize the way agencies work, and together with the newest business strategies and our scalable resources, we can match any project that you might have in mind.
+
+    **What We Do ?**
+
+    Head over to our Case Studies to find our portfolio, or contact us right away for a free 15-minute consultation.
   bullet_point:
-  - Business Services
-  - Audit & Assurance
-  - IT Control Solutions
-  - Business Services
-  - Audit & Assurance
-  - IT Control Solutions
+  - Business Consulting
+  - Cloud Solution Architecture
+  - IT Security Audits
+  - Big Data Processing and Analysis
+  - Virtual & Augmented Reality
+  - Artificial Intelligence & AI
   button:
     enable: true
     label: Explore More
