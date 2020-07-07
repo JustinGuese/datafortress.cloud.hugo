@@ -136,7 +136,7 @@ mission:
     description: We have a broad technical background and are constantly learning
       and improving our tech-stack.
 promo_video:
-  enable: true
+  enable: false
   title: We Are Alawys <br> Comited
   bg_image: images/background/promo-video.jpg
   video_URL: https://www.youtube.com/watch?v=jrkvirglgaQ
@@ -144,23 +144,21 @@ promo_video:
 testimonial:
   enable: true
   subtitle: Clients
-  title: What client Say
+  title: What our Clients say
   image: images/client.png
   testimonial_item:
-  - name: Julia Robertson
-    content: Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid
-      sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo
-      ris nisi aliquip excepteur.
+  - name: Markus
+    content: Worked with Justin for 8 moths in Product Innovation Project, he is a
+      authentic person with great ideas. It was aways easy to work with him, he gives
+      and receives reviews very well, he had a great affinity to everyone in the team,
+      what makes aways better and more productive to work with. As our IT guy he could
+      solve all the problems, even if he had to work more then expect. We did the
+      Final Gala presentation together, it was a pleasure to do this presentation
+      and work with him. I would recommend him for any job or partnership.
     designation: Happy Clients
-  - name: Julia Robertson
-    content: Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid
-      sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo
-      ris nisi aliquip excepteur.
-    designation: Happy Clients
-  - name: Julia Robertson
-    content: Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid
-      sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo
-      ris nisi aliquip excepteur.
+  - name: Lazaar
+    content: Very professional. Strongly recommend you select him if you want a high-quality
+      product.
     designation: Happy Clients
 cta:
   enable: true
