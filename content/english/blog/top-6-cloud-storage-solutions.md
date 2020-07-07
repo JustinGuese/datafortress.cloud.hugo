@@ -3,7 +3,7 @@ title: Top 6 best Cloud Storage services – Free, Paid and for Businesses
 bg_image: "/images/silver-hard-drive-interals-33278-1200x675.jpg"
 date: 2020-06-08T00:00:00+02:00
 description: Top 6 best Cloud Storage services – Free, Paid and for Businesses
-author: Justin Güse
+author: Justin Guese
 image: "/images/silver-hard-drive-interals-33278-1200x675.jpg"
 categories:
 - Business
