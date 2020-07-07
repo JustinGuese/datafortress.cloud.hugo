@@ -2,7 +2,7 @@
 title: Data Science and Data Engineering
 date: '2018-09-29T11:54:02.000+06:00'
 description: Data Science & Engineering
-image: "/images/coding-computer-data-depth-of-field-577585-300x225.jpg"
+image: "/images/coding-computer-data-depth-of-field-577585-150x150.jpg"
 bg_image: "/images/coding-computer-data-depth-of-field-577585-300x225.jpg"
 icon: ti-bar-chart
 brochure: "#"
