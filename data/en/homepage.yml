@@ -171,4 +171,4 @@ cta:
 blog:
   enable: true
 clients_logo_slider:
-  enable: true
+  enable: false
