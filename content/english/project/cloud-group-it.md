@@ -1,12 +1,12 @@
 ---
-title: Finance Consultancy
+title: GroupIT Website
 date: '2018-09-24T14:48:03.000+06:00'
 description: This is meta description
-bg_image: images/background/page-title.jpg
-image: images/project/project-2.jpg
-live_demo: "#"
-case_study: "#"
-category: Financing
+bg_image: "/images/images-300x68.png"
+image: "/images/images-300x68.png"
+live_demo: ''
+case_study: ''
+category: Cloud
 overview:
 - label: Client
   data: Baximco Ltd.
@@ -18,21 +18,16 @@ overview:
   data: 22 nov, 2019
 
 ---
-### Apollo For Baximco Inc. Australia
+The GroupIT Website has been a requirement by Porsche to offer a way to **efficiently deliver information, news, and instructions to its worldwide dealer network**. The requirements have been to develop a quick and low-cost prototype in two weeks, with possible further funding down the road.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## THE CHALLENGE
 
+The GroupIT Website has been a requirement by Porsche to offer a way to efficiently deliver information, news, and instructions to its worldwide dealer network. The requirements have been to develop a quick and low-cost prototype in two weeks, with possible further funding down the road.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt mollit anim id est laborum.
+## THE STRATEGY
 
-###### Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Furthermore, users had to be able to easily curate their content, which left us with the final choice of a modified WordPress installation as a final product. It has been a challenge to find the right balance between high-security, but usability as well. Of course, multiple complex login-scenarios, as well as advanced encryption, would be the go-to scenario, but it became clear that this greatly reduced usability. For the final version, we experimented with different security measures in a dialogue with the international teams to find the right balance.
 
-###### Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Due to the international nature of the Enterprise, speed had been a requirement as well, in which we utilized AWS’s worldwide network to deliver content both real-time (streams, live streams, live-Q&A) as well as on-demand (videos, presentations, …).
 
-### Aftermath Of Apollo
-
-
-#### Market Analysis 2017
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+The project received great support from the international teams and received further funding to enhance this solution.
