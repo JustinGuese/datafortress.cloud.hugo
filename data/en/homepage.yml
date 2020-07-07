@@ -2,7 +2,7 @@
 slider:
   enable: true
   slider_Item:
-  - bg_image: images/wtf.jpg
+  - bg_image: "/images/banner/silhouette-photo-of-person-standing-in-neon-lit-hallway-1722072.jpg"
     animation_from: left
     subtitle: We are here to
     title: Planning Business
