@@ -27,31 +27,31 @@ It even supports Magic Leap!
 To load the necessary scripts just load the following Code into your section of the website:
 
     <script type="module"
-          src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
-      </script>
-    
-      <!-- Loads <model-viewer> for old browsers like IE11: -->
-      <script nomodule
-          src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
-      </script>
-    
-      <!-- The following libraries and polyfills are recommended to maximize browser support -->
-      <!-- NOTE: you must adjust the paths as appropriate for your project -->
-          
-      <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
-      <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
-    
-      <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
-      <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
-    
-      <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
-      <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
-    
-      <!-- 💁 OPTIONAL: Fullscreen polyfill is required for experimental AR features in Canary -->
-      <!--<script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>-->
-    
-      <!-- 💁 OPTIONAL: Include prismatic.js for Magic Leap support -->
-      <!--<script src="https://unpkg.com/@magicleap/prismatic@0.18.2/prismatic.min.js"></script>-->
+              src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+          </script>
+        
+          <!-- Loads <model-viewer> for old browsers like IE11: -->
+          <script nomodule
+              src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+          </script>
+        
+          <!-- The following libraries and polyfills are recommended to maximize browser support -->
+          <!-- NOTE: you must adjust the paths as appropriate for your project -->
+              
+          <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+          <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+        
+          <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+          <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+        
+          <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+          <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
+        
+          <!-- 💁 OPTIONAL: Fullscreen polyfill is required for experimental AR features in Canary -->
+          <!--<script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>-->
+        
+          <!-- 💁 OPTIONAL: Include prismatic.js for Magic Leap support -->
+          <!--<script src="https://unpkg.com/@magicleap/prismatic@0.18.2/prismatic.min.js"></script>-->
 
 [**view raw**](https://gist.github.com/JustinGuese/6c2bd61252ac9947ce686928bc2bcb6e/raw/20ea3fc0de030ed04f09d44db0d0d11ae8b69781/3D%20Content%20with%20Webview)[**3D Content with Webview**](https://gist.github.com/JustinGuese/6c2bd61252ac9947ce686928bc2bcb6e#file-3d-content-with-webview) hosted with ❤ by [**GitHub**](https://github.com/)
 
