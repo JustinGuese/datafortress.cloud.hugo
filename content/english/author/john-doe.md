@@ -1,5 +1,5 @@
 ---
-title: Justin Güse
+title: Justin Guese
 email: info@datafortress.cloud
 image: "/images/fotojustinguese.png"
 social:
