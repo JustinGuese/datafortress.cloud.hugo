@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+{{- partial "head.html" . -}}
+
+<body>
+	{{- partial "header.html" . -}}
+	{{ "<!-- preloader start -->" | safeHTML }}
+	{{ if .Site.Params.preloader.enable }}
+	{{ "<!-- preloader start -->" | safeHTML }}
+	<div class="preloader">
+		{{ if .Site.Params.preloader.preloader }}
+		<img src="{{ .Site.Params.preloader.preloader | absURL }}" alt="preloader">
+		{{ end }}
+	</div>
+	{{ "<!-- preloader end -->" | safeHTML }}
+	{{ end }}
+	{{ "<!-- preloader end -->" | safeHTML }}
+	<div id="content">
+		{{- block "main" . }}{{- end }}
+	</div>
+	{{- partial "footer.html" . -}}
+</body>
+
+</html>

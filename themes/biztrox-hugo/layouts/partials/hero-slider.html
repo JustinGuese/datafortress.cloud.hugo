@@ -1,0 +1,31 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ "<!-- hero slider -->" | safeHTML }}
+<section>
+	<div class="hero-slider position-relative">
+		{{ "<!-- slider item -->" | safeHTML }}
+		{{ range $data.homepage.slider.slider_Item }}
+		<div class="hero-slider-item py-160" style="background-image: url('{{ .bg_image | absURL }}')" data-icon="{{ .pagination_icon }}" data-text="{{ .pagination_name }}">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="hero-content">
+							<h4 class="text-uppercase mb-1" data-duration-in=".5" data-animation-in="fadeIn{{.animation_from | humanize}}" data-delay-in=".1">
+								{{ .subtitle | markdownify }}</h4>
+							<h1 class="font-weight-bold mb-3" data-duration-in=".5" data-animation-in="fadeIn{{.animation_from | humanize}}" data-delay-in=".4">
+								{{ .title | markdownify }}</h1>
+							<p class="text-dark mb-50" data-duration-in=".5" data-animation-in="fadeIn{{.animation_from | humanize}}" data-delay-in=".7">
+								{{ .content | markdownify }}
+							</p>
+							{{ if .button.enable }}
+							<a data-duration-in=".5" data-animation-in="fadeIn{{.animation_from | humanize}}" data-delay-in="1"
+								href="{{ .button.link | relLangURL }}" class="btn btn-outline text-uppercase">{{ .button.label }}</a>
+							{{ end }}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{{ end }}
+	</div>
+</section>
+{{ "<!-- /hero slider -->" | safeHTML }}

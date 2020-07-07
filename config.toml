@@ -1,0 +1,162 @@
+baseURL = "https://justinguese.github.io/"
+disableLanguages = []
+disqusShortname = "Datafortess.cloud"
+paginate = "6"
+summaryLength = "10"
+theme = "biztrox-hugo"
+title = "Datafortress.cloud"
+[Languages.en]
+contentDir = "content/english"
+home = "Home"
+languageCode = "en-us"
+languageName = "En"
+weight = 1
+[Languages.en.params.footer]
+content = "Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm tempor incididunt labore dolore magna aliqua enim."
+copyright = "Copyright &copy; 2019 a hugo theme by [themefisher.com](https://themefisher.com)"
+subscribe = "Subscribe Us"
+subscribe_content = "Lorem ipsum dolor sit amet, consect etur adipisicing. elit sed do eiusmod."
+[Languages.fr]
+contentDir = "content/german"
+home = "Home"
+languageCode = "de-de"
+languageName = "De"
+weight = 2
+[Languages.fr.params.footer]
+content = "Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm tempor incididunt labore dolore magna aliqua enim."
+copyright = "Copyright &copy; 2019 a hugo theme by [themefisher.com](https://themefisher.com)"
+subscribe = "Subscribe Us"
+subscribe_content = "Lorem ipsum dolor sit amet, consect etur adipisicing. elit sed do eiusmod."
+[[menu.footer]]
+URL = "#"
+name = "Legal"
+weight = 1
+[[menu.footer]]
+URL = "#"
+name = "Sitemap"
+weight = 2
+[[menu.footer]]
+URL = "#"
+name = "Privacy Policy"
+weight = 3
+[[menu.footer]]
+URL = "#"
+name = "Terms & Conditions"
+weight = 4
+[[menu.main]]
+URL = "about"
+name = "About"
+weight = 1
+[[menu.main]]
+URL = "service"
+name = "Service"
+weight = 2
+[[menu.main]]
+URL = "blog"
+name = "Blog"
+weight = 3
+[[menu.main]]
+URL = "team"
+name = "Team"
+weight = 4
+[[menu.main]]
+URL = "pricing"
+name = "Pricing"
+weight = 5
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 6
+[[menu.main]]
+hasChildren = true
+name = "Pages"
+weight = 7
+[[menu.main]]
+URL = "project"
+name = "Project"
+parent = "Pages"
+[params]
+author = "DataFortress.cloud"
+contact_form_action = "#"
+description = "VR, Big-Data and Cloud for your Business."
+google_analitycs_id = "Your ID"
+logo = "images/logo.png"
+logo_white = "images/logo-footer.png"
+mail = "info@datafortress.cloud"
+mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074"
+mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"
+mobile = "+43 677 61178288"
+[params.gmap]
+enable = true
+gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
+map_latitude = "51.5223477"
+map_longitude = "-0.1622023"
+map_marker = "images/marker.png"
+[params.nav_button]
+enable = true
+link = "contact"
+[[params.plugins.css]]
+URL = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+URL = "plugins/magnific-popup/magnific-popup.css"
+[[params.plugins.css]]
+URL = "plugins/slick/slick.css"
+[[params.plugins.css]]
+URL = "plugins/slick/slick-theme.css"
+[[params.plugins.css]]
+URL = "plugins/themify-icons/themify-icons.css"
+[[params.plugins.css]]
+URL = "plugins/animate/animate.css"
+[[params.plugins.js]]
+URL = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+URL = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+URL = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+URL = "plugins/magnific-popup/magnific-popup.min.js"
+[[params.plugins.js]]
+URL = "plugins/filterizr/jquery.filterizr.min.js"
+[[params.plugins.js]]
+URL = "plugins/google-map/gmap.js"
+[params.preloader]
+enable = true
+preloader = "images/preloader.gif"
+[[params.clients_logo_slider]]
+link = "#"
+logo = "images/client-logo/client-logo-1.png"
+[[params.clients_logo_slider]]
+link = "https://examplesite.com"
+logo = "images/client-logo/client-logo-2.png"
+[[params.clients_logo_slider]]
+link = "#"
+logo = "images/client-logo/client-logo-3.png"
+[[params.clients_logo_slider]]
+link = "https://examplesite.com"
+logo = "images/client-logo/client-logo-4.png"
+[[params.clients_logo_slider]]
+link = "#"
+logo = "images/client-logo/client-logo-5.png"
+[[params.clients_logo_slider]]
+link = "https://examplesite.com"
+logo = "images/client-logo/client-logo-3.png"
+[[params.contacts]]
+icon = "ti-mobile"
+[[params.contacts.contact]]
+contact_item = "+43 677 61178288"
+[[params.contacts.contact]]
+contact_item = "+1(413)296-5682‬"
+[[params.contacts]]
+icon = "ti-email"
+[[params.contacts.contact]]
+contact_item = "info@datafortress.cloud"
+[[params.contacts]]
+icon = "ti-map-alt"
+[[params.contacts.contact]]
+contact_item = "Schönbrunner Straße 266. <br> Vienna, Austria"
+[[params.social]]
+icon = "ti-facebook"
+link = "https://www.facebook.com/guese.justin/"
+[[params.social]]
+icon = "ti-linkedin"
+link = "https://www.linkedin.com/in/justin-guese/"

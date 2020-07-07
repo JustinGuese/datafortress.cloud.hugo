@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ partial "pageTitle.html" . }}
+
+{{ "<!-- service -->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <div class="post-content">
+          {{ .Content }}
+        </div>
+      </div>
+      {{ range .Data.Pages }}
+      {{ .Render "service" }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /servie -->" | safeHTML }}
+
+{{ if $data.service.satisfied_clients.enable }}
+{{ partial "satisfiedClients.html" . }}
+{{ end }}
+
+{{ if $data.service.testimonial.enable }}
+{{ partial "testimonial.html" . }}
+{{ end }}
+
+{{ end }}

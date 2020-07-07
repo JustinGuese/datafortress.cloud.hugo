@@ -1,0 +1,15 @@
+{{ "<!-- client logo slider -->" | safeHTML}}
+<section class="bg-white py-4">
+	<div class="container">
+		<div class="client-logo-slider align-self-center">
+			{{ range .Site.Params.clients_logo_slider }}
+			{{ if and ( ne .link "" ) ( ne .link "#" ) }}
+			<a href="{{ .link | safeURL }}" target="_blank" class="text-center d-block outline-0 py-3 px-2"><img class="d-unset" src="{{ .logo | absURL }}" alt="client-logo"></a>
+			{{ else }}
+			<span class="text-center d-block outline-0 py-3 px-2"><img class="d-unset" src="{{ .logo | absURL }}" alt="client-logo"></span>
+			{{ end }}
+			{{ end }}
+		</div>
+	</div>
+</section>
+{{ "<!-- /client logo slider -->" | safeHTML}}

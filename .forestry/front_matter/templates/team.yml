@@ -1,0 +1,78 @@
+---
+label: Team
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- name: bg_image
+  type: file
+  label: bg image
+  description: page header background image
+- type: file
+  name: image
+  label: image
+- type: text
+  name: designation
+  label: designation
+- type: text
+  name: cv
+  label: cv
+  description: CV links (if don't have, then leave it empty)
+- type: textarea
+  name: bio
+  label: bio
+- type: field_group_list
+  name: information
+  label: information
+  fields:
+  - type: text
+    name: label
+    label: label
+  - type: text
+    name: icon
+    label: icon
+    description: 'Themify icon font : https://themify.me/themify-icons'
+  - type: text
+    name: info
+    label: info
+- type: field_group_list
+  name: contacts
+  label: contacts
+  fields:
+  - type: text
+    name: icon
+    label: icon
+    description: 'Themify icon font : https://themify.me/themify-icons'
+  - type: text
+    name: id
+    label: id
+- type: field_group_list
+  name: skill
+  label: skill
+  fields:
+  - type: text
+    name: label
+    label: label
+  - type: text
+    name: percentage
+    label: percentage
+- type: field_group_list
+  name: social
+  label: social
+  fields:
+  - type: text
+    name: icon
+    label: icon
+    description: 'Themify icon font : https://themify.me/themify-icons'
+  - type: text
+    name: link
+    label: link
+- type: text
+  name: description
+  label: description
+  description: this is meta description
+- type: text
+  name: type
+  label: type
+  default: team

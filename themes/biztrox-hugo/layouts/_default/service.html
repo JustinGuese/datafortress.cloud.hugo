@@ -1,0 +1,14 @@
+{{ "<!-- service item -->" | safeHTML }}
+<div class="col-lg-4 col-sm-6 mb-5">
+  <div class="card text-center">
+    <h4 class="card-title pt-3">{{ .Title }}</h4>
+    <div class="card-img-wrapper">
+      <img class="card-img-top rounded-0" src="{{ .Params.image | absURL }}" alt="service-image">
+    </div>
+    <div class="card-body p-0">
+      <i class="square-icon translateY-33 rounded {{ .Params.Icon }}"></i>
+      <p class="card-text mx-2 mb-0">{{ .Summary }}</p>
+      <a href="{{ .Permalink }}" class="btn btn-secondary translateY-25">Read More</a>
+    </div>
+  </div>
+</div>

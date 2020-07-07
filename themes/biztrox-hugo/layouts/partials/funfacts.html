@@ -1,0 +1,20 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ "<!-- funfacts -->" | safeHTML }}
+<section class="fun-facts overlay-dark section-sm" style="background-image: url('{{ $data.about.funfacts.bg_image | absURL }}');">
+    <div class="container">
+        <div class="row">
+            {{ range $data.about.funfacts.counter }}
+            <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                <div class="d-flex flex-sm-row flex-column justify-content-lg-center align-items-center text-center text-sm-left">
+                    <i class="round-icon {{ .icon }} mr-sm-3 mr-0 mb-3 mb-sm-0"></i>
+                    <div class="text-center text-sm-left">
+                        <h2 class="count text-white mb-0" data-count="{{ .count }}">0</h2>
+                        <p class="text-white mb-0">{{ .title }}</p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ "<!-- /funfacts -->" | safeHTML }}

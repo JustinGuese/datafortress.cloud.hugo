@@ -1,0 +1,43 @@
+---
+label: Project
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: file
+  name: bg_image
+  label: bg image
+  description: page header background image
+- type: file
+  name: image
+  label: image
+- type: text
+  name: live_demo
+  label: live demo
+  description: live demo links (if don't have, then leave it empty)
+- type: text
+  name: case_study
+  label: case study
+  description: case study links (if don't have, then leave it empty)
+- type: text
+  name: category
+  label: category
+- type: text
+  name: description
+  label: description
+  description: this is meta description
+- type: field_group_list
+  name: overview
+  label: overview
+  fields:
+  - type: text
+    name: label
+    label: label
+  - type: text
+    name: info
+    label: info
+- type: text
+  name: type
+  label: type
+  default: project

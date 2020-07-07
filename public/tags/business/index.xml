@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Business on Datafortress.cloud</title>
+    <link>https://justinguese.github.io/tags/business/</link>
+    <description>Recent content in Business on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Sep 2018 11:10:46 +0600</lastBuildDate>
+    
+	<atom:link href="https://justinguese.github.io/tags/business/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Money and Money</title>
+      <link>https://justinguese.github.io/blog/money-and-money/</link>
+      <pubDate>Mon, 24 Sep 2018 11:10:46 +0600</pubDate>
+      
+      <guid>https://justinguese.github.io/blog/money-and-money/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    
+    <item>
+      <title>New Hugo Post</title>
+      <link>https://justinguese.github.io/blog/new-hugo-post/</link>
+      <pubDate>Sun, 23 Sep 2018 11:35:34 +0600</pubDate>
+      
+      <guid>https://justinguese.github.io/blog/new-hugo-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    
+  </channel>
+</rss>

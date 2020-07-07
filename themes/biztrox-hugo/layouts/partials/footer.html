@@ -1,0 +1,127 @@
+{{ "<!-- footer -->" | safeHTML }}
+<footer class="bg-secondary">
+	<div class="py-100 border-bottom" style="border-color: #454547 !important">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4">
+					<div class="mb-5 mb-md-0 text-center text-md-left">
+						{{ "<!-- logo -->" | safeHTML }}
+						<img class="mb-30" src="{{ .Site.Params.logo_white | absURL }}" alt="logo">
+						{{ with .Site.Params.footer.content }} <p class="text-white mb-30"> {{ . | markdownify }}</p> {{ end }}
+						{{ "<!-- social icon -->" | safeHTML }}
+						<ul class="list-inline">
+							{{ range .Site.Params.social }}
+							<li class="list-inline-item">
+								<a class="social-icon-outline" href="{{ .link | safeURL }}">
+									<i class="{{ .icon }}"></i>
+								</a>
+							</li>
+							{{ end }}
+						</ul>
+					</div>
+				</div>
+				{{ "<!-- footer links -->" | safeHTML }}
+				<div class="col-lg-2 col-md-4 col-6">
+					<h4 class="text-white mb-4">{{ i18n "services" }}</h4>
+					<ul class="footer-links">
+						{{ range ( where .Site.RegularPages "Type" "service") }}
+						<li><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></li>
+						{{ end }}
+					</ul>
+				</div>
+				{{ "<!-- footer links -->" | safeHTML }}
+				<div class="col-lg-2 col-md-4 col-6">
+					<h4 class="text-white mb-4">{{ i18n "quick_links" }}</h4>
+					<ul class="footer-links">
+						{{ range .Site.Menus.main }}
+						{{ if not .HasChildren }}
+						<li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+						{{ end }}
+						{{ end }}
+					</ul>
+				</div>
+				{{ "<!-- subscribe form -->" | safeHTML }}
+				<div class="col-lg-3 col-md-12 offset-lg-1">
+					<div class="mt-5 mt-lg-0 text-center text-md-left">
+						{{ with .Site.Params.footer.subscribe}} <h4 class="mb-4 text-white">{{ . }}</h4> {{ end }}
+						{{ with .Site.Params.footer.subscribe_content}} <p class="text-white mb-4">{{ . }}</p> {{ end }}
+						<div id="mc_embed_signup">
+							<form action="{{ .Site.Params.mailchimp_form_action }}" method="post" id="mc-embedded-subscribe-form"
+								name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+								<div id="mc_embed_signup_scroll" class="position-relative">
+									<input type="email" name="EMAIL" class="required email form-control subscribe" id="mce-EMAIL"
+										placeholder="Enter Your Email">
+									<button class="btn-subscribe" type="submit" name="subscribe" id="mc-embedded-subscribe-">
+										<i class="ti-arrow-right"></i>
+									</button>
+									<div style="position: absolute; left: -5000px;" aria-hidden="true">
+										<input type="text" name="{{ .Site.Params.mailchimp_form_name }}" tabindex="-1">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{{ "<!-- copyright -->" | safeHTML }}
+	<div class="pt-4 pb-3 position-relative">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-5">
+					<p class="text-white text-center text-md-left">{{ .Site.Params.footer.copyright | markdownify }}</p>
+				</div>
+				<div class="col-lg-6 col-md-7">
+					<ul class="list-inline text-center text-md-right">
+						{{ range .Site.Menus.footer }}
+						<li class="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
+							<a class="font-secondary text-white" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+						</li>
+						{{ end }}
+					</ul>
+				</div>
+			</div>
+		</div>
+		{{ "<!-- back to top -->" | safeHTML }}
+		<button class="back-to-top">
+			<i class="ti-angle-up"></i>
+		</button>
+	</div>
+</footer>
+{{ "<!-- /footer -->" | safeHTML }}
+
+{{"<!-- Essential Scripts -->" | safeHTML}}
+{{"<!-- Google Map API -->" | safeHTML}}
+{{ if .Site.Params.gmap.enable }}
+<script type="text/javascript" src="{{ .Site.Params.gmap.gmap_api | absURL }}"></script>
+{{ end }}
+{{ "<!-- JS Plugins -->" | safeHTML }}
+{{ range .Site.Params.plugins.js}}
+<script src="{{ .URL | absURL }}"></script>
+{{ end }}
+{{ "<!-- Main Script -->" | safeHTML }}
+{{ $script := resources.Get "js/script.js" | minify}}
+<script src="{{ $script.Permalink }}"></script>
+{{ "<!-- google analitycs -->" | safeHTML }}
+{{ with .Site.Params.google_analitycs_id }}
+<script>
+	(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+	ga('create', '{{ . }}', 'auto');
+	ga('send', 'pageview');
+</script>
+{{ end }}
+
+</body>
+
+</html>

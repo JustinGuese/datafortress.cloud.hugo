@@ -1,0 +1,8 @@
+{{ "<!-- Google Map -->" | safeHTML }}
+{{ if .Site.Params.gmap.enable }}
+<section class="map">
+  <div id="map_canvas" data-latitude="{{ .Site.Params.gmap.map_latitude }}" data-longitude="{{ .Site.Params.gmap.map_longitude }}" data-marker="{{ .Site.Params.gmap.map_marker | relURL }}" data-marker-name="{{ .Site.Title }}">
+  </div>
+</section>
+{{ end }}
+{{ "<!-- /google map -->" | safeHTML }}

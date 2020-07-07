@@ -1,0 +1,54 @@
+- id: nav_button
+  translation: get a quote
+- id: service_subtitle
+  translation: Best Service
+- id: service_title
+  translation: Service We Provide
+- id: project_subtitle
+  translation: Our Works
+- id: project_title
+  translation: Latest Projects
+- id: blog_subtitle
+  translation: Latest News
+- id: blog_title
+  translation: Company News
+- id: services
+  translation: Services
+- id: quick_links
+  translation: Quick Links
+- id: contact_us
+  translation: Contact Us
+- id: contact_form
+  translation: Contact Form
+- id: submit
+  translation: Submit
+- id: buy_now
+  translation: Buy Now
+- id: service_brochure
+  translation: Service Brochure
+- id: download_pdf
+  translation: Download pdf
+- id: opening_hours
+  translation: Opening Hours
+- id: contact_info
+  translation: Contact Information
+- id: follow_on_social
+  translation: Follow on Social
+- id: cv
+  translation: Professional CV
+- id: overview
+  translation: Overview
+- id: project_name
+  translation: Project Name
+- id: live_demo
+  translation: Watch Live Demo
+- id: case_study
+  translation: Complete Case Study
+- id: free_consultation
+  translation: Request Free Consultation
+- id: all
+  translation: All
+- id: posted_by
+  translation: Posted By
+- id: share
+  translation: Share

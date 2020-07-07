@@ -1,0 +1,27 @@
+{{ "<!-- about -->" | safeHTML }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.homepage.about }}
+<section class="about section-sm overlay" style="background-image: url('{{ .bg_image | absURL }}');">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 ml-auto">
+				<div class="rounded p-sm-5 px-3 py-5 bg-secondary">
+					<h3 class="section-title section-title-border-half text-white">{{ .title | markdownify }}</h3>
+					<p class="text-white mb-40">{{ .content | markdownify }}</p>
+					<ul class="list-unstyled" style="columns: 2;">
+						{{ range .bullet_point }}
+						<li class="font-secondary mb-10 text-white"><i class="text-primary mr-2 ti-arrow-circle-right"></i>{{ . }}</li>
+						{{ end }}
+					</ul>
+					{{ if .button.enable }}
+					{{ with .button }}
+					<a href="{{ .link | relLangURL }}" class="btn btn-primary mt-4">{{ .label }}</a>
+					{{ end }}
+					{{ end }}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{{ end }}
+{{ "<!-- /about -->" | safeHTML }}

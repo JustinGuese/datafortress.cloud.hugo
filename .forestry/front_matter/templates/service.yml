@@ -1,0 +1,45 @@
+---
+label: Service
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: file
+  name: image
+  label: image
+- type: file
+  name: bg_image
+  label: bg image
+  description: page header background image
+- type: text
+  name: icon
+  label: icon
+  description: 'Themify icon font : https://themify.me/themify-icons'
+- type: text
+  name: brochure
+  label: brochure
+  description: brochure link (if you don't have, then leave it empty)
+- type: text
+  name: regularDay
+  label: regular day
+- type: text
+  name: regularTime
+  label: regular time
+- type: text
+  name: halfDay
+  label: half day
+- type: text
+  name: halfTime
+  label: half time
+- type: text
+  name: offDay
+  label: off day
+- type: text
+  name: description
+  label: description
+  description: this is meta description
+- type: text
+  name: type
+  label: type
+  default: service

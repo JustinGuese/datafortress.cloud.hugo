@@ -1,0 +1,22 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.homepage.cta }}
+{{ "<!-- cta -->" | safeHTML }}
+<section class="cta overlay-primary py-50 text-center text-lg-left"
+	style="background-image: url('{{ .bg_image | absURL }}');">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-lg-6">
+				<h3 class="text-white">{{ .title | markdownify }}</h3>
+			</div>
+			<div class="col-lg-6 text-lg-right align-self-center">
+				{{ if .button.enable }}
+				{{ with .button }}
+				<a href="{{ .link | relLangURL }}" class="btn btn-light text-uppercase">{{ .label }}</a>
+				{{ end }}
+				{{ end }}
+			</div>
+		</div>
+	</div>
+</section>
+{{ "<!-- /cta -->" | safeHTML }}
+{{ end }}

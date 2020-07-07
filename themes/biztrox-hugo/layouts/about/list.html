@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ partial "pageTitle.html" . }}
+
+{{ if $data.about.philosophy.enable }}
+{{ partial "philosophy.html" . }}
+{{ end }}
+
+{{ if $data.about.ceo.enable }}
+{{ partial "ceo.html" . }}
+{{ end }}
+
+{{ if $data.about.mission.enable }}
+{{ partial "mission.html" . }}
+{{ end }}
+
+{{ if $data.about.funfacts.enable }}
+{{ partial "funfacts.html" . }}
+{{ end }}
+
+{{ if $data.about.skill.enable }}
+{{ partial "skill.html" . }}
+{{ end }}
+
+{{ end }}

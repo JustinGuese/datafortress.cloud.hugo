@@ -1,0 +1,104 @@
+{{ define "main" }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.homepage.slider.enable }}
+{{ partial "hero-slider.html" . }}
+{{ end }}
+
+{{ if $data.homepage.service.enable }}
+{{ "<!-- service -->" | safeHTML }}
+<section class="section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-12 text-center">
+				<h5 class="section-title-sm">{{ i18n "service_subtitle" }}</h5>
+				<h2 class="section-title section-title-border">{{ i18n "service_title" }}</h2>
+			</div>
+			{{ range $index, $element:= where .Site.RegularPages "Type" "service" }}
+			{{ if lt $index 3 }}
+			{{ .Render "service" }}
+			{{ end }}
+			{{ end }}
+		</div>
+	</div>
+</section>
+{{ "<!-- /service -->" | safeHTML }}
+{{ end }}
+
+{{ if $data.homepage.about.enable }}
+{{ partial "about.html" . }}
+{{ end }}
+
+{{ if $data.homepage.skill.enable }}
+{{ partial "skill.html" . }}
+{{ end }}
+
+{{ if $data.homepage.project.enable }}
+{{ "<!-- work -->" | safeHTML }}
+<section class="section bg-gray">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h5 class="section-title-sm">{{ i18n "project_subtitle" }}</h5>
+				<h2 class="section-title section-title-border-gray">{{ i18n "project_title" }}</h2>
+			</div>
+		</div>
+		{{ "<!-- work slider -->" | safeHTML }}
+		<div class="row work-slider">
+			{{ range $index, $element:= where .Site.RegularPages "Type" "project"}}
+			{{ .Render "project" }}
+			{{ end }}
+		</div>
+	</div>
+</section>
+{{ end }}
+{{ "<!-- /work -->" | safeHTML }}
+
+{{ if $data.homepage.mission.enable }}
+{{ partial "mission.html" . }}
+{{ end }}
+
+{{ if $data.homepage.promo_video.enable }}
+{{ partial "promoVideo.html" . }}
+{{ end }}
+
+{{ if $data.homepage.testimonial.enable }}
+{{ partial "testimonial.html" . }}
+{{ end }}
+
+{{ if $data.homepage.cta.enable }}
+{{ partial "cta.html" . }}
+{{ end }}
+
+{{ if $data.homepage.blog.enable }}
+{{ "<!-- blog -->" | safeHTML }}
+<section class="section bg-gray">
+	<div class="container">
+		<div class="row justify-content-center">
+			{{ with $data.homepage.blog }}
+			<div class="col-lg-12 text-center">
+				<h5 class="section-title-sm">{{ i18n "blog_subtitle" }}</h5>
+				<h2 class="section-title section-title-border-gray">{{ i18n "blog_title" }}</h2>
+			</div>
+			{{end}}
+
+			{{ range $index, $element:= where .Site.RegularPages "Type" "post" }}
+			{{ if lt $index 3}}
+			{{ "<!-- blog-item -->" | safeHTML }}
+			<div class="col-lg-4 col-sm-6 mb-4">
+				{{ .Render "post" }}
+			</div>
+			{{ end }}
+			{{ end }}
+		</div>
+	</div>
+</section>
+{{ end }}
+{{ "<!-- /blog -->" | safeHTML }}
+
+{{ if $data.homepage.clients_logo_slider.enable }}
+{{ partial "clientsLogoSlider.html" . }}
+{{ end }}
+
+{{ end }}

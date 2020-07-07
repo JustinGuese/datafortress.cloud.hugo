@@ -1,0 +1,10 @@
+{{ "<!-- project item -->" | safeHTML }}
+<div class="col-lg-3 col-md-4 col-sm-6 p-0 filtr-item" data-category="{{ .Params.Category | urlize }}">
+  <div class="position-relative">
+    <img class="img-fluid w-100" src="{{ .Params.Image | absURL }}" alt="project-image">
+    <div class="project-info">
+      <a href="{{ .Permalink }}" class="h4">{{ .Title }}</a>
+      <p><i class="ti-tag"></i>{{ .Params.Category | humanize }}</p>
+    </div>
+  </div>
+</div>

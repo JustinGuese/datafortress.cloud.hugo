@@ -1,0 +1,26 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.service.satisfied_clients }}
+{{ "<!-- clients -->" | safeHTML }}
+<section class="clients section bg-secondary overlay-dark"
+	style="background-image: url('{{ .bg_image | relURL }}');">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<h5 class="section-title-sm text-color">{{ .subtitle | markdownify }}</h5>
+				<h2 class="text-white mb-20">{{ .title | markdownify }}</h2>
+				<p class="text-white">{{ .content | markdownify }}</p>
+			</div>
+			<div class="col-lg-6">
+				<div class="row justify-content-around align-items-center">
+					{{ range .logo }}
+					<div class="col-6 text-center">
+						<img class="py-3" src="{{ . | relURL }}" alt="client-logo">
+					</div>
+					{{ end }}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{{ "<!-- /clients -->" | safeHTML }}
+{{ end }}

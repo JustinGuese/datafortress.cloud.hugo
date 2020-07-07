@@ -1,0 +1,19 @@
+################################## Satisfied clients ###############################
+satisfied_clients:
+  enable : true
+  bg_image : images/background/clients-bg.jpg
+  subtitle : Our Some
+  title : Satisfied Clients
+  content : Excepteur sint occaecat cupidatat non proident sunt culpa officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis. natus error sit voluptem accusantium doloremqu laudantium totam remaperiam eaque ipsa quae
+  logo:
+    - images/client-logo/client-logo-1-white.png
+    - images/client-logo/client-logo-2-white.png
+    - images/client-logo/client-logo-4-white.png
+    - images/client-logo/client-logo-3-white.png
+    - images/client-logo/client-logo-5-white.png
+    - images/client-logo/client-logo-3-white.png
+    
+##################################### call to action #################################
+testimonial:
+  enable : true
+  # testimonial content comes from "data/*/homepage.yml" file
