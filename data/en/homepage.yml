@@ -74,33 +74,40 @@ about:
 skill:
   enable: true
   subtitle: Our Skills
-  title: Why Choose Us
-  content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor
-    incididunt laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute
-    irure dolor in reprehenderit voluptate velit esse cillum dolore fugiat nulla pariatur.
-    Excepteur sint ocaecat cupidatat non proident sunt culpa qui officia deserunt
-    mollit anim id est laborum. sed perspiciatis unde omnisiste natus error sit voluptatem
-    accusantium.doloremque ladantium totam rem aperieaque ipsa quae ab illo inventore.veritatis.
-    et quasi architecto beatae vitae dicta sunt explicabo.
+  title: Some Reasons to Work Together
+  content: |-
+    **We Believe in Quality**
+
+    Only the best quality establishes a trust-based relationship and develops long-term cooperation.
+
+
+    **We believe in Speed**
+
+    We utilize a strategy called rapid prototyping, which iterates and presents you with several milestones during our development, to both test ideas, and avoid a final product that does not fit your requirements.
+
+
+    **We Believe in Technology**
+
+    To achieve our task and to give the best fitting consultation, we are constantly scouting and applying the newest technology to stay an industry leader.
   funfacts:
   - icon: ti-server
     title: Projects Done
     count: "230"
   - icon: ti-face-smile
     title: Satisfied Clients
-    count: "789"
+    count: "73"
   - icon: ti-thumb-up
-    title: Cup Of Coffee
-    count: "580"
+    title: Programs written
+    count: "123134"
   progressbar:
-  - title: Branding
-    progress: 85%
+  - title: Cloud
+    progress: 100%
   - title: Consulting
-    progress: 90%
-  - title: Business
-    progress: 75%
-  - title: Promotion
-    progress: 90%
+    progress: 100%
+  - title: AI / Machine Learning
+    progress: 100%
+  - title: Virtual and Augmented Reality
+    progress: 100%
 project:
   enable: true
 mission:
@@ -111,7 +118,7 @@ mission:
     Whilst working at Porsche Holding and being self-employed before, I discovered that many agencies and consulting agencies, on the one hand, do not offer the best fitting product for their customers, and on the other are not closely cooperating with the customer.
 
     In my opinion, a perfect solution can only be achieved if the agency both works on the consulting and producing side of the business, and constantly cooperates with the client through “prototype iterations”, meaning that there will not be one final product, but rather a constant “dialogue” with the client offering several smaller prototypes on the way to the final product.
-  image: "/images/our-company.jpg"
+  image: "/images/service/benifit.webp"
   accordion:
   - title: Business Consulting
     description: Due to our data-background, we are constantly testing and improving
