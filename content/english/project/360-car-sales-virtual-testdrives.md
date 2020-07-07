@@ -3,7 +3,6 @@ bg_image = "/images/annotation-2020-04-07-145141-768x586.png"
 case_study = ""
 category = "Augmented Reality"
 description = ""
-draft = true
 image = "/images/annotation-2020-04-07-145141-768x586.png"
 live_demo = ""
 title = "360° Car Sales – Virtual Testdrives"
