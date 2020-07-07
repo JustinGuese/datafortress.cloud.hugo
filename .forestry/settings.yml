@@ -7,14 +7,14 @@ sections:
 - type: heading
   label: Blog Post
 - type: directory
-  path: exampleSite/content/english/blog
+  path: ./content/english/blog
   label: Post (en)
   create: documents
   match: "**/*"
   templates:
   - post
 - type: directory
-  path: exampleSite/content/french/blog
+  path: ./content/french/blog
   label: Post (fr)
   create: documents
   match: "**/*"
@@ -23,14 +23,14 @@ sections:
 - type: heading
   label: Author
 - type: directory
-  path: exampleSite/content/english/author
+  path: ./content/english/author
   label: Author (en)
   create: documents
   match: "**/*"
   templates:
   - author
 - type: directory
-  path: exampleSite/content/french/author
+  path: ./content/french/author
   label: Author (fr)
   create: documents
   match: "**/*"
@@ -39,14 +39,14 @@ sections:
 - type: heading
   label: Project
 - type: directory
-  path: exampleSite/content/english/project
+  path: ./content/english/project
   label: Project (en)
   create: documents
   match: "**/*"
   templates:
   - project
 - type: directory
-  path: exampleSite/content/french/project
+  path: ./content/french/project
   label: Project (fr)
   create: documents
   match: "**/*"
@@ -55,14 +55,14 @@ sections:
 - type: heading
   label: Team
 - type: directory
-  path: exampleSite/content/english/team
+  path: ./content/english/team
   label: Team (en)
   create: documents
   match: "**/*"
   templates:
   - team
 - type: directory
-  path: exampleSite/content/french/team
+  path: ./content/french/team
   label: Team (fr)
   create: documents
   match: "**/*"
@@ -71,14 +71,14 @@ sections:
 - type: heading
   label: Service
 - type: directory
-  path: exampleSite/content/english/service
+  path: ./content/english/service
   label: Service (en)
   create: documents
   match: "**/*"
   templates:
   - service
 - type: directory
-  path: exampleSite/content/french/service
+  path: ./content/french/service
   label: Service (fr)
   create: documents
   match: "**/*"
@@ -87,41 +87,41 @@ sections:
 - type: heading
   label: Other Pages
 - type: directory
-  path: exampleSite/content/english/pages
+  path: ./content/english/pages
   label: Pages (en)
   create: documents
   match: "**/*"
 - type: directory
-  path: exampleSite/content/french/pages
+  path: ./content/french/pages
   label: Pages (fr)
   create: all
   match: "**/*"
 - type: heading
   label: Data
 - type: directory
-  path: exampleSite/data/en
+  path: ./data/en
   label: Data (en)
   create: all
   match: "**/*"
 - type: directory
-  path: exampleSite/data/fr
+  path: ./data/fr
   label: Data (fr)
   create: all
   match: "**/*"
 - type: directory
-  path: exampleSite/i18n
+  path: ./i18n
   label: i18n
   create: documents
   match: "**/*"
 - type: heading
   label: Configuration
 - type: directory
-  path: exampleSite
+  path: .
   label: Configuration
   create: all
   match: "*.toml"
   new_doc_ext: toml
-upload_dir: exampleSite/static/images
+upload_dir: ./static/images
 public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
