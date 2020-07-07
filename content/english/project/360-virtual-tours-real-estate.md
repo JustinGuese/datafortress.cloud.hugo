@@ -53,7 +53,7 @@ Another good application due to it’s “wow-factor” is a virtual tour using 
 
 If you intend to offer a high-quality experience for a small group of people, a virtual reality tour might be the best option. Virtual Reality offers a way more immersive experience, but due to the need for complex hardware, it might be limited to a small group of people.
 
-<iframe width="640" height="360" src="[https://www.youtube.com/embed/LP2pjGYVr8c](https://www.youtube.com/embed/LP2pjGYVr8c "https://www.youtube.com/embed/LP2pjGYVr8c")" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/LP2pjGYVr8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### What do I need for a virtual tour?
 
