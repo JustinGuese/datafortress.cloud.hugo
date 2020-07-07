@@ -163,10 +163,10 @@ testimonial:
 cta:
   enable: true
   bg_image: images/background/cta.jpg
-  title: Biztrox give the smart solution for your business
+  title: DataFortress.cloud is your partner for high quality, state-of-the-art solutions.
   button:
     enable: true
-    label: get a quote
+    label: Get a Quote
     link: contact
 blog:
   enable: true
