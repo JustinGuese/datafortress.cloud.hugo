@@ -3,7 +3,6 @@ bg_image = "/images/earth-wallpaper-2217658-300x184.jpg"
 case_study = ""
 category = "Virtual Reality"
 description = ""
-draft = true
 image = "/images/earth-wallpaper-2217658-300x184.jpg"
 live_demo = ""
 title = "360° Virtual Tours – Real Estate"
