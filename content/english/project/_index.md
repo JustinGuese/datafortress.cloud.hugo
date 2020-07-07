@@ -1,10 +1,10 @@
 ---
-title: "Our Project"
-date: 2018-07-12T18:19:33+06:00
+title: Our Projects
+date: '2018-07-12T18:19:33.000+06:00'
 bg_image: images/background/page-title.jpg
-description : "This is meta description"
----
+description: This is meta description
 
+---
 ## Our Projects
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua.
+Have a look at our several projects, or contact us directly if you have any open questions.
