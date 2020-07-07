@@ -2,7 +2,7 @@
 slider:
   enable: true
   slider_Item:
-  - bg_image: "/images/dronestarting.webp"
+  - bg_image: "/images/5sdronestart.webp"
     animation_from: left
     subtitle: We are here to
     title: Planning Business
@@ -14,7 +14,7 @@ slider:
       enable: true
       label: More details
       link: about
-  - bg_image: images/banner/banner-2.jpg
+  - bg_image: "/images/5sbusinesshandshake.webp"
     animation_from: up
     subtitle: Get your
     title: Business Consultant
@@ -26,7 +26,7 @@ slider:
       enable: true
       label: More details
       link: about
-  - bg_image: images/banner/banner-3.jpg
+  - bg_image: "/images/5stouchscreen.webp"
     animation_from: down
     subtitle: Start your
     title: Future Plan
