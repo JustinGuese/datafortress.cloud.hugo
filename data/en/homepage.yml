@@ -2,7 +2,7 @@
 slider:
   enable: true
   slider_Item:
-  - bg_image: "/images/5sdronestart.webp"
+  - bg_image: "/images/light-bulb-on-white-panel-1166643-min.jpg"
     animation_from: left
     subtitle: We speak
     title: Innovation
@@ -14,7 +14,7 @@ slider:
       enable: true
       label: More details
       link: about
-  - bg_image: "/images/5sipad.webp"
+  - bg_image: "/images/person-in-white-long-sleeve-shirt-holding-tablet-computer-3740250-min.jpg"
     animation_from: up
     subtitle: Data Driven
     title: Business Consulting
@@ -27,7 +27,7 @@ slider:
       enable: true
       label: More details
       link: about
-  - bg_image: "/images/5scoffee3.webp"
+  - bg_image: "/images/white-ceramic-mug-beside-spiral-notebook-and-laptop-3773413-min.jpg"
     animation_from: down
     subtitle: Put your effort into your
     title: CORE BUSINESS
@@ -38,10 +38,10 @@ slider:
       enable: true
       label: More details
       link: about
-  - bg_image: images/banner/banner-4.jpg
+  - bg_image: "/images/black-drone-916015-min.jpg"
     animation_from: right
     subtitle: We are your partner for
-    title: Cloud, Big-Data and AI
+    title: Cloud, Big-Data, AI
     content: |-
       We believe in QUALITY <br>
       We believe in SPEED<br>
