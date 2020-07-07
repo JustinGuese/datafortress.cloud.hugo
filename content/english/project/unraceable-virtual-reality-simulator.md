@@ -3,7 +3,6 @@ bg_image = "/images/img_1286-768x576.jpg"
 case_study = ""
 category = "Virtual Reality"
 description = ""
-draft = true
 image = "/images/img_1286-768x576.jpg"
 live_demo = ""
 title = "#unraceable Virtual Reality Simulator"
@@ -68,3 +67,15 @@ As a link to the car configurator of Audi had been integrated into the game, an 
 ##### Milestone 3: #unraceable Ski-Challenge
 
 The next step has been to cooperate with the Austrian Skiing Association ([https://www.oesv.at/](https://www.oesv.at/ "https://www.oesv.at/")) and build something similar to the former “Skiing Challenge” that experienced great success in the past years. But the task has been to not simply emulate this success but to build something new. The idea was to drive up the skiing track (Hahnenkamm) with an Audi e-Tron (in similarity to the then Audi e-Tron spot where it drives up a skiing track like in the first “Quattro” spot) and then drive it down again using a skier. Again the app has been downloaded more than 30’000 times and is still being played today.
+
+###### Spot: Ferdinand Habsburg & Ernst Hausleitner (ORF)
+
+<iframe width="339" height="191" src="https://www.youtube.com/embed/XvJf_GesdL0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+###### “FC Bayern München” Spot
+
+<iframe width="339" height="191" src="https://www.youtube.com/embed/Y-QGWFz-c8s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+###### #unraceable Ski Challenge featuring Hans Knauß
+
+<iframe width="339" height="191" src="https://www.youtube.com/embed/LpIVkCKFmyE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
