@@ -41,5 +41,3 @@ fields:
   name: type
   label: type
   default: project
-pages:
-- content/english/project/website-porsche-ar-viewer-1.md
