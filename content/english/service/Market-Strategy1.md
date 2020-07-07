@@ -95,3 +95,39 @@ Even though many people hear a lot of potential cloud leaks, all in all, the clo
 <br><br>
 
 **Now, this has only been a brief peek into this huge topic of the cloud, and of course, the situation is different for every company. Therefore it is even more important to engage with a team that already fought through a lot of potential stepping stones to save yourself trouble and money on your journey towards the cloud. Feel free to contact us anytime to get a free 15-minute call to discuss your open questions.**
+
+### Our Cloud Services:
+
+* [Cloud Backups / Archives](https://www.datafortress.cloud/cloud-services/cloud-backups-archives/)
+* [Hosting in the Cloud](https://www.datafortress.cloud/cloud-services/hosting-in-the-cloud/)
+* Object Storage Solutions
+* Relational Databases in the Cloud
+* NoSQL Databases in the Cloud
+* Cloud Migration
+* Virtual Desktop
+* FTP Server
+* VPC
+* Serverless Functions Development
+* Automatization
+* Chatbots
+* Cloud Catalogueing
+* Prod/QA/Dev Setup
+* Stream Processing
+* [Big Data Solutions](https://www.datafortress.cloud/data-science-and-data-engineering/)
+* Memcached and Redis Setup
+* CDN Setup
+* Elasticsearch, Logstash, Kibana Setup and Serverless
+* Log Analytics and Storage
+* SAML & Security Setup
+* Hardware Security Module (HSM) in the Cloud
+* Rendering for Photoshop, Movies
+* Mass Email Servers
+* AWS Consulting and Solution Architecture
+* [Data Warehouse int the Cloud](https://www.datafortress.cloud/data-science-and-data-engineering/)
+* [Data Mart and Data Lake in the Cloud](https://www.datafortress.cloud/data-science-and-data-engineering/)
+* Cloud Access Control
+* Cloud Access Logging and Security
+* Firewall
+* Kubernetes and Docker in the Cloud
+* Serverless Cloud Search Indexes
+* Parallel Processing
