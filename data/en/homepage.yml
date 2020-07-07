@@ -4,48 +4,50 @@ slider:
   slider_Item:
   - bg_image: "/images/5sdronestart.webp"
     animation_from: left
-    subtitle: We are here to
-    title: Planning Business
-    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor <br> incididunt ut labore et dolore magna aliqua.
-    pagination_icon: ti-comments
-    pagination_name: Consultation
+    subtitle: We speak
+    title: Innovation
+    content: We have a broad technical background and are constantly learning and
+      improving our tech-stack.
+    pagination_icon: ti-light-bulb
+    pagination_name: Innovation
     button:
       enable: true
       label: More details
       link: about
   - bg_image: "/images/5sipad.webp"
     animation_from: up
-    subtitle: Get your
-    title: Business Consultant
-    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor <br> incididunt ut labore et dolore magna aliqua.
-    pagination_icon: ti-bar-chart
-    pagination_name: Marketing
+    subtitle: Data Driven
+    title: Business Consulting
+    content: |-
+      Due to our data-background, we are constantly testing and improving our business <br>
+      based on numbers, which makes us a perfect data-driven consulting partner for your business.
+    pagination_icon: ti-comments
+    pagination_name: Consulting
     button:
       enable: true
       label: More details
       link: about
   - bg_image: "/images/5scoffee3.webp"
     animation_from: down
-    subtitle: Start your
-    title: Future Plan
-    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor <br> incididunt ut labore et dolore magna aliqua.
-    pagination_icon: ti-money
-    pagination_name: Finance
+    subtitle: Put your effort into your
+    title: CORE BUSINESS
+    content: And let us take care of project management, execution, and quality assurance.
+    pagination_icon: ti-crown
+    pagination_name: A Helping Hand
     button:
       enable: true
       label: More details
       link: about
   - bg_image: images/banner/banner-4.jpg
     animation_from: right
-    subtitle: We are always
-    title: Be Inspired By Best
-    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor <br> incididunt ut labore et dolore magna aliqua.
-    pagination_icon: ti-package
-    pagination_name: Human Resources
+    subtitle: We are your partner for
+    title: Cloud, Big-Data and AI
+    content: |-
+      We believe in QUALITY <br>
+      We believe in SPEED<br>
+      We believe in TECHNOLOGY<br>
+    pagination_icon: ti-cloud-up
+    pagination_name: Cloud, Big-Data & AI
     button:
       enable: true
       label: More details
