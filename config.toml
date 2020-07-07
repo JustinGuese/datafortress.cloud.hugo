@@ -83,14 +83,14 @@ google_analitycs_id = "Your ID"
 logo = "images/logo.png"
 logo_white = "images/logo-footer.png"
 mail = "info@datafortress.cloud"
-mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074"
-mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"
+mailchimp_form_action = "https://cloud.us19.list-manage.com/subscribe/post?u=29b9af4020a7ab7d1e6a76d72"
+mailchimp_form_name = "SubscribeDGSVO"
 mobile = "+43 677 61178288"
 [params.gmap]
 enable = true
 gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
-map_latitude = "51.5223477"
-map_longitude = "-0.1622023"
+map_latitude = "48.183860"
+map_longitude = "16.321450"
 map_marker = "images/marker.png"
 [params.nav_button]
 enable = true

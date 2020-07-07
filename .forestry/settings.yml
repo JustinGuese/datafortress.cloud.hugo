@@ -116,7 +116,7 @@ sections:
 - type: heading
   label: Configuration
 - type: directory
-  path: .
+  path: "."
   label: Configuration
   create: all
   match: "*.toml"
