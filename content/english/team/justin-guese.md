@@ -1,56 +1,59 @@
 ---
-title: Joseph Pullin
+title: Justin Güse
 date: '2018-09-29T14:42:51.000+06:00'
 description: This is meta description
 designation: CEO
-image: images/team/team-page-5.jpg
+image: "/images/fotojustinguese.webp"
 bg_image: images/background/page-title.jpg
-cv: "#"
-bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua.enim ad minim veniam, quis nostrud exercitation
-  ullamco laboris nisi ut aliquip ex ea commodo consequat irure dolor in reprehender.
+cv: ''
+bio: Justin Güse is the CEO of DataFortress.cloud. Starting his self-employment at
+  a young age, he created multiple e-commerce websites, published a book, and finally
+  worked for Porsche Holding as a Data Scientist/Cloud Solution Architect. Nowadays
+  he helps companies become a cloud/data-first business as CEO of DataFortress.cloud
 information:
 - label: Projects Done
   icon: ti-notepad
   data: 32
+  info: "1120"
 - label: Success Rate
   icon: ti-medall
   data: 96%
+  info: "99"
 - label: Experience Of
   icon: ti-flag-alt
   data: 13 Years
-- label: From
-  icon: ti-location-pin
-  data: San Diago. NY
+  info: "10"
 contacts:
 - icon: ti-mobile
-  id: "+88 525 325 22"
+  id: "+43 677 61178288"
 - icon: ti-email
-  id: philipwilson@biztrox.com
+  id: info@datafortress.cloud
 - icon: ti-location-pin
-  id: 2/A Southampton, Sandiago, USA.
+  id: Vienna, Austria
 skill:
-- label: Branding
-  percentage: 85%
+- label: AR/VR
+  percentage: 100%
+- label: Cloud
+  percentage: 100%
 - label: Consulting
-  percentage: 90%
-- label: Business
-  percentage: 75%
+  percentage: 95%
+- label: Big-Data
+  percentage: 100%
 social:
 - icon: ti-facebook
-  link: "#"
-- icon: ti-twitter-alt
-  link: "#"
-- icon: ti-vimeo-alt
-  link: "#"
+  link: https://www.facebook.com/guese.justin/
 - icon: ti-linkedin
-  link: "#"
+  link: https://www.linkedin.com/in/justin-guese/
 
 ---
-#### Work History  & Feedback
+# Meet Our Brand New Solution
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis.
+I, Justin Güse, am the founder of **Datafortress.cloud**. After working for Porsche Holding in an **innovation/data science division**, where I developed many projects ranging from Big Data to Virtual Reality (see [portfolio](https://www.datafortress.cloud/case-studies/)), I decided to found my own company.
 
-#### Profile Analytics
+During my time at Porsche, I observed that many agencies or consultants **do not have the main goal to satisfy their clients’ needs** as the main priority, but rather how to achieve the minimal needed tasks in the shortest amount of time.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+Consultants were analyzing the situation but left us alone when it came to the application or the development. Oftentimes agencies struggled because the person executing a project is different from a consultant, which caused a lot of confusion and errors.
+
+It is my belief, that great projects can only be achieved if an **agency both plans/consults a partner, and offers the execution, or at least recommended partners as well**. We will not just propose an insane plan and leave the execution to someone else – we plan thoroughly what is possible and how it can become a reality.
+
+Furthermore, it is my belief, that if I will **take the extra mile** to fully satisfy a contract, that we can establish a **trust-based relationship** and maybe even start new projects together with the budget that might be saved due to our cooperation.
