@@ -1,5 +1,5 @@
 git pull
-hugo
+hugo --minify
 Set-Location -Path "./public"
 git add -A
 git commit -m "automated build update"
