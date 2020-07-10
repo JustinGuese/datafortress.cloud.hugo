@@ -48,21 +48,22 @@ URL = "about"
 name = "About"
 weight = 1
 [[menu.main]]
-URL = "service"
-name = "Service"
+URL = "services"
+name = "Services"
 weight = 2
+[[menu.main]]
+URL = "case-studies"
+name = "Case Studies"
+parent = "Pages"
+weight = "3"
 [[menu.main]]
 URL = "blog"
 name = "Blog"
-weight = 3
+weight = "4"
 [[menu.main]]
 URL = "team"
 name = "Team"
-weight = 4
-[[menu.main]]
-URL = "pricing"
-name = "Pricing"
-weight = 5
+weight = "5"
 [[menu.main]]
 URL = "contact"
 name = "Contact"
@@ -71,10 +72,6 @@ weight = 6
 hasChildren = true
 name = "Pages"
 weight = 7
-[[menu.main]]
-URL = "project"
-name = "Project"
-parent = "Pages"
 [params]
 author = "DataFortress.cloud"
 contact_form_action = "https://formspree.io/mknvkdpr"
