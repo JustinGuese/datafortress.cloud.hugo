@@ -87,7 +87,7 @@ mailchimp_form_action = "https://cloud.us19.list-manage.com/subscribe/post?u=29b
 mailchimp_form_name = "SubscribeDGSVO"
 mobile = "+43 677 61178288"
 [params.gmap]
-enable = true
+enable = false
 gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
 map_latitude = "48.183860"
 map_longitude = "16.321450"
@@ -120,7 +120,7 @@ URL = "plugins/filterizr/jquery.filterizr.min.js"
 [[params.plugins.js]]
 URL = "plugins/google-map/gmap.js"
 [params.preloader]
-enable = true
+enable = false
 preloader = "images/preloader.gif"
 [[params.clients_logo_slider]]
 link = "#"
