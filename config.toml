@@ -1,6 +1,6 @@
 baseURL = "https://justinguese.github.io/"
 disableLanguages = []
-disqusShortname = "Datafortess.cloud"
+disqusShortname = "datafortess-cloud"
 paginate = "6"
 summaryLength = "10"
 theme = "biztrox-hugo"
@@ -77,7 +77,7 @@ name = "Project"
 parent = "Pages"
 [params]
 author = "DataFortress.cloud"
-contact_form_action = "#"
+contact_form_action = "https://formspree.io/mknvkdpr"
 description = "VR, Big-Data and Cloud for your Business."
 google_analitycs_id = "UA-56269619-17"
 logo = "images/logo.png"
