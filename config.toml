@@ -29,44 +29,45 @@ subscribe = "Subscribe Us"
 subscribe_content = "Receive exclusive tech/cloud/ai news into your inbox. Unsubscribe any time."
 [[menu.footer]]
 URL = "#"
-name = "Terms & Conditions"
-weight = 4
-[[menu.footer]]
-URL = "#"
-name = "Privacy Policy"
-weight = 3
+name = "Legal"
+weight = 1
 [[menu.footer]]
 URL = "#"
 name = "Sitemap"
 weight = 2
 [[menu.footer]]
 URL = "#"
-name = "Legal"
-weight = 1
-[[menu.main]]
-URL = "contact"
-name = "Contact"
-weight = 7
-[[menu.main]]
-URL = "pricing"
-name = "Pricing"
-weight = 6
-[[menu.main]]
-URL = "team"
-name = "Team"
-weight = 5
-[[menu.main]]
-URL = "blog"
-name = "Blog"
+name = "Privacy Policy"
+weight = 3
+[[menu.footer]]
+URL = "#"
+name = "Terms & Conditions"
 weight = 4
-[[menu.main]]
-URL = "service"
-name = "Service"
-weight = 2
 [[menu.main]]
 URL = "about"
 name = "About"
 weight = 1
+[[menu.main]]
+URL = "service"
+name = "Services"
+weight = 2
+[[menu.main]]
+URL = "project"
+name = "Case Studies"
+parent = "Pages"
+weight = "3"
+[[menu.main]]
+URL = "blog"
+name = "Blog"
+weight = "4"
+[[menu.main]]
+URL = "team"
+name = "Team"
+weight = "5"
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 6
 [params]
 author = "DataFortress.cloud"
 contact_form_action = "https://formspree.io/mknvkdpr"
