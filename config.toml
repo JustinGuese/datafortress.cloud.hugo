@@ -44,11 +44,6 @@ URL = "#"
 name = "Legal"
 weight = 1
 [[menu.main]]
-URL = "project"
-name = "Project"
-parent = "Pages"
-weight = 3
-[[menu.main]]
 URL = "contact"
 name = "Contact"
 weight = 7
