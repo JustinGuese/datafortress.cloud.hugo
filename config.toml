@@ -76,8 +76,8 @@ google_analitycs_id = "UA-56269619-17"
 logo = "images/logo.png"
 logo_white = "images/logo.png"
 mail = "info@datafortress.cloud"
-mailchimp_form_action = "https://cloud.us19.list-manage.com/subscribe/post?u=29b9af4020a7ab7d1e6a76d72"
-mailchimp_form_name = "SubscribeDGSVO"
+mailchimp_form_action = "https://cloud.us19.list-manage.com/subscribe/post?u=29b9af4020a7ab7d1e6a76d72&amp;id=3622b2a9a6"
+mailchimp_form_name = "mc-embedded-subscribe-form"
 mobile = "+43 677 61178288"
 [params.gmap]
 enable = false
