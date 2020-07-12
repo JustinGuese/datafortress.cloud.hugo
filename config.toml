@@ -48,13 +48,27 @@ URL = "about"
 name = "About"
 weight = 1
 [[menu.main]]
+URL = "about"
+name = "About"
+parent = "about"
+weight = 1
+[[menu.main]]
+URL = "/content/english/pages/impressum/"
+name = "Impressum"
+parent = "about"
+weight = 2
+[[menu.main]]
+URL = "/content/english/pages/privacy-policy/"
+name = "Privacy Policy"
+parent = "about"
+weight = 3
+[[menu.main]]
 URL = "service"
 name = "Services"
 weight = 2
 [[menu.main]]
 URL = "project"
 name = "Case Studies"
-parent = "Pages"
 weight = "3"
 [[menu.main]]
 URL = "blog"
