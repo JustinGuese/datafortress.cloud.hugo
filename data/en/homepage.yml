@@ -58,11 +58,11 @@ about:
   enable: true
   bg_image: images/background/about-bg.jpg
   title: About us
-  content: |-
+  content:
     We believe, that our strategy will revolutionize the way agencies work, and together with the newest business strategies and our scalable resources, we can match any project that you might have in mind.
-
+    <br/><br/>
     **What We Do ?**
-
+    <br/><br/>
     Head over to our Case Studies to find our portfolio, or contact us right away for a free 15-minute consultation.
   bullet_point:
   - Business Consulting
