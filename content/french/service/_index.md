@@ -1,10 +1,12 @@
 ---
-title: "Service"
-date: 2018-07-12T18:19:33+06:00
-bg_image: images/background/page-title.jpg
-description : "This is meta description"
+title: Service
+date: '2018-07-12T18:19:33.000+06:00'
+bg_image: "/images/our-company.webp"
+description: This is meta description
+
 ---
+## Our Services
 
-## Our Best Services
+Check out our services below, or have a look at our portfolio.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+Do you already have an idea of what you need? Head over to Contact and get a free 15-minute consultation!
