@@ -1,19 +1,30 @@
 ###################################### philosophy ####################################
 philosophy:
   enable : true
-  subtitle : Know About
-  title : Our Philosophy
-  content : Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor didunt laboris nisi ut aliquip ex commodo consequat. duis aute irure dolor in reprehenderivoluptate velit esse cillum dolore fugiat nulla pariatur.Excepteur sint ocaecat cupidatat noproident sunt culpa qui officia deserunt mollit anim id est laborum.<br> Sed perspiciatis unde omnisiste natus error sit voluptatem accusantium.doloremque ladantium totam rem aperieaque ipsa quae ab illo inventore.veritatis. et quasi architecto beatae vitae dicta sunt explicabo.
-  image : images/about/philosophy.jpg
+  subtitle : Meet Our
+  title : Brand New Solution
+  content :
+    <strong>Cloud, Big-Data, AI</strong>.</br>
+    We believe in <strong>QUALITY</strong></br>
+    We believe in <strong>SPEED</strong></br>
+    We believe in <strong>TECHNOLOGY</strong></br>
+    </br>
+    In Gründung / Currently in the pre-founding stage!
+    </br>
+    Inhaber Justin Güse
+    </br>
+    Es werden noch keine Dienste oder Services angeboten, sowie keine Werbung geschaltet. Diese Webseite ist derzeit in der Entwicklungsumgebung, und symbolisiert noch kein gestartetes Unternehmen. Es dient rein zur Informationsdarlegung und Testung der Webseite.
+
+  image : images/business-chairs-company-coworking-7070.jpg
 
 ###################################### ceo ########################################
 ceo:
   enable : true
-  bg_image : images/about/ceo.jpg
-  title : We are efficient to <br> make your business rise
-  content : Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor didunt laboris nisi ut aliquip ex commodo consequat. duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore fugiat nulla pariatur.Excepteur sint ocaecat cupidatat non proident sunt culpa qui officia deserunt mollit anim id est laborum.
+  bg_image : images/fotojustinguese.webp
+  title : Only trust the best.
+  content : I, Justin Güse, am the founder of Datafortress.cloud. After working for Porsche Holding in an innovation/data science division, where I developed many projects ranging from Big Data to Virtual Reality (see portfolio), I decided to found my own company. During my time at Porsche, I observed that many agencies or consultants do not have the main goal to satisfy their clients’ needs as the main priority, but rather how to achieve the minimal needed tasks in the shortest amount of time.
   signature : images/about/ceo-signature.png
-  name : John Doe
+  name : Justin Güse
   designation : CEO
 
 ########################################### Mission ###################################
@@ -22,25 +33,25 @@ mission:
   # mission content comes from "data/*/homepage.yml" file
 
 ###################################### funfacts ####################################
-funfacts: 
+funfacts:
   enable : true
   bg_image : images/background/cta.jpg
   counter:
     - title : Projects Done
       icon : ti-server # themify icon pack : https://themify.me/themify-icons
       count : 230
-      
+
     - title : Satisfied Clients
       icon : ti-face-smile # themify icon pack : https://themify.me/themify-icons
-      count : 789
-      
-    - title : Cup Of Coffee
+      count : 73
+
+    - title : Cups Of Coffee
       icon : ti-thumb-up # themify icon pack : https://themify.me/themify-icons
       count : 580
-      
-    - title : Awards Win
+
+    - title : Awards Won
       icon : ti-cup # themify icon pack : https://themify.me/themify-icons
-      count : 130
+      count : 2
 
 ########################################### skill ###################################
 skill:

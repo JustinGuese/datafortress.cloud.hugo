@@ -1,54 +1,54 @@
 - id: nav_button
-  translation: get a quote
+  translation: Kontakt
 - id: service_subtitle
-  translation: Best Service
+  translation: Der beste Service
 - id: service_title
-  translation: Service We Provide
+  translation: Leistungen die wir anbieten
 - id: project_subtitle
-  translation: Our Works
+  translation: Unser Portfolio
 - id: project_title
-  translation: Latest Projects
+  translation: Use Cases
 - id: blog_subtitle
-  translation: Latest News
+  translation: News
 - id: blog_title
-  translation: Company News
+  translation: News
 - id: services
-  translation: Services
+  translation: Leistungen
 - id: quick_links
-  translation: Quick Links
+  translation: Übersicht
 - id: contact_us
-  translation: Contact Us
+  translation: Kontaktieren Sie uns
 - id: contact_form
-  translation: Contact Form
+  translation: Kontaktformular
 - id: submit
-  translation: Submit
+  translation: Abschicken
 - id: buy_now
-  translation: Buy Now
+  translation: Jetzt kaufen
 - id: service_brochure
-  translation: Service Brochure
+  translation: Leistungsübersicht
 - id: download_pdf
   translation: Download pdf
 - id: opening_hours
-  translation: Opening Hours
+  translation: Öffnungszeiten
 - id: contact_info
-  translation: Contact Information
+  translation: Kontaktinformationen
 - id: follow_on_social
-  translation: Follow on Social
+  translation: Folge uns auf den Social-Netzwerken
 - id: cv
   translation: Professional CV
 - id: overview
-  translation: Overview
+  translation: Übersicht
 - id: project_name
-  translation: Project Name
+  translation: Projektname
 - id: live_demo
-  translation: Watch Live Demo
+  translation: Live Demo
 - id: case_study
-  translation: Complete Case Study
+  translation: Komplette Case Study
 - id: free_consultation
-  translation: Request Free Consultation
+  translation: Fragen Sie eine gratis Beratung an
 - id: all
-  translation: All
+  translation: Alle
 - id: posted_by
-  translation: Posted By
+  translation: Veröffentlicht von
 - id: share
-  translation: Share
+  translation: Teilen
