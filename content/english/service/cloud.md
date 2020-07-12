@@ -5,11 +5,9 @@ description: This is meta description
 image: "/images/interior-of-office-building-325229-300x105.jpg"
 bg_image: "/images/interior-of-office-building-325229-300x105.jpg"
 icon: ti-cloud
-brochure: "#"
+brochure: ""
 regularDay: Mon-Fri
 regularTime: '08.00am - 06.00pm'
-halfDay: ''
-halfTime: ''
 offDay: Sat, Su
 
 ---

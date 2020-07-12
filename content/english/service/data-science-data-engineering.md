@@ -5,7 +5,7 @@ description: Data Science & Engineering
 image: "/images/coding-computer-data-depth-of-field-577585-scaled.jpg"
 bg_image: "/images/coding-computer-data-depth-of-field-577585-300x225.jpg"
 icon: ti-bar-chart
-brochure: "#"
+brochure: ""
 regularDay: Mon-Fri
 regularTime: '08.00am - 06.00pm'
 halfDay: ''

@@ -5,11 +5,8 @@ description: Make Your Business Ambitions a Reality
 image: images/service/service-4.jpg
 bg_image: images/background/page-title.jpg
 icon: ti-bar-chart
-brochure: ''
 regularDay: Mon-Fri
 regularTime: '08.00am - 06.00pm'
-halfDay: ''
-halfTime: ''
 offDay: Sat, Su
 
 ---
