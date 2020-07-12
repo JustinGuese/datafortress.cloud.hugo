@@ -2,8 +2,8 @@
 title: 'Website: Porsche AR Viewer'
 date: '2018-09-24T14:48:03.000+06:00'
 description: This is meta description
-bg_image: "/images/annotation-2020-04-06-145542-768x682.png"
-image: "/images/annotation-2020-04-06-145542-768x682.png"
+bg_image: "/images/annotation-2020-04-06-145542-768x682.webp"
+image: "/images/annotation-2020-04-06-145542-768x682.webp"
 live_demo: ''
 case_study: ''
 category: Augmented Reality

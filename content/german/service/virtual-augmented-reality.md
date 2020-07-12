@@ -2,8 +2,8 @@
 title: Virtual & Augmented Reality
 date: '2018-09-29T11:51:17.000+06:00'
 description: Virtual and Augmented Reality
-image: "/images/woman-using-virtual-reality-headset-3861440-300x200-1200x675.jpg"
-bg_image: "/images/woman-using-virtual-reality-headset-3861440-300x200-1200x675.jpg"
+image: "/images/woman-using-virtual-reality-headset-3861440-300x200-1200x675.webp"
+bg_image: "/images/woman-using-virtual-reality-headset-3861440-300x200-1200x675.webp"
 icon: ti-thought
 brochure: ''
 regularDay: Mon-Fri
@@ -34,7 +34,7 @@ But what makes Augmented Reality and Virtual Reality so interesting?
 
 <br>
 
-![](/images/vr.png)  
+![](/images/vr.webp)  
 Virtual reality (VR) is a simulated experience that can be similar to or completely different from the real world. Applications of virtual reality can include entertainment (i.e. video games) and educational purposes (i.e. medical or military training). ([Wikipedia](https://en.wikipedia.org/wiki/Virtual_reality?oldformat=true))
 
 <br>
@@ -43,7 +43,7 @@ Virtual reality (VR) is a simulated experience that can be similar to or complet
 
 <br>
 
-![](/images/augmented-reality.png)  
+![](/images/augmented-reality.webp)  
 Augmented reality (AR) is an interactive experience of a real-world environment where the objects that reside in the real world are enhanced by computer-generated perceptual information. ([Wikipedia](https://en.wikipedia.org/wiki/Augmented_reality?oldformat=true))
 
 <br><br>
@@ -88,7 +88,7 @@ No matter if you are planning a specific project or you are just trying to infor
 
 <br>
 
-![](/images/vr-1.png)
+![](/images/vr-1.webp)
 
 In the past, we produced several virtual reality applications, like a virtual reality racing simulator or a used car experience (see portfolio for further information).
 
@@ -114,7 +114,7 @@ Our VR projects include:
 
 <br>
 
-![](/images/arr.png)
+![](/images/arr.webp)
 
 Augmented Reality offers a new way to bring virtual experiences to the broad mass. Of course, current VR headsets offer a higher quality experience, but only a few handfuls of people own a VR-headset, therefore limiting the expose to VR content. Depending on the use-case it might make more sense to prefer Augmented Reality because almost everyone owns a smartphone that can display AR experiences. Furthermore, some users experience a feeling of discomfort when wearing virtual reality glasses, therefore making the AR experience more comfortable for that group of users, because an environment that they know is getting augmented instead of them being transferred into a completely new world.
 
@@ -141,7 +141,7 @@ Augmented Reality offers a new way to bring virtual experiences to the broad mas
 ### 3. Data Augmentation
 
 <br>  
-![](/images/aug.png)
+![](/images/aug.webp)
 
 Data is becoming more and more important. Therefore it is becoming increasingly relevant to improve data presentation. Numbers alone are not sufficient enough, the audience needs to understand them as well. This is where data augmentation comes into play, describing a way to utilize virtual and augmented reality to enrich data and present it in a completely new way, setting it apart from PowerPoint presentations.
 
@@ -160,7 +160,7 @@ Data is becoming more and more important. Therefore it is becoming increasingly 
 
 <br>
 
-![](/images/vrsim.png)  
+![](/images/vrsim.webp)  
 Virtual/Augmented Reality simulators offer a great way to train processes that are expensive or dangerous in the real world in a safe environment. Depending on the use case these experiences can be focused on being educative or entertaining, both making traditional training methods more memorable and effective. Save yourself expensive equipment and train your staff with hands-on experience that will remain way more memorable than traditional presentations.
 
 **Our simulator services include:**

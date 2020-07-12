@@ -2,8 +2,8 @@
 title: Cloud
 date: '2018-09-29T11:54:02.000+06:00'
 description: This is meta description
-image: "/images/interior-of-office-building-325229-300x105.jpg"
-bg_image: "/images/interior-of-office-building-325229-300x105.jpg"
+image: "/images/interior-of-office-building-325229-300x105.webp"
+bg_image: "/images/interior-of-office-building-325229-300x105.webp"
 icon: ti-cloud
 brochure: ""
 regularDay: Mon-Fri
@@ -35,7 +35,7 @@ Cloud computing is the transition of traditional on-premise infrastructure to a 
 
 <br>
 
-![](/images/annotation-2020-07-07-133825.png)
+![](/images/annotation-2020-07-07-133825.webp)
 
 <br>
 
@@ -48,7 +48,7 @@ Old business models are changing and need to be transferred to the digital world
 
 <br>
 
-![](/images/annotation-2020-07-07-134349.png)
+![](/images/annotation-2020-07-07-134349.webp)
 
 <br>
 
@@ -60,7 +60,7 @@ Together with the aforementioned point, reducing downtimes of your services incl
 
 <br>
 
-![](/images/serverless.png)
+![](/images/serverless.webp)
 
 <br>
 
@@ -72,7 +72,7 @@ Of course, the most simple step would be to transition the on-premise system as 
 
 <br>
 
-![](/images/scaling.png)
+![](/images/scaling.webp)
 
 <br>
 
@@ -84,7 +84,7 @@ Another huge benefit weighing in is scaling. Let us take Black Friday as an exam
 
 <br>
 
-![](/images/security.png)
+![](/images/security.webp)
 
 <br>
 

@@ -2,8 +2,8 @@
 title: Cloud Big Data Analytics
 date: '2018-09-24T14:48:03.000+06:00'
 description: This is meta description
-bg_image: "/images/porsche-cloud-bigdataanalytics-768x387.png"
-image: "/images/porsche-cloud-bigdataanalytics-768x387.png"
+bg_image: "/images/porsche-cloud-bigdataanalytics-768x387.webp"
+image: "/images/porsche-cloud-bigdataanalytics-768x387.webp"
 live_demo: ''
 case_study: ''
 category: Big Data

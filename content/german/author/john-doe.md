@@ -1,7 +1,7 @@
 ---
 title: Justin Guese
 email: info@datafortress.cloud
-image: "/images/fotojustinguese.png"
+image: "/images/fotojustinguese.webp"
 social:
 - icon: ti-wand
   link: https://www.kaggle.com/guesejustin

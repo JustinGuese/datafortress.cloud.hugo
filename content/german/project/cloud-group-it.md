@@ -2,8 +2,8 @@
 title: GroupIT Website
 date: '2018-09-24T14:48:03.000+06:00'
 description: This is meta description
-bg_image: "/images/images-300x68.png"
-image: "/images/images-300x68.png"
+bg_image: "/images/images-300x68.webp"
+image: "/images/images-300x68.webp"
 live_demo: ''
 case_study: ''
 category: Cloud

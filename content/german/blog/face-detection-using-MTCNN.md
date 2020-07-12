@@ -1,11 +1,11 @@
 ---
 title: Face Detection using MTCNN
-bg_image: "/images/index2-1-1280x720.png"
+bg_image: "/images/index2-1-1280x720.webp"
 date: 2020-06-08T07:10:46+02:00
 author: Justin Guese
 description: Face Detection using MTCNN – a guide for face extraction with a focus
   on speed
-image: "/images/index2-1-1280x720.png"
+image: "/images/index2-1-1280x720.webp"
 categories:
 - Computer Vision
 - Big Data
@@ -66,7 +66,7 @@ Afterwards, we are ready to load out test image using the matplotlib [imread fun
 
     import matplotlib.pyplot as plt
     # load image from file
-    filename = "glediston-bastos-ZtmmR9D_2tA-unsplash.jpg"
+    filename = "glediston-bastos-ZtmmR9D_2tA-unsplash.webp"
     pixels = plt.imread(filename)
     print("Shape of image/array:",pixels.shape)
     imgplot = plt.imshow(pixels)
@@ -110,7 +110,7 @@ To demonstrate this even better let us draw a box around the face using matplotl
     # show the plot
     plt.show()
     
-    # filename = 'test1.jpg' # filename is defined above, otherwise uncomment
+    # filename = 'test1.webp' # filename is defined above, otherwise uncomment
     # load image from file
     # pixels = plt.imread(filename) # defined above, otherwise uncomment
     # detector is defined above, otherwise uncomment
@@ -120,7 +120,7 @@ To demonstrate this even better let us draw a box around the face using matplotl
     # display faces on the original image
     draw_facebox(filename, faces)
 
-![](/images/index-1-150x150.png)
+![](/images/index-1-150x150.webp)
 
 <br>
 
@@ -165,7 +165,7 @@ With the full code from above looking like this:
     # show the plot
     plt.show()
     
-    # filename = 'test1.jpg' # filename is defined above, otherwise uncomment
+    # filename = 'test1.webp' # filename is defined above, otherwise uncomment
     # load image from file
     # pixels = plt.imread(filename) # defined above, otherwise uncomment
     # detector is defined above, otherwise uncomment
@@ -175,7 +175,7 @@ With the full code from above looking like this:
     # display faces on the original image
     draw_facebox(filename, faces)
 
-![](/images/index2-150x150.png)
+![](/images/index2-150x150.webp)
 
 <br>
 
@@ -208,7 +208,7 @@ Once installed we will do the necessary imports as follows:
     
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-    filenames = ["glediston-bastos-ZtmmR9D_2tA-unsplash.jpg","glediston-bastos-ZtmmR9D_2tA-unsplash.jpg"]
+    filenames = ["glediston-bastos-ZtmmR9D_2tA-unsplash.webp","glediston-bastos-ZtmmR9D_2tA-unsplash.webp"]
 
 See how we defined the device in the code above? You will be able to run everything on a CPU as well if you do not want or can set up CUDA.
 
@@ -264,6 +264,6 @@ And finally, let us run the face extraction script:
     
     run_detection(fast_mtcnn, filenames)
 
-![](/images/teslap100frames.png)
+![](/images/teslap100frames.webp)
 
 The above image shows the output of the code running on an NVIDIA Tesla P100, so depending on the source material, GPU and processor you might experience better or worse performance.

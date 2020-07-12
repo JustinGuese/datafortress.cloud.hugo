@@ -2,8 +2,8 @@
 title: Business Consulting
 date: '2018-09-25T15:51:35.000+06:00'
 description: Make Your Business Ambitions a Reality
-image: images/service/service-4.jpg
-bg_image: images/background/page-title.jpg
+image: images/service/service-4.webp
+bg_image: images/background/page-title.webp
 icon: ti-bar-chart
 regularDay: Mon-Fri
 regularTime: '08.00am - 06.00pm'
@@ -19,7 +19,7 @@ As a business owner, you might be thinking about how you could enhance, or speed
 
 <br>
 
-![](https://www.datafortress.cloud/wp-content/uploads/2018/02/Business-Ambitions-1.jpg =817x318)
+
 
 <br>
 
@@ -37,7 +37,7 @@ This process can be summarized into three simple steps, that are constantly runn
 
 <br>
 
-![](/images/leanstartup.png)
+![](/images/leanstartup.webp)
 
 <br>
 
@@ -45,7 +45,7 @@ This process can be summarized into three simple steps, that are constantly runn
 
 <br>
 
-![](/images/bulb-1.png)
+![](/images/bulb-1.webp)
 
 What are new ways that your business could try? Are there hidden opportunities? New demographics? Should an area in your business be decreased in favour of another? The goal of this step is to formulate a goal or specific idea that will be tested in the next steps.
 
@@ -55,7 +55,7 @@ What are new ways that your business could try? Are there hidden opportunities? 
 
 <br>
 
-![](/images/creators.png)
+![](/images/creators.webp)
 
 The goal of a lean company is to stay flexible and try the ideas formulated beforehand as fast as possible. Measure the progress on the way.
 
@@ -65,7 +65,7 @@ The goal of a lean company is to stay flexible and try the ideas formulated befo
 
 <br>
 
-![](/images/business-1.png)  
+![](/images/business-1.webp)  
 In this step, the data gathered before is analyzed, and if your measured value statistically significantly increased, the new feature is implemented and new ideas on top of this feature are generated (step 1).  
 Finally, the process starts again from the beginning.
 
@@ -79,7 +79,7 @@ Finally, the process starts again from the beginning.
 
 <br>
 
-![](/images/analytics.png)
+![](/images/analytics.webp)
 
 We are a technology leader, meaning we constantly research and implement state-of-the-art tools. Avoid making the wrong choice and learn how to engage customers in turbulent new times.  
 Old business models are changing and need to be transferred to the digital world. Save yourself the trouble and connect with an expert.
@@ -90,7 +90,7 @@ Old business models are changing and need to be transferred to the digital world
 
 <br>
 
-![](/images/customer-experience.png)
+![](/images/customer-experience.webp)
 
 Customer Experience is becoming more and more important. The modern customer most likely researched your business online before contacting you, and sales are increasingly taking place in the online world.
 
@@ -102,7 +102,7 @@ Your goal is to reach the customer long before seeing him face-to-face.
 
 <br>
 
-![](/images/efficiency.png)
+![](/images/efficiency.webp)
 
 > _“Without big data, you are blind and deaf and in the middle of a freeway.”_
 

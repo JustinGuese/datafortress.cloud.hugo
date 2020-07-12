@@ -4,7 +4,7 @@ date: '2018-09-29T14:42:51.000+06:00'
 description: This is meta description
 designation: CEO
 image: "/images/fotojustinguese.webp"
-bg_image: images/background/page-title.jpg
+bg_image: images/background/page-title.webp
 cv: ''
 bio: Justin Güse is the CEO of DataFortress.cloud. Starting his self-employment at
   a young age, he created multiple e-commerce websites, published a book, and finally

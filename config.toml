@@ -87,8 +87,8 @@ author = "DataFortress.cloud"
 contact_form_action = "https://formspree.io/mknvkdpr"
 description = "VR, Big-Data and Cloud for your Business."
 google_analitycs_id = "UA-56269619-17"
-logo = "images/logo.png"
-logo_white = "images/logo.png"
+logo = "images/logo.webp"
+logo_white = "images/logo.webp"
 mail = "info@datafortress.cloud"
 mailchimp_form_action = "https://cloud.us19.list-manage.com/subscribe/post?u=29b9af4020a7ab7d1e6a76d72&amp;id=3622b2a9a6"
 mailchimp_form_name = "mc-embedded-subscribe-form"
@@ -98,7 +98,7 @@ enable = false
 gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
 map_latitude = "48.183860"
 map_longitude = "16.321450"
-map_marker = "images/marker.png"
+map_marker = "images/marker.webp"
 [params.nav_button]
 enable = true
 link = "contact"
@@ -131,22 +131,22 @@ enable = false
 preloader = "images/preloader.gif"
 [[params.clients_logo_slider]]
 link = "#"
-logo = "images/client-logo/client-logo-1.png"
+logo = "images/client-logo/client-logo-1.webp"
 [[params.clients_logo_slider]]
 link = "https://examplesite.com"
-logo = "images/client-logo/client-logo-2.png"
+logo = "images/client-logo/client-logo-2.webp"
 [[params.clients_logo_slider]]
 link = "#"
-logo = "images/client-logo/client-logo-3.png"
+logo = "images/client-logo/client-logo-3.webp"
 [[params.clients_logo_slider]]
 link = "https://examplesite.com"
-logo = "images/client-logo/client-logo-4.png"
+logo = "images/client-logo/client-logo-4.webp"
 [[params.clients_logo_slider]]
 link = "#"
-logo = "images/client-logo/client-logo-5.png"
+logo = "images/client-logo/client-logo-5.webp"
 [[params.clients_logo_slider]]
 link = "https://examplesite.com"
-logo = "images/client-logo/client-logo-3.png"
+logo = "images/client-logo/client-logo-3.webp"
 [[params.contacts]]
 icon = "ti-mobile"
 [[params.contacts.contact]]

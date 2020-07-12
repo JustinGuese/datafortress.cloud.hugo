@@ -2,7 +2,7 @@
 slider:
   enable: true
   slider_Item:
-  - bg_image: "/images/light-bulb-on-white-panel-1166643-min.jpg"
+  - bg_image: "/images/light-bulb-on-white-panel-1166643-min.webp"
     animation_from: left
     subtitle: Wir sprechen
     title: Innovation
@@ -13,7 +13,7 @@ slider:
       enable: true
       label: Mehr...
       link: about
-  - bg_image: "/images/person-in-white-long-sleeve-shirt-holding-tablet-computer-3740250-min.jpg"
+  - bg_image: "/images/person-in-white-long-sleeve-shirt-holding-tablet-computer-3740250-min.webp"
     animation_from: up
     subtitle: Datengetriebenes
     title: Business Consulting
@@ -25,7 +25,7 @@ slider:
       enable: true
       label: Mehr...
       link: about
-  - bg_image: "/images/white-ceramic-mug-beside-spiral-notebook-and-laptop-3773413-min.jpg"
+  - bg_image: "/images/white-ceramic-mug-beside-spiral-notebook-and-laptop-3773413-min.webp"
     animation_from: down
     subtitle: Konzentrieren Sie Ihre Anstrengungen auf ihr
     title: Kern-Business
@@ -36,7 +36,7 @@ slider:
       enable: true
       label: Mehr...
       link: about
-  - bg_image: "/images/black-drone-916015-min.jpg"
+  - bg_image: "/images/black-drone-916015-min.webp"
     animation_from: right
     subtitle: Wir sind Ihr Partner für
     title: Cloud, Big-Data, AI
@@ -54,7 +54,7 @@ service:
   enable: true
 about:
   enable: true
-  bg_image: images/background/about-bg.jpg
+  bg_image: images/background/about-bg.webp
   title: Über uns
   content:
     Wir glauben, dass unsere Strategie die Arbeitsweise der Agenturen revolutionieren wird, und zusammen mit den neuesten Geschäftsstrategien und unseren skalierbaren Ressourcen können wir jedes Projekt, das Ihnen vorschwebt, umsetzen.
@@ -134,14 +134,14 @@ mission:
 promo_video:
   enable: false
   title: We Are Alawys <br> Comited
-  bg_image: images/background/promo-video.jpg
+  bg_image: images/background/promo-video.webp
   video_URL: https://www.youtube.com/watch?v=jrkvirglgaQ
   video_title: Lorem ipsum dolor <br> sit amet con.
 testimonial:
   enable: true
   subtitle: Kundenmeinungen
   title: Was unsere Kunden sagen
-  image: images/client.png
+  image: images/client.webp
   testimonial_item:
   - name: Markus
     content: Ich arbeitete mit Justin für 8 Monate im Produktinnovationsprojekt zusammen, er ist ein authentische Person mit großartigen Ideen. Es war immer leicht, mit ihm zu arbeiten, gibt er und erhält sehr gute Kritiken, er hatte eine große Affinität zu jedem im Team, was es immer besser und produktiver macht, mit ihnen zu arbeiten. Als unser IT-Mann könnte er alle Probleme lösen, auch wenn er mehr arbeiten musste als erwartet. Wir haben die Gemeinsame Abschlussgala, es war mir ein Vergnügen, diese Präsentation zu halten und mit ihm zusammenarbeiten. Ich würde ihn für jede Arbeit oder Partnerschaft empfehlen.
@@ -151,7 +151,7 @@ testimonial:
     designation: Happy Clients
 cta:
   enable: true
-  bg_image: images/background/cta.jpg
+  bg_image: images/background/cta.webp
   title: DataFortress.cloud ist ihr Partner für technisch hochwertige, skalierbare Lösungen.
   button:
     enable: true

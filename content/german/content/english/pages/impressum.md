@@ -2,7 +2,7 @@
 title: "Impressum"
 date: 2020-07-12T17:02:17+02:00
 draft: false
-image: "/images/legal.jpg"
+image: "/images/legal.webp"
 ---
 Auf der Suche nach den Datenschutzbestimmungen? (Link)
 

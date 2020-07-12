@@ -1,10 +1,10 @@
 ---
 title: Top 6 best Cloud Storage services – Free, Paid and for Businesses
-bg_image: "/images/silver-hard-drive-interals-33278-1200x675.jpg"
+bg_image: "/images/silver-hard-drive-interals-33278-1200x675.webp"
 date: 2020-06-08T00:00:00+02:00
 description: Top 6 best Cloud Storage services – Free, Paid and for Businesses
 author: Justin Guese
-image: "/images/silver-hard-drive-interals-33278-1200x675.jpg"
+image: "/images/silver-hard-drive-interals-33278-1200x675.webp"
 categories:
 - Business
 - Cloud
@@ -43,7 +43,7 @@ Anyways, our personal free Cloud Storage list goes as follows:
 
 ### [No. 1 – pCloud – Best (Free) Private Cloud Storages](https://partner.pcloud.com/r/22225)
 
-### ![](/images/pcloud-150x150.jpg)
+### ![](/images/pcloud-150x150.webp)
 
 ### 
 
@@ -84,7 +84,7 @@ pCloud might be an entry you have not heard before, which is good because like I
 
 ### [No. 2 – Google Drive – Best (Free) Private Cloud Storages](https://www.google.com/drive/)
 
-![](/images/google_drive_logo-150x150.png)
+![](/images/google_drive_logo-150x150.webp)
 
 Google Drive is our number one selection for free cloud storage. It is available on many platforms and devices, offers 15 GB of free storage, and is amazingly fast. Furthermore, it offers many third-party applications to collaborate on data, and add almost any functionality you can think of.
 
@@ -125,7 +125,7 @@ Google Drive is our number one selection for free cloud storage. It is available
 
 ### [No. 3 – Dropbox – Best (Free) Private Cloud Storages](https://www.dropbox.com/)
 
-![](/images/dropbox-150x150.png)
+![](/images/dropbox-150x150.webp)
 
 I guess everyone heard of Dropbox. The company laid a special focus on file synchronization, making it the service that avoids synchronization issues the best. Also, it has good integration into almost every operating system and is, therefore, the perfect set and forget solution. The problem? It is expensive and the free data is limited to 2GB only.
 
@@ -161,7 +161,7 @@ I guess everyone heard of Dropbox. The company laid a special focus on file sync
 
 ### [No. 4 – Microsoft OneDrive – Best (Free) Private Cloud Storages](https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage)
 
-![](/images/onedrive-150x150.png)
+![](/images/onedrive-150x150.webp)
 
 OneDrive is automatically installed if you are using Microsoft Windows, which is [likely you are.](https://en.wikipedia.org/wiki/Usage_share_of_operating_systems?oldformat=true) It is nicely integrated into Office 365, meaning you can easily share, edit and save data inbetween your OneNote Notebook, Outlook E-mail and others. Using additional apps you are able to do almost anything with it. You are already using Office 365 and Windows 10? Then search no further, you will receive 1 TB free storage and will have anything you need. Still remember that Microsoft had some [privacy issues in the past, like handing over encrypted data to the NSA.](https://www.theguardian.com/world/2013/jul/11/microsoft-nsa-collaboration-user-data)
 

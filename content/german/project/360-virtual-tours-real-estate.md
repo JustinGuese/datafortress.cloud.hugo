@@ -1,9 +1,9 @@
 +++
-bg_image = "/images/earth-wallpaper-2217658-300x184.jpg"
+bg_image = "/images/earth-wallpaper-2217658-300x184.webp"
 case_study = ""
 category = "Virtual Reality"
 description = ""
-image = "/images/earth-wallpaper-2217658-300x184.jpg"
+image = "/images/earth-wallpaper-2217658-300x184.webp"
 live_demo = ""
 title = "360° Virtual Tours – Real Estate"
 [[overview]]

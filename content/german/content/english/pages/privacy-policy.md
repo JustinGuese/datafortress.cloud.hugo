@@ -2,7 +2,7 @@
 title: "Privacy Policy"
 date: 2020-07-12T17:02:17+02:00
 draft: false
-image: "/images/legal.jpg"
+image: "/images/legal.webp"
 ---
 Privacy Policy
 We are very delighted that you have shown interest in our enterprise. Data protection is of a particularly high priority for the management of the DataFortress.cloud. The use of the Internet pages of the DataFortress.cloud is possible without any indication of personal data; however, if a data subject wants to use special enterprise services via our website, processing of personal data could become necessary. If the processing of personal data is necessary and there is no statutory basis for such processing, we generally obtain consent from the data subject.

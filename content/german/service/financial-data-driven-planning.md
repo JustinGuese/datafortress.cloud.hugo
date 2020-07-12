@@ -4,8 +4,8 @@ date: '2018-09-29T11:51:17.000+06:00'
 description: Nowadays people become to understand the importance of data for their
   business. The only problem is, that many companies are overwhelmed by the amount
   of it, or do not have the time or resources to take a deep-dive into the data.
-image: images/service/service-6.jpg
-bg_image: images/background/page-title.jpg
+image: images/service/service-6.webp
+bg_image: images/background/page-title.webp
 icon: ti-image
 brochure: ''
 regularDay: Mon-Fri

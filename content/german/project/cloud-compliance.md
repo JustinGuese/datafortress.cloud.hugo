@@ -2,8 +2,8 @@
 title: Cloud Compliance
 date: '2018-09-24T14:48:03.000+06:00'
 description: This is meta description
-bg_image: "/images/activity-board-game-connection-desk-613508-300x200.jpg"
-image: "/images/activity-board-game-connection-desk-613508-300x200.jpg"
+bg_image: "/images/activity-board-game-connection-desk-613508-300x200.webp"
+image: "/images/activity-board-game-connection-desk-613508-300x200.webp"
 live_demo: ''
 case_study: ''
 category: Cloud

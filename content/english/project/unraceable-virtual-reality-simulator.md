@@ -1,9 +1,9 @@
 +++
-bg_image = "/images/img_1286-768x576.jpg"
+bg_image = "/images/img_1286-768x576.webp"
 case_study = ""
 category = "Virtual Reality"
 description = ""
-image = "/images/img_1286-768x576.jpg"
+image = "/images/img_1286-768x576.webp"
 live_demo = ""
 title = "#unraceable Virtual Reality Simulator"
 [[overview]]
@@ -49,18 +49,18 @@ This poses a huge problem, as traditional trackers are irritated by the motion s
 At the final fair, #unraceable has been a great success and offered the production of several other milestones.  
 In the following year, it even appeared in a modified version at the worldwide “Formula E” traveling around the globe together with team “Audi Sport ABT”.
 
-![](/images/img_1286-768x576.jpg)
+![](/images/img_1286-768x576.webp)
 
 ##### Milestone 2: #unraceable App and Quattro-Challenge
 
 The previous success allowed for further development of the project and an App should be produced to reach a broader mass. The idea has been, that four skiing stars (Quattro, like the “Audi Quattro”) should each build a track, which was then to be raced by gamers around the globe, with the final winner winning an Audi A1 for a year.
 
-![](/images/9f01d087dae1e9abb8a2f8c125c7329a-768x555.jpg)
+![](/images/9f01d087dae1e9abb8a2f8c125c7329a-768x555.webp)
 
 The track should be both playable on the simulator, as well as the app itself. Several changes were needed to achieve this, especially porting a high-quality VR game to a mobile game which only allows for limited resources. Several anti-cheat mechanisms had to be implemented, and new data privacy challenges had to be solved. In the end, the app had been downloaded more than 30’000 times reaching a review of 4,3/5 stars.  
 As a link to the car configurator of Audi had been integrated into the game, an enormous conversion rate has been achieved as almost 50% of gamers opened the car configurator at least once.
 
-![](/images/img_3777-768x432.png)
+![](/images/img_3777-768x432.webp)
 
 [Link: Download the App](https://www.audi.at/audi-erleben/unraceable)
 

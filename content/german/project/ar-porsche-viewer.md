@@ -2,8 +2,8 @@
 title: Porsche AR Viewer
 date: '2018-09-24T14:48:03.000+06:00'
 description: This is meta description
-bg_image: "/images/discovar-ar-viewer-300x151.png"
-image: "/images/discovar-ar-viewer-300x151.png"
+bg_image: "/images/discovar-ar-viewer-300x151.webp"
+image: "/images/discovar-ar-viewer-300x151.webp"
 live_demo: ''
 case_study: ''
 category: Augmented Reality

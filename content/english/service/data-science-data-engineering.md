@@ -2,8 +2,8 @@
 title: Data Science and Data Engineering
 date: '2018-09-29T11:54:02.000+06:00'
 description: Data Science & Engineering
-image: "/images/coding-computer-data-depth-of-field-577585-scaled.jpg"
-bg_image: "/images/coding-computer-data-depth-of-field-577585-300x225.jpg"
+image: "/images/coding-computer-data-depth-of-field-577585-scaled.webp"
+bg_image: "/images/coding-computer-data-depth-of-field-577585-300x225.webp"
 icon: ti-bar-chart
 brochure: ""
 regularDay: Mon-Fri
@@ -54,7 +54,7 @@ Both techniques and approaches to deal with this massive amount of data can be s
 
 Data Engineering on the other hand deals with the technical background for a Data Scientist to work. This includes for example optimizing or deploying databases, special Big Data Frameworks, process optimization, or data preprocessing as well.<br><br>
 
-![](https://www.datafortress.cloud/wp-content/uploads/2020/04/black-samsung-tablet-computer-106344-1-scaled.jpg =1024x684)
+
 
 <br>
 
@@ -62,7 +62,7 @@ Data Engineering on the other hand deals with the technical background for a Dat
 
 Data science is a “concept to unify statistics, data analysis, machine learning, and their related methods” in order to “understand and analyze actual phenomena” with data. [\[2\]](https://www.springer.com/de/book/9784431702085)
 
-![](https://www.datafortress.cloud/wp-content/uploads/2020/04/woman-standing-while-carrying-laptop-1181354-scaled.jpg =1024x684)
+
 
 #### DATA ENGINEERING
 
