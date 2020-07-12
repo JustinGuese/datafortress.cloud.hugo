@@ -9,13 +9,13 @@ case_study: ''
 category: Cloud
 overview:
 - label: Client
-  data: Baximco Ltd.
+  data: Whilst working at Porsche Holding
 - label: Category
-  data: Market Strategy
+  data: Cloud
 - label: Expertise
-  data: Mobile App
+  data: Cloud Law
 - label: Date
-  data: 22 nov, 2019
+  data: 2019
 
 ---
 Whilst working at my former company, we decided to implement some processes in the Cloud.  

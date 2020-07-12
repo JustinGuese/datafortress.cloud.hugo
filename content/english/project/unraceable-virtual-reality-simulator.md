@@ -7,11 +7,11 @@ image = "/images/img_1286-768x576.jpg"
 live_demo = ""
 title = "#unraceable Virtual Reality Simulator"
 [[overview]]
-info = ""
 label = "Client"
+data = "Whilst working at Porsche Holding"
 [[overview]]
-info = ""
 label = "Time"
+data = "2016-2019"
 
 +++
 Unraceable is the name of a **virtual reality motionseat** project and **App** that I managed for three years.  

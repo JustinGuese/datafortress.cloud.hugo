@@ -13,15 +13,15 @@ bio: Justin Güse is the CEO of DataFortress.cloud. Starting his self-employment
 information:
 - label: Projects Done
   icon: ti-notepad
-  data: 32
+  data: 142
   info: "1120"
 - label: Success Rate
   icon: ti-medall
-  data: 96%
+  data: 99%
   info: "99"
 - label: Experience Of
   icon: ti-flag-alt
-  data: 13 Years
+  data: 8 Years
   info: "10"
 contacts:
 - icon: ti-mobile

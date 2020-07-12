@@ -7,11 +7,12 @@ image = "/images/earth-wallpaper-2217658-300x184.jpg"
 live_demo = ""
 title = "360° Virtual Tours – Real Estate"
 [[overview]]
-info = ""
 label = "Client"
+data = "Whilst working at Porsche Holding"
 [[overview]]
-info = ""
 label = "Time"
+data = "2016-2019"
+
 
 +++
 In the spring of 2016, I offered Virtual Tours for Holiday Houses, with a focus on 360 degree and drone aerial photography. Holiday Houses, Hostels and retail agencies struggle with an effective way to portray their real estate online or catch the attention of a potential client.  

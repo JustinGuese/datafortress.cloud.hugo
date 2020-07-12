@@ -9,13 +9,13 @@ case_study: ''
 category: Big Data
 overview:
 - label: Client
-  data: Baximco Ltd.
+  data: Whilst working at Porsche Holding
 - label: Category
-  data: Market Strategy
+  data: Big Data
 - label: Expertise
-  data: Mobile App
+  data: Cloud
 - label: Date
-  data: 22 nov, 2019
+  data: 2016-2019
 
 ---
 **Enterprises have an enormous amount of data in their hands. Usually, this data is stored in several systems, with different data formats, different security measures, and locations. Now, what is the best approach to unify this data, and make analytics that result in a bigger turnover?**

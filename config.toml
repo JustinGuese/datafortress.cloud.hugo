@@ -28,19 +28,19 @@ copyright = "Copyright &copy; 2020 by Datafortress.cloud"
 subscribe = "Subscribe Us"
 subscribe_content = "Receive exclusive tech/cloud/ai news into your inbox. Unsubscribe any time."
 [[menu.footer]]
-URL = "#"
+URL = "/content/english/pages/impressum/"
 name = "Legal"
 weight = 1
 [[menu.footer]]
-URL = "#"
+URL = "sitemap.xml"
 name = "Sitemap"
 weight = 2
 [[menu.footer]]
-URL = "#"
+URL = "/content/english/pages/privacy-policy/"
 name = "Privacy Policy"
 weight = 3
 [[menu.footer]]
-URL = "#"
+URL = "/content/english/pages/impressum/"
 name = "Terms & Conditions"
 weight = 4
 [[menu.main]]

@@ -7,11 +7,11 @@ image = "/images/annotation-2020-04-07-145141-768x586.png"
 live_demo = ""
 title = "360° Car Sales – Virtual Testdrives"
 [[overview]]
-info = ""
 label = "Client"
+data = "Whilst working at Porsche Holding"
 [[overview]]
-info = ""
 label = "Time"
+data = "2016"
 
 +++
 Selling used cars is heavily relying on trust. The investment of a car is oftentimes a decision that influences the customer for several years, therefore being a topic that is heavily researched beforehand by him. According to [a Google study](https://www.thinkwithgoogle.com/feature/the-future-of-car-buying/), up to **92% of customers research a car online** before actually going to the car dealership.

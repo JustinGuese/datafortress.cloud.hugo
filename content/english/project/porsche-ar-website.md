@@ -9,13 +9,13 @@ case_study: ''
 category: Augmented Reality
 overview:
 - label: Client
-  data: Baximco Ltd.
+  data: Whilst working at Porsche Holding
 - label: Category
-  data: Market Strategy
+  data: Cloud
 - label: Expertise
-  data: Mobile App
+  data: Serverless Cloud Hosting
 - label: Date
-  data: 22 nov, 2019
+  data: Dec, 2018
 
 ---
 The website for the Porsche AR Viewer ([http://www.discovar.at](http://www.discovar.at "http://www.discovar.at")) had special requirements. For once, security guidelines for the Porsche Holding are immensely high, and second, a solution was needed to host the website at a minimal cost. Both challenges were solved in their own way.

@@ -9,11 +9,11 @@ case_study: ''
 category: Cloud
 overview:
 - label: Client
-  data: Baximco Ltd.
+  data: Whilst working at Porsche Holding
 - label: Category
-  data: Market Strategy
+  data: Cloud
 - label: Expertise
-  data: Mobile App
+  data: Serverless Cloud Hosting
 - label: Date
   data: 22 nov, 2019
 

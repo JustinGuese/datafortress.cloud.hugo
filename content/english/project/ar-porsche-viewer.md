@@ -9,9 +9,9 @@ case_study: ''
 category: Augmented Reality
 overview:
 - label: Client
-  data: Baximco Ltd.
+  data: Whilst working at Porsche Holding
 - label: Category
-  data: Market Strategy
+  data: Augmented Reality
 - label: Expertise
   data: Mobile App
 - label: Date

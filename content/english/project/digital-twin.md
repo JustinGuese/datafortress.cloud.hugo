@@ -9,13 +9,13 @@ case_study: ''
 category: Big Data
 overview:
 - label: Client
-  data: Baximco Ltd.
+  data: Whilst working at Porsche Holding
 - label: Category
-  data: Market Strategy
+  data: Big Data
 - label: Expertise
-  data: Mobile App
+  data: Stream Data processing in NoSQL
 - label: Date
-  data: 22 nov, 2019
+  data: 2016-2019
 
 ---
 > “A digital twin is a digital replica of a living or non-living physical entity.”
