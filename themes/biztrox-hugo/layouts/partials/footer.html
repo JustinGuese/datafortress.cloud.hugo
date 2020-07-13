@@ -100,6 +100,8 @@
 {{ range .Site.Params.plugins.js}}
 <script src="{{ .URL | absURL }}"></script>
 {{ end }}
+{{ "<!-- Chatbot Plugin -->" | safeHTML }}
+<script id="TelegramLiveChatLoader" data-bot="D9E04B48-7F3C-11EA-B4C9-910623E822B5" src="//livechatbot.net/assets/chat/js/loader.js"></script>
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>
