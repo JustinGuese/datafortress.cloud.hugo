@@ -4,7 +4,10 @@ date: 2020-07-12T17:02:17+02:00
 draft: false
 image: "/images/legal.webp"
 ---
-Privacy Policy
+# Privacy Policy
+
+
+
 We are very delighted that you have shown interest in our enterprise. Data protection is of a particularly high priority for the management of the DataFortress.cloud. The use of the Internet pages of the DataFortress.cloud is possible without any indication of personal data; however, if a data subject wants to use special enterprise services via our website, processing of personal data could become necessary. If the processing of personal data is necessary and there is no statutory basis for such processing, we generally obtain consent from the data subject.
 
 The processing of personal data, such as the name, address, e-mail address, or telephone number of a data subject shall always be in line with the General Data Protection Regulation (GDPR), and in accordance with the country-specific data protection regulations applicable to the DataFortress.cloud. By means of this data protection declaration, our enterprise would like to inform the general public of the nature, scope, and purpose of the personal data we collect, use and process. Furthermore, data subjects are informed, by means of this data protection declaration, of the rights to which they are entitled.
@@ -65,8 +68,11 @@ Phone: +43 677 61178288
 Email: info@datafortress.cloud
 Website: localhost
 
-3. Cookies
+## Cookies
+
 The Internet pages of the DataFortress.cloud use cookies. Cookies are text files that are stored in a computer system via an Internet browser.
+
+<script type="text/javascript" charset="UTF-8" data-cookiescriptreport="report" src="//report.cookie-script.com/r/e6326a02bfa57689ae80f6d580b9bf42.js"></script>
 
 Many Internet sites and servers use cookies. Many cookies contain a so-called cookie ID. A cookie ID is a unique identifier of the cookie. It consists of a character string through which Internet pages and servers can be assigned to the specific Internet browser in which the cookie was stored. This allows visited Internet sites and servers to differentiate the individual browser of the dats subject from other Internet browsers that contain other cookies. A specific Internet browser can be recognized and identified using the unique cookie ID.
 
