@@ -9,7 +9,7 @@ case_study: ''
 category: Augmented Reality
 overview:
 - label: Client
-  data: Whilst working at Porsche Holding
+  data: Während meiner Arbeit bei der Porsche Holding
 - label: Category
   data: Cloud
 - label: Expertise
@@ -18,14 +18,19 @@ overview:
   data: Dec, 2018
 
 ---
-The website for the Porsche AR Viewer ([http://www.discovar.at](http://www.discovar.at "http://www.discovar.at")) had special requirements. For once, security guidelines for the Porsche Holding are immensely high, and second, a solution was needed to host the website at a minimal cost. Both challenges were solved in their own way.
+Die Website für den Porsche AR Viewer ([http://www.discovar.at](http://www.discovar.at "http://www.discovar.at")) hatte besondere Anforderungen. Zum einen sind die Sicherheitsrichtlinien für die Porsche Holding immens hoch, zum anderen musste eine Lösung gefunden werden, um die Website zu minimalen Kosten zu hosten. Beide Herausforderungen wurden auf ihre eigene Weise gelöst.
 
-### THE CHALLENGE
+### DIE HERAUSFORDERUNG
 
-The first approach has been a classic CMS hosted on a LAMP stack, but soon the guidelines regarding hosting blew the budget. Another solution was needed. I proposed the idea of a static website hosted on an AWS S3 bucket because without a CMS or any dynamic parts of the website (PHP, …) the website becomes “serverless” and therefore basically unhackable. The website was programmed by myself using HTML5 and Bootstrap.
+Der erste Ansatz war ein klassisches CMS, das auf einem LAMP-Stack gehostet wurde, aber schon bald sprengten die Richtlinien zum Hosting das Budget. Es wurde eine andere Lösung benötigt. Ich schlug die Idee einer statischen Website vor, die auf einem AWS S3-Bucket gehostet wird, weil ohne ein CMS oder irgendwelche dynamischen Teile der Website (PHP, ...) die Website "serverlos" und damit grundsätzlich unhackbar wird. Die Website wurde von mir mit HTML5 und Bootstrap programmiert.
 
-### THE STRATEGY
+### DIE STRATEGIE
 
-There was barely any budget for hosting. Together with the aforementioned conditions, a classic server setup was not thinkable of. Together with the security guidelines, I decided to host the static website on an AWS S3 bucket, which means that you are basically only paying for the usage, or in other words if someone views the website, instead of paying a fixed monthly cost. Additionally, the AWS includes a “free tier limit”, which is a monthly free amount of storage and transmission that is included in your account for free – and therefore oftentimes resulting in a website hosted for free.
+Es gab kaum ein Budget für das Hosting. Zusammen mit den oben genannten Bedingungen war ein klassischer Serveraufbau nicht denkbar. Zusammen mit den Sicherheitsrichtlinien entschied ich mich dafür, die statische Website auf einem AWS S3-Bucket zu hosten, was bedeutet, dass man im Grunde nur für die Nutzung, d.h. wenn jemand die Website aufruft, zahlt, anstatt eine feste monatliche Gebühr zu bezahlen. Zusätzlich beinhaltet der AWS ein "Free Tier Limit", d.h. eine monatliche kostenlose Menge an Speicherplatz und Übertragung, die kostenlos in Ihrem Konto enthalten ist - und daher oft zu einer kostenlos gehosteten Website führt.
 
-What are your experiences with static websites? Do you have a web project that might need speed, security and cost improvement? Comment below or write me a direct message.
+Welche Erfahrungen haben Sie mit statischen Websites gemacht? Haben Sie ein Webprojekt, das möglicherweise Geschwindigkeit, Sicherheit und Kostenverbesserung benötigt? Kommentieren Sie unten oder schreiben Sie mir direkt eine Nachricht.
+
+
+
+
+[Sie haben eine ähnliche Idee oder wir haben Ihr Interesse geweckt? Kontaktieren Sie uns jetzt für eine gratis 15-minütige Beratung!](https://www.datafortress.cloud/de/contact/)

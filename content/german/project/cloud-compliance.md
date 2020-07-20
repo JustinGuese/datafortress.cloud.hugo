@@ -9,7 +9,7 @@ case_study: ''
 category: Cloud
 overview:
 - label: Client
-  data: Whilst working at Porsche Holding
+  data: Während meiner Arbeit bei der Porsche Holding
 - label: Category
   data: Cloud
 - label: Expertise
@@ -18,50 +18,54 @@ overview:
   data: 2019
 
 ---
-Whilst working at my former company, we decided to implement some processes in the Cloud.  
-One important factor, especially for a company as huge as the Porsche Holding, has been to pay attention to established data privacy and protection laws, like the [European DSGVO](https://www.dsb.gv.at/gesetze-in-osterreich) and company restrictions made by the Porsche Holding itself.
+Während unserer Arbeit in meiner früheren Firma haben wir beschlossen, einige Prozesse in der Cloud zu implementieren.  
+Ein wichtiger Faktor, insbesondere für ein so großes Unternehmen wie die Porsche Holding, war die Beachtung der etablierten Datenschutzgesetze, wie z.B. des [europäischen DSGVO] (https://www.dsb.gv.at/gesetze-in-osterreich) und der von der Porsche Holding selbst erlassenen Unternehmenseinschränkungen.
 
-Many companies already experienced huge breaches, which stemmed from not sufficient knowledge of the topic.
+In vielen Unternehmen gab es bereits massive Verstöße, die aus mangelnder Kenntnis des Themas resultierten.
 
-## THE CHALLENGE
+## DIE HERAUSFORDERUNG
 
-The company already had an excellent data strategy, but wanted to further categorize and change processes to handle future DSGVO processes even better.
+Das Unternehmen verfügte bereits über eine ausgezeichnete Datenstrategie, wollte aber die Prozesse weiter kategorisieren und ändern, um zukünftige DSGVO-Prozesse noch besser handhaben zu können.
 
-## THE STRATEGY
+## DIE STRATEGIE
 
-DSGVO, HIPAA, and other compliance laws surprised some companies in recent years. But instead of being scared companies should see it as a good way to finally categorize data, and see which data is really needed.
+DSGVO, HIPAA und andere Compliance-Gesetze haben in den letzten Jahren einige Unternehmen überrascht. Anstatt jedoch Angst zu haben, sollten Unternehmen dies als eine gute Möglichkeit sehen, Daten endlich zu kategorisieren und zu sehen, welche Daten wirklich benötigt werden.
 
-#### Data Catalogue
+##### Daten-Katalog
 
-The first step for a company trying to handle DSGVO or other data laws should be to build up a catalog of its data, categorized into four different segments:
+Der erste Schritt für ein Unternehmen, das versucht, mit dem DSGVO oder anderen Datengesetzen umzugehen, sollte darin bestehen, einen Katalog seiner Daten zu erstellen, der in vier verschiedene Segmente unterteilt ist:
 
-1. **Very personal data**  
-   (Biomedical data, relationships to other people, DNA-data, medical records, sexual interests, racial information, …)
-2. **Personal data**  
-   (Name, Adress, IP, serial numbers of their products, …) – basically everything that can be used to pinpoint that data to a specific person
-3. **Isolated “personal” data  
-   **Data that is stored at a different location, but could be used in combination with another dataset to identify a person. E.g. if one database contains the medical record of a person together with a patient ID, and another database the ID and the real name, a data breach of both databases could still cause access to the medical records and the full name of that person. Two-way encryption can fall into this category as well, as the data can be encrypted if the key is accessed.
-4. **Public data  
-   **Data that leaves no way to identify that person or does not affect a person at all. Think about how it would affect your company if this data is lost. If nothing changes and no one is affected, it is basically “public data”. But be cautious, even though you might think it should have no effect, it does not mean that it is harmless. E.g. if a person is visible on pictures in the background it still violates data protection laws!
+1. **sehr personenbezogene Daten**  
+   (Biomedizinische Daten, Beziehungen zu anderen Menschen, DNA-Daten, medizinische Aufzeichnungen, sexuelle Interessen, rassistische Informationen, ...)
+2. **Persönliche Daten**  
+   (Name, Adresse, IP, Seriennummern ihrer Produkte, ...) - im Grunde alles, was verwendet werden kann, um diese Daten einer bestimmten Person zuzuordnen
+3. **isolierte "persönliche" Daten  
+   **Daten, die an einem anderen Ort gespeichert sind, aber in Kombination mit einem anderen Datensatz zur Identifizierung einer Person verwendet werden könnten. Wenn z.B. eine Datenbank die Krankenakte einer Person zusammen mit einer Patienten-ID und eine andere Datenbank die ID und den wirklichen Namen enthält, könnte ein Datenbruch in beiden Datenbanken immer noch Zugriff auf die Krankenakte und den vollständigen Namen dieser Person verursachen. Auch die Zweiwege-Verschlüsselung kann in diese Kategorie fallen, da die Daten verschlüsselt werden können, wenn auf den Schlüssel zugegriffen wird.
+4. **öffentliche Daten  
+   **Daten, die keine Möglichkeit lassen, diese Person zu identifizieren, oder die eine Person überhaupt nicht betreffen. Denken Sie darüber nach, wie es sich auf Ihr Unternehmen auswirken würde, wenn diese Daten verloren gingen. Wenn sich nichts ändert und niemand betroffen ist, handelt es sich im Grunde um "öffentliche Daten". Aber seien Sie vorsichtig, auch wenn Sie denken könnten, dass sie keine Auswirkungen haben sollten, bedeutet das nicht, dass sie harmlos sind. Wenn z.B. eine Person auf Bildern im Hintergrund zu sehen ist, verstößt sie dennoch gegen die Datenschutzgesetze!
 
-#### Data goal/pipeline
+##### Datenziel/Pipeline
 
-The next step is to basically change all the data such that it is category 4 (Public Data) if possible. Of course, some data can not be reduced to this form, but there are several tools on hand to avoid saving clear names or addresses in your database.
+Der nächste Schritt besteht darin, grundsätzlich alle Daten so zu ändern, dass sie nach Möglichkeit der Kategorie 4 (Öffentliche Daten) angehören. Natürlich lassen sich einige Daten nicht auf diese Form reduzieren, aber es gibt verschiedene Werkzeuge, um das Speichern von eindeutigen Namen oder Adressen in Ihrer Datenbank zu vermeiden.
 
-At first, think about if you really need the clear version, meaning e.g. the full name, to handle your data processing. Next, if you really need that name or an ID, could you replace the name with an ID? Or could you probably separate personal data and business analytic data into different databases?
+Überlegen Sie sich zunächst, ob Sie die klare Version, d.h. z.B. den vollständigen Namen, wirklich benötigen, um Ihre Datenverarbeitung abzuwickeln. Könnten Sie dann, wenn Sie diesen Namen oder eine ID wirklich brauchen, den Namen durch eine ID ersetzen? Oder könnten Sie wahrscheinlich persönliche Daten und geschäftsanalytische Daten in verschiedene Datenbanken trennen?
 
-Let us take a look at an example:
+Werfen wir einen Blick auf ein Beispiel:
 
-Let us say a database contains all your sales including names, addresses, and phone numbers of your customers. Your standard process is to take this data and analyze it in a Business Intelligence (BI) tool to derivate your conversion rates, sales, sales per customer and so on.
+Nehmen wir an, eine Datenbank enthält alle Ihre Verkäufe einschließlich der Namen, Adressen und Telefonnummern Ihrer Kunden. Ihr Standardprozess besteht darin, diese Daten in einem Business Intelligence (BI)-Tool zu analysieren, um Ihre Konversionsraten, Umsätze, Umsätze pro Kunde usw. abzuleiten.
 
-To calculate sales numbers a specific ID is oftentimes not needed (except e.g. sales per customer). For example, if you just want to summarize sales and losses, you would just need transactions with their monetary value without any customer’s names, addresses and so on. Meaning if only this is your analytical concern, you could create a second database that only contains this necessary information and is only accessed by the BI tool.
+Für die Berechnung von Umsatzzahlen ist eine bestimmte ID oft nicht erforderlich (außer z.B. Umsatz pro Kunde). Wenn Sie z.B. nur Umsätze und Verluste zusammenfassen möchten, benötigen Sie nur Transaktionen mit ihrem Geldwert ohne Namen, Adressen usw. des Kunden. D.h. wenn nur dies Ihr analytisches Anliegen ist, könnten Sie eine zweite Datenbank anlegen, die nur diese notwendigen Informationen enthält und auf die nur das BI-Werkzeug zugreift.
 
-If you still need an ID for the customer, to calculate “best customers” for example, you could replace Names with ids. E.g. “Shop X1” will be “ID1”. Then you could save the ID and Name combination into another, safer database that is only accessed by you or limited personal.
+Wenn Sie dennoch eine ID für den Kunden benötigen, um z.B. "beste Kunden" zu berechnen, könnten Sie Namen durch IDs ersetzen. So wird z.B. "Geschäft X1" zu "ID1". Dann könnten Sie die ID- und Namenskombination in einer anderen, sichereren Datenbank speichern, auf die nur Sie oder eine eingeschränkte Person Zugriff hat.
 
-Another way would be to encrypt data. One could, for example, encrypt all the names, and only decrypt them if one really needs the name of the business (with the encryption-keys never leaving your company).
+Eine andere Möglichkeit wäre, Daten zu verschlüsseln. Man könnte z.B. alle Namen verschlüsseln und nur dann entschlüsseln, wenn man den Namen des Unternehmens wirklich braucht (wobei die Verschlüsselungsschlüssel niemals Ihre Firma verlassen dürfen).
 
-Another method, if you just need an ID and no real name at all, is to “hash” the data, which is basically one-way encryption. If you “insert” a full name into the algorithm, it always delivers a unique ID that can never (simplified) be decrypted back to the full name. That way you will be left with a personal ID without a way to derive the full name of your customer.
+Eine andere Methode, wenn man nur eine ID und überhaupt keinen wirklichen Namen braucht, ist das "Hashing" der Daten, was im Grunde eine Einweg-Verschlüsselung ist. Wenn Sie einen vollständigen Namen in den Algorithmus "einfügen", liefert dieser immer eine eindeutige ID, die niemals (vereinfacht) auf den vollständigen Namen zurück entschlüsselt werden kann. Auf diese Weise erhalten Sie eine persönliche ID ohne die Möglichkeit, den vollständigen Namen Ihres Kunden abzuleiten.
 
-Still, this has been only a brief overview. To fully discover the possiblites, one has to take a look at the data, the environment and the individual situation.
+Dies war jedoch nur ein kurzer Überblick. Um die Möglichkeiten vollständig zu entdecken, muss man sich die Daten, das Umfeld und die individuelle Situation anschauen.
 
-**Do you want to know more about this process? Are you in the middle of it? Shoot me a message or comment below.**
+
+
+
+
+[Sie haben eine ähnliche Idee oder wir haben Ihr Interesse geweckt? Kontaktieren Sie uns jetzt für eine gratis 15-minütige Beratung!](https://www.datafortress.cloud/de/contact/)

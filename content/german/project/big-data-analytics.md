@@ -9,7 +9,7 @@ case_study: ''
 category: Big Data
 overview:
 - label: Client
-  data: Whilst working at Porsche Holding
+  data: Während meiner Arbeit bei der Porsche Holding
 - label: Category
   data: Big Data
 - label: Expertise
@@ -18,42 +18,45 @@ overview:
   data: 2016-2019
 
 ---
-**Enterprises have an enormous amount of data in their hands. Usually, this data is stored in several systems, with different data formats, different security measures, and locations. Now, what is the best approach to unify this data, and make analytics that result in a bigger turnover?**
+**Unternehmen haben eine enorme Menge an Daten in ihren Händen. In der Regel werden diese Daten in mehreren Systemen mit unterschiedlichen Datenformaten, unterschiedlichen Sicherheitsmaßnahmen und Standorten gespeichert. Was ist nun der beste Ansatz, um diese Daten zu vereinheitlichen und Analysen durchzuführen, die zu einem größeren Umsatz führen?**
 
-### THE CHALLENGE
+### DIE HERAUSFORDERUNG
 
-Making use of the data at hand to increase sales, reduce costs, and optimize processes.
+Nutzung der vorliegenden Daten zur Umsatzsteigerung, Kostensenkung und Prozessoptimierung.
 
-### THE STRATEGY
+### DIE STRATEGIE
 
-#### 1. Checking the security requirements, gathering data sources
+#### 1. Überprüfung der Sicherheitsanforderungen, Sammeln von Datenquellen
 
-One of the biggest tasks involved gathering the data sources and building a “map” of all of them. This exhausting necessity has to be performed before taking the first steps because if you are basing your decisions on something incomplete, a fix when it is too late to change things might be way more expensive than a thorough exploration phase.
+Eine der größten Aufgaben bestand darin, die Datenquellen zu sammeln und eine "Landkarte" von allen zu erstellen. Diese anstrengende Notwendigkeit muss erfüllt werden, bevor die ersten Schritte unternommen werden, denn wenn Sie Ihre Entscheidungen auf etwas Unvollständiges gründen, kann eine Korrektur, wenn es zu spät ist, die Dinge zu ändern, viel teurer sein als eine gründliche Erkundungsphase.
 
-#### 2. Decision: Read Replicas or Live databases?
+#### 2. Entscheidung: Replikate oder Live-Datenbanken lesen?
 
-Usually, it is always the best idea to use read replicas, which are copies of your data just for reading, for analytic purposes. Sometimes it can make more sense to use the production databases instead, which varies from case to case. Using read replicas involves paying for further instances, but avoids crashing a live database.
+Gewöhnlich ist es immer die beste Idee, Lese-Replikate, d.h. Kopien Ihrer Daten nur zum Lesen, für analytische Zwecke zu verwenden. Manchmal kann es sinnvoller sein, stattdessen die Produktionsdatenbanken zu verwenden, was von Fall zu Fall unterschiedlich ist. Die Verwendung von Lese-Replikaten bedeutet, für weitere Instanzen zu bezahlen, vermeidet aber den Absturz einer Live-Datenbank.
 
-#### 3. Decision: On-Premise or Public Cloud?
+#### 3. Entscheidung: On-Premise oder Public Cloud?
 
-A really tough question in recent years, that needs to be based on several questions. Key questions are:
+Eine wirklich schwierige Frage in den letzten Jahren, die sich auf mehrere Fragen stützen muss. Die Schlüsselfragen sind:
 
-* Does compliance allow the storage of my data in the cloud? If so, does it need to be encrypted?
-* How large is the amount of data saved?
-  * For really large amounts of data, it is usually cheaper to host it in the Public Cloud
-* Do users in locations far away from my On-Premise datacenter need access to the data?
-  * AWS, Azure, and Google all offer a worldwide network of servers, which can significantly boost the speed of access to the data. Public Clouds can therefore massively change the user experience in a good way.
-* How do I regulate access to the data?
+* Erlaubt die Compliance die Speicherung meiner Daten in der Cloud? Wenn ja, müssen sie verschlüsselt werden?
+* Wie groß ist die Menge der gespeicherten Daten?
+  * Für wirklich große Datenmengen ist es in der Regel billiger, sie in der Public Cloud zu hosten.
+* Benötigen Benutzer an Standorten, die weit von meinem On-Premise-Rechenzentrum entfernt sind, Zugang zu den Daten?
+  * AWS, Azure und Google bieten ein weltweites Netzwerk von Servern an, das die Geschwindigkeit des Zugriffs auf die Daten erheblich steigern kann. Public Clouds können daher die Benutzererfahrung auf eine gute Art und Weise massiv verändern.
+* Wie reguliere ich den Zugang zu den Daten?
 
-A rule of thumb is that less-significant data should be saved in the Public Cloud, whilst sensitive data should usually remain On-Premise. There are a lot of possibilities for in-between-decisions, like having a Hybrid Cloud or encrypting files in the Public Cloud and storing the keys On-Premise, feel free to contact me for further details.
+Als Faustregel gilt, dass weniger bedeutende Daten in der Public Cloud gespeichert werden sollten, während sensible Daten in der Regel vor Ort bleiben sollten. Es gibt viele Möglichkeiten für Zwischenentscheidungen, wie z.B. eine Hybrid-Cloud oder die Verschlüsselung von Dateien in der Public Cloud und die Speicherung der Schlüssel vor Ort, zögern Sie nicht, mich für weitere Einzelheiten zu kontaktieren.
 
-#### 4. What analytical tools will I use?
+#### 4. Welche Analysewerkzeuge werde ich verwenden?
 
-From my experience, it is the best idea to find a few tools that satisfy almost all end users, even if that means sacrificing analytical power. In an enterprise, too many tools become tedious to manage. Usually, every user has a tool that he is used to, but if every user uses their own tool instead of using a centralized system, confusion is ensured and your Data Project might be at risk before it even started.  
-I proposed Microsoft PowerBI for business users and AWS EMR and an on-premise Jupyterhub-Spark configuration for this. Why? Contact me to find out more.
+Meiner Erfahrung nach ist es die beste Idee, ein paar Werkzeuge zu finden, die fast alle Endbenutzer zufriedenstellen, auch wenn dies einen Verlust an analytischer Leistung bedeutet. In einem Unternehmen werden zu viele Tools langweilig zu verwalten. Normalerweise hat jeder Benutzer ein Werkzeug, an das er gewöhnt ist, aber wenn jeder Benutzer sein eigenes Werkzeug benutzt, anstatt ein zentralisiertes System zu verwenden, ist Verwirrung garantiert und Ihr Datenprojekt könnte gefährdet sein, bevor es überhaupt begonnen hat.  
+Ich schlug Microsoft PowerBI für Geschäftsanwender und AWS EMR sowie eine Vor-Ort-Konfiguration von Jupyterhub-Spark hierfür vor. Warum? Kontaktieren Sie mich, um mehr darüber zu erfahren.
 
-#### 5. Onboarding & Documentation
+#### 5. Eingliederung und Dokumentation
 
-I have seen way too many projects fail because of products being left alone after they are finished. The usage usually lasts for some months, but by then either support is missing, or no one knows anymore that it exists or how to use it. Therefore documentation and onboarding are some of the most crucial steps in building up a Big Data landscape. We used Microsoft Sharepoint or our own WordPress based Infosite for this.
+Ich habe viel zu viele Projekte daran scheitern sehen, dass Produkte nach ihrer Fertigstellung allein gelassen werden. Die Nutzung dauert in der Regel einige Monate, aber bis dahin fehlt entweder der Support, oder niemand weiß mehr, dass es ihn gibt oder wie man ihn benutzt. Daher gehören Dokumentation und Onboarding zu den wichtigsten Schritten beim Aufbau einer Big-Data-Landschaft. Wir haben dafür Microsoft Sharepoint oder unsere eigene WordPress basierte Infosite verwendet.
 
-**Do you want to know more about this process? Are you in the middle of it? Shoot me a message or comment below.**
+
+
+
+[Sie haben eine ähnliche Idee oder wir haben Ihr Interesse geweckt? Kontaktieren Sie uns jetzt für eine gratis 15-minütige Beratung!](https://www.datafortress.cloud/de/contact/)

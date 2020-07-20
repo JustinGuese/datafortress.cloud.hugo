@@ -8,14 +8,14 @@ live_demo = ""
 title = "#unraceable Virtual Reality Simulator"
 [[overview]]
 label = "Client"
-data = "Whilst working at Porsche Holding"
+data = "Während meiner Arbeit bei der Porsche Holding"
 [[overview]]
 label = "Time"
 data = "2016-2019"
 
 +++
-Unraceable is the name of a **virtual reality motionseat** project and **App** that I managed for three years.  
-The idea has been to enhance showrooms and build something that gives people an emotional experience.
+Unraceable ist der Name eines **virtual reality motionseat**-Projekts und einer **App**, die ich drei Jahre lang geleitet habe.  
+Die Idee war, die Ausstellungsräume zu verbessern und etwas zu bauen, das den Menschen ein emotionales Erlebnis bietet.
 
 <br>
 
@@ -23,9 +23,9 @@ The idea has been to enhance showrooms and build something that gives people an 
 
 <br>
 
-The main campaign spot of “Audi #unraceable”
+Der Haupt-Kampagnenspot von "Audi #unraceable"
 
-The requirement should be an improvement to the “Audi Sandbox”, which was produced by Audi Norway, as you can see in the following video.
+Die Anforderung sollte eine Verbesserung der "Audi Sandbox" sein, die von Audi Norwegen produziert wurde, wie Sie im folgenden Video sehen können.
 
 <br>
 
@@ -33,40 +33,40 @@ The requirement should be an improvement to the “Audi Sandbox”, which was pr
 
 <br>
 
-## THE CHALLENGE
+## DIE HERAUSFORDERUNG
 
-The first milestone of the product had a strict timeline and demanded that customers build their race-track in a sandbox, which gets scanned, and finally transferred to a virtual reality motion seat.  
-The “Audi Sandbox” had the problem, that it did not feature a motion seat and the “scanning” process has been mostly manual and took a lot of time. As the project should be presented at a fair, the scanning process could only take a maximum of some minutes, which means a new automated way to create this track had to be found.
+Der erste Meilenstein des Produkts hatte einen strikten Zeitplan und verlangte, dass die Kunden ihre Rennstrecke in einer Sandkiste bauen, die gescannt und schließlich auf einen Virtual-Reality-Bewegungssitz übertragen wird.  
+Der "Audi-Sandkasten" hatte das Problem, dass er keinen Bewegungssitz enthielt und der "Scan"-Prozess meist manuell und zeitaufwendig war. Da das Projekt auf einer Messe präsentiert werden sollte, konnte der Scanvorgang nur maximal einige Minuten dauern, was bedeutet, dass ein neuer automatisierter Weg zur Erstellung dieser Spur gefunden werden musste.
 
-## THE STRATEGY
+## DIE STRATEGIE
 
-For the project, we worked together with a partner and experimented with several ways to make this idea become reality. For the scanning, an Xbox Kinect has been chosen, as it can both scan depth imagery (3D topography), as well as the color 2D image of the track. With this information, a map was generated in seconds (reducing complexity for time), and together with object scanning from the 2D image data objects could be placed on the 3D map as well.
+Für das Projekt arbeiteten wir mit einem Partner zusammen und experimentierten mit verschiedenen Möglichkeiten, diese Idee Wirklichkeit werden zu lassen. Für das Scannen wurde ein Xbox Kinect gewählt, da es sowohl Tiefenbilder (3D-Topografie) als auch das farbige 2D-Bild der Strecke scannen kann. Mit diesen Informationen wurde in Sekundenschnelle eine Karte erstellt (wodurch die Komplexität für die Zeit reduziert wurde), und zusammen mit dem Scannen von Objekten aus den 2D-Bilddaten konnten auch Objekte auf der 3D-Karte platziert werden.
 
-To fulfill the motion seat part, we scouted several solutions and finally decided to go with a 6 DOF motion simulator produced in the Czech republic. As it has not been equipped with Virtual Reality, the VR technology had to be fitted onto it.  
-This poses a huge problem, as traditional trackers are irritated by the motion seat-movement, as they can not distinguish if the head or the seat is moving. A customized solution was needed and involved fitting another tracker to the seat, and calculating the spacial difference of the seat, base stations and VR glasses in realtime. As VR glasses the HTC Vive has been chosen, as it offered the best resolution at that time. But a huge problem in VR is lag. If calculations of the scene take too long, and the image is slightly delayed to the movement of the motion seat, people feel motion-sick. This phenomenon is often called “[virtual reality sickness](https://en.wikipedia.org/wiki/Virtual_reality_sickness?oldformat=true)” or “[cybersickness](https://en.wikipedia.org/wiki/Virtual_reality_sickness?oldformat=true)“. Therefore, the next steps involved trying several techniques to reduce motion sickness.  
-\#unraceable has been featured in several magazines, and even appeared in “Austria’s Next Topmodel” as a challenge.
+Um den Bewegungssitzteil zu erfüllen, haben wir mehrere Lösungen gescoutet und uns schließlich für einen in der Tschechischen Republik hergestellten Bewegungssimulator mit 6 DOF entschieden. Da er nicht mit Virtual Reality ausgestattet ist, musste die VR-Technologie auf ihn angepasst werden.  
+Dies stellt ein großes Problem dar, da traditionelle Tracker durch die Bewegung des Sitzes irritiert werden, da sie nicht unterscheiden können, ob sich der Kopf oder der Sitz bewegt. Es wurde eine massgeschneiderte Lösung benötigt, bei der ein weiterer Tracker auf dem Sitz angebracht und der räumliche Unterschied zwischen dem Sitz, den Basisstationen und der VR-Brille in Echtzeit berechnet wurde. Als VR-Brille wurde das HTC Vive gewählt, da es zu diesem Zeitpunkt die beste Auflösung bot. Aber ein riesiges Problem bei VR ist die Verzögerung. Wenn die Berechnung der Szene zu lange dauert und das Bild leicht verzögert zur Bewegung des Bewegungssitzes erscheint, fühlen sich die Menschen bewegungskrank. Dieses Phänomen wird oft als "[Virtual-Reality-Krankheit](https://en.wikipedia.org/wiki/Virtual_reality_sickness?oldformat=true)" oder "[Cybersickness](https://en.wikipedia.org/wiki/Virtual_reality_sickness?oldformat=true)" bezeichnet. Daher wurden in den nächsten Schritten verschiedene Techniken zur Verringerung der Reisekrankheit ausprobiert.  
+\#unraceable wurde in mehreren Zeitschriften vorgestellt und erschien sogar in "Austria's Next Topmodel" als Herausforderung.
 
-At the final fair, #unraceable has been a great success and offered the production of several other milestones.  
-In the following year, it even appeared in a modified version at the worldwide “Formula E” traveling around the globe together with team “Audi Sport ABT”.
+Auf der Abschlussmesse war #unraceable ein großer Erfolg und bot die Produktion mehrerer anderer Meilensteine an.  
+Im folgenden Jahr erschien es sogar in einer modifizierten Version bei der weltweiten "Formel E", die zusammen mit dem Team "Audi Sport ABT" um die Welt reiste.
 
 ![](/images/img_1286-768x576.webp)
 
-##### Milestone 2: #unraceable App and Quattro-Challenge
+###### Meilenstein 2: #unraceable App und Quattro-Herausforderung
 
-The previous success allowed for further development of the project and an App should be produced to reach a broader mass. The idea has been, that four skiing stars (Quattro, like the “Audi Quattro”) should each build a track, which was then to be raced by gamers around the globe, with the final winner winning an Audi A1 for a year.
+Der bisherige Erfolg ermöglichte eine Weiterentwicklung des Projekts, und es sollte eine App erstellt werden, um eine breitere Masse zu erreichen. Die Idee war, dass vier Skistars (Quattro, wie der "Audi Quattro") jeweils eine Strecke bauen sollten, die dann von Spielern rund um den Globus gefahren werden sollte, wobei der endgültige Gewinner ein Jahr lang einen Audi A1 gewinnen sollte.
 
 ![](/images/9f01d087dae1e9abb8a2f8c125c7329a-768x555.webp)
 
-The track should be both playable on the simulator, as well as the app itself. Several changes were needed to achieve this, especially porting a high-quality VR game to a mobile game which only allows for limited resources. Several anti-cheat mechanisms had to be implemented, and new data privacy challenges had to be solved. In the end, the app had been downloaded more than 30’000 times reaching a review of 4,3/5 stars.  
-As a link to the car configurator of Audi had been integrated into the game, an enormous conversion rate has been achieved as almost 50% of gamers opened the car configurator at least once.
+Der Titel sollte sowohl auf dem Simulator als auch in der App selbst abspielbar sein. Um dies zu erreichen, waren mehrere Änderungen erforderlich, insbesondere die Portierung eines hochwertigen VR-Spiels auf ein Handyspiel, das nur begrenzte Ressourcen zulässt. Es mussten mehrere Anti-Cheat-Mechanismen implementiert und neue datenschutzrechtliche Herausforderungen gelöst werden. Am Ende wurde die App mehr als 30'000 Mal heruntergeladen und erreichte eine Bewertung von 4,3/5 Sternen.  
+Da ein Link zum Autokonfigurator von Audi in das Spiel integriert wurde, konnte eine enorme Konversionsrate erzielt werden, da fast 50% der Spieler den Autokonfigurator mindestens einmal öffneten.
 
 ![](/images/img_3777-768x432.webp)
 
-[Link: Download the App](https://www.audi.at/audi-erleben/unraceable)
+Link: Herunterladen der App](https://www.audi.at/audi-erleben/unraceable)
 
-##### Milestone 3: #unraceable Ski-Challenge
+###### Meilenstein 3: #unraceable Ski-Herausforderung
 
-The next step has been to cooperate with the Austrian Skiing Association ([https://www.oesv.at/](https://www.oesv.at/ "https://www.oesv.at/")) and build something similar to the former “Skiing Challenge” that experienced great success in the past years. But the task has been to not simply emulate this success but to build something new. The idea was to drive up the skiing track (Hahnenkamm) with an Audi e-Tron (in similarity to the then Audi e-Tron spot where it drives up a skiing track like in the first “Quattro” spot) and then drive it down again using a skier. Again the app has been downloaded more than 30’000 times and is still being played today.
+Der nächste Schritt war die Zusammenarbeit mit dem Österreichischen Skiverband ([https://www.oesv.at/](https://www.oesv.at/ "https://www.oesv.at/")) und der Aufbau einer ähnlichen Organisation wie die frühere "Ski Challenge", die in den vergangenen Jahren großen Erfolg hatte. Die Aufgabe bestand jedoch darin, diesen Erfolg nicht einfach nachzuahmen, sondern etwas Neues aufzubauen. Die Idee war, mit einem Audi e-Tron die Skispur (Hahnenkamm) hinaufzufahren (ähnlich dem damaligen Audi e-Tron-Spot, wo er wie im ersten "Quattro"-Spot eine Skispur hinauffährt) und dann mit einem Skifahrer wieder herunterzufahren. Die App wurde wiederum über 30'000 Mal heruntergeladen und wird auch heute noch gespielt.
 
 ###### Spot: Ferdinand Habsburg & Ernst Hausleitner (ORF)
 
@@ -79,3 +79,10 @@ The next step has been to cooperate with the Austrian Skiing Association ([https
 ###### #unraceable Ski Challenge featuring Hans Knauß
 
 <iframe width="339" height="191" src="https://www.youtube.com/embed/LpIVkCKFmyE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+
+[Sie haben eine ähnliche Idee oder wir haben Ihr Interesse geweckt? Kontaktieren Sie uns jetzt für eine gratis 15-minütige Beratung!](https://www.datafortress.cloud/de/contact/)

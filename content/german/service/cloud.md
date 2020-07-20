@@ -11,27 +11,27 @@ regularTime: '08.00am - 06.00pm'
 offDay: Sat, Su
 
 ---
-## Why is Cloud Computing so important?
+## Warum ist Cloud Computing so wichtig?
 
-> **$330 billion USD** is the market prediction for the global public [cloud computing](https://www.datafortress.cloud/cloud-services/cloud-computing/) market in 2020
+> **$330 Milliarden USD** ist die Marktprognose für den globalen öffentlichen [Cloud Computing](https://www.datafortress.cloud/cloud-services/cloud-computing/) Markt im Jahr 2020
 
->  **94% of workloads** will be processed by Cloud data centers in 2021
+> **94% der Arbeitslasten** werden 2021 von Cloud-Rechenzentren verarbeitet
 
-**These are huge numbers – but you might wonder if your company should either enter or extend its cloud presence or if it is safe to ignore this huge movement, but do not worry – we are here to clear up any misunderstandings.**
+**Dies sind riesige Zahlen - aber Sie könnten sich fragen, ob Ihr Unternehmen entweder in die Cloud einsteigen oder seine Cloudpräsenz ausweiten sollte oder ob es sicher ist, diese riesige Bewegung zu ignorieren, aber keine Sorge - wir sind hier, um alle Missverständnisse auszuräumen.**
 
-<br>
+<Wir sind hier, um Missverständnisse auszuräumen.
 
-## What is Cloud Computing
+## Was ist Cloud Computing
 
-Cloud computing is the transition of traditional on-premise infrastructure to a service provider that includes either a 1:1 replica of the on-premise environment or even more likely an upgrade of existing processes using services or “tools” that the cloud offers.
-
-<br>
-
-## What are the benefits of Cloud Computing
+Cloud Computing ist der Übergang von der traditionellen Infrastruktur vor Ort zu einem Service Provider, der entweder eine 1:1-Nachbildung der Umgebung vor Ort oder, was noch wahrscheinlicher ist, ein Upgrade bestehender Prozesse mit Hilfe von Diensten oder "Tools", die die Cloud bietet, beinhaltet.
 
 <br>
 
-### **1. Maintenance Reduction**
+## Was sind die Vorteile von Cloud Computing
+
+<br>
+
+### **1. Wartungsreduzierung**
 
 <br>
 
@@ -39,12 +39,12 @@ Cloud computing is the transition of traditional on-premise infrastructure to a 
 
 <br>
 
-We are a technology leader, meaning we constantly research and implement state-of-the-art tools. Avoid making the wrong choice and learn how to engage customers in turbulent new times.  
-Old business models are changing and need to be transferred to the digital world. Save yourself the trouble and connect with an expert.
+Wir sind technologisch führend, d.h. wir erforschen und implementieren ständig modernste Werkzeuge. Vermeiden Sie falsche Entscheidungen und lernen Sie, wie Sie Kunden in turbulenten neuen Zeiten begeistern können.  
+Alte Geschäftsmodelle verändern sich und müssen in die digitale Welt übertragen werden. Sparen Sie sich die Mühe und setzen Sie sich mit einem Experten in Verbindung.
 
 <br>
 
-### **2. Cost Savings**
+### **2. Kosteneinsparungen**
 
 <br>
 
@@ -52,11 +52,11 @@ Old business models are changing and need to be transferred to the digital world
 
 <br>
 
-Together with the aforementioned point, reducing downtimes of your services includes more revenue and less lost sales, therefore counting into the cost-saving factor as well. Additionally, the great cloud companies can offer to host at much lower prices compared to on-premise environments, because they manage huge data centers at once, therefore being able to reduce their costs according to the mass of goods they buy. Oftentimes it might sound cheaper to buy for example a server (\~1,200$) instead of renting one (e.g. 1,200$ = 2$/h rental price * 24 h = 25 days ROI), but one has to keep in mind that components will break, causing downtime, adding replacement and personal costs, power usage and so on. All these factors together oftentimes make it cheaper to rent infrastructure instead of maintaining it, let alone the savings that are possible utilizing new technologies like serverless.
+Zusammen mit dem oben genannten Punkt beinhaltet die Reduzierung der Ausfallzeiten Ihrer Dienste mehr Einnahmen und weniger Umsatzverluste und zählt somit ebenfalls zum Faktor Kosteneinsparung. Darüber hinaus können die großen Cloud-Unternehmen im Vergleich zu On-Premise-Umgebungen viel günstigere Hosting-Preise anbieten, da sie riesige Rechenzentren auf einmal verwalten und so ihre Kosten entsprechend der Masse der gekauften Waren reduzieren können. Oft mag es günstiger klingen, z.B. einen Server zu kaufen (\~1.200$), anstatt einen zu mieten (z.B. 1.200$ = 2$/h Mietpreis * 24 h = 25 Tage ROI), aber man muss bedenken, dass Komponenten ausfallen, was Ausfallzeiten, zusätzliche Ersatz- und Personalkosten, Stromverbrauch und so weiter verursacht. All diese Faktoren zusammengenommen machen es oft billiger, die Infrastruktur zu mieten, anstatt sie zu warten, ganz zu schweigen von den Einsparungen, die durch die Nutzung neuer Technologien wie Serverless möglich sind.
 
 <br>
 
-### **3. A new architecture / Serverless**
+### **3. Eine neue Architektur / serverless**
 
 <br>
 
@@ -64,11 +64,11 @@ Together with the aforementioned point, reducing downtimes of your services incl
 
 <br>
 
-Of course, the most simple step would be to transition the on-premise system as a replica into the cloud, but the huge benefit of the cloud is its services like for example serverless. There has been a shift in Infrastructure management, from being forced to manage everything, including hardware repairs and so on, to rather abstract management of just the programs a business needs. Let us take a data science team as an example. In the traditional environment, they need to set up the hardware of a computer, need to install an operating system and maintain it, install the newest version of their programming language and maintain it, and finally do it all again if something breaks in their system. And that didn’t even touch their code that is essential for your business! What if they would just need to worry about their code and turn their tools “on” and “off” as they wish? That is essentially what the goal of serverless is. Your team is just worried about their code, and everything else is done in the background by a cloud provider.
+Natürlich wäre der einfachste Schritt, das Vor-Ort-System als Replikat in die Cloud zu überführen, aber der große Vorteil der Cloud sind ihre Dienste wie zum Beispiel serverless. Es hat eine Verlagerung im Infrastrukturmanagement stattgefunden, weg von dem Zwang, alles verwalten zu müssen, einschließlich Hardware-Reparaturen und so weiter, hin zu einer eher abstrakten Verwaltung genau der Programme, die ein Unternehmen benötigt. Nehmen wir ein datenwissenschaftliches Team als Beispiel. In der traditionellen Umgebung müssen sie die Hardware eines Computers einrichten, ein Betriebssystem installieren und warten, die neueste Version ihrer Programmiersprache installieren und warten und schließlich alles noch einmal machen, wenn etwas in ihrem System kaputt geht. Und das hat ihren Code, der für Ihr Unternehmen unerlässlich ist, nicht einmal berührt! Was wäre, wenn sie sich nur um ihren Code kümmern müssten und ihre Tools nach Belieben "ein-" und "ausschalten" könnten? Das ist im Wesentlichen das Ziel von Serverless. Ihr Team macht sich nur Sorgen um seinen Code, und alles andere wird im Hintergrund von einem Cloud-Provider erledigt.
 
 <br><br>
 
-### 4. Scaling
+### 4. Skalierung
 
 <br>
 
@@ -76,11 +76,13 @@ Of course, the most simple step would be to transition the on-premise system as 
 
 <br>
 
-Another huge benefit weighing in is scaling. Let us take Black Friday as an example. Let us say an online retailer is dealing with \~100 orders a day. Therefore he buys a server architecture that can handle \~200 orders a day. But once a year, on Black Friday, there are 2000 orders a day, causing his system to crash, and therefore missing many orders. Now he could buy a bigger system to handle 3000 orders a day, but that would mean on 364 days a year he is overpaying a lot for his architecture. Now using new technologies, he could rent a bigger machine for some hours off a cloud provider, or even better use automatic scaling. Because in some cases demand can be unpredictable, like a viral post leading to many visitors or something similar. Therefore new cloud technologies offer a way of automatic scaling, meaning that the resources can scale according to the computational demand in an instant.
+Ein weiterer großer Vorteil ist die Skalierung. Nehmen wir den Schwarzen Freitag als Beispiel. Nehmen wir an, ein Online-Händler bearbeitet \~100 Bestellungen pro Tag. Deshalb kauft er eine Serverarchitektur, die \~200 Bestellungen pro Tag verarbeiten kann. Aber einmal im Jahr, am Schwarzen Freitag, gibt es 2000 Bestellungen pro Tag, wodurch sein System abstürzt und daher viele Bestellungen ausbleiben. Jetzt könnte er ein größeres System kaufen, um 3000 Bestellungen pro Tag abzuwickeln, aber das würde bedeuten, dass er an 364 Tagen im Jahr viel zu viel für seine Architektur bezahlt. Jetzt, wo er neue Technologien einsetzt, könnte er ein größeres System für einige Stunden bei einem Cloud-Provider mieten oder noch besser die automatische Skalierung nutzen. Denn in einigen Fällen kann die Nachfrage unvorhersehbar sein, wie z.B. ein viraler Post, der zu vielen Besuchern führt, oder etwas Ähnliches. Daher bieten neue Cloud-Technologien eine Möglichkeit der automatischen Skalierung, d.h. die Ressourcen können in einem Augenblick entsprechend der rechnerischen Nachfrage skaliert werden.
 
 <br><br>
 
-### 5. Security
+
+
+### 5. Sicherheit
 
 <br>
 
@@ -88,44 +90,49 @@ Another huge benefit weighing in is scaling. Let us take Black Friday as an exam
 
 <br>
 
-Even though many people hear a lot of potential cloud leaks, all in all, the cloud is almost every time more secure than an on-premise environment. Many on-premise systems get set up once but are never updated or reviewed again, leaving room for many potential security threats. Many cloud services, on the other hand, are constantly updated in the background, especially if you are using a serverless architecture. Of course, the cloud offers new potential security leaks, like leaving access open to an IP range outside of your business, but once you know what you are doing and what you should keep in mind, the cloud is all in all more secure.
+Auch wenn viele Menschen von vielen potenziellen Cloudnlecks hören, ist die Cloud alles in allem fast immer sicherer als eine Vor-Ort-Umgebung. Viele Vor-Ort-Systeme werden einmal eingerichtet, aber nie wieder aktualisiert oder überprüft, was Raum für viele potenzielle Sicherheitsbedrohungen lässt. Viele Cloud-Dienste hingegen werden ständig im Hintergrund aktualisiert, insbesondere wenn Sie eine serverlesse Architektur verwenden. Natürlich bietet die Cloud neue potenzielle Sicherheitslecks, wie z.B. das Offenlassen des Zugangs zu einem IP-Bereich außerhalb Ihres Unternehmens, aber sobald Sie wissen, was Sie tun und was Sie beachten sollten, ist die Cloud insgesamt sicherer.
 
 <br><br>
 
-**Now, this has only been a brief peek into this huge topic of the cloud, and of course, the situation is different for every company. Therefore it is even more important to engage with a team that already fought through a lot of potential stepping stones to save yourself trouble and money on your journey towards the cloud. Feel free to contact us anytime to get a free 15-minute call to discuss your open questions.**
+**Nun, dies war nur ein kurzer Einblick in dieses riesige Thema der Cloud, und natürlich ist die Situation für jedes Unternehmen anders. Umso wichtiger ist es, mit einem Team zusammenzuarbeiten, das sich bereits durch viele potenzielle Sprungbretter gekämpft hat, um sich auf dem Weg zur Cloud Ärger und Geld zu sparen. Zögern Sie nicht, uns jederzeit zu kontaktieren und einen kostenlosen 15-minütigen Anruf zu erhalten, um Ihre offenen Fragen zu besprechen.**
 
-### Our Cloud Services:
+### Unsere Cloud-Dienste:
 
-* [Cloud Backups / Archives](https://www.datafortress.cloud/cloud-services/cloud-backups-archives/)
-* [Hosting in the Cloud](https://www.datafortress.cloud/cloud-services/hosting-in-the-cloud/)
-* Object Storage Solutions
-* Relational Databases in the Cloud
-* NoSQL Databases in the Cloud
-* Cloud Migration
-* Virtual Desktop
-* FTP Server
+* [Cloud-Backups / Archive](https://www.datafortress.cloud/cloud-services/cloud-backups-archives/)
+* [Hosting in der Cloud](https://www.datafortress.cloud/cloud-services/hosting-in-the-cloud/)
+* Objektspeicher-Lösungen
+* Relationale Datenbanken in der Cloud
+* NoSQL-Datenbanken in der Cloud
+* Cloudn-Migration
+* Virtueller Desktop
+* FTP-Server
 * VPC
-* Serverless Functions Development
-* Automatization
+* Entwicklung serverlesser Funktionen
+* Automatisierung
 * Chatbots
-* Cloud Catalogueing
-* Prod/QA/Dev Setup
-* Stream Processing
-* [Big Data Solutions](https://www.datafortress.cloud/data-science-and-data-engineering/)
-* Memcached and Redis Setup
-* CDN Setup
-* Elasticsearch, Logstash, Kibana Setup and Serverless
-* Log Analytics and Storage
-* SAML & Security Setup
-* Hardware Security Module (HSM) in the Cloud
-* Rendering for Photoshop, Movies
-* Mass Email Servers
-* AWS Consulting and Solution Architecture
-* [Data Warehouse int the Cloud](https://www.datafortress.cloud/data-science-and-data-engineering/)
-* [Data Mart and Data Lake in the Cloud](https://www.datafortress.cloud/data-science-and-data-engineering/)
-* Cloud Access Control
-* Cloud Access Logging and Security
+* Cloudn-Katalogisierung
+* Prod/QA/Dev-Einrichtung
+* Stream-Verarbeitung
+* [Lösungen für große Datenmengen](https://www.datafortress.cloud/data-science-and-data-engineering/)
+* Memcached und Redis Einrichtung
+* CDN-Einrichtung
+* Elasticsearch, Logstash, Kibana-Einrichtung und Serverless
+* Log-Analyse und Speicherung
+* SAML & Sicherheitseinrichtung
+* Hardware-Sicherheitsmodul (HSM) in der Cloud
+* Rendern für Photoshop, Filme
+* Massen-E-Mail-Server
+* AWS Beratung und Lösungsarchitektur
+* [Data Warehouse in der Cloud] (https://www.datafortress.cloud/data-science-and-data-engineering/)
+* [Data Mart und Data Lake in the Cloud](https://www.datafortress.cloud/data-science-and-data-engineering/)
+* Zugriffskontrolle in der Cloud
+* Cloud Access Logging und Sicherheit
 * Firewall
-* Kubernetes and Docker in the Cloud
-* Serverless Cloud Search Indexes
-* Parallel Processing
+* Kubernetes und Docker in der Cloud
+* serverlesse Cloud-Suchindizes
+* Parallele Verarbeitung
+
+
+
+
+[Sie haben eine ähnliche Idee oder wir haben Ihr Interesse geweckt? Kontaktieren Sie uns jetzt für eine gratis 15-minütige Beratung!](https://www.datafortress.cloud/de/contact/)

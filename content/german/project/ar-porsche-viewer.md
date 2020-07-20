@@ -9,7 +9,7 @@ case_study: ''
 category: Augmented Reality
 overview:
 - label: Client
-  data: Whilst working at Porsche Holding
+  data: Während meiner Arbeit bei der Porsche Holding
 - label: Category
   data: Augmented Reality
 - label: Expertise
@@ -18,36 +18,40 @@ overview:
   data: 22 nov, 2019
 
 ---
-The Porsche AR Viewer has been an Augmented Reality app I built during my time at Porsche Austria.  
-The requirement emerged when a solution was needed to enrich advertisements and catch the attention of younger potential customers.
+Der Porsche AR Viewer ist eine Augmented Reality-App, die ich während meiner Zeit bei Porsche Austria entwickelt habe.  
+Die Anforderung entstand, als eine Lösung benötigt wurde, um die Werbung zu bereichern und die Aufmerksamkeit jüngerer potentieller Kunden zu erregen.
 
-> Experts claim that by 2025 the AR/VR industry will be worth over $25 Billion and steadily rising.
+> Experten behaupten, dass die AR/VR-Industrie bis 2025 einen Wert von über 25 Milliarden Dollar haben wird, Tendenz steigend.
 
-[Source](https://medium.com/predict/the-future-of-augmented-reality-90143b98f7a3)
+[Quelle](https://medium.com/predict/the-future-of-augmented-reality-90143b98f7a3)
 
-The app can be downloaded via:
+Die App kann heruntergeladen werden über:
 
-– [Appstore](https://apps.apple.com/at/app/porsche-ar-viewer/id1339643671)  
-– [Playstore](https://play.google.com/store/apps/details?id=at.digitalsolutions.porschearviewer)
+- [Appstore](https://apps.apple.com/at/app/porsche-ar-viewer/id1339643671)  
+- [Playstore](https://play.google.com/store/apps/details?id=at.digitalsolutions.porschearviewer)
 
-[General product page: ](http://www.discovar.at/)[http://www.discovar.at](http://www.discovar.at "http://www.discovar.at")
+[Allgemeine Produktseite: ](http://www.discovar.at/)[http://www.discovar.at](http://www.discovar.at "http://www.discovar.at")
 
-### THE CHALLENGE
+### DIE HERAUSFORDERUNG
 
-At first, we analysed the market but soon discovered that there has been no real app that fulfils our requirements.  
-Therefore, I programmed the first draft of our app using the Unity game development engine in combination with Vuforia, which is currently one of the best Augmented reality libraries in use for AR/VR content.
+Zuerst analysierten wir den Markt, stellten aber bald fest, dass es keine echte App gab, die unsere Anforderungen erfüllt.  
+Daher programmierte ich den ersten Entwurf unserer App unter Verwendung der Spielentwicklungsmaschine Unity in Kombination mit Vuforia, die derzeit eine der besten Augmented-Reality-Bibliotheken für AR/VR-Inhalte ist.
 
-### THE STRATEGY
+### DIE STRATEGIE
 
-The app worked great, but we revised our decisions because of the enterprise pricing model of Vuforia being too high, and therefore we would not have left enough money for advertising and further improvements.  
-After some research, I discovered an alternative library, namely Wikitude. Their library offered the functionalities we wanted for a way smaller price.  
-Furthermore I left out the Unity gaming engine and decided to program a native app for iOS and Android, because scaling and performance greatly improved that way.
+Die App hat großartig funktioniert, aber wir haben unsere Entscheidungen revidiert, weil das Unternehmenspreismodell der Vuforia zu hoch war und wir daher nicht genug Geld für Werbung und weitere Verbesserungen übrig gelassen hätten.  
+Nach einigen Recherchen entdeckte ich eine alternative Bibliothek, nämlich Wikitude. Ihre Bibliothek bot die Funktionalitäten, die wir wollten, zu einem deutlich niedrigeren Preis.  
+Außerdem ließ ich die Unity-Gaming-Engine weg und beschloss, eine native Anwendung für iOS und Android zu programmieren, da sich die Skalierung und Leistung auf diese Weise stark verbesserte.
 
-This has been a good example of when it pays off to consider other possibilities and even consider the not-market leader for some projects, even if that results in a change of direction and a restart – because only the best products will truly be great.
+Das war ein gutes Beispiel dafür, wann es sich auszahlt, andere Möglichkeiten in Betracht zu ziehen und bei einigen Projekten sogar den Nichtmarktführer in Betracht zu ziehen, auch wenn das zu einer Richtungsänderung und einem Neustart führt - denn nur die besten Produkte werden wirklich großartig sein.
 
-#### Final Improvements
+##### Letzte Verbesserungen
 
-After the first published version I did not rest, but evaluated on how to further improve the app.  
-One pain point has been, that additional content had to be programmed into the app itself, which resulted in a huge delay, because the Apple iOS store needs to revaluate each app after submission, causing in a long timespan until the new content will be online. This can be a problem, if the client has not so much time to wait. The same goes for last minute changes in the app, which was simply not possible with the Apple reviewing process.
+Nach der ersten veröffentlichten Version ruhte ich mich nicht aus, sondern evaluierte, wie die App weiter verbessert werden könnte.  
+Ein schmerzlicher Punkt war, dass zusätzliche Inhalte in die App selbst programmiert werden mussten, was zu einer enormen Verzögerung führte, da der Apple iOS-Store jede App nach der Einreichung neu bewerten muss, was eine lange Zeitspanne in Anspruch nimmt, bis die neuen Inhalte online sind. Dies kann ein Problem darstellen, wenn der Kunde nicht so viel Zeit zum Warten hat. Dasselbe gilt für Änderungen an der App in letzter Minute, was mit dem Apple-Überprüfungsverfahren einfach nicht möglich war.
 
-Therefore I have been searching for other solutions, and found a way to generate new content in the Wikitude Studio Web editor, upload changes into an AWS S3 bucket, and the app pulling the new content from the S3 bucket. Therefore the app itself needed only be submitted once to the appstores, and every change has been instantly pulled from an S3 bucket. A nice side-effect has been, that the appsize greatly reduced as well, because content was dynamically pulled from the bucket if a trigger was scanned, instead of saving every content in the app itself.
+Deshalb habe ich nach anderen Lösungen gesucht und einen Weg gefunden, neue Inhalte im Wikitude Studio Web-Editor zu generieren, Änderungen in einen AWS S3-Behälter hochzuladen und die Anwendung zieht die neuen Inhalte aus dem S3-Behälter. Daher musste die Anwendung selbst nur einmal bei den Appstores eingereicht werden, und jede Änderung wurde sofort aus einem S3-Eimer gezogen. Ein netter Nebeneffekt war, dass auch die Größe der App stark reduziert wurde, da der Inhalt dynamisch aus dem Eimer gezogen wurde, wenn ein Trigger gescannt wurde, anstatt jeden Inhalt in der App selbst zu speichern.
+
+
+
+[Sie haben eine ähnliche Idee oder wir haben Ihr Interesse geweckt? Kontaktieren Sie uns jetzt für eine gratis 15-minütige Beratung!](https://www.datafortress.cloud/de/contact/)

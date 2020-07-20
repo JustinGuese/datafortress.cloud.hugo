@@ -9,7 +9,7 @@ case_study: ''
 category: Big Data
 overview:
 - label: Client
-  data: Whilst working at Porsche Holding
+  data: Während meiner Arbeit bei der Porsche Holding
 - label: Category
   data: Big Data
 - label: Expertise
@@ -18,30 +18,33 @@ overview:
   data: 2016-2019
 
 ---
-> “A digital twin is a digital replica of a living or non-living physical entity.”
+> "Ein digitaler Zwilling ist eine digitale Replik einer lebenden oder nicht lebenden physischen Einheit".
 
-[Source](https://en.wikipedia.org/wiki/Digital_twin)
+[Quelle](https://en.wikipedia.org/wiki/Digital_twin)
 
-A digital twin in marketing is a user that is similar to a user that has already been on your website.  
-This is done because you are already knowing what products or pages the user viewed and can offer a similar using the same experience.  
-But how is this done?
+Ein digitaler Zwilling im Marketing ist ein Benutzer, der einem Benutzer ähnlich ist, der bereits auf Ihrer Website war.  
+Dies geschieht, weil Sie bereits wissen, welche Produkte oder Seiten der Benutzer sich angesehen hat, und weil Sie mit der gleichen Erfahrung ein ähnliches Angebot machen können.  
+Aber wie wird das gemacht?
 
-### THE CHALLENGE
+### DIE HERAUSFORDERUNG
 
-Porsche needed another way to reduce marketing cost and increase targeting.
+Porsche brauchte einen anderen Weg, um die Marketingkosten zu senken und die Zielgenauigkeit zu erhöhen.
 
-### THE STRATEGY
+### DIE STRATEGIE
 
-#### Big Data aspects of a digital twin
+##### Große Datenaspekte eines digitalen Zwillings
 
-First, we saved all the web events of our websites in a No-SQL database called Elasticsearch. Elasticsearch is a great application for text-based search and quick queries on huge databases using Lucene.
+Zunächst haben wir alle Web-Ereignisse unserer Websites in einer No-SQL-Datenbank namens Elasticsearch gespeichert. Elasticsearch ist eine großartige Anwendung für textbasierte Suche und schnelle Abfragen in großen Datenbanken mit Lucene.
 
-#### Graph search in Elasticsearch
+##### Graphische Suche in Elasticsearch
 
-Simplified, we used a graph search that is integrated into Elasticsearch ([Link](https://www.elastic.co/de/what-is/elasticsearch-graph)) to find users that are similar to the current user. Via REST-API calls with the matching Lucene queries, similar products from digital twins were extracted, and presented as recommendations to the current user.
+Vereinfacht haben wir eine in Elasticsearch ([Link](https://www.elastic.co/de/what-is/elasticsearch-graph)) integrierte Graphensuche verwendet, um Benutzer zu finden, die dem aktuellen Benutzer ähnlich sind. Über REST-API-Aufrufe mit den passenden Lucene-Abfragen wurden ähnliche Produkte von digitalen Zwillingen extrahiert und dem aktuellen Benutzer als Empfehlungen präsentiert.
 
-#### Challenges using Elasticsearch for Digital Twins
+##### Herausforderungen bei der Verwendung von Elasticsearch für digitale Zwillinge
 
-A huge challenge in this scenario has been speed. Users usually leave a website if it loads longer than 250ms. This expands drastically, with 11% of the users leaving after one second loading time, and around 90% with more than four seconds of loading time ([Source](https://think.storage.googleapis.com/docs/mobile-page-speed-new-industry-benchmarks.pdf)). Therefore we had to optimize the Elasticsearch cluster and partly simplify our queries to achieve a loading time of around 200ms. How? Leave a message below or contact me to find out more.
+Eine große Herausforderung in diesem Szenario war die Geschwindigkeit. Benutzer verlassen in der Regel eine Website, wenn sie länger als 250 ms geladen wird. Dies führt zu einer drastischen Ausweitung: 11 % der Benutzer verlassen die Website nach einer Sekunde Ladezeit, und etwa 90 % mit mehr als vier Sekunden Ladezeit ([Quelle](https://think.storage.googleapis.com/docs/mobile-page-speed-new-industry-benchmarks.pdf)). Daher mussten wir den Cluster Elasticsearch optimieren und unsere Abfragen teilweise vereinfachen, um eine Ladezeit von etwa 200 ms zu erreichen. Und wie? Hinterlassen Sie unten eine Nachricht oder kontaktieren Sie mich, um mehr darüber zu erfahren.
 
-Did you ever use Elasticsearch for Digital Twins? Do you want to find out how you can build digital twins and matching recommendations for your customers? Leave a message in the comments below or message me directly.
+
+
+
+[Sie haben eine ähnliche Idee oder wir haben Ihr Interesse geweckt? Kontaktieren Sie uns jetzt für eine gratis 15-minütige Beratung!](https://www.datafortress.cloud/de/contact/)

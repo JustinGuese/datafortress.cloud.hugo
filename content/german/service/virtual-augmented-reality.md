@@ -1,7 +1,7 @@
 ---
-title: Virtual & Augmented Reality
+title: Virtuelle und Erweiterte Realität
 date: '2018-09-29T11:51:17.000+06:00'
-description: Virtual and Augmented Reality
+description: Virtuelle und Erweiterte Realität
 image: "/images/woman-using-virtual-reality-headset-3861440-300x200-1200x675.webp"
 bg_image: "/images/woman-using-virtual-reality-headset-3861440-300x200-1200x675.webp"
 icon: ti-thought
@@ -13,164 +13,170 @@ halfTime: ''
 offDay: Sat, Su
 
 ---
-# Virtual and Augmented Reality
+# Virtuelle und Erweiterte Realität
 
 <br>
 
-> **_Experts claim that by 2025 the AR/VR industry will be worth over $25 Billion and steadily rising._**
+> **_Experten behaupten, dass die FER/VR-Industrie bis 2025 einen Wert von über 25 Milliarden Dollar haben wird und stetig steigen wird._**
 
-[Source](https://medium.com/predict/the-future-of-augmented-reality-90143b98f7a3)
+[Quelle](https://medium.com/predict/the-future-of-augmented-reality-90143b98f7a3)
 
 <br>
 
-## EXPERTISE IN VIRTUAL AND AUGMENTED REALITY
+## EXPERTISE IN VIRTUELLER UND ERWEITERTER REALITÄT
 
-So what is causing this huge prediction of AR and VR?  
-Currently, we are used to two-dimensional screens to gather information, but with augmented or virtual reality we are adding a new dimension which allows for way more input to be received. Furthermore, we are living in a three-dimensional world, so naturally, we are way more used to interact in a virtual three-dimensional world and even people that are not used to interact with computers can usually easily handle these environments.
+Was ist also der Grund für diese enorme Vorhersage von AR und VR?  
+Gegenwärtig sind wir an zweidimensionale Bildschirme gewöhnt, um Informationen zu sammeln, aber mit der erweiterten oder virtuellen Realität fügen wir eine neue Dimension hinzu, die es ermöglicht, viel mehr Input zu erhalten. Darüber hinaus leben wir in einer dreidimensionalen Welt, so dass wir natürlich viel mehr daran gewöhnt sind, in einer virtuellen dreidimensionalen Welt zu interagieren, und selbst Menschen, die es nicht gewohnt sind, mit Computern zu interagieren, können mit diesen Umgebungen normalerweise problemlos umgehen.
 
-But what makes Augmented Reality and Virtual Reality so interesting?
+Aber was macht Augmented Reality und Virtual Reality so interessant?
 
-### Virtual Reality
+### Virtuelle Realität
 
 <br>
 
 ![](/images/vr.webp)  
-Virtual reality (VR) is a simulated experience that can be similar to or completely different from the real world. Applications of virtual reality can include entertainment (i.e. video games) and educational purposes (i.e. medical or military training). ([Wikipedia](https://en.wikipedia.org/wiki/Virtual_reality?oldformat=true))
+Virtuelle Realität (VR) ist eine simulierte Erfahrung, die der realen Welt ähnlich oder völlig anders sein kann. Anwendungen der virtuellen Realität können Unterhaltung (z.B. Videospiele) und Bildungszwecke (z.B. medizinische oder militärische Ausbildung) umfassen. ([Wikipedia](https://en.wikipedia.org/wiki/Virtual_reality?oldformat=true))
 
 <br>
 
-### Augmented Reality
+### Erweiterte Realität
 
 <br>
 
 ![](/images/augmented-reality.webp)  
-Augmented reality (AR) is an interactive experience of a real-world environment where the objects that reside in the real world are enhanced by computer-generated perceptual information. ([Wikipedia](https://en.wikipedia.org/wiki/Augmented_reality?oldformat=true))
+Augmented Reality (AR) ist eine interaktive Erfahrung einer realen Umgebung, in der die Objekte, die sich in der realen Welt befinden, durch computergenerierte Wahrnehmungsinformationen verbessert werden. ([Wikipedia](https://en.wikipedia.org/wiki/Augmented_reality?oldformat=true))
 
 <br><br>
 
-## Mixed Reality Services
+## Mixed-Reality-Dienstleistungen
 
 <br>
 
-### 1. Everyone can use it
+### 1. Jeder kann es benutzen
 
-Especially with Augmented Reality, almost all current smartphones support it. This means, that users do not need anything more than a phone (which everyone has) and an internet connection to view content. Virtual reality glasses are currently still only affordable for dedicated users, but with the time prices will go down and these glasses might be at home like current televisions.
-
-<br>
-
-### 2. Endless possibilities
-
-The nice thing about virtual and augmented reality is, that we are not bound to constraints of reality. Take a movie for example: For once, it is hard to cram all the content into a specified time, the screen size itself, and film stunts requiring really dangerous settings. With a virtual environment, everything is possible. Do you want to make users fly with their own arms? Possible. Bend the laws of physics and let users levitate? All is possible with these exciting possibilities.
+Insbesondere mit Augmented Reality unterstützen fast alle aktuellen Smartphones diese Technologie. Das bedeutet, dass die Benutzer nicht mehr als ein Telefon (das jeder hat) und eine Internetverbindung benötigen, um Inhalte zu betrachten. Virtual-Reality-Brillen sind derzeit noch nur für engagierte Nutzer erschwinglich, aber mit der Zeit werden die Preise sinken und diese Brillen könnten wie die aktuellen Fernseher zu Hause sein.
 
 <br>
 
-### 3. Enormous interactivity
+### 2. Unendliche Möglichkeiten
 
-Several studies show, that both technologies are way more “immersive and engaging through the mechanism of spatial presence” (Source: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6389766/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6389766/ "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6389766/")), and therefore engaging than traditional learning and advertisement methods. As anyone can relate, this is true, because if you are doing things instead of just watching how to do it, it becomes way easier to understand.
-
-<br>
-
-### 4. A new start for advertisements
-
->  “65 percent of users find ads annoying”
-
-According to a recent study (Source [https://bit.ly/2Ogj4KM](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6389766/ "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6389766/")), 65 percent of users find advertisements annoying, mainly because they are interrupting what users are doing. Now with AR and VR, users can choose when to play the content and are way more likely to start an interaction with the content – and therefore offer ads a new start and possibly a change from a necessity, to something users may enjoy.
-
-<br><br><br>
-
-## Applications of AR and VR
-
-No matter if you are planning a specific project or you are just trying to inform yourself – we are the right partner to either consult, analyze or execute your ideas. Let us have a look at the applications or “the new realities” below.
+Das Schöne an der virtuellen und erweiterten Realität ist, dass wir nicht an Zwänge der Realität gebunden sind. Nehmen wir zum Beispiel einen Film: Es ist ausnahmsweise einmal schwierig, alle Inhalte in eine vorgegebene Zeit zu pressen, die Bildschirmgröße selbst und Filmstunts, die wirklich gefährliche Einstellungen erfordern. Mit einer virtuellen Umgebung ist alles möglich. Wollen Sie die Benutzer mit ihren eigenen Armen fliegen lassen? Das ist möglich. Die Gesetze der Physik beugen und die Benutzer schweben lassen? Mit diesen aufregenden Möglichkeiten ist alles möglich.
 
 <br>
 
-### 1. Virtual Reality Experiences
+### 3. Enorme Interaktivität
+
+Mehrere Studien zeigen, dass beide Technologien durch den Mechanismus der räumlichen Präsenz viel "immersiver und einnehmender" sind (Quelle: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6389766/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6389766/ "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6389766/")), und daher ansprechender sind als traditionelle Lern- und Werbemethoden. Das kann jeder nachvollziehen, denn wenn man Dinge tut, statt nur zuzuschauen, wie man sie tut, wird es viel einfacher zu verstehen.
+
+<br>
+
+### 4. Ein neuer Start für die Werbung
+
+> "65 Prozent der Benutzer finden Anzeigen lästig"
+
+Laut einer kürzlich durchgeführten Studie (Quelle [https://bit.ly/2Ogj4KM](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6389766/ "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6389766/")) finden 65 Prozent der Nutzer Werbung lästig, vor allem weil sie die Arbeit der Nutzer unterbricht. Mit AR und VR können die Benutzer jetzt wählen, wann sie den Inhalt abspielen wollen, und es ist viel wahrscheinlicher, dass sie eine Interaktion mit dem Inhalt beginnen - und damit der Werbung einen Neuanfang und möglicherweise einen Wechsel von einer Notwendigkeit zu etwas bieten, das den Benutzern Freude bereitet.
+
+<br><br><br><br>
+
+## Anwendungen von AR und VR
+
+Egal, ob Sie ein konkretes Projekt planen oder sich nur informieren wollen - wir sind der richtige Partner, um Ihre Ideen zu beraten, zu analysieren oder umzusetzen. Lassen Sie uns im Folgenden einen Blick auf die Anträge oder "die neuen Realitäten" werfen.
+
+<br>
+
+### 1. Virtual-Reality-Erfahrungen
 
 <br>
 
 ![](/images/vr-1.webp)
 
-In the past, we produced several virtual reality applications, like a virtual reality racing simulator or a used car experience (see portfolio for further information).
+In der Vergangenheit haben wir mehrere Virtual-Reality-Anwendungen produziert, wie z.B. einen Virtual-Reality-Rennsimulator oder eine Gebrauchtwagen-Erfahrung (weitere Informationen finden Sie im Portfolio).
 
-Virtual reality offers a vast amount of experiences, which are basically unlimited due to the fact that you are able to create everything with a computer – no matter if that is a racing simulator, a shooter game or a product demo – the possibilities are endless.
+Die virtuelle Realität bietet eine riesige Menge an Erfahrungen, die im Grunde unbegrenzt sind, da man alles mit einem Computer erstellen kann - ganz gleich, ob es sich dabei um einen Rennsimulator, ein Shooter-Spiel oder eine Produktdemo handelt - die Möglichkeiten sind endlos.
 
-Our VR projects include:
+Unsere VR-Projekte umfassen:
 
-* Virtual showroom, product experiences
-* Virtual Reality Multiplayer Games and Experiences
-* Motion Simulators utilizing VR
-* Virtual Reality Meetings (Homeoffice)
-* Virtual Reality Presentations
-* Virtual Reality concerts, operas, theaters
-* Virtual Reality real estate experiences
-* Virtual Tours for bars, retail, real estate
-* “Funrides” in theme parks and water slides
-* Data Augmentation
-* Virtual Reality in a real environment
+* Virtueller Ausstellungsraum, Produkterfahrungen
+* Virtual-Reality-Multiplayer-Spiele und -Erlebnisse
+* Bewegungssimulatoren, die VR verwenden
+* Virtual-Reality-Treffen (Homeoffice)
+* Virtual-Reality-Präsentationen
+* Virtual-Reality-Konzerte, Opern, Theater
+* Erfahrungen mit Virtual Reality-Immobilien
+* Virtuelle Touren für Bars, Einzelhandel, Immobilien
+* "Funrides" in Freizeitparks und Wasserrutschen
+* Datenerweiterung
+* Virtuelle Realität in einer realen Umgebung
 
 <br>
 
-### 2. Augmented Reality
+### 2. Erweiterte Realität
 
 <br>
 
 ![](/images/arr.webp)
 
-Augmented Reality offers a new way to bring virtual experiences to the broad mass. Of course, current VR headsets offer a higher quality experience, but only a few handfuls of people own a VR-headset, therefore limiting the expose to VR content. Depending on the use-case it might make more sense to prefer Augmented Reality because almost everyone owns a smartphone that can display AR experiences. Furthermore, some users experience a feeling of discomfort when wearing virtual reality glasses, therefore making the AR experience more comfortable for that group of users, because an environment that they know is getting augmented instead of them being transferred into a completely new world.
+Augmented Reality bietet einen neuen Weg, virtuelle Erfahrungen der breiten Masse zugänglich zu machen. Natürlich bieten aktuelle VR-Headsets eine höhere Erlebnisqualität, aber nur wenige Menschen besitzen ein VR-Headset, wodurch die Exposition gegenüber VR-Inhalten begrenzt wird. Je nach Anwendungsfall könnte es sinnvoller sein, Augmented Reality zu bevorzugen, da fast jeder ein Smartphone besitzt, das AR-Erlebnisse darstellen kann. Darüber hinaus empfinden einige Benutzer das Tragen einer Virtual-Reality-Brille als unangenehm, was die AR-Erfahrung für diese Benutzergruppe angenehmer macht, da eine Umgebung, die sie kennen, erweitert wird, anstatt sie in eine völlig neue Welt zu versetzen.
 
-**Our AR services include:**
+**Unsere AR-Dienste umfassen:**
 
-* Augmented Reality advertisements
-* Content enrichments using AR
-* AR content in print media
-* AR product presentations
-* AR using Microsoft Hololense
-* AR car sales
-* AR training
-* AR meetings, online meetings, and home office applications
-* AR theme parks
-* AR fun rides
-* AR presentations
-* AR web advertisements
-* AR retail presentations
-* AR car configurators
+* Augmented-Reality-Werbung
+* Inhaltsanreicherungen mit AR
+* AR-Inhalte in Printmedien
+* AR-Produktpräsentationen
+* AR mit Microsoft Hololense
+* AR-Autoverkäufe
+* AR-Ausbildung
+* AR-Sitzungen, Online-Besprechungen und Home-Office-Anwendungen
+* AR-Themenparks
+* AR-Fahrgeschäfte
+* AR-Präsentationen
+* AR-Web-Anzeigen
+* AR-Einzelhandelspräsentationen
+* AR-Fahrzeugkonfiguratoren
 
-  
+
 <br>
 
-### 3. Data Augmentation
+### 3. Daten-Augmentation
 
 <br>  
 ![](/images/aug.webp)
 
-Data is becoming more and more important. Therefore it is becoming increasingly relevant to improve data presentation. Numbers alone are not sufficient enough, the audience needs to understand them as well. This is where data augmentation comes into play, describing a way to utilize virtual and augmented reality to enrich data and present it in a completely new way, setting it apart from PowerPoint presentations.
+Daten werden immer wichtiger. Daher wird es immer wichtiger, die Datenpräsentation zu verbessern. Zahlen allein reichen nicht aus, das Publikum muss sie auch verstehen. Hier kommt die Datenanreicherung ins Spiel, die eine Möglichkeit beschreibt, virtuelle und erweiterte Realität zu nutzen, um Daten anzureichern und auf eine völlig neue Art und Weise zu präsentieren, die sich von PowerPoint-Präsentationen abhebt.
 
-**Our data augmentation services include:**
+**Unsere Datenerweiterungsdienste umfassen:**
 
-* Interactive data experiences in Virtual Reality
-* Augmented Reality projections on real-life products
-* Data Interaction with virtual reality
-* 2D to 3D enrichments of Excel, PowerPoint & similar
-* Interactive spreadsheets, data presentations
-* Data narrations using virtual and augmented reality
+* Interaktive Datenerlebnisse in virtueller Realität
+* Augmented-Reality-Projektionen auf Produkte aus dem wirklichen Leben
+* Daten-Interaktion mit virtueller Realität
+* 2D- bis 3D-Anreicherungen von Excel, PowerPoint und ähnlichen
+* Interaktive Tabellenkalkulationen, Datenpräsentationen
+* Datenerzählungen mit virtueller und erweiterter Realität
 
 <br>
 
-### 4. Virtual/Augmented Reality Simulators
+### 4. Simulatoren der virtuellen/erweiterten Realität
 
 <br>
 
 ![](/images/vrsim.webp)  
-Virtual/Augmented Reality simulators offer a great way to train processes that are expensive or dangerous in the real world in a safe environment. Depending on the use case these experiences can be focused on being educative or entertaining, both making traditional training methods more memorable and effective. Save yourself expensive equipment and train your staff with hands-on experience that will remain way more memorable than traditional presentations.
+Virtual/Augmented-Reality-Simulatoren bieten eine hervorragende Möglichkeit, Prozesse, die in der realen Welt teuer oder gefährlich sind, in einer sicheren Umgebung zu trainieren. Je nach Anwendungsfall können diese Erfahrungen darauf ausgerichtet sein, erzieherisch oder unterhaltsam zu sein, wodurch traditionelle Trainingsmethoden einprägsamer und effektiver werden. Sparen Sie sich teure Ausrüstung und schulen Sie Ihre Mitarbeiter mit praktischen Erfahrungen, die wesentlich einprägsamer bleiben als traditionelle Präsentationen.
 
-**Our simulator services include:**
+**Unsere Simulator-Dienstleistungen umfassen:**
 
-* driver license simulator
-* electric car battery installation training
-* training for dangerous environments (radioactive, firefighting, poisonous, toxic spills, …)
-* healthcare simulations (surgery, emergency response, …)
-* airplane simulations
-* medical education (anatomy, …)
-* training for handling expensive parts (electric car battery installation, airplane repairs, …)
-* survival simulators
-* fun simulators like skiing-, crane-, hobby pilot-, theme park-, driving-simulators
+* Führerschein-Simulator
+* Schulung zur Installation von Elektroautobatterien
+* Ausbildung für gefährliche Umgebungen (radioaktiv, Brandbekämpfung, giftig, giftige Verschüttungen, ...)
+* Simulationen im Gesundheitswesen (Chirurgie, Notfallreaktion, ...)
+* Flugzeugsimulationen
+* medizinische Ausbildung (Anatomie, ...)
+* Schulung für den Umgang mit teuren Teilen (Installation von elektrischen Autobatterien, Flugzeugreparaturen, ...)
+* Überlebenssimulatoren
+* Spaß-Simulatoren wie Ski-, Kran-, Hobbypilot-, Themenpark-, Fahrsimulatoren
+
+
+
+
+
+[Sie haben eine ähnliche Idee oder wir haben Ihr Interesse geweckt? Kontaktieren Sie uns jetzt für eine gratis 15-minütige Beratung!](https://www.datafortress.cloud/de/contact/)

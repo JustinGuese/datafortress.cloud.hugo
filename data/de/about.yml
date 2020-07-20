@@ -3,11 +3,11 @@ philosophy:
   enable : true
   subtitle : Meet Our
   title : Brand New Solution
-  content :
+  content : |-
     <strong>Cloud, Big-Data, AI</strong>.</br>
-    We believe in <strong>QUALITY</strong></br>
-    We believe in <strong>SPEED</strong></br>
-    We believe in <strong>TECHNOLOGY</strong></br>
+    Wir glauben an <strong>QUALITÄT</strong>.</br>
+    Wir glauben an <strong>AGILITÄT</strong>.</br>
+    Wir glauben an <strong>TECHNOLOGIE</strong>.</br>
     </br>
     In Gründung / Currently in the pre-founding stage!
     </br>
@@ -21,8 +21,8 @@ philosophy:
 ceo:
   enable : true
   bg_image : images/fotojustinguese.webp
-  title : Only trust the best.
-  content : I, Justin Güse, am the founder of Datafortress.cloud. After working for Porsche Holding in an innovation/data science division, where I developed many projects ranging from Big Data to Virtual Reality (see portfolio), I decided to found my own company. During my time at Porsche, I observed that many agencies or consultants do not have the main goal to satisfy their clients’ needs as the main priority, but rather how to achieve the minimal needed tasks in the shortest amount of time.
+  title : Vertrauen Sie nur den Besten.
+  content : Ich, Justin Güse, bin der Gründer von Datafortress.cloud. Nach meiner Tätigkeit für die Porsche Holding in einem Bereich Innovation/Datenwissenschaften, wo ich viele Projekte von Big Data bis Virtual Reality (siehe Portfolio) entwickelt habe, entschied ich mich, mein eigenes Unternehmen zu gründen. Während meiner Zeit bei Porsche habe ich beobachtet, dass für viele Agenturen oder Berater nicht die Befriedigung der Kundenbedürfnisse das Hauptziel ist, sondern vielmehr, wie die minimal notwendigen Aufgaben in kürzester Zeit erledigt werden können.
   signature : images/about/ceo-signature.webp
   name : Justin Güse
   designation : CEO
@@ -37,19 +37,19 @@ funfacts:
   enable : true
   bg_image : images/background/cta.webp
   counter:
-    - title : Projects Done
+    - title : Abgeschlossene Projekte
       icon : ti-server # themify icon pack : https://themify.me/themify-icons
       count : 230
 
-    - title : Satisfied Clients
+    - title : Zufriedene Kunden
       icon : ti-face-smile # themify icon pack : https://themify.me/themify-icons
       count : 73
 
-    - title : Cups Of Coffee
+    - title : Programme geschrieben
       icon : ti-thumb-up # themify icon pack : https://themify.me/themify-icons
       count : 580
 
-    - title : Awards Won
+    - title : Auszeichnungen
       icon : ti-cup # themify icon pack : https://themify.me/themify-icons
       count : 2
 

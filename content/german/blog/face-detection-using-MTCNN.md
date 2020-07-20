@@ -1,10 +1,9 @@
 ---
-title: Face Detection using MTCNN
+title: Gesichtserkennung mittels MTCNN
 bg_image: "/images/index2-1-1280x720.webp"
 date: 2020-06-08T07:10:46+02:00
 author: Justin Guese
-description: Face Detection using MTCNN – a guide for face extraction with a focus
-  on speed
+description: Gesichtserkennung mittels MTCNN - eine Anleitung mit Fokus auf Geschwindigkeit
 image: "/images/index2-1-1280x720.webp"
 categories:
 - Computer Vision
@@ -19,50 +18,50 @@ tags:
 type: post
 
 ---
-# What is MTCNN
+# Was ist MTCNN
 
 <br>
 
-MTCNN is a python (pip) library written by [Github user ipacz](https://github.com/ipazc/mtcnn), which implements the [paper Zhang, Kaipeng et al. “Joint Face Detection and Alignment Using Multitask Cascaded Convolutional Networks.” IEEE Signal Processing Letters 23.10 (2016): 1499–1503. Crossref. Web](https://arxiv.org/abs/1604.02878%5D(https://arxiv.org/abs/1604.02878%20%22https://arxiv.org/abs/1604.02878).
+MTCNN ist eine Python (pip)-Bibliothek, die von [Github-Benutzer ipacz] (https://github.com/ipazc/mtcnn) geschrieben wurde und die [das Papier Zhang, Kaipeng et al. "Joint Face Detection and Alignment Using Multitask Cascaded Convolutional Networks" implementiert. IEEE Signal Processing Letters 23.10 (2016): 1499-1503. Querverweis. Web](https://arxiv.org/abs/1604.02878%5D(https://arxiv.org/abs/1604.02878%20%22https://arxiv.org/abs/1604.02878).
 
-In this paper, they propose a deep cascaded multi-task framework using different features of “sub-models” to each boost their correlating strengths.
+In diesem Papier schlagen sie einen tief kaskadierten Multi-Task-Rahmen vor, der verschiedene Merkmale von "Untermodellen" verwendet, um jeweils ihre korrelierenden Stärken zu verstärken.
 
-MTCNN performs quite fast on a CPU, even though S3FD is still quicker running on a GPU – but that is a topic for another post.
+MTCNN ist auf einer CPU recht schnell, obwohl S3FD auf einer GPU immer noch schneller läuft - aber das ist ein Thema für einen anderen Beitrag.
 
-This post uses code from the following two sources, check them out, they are interesting as well:
+Dieser Beitrag verwendet Code aus den beiden folgenden Quellen, schauen Sie sich diese an, sie sind ebenfalls interessant:
 
 * [https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/](https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/ "https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/")
 * [https://www.kaggle.com/timesler/fast-mtcnn-detector-55-fps-at-full-resolution](https://www.kaggle.com/timesler/fast-mtcnn-detector-55-fps-at-full-resolution "https://www.kaggle.com/timesler/fast-mtcnn-detector-55-fps-at-full-resolution")
 
 <br>
 
-# Basic usage of MTCNN
+# Grundlegende Verwendung von MTCNN
 
 <br>
 
-Feel free to access the whole notebook via:
+Zögern Sie nicht, auf das gesamte Notebook zuzugreifen:
 
 [https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up](https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up "https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up")
 
     git clone https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up
-    
-    
 
-Luckily MTCNN is available as a pip package, meaning we can easily install it using
+
+
+Glücklicherweise ist MTCNN als Pip-Paket erhältlich, was bedeutet, dass wir es leicht installieren können mit
 
     pip install mtcnn
-    
-    
 
-Now switching to Python/Jupyter Notebook we can check the installation with an import and quick verification:
+
+
+Wenn wir jetzt zu Python/Jupyter Notebook wechseln, können wir die Installation mit einem Import und einer schnellen Überprüfung überprüfen:
 
     import mtcnn
     # print version
     print(mtcnn.__version__)
-    
-    
 
-Afterwards, we are ready to load out test image using the matplotlib [imread function](https://bit.ly/2vo3INw).
+
+
+Danach sind wir bereit, das Testbild mit der Matplotlib [imread-Funktion] (https://bit.ly/2vo3INw) auszuladen.
 
     import matplotlib.pyplot as plt
     # load image from file
@@ -72,24 +71,24 @@ Afterwards, we are ready to load out test image using the matplotlib [imread fun
     imgplot = plt.imshow(pixels)
     plt.show()
 
-Now your output will look a lot like this:
+Nun wird Ihre Ausgabe in etwa so aussehen:
 
-    {'box': [1942, 716, 334, 415], 'confidence': 0.9999997615814209, 'keypoints': {'left_eye': (2053, 901), 'right_eye': (2205, 897), 'nose': (2139, 976), 'mouth_left': (2058, 1029), 'mouth_right': (2206, 1023)}}
-    {'box': [2084, 396, 37, 46], 'confidence': 0.9999206066131592, 'keypoints': {'left_eye': (2094, 414), 'right_eye': (2112, 414), 'nose': (2102, 426), 'mouth_left': (2095, 432), 'mouth_right': (2112, 431)}}
-    {'box': [1980, 381, 44, 59], 'confidence': 0.9998701810836792, 'keypoints': {'left_eye': (1997, 404), 'right_eye': (2019, 407), 'nose': (2010, 417), 'mouth_left': (1995, 425), 'mouth_right': (2015, 427)}}
-    {'box': [2039, 395, 39, 46], 'confidence': 0.9993435740470886, 'keypoints': {'left_eye': (2054, 409), 'right_eye': (2071, 415), 'nose': (2058, 422), 'mouth_left': (2048, 425), 'mouth_right': (2065, 431)}}
+    {'box': [1942, 716, 334, 415], 'Vertrauen': 0,999999997615814209, 'Schlüsselpunkte': {'linkes_Auge': (2053, 901), "rechtes_Auge": (2205, 897), "Nase": (2139, 976), "Mund_links": (2139, 976), "Mund_links": (2058, 1029), 'Mund_rechts': (2058, 1029), 'Mund_rechts': (2206, 1023)}}
+    {"Kiste": [2084, 396, 37, 46], 'Vertrauen': 0,9999206066131592, 'Schlüsselpunkte': {'linkes_Auge': [2084, 396, 37, 46], 'Vertrauen': [2084, 396, 37, 46], 'Vertrauen': 0,99999206066131592, 'Schlüsselpunkte': [0,9999206066131592], 'Vertrauen (2094, 414), "rechtes_Auge": (2094, 414), "rechtes_Auge": (2112, 414), "Nase": (2094, 414), "Nase": (2102, 426), "Mund_links": (2095, 432), "Mund_rechts": (2112, 431)}}
+    {"Kiste": [1980, 381, 44, 59], 'Vertrauen': 0,9998701810836792, 'Schlüsselpunkte': {'linkes_Auge': [1980, 381, 44, 59], 'Vertrauen': 0,9998701810836792, 'Schlüsselpunkte': [1980, 381, 44, 59]: (1997, 404), "rechtes_Auge": (2019, 407), "Nase": (1997, 404), "Nase": (2010, 417), "Mund_links": (2010, 417), "Mund_links": (1995, 425), "Mund_rechts": (1995, 425), "Mund_rechts": (2015, 427)}}
+    {"Kiste": [2039, 395, 39, 46], 'Vertrauen': 0,9993435740470886, 'Schlüsselpunkte': {'linkes_Auge': [2039, 395, 39, 46], 'Vertrauen': 0,9993435740470886, 'Vertrauen': 0,9993435740470886, 'Schlüsselpunkte': [2039, 395, 39, 46]: (2054, 409), "rechtes_Auge": (2054, 409), "rechtes_Auge": (2071, 415), "Nase": (2054, 409), "Nase": (2058, 422), "Mund_links": (2048, 425), 'Mund_rechts': (2048, 425), 'Mund_rechts': (2065, 431)}}
 
-What does this tell us? A lot of it is self-explanatory, but it basically returns coordinates, or the pixel values of a rectangle where the MTCNN algorithm detected faces. The “box” value above returns the location of the whole face, followed by a “confidence” level.
+Was sagt uns das? Vieles davon ist selbsterklärend, aber im Grunde liefert es Koordinaten oder die Pixelwerte eines Rechtecks, in dem der MTCNN-Algorithmus Gesichter erkannt hat. Der obige "Kasten"-Wert gibt die Position des gesamten Gesichts zurück, gefolgt von einem "Vertrauens"-Level.
 
-If you want to do more advanced extractions or algorithms, you will have access to other facial landmarks, called “keypoints” as well. Namely the MTCNN model located the eyes, mouth and nose as well!
-
-<br>
-
-## Drawing a box around faces
+Wenn Sie fortgeschrittenere Extraktionen oder Algorithmen durchführen möchten, haben Sie auch Zugang zu anderen Landmarken des Gesichts, die als "Schlüsselpunkte" bezeichnet werden. Das MTCNN-Modell lokalisierte nämlich auch die Augen, den Mund und die Nase!
 
 <br>
 
-To demonstrate this even better let us draw a box around the face using matplotlib:
+## Zeichnen eines Kastens um Gesichter
+
+<br>
+
+Um dies noch besser zu demonstrieren, zeichnen wir mit matplotlib einen Kasten um das Gesicht:
 
     # draw an image with detected objects
     def draw_facebox(filename, result_list):
@@ -109,7 +108,7 @@ To demonstrate this even better let us draw a box around the face using matplotl
     ax.add_patch(rect)
     # show the plot
     plt.show()
-    
+
     # filename = 'test1.webp' # filename is defined above, otherwise uncomment
     # load image from file
     # pixels = plt.imread(filename) # defined above, otherwise uncomment
@@ -124,14 +123,14 @@ To demonstrate this even better let us draw a box around the face using matplotl
 
 <br>
 
-## Displaying eyes, mouth, and nose around faces
+## Darstellung von Augen, Mund und Nase um Gesichter
 
 <br>
 
-Now let us take a look at the aforementioned “keypoints” that the MTCNN model returned.
+Werfen wir nun einen Blick auf die oben erwähnten "Schlüsselpunkte", die das MTCNN-Modell zurückgebracht hat.
 
-We will now use these to graph the nose, mouth, and eyes as well.  
-We will add the following code snippet to our code above:
+Wir werden diese nun auch für die Darstellung von Nase, Mund und Augen verwenden.  
+Wir werden den folgenden Codeschnipsel zu unserem obigen Code hinzufügen:
 
     # draw the dots
     for key, value in result['keypoints'].items():
@@ -139,7 +138,7 @@ We will add the following code snippet to our code above:
     dot = plt.Circle(value, radius=20, color='orange')
     ax.add_patch(dot)
 
-With the full code from above looking like this:
+Mit dem vollständigen Code von oben, der wie folgt aussieht:
 
     # draw an image with detected objects
     def draw_facebox(filename, result_list):
@@ -164,7 +163,7 @@ With the full code from above looking like this:
     ax.add_patch(dot)
     # show the plot
     plt.show()
-    
+
     # filename = 'test1.webp' # filename is defined above, otherwise uncomment
     # load image from file
     # pixels = plt.imread(filename) # defined above, otherwise uncomment
@@ -179,23 +178,23 @@ With the full code from above looking like this:
 
 <br>
 
-## Advanced MTCNN: Speed it up (\\\~x100)!
+## Erweitertes MTCNN: Beschleunigen Sie es (\\\\~x100)!
 
 <br>
 
-Now let us come to the interesting part. If you are going to process millions of pictures you will need to speed up MTCNN, otherwise, you will either fall asleep or your CPU will burn before it will be done.
+Kommen wir nun zum interessanten Teil. Wenn Sie Millionen von Bildern verarbeiten wollen, müssen Sie MTCNN beschleunigen, sonst werden Sie entweder einschlafen oder Ihre CPU wird verbrennen, bevor sie fertig ist.
 
-But what exactly are we talking about? If you are running the above code it will take around one second, meaning we will process around one picture per second. If you are running MTCNN on a GPU and use the sped-up version it will achieve around 60-100 pictures/frames a second. That is a boost of up to **100 times**!
+Aber worüber genau reden wir hier? Wenn Sie den obigen Code ausführen, dauert es etwa eine Sekunde, d.h. wir werden etwa ein Bild pro Sekunde verarbeiten. Wenn Sie MTCNN auf einer GPU ausführen und die beschleunigte Version verwenden, werden etwa 60-100 Bilder pro Sekunde erreicht. Das ist eine Steigerung von bis zu **100 Mal**!
 
-If you are for example going to extract all faces of a movie, where you will extract 10 faces per second (one second of the movie has on average around 24 frames, so every second frame) it will be 10 * 60 (seconds) * 120 (minutes) = 72,000 frames.
+Wenn Sie z.B. alle Gesichter eines Films extrahieren wollen, wobei Sie 10 Gesichter pro Sekunde extrahieren (eine Sekunde des Films hat im Durchschnitt etwa 24 Bilder, also jedes zweite Bild), dann sind es 10 * 60 (Sekunden) * 120 (Minuten) = 72.000 Bilder.
 
-Meaning if it takes one second to process one frame it will take 72,000 * 1 (seconds) = 72,000s / 60s = 1,200m = **20 hours**
+Das heißt, wenn die Verarbeitung eines Einzelbildes eine Sekunde dauert, dauert sie 72.000 * 1 (Sekunden) = 72.000s / 60s = 1.200m = **20 Stunden**.
 
-With the sped-up version of MTCNN this task will take 72,000 (frames) / 100 (frames/sec) = 720 seconds = **12 minutes**!
+Mit der Beschleunigungsversion von MTCNN wird diese Aufgabe 72.000 (Frames) / 100 (Frames/sec) = 720 Sekunden = **12 Minuten** dauern!
 
-To use MTCNN on a GPU you will need to set up CUDA, cudnn, pytorch and so on. [Pytorch wrote a good tutorial about that part](https://pytorch.org/get-started/locally/).
+Um MTCNN auf einer GPU zu verwenden, müssen Sie CUDA, cudnn, pytorch usw. einrichten. [Pytorch hat ein gutes Tutorial zu diesem Teil geschrieben](https://pytorch.org/get-started/locally/).
 
-Once installed we will do the necessary imports as follows:
+Nach der Installation werden wir die notwendigen Importe wie folgt durchführen:
 
     from facenet_pytorch import MTCNN
     from PIL import Image
@@ -205,14 +204,14 @@ Once installed we will do the necessary imports as follows:
     import time
     import glob
     from tqdm.notebook import tqdm
-    
+
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     filenames = ["glediston-bastos-ZtmmR9D_2tA-unsplash.webp","glediston-bastos-ZtmmR9D_2tA-unsplash.webp"]
 
-See how we defined the device in the code above? You will be able to run everything on a CPU as well if you do not want or can set up CUDA.
+Sehen Sie, wie wir das Gerät im obigen Code definiert haben. Sie können alles auch auf einer CPU laufen lassen, wenn Sie CUDA nicht einrichten wollen oder können.
 
-Next, we will define the extractor:
+Als nächstes werden wir den Extraktor definieren:
 
     # define our extractor
     fast_mtcnn = FastMTCNN(
@@ -224,9 +223,9 @@ Next, we will define the extractor:
     device=device
     )
 
-In this snippet, we pass along some parameters, where we for example only use half of the image size, which is one of the main impact factors for speeding it up.
+In diesem Schnipsel geben wir einige Parameter weiter, wobei wir zum Beispiel nur die halbe Bildgröße verwenden, was einer der Haupteinflussfaktoren für die Beschleunigung ist.
 
-And finally, let us run the face extraction script:
+Und schließlich lassen wir das Skript zur Gesichtsextraktion laufen:
 
     def run_detection(fast_mtcnn, filenames):
     frames = []
@@ -234,36 +233,39 @@ And finally, let us run the face extraction script:
     faces_detected = 0
     batch_size = 60
     start = time.time()
-    
+
     for filename in tqdm(filenames):
-    
+
     v_cap = FileVideoStream(filename).start()
     v_len = int(v_cap.stream.get(cv2.CAP_PROP_FRAME_COUNT))
-    
+
     for j in range(v_len):
-    
+
     frame = v_cap.read()
     frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     frames.append(frame)
-    
+
     if len(frames) >= batch_size or j == v_len - 1:
-    
+
     faces = fast_mtcnn(frames)
-    
+
     frames_processed += len(frames)
     faces_detected += len(faces)
     frames = []
-    
+
     print(
     f'Frames per second: {frames_processed / (time.time() - start):.3f},',
     f'faces detected: {faces_detected}\r',
     end=''
     )
-    
+
     v_cap.stop()
-    
+
     run_detection(fast_mtcnn, filenames)
 
 ![](/images/teslap100frames.webp)
 
-The above image shows the output of the code running on an NVIDIA Tesla P100, so depending on the source material, GPU and processor you might experience better or worse performance.
+Das obige Bild zeigt die Ausgabe des Codes, der auf einem NVIDIA Tesla P100 läuft. Je nach Quellmaterial, Grafikprozessor und Prozessor kann die Leistung also besser oder schlechter ausfallen.
+
+
+[Sie haben eine ähnliche Idee oder wir haben Ihr Interesse geweckt? Kontaktieren Sie uns jetzt für eine gratis 15-minütige Beratung!](https://www.datafortress.cloud/de/contact/)

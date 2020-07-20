@@ -1,8 +1,8 @@
 ---
-title: Top 6 best Cloud Storage services – Free, Paid and for Businesses
+title: Top 6 der besten Cloud-Storage-Dienste - kostenlos, kostenpflichtig und für Unternehmen
 bg_image: "/images/silver-hard-drive-interals-33278-1200x675.webp"
 date: 2020-06-08T00:00:00+02:00
-description: Top 6 best Cloud Storage services – Free, Paid and for Businesses
+description: Top 6 der besten Cloud-Storage-Dienste - kostenlos, kostenpflichtig und für Unternehmen
 author: Justin Guese
 image: "/images/silver-hard-drive-interals-33278-1200x675.webp"
 categories:
@@ -16,64 +16,64 @@ tags:
 type: post
 
 ---
-Why should I store my data in the cloud?
+Warum sollte ich meine Daten in der Cloud speichern?
 
-The computing industry has moved gradually away from local storage to remote, server-based storage and computing since the rise of the internet — what has been known as the cloud. Look at music and films: from media, we used to play them, and now they are downloaded from networks. Through storing your own data and media files in the cloud, you will enjoy the same benefits of viewing and uploading from anywhere. The advantages are increases in efficiency and decreased demands for local storage. We have rounded up the best providers for cloud storage and file-sharing or file synchronization to help you determine which one is right for you.
+Die Computerindustrie hat sich seit dem Aufkommen des Internets - der so genannten Cloud - allmählich von der lokalen Speicherung zu einer entfernten, serverbasierten Speicherung und Datenverarbeitung entwickelt. Schauen Sie sich Musik und Filme an: Früher haben wir sie von Medien abgespielt, jetzt werden sie von Netzwerken heruntergeladen. Wenn Sie Ihre eigenen Daten und Mediendateien in der Cloud speichern, genießen Sie die gleichen Vorteile, wenn Sie sie von überall her ansehen und hochladen. Die Vorteile sind Effizienzsteigerungen und geringere Anforderungen an die lokale Speicherung. Wir haben die besten Anbieter für Cloud-Speicherung und Dateifreigabe oder Dateisynchronisierung zusammengetragen, um Ihnen bei der Entscheidung zu helfen, welcher Anbieter der richtige für Sie ist.
 
-If you do not have a platform in the cloud to store and synchronize your data yet, you should consider it seriously. What you choose depends on the types of files that you save, how much protection you need, how you intend to share with others, and which gadgets you use to modify and view files. This may also usually rely on your level of comfort with computers. Some platforms are highly user-friendly while others provide advanced features for tech geeks who are more seasoned.
+Wenn Sie noch keine Plattform in der Cloud haben, um Ihre Daten zu speichern und zu synchronisieren, sollten Sie dies ernsthaft in Betracht ziehen. Wofür Sie sich entscheiden, hängt von den Dateitypen ab, die Sie speichern, wie viel Schutz Sie benötigen, wie Sie beabsichtigen, Ihre Daten mit anderen zu teilen, und welche Gadgets Sie zum Ändern und Anzeigen von Dateien verwenden. Dies hängt in der Regel auch davon ab, wie gut Sie mit Computern umgehen können. Einige Plattformen sind sehr benutzerfreundlich, während andere fortgeschrittene Funktionen für Technikfreaks bieten, die erfahrener sind.
 
-The breadth of Web-based computing infrastructure capabilities is enormous. Most of them have been focused on a particular field. Dropbox and SugarSync, for instance, are focused on maintaining a synchronized folder available anywhere. SpiderOak stresses safety. Some cloud storage providers, such as Apple iCloud, Google Drive, and Microsoft OneDrive, are generalists providing not only folder and file synchronization but also multimedia play and system synchronization. These products also act as collaborative apps, which provide the coediting of documents in real-time.
+Die Bandbreite der Möglichkeiten der webbasierten Computerinfrastruktur ist enorm. Die meisten von ihnen haben sich auf ein bestimmtes Gebiet konzentriert. Dropbox und SugarSync z.B. konzentrieren sich darauf, einen synchronisierten Ordner überall verfügbar zu halten. SpiderOak betont die Sicherheit. Einige Cloud-Storage-Anbieter wie Apple iCloud, Google Drive und Microsoft OneDrive sind Generalisten, die nicht nur die Ordner- und Dateisynchronisation, sondern auch die Multimedia-Wiedergabe und die Systemsynchronisation anbieten. Diese Produkte fungieren auch als kollaborative Anwendungen, die das Co-Editing von Dokumenten in Echtzeit ermöglichen.
 <br><br>
 
-## The right choice for private, business or free storage
+## Die richtige Wahl für private, geschäftliche oder kostenlose Lagerung
 
 <br>
-Obviously, as always, your choice will depend on whether you are a business or private person, or even want to choose a free version. As a business, security and availability will matter more than to a private person. Anyways, we have provided a list for each group below:
+Natürlich hängt Ihre Wahl wie immer davon ab, ob Sie eine geschäftliche oder private Person sind oder ob Sie sich sogar für eine kostenlose Version entscheiden wollen. Für ein Unternehmen werden Sicherheit und Verfügbarkeit wichtiger sein als für eine Privatperson. Wie auch immer, wir haben für jede Gruppe unten eine Liste bereitgestellt:
 <br>
 
-## 1. Best (Free) Private Cloud Storages
+## 1. Beste (kostenlose) private Cloud-Speicher
 
 <br><br>
-Even though we are cautious in using the term “free” – as we all know nothing is free. But in offering some data of yourself whilst using these services, Google Drive and others offer a free quota of data for you to use. How do they use my data? Of course, there will not be a person at Google going through your personal diary, but the[y will use that data to construct an ad-profile](https://safety.google/privacy/data/), which means that if you, for example, type an article about how much you love dogs, you might see ads for dog food soon after. For everyone that is okay with that, it is free data, so why not?
+Auch wenn wir den Begriff "frei" mit Vorsicht verwenden - wir alle wissen, dass nichts frei ist. Aber wenn Sie einige Daten von sich selbst anbieten, während Sie diese Dienste nutzen, bieten Google Drive und andere Ihnen ein kostenloses Datenkontingent zur Nutzung an. Wie verwenden sie meine Daten? Natürlich wird keine Person bei Google Ihr persönliches Tagebuch durchsehen, aber sie [werden] diese Daten verwenden, um ein Werbeprofil zu erstellen (https://safety.google/privacy/data/), was bedeutet, dass Sie, wenn Sie zum Beispiel einen Artikel darüber schreiben, wie sehr Sie Hunde lieben, bald darauf vielleicht Anzeigen für Hundefutter sehen werden. Für jeden, der damit einverstanden ist, sind die Daten kostenlos, warum also nicht?
 
-Also, as I will soon explain in another blog post, you can use apps like [Cryptomator (link)](https://cryptomator.org/) to encrypt your data in the cloud (relatively) easily, meaning that the providers will not be able to use it.
+Wie ich demnächst in einem anderen Blog-Beitrag erläutern werde, können Sie auch Anwendungen wie [Cryptomator (link)](https://cryptomator.org/) verwenden, um Ihre Daten in der Cloud (relativ) einfach zu verschlüsseln, was bedeutet, dass die Anbieter sie nicht verwenden können.
 
-Anyways, our personal free Cloud Storage list goes as follows:
+Wie auch immer, unsere persönliche kostenlose Cloud-Storage-Liste lautet wie folgt:
 <br><br>
 
-### [No. 1 – pCloud – Best (Free) Private Cloud Storages](https://partner.pcloud.com/r/22225)
+### [Nr. 1 - pCloud - Beste (kostenlose) private Cloud-Speicher](https://partner.pcloud.com/r/22225)
 
-### ![](/images/pcloud-150x150.webp)
+### ![](/images/picture/poud-150x150.webp)
 
-### 
+###
 
-### 
+###
 
-pCloud might be an entry you have not heard before, which is good because like I said before, no free service is offered completely for free. pCloud values data privacy, which they guarantee through advanced encryption and storing data in Switzerland, meaning that they are outside of the jurisdiction of the NSA or European data regulations, meaning that no government can force them to give them your data. Why should I care if I have nothing to hide? Data can be used for advertisements, industrial espionage, determining your credit score, and much more if it is in the hands of criminal entities. Additionally, pCloud offers a lifetime subscription, which beats every other contestant on the list.
+pCloud könnte ein Eintrag sein, den Sie noch nie zuvor gehört haben, was gut ist, denn wie ich bereits sagte, wird kein kostenloser Dienst völlig umsonst angeboten. pCloud legt Wert auf Datenschutz, den sie durch fortschrittliche Verschlüsselung und Speicherung der Daten in der Schweiz garantiert, was bedeutet, dass sie außerhalb der Gerichtsbarkeit der NSA oder der europäischen Datenvorschriften liegen, was bedeutet, dass keine Regierung sie zwingen kann, ihnen Ihre Daten zu geben. Warum sollte es mich kümmern, wenn ich nichts zu verbergen habe? Daten können für Werbung, Wirtschaftsspionage, die Ermittlung Ihrer Kreditwürdigkeit und vieles mehr verwendet werden, wenn sie sich in den Händen krimineller Organisationen befinden. Zusätzlich bietet pCloud ein Abonnement auf Lebenszeit an, das jeden anderen Teilnehmer auf der Liste schlägt.
 
 <table>
 <tbody>
 <tr>
 <th>Pro</th>
 <th>Contra</th>
-<th>Perfect for:</th>
+<th>Perfekt für:</th>
 </tr>
 <tr>
 <td>
 <ul>
-<li>Privacy and Encryption</li>
-<li>Lifetime deal (175€ for your whole life w. 500 GB)</li>
-<li>5GB free storage</li>
-<li>easy and secure sharing</li>
+<li>Datenschutz und Verschlüsselung</li>
+<li>Lebenslanges Geschäft (175€ für Ihr ganzes Leben mit 500 GB)</li>
+<li>5GB freier Speicherplatz</li>
+<li>Einfaches und sicheres Teilen</li>
 </ul>
 </td>
 <td>
 <ul>
-<li>No collaboration</li>
-<li>smaller company than Google, Microsoft or Dropbox</li>
+<li>keine Zusammenarbeit</li>
+<li>kleineres Unternehmen als Google, Microsoft oder Dropbox</li>
 </ul>
 </td>
-<td>Set-and-forget average users</td>
+<td>Durchschnittliche Benutzer setzen und vergessen</td>
 </tr>
 </tbody>
 </table>
@@ -82,38 +82,38 @@ pCloud might be an entry you have not heard before, which is good because like I
 
 <br><br>
 
-### [No. 2 – Google Drive – Best (Free) Private Cloud Storages](https://www.google.com/drive/)
+### [Nr. 2 - Google Drive - Beste (kostenlose) private Cloud-Speicher](https://www.google.com/drive/)
 
 ![](/images/google_drive_logo-150x150.webp)
 
-Google Drive is our number one selection for free cloud storage. It is available on many platforms and devices, offers 15 GB of free storage, and is amazingly fast. Furthermore, it offers many third-party applications to collaborate on data, and add almost any functionality you can think of.
+Google Drive ist unsere erste Wahl für kostenlosen Cloud-Speicherplatz. Es ist auf vielen Plattformen und Geräten verfügbar, bietet 15 GB kostenlosen Speicherplatz und ist erstaunlich schnell. Darüber hinaus bietet es viele Anwendungen von Drittanbietern für die Zusammenarbeit an Daten und fügt fast jede erdenkliche Funktionalität hinzu.
 
 <table>
 <tbody>
 <tr>
 <td>
-<p><strong>Pro</strong></p>
+<p><<stark>Pro</stark></p>
 </td>
 <td>
-<p><strong>Contra</strong></p>
+<p><<stark>Kontra</stark></p>
 </td>
 <td>
-<p><strong>Perfect for:</strong></p>
+<p><<stark>Perfekt für:</stark></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>15 GB free storage</p>
-<p>many add-ons</p>
-<p>unlimited storage for Google Docs</p>
-<p>easy sharing, and collaboration</p>
+<p>15 GB freier Speicherplatz</p>
+<p>viele Zusätze</p>
+<p>unbegrenzter Speicherplatz für Google Docs</p>
+<p>Einfaches Teilen und Zusammenarbeit</p>
 </td>
 <td>
-<p>The desktop synchronizer is saving all the files locally and files might be overwritten</p>
-<p>Mind the privacy concern as Google is the main player in the ad game</p>
+<p>Der Desktop-Synchronisierer speichert alle Dateien lokal und Dateien könnten überschrieben werden</p>
+<p>Bedenken Sie die Datenschutzbedenken, da Google der Hauptakteur im Werbespiel ist</p>
 </td>
 <td>
-<p>The average user being okay with targeted ads</p>
+<p>Der durchschnittliche Benutzer ist mit gezielter Werbung einverstanden</p>
 </td>
 </tr>
 </tbody>
@@ -121,127 +121,127 @@ Google Drive is our number one selection for free cloud storage. It is available
 
 [Link](https://www.google.com/drive/)
 
-<br><br><br>
+<br><br><br><br>
 
-### [No. 3 – Dropbox – Best (Free) Private Cloud Storages](https://www.dropbox.com/)
+### [Nr. 3 - Dropbox - Beste (kostenlose) private Cloud-Speicher](https://www.dropbox.com/)
 
 ![](/images/dropbox-150x150.webp)
 
-I guess everyone heard of Dropbox. The company laid a special focus on file synchronization, making it the service that avoids synchronization issues the best. Also, it has good integration into almost every operating system and is, therefore, the perfect set and forget solution. The problem? It is expensive and the free data is limited to 2GB only.
+Ich schätze, jeder hat von Dropbox gehört. Das Unternehmen legte einen besonderen Schwerpunkt auf die Dateisynchronisierung, wodurch es zu dem Dienst wurde, der Synchronisationsprobleme am besten vermeidet. Außerdem hat es eine gute Integration in fast jedes Betriebssystem und ist daher die perfekte Set-and-Goss-Lösung. Das Problem? Es ist teuer und die kostenlosen Daten sind auf nur 2 GB begrenzt.
 
 <table>
 <tbody>
 <tr>
 <th>Pro</th>
 <th>Contra</th>
-<th>Perfect for:</th>
+<th>Perfekt für:</th>
 </tr>
 <tr>
 <td>
 <ul>
-<li>Good integration in all operating systems</li>
-<li>Good synchronization</li>
-<li>Pro features are nice </li>
+<li>Gute Integration in alle Betriebssysteme</li>
+<li>Gute Synchronisation</li>
+<li>Pro-Funktionen sind schön </li>
 </ul>
 </td>
 <td>
 <ul>
-<li>Expensive</li>
-<li>Limited free storage</li>
+<li>Kostenintensiv</li>
+<li>Begrenzter freier Speicherplatz</li>
 </ul>
 </td>
-<td>If you want to spend money, but receive a product with a lot of additional features</td>
+<td>Wenn Sie Geld ausgeben möchten, aber ein Produkt mit vielen zusätzlichen Funktionen erhalten</td>
 </tr>
 </tbody>
 </table>
 
 [Link](https://www.dropbox.com/)
 
-<br><br><br>
+<br><br><br><br>
 
-### [No. 4 – Microsoft OneDrive – Best (Free) Private Cloud Storages](https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage)
+### [Nr. 4 - Microsoft OneDrive - Beste (kostenlose) private Cloud-Speicher](https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage)
 
-![](/images/onedrive-150x150.webp)
+![](/images/onerive-150x150.webp)
 
-OneDrive is automatically installed if you are using Microsoft Windows, which is [likely you are.](https://en.wikipedia.org/wiki/Usage_share_of_operating_systems?oldformat=true) It is nicely integrated into Office 365, meaning you can easily share, edit and save data inbetween your OneNote Notebook, Outlook E-mail and others. Using additional apps you are able to do almost anything with it. You are already using Office 365 and Windows 10? Then search no further, you will receive 1 TB free storage and will have anything you need. Still remember that Microsoft had some [privacy issues in the past, like handing over encrypted data to the NSA.](https://www.theguardian.com/world/2013/jul/11/microsoft-nsa-collaboration-user-data)
+OneDrive wird automatisch installiert, wenn Sie Microsoft Windows verwenden, was [wahrscheinlich der Fall ist.] (https://en.wikipedia.org/wiki/Usage_share_of_operating_systems?oldformat=true) Es ist schön in Office 365 integriert, d.h. Sie können Daten zwischen Ihrem OneNote Notebook, Outlook E-Mail und anderen problemlos austauschen, bearbeiten und speichern. Mit zusätzlichen Anwendungen können Sie fast alles damit machen. Sie verwenden bereits Office 365 und Windows 10? Dann suchen Sie nicht weiter, Sie erhalten 1 TB kostenlosen Speicherplatz und haben alles, was Sie brauchen. Denken Sie immer noch daran, dass Microsoft in der Vergangenheit einige [Datenschutzprobleme hatte, wie die Übergabe verschlüsselter Daten an die NSA.](https://www.theguardian.com/world/2013/jul/11/microsoft-nsa-collaboration-user-data)
 
 <table>
 <tbody>
 <tr>
 <th>Pro</th>
 <th>Contra</th>
-<th>Perfect for:</th>
+<th>Perfekt für:</th>
 </tr>
 <tr>
 <td>
 <ul>
-<li>Great integration into Windows 10</li>
-<li>Wide range of apps available</li>
-<li>Great Office365 integration</li>
+<li>Große Integration in Windows 10</li>
+<li>Breite Palette der verfügbaren Anwendungen</li>
+<li>Große Büro365-Integration</li>
 </ul>
 </td>
 <td>
 <ul>
-<li>Data Privacy</li>
-<li>only 5GB free storage, expensive afterward</li>
+<li>Datenschutz</li>
+<li>nur 5GB freier Speicherplatz, danach teuer</li>
 </ul>
 </td>
-<td>Windows 10 and Office365 users</td>
+<td>Windows 10 und Office365-Benutzer</td>
 </tr>
 </tbody>
 </table>
 
 [Link](https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage)
-<br><br><br>
+<br><br><br><br>
 
-## 2. Best Business Cloud Storages / Advanced Users
+## 2. Beste Business-Cloud-Speicher / Fortgeschrittene Benutzer
 
-For users that want to have more control over their data, and seek more functionality or businesses we will recommend the following.
+Für Benutzer, die mehr Kontrolle über ihre Daten haben möchten und nach mehr Funktionalität oder Geschäften suchen, empfehlen wir Folgendes.
 
-As a business, you will need way more control over your data. You will need a log, being a registry where you “write down” what users accessed which files, which will become essential to control the data flow or to craft a report in case of a data breach. Additionally, you will have to limit which department or employee can access what kind of data. It would be bad if your employees would have access to salary data for example.  
-Many businesses underestimate the importance of cloud security, as we already have shown in our [post about cloud computing,](https://www.datafortress.cloud/cloud-services/) which causes millions in lost revenue.
+Als Unternehmen benötigen Sie viel mehr Kontrolle über Ihre Daten. Sie benötigen ein Protokoll, ein Register, in dem Sie "aufschreiben", welche Benutzer auf welche Dateien zugegriffen haben, was für die Kontrolle des Datenflusses oder für die Erstellung eines Berichts im Falle einer Datenverletzung unerlässlich wird. Zusätzlich müssen Sie einschränken, welche Abteilung oder Mitarbeiter auf welche Art von Daten zugreifen können. Es wäre schlecht, wenn Ihre Mitarbeiter zum Beispiel auf Gehaltsdaten zugreifen könnten.  
+Viele Unternehmen unterschätzen die Bedeutung der Sicherheit in der Cloud, wie wir bereits in unserem [Beitrag über Cloud Computing,] (https://www.datafortress.cloud/cloud-services/) gezeigt haben, die Millionen an entgangenen Einnahmen verursacht.
 
-Additionally, if not for the fact of security, custom solutions are oftentimes way cheaper compared to the private use services stated above. AWS S3 can, for example, be a thousand times cheaper compared to the quota per GB above.
+Darüber hinaus sind maßgeschneiderte Lösungen, wenn man von der Tatsache der Sicherheit absieht, im Vergleich zu den oben genannten Dienstleistungen für die private Nutzung oft viel billiger. AWS S3 kann zum Beispiel tausendmal billiger sein als die oben genannte Quote pro GB.
 
-[Contact us for further details](https://www.datafortress.cloud/contact-us/) about the following top three business cloud storage solutions
+[Kontaktieren Sie uns](/de/contact/) für weitere Details](https://www.datafortress.cloud/contact/) über die folgenden Top-Drei Business-Cloud-Speicherlösungen
 
-A custom solution with for example AWS S3 is the best choice if you already imagine a perfect workflow for your company, or you are using specific products that you want to unify. Luckily, everything is customizable and it is easy to build a custom solution that is up to your security guidelines and requirements.
-
-<br>
-
-### [2.1. Self-Hosted NextCloud – Best Business Cloud Storages / Advanced Users](https://nextcloud.com/)
+Eine kundenspezifische Lösung mit z.B. AWS S3 ist die beste Wahl, wenn Sie sich bereits einen perfekten Workflow für Ihr Unternehmen vorstellen oder wenn Sie bestimmte Produkte verwenden, die Sie vereinheitlichen möchten. Glücklicherweise ist alles anpassbar und es ist einfach, eine maßgeschneiderte Lösung zu erstellen, die Ihren Sicherheitsrichtlinien und -anforderungen entspricht.
 
 <br>
 
-NextCloud is an open-source self-hosted solution for storing data in the cloud. Being open-source, the security risk of malicious code in the product is minimal, and there are already thousands of extensions that are all for free. The broad range of developers furthermore implemented state-of-the-art security measures to truly protect your data. And the best part about open source is that it is fully customizable. We at DataFortress.cloud use it for example as a serverless data storage solution in combination with S3, and can limit it to our IP range because it is self-hosted. Definitely our best choice and basically free aside from server costs.
+### [2.1. Self-Hosting NextCloud - Beste Business-Cloud-Speicher / Fortgeschrittene Benutzer](https://nextcloud.com/)
+
+<br>
+
+NextCloud ist eine selbst gehostete Open-Source-Lösung zur Speicherung von Daten in der Cloud. Da es sich um eine Open-Source-Lösung handelt, ist das Sicherheitsrisiko durch bösartigen Code im Produkt minimal, und es gibt bereits Tausende von Erweiterungen, die alle kostenlos sind. Das breite Spektrum der Entwickler hat darüber hinaus modernste Sicherheitsmaßnahmen implementiert, um Ihre Daten wirklich zu schützen. Und das Beste an Open Source ist, dass es vollständig anpassbar ist. Wir bei DataFortress.cloud verwenden es zum Beispiel als serverlose Datenspeicherlösung in Kombination mit S3 und können es auf unseren IP-Bereich beschränken, da es selbst gehostet wird. Das ist definitiv unsere beste Wahl und abgesehen von den Serverkosten im Grunde kostenlos.
 
 <table>
 <tbody>
 <tr>
 <th>Pro</th>
 <th>Contra</th>
-<th>Perfect for:</th>
+<th>Perfekt für:</th>
 </tr>
 <tr>
 <td>
 <ul>
-<li>Open-Source</li>
-<li>Self-Hosted</li>
-<li>Wide range of Add-Ons</li>
-<li>Probably the most secure (due to self-hosted and open-source)</li>
+<li>Open Source</li>
+<li>Selbstbeherbergung</li>
+<li>Weiter Bereich von Add-Ons</li>
+<li>Wahrscheinlich die sicherste (durch Selbst-Hosting und Open-Source)</li>
 </ul>
 </td>
 <td>
 <ul>
-<li>Setup is necessary</li>
-<li>It will be a product that needs to be managed.</li>
+<li>Einrichtung ist notwendig</li>
+<li>Es wird ein Produkt sein, das verwaltet werden muss.</li>
 </ul>
-<a href="https://www.datafortress.cloud/contact-us/" target="_blank" rel="noopener noreferrer">But luckily we can do this for you</a></td>
+<a href="https://www.datafortress.cloud/contact/" target="_blank" rel="noopener noreferrer">Aber glücklicherweise können wir dies für Sie tun</a></td>
 <td>
 <ul>
-<li>Full Control</li>
-<li>Best Security</li>
-<li>Mid-to-Large range Companies</li>
+<li>Vollständige Kontrolle</li>
+<li>Beste Sicherheit</li>
+<li>Mittelgroße bis große Unternehmen</li>
 </ul>
 </td>
 </tr>
@@ -251,36 +251,36 @@ NextCloud is an open-source self-hosted solution for storing data in the cloud. 
 [Link](https://nextcloud.com/)
 <br><br>
 
-### 2.2. Custom solution like AWS S3 – Best Business Cloud Storages / Advanced Users
+### 2.2. Kundenspezifische Lösung wie AWS S3 - Beste Business-Cloud-Storages / Fortgeschrittene Benutzer
 
 <br>
 
-A custom solution with for example AWS S3 is the best choice if you already imagine a perfect workflow for your company, or you are using specific products that you want to unify. Luckily, everything is customizable and it is easy to build a custom solution that is up to your security guidelines and requirements.
+Eine kundenspezifische Lösung mit z.B. AWS S3 ist die beste Wahl, wenn Sie sich bereits einen perfekten Workflow für Ihr Unternehmen vorstellen oder wenn Sie bestimmte Produkte verwenden, die Sie vereinheitlichen möchten. Glücklicherweise ist alles anpassbar und es ist einfach, eine maßgeschneiderte Lösung zu erstellen, die Ihren Sicherheitsrichtlinien und -anforderungen entspricht.
 
 <table>
 <tbody>
 <tr>
 <th>Pro</th>
 <th>Contra</th>
-<th>Perfect for:</th>
+<th>Perfekt für:</th>
 </tr>
 <tr>
 <td>
 <ul>
-<li>Cheapest and Most-Customizable solution</li>
+<li>Kürzeste und anpassungsfähigste Lösung</li>
 </ul>
 </td>
 <td>
 <ul>
-<li>Setup Cost and Time</li>
-<li>Needs Support</li>
+<li>Einrichtungskosten und -zeit</li>
+<li>Notwendige Unterstützung</li>
 </ul>
-<a href="https://www.datafortress.cloud/contact-us/" target="_blank" rel="noopener noreferrer">But luckily we can do this for you</a></td>
+<a href="https://www.datafortress.cloud/contact/" target="_blank" rel="noopener noreferrer">Aber glücklicherweise können wir dies für Sie tun</a></td>
 <td>
 <ul>
-<li>Large Enterprises</li>
-<li>Full Control</li>
-<li>Full Customization</li>
+<li>Großunternehmen</li>
+<li>Vollständige Kontrolle</li>
+<li>Vollständige Anpassung</li>
 </ul>
 </td>
 </tr>
@@ -291,36 +291,36 @@ A custom solution with for example AWS S3 is the best choice if you already imag
 
 <br><br>
 
-### 2.3. Managed Solutions like Microsoft OneDrive – Best Business Cloud Storages / Advanced Users
+### 2.3. Verwaltete Lösungen wie Microsoft OneDrive - Beste Business-Cloud-Storages / Fortgeschrittene Benutzer
 
-OneDrive can still be a nice choice for small- to medium-sized businesses, especially if you are using Microsoft Teams or Outlook. It is a fully managed solution, meaning that once set-up you will not need to worry about much. Problems arise from it being closed-source, meaning you will not be able to customize things, or it will be more difficult to fully understand the product to guarantee security guidelines and privacy. Additionally, data can be stored in the US, and might, therefore, be not as private as you might assume. Still, it avoids setup costs and might be a feasible option for smaller businesses.
+OneDrive kann immer noch eine gute Wahl für kleine und mittlere Unternehmen sein, insbesondere wenn Sie Microsoft Teams oder Outlook verwenden. Es handelt sich um eine vollständig verwaltete Lösung, was bedeutet, dass Sie sich nach der Einrichtung keine großen Sorgen machen müssen. Probleme entstehen dadurch, dass es eine geschlossene Quelle ist, was bedeutet, dass Sie nicht in der Lage sein werden, Dinge anzupassen, oder es wird schwieriger sein, das Produkt vollständig zu verstehen, um Sicherheitsrichtlinien und Datenschutz zu gewährleisten. Außerdem können Daten in den USA gespeichert werden und sind daher möglicherweise nicht so privat, wie Sie vielleicht annehmen. Dennoch vermeidet es Einrichtungskosten und könnte eine praktikable Option für kleinere Unternehmen sein.
 
 <table>
 <tbody>
 <tr>
 <th>ro</th>
 <th>Contra</th>
-<th>Perfect for:</th>
+<th>Perfekt für:</th>
 </tr>
 <tr>
 <td>
 <ul>
-<li>Fully managed</li>
-<li>Great integration in Office365</li>
+<li>Vollständig verwaltet</li>
+<li>Große Integration in Office365</li>
 </ul>
 </td>
 <td>
 <ul>
-<li>Closed-Source</li>
-<li>Data Privacy</li>
-<li>High Price</li>
+<li>Geschlossene Quelle</li>
+<li>Datenschutz</li>
+<li>Hoher Preis</li>
 </ul>
 </td>
 <td>
 <ul>
-<li>Smaller businesses</li>
-<li>Set-and-forget</li>
-<li>Office365 users</li>
+<li>Kleinere Unternehmen</li>
+<li>Setzen-und-vergessen</li>
+<li>Office365 Benutzer</li>
 </ul>
 </td>
 </tr>
@@ -329,5 +329,5 @@ OneDrive can still be a nice choice for small- to medium-sized businesses, espec
 
 [Link](https://www.microsoft.com/en-gb/microsoft-365/onedrive/onedrive-for-business)
 
-What Cloud Storage solutions do you use? Do you have any open questions or suggestions? Write us in the comments or shoot us a message via the [contact page.](https://www.datafortress.cloud/contact-us/)  
-We are offering a [free 15-minute consultation](https://www.datafortress.cloud/contact-us/) as well!
+Welche Cloud-Storage-Lösungen verwenden Sie? Haben Sie offene Fragen oder Anregungen? Schreiben Sie uns in den Kommentaren oder senden Sie uns eine Nachricht über die [Kontaktseite.](https://www.datafortress.cloud/contact/)  
+Wir bieten auch eine [kostenlose 15-minütige Beratung](https://www.datafortress.cloud/de/contact/) an!

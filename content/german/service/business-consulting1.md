@@ -1,5 +1,5 @@
 ---
-title: Business Consulting
+title: Unternehmensberatung
 date: '2018-09-25T15:51:35.000+06:00'
 description: Make Your Business Ambitions a Reality
 image: images/service/service-4.webp
@@ -10,12 +10,12 @@ regularTime: '08.00am - 06.00pm'
 offDay: Sat, Su
 
 ---
-# Make Your Business Ambitions a Reality
+# Machen Sie Ihre geschäftlichen Ambitionen zur Realität
 
 <br>
 
-Being a lean startup ourselves we are experts in constantly rethinking our business using data, the newest tools, and trying new experimental business fields.  
-As a business owner, you might be thinking about how you could enhance, or speed up some processes, or increase the potential of your HR. We have worked with several different business fields and try to stay an agile company, therefore we might have experienced the perfect solution for your problems already.
+Da wir selbst ein "lean" Startup-Unternehmen sind, sind wir Experten darin, unser Geschäft ständig neu zu überdenken, indem wir Daten, die neuesten Tools und neue experimentelle Geschäftsfelder ausprobieren.  
+Als Geschäftsinhaber denken Sie vielleicht darüber nach, wie Sie einige Prozesse verbessern oder beschleunigen oder das Potenzial Ihrer Personalabteilung erhöhen können. Wir haben mit verschiedenen Geschäftsbereichen gearbeitet und versuchen, ein agiles Unternehmen zu bleiben, daher haben wir vielleicht schon die perfekte Lösung für Ihre Probleme gefunden.
 
 <br>
 
@@ -23,17 +23,17 @@ As a business owner, you might be thinking about how you could enhance, or speed
 
 <br>
 
-## Our Lean Business Approach
+## Unser "lean" Geschäftsansatz
 
 <br>
 
-As a business in the area of new technology, a lean mindset is essential.  
-Enterprises oftentimes execute decisions affecting a large portion of their business without measuring the effect and minimizing damage.  
-The goal of a lean company is to take many small iterative steps, or prototypes before implementing a great change in the company and constantly measure and evaluate data.  
-For example, when implementing a new feature on our website we are doing A/B tests (showing x-percent of customers our page A, and x-percent of customers page B), measure values (in this case for example bounce rate and conversions) and finally decide if we should implement this feature or not – and all that in days.  
-If something does not work our business is not heavily affected, and we can pass on a new feature without huge losses, if it works, we can further enhance the feature or test it on a larger portion of our customers.
+Als Unternehmen im Bereich der neuen Technologien ist eine "lean" Denkweise unerlässlich.  
+Unternehmen treffen oft Entscheidungen, die einen großen Teil ihres Geschäfts betreffen, ohne die Auswirkungen zu messen und den Schaden zu minimieren.  
+Das Ziel eines "lean" Unternehmens besteht darin, vor der Umsetzung einer großen Veränderung im Unternehmen viele kleine iterative Schritte oder Prototypen zu unternehmen und ständig Daten zu messen und auszuwerten.  
+Wenn wir z.B. eine neue Funktion auf unserer Website implementieren, führen wir A/B-Tests durch (wobei x Prozent der Kunden unsere Seite A und x Prozent der Kunden die Seite B zeigen), messen Werte (in diesem Fall z.B. Absprungrate und Konversionen) und entscheiden schließlich, ob wir diese Funktion implementieren sollten oder nicht - und das alles innerhalb von Tagen.  
+Wenn etwas nicht funktioniert, ist unser Geschäft nicht stark beeinträchtigt, und wir können ein neues Feature ohne große Verluste weitergeben, wenn es funktioniert, können wir das Feature weiter verbessern oder an einem größeren Teil unserer Kunden testen.
 
-This process can be summarized into three simple steps, that are constantly running in an automated fashion:
+Dieser Prozess lässt sich in drei einfachen Schritten zusammenfassen, die ständig automatisiert ablaufen:
 
 <br>
 
@@ -41,73 +41,79 @@ This process can be summarized into three simple steps, that are constantly runn
 
 <br>
 
-### 1. Rethink (Data Analytics)
+### 1. Überdenken (Datenanalyse)
 
 <br>
 
 ![](/images/bulb-1.webp)
 
-What are new ways that your business could try? Are there hidden opportunities? New demographics? Should an area in your business be decreased in favour of another? The goal of this step is to formulate a goal or specific idea that will be tested in the next steps.
+Was sind neue Wege, die Ihr Unternehmen ausprobieren könnte? Gibt es versteckte Möglichkeiten? Neue demographische Entwicklungen? Sollte ein Bereich in Ihrem Unternehmen zugunsten eines anderen reduziert werden? Das Ziel dieses Schrittes ist es, ein Ziel oder eine konkrete Idee zu formulieren, die in den nächsten Schritten getestet werden soll.
 
 <br>
 
-### 2. Execute
+### 2. Ausführen
 
 <br>
 
 ![](/images/creators.webp)
 
-The goal of a lean company is to stay flexible and try the ideas formulated beforehand as fast as possible. Measure the progress on the way.
+Das Ziel eines "lean"n Unternehmens ist es, flexibel zu bleiben und die zuvor formulierten Ideen so schnell wie möglich auszuprobieren. Messen Sie den Fortschritt auf dem Weg dorthin.
 
 <br>
 
-### 3. Review & Implement
+### 3. Überprüfung & Implementierung
 
 <br>
 
 ![](/images/business-1.webp)  
-In this step, the data gathered before is analyzed, and if your measured value statistically significantly increased, the new feature is implemented and new ideas on top of this feature are generated (step 1).  
-Finally, the process starts again from the beginning.
+In diesem Schritt werden die zuvor gesammelten Daten analysiert, und wenn Ihr Messwert statistisch signifikant gestiegen ist, wird das neue Feature implementiert und neue Ideen über dieses Feature hinaus generiert (Schritt 1).  
+Schließlich beginnt der Prozess wieder von vorne.
 
 <br><br>
 
-## YOUR BUSINESS NEEDS TO STAY DYNAMIC IN A COMPLEX ECOSYSTEM
+## IHR UNTERNEHMEN MUSS IN EINEM KOMPLEXEN ÖKOSYSTEM DYNAMISCH BLEIBEN
 
 <br>
 
-#### 1. Differentiate Through New Services
+#### 1. Differenzierung durch neue Dienstleistungen
 
 <br>
 
 ![](/images/analytics.webp)
 
-We are a technology leader, meaning we constantly research and implement state-of-the-art tools. Avoid making the wrong choice and learn how to engage customers in turbulent new times.  
-Old business models are changing and need to be transferred to the digital world. Save yourself the trouble and connect with an expert.
+Wir sind technologisch führend, d.h. wir erforschen und implementieren ständig modernste Werkzeuge. Vermeiden Sie falsche Entscheidungen und lernen Sie, wie Sie Kunden in turbulenten neuen Zeiten begeistern können.  
+Alte Geschäftsmodelle verändern sich und müssen in die digitale Welt übertragen werden. Sparen Sie sich die Mühe und setzen Sie sich mit einem Experten in Verbindung.
 
 <br>
 
-#### 2. Boost the Customer Experience
+#### 2. Verbessern Sie die Kundenerfahrung
 
 <br>
 
 ![](/images/customer-experience.webp)
 
-Customer Experience is becoming more and more important. The modern customer most likely researched your business online before contacting you, and sales are increasingly taking place in the online world.
+Die Kundenerfahrung wird immer wichtiger. Der moderne Kunde hat höchstwahrscheinlich Ihr Unternehmen online recherchiert, bevor er Sie kontaktiert hat, und Verkäufe finden zunehmend in der Online-Welt statt.
 
-Your goal is to reach the customer long before seeing him face-to-face.
+Ihr Ziel ist es, den Kunden zu erreichen, lange bevor er ihn von Angesicht zu Angesicht sieht.
 
 <br>
 
-#### 3. Enhance operational efficiency and increase productivity
+#### 3. Verbesserung der betrieblichen Effizienz und Steigerung der Produktivität
 
 <br>
 
 ![](/images/efficiency.webp)
 
-> _“Without big data, you are blind and deaf and in the middle of a freeway.”_
+> _"Ohne große Daten sind Sie blind und taub und stehen mitten auf einer Autobahn."_
 
-– Geoffrey Moore
+- Geoffrey Moore
 
-Almost all business decisions nowadays are based on gut feeling. But more than often these decisions end up costing millions, and even if the company is not going bankrupt it is still missing out on a lot of unseen potentials.
+Fast alle geschäftlichen Entscheidungen basieren heutzutage auf dem Bauchgefühl. Aber mehr als oft kosten diese Entscheidungen am Ende Millionen, und selbst wenn das Unternehmen nicht in Konkurs geht, entgehen ihm immer noch viele ungesehene Potenziale.
 
-Uncover your hidden opportunities now and let us uncover treasures in your data.
+Decken Sie jetzt Ihre verborgenen Möglichkeiten auf und lassen Sie uns Schätze in Ihren Daten aufdecken.
+
+
+
+
+
+[Sie haben eine ähnliche Idee oder wir haben Ihr Interesse geweckt? Kontaktieren Sie uns jetzt für eine gratis 15-minütige Beratung!](https://www.datafortress.cloud/de/contact/)

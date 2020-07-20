@@ -7,6 +7,6 @@ description: This is meta description
 ---
 ## Our Services
 
-Check out our services below, or have a look at our portfolio.
+Sehen Sie sich unten unsere Dienstleistungen an oder werfen Sie einen Blick auf unser Portfolio.
 
-Do you already have an idea of what you need? Head over to Contact and get a free 15-minute consultation!
+Haben Sie bereits eine Vorstellung davon, was Sie benötigen? Gehen Sie zu Kontakt und erhalten Sie eine kostenlose 15-minütige Beratung!

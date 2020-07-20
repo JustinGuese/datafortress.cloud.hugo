@@ -5,6 +5,6 @@ bg_image: images/background/page-title.webp
 description: This is meta description
 
 ---
-## Our Projects
+## Unsere Projekte
 
-Have a look at our several projects, or contact us directly if you have any open questions.
+Werfen Sie einen Blick auf unsere verschiedenen Projekte, oder [Kontaktieren Sie uns](/de/contact/) direkt, wenn Sie offene Fragen haben.

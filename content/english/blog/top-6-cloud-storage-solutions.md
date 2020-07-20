@@ -203,7 +203,7 @@ Many businesses underestimate the importance of cloud security, as we already ha
 
 Additionally, if not for the fact of security, custom solutions are oftentimes way cheaper compared to the private use services stated above. AWS S3 can, for example, be a thousand times cheaper compared to the quota per GB above.
 
-[Contact us for further details](https://www.datafortress.cloud/contact-us/) about the following top three business cloud storage solutions
+[Contact us for further details](https://www.datafortress.cloud/contact/) about the following top three business cloud storage solutions
 
 A custom solution with for example AWS S3 is the best choice if you already imagine a perfect workflow for your company, or you are using specific products that you want to unify. Luckily, everything is customizable and it is easy to build a custom solution that is up to your security guidelines and requirements.
 
@@ -236,7 +236,7 @@ NextCloud is an open-source self-hosted solution for storing data in the cloud. 
 <li>Setup is necessary</li>
 <li>It will be a product that needs to be managed.</li>
 </ul>
-<a href="https://www.datafortress.cloud/contact-us/" target="_blank" rel="noopener noreferrer">But luckily we can do this for you</a></td>
+<a href="https://www.datafortress.cloud/contact/" target="_blank" rel="noopener noreferrer">But luckily we can do this for you</a></td>
 <td>
 <ul>
 <li>Full Control</li>
@@ -275,7 +275,7 @@ A custom solution with for example AWS S3 is the best choice if you already imag
 <li>Setup Cost and Time</li>
 <li>Needs Support</li>
 </ul>
-<a href="https://www.datafortress.cloud/contact-us/" target="_blank" rel="noopener noreferrer">But luckily we can do this for you</a></td>
+<a href="https://www.datafortress.cloud/contact/" target="_blank" rel="noopener noreferrer">But luckily we can do this for you</a></td>
 <td>
 <ul>
 <li>Large Enterprises</li>
@@ -329,5 +329,5 @@ OneDrive can still be a nice choice for small- to medium-sized businesses, espec
 
 [Link](https://www.microsoft.com/en-gb/microsoft-365/onedrive/onedrive-for-business)
 
-What Cloud Storage solutions do you use? Do you have any open questions or suggestions? Write us in the comments or shoot us a message via the [contact page.](https://www.datafortress.cloud/contact-us/)  
-We are offering a [free 15-minute consultation](https://www.datafortress.cloud/contact-us/) as well!
+What Cloud Storage solutions do you use? Do you have any open questions or suggestions? Write us in the comments or shoot us a message via the [contact page.](https://www.datafortress.cloud/contact/)  
+We are offering a [free 15-minute consultation](https://www.datafortress.cloud/contact/) as well!
