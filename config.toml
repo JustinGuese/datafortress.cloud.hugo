@@ -16,13 +16,13 @@ content = "Your partner for Cloud, Big-Data and AI. Contact us for a free 15-min
 copyright = "Copyright &copy; 2020 by Datafortress.cloud"
 subscribe = "Subscribe Us"
 subscribe_content = "Receive exclusive tech/cloud/ai news into your inbox. Unsubscribe any time."
-[Languages.fr]
+[Languages.de]
 contentDir = "content/german"
 home = "Home"
 languageCode = "de-de"
 languageName = "De"
 weight = 2
-[Languages.fr.params.footer]
+[Languages.de.params.footer]
 content = "Your partner for Cloud, Big-Data and AI. Contact us for a free 15-minute consultation."
 copyright = "Copyright &copy; 2020 by Datafortress.cloud"
 subscribe = "Subscribe Us"

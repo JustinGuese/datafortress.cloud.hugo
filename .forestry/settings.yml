@@ -14,7 +14,7 @@ sections:
   templates:
   - post
 - type: directory
-  path: content/french/blog
+  path: content/german/blog
   label: Post (fr)
   create: documents
   match: "**/*"
@@ -30,7 +30,7 @@ sections:
   templates:
   - author
 - type: directory
-  path: content/french/author
+  path: content/german/author
   label: Author (fr)
   create: documents
   match: "**/*"
@@ -46,7 +46,7 @@ sections:
   templates:
   - project
 - type: directory
-  path: content/french/project
+  path: content/german/project
   label: Project (fr)
   create: documents
   match: "**/*"
@@ -62,7 +62,7 @@ sections:
   templates:
   - team
 - type: directory
-  path: content/french/team
+  path: content/german/team
   label: Team (fr)
   create: documents
   match: "**/*"
@@ -78,7 +78,7 @@ sections:
   templates:
   - service
 - type: directory
-  path: content/french/service
+  path: content/german/service
   label: Service (fr)
   create: documents
   match: "**/*"
@@ -92,7 +92,7 @@ sections:
   create: documents
   match: "**/*"
 - type: directory
-  path: content/french/pages
+  path: content/german/pages
   label: Pages (fr)
   create: all
   match: "**/*"
