@@ -29,27 +29,27 @@ To load the necessary scripts just load the following Code into your section of 
     <script type="module"
               src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
           </script>
-        
+
           <!-- Loads <model-viewer> for old browsers like IE11: -->
           <script nomodule
               src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
           </script>
-        
+
           <!-- The following libraries and polyfills are recommended to maximize browser support -->
           <!-- NOTE: you must adjust the paths as appropriate for your project -->
-              
+
           <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
           <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
-        
+
           <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
           <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
-        
+
           <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
           <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
-        
+
           <!-- 💁 OPTIONAL: Fullscreen polyfill is required for experimental AR features in Canary -->
           <!--<script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>-->
-        
+
           <!-- 💁 OPTIONAL: Include prismatic.js for Magic Leap support -->
           <!--<script src="https://unpkg.com/@magicleap/prismatic@0.18.2/prismatic.min.js"></script>-->
 
@@ -61,14 +61,18 @@ For demonstration purposes [“Rocket Ship” by Google Poly](https://poly.googl
 
 Code was taken and altered from[ ](https://github.com/Kristina-Simakova/ar-webview)[https://github.com/Kristina-Simakova/ar-webview](https://github.com/Kristina-Simakova/ar-webview "https://github.com/Kristina-Simakova/ar-webview")
 
-    <model-viewer src="assets/RocketShip_1393.gltf" 
+    <model-viewer src="assets/RocketShip_1393.gltf"
                   ios-src="assets/RocketShip_1393.usdz"
                   ar
-                  auto-rotate 
-                  camera-controls 
-                  shadow-intensity="1" 
+                  auto-rotate
+                  camera-controls
+                  shadow-intensity="1"
                   alt="A 3D model of a rocket" background-color="#70BCD1">
-    
+
     </model-viewer>
 
 [**view raw**](https://gist.github.com/JustinGuese/6b119644e4d1a640dd054c5b0a18b62c/raw/448cab85deae1d24978a65a6955573d90f5b8122/3D%20Content%20with%20Webview%20-%20modelload)[**3D Content with Webview - modelload**](https://gist.github.com/JustinGuese/6b119644e4d1a640dd054c5b0a18b62c#file-3d-content-with-webview-modelload) hosted with ❤ by [**GitHub**](https://github.com/)
+
+
+</br>
+[Are you working on a similar project? Are you interested in something similar? Contact us now for a free 15-minute consultation.](/contact/)

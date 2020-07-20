@@ -56,4 +56,8 @@ Prototype of automatic robotic arm
 
 We have experience using both software and hardware. We built customized hardware for this, ranging from the simple case with an app on your regular smartphone to more complex solutions using an automated robotic arm taking the pictures and automatically uploading them to your website.
 
-**Contact us now for a free 15-minute consultation**
+
+
+
+</br>
+[Are you working on a similar project? Are you interested in something similar? Contact us now for a free 15-minute consultation.](/contact/)

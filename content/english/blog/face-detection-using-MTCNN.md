@@ -45,22 +45,22 @@ Feel free to access the whole notebook via:
 [https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up](https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up "https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up")
 
     git clone https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up
-    
-    
+
+
 
 Luckily MTCNN is available as a pip package, meaning we can easily install it using
 
     pip install mtcnn
-    
-    
+
+
 
 Now switching to Python/Jupyter Notebook we can check the installation with an import and quick verification:
 
     import mtcnn
     # print version
     print(mtcnn.__version__)
-    
-    
+
+
 
 Afterwards, we are ready to load out test image using the matplotlib [imread function](https://bit.ly/2vo3INw).
 
@@ -109,7 +109,7 @@ To demonstrate this even better let us draw a box around the face using matplotl
     ax.add_patch(rect)
     # show the plot
     plt.show()
-    
+
     # filename = 'test1.webp' # filename is defined above, otherwise uncomment
     # load image from file
     # pixels = plt.imread(filename) # defined above, otherwise uncomment
@@ -164,7 +164,7 @@ With the full code from above looking like this:
     ax.add_patch(dot)
     # show the plot
     plt.show()
-    
+
     # filename = 'test1.webp' # filename is defined above, otherwise uncomment
     # load image from file
     # pixels = plt.imread(filename) # defined above, otherwise uncomment
@@ -205,7 +205,7 @@ Once installed we will do the necessary imports as follows:
     import time
     import glob
     from tqdm.notebook import tqdm
-    
+
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     filenames = ["glediston-bastos-ZtmmR9D_2tA-unsplash.webp","glediston-bastos-ZtmmR9D_2tA-unsplash.webp"]
@@ -234,36 +234,40 @@ And finally, let us run the face extraction script:
     faces_detected = 0
     batch_size = 60
     start = time.time()
-    
+
     for filename in tqdm(filenames):
-    
+
     v_cap = FileVideoStream(filename).start()
     v_len = int(v_cap.stream.get(cv2.CAP_PROP_FRAME_COUNT))
-    
+
     for j in range(v_len):
-    
+
     frame = v_cap.read()
     frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     frames.append(frame)
-    
+
     if len(frames) >= batch_size or j == v_len - 1:
-    
+
     faces = fast_mtcnn(frames)
-    
+
     frames_processed += len(frames)
     faces_detected += len(faces)
     frames = []
-    
+
     print(
     f'Frames per second: {frames_processed / (time.time() - start):.3f},',
     f'faces detected: {faces_detected}\r',
     end=''
     )
-    
+
     v_cap.stop()
-    
+
     run_detection(fast_mtcnn, filenames)
 
 ![](/images/teslap100frames.webp)
 
 The above image shows the output of the code running on an NVIDIA Tesla P100, so depending on the source material, GPU and processor you might experience better or worse performance.
+
+
+</br>
+[Are you working on a similar project? Are you interested in something similar? Contact us now for a free 15-minute consultation.](/contact/)

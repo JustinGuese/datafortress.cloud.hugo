@@ -56,4 +56,8 @@ I proposed Microsoft PowerBI for business users and AWS EMR and an on-premise Ju
 
 I have seen way too many projects fail because of products being left alone after they are finished. The usage usually lasts for some months, but by then either support is missing, or no one knows anymore that it exists or how to use it. Therefore documentation and onboarding are some of the most crucial steps in building up a Big Data landscape. We used Microsoft Sharepoint or our own WordPress based Infosite for this.
 
-**Do you want to know more about this process? Are you in the middle of it? Shoot me a message or comment below.**
+
+
+
+</br>
+[Are you working on a similar project? Are you interested in something similar? Contact us now for a free 15-minute consultation.](/contact/)

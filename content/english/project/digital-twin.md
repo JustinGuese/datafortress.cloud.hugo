@@ -44,4 +44,9 @@ Simplified, we used a graph search that is integrated into Elasticsearch ([Link]
 
 A huge challenge in this scenario has been speed. Users usually leave a website if it loads longer than 250ms. This expands drastically, with 11% of the users leaving after one second loading time, and around 90% with more than four seconds of loading time ([Source](https://think.storage.googleapis.com/docs/mobile-page-speed-new-industry-benchmarks.pdf)). Therefore we had to optimize the Elasticsearch cluster and partly simplify our queries to achieve a loading time of around 200ms. How? Leave a message below or contact me to find out more.
 
-Did you ever use Elasticsearch for Digital Twins? Do you want to find out how you can build digital twins and matching recommendations for your customers? Leave a message in the comments below or message me directly.
+
+
+
+
+</br>
+[Are you working on a similar project? Are you interested in something similar? Contact us now for a free 15-minute consultation.](/contact/)

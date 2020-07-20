@@ -51,3 +51,8 @@ After the first published version I did not rest, but evaluated on how to furthe
 One pain point has been, that additional content had to be programmed into the app itself, which resulted in a huge delay, because the Apple iOS store needs to revaluate each app after submission, causing in a long timespan until the new content will be online. This can be a problem, if the client has not so much time to wait. The same goes for last minute changes in the app, which was simply not possible with the Apple reviewing process.
 
 Therefore I have been searching for other solutions, and found a way to generate new content in the Wikitude Studio Web editor, upload changes into an AWS S3 bucket, and the app pulling the new content from the S3 bucket. Therefore the app itself needed only be submitted once to the appstores, and every change has been instantly pulled from an S3 bucket. A nice side-effect has been, that the appsize greatly reduced as well, because content was dynamically pulled from the bucket if a trigger was scanned, instead of saving every content in the app itself.
+
+
+
+</br>
+[Are you working on a similar project? Are you interested in something similar? Contact us now for a free 15-minute consultation.](/contact/)

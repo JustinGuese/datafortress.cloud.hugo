@@ -31,3 +31,8 @@ Furthermore, users had to be able to easily curate their content, which left us 
 Due to the international nature of the Enterprise, speed had been a requirement as well, in which we utilized AWS’s worldwide network to deliver content both real-time (streams, live streams, live-Q&A) as well as on-demand (videos, presentations, …).
 
 The project received great support from the international teams and received further funding to enhance this solution.
+
+
+
+</br>
+[Are you working on a similar project? Are you interested in something similar? Contact us now for a free 15-minute consultation.](/contact/)

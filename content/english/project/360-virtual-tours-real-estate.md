@@ -94,4 +94,8 @@ Using a special camera set we will be able to take professional 360-degree pictu
 
 Using the newest technology, it is possible to create a breathtaking virtual reality experience. VR is shown to be way more immersive for customers than traditional 2D media and will stick far longer than traditional media. Additionally, it is only possible to portray sizes in this way, as 2D media is always just a picture, and not experience itself (like VR).
 
-Feel free to contact us for a **free 15-minute consultation**, in which we can point you in the right direction, name tools that are essential to creating these virtual tours, or even do the creation ourselves.
+
+
+
+</br>
+[Are you working on a similar project? Are you interested in something similar? Contact us now for a free 15-minute consultation.](/contact/)

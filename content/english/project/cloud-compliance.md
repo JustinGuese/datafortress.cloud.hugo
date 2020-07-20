@@ -64,4 +64,10 @@ Another method, if you just need an ID and no real name at all, is to “hash”
 
 Still, this has been only a brief overview. To fully discover the possiblites, one has to take a look at the data, the environment and the individual situation.
 
-**Do you want to know more about this process? Are you in the middle of it? Shoot me a message or comment below.**
+
+
+
+
+
+</br>
+[Are you working on a similar project? Are you interested in something similar? Contact us now for a free 15-minute consultation.](/contact/)

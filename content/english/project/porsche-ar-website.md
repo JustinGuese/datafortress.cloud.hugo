@@ -28,4 +28,9 @@ The first approach has been a classic CMS hosted on a LAMP stack, but soon the g
 
 There was barely any budget for hosting. Together with the aforementioned conditions, a classic server setup was not thinkable of. Together with the security guidelines, I decided to host the static website on an AWS S3 bucket, which means that you are basically only paying for the usage, or in other words if someone views the website, instead of paying a fixed monthly cost. Additionally, the AWS includes a “free tier limit”, which is a monthly free amount of storage and transmission that is included in your account for free – and therefore oftentimes resulting in a website hosted for free.
 
-What are your experiences with static websites? Do you have a web project that might need speed, security and cost improvement? Comment below or write me a direct message.
+
+
+
+
+</br>
+[Are you working on a similar project? Are you interested in something similar? Contact us now for a free 15-minute consultation.](/contact/)
