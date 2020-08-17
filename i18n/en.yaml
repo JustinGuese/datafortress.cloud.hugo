@@ -54,3 +54,5 @@
   translation: Share
 - id: change_language
   translation:  Deutsche Version
+- id: change_language_dest
+  translation: /de/

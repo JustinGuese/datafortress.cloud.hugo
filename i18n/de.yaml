@@ -54,3 +54,5 @@
   translation: Teilen
 - id: change_language
   translation:  English Version
+- id: change_language_dest
+  translation: /
