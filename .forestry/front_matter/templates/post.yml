@@ -33,4 +33,5 @@ fields:
   label: type
   default: post
 pages:
+- content/english/blog/the-5-typical-applications-of-augmented-reality.md
 - content/german/blog/brauche-ich-als-firma-augmented-reality.md

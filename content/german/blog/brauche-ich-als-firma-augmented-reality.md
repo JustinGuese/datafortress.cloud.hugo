@@ -3,10 +3,10 @@ author = "Justin Güse"
 bg_image = ""
 categories = ["Augmented Reality"]
 date = 2020-08-16T22:00:00Z
-description = "Was ist Augmented Reality? In diesem Post versuche ich einige Unklarheiten zum Thema AR aufzuklären."
+description = ""
 image = "/images/augmented-reality-1957411_640.jpg"
 tags = ["augmented reality"]
-title = "Brauche ich als Firma Augmented Reality?"
+title = "Die Top 5 typischen Anwendungen für Augmented Reality"
 type = "post"
 
 +++
@@ -28,7 +28,7 @@ Grob gesagt ist für den Enduser AR nichts anderes als eine App auf dem Smartpho
 
 Ein Auslöser muss in dem Fall kein QR Code sein, wie viele fälschlicherweise denken, sondern kann alles von einem Bild bis zu einem 3D Objekt sein. Die Kunst des Algorithmus im Hintergrund besteht nun darin die Position und Größe des Auslösers zu ermitteln und optisch korrekt den Inhalt darauf zu projizieren. Was der Inhalt ist, ist fast egal. Es kann ein Video über einem Bild abgespielt werden, oder auch ein animiertes 3D Objekt über einem Bild auftauchen – die Möglichkeiten sind zahllos.
 
-# Die x typischen Anwendungsfälle von Augmented Reality
+## Die 5 typischen Anwendungsfälle von Augmented Reality
 
 Natürlich sind wie bei Virtual Reality die Anwendungsfälle zahllos, aber ich habe versucht es auf die fünf typischsten Bereiche herunterzubrechen:
 
