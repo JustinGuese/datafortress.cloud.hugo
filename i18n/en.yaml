@@ -3,7 +3,7 @@
 - id: service_subtitle
   translation: Best Service
 - id: service_title
-  translation: Service We Provide
+  translation: Services We Provide
 - id: project_subtitle
   translation: Our Works
 - id: project_title
@@ -52,3 +52,5 @@
   translation: Posted By
 - id: share
   translation: Share
+- id: change_language
+  translation:  Deutsche Version

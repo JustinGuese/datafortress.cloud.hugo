@@ -6,6 +6,12 @@
 {{ partial "hero-slider.html" . }}
 {{ end }}
 
+	<br/><br/>
+	<div class="container">
+			<a href="/de/"><i class="ti-world"></i> Link: {{ i18n "change_language" }}</a>
+	</div>
+
+
 {{ if $data.homepage.service.enable }}
 {{ "<!-- service -->" | safeHTML }}
 <section class="section">

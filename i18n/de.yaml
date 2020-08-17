@@ -52,3 +52,5 @@
   translation: Veröffentlicht von
 - id: share
   translation: Teilen
+- id: change_language
+  translation:  English Version
