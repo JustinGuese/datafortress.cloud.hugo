@@ -32,3 +32,5 @@ fields:
   name: type
   label: type
   default: post
+pages:
+- content/german/blog/brauche-ich-als-firma-augmented-reality.md
