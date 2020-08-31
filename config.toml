@@ -150,6 +150,10 @@ logo = "images/client-logo/client-logo-5.webp"
 link = "https://examplesite.com"
 logo = "images/client-logo/client-logo-3.webp"
 [[params.contacts]]
+icon = "ti-download"
+[[params.contacts.contact]]
+contact_item = "<a href='/files/vcard_datafortress.vcf' download>Add to Contacts</a>"
+[[params.contacts]]
 icon = "ti-mobile"
 [[params.contacts.contact]]
 contact_item = "+43 677 61178288"
