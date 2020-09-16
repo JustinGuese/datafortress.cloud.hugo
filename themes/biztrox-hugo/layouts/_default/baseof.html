@@ -17,5 +17,7 @@
 	{{ "<!-- preloader end -->" | safeHTML }}
 	<div id="content">
 		{{- block "main" . }}{{- end }}
+		
 	</div>
+	{{ partial "cta.html" . }}
 	{{- partial "footer.html" . -}}

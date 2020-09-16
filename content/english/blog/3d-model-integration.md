@@ -26,6 +26,8 @@ Augmented Reality became easier now, due to the release of a feature called ar w
 With just some lines of code it is possible to integrate 3D Objects into your websites, ready to interact in the website, mobile device with AR support (meaning you are able to place the objects into your room) and even Virtual Reality support. If you load this website on a computer with a VR-headset attached to it, it should show you an option to view this object in VR.  
 It even supports Magic Leap!
 
+
+
 To load the necessary scripts just load the following Code into your section of the website:
 
     <script type="module"
