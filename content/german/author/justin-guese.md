@@ -13,7 +13,7 @@ social:
   link: https://github.com/JustinGuese
 
 ---
-I, Justin Güse, am the founder of **Datafortress.cloud**. After working for Porsche Holding in an **innovation/data science division**, where I developed many projects ranging from Big Data to Virtual Reality (see [portfolio](https://www.datafortress.cloud/case-studies/)), I decided to found my own company.
+I, Justin Güse, am the founder of **Datafortress.cloud**. After working for Porsche Holding in an **innovation/data science division**, where I developed many projects ranging from Big Data to Virtual Reality (see [portfolio](/project)), I decided to found my own company.
 
 During my time at Porsche, I observed that many agencies or consultants **do not have the main goal to satisfy their clients’ needs** as the main priority, but rather how to achieve the minimal needed tasks in the shortest amount of time.
 
