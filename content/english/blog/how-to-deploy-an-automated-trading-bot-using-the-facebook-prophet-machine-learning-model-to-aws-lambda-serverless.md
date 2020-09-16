@@ -12,7 +12,7 @@ type = "post"
 +++
 I divided this post into the “Why did I do it” and the “Technical How To”. If you want to skip the “Why” part, feel free to directly jump to the Technical part.
 
-## Why should I deploy a machine learning model in AWS Lambda?
+# Why should I deploy a machine learning model in AWS Lambda?
 
 **1. Reliability:** The algorithm will execute independently of other systems, updates, …
 
@@ -26,7 +26,7 @@ Furthermore, it is a nice thought to have an investing algorithm run without wor
 
 Right now, I can run several variations of the algorithm to test out alterations of the algorithm and can be sure that it will run. Another nice thing? AWS offers around 1 Million free Lambda calls, which lets me run the whole architecture in its free tier contingent.
 
-### The investing algorithm
+## The investing algorithm
 
 I am going to explain the algorithm in more depth in another post on my website [www.datafortress.cloud](http://www.datafortress.cloud), but my typical investment algorithm setup consists of:
 

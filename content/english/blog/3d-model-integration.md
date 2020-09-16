@@ -15,6 +15,8 @@ tags:
 type: post
 
 ---
+# Integrating a 3D model into a website using Quick View for Android and iOS
+
 **Try it out:** Rotate the 3D object below, or look at it in AR using your phone or even VR if a VR-glass is connected to your computer.
 
 <p><strong>Try it out: </strong>Rotate the 3D object below, or look at it in AR using your phone or even VR if a VR-glass is connected to your computer.</p><div class="wpb_wrapper">  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script><script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script><script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script><script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script><script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script><model-viewer src="/files/3dmodels/RocketShip_1393.gltf" ios-src="/files/3dmodels/RocketShip_1393.usdz" ar auto-rotate camera-controls shadow-intensity="1" alt="A 3D model of a rocket" background-color="#70BCD1"></model-viewer></div></div></div>
