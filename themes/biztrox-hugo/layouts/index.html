@@ -74,7 +74,39 @@
 {{ end }}
 
 {{ if $data.homepage.cta.enable }}
-{{ partial "cta.html" . }}
+
+<section class="section bg-gray">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="newsletter">
+				<h4>Stay Updated</h4>
+				<p>Receive our solutions and use cases, as well as news from the area of Cloud, Big-Data and AR/VR straight into your inbox. Unsubscribe any time.</p>
+					<form action="{{ .Site.Params.mailchimp_form_action }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+					novalidate>
+							<div class="mc-field-group">
+								</label>
+								<input type="email" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email">
+							</div>
+							<div class="mc-field-group">
+								<input type="text" name="FNAME" id="mce-FNAME" placeholder="First Name">
+							</div>
+							<div class="mc-field-group">
+								<input type="text" name="LNAME" id="mce-LNAME" placeholder="Last Name">
+							</div>
+							<div id="mce-responses" class="clear">
+								<div class="response" id="mce-error-response" style="display:none"></div>
+								<div class="response" id="mce-success-response" style="display:none"></div>
+							</div>
+							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+									name="{{ .Site.Params.mailchimp_form_name }}" tabindex="-1"></div>
+							<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+									class="button"></div>
+					</form>
+			</div>
+		</div>
+	</div>
+</section>
 {{ end }}
 
 {{ if $data.homepage.blog.enable }}
