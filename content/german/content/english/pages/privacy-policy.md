@@ -66,7 +66,20 @@ Email: info@datafortress.cloud
 Website:
 
 3. Cookies
+
 Die Internetseiten der DataFortress.cloud verwenden Cookies. Cookies sind Textdateien, die über einen Internet-Browser in einem Computersystem gespeichert werden.
+
+|Cookie|Description|Duration|Type|
+|--- |--- |--- |--- |
+|_ga|This cookie is installed by Google Analytics. The cookie is used to calculate visitor, session, campaign data and keep track of site usage for the site's analytics report. The cookies store information anonymously and assign a randomly generated number to identify unique visitors.|2 years|Analytics|
+|_gid|This cookie is installed by Google Analytics. The cookie is used to store information of how visitors use a website and helps in creating an analytics report of how the wbsite is doing. The data collected including the number visitors, the source where they have come from, and the pages viisted in an anonymous form.|1 day|Analytics|
+|_gat|This cookies is installed by Google Universal Analytics to throttle the request rate to limit the colllection of data on high traffic sites.|1 minute|Performance|
+|CookieScriptConsent|Needed to track cookie choice|1 day|Performance
+
+
+
+
+
 
 Viele Internetseiten und Server verwenden Cookies. Viele Cookies enthalten eine sogenannte Cookie-ID. Eine Cookie-ID ist eine eindeutige Kennung des Cookies. Sie besteht aus einer Zeichenfolge, durch die Internetseiten und Server dem spezifischen Internet-Browser zugeordnet werden können, in dem das Cookie gespeichert wurde. Auf diese Weise können besuchte Internetseiten und Server den einzelnen Browser des dats-Themas von anderen Internet-Browsern, die andere Cookies enthalten, unterscheiden. Ein spezifischer Internet-Browser kann anhand der eindeutigen Cookie-ID erkannt und identifiziert werden.
 

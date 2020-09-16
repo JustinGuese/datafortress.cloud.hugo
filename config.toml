@@ -118,8 +118,8 @@ URL = "plugins/animate/animate.css" # defer
 URL = "plugins/jQuery/jquery.min.js" # critical
 [[params.plugins.js]]
 URL = "plugins/bootstrap/bootstrap.min.js" # defer
-[[params.plugins.js]]
-URL = "plugins/cookie-script/cookiescript.js" # defer
+#[[params.plugins.js]]
+#URL = "plugins/cookie-script/cookiescript.js" # defer
 [[params.plugins.js]]
 URL = "plugins/slick/slick.min.js" # critical
 [[params.plugins.js]]

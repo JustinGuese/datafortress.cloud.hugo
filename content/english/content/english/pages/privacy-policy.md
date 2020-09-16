@@ -72,7 +72,17 @@ Website: localhost
 
 The Internet pages of the DataFortress.cloud use cookies. Cookies are text files that are stored in a computer system via an Internet browser.
 
-<script type="text/javascript" charset="UTF-8" data-cookiescriptreport="report" src="//report.cookie-script.com/r/e6326a02bfa57689ae80f6d580b9bf42.js"></script>
+|Cookie|Description|Duration|Type|
+|--- |--- |--- |--- |
+|_ga|This cookie is installed by Google Analytics. The cookie is used to calculate visitor, session, campaign data and keep track of site usage for the site's analytics report. The cookies store information anonymously and assign a randomly generated number to identify unique visitors.|2 years|Analytics|
+|_gid|This cookie is installed by Google Analytics. The cookie is used to store information of how visitors use a website and helps in creating an analytics report of how the wbsite is doing. The data collected including the number visitors, the source where they have come from, and the pages viisted in an anonymous form.|1 day|Analytics|
+|_gat|This cookies is installed by Google Universal Analytics to throttle the request rate to limit the colllection of data on high traffic sites.|1 minute|Performance|
+|CookieScriptConsent|Needed to track cookie choice|1 day|Performance
+
+
+
+
+
 
 Many Internet sites and servers use cookies. Many cookies contain a so-called cookie ID. A cookie ID is a unique identifier of the cookie. It consists of a character string through which Internet pages and servers can be assigned to the specific Internet browser in which the cookie was stored. This allows visited Internet sites and servers to differentiate the individual browser of the dats subject from other Internet browsers that contain other cookies. A specific Internet browser can be recognized and identified using the unique cookie ID.
 
