@@ -109,7 +109,7 @@ All in all, it is just great, but am I writing all the HTML code by myself?
 
 
 
-Of course not, and luckily there are great tools to handle this for me. Static website builders like [Jekyll](https://jekyllrb.com/) or [Hugo](https://gohugo.io/) help a lot to let you basically just type in Markdown language (basically a simple txt file) and convert your texts into HTML and a nice website. The code is just calculated once and can be uploaded to a server, or Github pages and AWS S3 right away to be completely serverless. How does it work? Check out my case studies on my blog for an in-depth explanation.
+Of course not, and luckily there are great tools to handle this for me. Static website builders like [Jekyll](https://jekyllrb.com/) or [Hugo](https://gohugo.io/) help a lot to let you basically just type in Markdown language (basically a simple txt file) and convert your texts into HTML and a nice website. The code is just calculated once and can be uploaded to a server, or Github pages and AWS S3 right away to be completely serverless. [How does it work? Check out my case studies on my blog for an in-depth explanation](/project/serverless-static-website/).
 
 
 
@@ -121,5 +121,5 @@ Of course not, and luckily there are great tools to handle this for me. Static w
 
 
 It feels great to not worry about uptime, scaling, and security anymore. Is it harder than WordPress? It depends. As this technology just develops, there is a rethinking to be done if you worked with WordPress and others in the past, but again there are many great tools that make static website builders similar to the "known" WordPress environment, like forestry.io for example. How? [Check out my blog at www.datafortress.cloud to see the in-depth explanation](/project/serverless-static-website/). 
-For now, I would be interested if you ever tried to go serverless, or what your experiences with WordPress are. [Shoot me a message, or write a comment below](Shoot me a message, or write a comment below. ). 
+For now, I would be interested if you ever tried to go serverless, or what your experiences with WordPress are. [Shoot me a message, or write a comment below](/contact/). 
 

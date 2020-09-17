@@ -18,7 +18,7 @@ data = "2020"
 # Why not WordPress?
 
 
-To give a further explanation as to why I chose to run this blog completely serverless, [please check out my article first](/blog/wordpress-to-serverless-highspeed-scalable-unhackable/).
+To give a further explanation as to why I chose to run this blog completely serverless, [please check out my article first](/de/blog/wordpress-zu-serverlos-unhackbare-webseite/).
 
 
 I did not want to use famous CMS WordPress for my blog, as it is: 
