@@ -102,9 +102,7 @@
 {{ end }}
 {{ "<!-- Chatbot Plugin -->" | safeHTML }}
 <!--<script id="TelegramLiveChatLoader" data-bot="D9E04B48-7F3C-11EA-B4C9-910623E822B5" src="//livechatbot.net/assets/chat/js/loader.js"></script>-->
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8471529.js"></script>
-<!-- End of HubSpot Embed Code -->
+
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>
@@ -126,10 +124,6 @@
 	ga('send', 'pageview');
 </script> -->
 {{ end }}
-
-
-<!-- add cookie revoke-->
-{{partial "revokeCookieConsent.html"}}
 
 
 
