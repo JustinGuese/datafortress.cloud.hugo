@@ -154,17 +154,17 @@ logo = "images/client-logo/client-logo-3.webp"
 [[params.contacts]]
 icon = "ti-download"
 [[params.contacts.contact]]
-contact_item = "<a href='/files/vcard_datafortress.vcf' download>Add to Contacts</a>"
+contact_item = "<a id='vcfAdd' href='/files/vcard_datafortress.vcf' download>Add to Contacts</a>"
 [[params.contacts]]
 icon = "ti-mobile"
 [[params.contacts.contact]]
-contact_item = "+43 677 61178288"
+contact_item = "<a id='contactPageCallATClick' href='callto:004367761178288'>+43 677 61178288</a>"
 [[params.contacts.contact]]
-contact_item = "+1(413)296-5682‬"
+contact_item = "<a id='contactPageCallUSClick' href='callto:+14132965682‬'>+1(413)296-5682‬</a>"
 [[params.contacts]]
 icon = "ti-email"
 [[params.contacts.contact]]
-contact_item = "info@datafortress.cloud"
+contact_item = "<a id='contactPageEmailClick' href='mailto:info@datafortress.cloud'>info@datafortress.cloud‬</a>"
 [[params.contacts]]
 icon = "ti-map-alt"
 [[params.contacts.contact]]

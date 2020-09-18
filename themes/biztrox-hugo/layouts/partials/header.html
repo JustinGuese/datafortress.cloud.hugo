@@ -7,10 +7,10 @@
         <div class="col-lg-12">
           <ul class="list-inline text-lg-right text-center">
             <li class="list-inline-item">
-              {{ with .Site.Params.mail }} <a href="mailto:{{ . | absURL }}">{{ . }}</a> {{ end }}
+              {{ with .Site.Params.mail }} <a id="mailHeader" href="mailto:{{ . | absURL }}">{{ . }}</a> {{ end }}
             </li>
             <li class="list-inline-item">
-              {{ with .Site.Params.mobile }} <a href="callto:{{ . }}">Call Us Now:
+              {{ with .Site.Params.mobile }} <a id="callHeader" href="callto:{{ . }}">Call Us Now:
                 <span class="ml-2">{{ . }}</span> {{ end }}
               </a>
             </li>
