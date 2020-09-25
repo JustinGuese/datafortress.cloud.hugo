@@ -65,9 +65,45 @@ name = "Privacy Policy"
 parent = "about"
 weight = 3
 [[menu.main]]
-URL = "service"
+URL = "services"
 name = "Services"
+#parent = "services"
 weight = 2
+[[menu.main]]
+URL = "/services/"
+name = "Overview"
+parent = "Services"
+weight = 1
+[[menu.main]]
+URL = "/services/cloud/"
+name = "Cloud"
+parent = "Services"
+weight = 2
+[[menu.main]]
+URL = "/services/data-science-data-engineering/"
+name = "Data Science & Data Engineering"
+parent = "Services"
+weight = 3
+[[menu.main]]
+URL = "/services/financial-data-driven-planning/"
+name = "Financial Data Driven Planning"
+parent = "Services"
+weight = 4
+[[menu.main]]
+URL = "/services/virtual-augmented-reality/"
+name = "Virtual & Augmented Reality"
+parent = "Services"
+weight = 5
+[[menu.main]]
+URL = "/services/business-consulting1/"
+name = "Business Consulting"
+parent = "Services"
+weight = 6
+[[menu.main]]
+URL = "/services/translations-deep-learning/"
+name = "Deep learning translations"
+parent = "Services"
+weight = 7
 [[menu.main]]
 URL = "project"
 name = "Case Studies"

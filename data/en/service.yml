@@ -1,6 +1,6 @@
 ################################## Satisfied clients ###############################
 satisfied_clients:
-  enable : true
+  enable : false
   bg_image : images/background/clients-bg.webp
   subtitle : Our Some
   title : Satisfied Clients
