@@ -55,15 +55,20 @@ name = "About"
 parent = "about"
 weight = 1
 [[menu.main]]
+URL = "/project/serverless-static-website/"
+name = "Why is this websites so fast?"
+parent = "about"
+weight = 2
+[[menu.main]]
 URL = "/content/english/pages/impressum/"
 name = "Impressum"
 parent = "about"
-weight = 2
+weight = 3
 [[menu.main]]
 URL = "/content/english/pages/privacy-policy/"
 name = "Privacy Policy"
 parent = "about"
-weight = 3
+weight = 4
 [[menu.main]]
 URL = "services"
 name = "Services"
