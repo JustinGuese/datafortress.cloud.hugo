@@ -14,7 +14,7 @@ languageCode = "en-us"
 languageName = "En"
 weight = 1
 [Languages.en.params.footer]
-content = "Your partner for Cloud, Big-Data and AI. Contact us for a free 15-minute consultation."
+content = "Your partner for Cloud, Big-Data and AI. [contact us](/contact) for a free 15-minute consultation."
 copyright = "Copyright &copy; 2020 by Datafortress.cloud"
 subscribe = "Subscribe Us"
 subscribe_content = "Receive exclusive tech/cloud/ai news into your inbox. Unsubscribe any time."
@@ -25,7 +25,7 @@ languageCode = "de-de"
 languageName = "De"
 weight = 2
 [Languages.de.params.footer]
-content = "Your partner for Cloud, Big-Data and AI. Contact us for a free 15-minute consultation."
+content = "Your partner for Cloud, Big-Data and AI. [contact us](/contact) for a free 15-minute consultation."
 copyright = "Copyright &copy; 2020 by Datafortress.cloud"
 subscribe = "Subscribe Us"
 subscribe_content = "Receive exclusive tech/cloud/ai news into your inbox. Unsubscribe any time."

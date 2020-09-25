@@ -35,4 +35,4 @@ The project received great support from the international teams and received fur
 
 
 </br>
-[Are you working on a similar project? Are you interested in something similar? Contact us now for a free 15-minute consultation.](/contact/)
+[Are you working on a similar project? Are you interested in something similar? [contact us](/contact) now for a free 15-minute consultation.](/contact/)

@@ -92,7 +92,7 @@ Even though many people hear a lot of potential cloud leaks, all in all, the clo
 
 <br><br>
 
-**Now, this has only been a brief peek into this huge topic of the cloud, and of course, the situation is different for every company. Therefore it is even more important to engage with a team that already fought through a lot of potential stepping stones to save yourself trouble and money on your journey towards the cloud. Feel free to contact us anytime to get a free 15-minute call to discuss your open questions.**
+**Now, this has only been a brief peek into this huge topic of the cloud, and of course, the situation is different for every company. Therefore it is even more important to engage with a team that already fought through a lot of potential stepping stones to save yourself trouble and money on your journey towards the cloud. Feel free to [contact us](/contact) anytime to get a free 15-minute call to discuss your open questions.**
 
 ### Our Cloud Services:
 

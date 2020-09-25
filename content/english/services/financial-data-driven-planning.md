@@ -101,4 +101,4 @@ Working with an independent partner can have its benefits because your employees
 
 <br>
 
-Our solutions are individual. Meaning we can help startups without many resources on a pay-per-sale basis or huge enterprises alike. Of course, an expensive Hadoop cluster costing thousands a month might not be the right solution for a new startup, and a standard dashboard might not be sufficient for an international enterprise. Contact us and we will work out a scalable solution matching your resources.
+Our solutions are individual. Meaning we can help startups without many resources on a pay-per-sale basis or huge enterprises alike. Of course, an expensive Hadoop cluster costing thousands a month might not be the right solution for a new startup, and a standard dashboard might not be sufficient for an international enterprise. [contact us](/contact) and we will work out a scalable solution matching your resources.

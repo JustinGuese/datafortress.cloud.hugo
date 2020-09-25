@@ -49,4 +49,4 @@ A huge challenge in this scenario has been speed. Users usually leave a website 
 
 
 </br>
-[Are you working on a similar project? Are you interested in something similar? Contact us now for a free 15-minute consultation.](/contact/)
+[Are you working on a similar project? Are you interested in something similar? [contact us](/contact) now for a free 15-minute consultation.](/contact/)

@@ -7,4 +7,4 @@ description: This is meta description
 ---
 ## Our Projects
 
-Have a look at our several projects, or contact us directly if you have any open questions.
+Have a look at our several projects, or [contact us](/contact) directly if you have any open questions.
