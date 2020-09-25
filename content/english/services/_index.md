@@ -9,4 +9,4 @@ description: This is meta description
 
 Check out our services below, or have a look at our portfolio.
 
-Do you already have an idea of what you need? Head over to Contact and get a free 15-minute consultation!
+Do you already have an idea of what you need? Head over to [Contact and get a free 15-minute consultation!](/contact)

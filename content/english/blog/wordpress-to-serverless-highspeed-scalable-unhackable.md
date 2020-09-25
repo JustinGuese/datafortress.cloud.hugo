@@ -31,7 +31,7 @@ But again, as it is massively popular, there is almost every time a plugin for t
 
 
 
-One of the first things I did in the past has been to develop WordPress locally (e.g. [see this AWS post](https://www.smashingmagazine.com/2018/04/wordpress-local-development-beginners-setup-deployment/)), and then just publish the result on a server. Programming and writing speeds increased enormously, but the uploading part proved to be a problem, as WordPress links are usually "hardwired" into the SQL database it uses. Meaning all my links were referring to "localhost" (My Computer) instead of the target domain. There are ways to solve this, like rewriting your URLs in SQL, or using rewriting htaccess rules to refer "old" URLs to the "new" ones, but still, it was a lot of struggle to get going. 
+One of the first things I did in the past has been to develop WordPress locally (e.g. [see this AWS post](https://www.smashingmagazine.com/2018/04/wordpress-local-development-beginners-setup-deployment/)), and then just publish the result on a server. Programming and writing speeds increased enormously, but the uploading part proved to be a problem, as WordPress links are usually "hardwired" into the SQL database it uses. Meaning all my links were referring to "https://www.datafotress.cloud" (My Computer) instead of the target domain. There are ways to solve this, like rewriting your URLs in SQL, or using rewriting htaccess rules to refer "old" URLs to the "new" ones, but still, it was a lot of struggle to get going. 
 
 
 

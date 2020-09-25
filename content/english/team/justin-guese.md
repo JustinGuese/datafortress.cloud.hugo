@@ -15,10 +15,10 @@ information:
   icon: ti-notepad
   data: 142
   info: "1120"
-- label: Success Rate
-  icon: ti-medall
-  data: 99%
-  info: "99"
+# - label: Success Rate
+#   icon: ti-medall
+#   data: 99%
+#   info: "99"
 - label: Experience Of
   icon: ti-flag-alt
   data: 8 Years
@@ -36,7 +36,7 @@ skill:
 - label: Cloud
   percentage: 100%
 - label: Consulting
-  percentage: 95%
+  percentage: 100%
 - label: Big-Data
   percentage: 100%
 social:

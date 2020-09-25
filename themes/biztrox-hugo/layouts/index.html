@@ -19,7 +19,7 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-12 text-center">
 				<h5 class="section-title-sm">{{ i18n "service_subtitle" }}</h5>
-				<h2 class="section-title section-title-border">{{ i18n "service_title" }}</h2>
+				<h2 class="section-title section-title-border"><a href="/services">{{ i18n "service_title" }}</a></h2>
 			</div>
 			{{ range $index, $element:= where .Site.RegularPages "Type" "service" }}
 			{{ if lt $index 3 }}
@@ -47,7 +47,7 @@
 		<div class="row">
 			<div class="col-lg-12 text-center">
 				<h5 class="section-title-sm">{{ i18n "project_subtitle" }}</h5>
-				<h2 class="section-title section-title-border-gray">{{ i18n "project_title" }}</h2>
+				<h2 class="section-title section-title-border-gray"><a href="/project/">{{ i18n "project_title" }}</a></h2>
 			</div>
 		</div>
 		{{ "<!-- work slider -->" | safeHTML }}
@@ -117,7 +117,7 @@
 			{{ with $data.homepage.blog }}
 			<div class="col-lg-12 text-center">
 				<h5 class="section-title-sm">{{ i18n "blog_subtitle" }}</h5>
-				<h2 class="section-title section-title-border-gray">{{ i18n "blog_title" }}</h2>
+				<h2 class="section-title section-title-border-gray"><a href="/blog">{{ i18n "blog_title" }}</a></h2>
 			</div>
 			{{end}}
 

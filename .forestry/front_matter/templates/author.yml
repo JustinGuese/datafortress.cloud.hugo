@@ -20,7 +20,7 @@ fields:
   - type: text
     name: icon
     label: icon
-    description: https://themify.me/themify-icons
+    description: ""
   - type: text
     name: link
     label: link
