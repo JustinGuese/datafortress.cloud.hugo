@@ -1,8 +1,8 @@
 ---
-title: Services
+title: Services - Cloud, Big-Data, AI services for your company
 date: '2018-07-12T18:19:33.000+06:00'
 bg_image: "/images/our-company.webp"
-description: This is meta description
+description: Services - Cloud, Big-Data, AI services for your company
 
 ---
 ## Our Services

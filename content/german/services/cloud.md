@@ -98,8 +98,7 @@ Auch wenn viele Menschen von vielen potenziellen Cloudnlecks hören, ist die Clo
 
 ### Unsere Cloud-Dienste:
 
-* [Cloud-Backups / Archive](https://www.datafortress.cloud/cloud-services/cloud-backups-archives/)
-* [Hosting in der Cloud](https://www.datafortress.cloud/cloud-services/hosting-in-the-cloud/)
+* Cloud-Backups / Archive
 * Objektspeicher-Lösungen
 * Relationale Datenbanken in der Cloud
 * NoSQL-Datenbanken in der Cloud
@@ -113,7 +112,7 @@ Auch wenn viele Menschen von vielen potenziellen Cloudnlecks hören, ist die Clo
 * Cloudn-Katalogisierung
 * Prod/QA/Dev-Einrichtung
 * Stream-Verarbeitung
-* [Lösungen für große Datenmengen](https://www.datafortress.cloud/data-science-and-data-engineering/)
+* Lösungen für große Datenmengen
 * Memcached und Redis Einrichtung
 * CDN-Einrichtung
 * Elasticsearch, Logstash, Kibana-Einrichtung und Serverless
@@ -123,8 +122,8 @@ Auch wenn viele Menschen von vielen potenziellen Cloudnlecks hören, ist die Clo
 * Rendern für Photoshop, Filme
 * Massen-E-Mail-Server
 * AWS Beratung und Lösungsarchitektur
-* [Data Warehouse in der Cloud] (https://www.datafortress.cloud/data-science-and-data-engineering/)
-* [Data Mart und Data Lake in the Cloud](https://www.datafortress.cloud/data-science-and-data-engineering/)
+* Data Warehouse in der Cloud
+* Data Mart und Data Lake in the Cloud
 * Zugriffskontrolle in der Cloud
 * Cloud Access Logging und Sicherheit
 * Firewall

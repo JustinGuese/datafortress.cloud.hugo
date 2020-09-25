@@ -96,8 +96,8 @@ Even though many people hear a lot of potential cloud leaks, all in all, the clo
 
 ### Our Cloud Services:
 
-* [Cloud Backups / Archives](https://www.datafortress.cloud/cloud-services/cloud-backups-archives/)
-* [Hosting in the Cloud](https://www.datafortress.cloud/cloud-services/hosting-in-the-cloud/)
+* Cloud Backups / Archives
+* Hosting in the Cloud
 * Object Storage Solutions
 * Relational Databases in the Cloud
 * NoSQL Databases in the Cloud
@@ -111,7 +111,7 @@ Even though many people hear a lot of potential cloud leaks, all in all, the clo
 * Cloud Catalogueing
 * Prod/QA/Dev Setup
 * Stream Processing
-* [Big Data Solutions](https://www.datafortress.cloud/data-science-and-data-engineering/)
+* Big Data Solutions
 * Memcached and Redis Setup
 * CDN Setup
 * Elasticsearch, Logstash, Kibana Setup and Serverless
@@ -121,8 +121,8 @@ Even though many people hear a lot of potential cloud leaks, all in all, the clo
 * Rendering for Photoshop, Movies
 * Mass Email Servers
 * AWS Consulting and Solution Architecture
-* [Data Warehouse int the Cloud](https://www.datafortress.cloud/data-science-and-data-engineering/)
-* [Data Mart and Data Lake in the Cloud](https://www.datafortress.cloud/data-science-and-data-engineering/)
+* Data Warehouse int the Cloud
+* Data Mart and Data Lake in the Cloud
 * Cloud Access Control
 * Cloud Access Logging and Security
 * Firewall

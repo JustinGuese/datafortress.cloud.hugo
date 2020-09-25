@@ -1,6 +1,6 @@
 ---
-title: "Contact"
-date: 2018-07-12T18:19:33+06:00
+title: "Contact - Free 15 minute consultation"
+date: 2020-07-12T18:19:33+06:00
 bg_image: images/background/page-title.webp
-description : "This is meta description"
+description : "Contact - Free 15 minute consultation"
 ---

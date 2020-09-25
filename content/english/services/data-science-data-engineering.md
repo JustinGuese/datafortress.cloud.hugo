@@ -34,7 +34,7 @@ Data is becoming more and more important. Let us take a look at some examples to
 >
 > All these data can not anymore be analyzed by people themselves. What might have worked in times of SAP and Excel, can not be manually done anymore. Therefore new tools, new technologies, and new processes need to be implemented to handle this enormous data mass.
 
-\[1\] [Source](https://www.socialmediatoday.com/news/how-much-data-is-generated-every-minute-infographic-1/525692/http://Source)
+\[1\] [Source](https://www.socialmediatoday.com)
 
 ## How does Data Science benefit _my_ business?
 

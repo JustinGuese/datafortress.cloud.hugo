@@ -34,7 +34,7 @@ Daten werden immer wichtiger. Werfen wir einen Blick auf einige Beispiele, um ei
 >
 > All diese Daten können nicht mehr von den Menschen selbst analysiert werden. Was in Zeiten von SAP und Excel noch funktioniert hat, ist manuell nicht mehr möglich. Deshalb müssen neue Werkzeuge, neue Technologien und neue Prozesse implementiert werden, um diese enorme Datenmasse zu bewältigen.
 
-\[1\] [Quelle](https://www.socialmediatoday.com/news/how-much-data-is-generated-every-minute-infographic-1/525692/http://Source)
+\[1\] [Quelle](https://www.socialmediatoday.com)
 
 ## Wie profitiert _meine_ Firma von der Data Science?
 

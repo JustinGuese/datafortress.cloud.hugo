@@ -287,7 +287,6 @@ A custom solution with for example AWS S3 is the best choice if you already imag
 </tbody>
 </table>
 
-[Link](https://www.datafortress.cloud/cloud-services/cloud-backups-archives/)
 
 <br><br>
 

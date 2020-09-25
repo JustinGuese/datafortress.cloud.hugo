@@ -287,7 +287,6 @@ Eine kundenspezifische Lösung mit z.B. AWS S3 ist die beste Wahl, wenn Sie sich
 </tbody>
 </table>
 
-[Link](https://www.datafortress.cloud/cloud-services/cloud-backups-archives/)
 
 <br><br>
 
