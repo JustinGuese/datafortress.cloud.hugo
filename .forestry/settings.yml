@@ -1,0 +1,139 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: ''
+webhook_url: 
+sections:
+- type: heading
+  label: Blog Post
+- type: directory
+  path: content/english/blog
+  label: Post (en)
+  create: documents
+  match: "**/*"
+  templates:
+  - post
+- type: directory
+  path: content/german/blog
+  label: Post (fr)
+  create: documents
+  match: "**/*"
+  templates:
+  - post
+- type: heading
+  label: Author
+- type: directory
+  path: content/english/author
+  label: Author (en)
+  create: documents
+  match: "**/*"
+  templates:
+  - author
+- type: directory
+  path: content/german/author
+  label: Author (fr)
+  create: documents
+  match: "**/*"
+  templates:
+  - author
+- type: heading
+  label: Project
+- type: directory
+  path: content/english/project
+  label: Project (en)
+  create: documents
+  match: "**/*"
+  templates:
+  - project
+- type: directory
+  path: content/german/project
+  label: Project (fr)
+  create: documents
+  match: "**/*"
+  templates:
+  - project
+- type: heading
+  label: Team
+- type: directory
+  path: content/english/team
+  label: Team (en)
+  create: documents
+  match: "**/*"
+  templates:
+  - team
+- type: directory
+  path: content/german/team
+  label: Team (fr)
+  create: documents
+  match: "**/*"
+  templates:
+  - team
+- type: heading
+  label: Service
+- type: directory
+  path: content/english/service
+  label: Service (en)
+  create: documents
+  match: "**/*"
+  templates:
+  - service
+- type: directory
+  path: content/german/service
+  label: Service (fr)
+  create: documents
+  match: "**/*"
+  templates:
+  - service
+- type: heading
+  label: Other Pages
+- type: directory
+  path: content/english/pages
+  label: Pages (en)
+  create: documents
+  match: "**/*"
+- type: directory
+  path: content/german/pages
+  label: Pages (fr)
+  create: all
+  match: "**/*"
+- type: heading
+  label: Data
+- type: directory
+  path: data/en
+  label: Data (en)
+  create: all
+  match: "**/*"
+- type: directory
+  path: data/fr
+  label: Data (fr)
+  create: all
+  match: "**/*"
+- type: directory
+  path: i18n
+  label: i18n
+  create: documents
+  match: "**/*"
+- type: heading
+  label: Configuration
+- type: directory
+  path: "."
+  label: Configuration
+  create: all
+  match: "*.toml"
+  new_doc_ext: toml
+upload_dir: static/images
+public_path: "/images"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.58.2
+  preview_output_directory: public
+  preview_docker_image: forestryio/hugo:latest
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
+    -d public
+version: 0.58.2

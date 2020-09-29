@@ -1,0 +1,163 @@
+---
+slider:
+  enable: true
+  slider_Item:
+  - bg_image: "/images/light-bulb-on-white-panel-1166643-min.webp"
+    animation_from: left
+    subtitle: Wir sprechen
+    title: Innovation
+    content: Wir verfügen über einen breit gefächerten technischen Hintergrund und verbessern ständig unseren Tech-Stack.
+    pagination_icon: ti-light-bulb
+    pagination_name: Innovation
+    button:
+      enable: true
+      label: Mehr...
+      link: about
+  - bg_image: "/images/person-in-white-long-sleeve-shirt-holding-tablet-computer-3740250-min.webp"
+    animation_from: up
+    subtitle: Datengetriebenes
+    title: Business Consulting
+    content: |-
+      Aufgrund unseres Datenhintergrunds testen und verbessern wir unsere Vorgehensweise <br/> ständig anhand von Daten, was uns zu einem perfekten datengesteuerten Beratungspartner für Ihr Unternehmen macht.
+    pagination_icon: ti-comments
+    pagination_name: Consulting
+    button:
+      enable: true
+      label: Mehr...
+      link: about
+  - bg_image: "/images/white-ceramic-mug-beside-spiral-notebook-and-laptop-3773413-min.webp"
+    animation_from: down
+    subtitle: Konzentrieren Sie Ihre Anstrengungen auf ihr
+    title: Kern-Business
+    content: Und lassen Sie uns das Projektmanagement, die Ausführung und die Qualitätssicherung übernehmen.
+    pagination_icon: ti-crown
+    pagination_name: Eine helfende Hand
+    button:
+      enable: true
+      label: Mehr...
+      link: about
+  - bg_image: "/images/black-drone-916015-min.webp"
+    animation_from: right
+    subtitle: Wir sind Ihr Partner für
+    title: Cloud, Big-Data, AI
+    content: |-
+      Wir glauben an QUALITÄT <br>
+      Wir glauben an AGILITÄT<br>
+      Wir glauben an TECHNOLOGIE<br>
+    pagination_icon: ti-cloud-up
+    pagination_name: Cloud, Big-Data & AI
+    button:
+      enable: true
+      label: Mehr...
+      link: about
+service:
+  enable: true
+about:
+  enable: true
+  bg_image: images/background/about-bg.webp
+  title: Über uns
+  content:
+    Wir glauben, dass unsere Strategie die Arbeitsweise der Agenturen revolutionieren wird, und zusammen mit den neuesten Geschäftsstrategien und unseren skalierbaren Ressourcen können wir jedes Projekt, das Ihnen vorschwebt, umsetzen.
+    <br/><br/>
+    **Was wir tun?**
+    <br/><br/>Besuchen Sie unsere Fallstudien, um eine Übersicht unseres Portfolios zu sehen, oder kontaktieren Sie uns direkt für eine kostenlose 15-minütige Beratung.
+
+
+
+  bullet_point:
+  - Business Consulting
+  - Cloud Lösungen
+  - IT Security Audits
+  - Big Data
+  - VR & AR
+  - AI & Machine Learning
+  button:
+    enable: true
+    label: Erfahren Sie mehr
+    link: about
+skill:
+  enable: true
+  subtitle: Unsere Skills
+  title: Einige Gründe für die Zusammenarbeit
+  content: |-
+    **Wir glauben an Qualität**
+
+    Nur die beste Qualität schafft eine vertrauensvolle Beziehung und entwickelt eine langfristige Zusammenarbeit.
+
+    **Wir glauben an AGILITÄT**
+
+    Wir verwenden eine Strategie namens Rapid Prototyping, die mehrere Meilensteine während unserer Entwicklung wiederholt und Ihnen präsentiert, um sowohl Ideen zu testen als auch ein Endprodukt zu vermeiden, das nicht Ihren Anforderungen entspricht.
+
+    **Wir glauben an TECHNOLOGIE**
+
+    Um unsere Aufgabe zu erfüllen und die am besten passende Beratung zu bieten, sind wir ständig auf der Suche nach der neuesten Technologie und wenden diese an, um in der Branche führend zu bleiben.
+
+
+  funfacts:
+  - icon: ti-server
+    title: Projekte vollendet
+    count: "230"
+  - icon: ti-face-smile
+    title: Zufriedene Kunden
+    count: "73"
+  - icon: ti-thumb-up
+    title: Programme geschrieben
+    count: "1582"
+  progressbar:
+  - title: Cloud
+    progress: 100%
+  - title: Consulting
+    progress: 100%
+  - title: AI / Machine Learning
+    progress: 100%
+  - title: Virtual and Augmented Reality
+    progress: 100%
+project:
+  enable: true
+mission:
+  enable: true
+  subtitle: Konzentrieren Sie ihre Anstregungen darauf
+  title: wo ihr Unternehmen es benötigt.
+  content: |-
+    Während meiner früheren Tätigkeit bei der Porsche Holding und als Selbständiger habe ich festgestellt, dass viele Agenturen und Beratungsunternehmen einerseits nicht das am besten passende Produkt für ihre Kunden anbieten und andererseits nicht eng mit dem Kunden zusammenarbeiten.
+
+    Meiner Meinung nach kann eine perfekte Lösung nur dann erreicht werden, wenn die Agentur sowohl beratend als auch produzierend tätig ist und ständig mit dem Kunden durch "Prototyp-Iterationen" zusammenarbeitet, d.h. es wird nicht ein Endprodukt geben, sondern ein ständiger "Dialog" mit dem Kunden, der mehrere kleinere Prototypen auf dem Weg zum Endprodukt anbietet.
+
+  image: "/images/service/benifit.webp"
+  accordion:
+  - title: Unternehmensberatung
+    description: Aufgrund unseres Datenhintergrunds testen und verbessern wir unser Geschäft ständig anhand von Zahlen, was uns zu einem perfekten datengesteuerten Beratungspartner für Ihr Unternehmen macht.
+  - title: Schnelle Lösungen
+    description: In Zeiten wie diesen ist Schnelligkeit ein wichtiger Faktor, den wir in unser Geschäft integriert haben. Wir setzen Automatisierung und Skalierung ein, um schnelle und präzise Lösungen liefern zu können.
+  - title: Innovation
+    description: Wir verfügen über einen breit gefächerten technischen Hintergrund und lernen und verbessern ständig unseren Tech-Stack.
+promo_video:
+  enable: false
+  title: We Are Alawys <br> Comited
+  bg_image: images/background/promo-video.webp
+  video_URL: https://www.youtube.com/watch?v=jrkvirglgaQ
+  video_title: Lorem ipsum dolor <br> sit amet con.
+testimonial:
+  enable: true
+  subtitle: Kundenmeinungen
+  title: Was unsere Kunden sagen
+  image: images/client.webp
+  testimonial_item:
+  - name: Markus
+    content: Ich arbeitete mit Justin für 8 Monate im Produktinnovationsprojekt zusammen, er ist ein authentische Person mit großartigen Ideen. Es war immer leicht, mit ihm zu arbeiten, gibt er und erhält sehr gute Kritiken, er hatte eine große Affinität zu jedem im Team, was es immer besser und produktiver macht, mit ihnen zu arbeiten. Als unser IT-Mann könnte er alle Probleme lösen, auch wenn er mehr arbeiten musste als erwartet. Wir haben die Gemeinsame Abschlussgala, es war mir ein Vergnügen, diese Präsentation zu halten und mit ihm zusammenarbeiten. Ich würde ihn für jede Arbeit oder Partnerschaft empfehlen.
+    designation: Happy Clients
+  - name: Lazaar
+    content: Sehr professionell. Wir empfehlen Ihnen dringend, ihn auszuwählen, wenn Sie ein qualitativ hochwertiges Produkt wünschen.
+    designation: Happy Clients
+cta:
+  enable: true
+  bg_image: images/background/cta.webp
+  title: DataFortress.cloud ist ihr Partner für technisch hochwertige, skalierbare Lösungen.
+  button:
+    enable: true
+    label: Kontakt
+    link: contact
+blog:
+  enable: true
+clients_logo_slider:
+  enable: false

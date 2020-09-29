@@ -1,0 +1,218 @@
+baseURL = "https://www.datafortress.cloud/"
+disableLanguages = []
+disqusShortname = "datafortess-cloud"
+paginate = "6"
+enableRobotsTXT = true
+enableGitInfo = true
+summaryLength = "10"
+theme = "biztrox-hugo"
+title = "Datafortress.cloud"
+[Languages.en]
+contentDir = "content/english"
+home = "Home"
+languageCode = "en-us"
+languageName = "En"
+weight = 1
+[Languages.en.params.footer]
+content = "Your partner for Cloud, Big-Data and AI. [contact us](/contact) for a free 15-minute consultation."
+copyright = "Copyright &copy; 2020 by Datafortress.cloud"
+subscribe = "Subscribe Us"
+subscribe_content = "Receive exclusive tech/cloud/ai news into your inbox. Unsubscribe any time."
+[Languages.de]
+contentDir = "content/german"
+home = "Home"
+languageCode = "de-de"
+languageName = "De"
+weight = 2
+[Languages.de.params.footer]
+content = "Your partner for Cloud, Big-Data and AI. [contact us](/contact) for a free 15-minute consultation."
+copyright = "Copyright &copy; 2020 by Datafortress.cloud"
+subscribe = "Subscribe Us"
+subscribe_content = "Receive exclusive tech/cloud/ai news into your inbox. Unsubscribe any time."
+[[menu.footer]]
+URL = "/content/english/pages/impressum/"
+name = "Legal"
+weight = 1
+[[menu.footer]]
+URL = "sitemap.xml"
+name = "Sitemap"
+weight = 2
+[[menu.footer]]
+URL = "/content/english/pages/privacy-policy/"
+name = "Privacy Policy"
+weight = 3
+[[menu.footer]]
+URL = "/content/english/pages/impressum/"
+name = "Terms & Conditions"
+weight = 4
+[[menu.main]]
+URL = "about"
+name = "About"
+weight = 1
+[[menu.main]]
+URL = "about"
+name = "About"
+parent = "about"
+weight = 1
+[[menu.main]]
+URL = "/project/serverless-static-website/"
+name = "Why is this websites so fast?"
+parent = "about"
+weight = 2
+[[menu.main]]
+URL = "/content/english/pages/impressum/"
+name = "Impressum"
+parent = "about"
+weight = 3
+[[menu.main]]
+URL = "/content/english/pages/privacy-policy/"
+name = "Privacy Policy"
+parent = "about"
+weight = 4
+[[menu.main]]
+URL = "services"
+name = "Services"
+#parent = "services"
+weight = 2
+[[menu.main]]
+URL = "/services/"
+name = "Overview"
+parent = "Services"
+weight = 1
+[[menu.main]]
+URL = "/services/cloud/"
+name = "Cloud"
+parent = "Services"
+weight = 2
+[[menu.main]]
+URL = "/services/data-science-data-engineering/"
+name = "Data Science & Data Engineering"
+parent = "Services"
+weight = 3
+[[menu.main]]
+URL = "/services/financial-data-driven-planning/"
+name = "Financial Data Driven Planning"
+parent = "Services"
+weight = 4
+[[menu.main]]
+URL = "/services/virtual-augmented-reality/"
+name = "Virtual & Augmented Reality"
+parent = "Services"
+weight = 5
+[[menu.main]]
+URL = "/services/business-consulting1/"
+name = "Business Consulting"
+parent = "Services"
+weight = 6
+[[menu.main]]
+URL = "/services/translations-deep-learning/"
+name = "Deep learning translations"
+parent = "Services"
+weight = 7
+[[menu.main]]
+URL = "project"
+name = "Case Studies"
+weight = "3"
+[[menu.main]]
+URL = "blog"
+name = "Blog"
+weight = "4"
+[[menu.main]]
+URL = "team"
+name = "Team"
+weight = "5"
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 6
+[params]
+author = "DataFortress.cloud"
+contact_form_action = "https://formspree.io/mknvkdpr"
+description = "VR, Big-Data and Cloud for your Business."
+google_analitycs_id = "UA-56269619-17"
+logo = "images/logo.webp"
+logo_white = "images/logo.webp"
+mail = "info@datafortress.cloud"
+mailchimp_form_action = "https://cloud.us19.list-manage.com/subscribe/post?u=29b9af4020a7ab7d1e6a76d72&amp;id=3622b2a9a6"
+mailchimp_form_name = "mc-embedded-subscribe-form"
+mobile = "+43 677 61178288"
+[params.gmap]
+enable = false
+gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
+map_latitude = "48.183860"
+map_longitude = "16.321450"
+map_marker = "images/marker.webp"
+[params.nav_button]
+enable = true
+link = "contact"
+[[params.plugins.csscrit]]
+URL = "plugins/bootstrap/bootstrap.min.css" # critical
+[[params.plugins.css]]
+URL = "plugins/magnific-popup/magnific-popup.css" # defer
+[[params.plugins.csscrit]]
+URL = "plugins/slick/slick-min.css" # critical
+[[params.plugins.css]]
+URL = "plugins/slick/slick-theme-min.css" # defer
+[[params.plugins.css]]
+URL = "plugins/themify-icons/themify-icons.css" # defer
+[[params.plugins.css]]
+URL = "plugins/animate/animate.css" # defer
+[[params.plugins.js]]
+URL = "plugins/jQuery/jquery.min.js" # critical
+[[params.plugins.js]]
+URL = "plugins/bootstrap/bootstrap.min.js" # defer
+#[[params.plugins.js]]
+#URL = "plugins/cookie-script/cookiescript.js" # defer
+[[params.plugins.js]]
+URL = "plugins/slick/slick.min.js" # critical
+[[params.plugins.js]]
+URL = "plugins/magnific-popup/magnific-popup.min.js" # defer
+[[params.plugins.js]]
+URL = "plugins/filterizr/jquery.filterizr.min.js" # defer
+# [[params.plugins.js]]
+# URL = "plugins/google-map/gmap.js"
+[params.preloader]
+enable = false
+preloader = "images/preloader.gif"
+[[params.clients_logo_slider]]
+link = "#"
+logo = "images/client-logo/client-logo-1.webp"
+[[params.clients_logo_slider]]
+link = "https://examplesite.com"
+logo = "images/client-logo/client-logo-2.webp"
+[[params.clients_logo_slider]]
+link = "#"
+logo = "images/client-logo/client-logo-3.webp"
+[[params.clients_logo_slider]]
+link = "https://examplesite.com"
+logo = "images/client-logo/client-logo-4.webp"
+[[params.clients_logo_slider]]
+link = "#"
+logo = "images/client-logo/client-logo-5.webp"
+[[params.clients_logo_slider]]
+link = "https://examplesite.com"
+logo = "images/client-logo/client-logo-3.webp"
+[[params.contacts]]
+icon = "ti-download"
+[[params.contacts.contact]]
+contact_item = "<a id='vcfAdd' href='/files/vcard_datafortress.vcf' download>Add to Contacts</a>"
+[[params.contacts]]
+icon = "ti-mobile"
+[[params.contacts.contact]]
+contact_item = "<a id='contactPageCallATClick' href='callto:004367761178288'>+43 677 61178288</a>"
+[[params.contacts.contact]]
+contact_item = "<a id='contactPageCallUSClick' href='callto:+14132965682‬'>+1(413)296-5682‬</a>"
+[[params.contacts]]
+icon = "ti-email"
+[[params.contacts.contact]]
+contact_item = "<a id='contactPageEmailClick' href='mailto:info@datafortress.cloud'>info@datafortress.cloud‬</a>"
+[[params.contacts]]
+icon = "ti-map-alt"
+[[params.contacts.contact]]
+contact_item = "Schönbrunner Straße 266. <br> Vienna, Austria"
+[[params.social]]
+icon = "ti-facebook"
+link = "https://www.facebook.com/guese.justin/"
+[[params.social]]
+icon = "ti-linkedin"
+link = "https://www.linkedin.com/in/justin-guese/"

@@ -1,0 +1,83 @@
+{{ define "main" }}
+
+{{ partial "pageTitle.html" . }}
+
+{{ "<!-- team single -->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      {{ "<!-- sidebar -->" | safeHTML }}
+      <aside class="col-lg-4">
+        {{ "<!-- team member info -->" | safeHTML }}
+        <div class="bg-gray rounded mb-50">
+          <img class="img-fluid w-100 rounded-top" src="{{ .Params.Image | absURL }}" alt="team member">
+          <div class="py-2 px-4 pb-3">
+            {{ range .Params.Information }}
+            <div class="py-3 border-bottom-not-last">
+              <p class="d-inline-block font-primary m-0">
+                <i class="mr-2 {{ .icon }}"></i>{{ .label }}</p>
+              <span class="font-weight-bold text-dark float-right">{{ .data }}</span>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+        {{ "<!-- cv -->" | safeHTML }}
+        {{ if .Params.Cv }}
+        <div class="rounded border py-3 px-4 mb-50">
+          <i class="d-inline-block mr-1 text-dark ti-files" style="font-size: 20px;"></i>
+          <h4 class="mb-1 d-inline-block">{{ i18n "cv" }}</h4>
+          <a class="font-secondary text-color d-block ml-4" href="{{ .Params.Cv | absURL }}">{{ i18n "download_pdf" }}</a>
+        </div>
+        {{ end }}
+      </aside>
+      {{ "<!-- /sidebar -->" | safeHTML }}
+
+      {{ "<!-- team member details -->" | safeHTML }}
+      <div class="col-lg-8">
+        <h2>{{ .Title }}</h2>
+        <h6 class="text-primary mb-30">{{ .Params.Designation }}</h6>
+        <p class="mb-40">{{ .Params.Bio | markdownify }}</p>
+        <div class="row">
+          {{ "<!-- contact info -->" | safeHTML }}
+          <div class="col-md-6">
+            <h4>{{ i18n "contact_info" }}</h4>
+            <ul class="pl-0 mb-40">
+              {{ range .Params.Contacts }}
+              <li class="font-secondary text-color my-3">
+                <i class="mr-3 {{ .icon }}"></i>{{ .id }}
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          {{ "<!-- social icon -->" | safeHTML }}
+          <div class="col-md-6 mb-4 mb-md-0">
+            <h4 class="mb-20">{{ i18n "follow_on_social" }}</h4>
+            <ul class="list-inline">
+              {{ range .Params.Social }}
+              <li class="list-inline-item mr-2">
+                <a class="social-icon-lg bg-gray text-dark" href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+        <div class="post-content">
+          {{ .Content }}
+        </div>
+        {{ range .Params.Skill }}
+        <div class="progressbar">
+          <h5 class="progressbar-title">{{ .label }}</h5>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped" style="width: {{ .percentage }};">
+              <div class="progress-bar-value">{{ .percentage }}</div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /team single -->" | safeHTML }}
+
+{{ end }}

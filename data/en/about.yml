@@ -1,0 +1,59 @@
+###################################### philosophy ####################################
+philosophy:
+  enable : true
+  subtitle : Meet Our
+  title : Brand New Solution
+  content :
+    <strong>Cloud, Big-Data, AI</strong>.</br>
+    We believe in <strong>QUALITY</strong></br>
+    We believe in <strong>SPEED</strong></br>
+    We believe in <strong>TECHNOLOGY</strong></br>
+    </br>
+    In Gründung / Currently in the pre-founding stage!
+    </br>
+    Inhaber Justin Güse
+    </br>
+    Es werden noch keine Dienste oder Services angeboten, sowie keine Werbung geschaltet. Diese Webseite ist derzeit in der Entwicklungsumgebung, und symbolisiert noch kein gestartetes Unternehmen. Es dient rein zur Informationsdarlegung und Testung der Webseite.
+
+  image : images/business-chairs-company-coworking-7070.webp
+
+###################################### ceo ########################################
+ceo:
+  enable : true
+  bg_image : images/fotojustinguese.webp
+  title : Only trust the best.
+  content : I, Justin Güse, am the founder of Datafortress.cloud. After working for Porsche Holding in an innovation/data science division, where I developed many projects ranging from Big Data to Virtual Reality (see portfolio), I decided to found my own company. During my time at Porsche, I observed that many agencies or consultants do not have the main goal to satisfy their clients’ needs as the main priority, but rather how to achieve the minimal needed tasks in the shortest amount of time.
+  signature : images/about/ceo-signature.webp
+  name : Justin Güse
+  designation : CEO
+
+########################################### Mission ###################################
+mission:
+  enable : true
+  # mission content comes from "data/*/homepage.yml" file
+
+###################################### funfacts ####################################
+funfacts:
+  enable : true
+  bg_image : images/background/cta.webp
+  counter:
+    - title : Projects Done
+      icon : ti-server # themify icon pack : https://themify.me/themify-icons
+      count : 230
+
+    - title : Satisfied Clients
+      icon : ti-face-smile # themify icon pack : https://themify.me/themify-icons
+      count : 73
+
+    - title : Cups Of Coffee
+      icon : ti-thumb-up # themify icon pack : https://themify.me/themify-icons
+      count : 580
+
+    - title : Awards Won
+      icon : ti-cup # themify icon pack : https://themify.me/themify-icons
+      count : 2
+
+########################################### skill ###################################
+skill:
+  enable : true
+  # skill content comes from "data/*/homepage.yml" file
