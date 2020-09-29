@@ -40,17 +40,17 @@ Alles in allem kann ich nur empfehlen, eine Arch-Linux-Deep-Learning-Station so 
 im Vergleich zu Ubuntu. 
 
 
-Ich werde die Anleitung in zwei Teile aufteilen, wobei der erste Teil "[Wie installiere ich Arch Linux](www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/)" und der zweite Teil "[Wie installiere ich die Deep-Learning-Workstation-Pakete](https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/)" lautet. 
+Ich werde die Anleitung in zwei Teile aufteilen, wobei der erste Teil "[Wie installiere ich Arch Linux](//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/)" und der zweite Teil "[Wie installiere ich die Deep-Learning-Workstation-Pakete](//https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/)" lautet. 
 
-Für das allgemeine ["Wie man Arch Linux installiert", gehen Sie zu diesem Artikel](www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/). 
+Für das allgemeine ["Wie man Arch Linux installiert", gehen Sie zu diesem Artikel](//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/). 
 
-Wenn Arch für den Moment zu komplex ist, könnten Sie [Manjaro](https://manjaro.org/) ausprobieren, eine benutzerfreundliche Version von Arch, auch wenn ich nicht garantieren kann, dass alle Pakete gleich funktionieren, da sie leicht unterschiedlich sind. Alles in allem sollte es aber gleich funktionieren.
+Wenn Arch für den Moment zu komplex ist, könnten Sie [Manjaro](//https://manjaro.org/) ausprobieren, eine benutzerfreundliche Version von Arch, auch wenn ich nicht garantieren kann, dass alle Pakete gleich funktionieren, da sie leicht unterschiedlich sind. Alles in allem sollte es aber gleich funktionieren.
 
 Ich habe darüber nachgedacht, ein installationsfertiges Image (iso oder img) zu erstellen, wenn genügend Leute daran interessiert sind, hinterlassen Sie einen Kommentar unten oder schreiben Sie mir eine Nachricht!
 
 ## Installation des Deep Learning (TensorFlow, CUDA, CUDNN, Anaconda) Setups auf einer frischen Arch-Linux-Installation 
 
-Wenn Sie [mit der Installation von Arch (puh!)](https://www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/) fertig sind, lassen Sie uns zunächst einige Einstellungen so ändern, dass unser System stabiler arbeitet.
+Wenn Sie [mit der Installation von Arch (puh!)](//https://www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/) fertig sind, lassen Sie uns zunächst einige Einstellungen so ändern, dass unser System stabiler arbeitet.
 
 ### 1. Umschalten auf die schnellsten Spiegel
 
@@ -119,7 +119,7 @@ Wenn Sie zwei Kernel sehen, können Sie nun damit fortfahren, die alten Kernel z
 
 > sudo pacman -R linux
 
-Ein fortgeschrittener Teil ist nun, dass Sie Ihrem Bootloader mitteilen müssen, welchen Kernel er wählen soll. Die Frage ist, welchen Bootloader Sie verwenden, aber in den meisten Fällen ist es Grub. Wenn Sie [meinem Arch-Installations-Tutorial gefolgt sind](www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/), ist Ihr Bootloader systemd-boot.
+Ein fortgeschrittener Teil ist nun, dass Sie Ihrem Bootloader mitteilen müssen, welchen Kernel er wählen soll. Die Frage ist, welchen Bootloader Sie verwenden, aber in den meisten Fällen ist es Grub. Wenn Sie [meinem Arch-Installations-Tutorial gefolgt sind](//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/), ist Ihr Bootloader systemd-boot.
 
 
 Meine Empfehlung ist, die Grub-Anweisungen auszuprobieren, und wenn das nicht funktioniert, fahren Sie mit den anderen fort.

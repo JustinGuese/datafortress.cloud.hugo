@@ -42,14 +42,14 @@ compared to Ubuntu.
 
 I will split the how-to in two parts, the first one being “How to I install Arch Linux” and the second one being “How to install the Deep Learning workstation packages”. 
 
-For the general [“How to install Arch Linux”, head over to this article](www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/). 
+For the general [“How to install Arch Linux”, head over to this article](//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/). 
 
-If Arch is too complex for now, you could try out [Manjaro](https://manjaro.org/), which is a user-friendly version of Arch, even though I can not guarantee that all packages will work the same, as they are slightly different. All in all it should work the same though.
+If Arch is too complex for now, you could try out [Manjaro](//https://manjaro.org/), which is a user-friendly version of Arch, even though I can not guarantee that all packages will work the same, as they are slightly different. All in all it should work the same though.
 
 I was thinking about creating a ready to install Image (iso or img), if enough people are interested leave a comment below or message me!
 
 ## Installing the Deep Learning (TensorFlow, CUDA, CUDNN, Anaconda) setup on a fresh Arch Linux installation
-Once you are [done with the Arch installation (phew!)](https://www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/), let us first change some settings such that our system works more stable.
+Once you are [done with the Arch installation (phew!)](//https://www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/), let us first change some settings such that our system works more stable.
 
 ### 1. Switching to the fastest mirrors
 

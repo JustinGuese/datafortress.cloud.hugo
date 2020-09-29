@@ -23,7 +23,7 @@ type: post
 
 ## The benefits of Arch Linux
 
-In my other post, [“How To: Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation”](https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/), I have been explaining why I switched from Ubuntu to Arch Linux for my Machine Learning workstation. Summarized it is mostly because of speed, because Arch is way closer to the hardware and therefore way faster, less bloatware and therefore less RAM usage which I need to machine learning, and the amazing pacman and AUR packages which are fast and easy to install.
+In my other post, [“How To: Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation”](//https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/), I have been explaining why I switched from Ubuntu to Arch Linux for my Machine Learning workstation. Summarized it is mostly because of speed, because Arch is way closer to the hardware and therefore way faster, less bloatware and therefore less RAM usage which I need to machine learning, and the amazing pacman and AUR packages which are fast and easy to install.
 
 In Ubuntu, for example, it is quite hard to get TensorFlow and CUDA working for Deep Learning, as the Debian package structure is different and the installation slower compared to Arch. In Arch, dependencies are handled nicely, and packages are not that abstracted as Arch is basically the “pure” Linux kernel itself.
 
@@ -35,11 +35,11 @@ I am at least happy with Arch, as it is way faster than everything I have seen b
 
 I have been thinking about providing an iso or img for my Deep Learning build for an easy install. If you are interested please comment or send me a message. 
 
-Additionally, if you are fine with a slight abstraction layer [Manjaro Arch](https://manjaro.org/) might be a good choice for you. It is basically Arch, but made easy and user-friendly. I loved it, but moved to Arch as Manjaro uses their own packages, which are still good, but not the same as the “pure” Arch packages. If you are not a power-user this might be the choice for you. 
+Additionally, if you are fine with a slight abstraction layer [Manjaro Arch](//https://manjaro.org/) might be a good choice for you. It is basically Arch, but made easy and user-friendly. I loved it, but moved to Arch as Manjaro uses their own packages, which are still good, but not the same as the “pure” Arch packages. If you are not a power-user this might be the choice for you. 
 
 ## How to Install Arch Linux the easy way
 
-Whilst the [introductory guide](https://wiki.archlinux.org/index.php/installation_guide) provided by arch is quite good already, it can be confusing for newcomers. That is why I have decided to write my own tutorial. 
+Whilst the [introductory guide](//https://wiki.archlinux.org/index.php/installation_guide) provided by arch is quite good already, it can be confusing for newcomers. That is why I have decided to write my own tutorial. 
 
 My goal has been to install Arch with encrypted drives, as I need to secure the data at rest for my clients. 
 
@@ -86,7 +86,7 @@ Check your connection with curling a website. If the response looks like HTML yo
 
 ### 2. Partitioning the drives
 
-This is the most difficult step, so once you are done with it you are almost done! I chose the more advanced version where the drive is completely encrypted for advanced security, but feel free to use the “[standard method](https://wiki.archlinux.org/index.php/Partitioning)” instead. 
+This is the most difficult step, so once you are done with it you are almost done! I chose the more advanced version where the drive is completely encrypted for advanced security, but feel free to use the “[standard method](//https://wiki.archlinux.org/index.php/Partitioning)” instead. 
 
 This guide will assume you are planning to wipe your whole drive. So be sure that all data is backed up. Of course, a dual-boot with windows or so is possible as well, but I will explain that in another guide.
 
@@ -168,7 +168,7 @@ Mount them
 
 ### 4. Install base Linux
 
-Before installing it is recommended to update your mirrorlist such that packages are downloaded from the closest mirrors. [Head over to my other article and search for “reflector” for an instruction on how to do that](https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/). 
+Before installing it is recommended to update your mirrorlist such that packages are downloaded from the closest mirrors. [Head over to my other article and search for “reflector” for an instruction on how to do that](//https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/). 
 
 > pacstrap /mnt base base-devel linux linux-firmware nano
 
@@ -193,7 +193,7 @@ Set your hostname. The funny part when installing Arch is you get to do things U
 
 > echo NAME > /etc/hostname
 
-Next we are setting our locale, basically the system language. Open the file in nano and search for your language code. Use the UTF-8 version if possible. Searching with nano is possible using Strg + W. [Nano tutorial](https://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/). 
+Next we are setting our locale, basically the system language. Open the file in nano and search for your language code. Use the UTF-8 version if possible. Searching with nano is possible using Strg + W. [Nano tutorial](//https://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/). 
 E.g. I wanted to have German and English (US), that is why I uncommented en_US.UTF-8 UTF-8  and de_DE.UTF-8 UTF-8  
 > nano /etc/locale.gen
 
@@ -257,7 +257,7 @@ You will login with your default user. If you need to do administrative stuff yo
 
 ### 8. Boot configuration
 
-Now there are a lot of boot managers, but I liked the systemd-boot loader the most. [Feel free to choose another one](https://wiki.archlinux.org/index.php/Category:Boot_loaders). 
+Now there are a lot of boot managers, but I liked the systemd-boot loader the most. [Feel free to choose another one](//https://wiki.archlinux.org/index.php/Category:Boot_loaders). 
 
 > nano /etc/mkinitcpio.conf 
 
@@ -307,5 +307,5 @@ DONE! Now reboot, remove the USB stick and hope everything worked.
 > umount -R /mnt \
 > reboot
 
-**[I recommend setting up LTS kernels, as they are more stable, and update the mirrorlist. Check my guide on “creating an Arch Linux Deep Learning station” for more information on how to do that](https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/).**
+**[I recommend setting up LTS kernels, as they are more stable, and update the mirrorlist. Check my guide on “creating an Arch Linux Deep Learning station” for more information on how to do that](//https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/).**
 
