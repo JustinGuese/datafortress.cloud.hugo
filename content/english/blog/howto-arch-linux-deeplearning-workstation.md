@@ -34,21 +34,22 @@ Being way closer to the hardware Arch is insanely faster compared to Ubuntu (and
 When I have been using Arch in the past weeks, RAM usage usually halved compared to Ubuntu, and installing Machine Learning packages is a breeze. I can have both TensorFlow 1.15 and 2.0 working together, switching the versions with Anaconda environments. Also, the system works quite stable, as I am using the LTS (long term support) kernels of Linux, and usually updates to the famous AUR (user-made packages in Arch) are coming out a month ahead of the Debian (Ubuntu) packages.
 
 All in all, I can only recommend setting up an Arch Linux Deep Learning station as it is:
-Faster, like packages will install super fast, deep learning is supercharged, ...
-More stable
-Easier to switch between TensorFlow versions
+1. Faster, like packages will install super fast, deep learning is supercharged, ...
+2. More stable
+3. Easier to switch between TensorFlow versions
 compared to Ubuntu. 
+
 
 I will split the how-to in two parts, the first one being “How to I install Arch Linux” and the second one being “How to install the Deep Learning workstation packages”. 
 
-For the general “How to install Arch Linux”, head over to this article. 
+For the general [“How to install Arch Linux”, head over to this article](www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/). 
 
-If Arch is too complex for now, you could try out Manjaro, which is a user-friendly version of Arch, even though I can not guarantee that all packages will work the same, as they are slightly different. All in all it should work the same though.
+If Arch is too complex for now, you could try out [Manjaro](https://manjaro.org/), which is a user-friendly version of Arch, even though I can not guarantee that all packages will work the same, as they are slightly different. All in all it should work the same though.
 
 I was thinking about creating a ready to install Image (iso or img), if enough people are interested leave a comment below or message me!
 
 ## Installing the Deep Learning (TensorFlow, CUDA, CUDNN, Anaconda) setup on a fresh Arch Linux installation
-Once you are done with the Arch installation (phew!), let us first change some settings such that our system works more stable.
+Once you are [done with the Arch installation (phew!)](https://www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/), let us first change some settings such that our system works more stable.
 
 ### 1. Switching to the fastest mirrors
 
@@ -86,12 +87,12 @@ Log out of your current session and press Alt + F2 (or Alt + F3 if it does not w
 
 Deactivate and uninstall gnome:
 
-> sudo systemctl disable gdm
+> sudo systemctl disable gdm \
 > sudo pacman -R gnome gnome-extras
 
 Activate Xfce
 
-> sudo systemctl enable lxdm
+> sudo systemctl enable lxdm \
 > sudo systemctl start lxdm
 
 If the new Xfce desktop does open just login and explore, if not try to reboot (sudo reboot). If that does not help proceed to crying and rolling on the floor, and send me a message or comment afterward.
@@ -125,6 +126,7 @@ My recommendation is try the Grub instructions, and if that does not work procee
 #### Changing the Grub bootloader for the LTS linux kernels
 
 > grub-mkconfig -o /boot/grub/grub.cfg
+
 If you see an error proceed to the next bootloader, otherwise reboot (sudo reboot).
 
 #### Changing the syslinux bootloader for the LTS linux kernels
@@ -152,14 +154,10 @@ You should prefer to use the ultra-fast pacman to install most packages, but an 
 
 Install git SVC
 
-> sudo pacman -S git
-
-> mkdir ~/tmp
-
-> git clone https://aur.archlinux.org/yay-git.git ~/tmp/yay
-
-> cd ~/tmp/yay
-
+> sudo pacman -S git \
+> mkdir ~/tmp \
+> git clone https://aur.archlinux.org/yay-git.git ~/tmp/yay \
+> cd ~/tmp/yay \
 > makepkg -si
 
 Now you can browse all the nice AUR packages in https://aur.archlinux.org/packages/ or just go for it and type:
@@ -182,8 +180,8 @@ Download Anaconda, I like Miniconda:
 
 Make it executable and install
 
-> cd ~/
-> chmod +x ./Miniconda*.sh
+> cd ~/ \
+> chmod +x ./Miniconda*.sh \
 > ./Miniconda*.sh
 
 Just leave everything as default.
@@ -200,17 +198,15 @@ Now is the time to decide between TensorFlow for CPU or GPU. I will continue wit
 
 ##### Create an anaconda environment for Tensorflow 2.0
 
-> conda create --name tf2.0
-> conda activate tf2.0
-
-> conda install pip
-
+> conda create --name tf2.0 \
+> conda activate tf2.0 \
+> conda install pip \
 > conda install tensorflow-gpu pandas numpy
 
 Done! Now check the result with:
 
-> python
-> from tensorflow.python.client import device_lib
+> python \
+> from tensorflow.python.client import device_lib \
 > device_lib.list_local_devices()
 
 If the result shows a device name like this you are done!
@@ -220,15 +216,16 @@ name: GeForce GTX 3080 10GB major: …
 
 ##### Create an anaconda environment for Tensorflow 1.15
 
-> conda deactivate
-> conda create --name tf1.15
-> conda install pip python==3.7
+> conda deactivate \
+> conda create --name tf1.15 \
+> conda activate tf1.15 \
+> conda install pip python==3.7 \
 > conda install tensorflow-gpu==1.15
 
 And again check if everything works and your gpu is recognized:
 
-> python
-> from tensorflow.python.client import device_lib
+> python \
+> from tensorflow.python.client import device_lib \
 > device_lib.list_local_devices()
 
 

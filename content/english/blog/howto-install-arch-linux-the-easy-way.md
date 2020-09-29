@@ -1,5 +1,5 @@
 ---
-title: Installing Arch Linux the easy way with encrypted drives
+title: How To - Installing Arch Linux the easy way with encrypted drives
 bg_image: "/images/blog/Archlinux_GNOME_3.2.png"
 date: 2020-09-29T07:10:46+02:00
 author: Justin Guese
@@ -23,7 +23,7 @@ type: post
 
 ## The benefits of Arch Linux
 
-In my other post, “ How To: Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation”, I have been explaining why I switched from Ubuntu to Arch Linux for my Machine Learning workstation. Summarized it is mostly because of speed, because Arch is way closer to the hardware and therefore way faster, less bloatware and therefore less RAM usage which I need to machine learning, and the amazing pacman and AUR packages which are fast and easy to install.
+In my other post, [“How To: Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation”](https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/), I have been explaining why I switched from Ubuntu to Arch Linux for my Machine Learning workstation. Summarized it is mostly because of speed, because Arch is way closer to the hardware and therefore way faster, less bloatware and therefore less RAM usage which I need to machine learning, and the amazing pacman and AUR packages which are fast and easy to install.
 
 In Ubuntu, for example, it is quite hard to get TensorFlow and CUDA working for Deep Learning, as the Debian package structure is different and the installation slower compared to Arch. In Arch, dependencies are handled nicely, and packages are not that abstracted as Arch is basically the “pure” Linux kernel itself.
 
@@ -51,6 +51,7 @@ Write it to an USB stick. E.g. (but you can use your own program) for:
 
 Linux:
 > dd if=ISOFILE of=/dev/sdX status=progress
+ 
 Where the sdX is your usb stick. Check it with “lsblk”
 
 Windows / Mac:
@@ -63,8 +64,10 @@ Boot into the USB stick using your Boot menu (F11, F12 in most cases)
 Once you are in the Live ISO of Arch, you should see the basic command line of Arch. 
 
 **Not an US keyboard**? Load your keys with:
-> loadkeys KEYMAP
+> loadkeys KEYMAP 
+
 Where Keymap is your locale. Get your locale with
+
 > localectl list-keymaps | grep -i SEARCHTERM
 
 E.g. using the above command with SEARCHTERM = Germany returns de-latin1, for which the loadkeys command is:
@@ -73,8 +76,8 @@ E.g. using the above command with SEARCHTERM = Germany returns de-latin1, for wh
 
 (Optional) If you do not have ethernet you might have to connect to your wifi with the following commands. Replace WIFINETWORK and WIFIPASSWORD with your wifi name and password.
 
-> wpa_passphrase 'WIFINETWORK’ 'WIFIPASSWORD' >> /etc/wpa_supplicant/wpa_supplicant.conf
-> wpa_supplicant -Bc /etc/wpa_supplicant/wpa_supplicant.conf -i 'wlan0'
+> wpa_passphrase 'WIFINETWORK’ 'WIFIPASSWORD' >> /etc/wpa_supplicant/wpa_supplicant.conf \
+> wpa_supplicant -Bc /etc/wpa_supplicant/wpa_supplicant.conf -i 'wlan0' \
 If the second command does not work your wifi device name might be different. You can check it with “ifconfig”
 > dhclient
 
@@ -95,7 +98,9 @@ Why three partitions on the second drive? Let’s say you mess up your root inst
 #### Step 1: Get the name of your Drive
 
 > lbslk -lh
+
  This shows you all connected drives. Usually your main drive should be called /dev/sda and your USB stick /dev/sdb. 
+
 **Check if sda is really your main drive according to the GB storage capacity and everything. If you simply copy and paste the following commands with sda you might wipe the wrong drive!!**
 That is why I will name the device sdX in the following paragraphs, but replace the X with your device number (a,b,c, …). Some drives are having different names, just compare and replace accordingly. 
 
@@ -122,8 +127,9 @@ Encrypted Arch Drive setup
 5. 8309
 
 Check if everything looks right with pressing ‘p’. It should look like this:
->Number  Start (sector)    End (sector)  Size       Code  Name
->   1            2048         1050623   256.0 MiB   EF00  EFI System
+
+>Number  Start (sector)    End (sector)  Size       Code  Name \
+>   1            2048         1050623   256.0 MiB   EF00  EFI System \
 >   2         1050624       242187466   115.0 GiB   8309  Linux LUKS
 
 Looks good? Press ‘w’ to write changes to disk. 
@@ -132,36 +138,37 @@ Looks good? Press ‘w’ to write changes to disk.
 
 The partitions are empty right now. Next we will create the filesystems and encrypted “sub”-partitions. Remember to replace the X with your drive number (usually a).
 
-> cryptsetup luksFormat /dev/sdX2
-> cryptsetup open /dev/sdX2 cryptlvm
-> pvcreate /dev/mapper/cryptlvm
+> cryptsetup luksFormat /dev/sdX2 \
+> cryptsetup open /dev/sdX2 cryptlvm \
+> pvcreate /dev/mapper/cryptlvm \
 > vgcreate datafortress /dev/mapper/cryptlvm
+
 Feel free to replace the following disk sizes in front of the “G” for Gigabyte with your desired size. For Deep Learning Swap should be 32 Gb, for other cases around the size of your RAM. I recommend the root system to be 40Gb, but the minimum should be 10Gb. 
 You can replace datafortress with anything, or leave it as is to be the cool kid in town. 
 
-> lvcreate -L 16G datafortress -n swap
-> lvcreate -L 40G datafortress -n root
+> lvcreate -L 16G datafortress -n swap \
+> lvcreate -L 40G datafortress -n root \
 > lvcreate -l +100%FREE datafortress -n home
 
 Create filesystems
 
-> mkfs.vat -F32 /dev/sdX1
-> mkfs.ext4 /dev/mapper/datafortress-root
-> mkfs.ext4 /dev/mapper/datafortress-home
+> mkfs.vat -F32 /dev/sdX1 \
+> mkfs.ext4 /dev/mapper/datafortress-root \
+> mkfs.ext4 /dev/mapper/datafortress-home \
 > mkswap /dev/mapper/datafortress-swap
 
 Mount them
 
-> mount /dev/mapper/datafortress-root /mnt
-> mkdir /mnt/home
-> mkdir /mnt/boot
-> mount /dev/mapper/datafortress-home /mnt/home
-> mount /dev/sdX1 /mnt/boot
+> mount /dev/mapper/datafortress-root /mnt \
+> mkdir /mnt/home \
+> mkdir /mnt/boot \
+> mount /dev/mapper/datafortress-home /mnt/home \
+> mount /dev/sdX1 /mnt/boot \
 > swapon /dev/mapper/datafortress-swap
 
 ### 4. Install base Linux
 
-Before installing it is recommended to update your mirrorlist such that packages are downloaded from the closest mirrors. Head over to my other article and search for “reflector” for an instruction on how to do that. 
+Before installing it is recommended to update your mirrorlist such that packages are downloaded from the closest mirrors. [Head over to my other article and search for “reflector” for an instruction on how to do that](https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/). 
 
 > pacstrap /mnt base base-devel linux linux-firmware nano
 
@@ -175,9 +182,11 @@ Fstab is basically an instruction how to mount your drives. Just copy paste it f
 
 We are going to chroot into our mount, which is basically like running sudo in our system.
 
-> arch-chroot /mnt
-> ln -s /usr/share/zoneinfo/REGION/CITY /etc/localtime
+> arch-chroot /mnt \
+> ln -s /usr/share/zoneinfo/REGION/CITY /etc/localtime 
+
 Where Region is your region (just use tab to see the options if you types the /usr/…./zoneinfo/, like Europe, and CITY your city, like Vienna.
+
 > hwclock --systohc
 
 Set your hostname. The funny part when installing Arch is you get to do things Ubuntu and others do for you. Set the hostname for your device, e.g. if you are going to ssh into your device later you do not have to type an IP, but can use this name instead. E.g. “ssh user@hunneybunney” could be way nicer to remember than 192.168.0.231.
@@ -192,13 +201,15 @@ Generate locales
 > locale-gen
 
 (Optional) Now if you are using a non-US Keyboard add your keymap:
+
 > echo KEYMAP > /etc/vconsole.conf
+
 Use the Keymap from the beginning, like de-latin1
 
 Next install some software. If you already know pacman packages you want to install, do it now. I recommend just using the minimum first and then continue installation of packages if everything works fine. 
 
 **Minimum**
-> pacman -Syu
+> pacman -Syu \
 > pacman -S wpa_supplicant dhclient lvm2 dialog
 
 **Installing a desktop environment**
@@ -235,10 +246,11 @@ To install MATE:
 
 I recommend using different passwords for the root and default user. 
 
-> useradd -m -G wheel ‘USERNAME’
+> useradd -m -G wheel ‘USERNAME’ \
 > passwd ‘USERNAME’
 
 Create a password for the root user
+
 > passwd 
 
 You will login with your default user. If you need to do administrative stuff you can switch users with “su - root” 
@@ -247,12 +259,15 @@ You will login with your default user. If you need to do administrative stuff yo
 
 Now there are a lot of boot managers, but I liked the systemd-boot loader the most. [Feel free to choose another one](https://wiki.archlinux.org/index.php/Category:Boot_loaders). 
 
-> nano /etc/mkinitcpio.conf
+> nano /etc/mkinitcpio.conf 
+
 Search for the HOOKS line and edit it accordingly. Order matters!
+
 > HOOKS=(base udev autodetect keyboard keymap consolefont modconf block encrypt lvm2 filesystems resume fsck)
+
 Close and Save the file (Strg + X, y)
 
-> mkinitcpio -p linux
+> mkinitcpio -p linux \
 > bootctl install 
 
 Edit your boot entries
@@ -260,21 +275,26 @@ Edit your boot entries
 You will need the partition id of the encrypted drive. Usually this will be /dev/sda2, but can be different. It will not be the first 256mb drive, as this is the boot partition. 
 
 Check for the name and note it down, most likely it is /dev/sda2
+
 > lsblk -lh
 
 Then look for the UUID string in the output of following command at the device id /dev/sdX2
+
 > blkid 
+
 You can try the same command with a filter as well:
+
 > blkid | grep UUID=
+
 Example UUID: 727cac18-044b-4504-87f1-a5aefa774bda
 
 
 > nano /boot/loader/entries/arch.conf
 Add the following:
 
->title	ArchLinux
->linux	/vmlinuz-linux
->initrd	/initramfs-linux.img
+>title	ArchLinux \
+>linux	/vmlinuz-linux \
+>initrd	/initramfs-linux.img \
 >options cryptdevice=UUID=<YOUR-PARTITION-UUID>:lvm:allow-discards resume=/dev/mapper/datafortress-swap root=/dev/mapper/datafortress-root rw quiet
 
 Remember to replace datafortress with the id you chose if you changed it. Otherwise leave as is.
@@ -283,9 +303,9 @@ Remember to replace datafortress with the id you chose if you changed it. Otherw
 
 DONE! Now reboot, remove the USB stick and hope everything worked.
 
-> exit
-> umount -R /mnt
+> exit \
+> umount -R /mnt \
 > reboot
 
-**I recommend setting up LTS kernels, as they are more stable, and update the mirrorlist. Check my guide on “creating an Arch Linux Deep Learning station” for more information on how to do that.**
+**[I recommend setting up LTS kernels, as they are more stable, and update the mirrorlist. Check my guide on “creating an Arch Linux Deep Learning station” for more information on how to do that](https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/).**
 
