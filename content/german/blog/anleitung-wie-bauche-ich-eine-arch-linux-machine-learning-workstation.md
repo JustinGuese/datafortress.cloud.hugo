@@ -44,7 +44,7 @@ Ich werde die Anleitung in zwei Teile aufteilen, wobei der erste Teil "[Wie inst
 
 Für das allgemeine ["Wie man Arch Linux installiert", gehen Sie zu diesem Artikel](//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/). 
 
-Wenn Arch für den Moment zu komplex ist, könnten Sie [Manjaro](//https://manjaro.org/) ausprobieren, eine benutzerfreundliche Version von Arch, auch wenn ich nicht garantieren kann, dass alle Pakete gleich funktionieren, da sie leicht unterschiedlich sind. Alles in allem sollte es aber gleich funktionieren.
+Wenn Arch für den Moment zu komplex ist, könnten Sie [Manjaro](//manjaro.org/) ausprobieren, eine benutzerfreundliche Version von Arch, auch wenn ich nicht garantieren kann, dass alle Pakete gleich funktionieren, da sie leicht unterschiedlich sind. Alles in allem sollte es aber gleich funktionieren.
 
 Ich habe darüber nachgedacht, ein installationsfertiges Image (iso oder img) zu erstellen, wenn genügend Leute daran interessiert sind, hinterlassen Sie einen Kommentar unten oder schreiben Sie mir eine Nachricht!
 

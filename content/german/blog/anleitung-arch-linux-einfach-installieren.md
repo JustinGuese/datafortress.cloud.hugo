@@ -35,11 +35,11 @@ Ich bin zumindest zufrieden mit Arch, denn es ist viel schneller als alles, was 
 
 Ich habe darüber nachgedacht, für meinen Deep Learning-Build eine iso oder img für eine einfache Installation zur Verfügung zu stellen. Wenn Sie interessiert sind, schreiben Sie mir bitte einen Kommentar oder senden Sie mir eine Nachricht. 
 
-Wenn Sie außerdem mit einer leichten Abstraktionsschicht einverstanden sind, könnte [Manjaro Arch](//https://manjaro.org/) eine gute Wahl für Sie sein. Es ist im Grunde genommen Arch, aber einfach und benutzerfreundlich gemacht. Ich habe es geliebt, bin aber zu Arch übergegangen, da Manjaro ihre eigenen Pakete verwendet, die immer noch gut sind, aber nicht dasselbe wie die "reinen" Arch-Pakete. Wenn Sie kein Power-User sind, könnte dies die richtige Wahl für Sie sein. 
+Wenn Sie außerdem mit einer leichten Abstraktionsschicht einverstanden sind, könnte [Manjaro Arch](//manjaro.org/) eine gute Wahl für Sie sein. Es ist im Grunde genommen Arch, aber einfach und benutzerfreundlich gemacht. Ich habe es geliebt, bin aber zu Arch übergegangen, da Manjaro ihre eigenen Pakete verwendet, die immer noch gut sind, aber nicht dasselbe wie die "reinen" Arch-Pakete. Wenn Sie kein Power-User sind, könnte dies die richtige Wahl für Sie sein. 
 
 ## Wie man Arch-Linux auf einfache Weise installiert
 
-Während der [einleitende Leitfaden](//https://wiki.archlinux.org/index.php/installation_guide), der von arch zur Verfügung gestellt wird, bereits recht gut ist, kann er für Neuankömmlinge verwirrend sein. Deshalb habe ich beschlossen, mein eigenes Tutorial zu schreiben. 
+Während der [einleitende Leitfaden](//wiki.archlinux.org/index.php/installation_guide), der von arch zur Verfügung gestellt wird, bereits recht gut ist, kann er für Neuankömmlinge verwirrend sein. Deshalb habe ich beschlossen, mein eigenes Tutorial zu schreiben. 
 
 Mein Ziel war es, Arch mit verschlüsselten Laufwerken zu installieren, da ich die Daten im Ruhezustand für meine Kunden sichern muss. 
 
@@ -199,7 +199,7 @@ Legen Sie Ihren Hostnamen fest. Der lustige Teil bei der Installation von Arch i
 
 > echo NAME > /etc/hostname
 
-Als Nächstes stellen wir unser Gebietsschema ein, im Wesentlichen die Systemsprache. Öffnen Sie die Datei in nano und suchen Sie nach Ihrem Sprachcode. Verwenden Sie wenn möglich die UTF-8-Version. Die Suche mit nano ist mit Strg + W möglich. [Nano-Tutorial](//https://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/). 
+Als Nächstes stellen wir unser Gebietsschema ein, im Wesentlichen die Systemsprache. Öffnen Sie die Datei in nano und suchen Sie nach Ihrem Sprachcode. Verwenden Sie wenn möglich die UTF-8-Version. Die Suche mit nano ist mit Strg + W möglich. [Nano-Tutorial](//www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/). 
 Z.B. wollte ich Deutsch und Englisch (US) haben, deshalb habe ich en_US.UTF-8 UTF-8 und de_DE.UTF-8 UTF-8 unkommentiert  
 > nano /etc/locale.gen
 
@@ -264,7 +264,7 @@ Sie werden sich mit Ihrem Standardbenutzer anmelden. Wenn Sie administrative Din
 
 ### 8. Boot-Konfiguration
 
-Jetzt gibt es eine Menge Bootmanager, aber der System-Bootloader gefiel mir am besten. Fühlen Sie sich frei, einen anderen zu wählen](//https://wiki.archlinux.org/index.php/Category:Boot_loaders). 
+Jetzt gibt es eine Menge Bootmanager, aber der System-Bootloader gefiel mir am besten. Fühlen Sie sich frei, einen anderen zu wählen](//wiki.archlinux.org/index.php/Category:Boot_loaders). 
 
 > nano /etc/mkinitcpio.conf
 
