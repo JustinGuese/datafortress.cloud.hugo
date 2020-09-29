@@ -50,7 +50,7 @@ Ich habe darüber nachgedacht, ein installationsfertiges Image (iso oder img) zu
 
 ## Installation des Deep Learning (TensorFlow, CUDA, CUDNN, Anaconda) Setups auf einer frischen Arch-Linux-Installation 
 
-Wenn Sie [mit der Installation von Arch (puh!)](//https://www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/) fertig sind, lassen Sie uns zunächst einige Einstellungen so ändern, dass unser System stabiler arbeitet.
+Wenn Sie [mit der Installation von Arch (puh!)](//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/) fertig sind, lassen Sie uns zunächst einige Einstellungen so ändern, dass unser System stabiler arbeitet.
 
 ### 1. Umschalten auf die schnellsten Spiegel
 

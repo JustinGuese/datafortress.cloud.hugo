@@ -49,7 +49,7 @@ If Arch is too complex for now, you could try out [Manjaro](//https://manjaro.or
 I was thinking about creating a ready to install Image (iso or img), if enough people are interested leave a comment below or message me!
 
 ## Installing the Deep Learning (TensorFlow, CUDA, CUDNN, Anaconda) setup on a fresh Arch Linux installation
-Once you are [done with the Arch installation (phew!)](//https://www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/), let us first change some settings such that our system works more stable.
+Once you are [done with the Arch installation (phew!)](//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/), let us first change some settings such that our system works more stable.
 
 ### 1. Switching to the fastest mirrors
 
