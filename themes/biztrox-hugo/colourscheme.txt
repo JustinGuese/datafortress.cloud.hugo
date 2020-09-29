@@ -1,5 +1,0 @@
-red ed5a43 to #069d5c green
-grey backgroudn 454547 to #181a1b
-button change 303032 -> #f46043 -> #19193c
-headings #222 ->#221c71 -> #191452
-orange: #d43e39

@@ -1,6 +1,0 @@
-# Group 2
-User-agent: *
-Allow: /
-
-Sitemap: https://www.datafortress.cloud/en/sitemap.xml
-Sitemap: https://www.datafortress.cloud/de/sitemap.xml
