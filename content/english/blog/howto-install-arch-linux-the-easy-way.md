@@ -23,7 +23,7 @@ type: post
 
 ## The benefits of Arch Linux
 
-In my other post, [“How To: Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation”](//https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/), I have been explaining why I switched from Ubuntu to Arch Linux for my Machine Learning workstation. Summarized it is mostly because of speed, because Arch is way closer to the hardware and therefore way faster, less bloatware and therefore less RAM usage which I need to machine learning, and the amazing pacman and AUR packages which are fast and easy to install.
+In my other post, [“How To: Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation”](//www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/), I have been explaining why I switched from Ubuntu to Arch Linux for my Machine Learning workstation. Summarized it is mostly because of speed, because Arch is way closer to the hardware and therefore way faster, less bloatware and therefore less RAM usage which I need to machine learning, and the amazing pacman and AUR packages which are fast and easy to install.
 
 In Ubuntu, for example, it is quite hard to get TensorFlow and CUDA working for Deep Learning, as the Debian package structure is different and the installation slower compared to Arch. In Arch, dependencies are handled nicely, and packages are not that abstracted as Arch is basically the “pure” Linux kernel itself.
 
@@ -168,7 +168,7 @@ Mount them
 
 ### 4. Install base Linux
 
-Before installing it is recommended to update your mirrorlist such that packages are downloaded from the closest mirrors. [Head over to my other article and search for “reflector” for an instruction on how to do that](//https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/). 
+Before installing it is recommended to update your mirrorlist such that packages are downloaded from the closest mirrors. [Head over to my other article and search for “reflector” for an instruction on how to do that](//www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/). 
 
 > pacstrap /mnt base base-devel linux linux-firmware nano
 
@@ -307,5 +307,5 @@ DONE! Now reboot, remove the USB stick and hope everything worked.
 > umount -R /mnt \
 > reboot
 
-**[I recommend setting up LTS kernels, as they are more stable, and update the mirrorlist. Check my guide on “creating an Arch Linux Deep Learning station” for more information on how to do that](//https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/).**
+**[I recommend setting up LTS kernels, as they are more stable, and update the mirrorlist. Check my guide on “creating an Arch Linux Deep Learning station” for more information on how to do that](//www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/).**
 

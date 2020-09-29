@@ -40,7 +40,7 @@ Alles in allem kann ich nur empfehlen, eine Arch-Linux-Deep-Learning-Station so 
 im Vergleich zu Ubuntu. 
 
 
-Ich werde die Anleitung in zwei Teile aufteilen, wobei der erste Teil "[Wie installiere ich Arch Linux](//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/)" und der zweite Teil "[Wie installiere ich die Deep-Learning-Workstation-Pakete](//https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/)" lautet. 
+Ich werde die Anleitung in zwei Teile aufteilen, wobei der erste Teil "[Wie installiere ich Arch Linux](//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/)" und der zweite Teil "[Wie installiere ich die Deep-Learning-Workstation-Pakete](//www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/)" lautet. 
 
 Für das allgemeine ["Wie man Arch Linux installiert", gehen Sie zu diesem Artikel](//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/). 
 

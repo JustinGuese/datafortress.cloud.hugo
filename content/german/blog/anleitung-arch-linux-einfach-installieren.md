@@ -23,7 +23,7 @@ type: post
 
 ## Die Vorteile von Arch Linux
 
-In meinem anderen Beitrag, ["How To: Ditching Ubuntu for a Deep Learning Workstation"](//https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/), habe ich erklärt, warum ich von Ubuntu zu Arch Linux für meine Machine Learning Workstation gewechselt habe. Zusammengefasst ist es vor allem wegen der Geschwindigkeit, weil Arch viel näher an der Hardware und damit viel schneller ist, weniger Bloatware und damit weniger RAM-Nutzung, die ich für maschinelles Lernen brauche, und wegen der erstaunlichen pacman- und AUR-Pakete, die schnell und einfach zu installieren sind.
+In meinem anderen Beitrag, ["How To: Ditching Ubuntu for a Deep Learning Workstation"](//www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/), habe ich erklärt, warum ich von Ubuntu zu Arch Linux für meine Machine Learning Workstation gewechselt habe. Zusammengefasst ist es vor allem wegen der Geschwindigkeit, weil Arch viel näher an der Hardware und damit viel schneller ist, weniger Bloatware und damit weniger RAM-Nutzung, die ich für maschinelles Lernen brauche, und wegen der erstaunlichen pacman- und AUR-Pakete, die schnell und einfach zu installieren sind.
 
 In Ubuntu zum Beispiel ist es ziemlich schwierig, TensorFlow und CUDA für Deep Learning zum Laufen zu bringen, da die Debian-Paketstruktur anders ist und die Installation im Vergleich zu Arch langsamer ist. In Arch werden Abhängigkeiten gut gehandhabt, und die Pakete sind nicht so abstrahiert, da Arch im Grunde genommen der "reine" Linux-Kernel selbst ist.
 
@@ -174,7 +174,7 @@ Montieren Sie sie
 
 ### 4. Basis-Linux installieren
 
-Vor der Installation wird empfohlen, Ihre Spiegelliste so zu aktualisieren, dass Pakete von den nächstgelegenen Spiegeln heruntergeladen werden. Gehen Sie zu meinem anderen Artikel und suchen Sie nach "Reflektor" für eine Anleitung, wie das zu tun ist](//https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/). 
+Vor der Installation wird empfohlen, Ihre Spiegelliste so zu aktualisieren, dass Pakete von den nächstgelegenen Spiegeln heruntergeladen werden. Gehen Sie zu meinem anderen Artikel und suchen Sie nach "Reflektor" für eine Anleitung, wie das zu tun ist](//www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/). 
 
 > pacstrap /mnt base base-devel linux linux-firmware nano
 
@@ -316,5 +316,5 @@ ERLEDIGT! Jetzt neu starten, den USB-Stick entfernen und hoffen, dass alles funk
 > umount -R /mnt
 > reboot
 
-**[Ich empfehle die Einrichtung von LTS-Kernels, da diese stabiler sind, und die Aktualisierung der Spiegelliste. Schauen Sie in meinen Leitfaden zum "Erstellen einer Arch-Linux-Deep-Learning-Station" für weitere Informationen darüber, wie man das macht](//https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/).**
+**[Ich empfehle die Einrichtung von LTS-Kernels, da diese stabiler sind, und die Aktualisierung der Spiegelliste. Schauen Sie in meinen Leitfaden zum "Erstellen einer Arch-Linux-Deep-Learning-Station" für weitere Informationen darüber, wie man das macht](//www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/).**
 
