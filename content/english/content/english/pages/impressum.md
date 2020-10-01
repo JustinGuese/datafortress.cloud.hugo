@@ -4,34 +4,29 @@ date: 2020-07-12T17:02:17+02:00
 draft: false
 image: "/images/legal.webp"
 ---
-Auf der Suche nach den Datenschutzbestimmungen? (Link)
+Auf der Suche nach den Datenschutzbestimmungen? ([Link](/privacy-policy))
 
-Looking for the Privacy Policy? (Link)
+Looking for the Privacy Policy? ([Link](/privacy-policy))
 
+Für diese Website verantwortlicher Herausgeber:
 
+Justin Güse DataFortress.cloud e.U.
 
-DataFortess.cloud e.U.
+Einpersonenunternehmen (AT)
 
-Inhaber Justin Güse
+UID No. ATU75882145
 
-UID-Nr:
+Firmensitz entsprechend dem Firmenregister oder Standort der Gewerbeberechtigung
 
-FN: 123456a
+Justin Güse DataFortress.cloud e.U.
+Justin Güse
+Schönbrunner Straße 266
+1/10
+Vienna, Vienna 1120
+Austria
 
-FB-Gericht: Musterstad
+Bildrechte:
 
-Sitz: 4711 Musterdorf
+Royalty Free images, Aliexpress.com
 
-Schönbrunner Straße 266, 1120 Wien | Austria
-
-Tel: +43 XXX XXXX
-
-Email:
-
-
-
-Mitglied der WKÖ, WKNÖ, Landesinnung Tischler, Bundesinnung Tischler
-
-
-
-https://www.wko.at/service/wirtschaftsrecht-gewerberecht/Das-korrekte-Website-Impressum.pdf
+Web design / development: www.datafortress.cloud
