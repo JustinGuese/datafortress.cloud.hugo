@@ -18,17 +18,19 @@ overview:
   data: 22 sep, 2020
 
 ---
-# Get moving
+# Auf auf!
 
-Logos are becoming increasingly important in the digital age. Oftentimes the logo of a company is the first point of contact for customers with a company.
+Logos werden im digitalen Zeitalter immer wichtiger. Häufig ist das Logo eines Unternehmens der erste Kontaktpunkt für Kunden mit einem Unternehmen.
 
-Therefore one way to stand out is to create animated logos, which naturally stand out as they catch our primal instincts. This is what several studies from the area of neuromarketing have shown and big brands like Google & others already implemented.
+Daher besteht eine Möglichkeit sich abzuheben darin, animierte Logos zu erstellen, die natürlicherweise hervorstechen, da sie unsere Urinstinkte ansprechen. Das haben mehrere Studien aus dem Bereich des Neuromarketings gezeigt, und große Marken wie Google & andere bereits umgesetzt.
 
-Animated Logos are perfect for Social Media, Recruiting Companies, or in general every company in contact with customers.
+Animierte Logos eignen sich perfekt für Social Media, Recruiting-Unternehmen oder generell für jedes Unternehmen, dass mit Kunden in Kontakt steht.
 
-We are happy to [consult and design the best fitting logo for your company](/contact), but first have a look at our portfolio of logos that we already created:
+Wir beraten Sie gerne [und entwerfen das am besten passende Logo für Ihr Unternehmen](/contact), aber werfen Sie zunächst einen Blick auf unser Portfolio an Logos, die wir bereits erstellt haben:
 
-| Name |    Animated | Static
+
+
+| Name |    Animiert | Statisch
 | --- | ---- | --- |
 | Sagatek | ![](/images/works/animatedlogo/animlogoswebp/sagatek.webp)| ![](/images/works/animatedlogo/staticlogos/400w-4J--VYR4gl0.webp) |
 | Cliffsky | ![](/images/works/animatedlogo/animlogoswebp/cliffsky.webp)| ![](/images/works/animatedlogo/staticlogos/400w-C4_aGSG5uHI.webp) |
