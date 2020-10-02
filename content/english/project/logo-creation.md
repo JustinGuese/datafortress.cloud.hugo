@@ -18,19 +18,15 @@ overview:
   data: 22 sep, 2020
 
 ---
-
 # Get moving
 
-Logos are becoming increasingly important in the digital age. Oftentimes the logo of a company is the first point of contact for customers with a company. 
+Logos are becoming increasingly important in the digital age. Oftentimes the logo of a company is the first point of contact for customers with a company.
 
-Therefore one way to stand out is to create animated logos, which naturally stand out as they catch our primal instincts. This is what several studies from the area of neuromarketing have shown and big brands like Google & others already implemented. 
+Therefore one way to stand out is to create animated logos, which naturally stand out as they catch our primal instincts. This is what several studies from the area of neuromarketing have shown and big brands like Google & others already implemented.
 
 We are happy to [consult and design the best fitting logo for your company](/contact), but first have a look at our portfolio of logos that we already created:
 
-
-
-
-
+![](/images/works/animatedlogo/staticlogos/400w-yqs2qsEW2NU.webp)
 
 </br>
-[Are you working on a similar project? Are you interested in something similar? [contact us](/contact) now for a free 15-minute consultation.](/contact/)
+\[Are you working on a similar project? Are you interested in something similar? [contact us](/contact) now for a free 15-minute consultation.\](/contact/)
