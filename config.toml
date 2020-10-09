@@ -122,6 +122,10 @@ URL = "team"
 name = "Team"
 weight = "5"
 [[menu.main]]
+URL = "/de/content/english/pages/newsletter/"
+name = "Newsletter"
+weight = 6
+[[menu.main]]
 URL = "contact"
 name = "Contact"
 weight = 6
