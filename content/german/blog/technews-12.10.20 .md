@@ -15,11 +15,11 @@ type: post
 # 🔬 Wissenschaft und futuristische Technologie
 
 
-## [Preise und Erscheinungstermine der iPhone-12-Produktreihe im neuen Leak (3 Minuten lesen)](//rebrand.ly/1fmiscf)
+## [Preise und Erscheinungstermine der iPhone-12-Produktreihe im neuen Leak (3 Minuten Lesezeit)](//rebrand.ly/1fmiscf)
 
 Einzelheiten darüber, was Apple auf seiner Veranstaltung am 13. Oktober ankündigen könnte, sind durchgesickert. Apple wird vier neue iPhones ankündigen: ein iPhone 12 mini, ein iPhone 12, ein iPhone 12 Pro und ein iPhone 12 Pro Max. Alle vier Telefone werden über 5G-Unterstützung und Super Retina XDR-Displays verfügen und in der Lage sein, im Dolby Vision HDR-Standard zu filmen. Weitere Einzelheiten zu jedem Telefon finden Sie im Artikel. Apple wird außerdem neue kabellose MagSafe Ladegeräte und einen HomePod mini für 99 Dollar ankündigen. Obwohl die Quelle des Lecks eine gute Erfolgsgeschichte hat, ist es immer am besten, Gerüchte wie dieses mit einer Prise Salz zu verkraften.
 
-## [Twilio will das Startsegment für Cloud-Kundendaten für $3,2 Milliarden erwerben (2 Minuten lesen)](//rebrand.ly/zkw7927)
+## [Twilio will das Startsegment für Cloud-Kundendaten für $3,2 Milliarden erwerben (2 Minuten Lesezeit)](//rebrand.ly/zkw7927)
 
 Twilio hat sich bereit erklärt, Segment für 3,2 Milliarden Dollar zu erwerben, wobei ein Teil des Verkaufs auf Twilio-Aktien basiert. Segment wurde 2012 gegründet und arbeitet mit mehr als 20.000 Unternehmen zusammen. Die Dienstleistungen des Kundendateninfrastruktur-Unternehmens überschneiden sich mit denen von Twilio, was den Kunden auch dabei hilft, mit ihrem Kundenstamm in Verbindung zu treten. Twilio wird derzeit mit einer Marktkapitalisierung von über 45 Milliarden US-Dollar gehandelt. Es stellt eine Kommunikationsinfrastruktur bereit, die es Unternehmen ermöglicht, mit Kunden über Textnachrichten, Sprach- und Videoanrufe zu kommunizieren.
 
