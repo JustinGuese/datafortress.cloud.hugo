@@ -53,7 +53,7 @@ https://rebrand.ly/0mjpb
 
 Apple hat die neue iPhone-Reihe angekündigt. Alle neuen iPhones sind 5G-fähig. Das neue iPhone 12 hat ein neues Gehäusedesign und verfügt über den A14-Chip von Apple, zwei Kameralinsen und Magnete auf der Rückseite. Das iPhone 12 Pro und das iPhone 12 Pro Max verfügen über einen LiDAR-Sensor, der dem Telefon bessere AR-Fähigkeiten und eine bessere Qualität der Bilder bei schlechten Lichtverhältnissen verleihen wird. Außerdem werden sie mit einem zusätzlichen Kamera-Teleobjektiv ausgestattet sein, das sich an seriöse Fotografen richtet. Das iPhone 12 Pro wird einen 6,1-Zoll-Bildschirm haben und bei 999 Dollar beginnen, und das iPhone 12 Pro Max wird einen 6,7-Zoll-Bildschirm haben und 1.099 Dollar für das Basismodell kosten. Ein iPhone 12 Mini wurde angekündigt. Es wird einen 5,4-Zoll-Bildschirm haben und bei einem Preis von 699 Dollar beginnen. Die neuen iPhones werden weder ein Ladegerät noch Kopfhörer in der Verpackung enthalten. Es wurde ein neues MagSafe-Ladegerät angekündigt, das das iPhone und Apple Watch gleichzeitig aufladen kann. Weitere Ankündigungen finden Sie im Artikel.
 
-## [Netflix entfernt die 30-tägige kostenlose Testversion für alle Märkte (1 Minute gelesen)](//rebrand.ly/2p1bm)
+## [Netflix entfernt die 30-tägige kostenlose Testversion für alle Märkte (1 Minute Lesezeit)](//rebrand.ly/2p1bm)
 
 https://rebrand.ly/2p1bm
 
