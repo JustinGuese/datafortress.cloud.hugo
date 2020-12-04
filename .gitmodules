@@ -1,3 +1,6 @@
 [submodule "public"]
 	path = public
 	url = https://github.com/JustinGuese/JustinGuese.github.io
+[submodule "JustinGuese.github.io"]
+	path = JustinGuese.github.io
+	url = https://github.com/JustinGuese/JustinGuese.github.io
