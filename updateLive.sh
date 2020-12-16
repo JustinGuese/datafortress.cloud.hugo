@@ -1,4 +1,5 @@
 #!/bin/bash
+cd /home/justin/docker/datafortress.cloud.hugo
 hugo
 cd public
 git -C /home/justin/docker/datafortress.cloud.hugo/public add -A 
