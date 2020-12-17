@@ -1,6 +1,5 @@
 #!/bin/bash
-cd /home/justin/docker/datafortress.cloud.hugo
-hugo
+(cd /home/justin/docker/datafortress.cloud.hugo ; hugo)
 cd public
 git -C /home/justin/docker/datafortress.cloud.hugo/public add -A 
 git -C /home/justin/docker/datafortress.cloud.hugo/public commit -m "update to the live website"
