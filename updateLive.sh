@@ -1,5 +1,5 @@
 #!/bin/bash
-(cd /home/justin/docker/datafortress.cloud.hugo ; hugo)
+(cd /home/justin/docker/datafortress.cloud.hugo ; hugo -d "/home/justin/docker/datafortress.cloud.hugo/public")
 git -C /home/justin/docker/datafortress.cloud.hugo/public add -A 
 git -C /home/justin/docker/datafortress.cloud.hugo/public commit -m "update to the live website"
 git -C /home/justin/docker/datafortress.cloud.hugo/public push origin master
