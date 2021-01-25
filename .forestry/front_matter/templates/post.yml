@@ -34,7 +34,8 @@ fields:
   default: post
 pages:
 - content/english/blog/how-to-deploy-an-automated-trading-bot-using-the-facebook-prophet-machine-learning-model-to-aws-lambda-serverless.md
+- content/english/blog/how-to-set-up-anaconda-and-jupyter-notebook-the-right-way.md
 - content/english/blog/the-5-typical-applications-of-augmented-reality.md
 - content/german/blog/brauche-ich-als-firma-augmented-reality.md
 - content/german/blog/howto-einen-automatisierten-machine-learning-aktienhandels-roboter-mittels-aws-lambda-serverlos-betreiben.md
-- content/german/blog/tech-news-vom-4.12.20.md
+- content/german/blog/so-richten-sie-anaconda-und-jupyter-notebook-richtig-ein.md
