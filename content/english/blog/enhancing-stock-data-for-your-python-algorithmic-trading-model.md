@@ -3,7 +3,7 @@ author = "Justin Guese"
 bg_image = "/images/download.png"
 categories = ["finance", "algorithmic trading"]
 date = 2021-01-26T23:00:00Z
-description = ""
+description = "The typical machine learning algorithm can only work with the data it got. It (usually) can not create new features or interpretations like \"If volume increases and the 3rd derivative of price rises, the price will most likely go up\", but instead can only \"look\" at the data it got. These would be calculations like \"if the price is above 100 USD, and the volume above 2000, the price will most likely go up\"."
 image = "/images/download.png"
 tags = ["ai investing", "investing", "stocks", "finance", "algorithmic trading"]
 title = "Enhancing stock data for your Python Algorithmic Trading Model"
@@ -12,15 +12,15 @@ type = "post"
 +++
 # Your first steps building a trading algorithm
 
-Let us say you are planning to build your own algorithmic trading model. 
+Let us say you are planning to build your own algorithmic trading model.
 
-You will most likely use only price (Close) data for your model and algorithm, but soon you will discover, that your model does not perform well.  
+You will most likely use only price (Close) data for your model and algorithm, but soon you will discover, that your model does not perform well.
 
 Soon you will use typical OHLCV data, which refers to Open, High, Low, Close, Volume, which is already better, but the model does not seem to perform quite well enough.
 
 What can you do?
 
-Handy Colab Notebook to follow along: [https://colab.research.google.com/drive/1ywqti1TuTDY_Z11ry0x4ITclCwxnXAeI?usp=sharing](https://colab.research.google.com/drive/1ywqti1TuTDY_Z11ry0x4ITclCwxnXAeI?usp=sharing  "https://colab.research.google.com/drive/1ywqti1TuTDY_Z11ry0x4ITclCwxnXAeI?usp=sharing")
+Handy Colab Notebook to follow along: [https://colab.research.google.com/drive/1ywqti1TuTDY_Z11ry0x4ITclCwxnXAeI?usp=sharing](https://colab.research.google.com/drive/1ywqti1TuTDY_Z11ry0x4ITclCwxnXAeI?usp=sharing "https://colab.research.google.com/drive/1ywqti1TuTDY_Z11ry0x4ITclCwxnXAeI?usp=sharing")
 
 Gist:
 
@@ -30,7 +30,7 @@ Gist:
 
 The typical machine learning algorithm can only work with the data it got. It (usually) can not create new features or interpretations like "If volume increases and the 3rd derivative of price rises, the price will most likely go up", but instead can only "look" at the data it got. These would be calculations like "if the price is above 100 USD, and the volume above 2000, the price will most likely go up".
 
-Newcomers to Machine Learning are now trying to solve this problem by training for decades, or using more and more GPUs, but a way more efficient way would be to feed that algorithm with additional data, such that it can use more resources to infer it's calculations. 
+Newcomers to Machine Learning are now trying to solve this problem by training for decades, or using more and more GPUs, but a way more efficient way would be to feed that algorithm with additional data, such that it can use more resources to infer it's calculations.
 
 This can be achieved by:
 
@@ -46,7 +46,7 @@ First, let us grab some basic OHLCV data. I like the yfinance ([https://pypi.org
 
     pip install yfinance pandas numpy matplotlib ta
 
-Import that module as well as Pandas Numpy Matplotlib 
+Import that module as well as Pandas Numpy Matplotlib
 
     import yfinance as yf
     import matplotlib.pyplot as plt
@@ -67,11 +67,11 @@ Not all combinations work, like 1m (1 Minute) intervals are only working with 7d
 
 Quick excourse: What the heck is Open, High, Low, Close, Adj Close, and Volume? Where is the price?!
 
-There is no "one price" in the stock market! You can imagine OHLCV data as "buckets" or "bins" in time, summarizing all the trades that occurred in that window. The typical "line" chart you know usually refers to the "Close" price of that stock in time range X, e.g. the value the stock had at the close of the time range. 
+There is no "one price" in the stock market! You can imagine OHLCV data as "buckets" or "bins" in time, summarizing all the trades that occurred in that window. The typical "line" chart you know usually refers to the "Close" price of that stock in time range X, e.g. the value the stock had at the close of the time range.
 
-If we are looking at daily data, "Open" refers to the average (!) stock price at open of the markets, whilst "Close" refers to the average (!) price the stock had at the close of markets. If looking at hourly data, the "Open" refers to the beginning of that hour, like 11 am, and the "Close" to the close of that hour, so 11:59:59 am. 
+If we are looking at daily data, "Open" refers to the average (!) stock price at open of the markets, whilst "Close" refers to the average (!) price the stock had at the close of markets. If looking at hourly data, the "Open" refers to the beginning of that hour, like 11 am, and the "Close" to the close of that hour, so 11:59:59 am.
 
-Equally "High" is the highest trade/price recorded in that time frame, and "Low" the lowest one. Volume refers to the number of assets or stocks traded in that time range. 
+Equally "High" is the highest trade/price recorded in that time frame, and "Low" the lowest one. Volume refers to the number of assets or stocks traded in that time range.
 
 Meaning if e.g. "Low" and "Close" of a column are close to each other, we are most likely seeing a downwards trend as the close is the current low. Also if Volume is high, there is a lot of trades going on, so if e.g. the Volume is higher than usual there seems to be something going on in the market. But anyway, head over to [https://www.investopedia.com/](https://www.investopedia.com/  "https://www.investopedia.com/") for that, we will continue coding now!
 
@@ -79,13 +79,13 @@ Meaning if e.g. "Low" and "Close" of a column are close to each other, we are mo
 
 This is important, as most ML algorithms are terribly confused by "normal" close-data. If there is a split in the stock, the data will look like the price has an insane drop.
 
-The reason is, simply said, that if a stock get's too expensive, the company decides to "split" the stock in two. Does that mean my investment halves? Of course not, you will simply get double the stocks you are holding, so on paper you still hold the same value of that stock. 
+The reason is, simply said, that if a stock get's too expensive, the company decides to "split" the stock in two. Does that mean my investment halves? Of course not, you will simply get double the stocks you are holding, so on paper you still hold the same value of that stock.
 
-Interestingly a split usually causes prices to rise (silly humans!), and if your machine learning algorithm sees a huge drop in price it will most likely sell the hell out of that stock. 
+Interestingly a split usually causes prices to rise (silly humans!), and if your machine learning algorithm sees a huge drop in price it will most likely sell the hell out of that stock.
 
 For this reason, you should always use "adjusted" values, which can be imagined as "cleaned" price data, keeping in mind the splits, dividends, and all other events not affecting the true value of data. Therefore try to always use adjusted data for your algorithms!
 
-In the case of yfinance it is easy to do, as we can just use "Adj Close" instead of "Close". 
+In the case of yfinance it is easy to do, as we can just use "Adj Close" instead of "Close".
 
 ### Plotting the data
 
@@ -95,11 +95,11 @@ Looking at the data we can already see a nice, well-known curve
 
 ## Step two: Enhancing your data with statistical data
 
-As said above, we need to create more information from our data for the algorithm to use, as it can not do this on its own. 
+As said above, we need to create more information from our data for the algorithm to use, as it can not do this on its own.
 
-I like to use the library ta ([https://github.com/bukosabino/ta](https://github.com/bukosabino/ta "https://github.com/bukosabino/ta")) as again, it is super easy to use and contains 100+ statistical calculations. 
+I like to use the library ta ([https://github.com/bukosabino/ta](https://github.com/bukosabino/ta "https://github.com/bukosabino/ta")) as again, it is super easy to use and contains 100+ statistical calculations.
 
-Install and import it with 
+Install and import it with
 
     pip install ta
     from ta import add_all_ta_features
@@ -142,19 +142,19 @@ So what have we done?
 
 Well, that should be enough for now!
 
-Also, there is still a lot of nans in there, as some values are only calculated if enough time passed. In my experience filling them with zeros works quite well, even though there are more advanced techniques for that. 
+Also, there is still a lot of nans in there, as some values are only calculated if enough time passed. In my experience filling them with zeros works quite well, even though there are more advanced techniques for that.
 
     df = df.fillna(0)
 
 ## Step three: Creating your own signals
 
-Now it is time to translate your weird trade ideas into numbers! 
+Now it is time to translate your weird trade ideas into numbers!
 
 Let us start with the classic Moving Average cross. The idea is as follows: If a short moving average crosses a slower moving average, it either indicates a price rise or fall, depending on the direction of the cross.
 
 Again, have a look at investopedia for details: [https://www.investopedia.com/articles/active-trading/052014/how-use-moving-average-buy-stocks.asp](https://www.investopedia.com/articles/active-trading/052014/how-use-moving-average-buy-stocks.asp "https://www.investopedia.com/articles/active-trading/052014/how-use-moving-average-buy-stocks.asp")
 
-Our goal is to first calculate the SMA's, and then to formulate crosses as 1 and -1, and 0 to signal no cross. 
+Our goal is to first calculate the SMA's, and then to formulate crosses as 1 and -1, and 0 to signal no cross.
 
 ### Creating Simple Moving Averages
 
@@ -201,16 +201,16 @@ And now you could either insert custom values or follow our example and just tak
         if fast != slow and slow > fast:
           df = createCross(df,fast,slow)
 
-This created a perfect classification signal signaling an upwards cross with 1, and a downwards cross with -1, with 0 being a neutral (no-cross). 
+This created a perfect classification signal signaling an upwards cross with 1, and a downwards cross with -1, with 0 being a neutral (no-cross).
 
-This is just one example of what further signals you can provide. 
+This is just one example of what further signals you can provide.
 
 ### Creating a percentage change column
 
-And to add another example, if you are trying to predict the percentage change you will need a column showing the percentage change to the previous time range. This can luckily be easily done using pandas. 
+And to add another example, if you are trying to predict the percentage change you will need a column showing the percentage change to the previous time range. This can luckily be easily done using pandas.
 
     df["pct_change"] = df["Adj Close"].pct_change()
-
+    
     Date
     2021-01-21    0.013363
     2021-01-22   -0.004463
@@ -227,7 +227,7 @@ Before we added our enhancements the dataframe just contained 5 columns, not muc
 
 In the end, after adding statistical values and our own signals, we already reached 135 features and columns of our dataframe!
 
-So much better for your model! 
+So much better for your model!
 
 What are your thoughts about this process? Did I miss something? Comment below!  
 Do you want to read more articles by Justin? Head over to my website for more!
