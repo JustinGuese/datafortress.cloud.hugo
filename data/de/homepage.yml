@@ -132,10 +132,10 @@ mission:
   - title: Innovation
     description: Wir verfügen über einen breit gefächerten technischen Hintergrund und lernen und verbessern ständig unseren Tech-Stack.
 promo_video:
-  enable: false
+  enable: true
   title: We Are Alawys <br> Comited
   bg_image: images/background/promo-video.webp
-  video_URL: https://www.youtube.com/watch?v=jrkvirglgaQ
+  video_URL: static/files/introvideo.mp4
   video_title: Lorem ipsum dolor <br> sit amet con.
 testimonial:
   enable: true
