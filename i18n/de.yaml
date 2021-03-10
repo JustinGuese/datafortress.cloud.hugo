@@ -18,6 +18,8 @@
   translation: Übersicht
 - id: contact_us
   translation: Kontaktieren Sie uns
+- id: contact_freeconsult
+  translation: Buchen Sie jetzt ein gratis 15-minütiges Beratungsgespräch!
 - id: contact_form
   translation: Kontaktformular
 - id: submit
