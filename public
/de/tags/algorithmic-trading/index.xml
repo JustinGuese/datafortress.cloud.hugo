@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>algorithmic trading on Datafortress.cloud</title>
+    <link>https://www.datafortress.cloud/de/tags/algorithmic-trading/</link>
+    <description>Recent content in algorithmic trading on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Tue, 26 Jan 2021 23:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.datafortress.cloud/de/tags/algorithmic-trading/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Anreichern von Aktiendaten für Ihr algorithmisches Python-Handelsmodell</title>
+      <link>https://www.datafortress.cloud/de/blog/anreichern-von-aktiendaten-fur-ihr-algorithmisches-python-handelsmodell/</link>
+      <pubDate>Tue, 26 Jan 2021 23:00:00 +0000</pubDate>
+      
+      <guid>https://www.datafortress.cloud/de/blog/anreichern-von-aktiendaten-fur-ihr-algorithmisches-python-handelsmodell/</guid>
+      <description>Ihre ersten Schritte beim Aufbau eines Handelsalgorithmus Nehmen wir an, Sie planen, Ihr eigenes algorithmisches Handelsmodell zu erstellen.</description>
+    </item>
+    
+    <item>
+      <title>Howto: Einen automatisierten Machine-Learning Aktienhandels-Roboter mittels AWS Lambda serverlos betreiben</title>
+      <link>https://www.datafortress.cloud/de/blog/howto-einen-automatisierten-machine-learning-aktienhandels-roboter-mittels-aws-lambda-serverlos-betreiben/</link>
+      <pubDate>Sun, 23 Aug 2020 22:00:00 +0000</pubDate>
+      
+      <guid>https://www.datafortress.cloud/de/blog/howto-einen-automatisierten-machine-learning-aktienhandels-roboter-mittels-aws-lambda-serverlos-betreiben/</guid>
+      <description>In diesem Beitrag werde ich meinen Algorithmus für serverloses Investieren mit AWS Lambda, Facebook Prophet als ML-Modell und meiner benutzerdefinierten Lambda-Schicht vorstellen.</description>
+    </item>
+    
+  </channel>
+</rss>

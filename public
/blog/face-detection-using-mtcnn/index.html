@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+    <meta charset="utf-8">
+    <title>Face Detection using MTCNN</title>
+
+    <link rel="canonical" href="https://www.datafortress.cloud/blog/face-detection-using-mtcnn/">
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Face Detection using MTCNN – a guide for face extraction with a focus on speed">
+    <meta name="author" content="DataFortress.cloud">
+    <meta name="generator" content="Hugo 0.68.3" />
+
+    <!-- critical css plugins -->
+    
+    <link rel="stylesheet" href="https://www.datafortress.cloud/plugins/bootstrap/bootstrap.min.css "> 
+    
+    <link rel="stylesheet" href="https://www.datafortress.cloud/plugins/slick/slick-min.css "> 
+    
+
+    
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5G9F7KK');</script>
+    
+
+    <!-- plugins -->
+    
+    <link rel="stylesheet" href="https://www.datafortress.cloud/plugins/magnific-popup/magnific-popup.css " media="print" onload="this.media='all'"> 
+    
+    <link rel="stylesheet" href="https://www.datafortress.cloud/plugins/slick/slick-theme-min.css " media="print" onload="this.media='all'"> 
+    
+    <link rel="stylesheet" href="https://www.datafortress.cloud/plugins/themify-icons/themify-icons.css " media="print" onload="this.media='all'"> 
+    
+    <link rel="stylesheet" href="https://www.datafortress.cloud/plugins/animate/animate.css " media="print" onload="this.media='all'"> 
+    
+
+    <!-- Main Stylesheet -->
+    
+    <link rel="stylesheet" href="https://www.datafortress.cloud/css/style.min.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="https://www.datafortress.cloud/images/favicon.webp" type="image/x-icon">
+    <link rel="icon" href="https://www.datafortress.cloud/images/favicon.webp" type="image/x-icon">
+
+
+</head>
+<body>
+	
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5G9F7KK"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- navigation -->
+<header>
+  <!-- top header -->
+  <div class="top-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="list-inline text-lg-right text-center">
+            <li class="list-inline-item">
+               <a id="mailHeader" href="mailto:https://www.datafortress.cloud/info@datafortress.cloud">info@datafortress.cloud</a> 
+            </li>
+            <li class="list-inline-item">
+               <a id="callHeader" href="callto:&#43;43%20677%2061178288">Call Us Now:
+                <span class="ml-2">&#43;43 677 61178288</span> 
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- nav bar -->
+  <div class="navigation">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">
+          <img src="https://www.datafortress.cloud/images/logo.webp" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Services</a>
+              <div class="dropdown-menu">
+                
+                <a class="dropdown-item" href="/services/">Overview</a>
+                
+                <a class="dropdown-item" href="/services/cloud/">Cloud</a>
+                
+                <a class="dropdown-item" href="/services/data-science-data-engineering/">Data Science &amp; Data Engineering</a>
+                
+                <a class="dropdown-item" href="/services/financial-data-driven-planning/">Financial Data Driven Planning</a>
+                
+                <a class="dropdown-item" href="/services/virtual-augmented-reality/">Virtual &amp; Augmented Reality</a>
+                
+                <a class="dropdown-item" href="/services/business-consulting1/">Business Consulting</a>
+                
+                <a class="dropdown-item" href="/services/translations-deep-learning/">Deep learning translations</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/project">Case Studies</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">Blog</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/team">Team</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/de/content/english/pages/newsletter/">Newsletter</a>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">about</a>
+              <div class="dropdown-menu">
+                
+                <a class="dropdown-item" href="/about">About</a>
+                
+                <a class="dropdown-item" href="/project/serverless-static-website/">Why is this websites so fast?</a>
+                
+                <a class="dropdown-item" href="/content/english/pages/impressum/">Impressum</a>
+                
+                <a class="dropdown-item" href="/content/english/pages/privacy-policy/">Privacy Policy</a>
+                
+              </div>
+            </li>
+            
+            
+          </ul>
+          
+        
+          <select class="m-2 border-0" id="select-language" onchange="location = this.value;">
+            
+            
+            
+            
+            
+            
+            
+            
+            <option id="en" value="https://www.datafortress.cloud/blog/face-detection-using-mtcnn/" selected>En</option>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <option id="de" value="https://www.datafortress.cloud/de/blog/face-detection-using-mtcnn/">De</option>
+            
+            
+            
+            
+          </select>
+          
+
+          
+          
+          <a class="nav-link btn btn-primary btn-sm" href="/contact">get a quote</a>
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+</header><!-- preloader start -->
+	
+	<!-- preloader end -->
+	<div id="content">
+
+<!-- page title -->
+<section class="page-title overlay" style="background-image: url('https://www.datafortress.cloud/images/index2-1-1280x720.webp'),url('/images/background/page-title.webp');">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="text-white font-weight-bold">Face Detection using MTCNN</h2>
+				<ol class="breadcrumb">
+					<li><a href="https://www.datafortress.cloud/">Home</a></li>
+					<li>Face Detection using MTCNN</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /page title -->
+
+<!-- blog single -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 py-100">
+        <div class="border rounded bg-white">
+          <img class="img-fluid w-100 rounded-top" src="https://www.datafortress.cloud/images/index2-1-1280x720.webp" alt="blog-image">
+          <div class="p-4">
+            <h3>Face Detection using MTCNN</h3>
+            <ul class="list-inline d-block pb-4 border-bottom mb-3">
+              <li class="list-inline-item text-color">Posted By <a class="text-primary" href="/author/justin-guese">Justin Guese</a></li>
+              <li class="list-inline-item text-color">On 08 Jun</li>
+              <li class="list-inline-item text-color">Category:
+                
+                <a class="text-primary" href="/categories/computer%20vision"> Computer vision</a>
+                
+                <a class="text-primary" href="/categories/big%20data"> Big data</a>
+                
+                <a class="text-primary" href="/categories/machine%20learning"> Machine learning</a>
+                
+              </li>
+            </ul>
+            <div class="post-content">
+              <h1 id="what-is-mtcnn">What is MTCNN</h1>
+<!-- raw HTML omitted -->
+<p>MTCNN is a python (pip) library written by <a href="https://github.com/ipazc/mtcnn">Github user ipacz</a>, which implements the [paper Zhang, Kaipeng et al. “Joint Face Detection and Alignment Using Multitask Cascaded Convolutional Networks.” IEEE Signal Processing Letters 23.10 (2016): 1499–1503. Crossref. Web](<a href="https://arxiv.org/abs/1604.02878%5D(https://arxiv.org/abs/1604.02878%20%22https://arxiv.org/abs/1604.02878)">https://arxiv.org/abs/1604.02878%5D(https://arxiv.org/abs/1604.02878%20%22https://arxiv.org/abs/1604.02878)</a>.</p>
+<p>In this paper, they propose a deep cascaded multi-task framework using different features of “sub-models” to each boost their correlating strengths.</p>
+<p>MTCNN performs quite fast on a CPU, even though S3FD is still quicker running on a GPU – but that is a topic for another post.</p>
+<p>This post uses code from the following two sources, check them out, they are interesting as well:</p>
+<ul>
+<li><a href="https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/" title="https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/">https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/</a></li>
+<li><a href="https://www.kaggle.com/timesler/fast-mtcnn-detector-55-fps-at-full-resolution" title="https://www.kaggle.com/timesler/fast-mtcnn-detector-55-fps-at-full-resolution">https://www.kaggle.com/timesler/fast-mtcnn-detector-55-fps-at-full-resolution</a></li>
+</ul>
+<!-- raw HTML omitted -->
+<h1 id="basic-usage-of-mtcnn">Basic usage of MTCNN</h1>
+<!-- raw HTML omitted -->
+<p>Feel free to access the whole notebook via:</p>
+<p><a href="https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up" title="https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up">https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up</a></p>
+<pre><code>git clone https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up
+</code></pre>
+<p>Luckily MTCNN is available as a pip package, meaning we can easily install it using</p>
+<pre><code>pip install mtcnn
+</code></pre>
+<p>Now switching to Python/Jupyter Notebook we can check the installation with an import and quick verification:</p>
+<pre><code>import mtcnn
+# print version
+print(mtcnn.__version__)
+</code></pre>
+<p>Afterwards, we are ready to load out test image using the matplotlib <a href="https://bit.ly/2vo3INw">imread function</a>.</p>
+<pre><code>import matplotlib.pyplot as plt
+# load image from file
+filename = &quot;glediston-bastos-ZtmmR9D_2tA-unsplash.webp&quot;
+pixels = plt.imread(filename)
+print(&quot;Shape of image/array:&quot;,pixels.shape)
+imgplot = plt.imshow(pixels)
+plt.show()
+</code></pre>
+<p>Now your output will look a lot like this:</p>
+<pre><code>{'box': [1942, 716, 334, 415], 'confidence': 0.9999997615814209, 'keypoints': {'left_eye': (2053, 901), 'right_eye': (2205, 897), 'nose': (2139, 976), 'mouth_left': (2058, 1029), 'mouth_right': (2206, 1023)}}
+{'box': [2084, 396, 37, 46], 'confidence': 0.9999206066131592, 'keypoints': {'left_eye': (2094, 414), 'right_eye': (2112, 414), 'nose': (2102, 426), 'mouth_left': (2095, 432), 'mouth_right': (2112, 431)}}
+{'box': [1980, 381, 44, 59], 'confidence': 0.9998701810836792, 'keypoints': {'left_eye': (1997, 404), 'right_eye': (2019, 407), 'nose': (2010, 417), 'mouth_left': (1995, 425), 'mouth_right': (2015, 427)}}
+{'box': [2039, 395, 39, 46], 'confidence': 0.9993435740470886, 'keypoints': {'left_eye': (2054, 409), 'right_eye': (2071, 415), 'nose': (2058, 422), 'mouth_left': (2048, 425), 'mouth_right': (2065, 431)}}
+</code></pre>
+<p>What does this tell us? A lot of it is self-explanatory, but it basically returns coordinates, or the pixel values of a rectangle where the MTCNN algorithm detected faces. The “box” value above returns the location of the whole face, followed by a “confidence” level.</p>
+<p>If you want to do more advanced extractions or algorithms, you will have access to other facial landmarks, called “keypoints” as well. Namely the MTCNN model located the eyes, mouth and nose as well!</p>
+<!-- raw HTML omitted -->
+<h2 id="drawing-a-box-around-faces">Drawing a box around faces</h2>
+<!-- raw HTML omitted -->
+<p>To demonstrate this even better let us draw a box around the face using matplotlib:</p>
+<pre><code># draw an image with detected objects
+def draw_facebox(filename, result_list):
+# load the image
+data = plt.imread(filename)
+# plot the image
+plt.imshow(data)
+# get the context for drawing boxes
+ax = plt.gca()
+# plot each box
+for result in result_list:
+# get coordinates
+x, y, width, height = result['box']
+# create the shape
+rect = plt.Rectangle((x, y), width, height, fill=False, color='green')
+# draw the box
+ax.add_patch(rect)
+# show the plot
+plt.show()
+
+# filename = 'test1.webp' # filename is defined above, otherwise uncomment
+# load image from file
+# pixels = plt.imread(filename) # defined above, otherwise uncomment
+# detector is defined above, otherwise uncomment
+#detector = mtcnn.MTCNN()
+# detect faces in the image
+faces = detector.detect_faces(pixels)
+# display faces on the original image
+draw_facebox(filename, faces)
+</code></pre>
+<p><img src="/images/index-1-150x150.webp" alt=""></p>
+<!-- raw HTML omitted -->
+<h2 id="displaying-eyes-mouth-and-nose-around-faces">Displaying eyes, mouth, and nose around faces</h2>
+<!-- raw HTML omitted -->
+<p>Now let us take a look at the aforementioned “keypoints” that the MTCNN model returned.</p>
+<p>We will now use these to graph the nose, mouth, and eyes as well.<br>
+We will add the following code snippet to our code above:</p>
+<pre><code># draw the dots
+for key, value in result['keypoints'].items():
+# create and draw dot
+dot = plt.Circle(value, radius=20, color='orange')
+ax.add_patch(dot)
+</code></pre>
+<p>With the full code from above looking like this:</p>
+<pre><code># draw an image with detected objects
+def draw_facebox(filename, result_list):
+# load the image
+data = plt.imread(filename)
+# plot the image
+plt.imshow(data)
+# get the context for drawing boxes
+ax = plt.gca()
+# plot each box
+for result in result_list:
+# get coordinates
+x, y, width, height = result['box']
+# create the shape
+rect = plt.Rectangle((x, y), width, height,fill=False, color='orange')
+# draw the box
+ax.add_patch(rect)
+# draw the dots
+for key, value in result['keypoints'].items():
+# create and draw dot
+dot = plt.Circle(value, radius=20, color='red')
+ax.add_patch(dot)
+# show the plot
+plt.show()
+
+# filename = 'test1.webp' # filename is defined above, otherwise uncomment
+# load image from file
+# pixels = plt.imread(filename) # defined above, otherwise uncomment
+# detector is defined above, otherwise uncomment
+#detector = mtcnn.MTCNN()
+# detect faces in the image
+faces = detector.detect_faces(pixels)
+# display faces on the original image
+draw_facebox(filename, faces)
+</code></pre>
+<p><img src="/images/index2-150x150.webp" alt=""></p>
+<!-- raw HTML omitted -->
+<h2 id="advanced-mtcnn-speed-it-up-x100">Advanced MTCNN: Speed it up (\~x100)!</h2>
+<!-- raw HTML omitted -->
+<p>Now let us come to the interesting part. If you are going to process millions of pictures you will need to speed up MTCNN, otherwise, you will either fall asleep or your CPU will burn before it will be done.</p>
+<p>But what exactly are we talking about? If you are running the above code it will take around one second, meaning we will process around one picture per second. If you are running MTCNN on a GPU and use the sped-up version it will achieve around 60-100 pictures/frames a second. That is a boost of up to <strong>100 times</strong>!</p>
+<p>If you are for example going to extract all faces of a movie, where you will extract 10 faces per second (one second of the movie has on average around 24 frames, so every second frame) it will be 10 * 60 (seconds) * 120 (minutes) = 72,000 frames.</p>
+<p>Meaning if it takes one second to process one frame it will take 72,000 * 1 (seconds) = 72,000s / 60s = 1,200m = <strong>20 hours</strong></p>
+<p>With the sped-up version of MTCNN this task will take 72,000 (frames) / 100 (frames/sec) = 720 seconds = <strong>12 minutes</strong>!</p>
+<p>To use MTCNN on a GPU you will need to set up CUDA, cudnn, pytorch and so on. <a href="https://pytorch.org/get-started/locally/">Pytorch wrote a good tutorial about that part</a>.</p>
+<p>Once installed we will do the necessary imports as follows:</p>
+<pre><code>from facenet_pytorch import MTCNN
+from PIL import Image
+import torch
+from imutils.video import FileVideoStream
+import cv2
+import time
+import glob
+from tqdm.notebook import tqdm
+
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
+filenames = [&quot;glediston-bastos-ZtmmR9D_2tA-unsplash.webp&quot;,&quot;glediston-bastos-ZtmmR9D_2tA-unsplash.webp&quot;]
+</code></pre>
+<p>See how we defined the device in the code above? You will be able to run everything on a CPU as well if you do not want or can set up CUDA.</p>
+<p>Next, we will define the extractor:</p>
+<pre><code># define our extractor
+fast_mtcnn = FastMTCNN(
+stride=4,
+resize=0.5,
+margin=14,
+factor=0.6,
+keep_all=True,
+device=device
+)
+</code></pre>
+<p>In this snippet, we pass along some parameters, where we for example only use half of the image size, which is one of the main impact factors for speeding it up.</p>
+<p>And finally, let us run the face extraction script:</p>
+<pre><code>def run_detection(fast_mtcnn, filenames):
+frames = []
+frames_processed = 0
+faces_detected = 0
+batch_size = 60
+start = time.time()
+
+for filename in tqdm(filenames):
+
+v_cap = FileVideoStream(filename).start()
+v_len = int(v_cap.stream.get(cv2.CAP_PROP_FRAME_COUNT))
+
+for j in range(v_len):
+
+frame = v_cap.read()
+frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+frames.append(frame)
+
+if len(frames) &gt;= batch_size or j == v_len - 1:
+
+faces = fast_mtcnn(frames)
+
+frames_processed += len(frames)
+faces_detected += len(faces)
+frames = []
+
+print(
+f'Frames per second: {frames_processed / (time.time() - start):.3f},',
+f'faces detected: {faces_detected}\r',
+end=''
+)
+
+v_cap.stop()
+
+run_detection(fast_mtcnn, filenames)
+</code></pre>
+<p><img src="/images/teslap100frames.webp" alt=""></p>
+<p>The above image shows the output of the code running on an NVIDIA Tesla P100, so depending on the source material, GPU and processor you might experience better or worse performance.</p>
+<!-- raw HTML omitted -->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="newsletter">
+          <br/></br>
+          <h4>Stay Updated</h4>
+          <p></p>
+              <form action="https://cloud.us19.list-manage.com/subscribe/post?u=29b9af4020a7ab7d1e6a76d72&amp;amp;id=3622b2a9a6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+              novalidate>
+                      <div class="mc-field-group">
+                          </label>
+                          <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email">
+                      </div>
+                      <div class="mc-field-group">
+                          <input type="text" name="FNAME" id="mce-FNAME" placeholder="First Name">
+                      </div>
+                      <div class="mc-field-group">
+                          <input type="text" name="LNAME" id="mce-LNAME" placeholder="Last Name">
+                      </div>
+                      <div id="mce-responses" class="clear">
+                          <div class="response" id="mce-error-response" style="display:none"></div>
+                          <div class="response" id="mce-success-response" style="display:none"></div>
+                      </div>
+                      
+                      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                              name="mc-embedded-subscribe-form" tabindex="-1"></div>
+                      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                              class="button"></div>
+              </form>
+      </div>
+
+        <div class="py-4 border-bottom mb-100">
+          <div class="row">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+              <!-- share-icon -->
+              <div class="d-flex">
+                <span class="font-weight-light mt-2 mr-3">Share:</span>
+                <ul class="list-inline d-inline-block">
+                  
+                  <li class="list-inline-item">
+                    <a class="share-icon bg-facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.datafortress.cloud%2fblog%2fface-detection-using-mtcnn%2f"><i class="ti-facebook"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="share-icon bg-twitter" href="https://twitter.com/intent/tweet/?text=Face%20Detection%20using%20MTCNN&amp;url=https%3a%2f%2fwww.datafortress.cloud%2fblog%2fface-detection-using-mtcnn%2f"><i class="ti-twitter-alt"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="share-icon bg-reddit" href="https://reddit.com/submit/?url=https%3a%2f%2fwww.datafortress.cloud%2fblog%2fface-detection-using-mtcnn%2f&amp;resubmit=true&amp;title=Face%20Detection%20using%20MTCNN"><i class="ti-reddit"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="share-icon bg-primary" href="mailto:?subject=Face%20Detection%20using%20MTCNN&amp;body=https%3a%2f%2fwww.datafortress.cloud%2fblog%2fface-detection-using-mtcnn%2f"><i class="ti-email"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- tags -->
+            <div class="col-lg-7">
+              <div class="d-flex">
+                <span class="font-weight-light mt-2 mr-3">Tags:</span>
+                <ul class="list-inline tag-list">
+                  
+                  <li class="list-inline-item">
+                    <a href="/categories/face%20detection">Face detection</a>
+                  </li>
+                  
+                  <li class="list-inline-item">
+                    <a href="/categories/neuronal%20networks">Neuronal networks</a>
+                  </li>
+                  
+                  <li class="list-inline-item">
+                    <a href="/categories/mtcnn">M t c n n</a>
+                  </li>
+                  
+                  <li class="list-inline-item">
+                    <a href="/categories/big%20data">Big data</a>
+                  </li>
+                  
+                  <li class="list-inline-item">
+                    <a href="/categories/machine%20learning">Machine learning</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="mt-5">
+          <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "datafortess-cloud" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+        
+      </div>
+      <!-- Sidebar -->
+<div class="col-lg-4">
+	<div class="bg-white px-4 py-100 sidebar-box-shadow">
+		<!-- categories -->
+		<div class="mb-50">
+			<h4 class="mb-3">Categories</h4>
+			<ul class="list-unstyled mb-0">
+				<li class="border-bottom">
+					<a href="/categories/algorithmic-trading"
+						class="d-block text-color py-10">Algorithmic trading</a>
+				</li>
+				<li class="border-bottom">
+					<a href="/categories/augmented-reality"
+						class="d-block text-color py-10">Augmented reality</a>
+				</li>
+				<li class="border-bottom">
+					<a href="/categories/aws"
+						class="d-block text-color py-10">Aws</a>
+				</li>
+				<li class="border-bottom">
+					<a href="/categories/big-data"
+						class="d-block text-color py-10">Big data</a>
+				</li>
+				<li class="border-bottom">
+					<a href="/categories/business"
+						class="d-block text-color py-10">Business</a>
+				</li>
+				<li class="border-bottom">
+					<a href="/categories/cloud"
+						class="d-block text-color py-10">Cloud</a>
+				</li>
+				<li class="border-bottom">
+					<a href="/categories/computer-vision"
+						class="d-block text-color py-10">Computer vision</a>
+				</li>
+				<li class="border-bottom">
+					<a href="/categories/finance"
+						class="d-block text-color py-10">Finance</a>
+				</li>
+				<li class="border-bottom">
+					<a href="/categories/linux"
+						class="d-block text-color py-10">Linux</a>
+				</li>
+				<li class="border-bottom">
+					<a href="/categories/machine-learning"
+						class="d-block text-color py-10">Machine learning</a>
+				</li>
+				<li class="border-bottom">
+					<a href="/categories/serverless"
+						class="d-block text-color py-10">Serverless</a>
+				</li>
+				<li class="border-bottom">
+					<a href="/categories/tutorial"
+						class="d-block text-color py-10">Tutorial</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Widget Recent Post -->
+		<div class="mb-50">
+			<h4 class="mb-3">Recent News</h4>
+			
+			<!-- post -->
+			<div class="d-flex py-3 border-bottom">
+				<div class="mr-4">
+					<a href="https://www.datafortress.cloud/blog/enhancing-stock-data-for-your-python-algorithmic-trading-model/">
+						<img class="rounded img-fluid recent-post-thumb" src="https://www.datafortress.cloud/images/download.png" alt="post-thumb">
+					</a>
+				</div>
+				<div>
+					<h6 class="mb-3">
+						<a class="text-dark" href="https://www.datafortress.cloud/blog/enhancing-stock-data-for-your-python-algorithmic-trading-model/">Enhancing stock data for your Python Algorithmic Trading Model</a>
+					</h6>
+					<p class="meta">26 Jan 2021</p>
+				</div>
+			</div>
+			
+			<!-- post -->
+			<div class="d-flex py-3 border-bottom">
+				<div class="mr-4">
+					<a href="https://www.datafortress.cloud/blog/how-to-set-up-anaconda-and-jupyter-notebook-the-right-way/">
+						<img class="rounded img-fluid recent-post-thumb" src="https://www.datafortress.cloud/images/jupyter.png" alt="post-thumb">
+					</a>
+				</div>
+				<div>
+					<h6 class="mb-3">
+						<a class="text-dark" href="https://www.datafortress.cloud/blog/how-to-set-up-anaconda-and-jupyter-notebook-the-right-way/">How to set up Anaconda and Jupyter Notebook the right way</a>
+					</h6>
+					<p class="meta">24 Jan 2021</p>
+				</div>
+			</div>
+			
+			<!-- post -->
+			<div class="d-flex py-3 border-bottom">
+				<div class="mr-4">
+					<a href="https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/">
+						<img class="rounded img-fluid recent-post-thumb" src="https://www.datafortress.cloud/images/blog/deeplearningarch.png" alt="post-thumb">
+					</a>
+				</div>
+				<div>
+					<h6 class="mb-3">
+						<a class="text-dark" href="https://www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/">How To - Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation</a>
+					</h6>
+					<p class="meta">29 Sep 2020</p>
+				</div>
+			</div>
+			
+		</div>
+		<!-- tags -->
+		<div class="mb-50">
+			<h4 class="mb-3">Tags</h4>
+			<ul class="list-inline tag-list">
+				<li class="list-inline-item">
+					<a href="/tags/3d">3d</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/ai-investing">Ai investing</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/algorithmic-trading">Algorithmic trading</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/anaconda">Anaconda</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/arch-linux">Arch linux</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/augmented-reality">Augmented reality</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/aws">Aws</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/aws-lambda">Aws lambda</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/big-data">Big data</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/business">Business</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/cloud">Cloud</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/cloud-computing">Cloud computing</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/cloud-storage">Cloud storage</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/deep-learning">Deep learning</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/encryption">Encryption</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/encypt-data-at-rest">Encypt data at rest</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/face-detection">Face detection</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/facebook-prophet">Facebook prophet</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/finance">Finance</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/investing">Investing</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/jupyter-notebook">Jupyter notebook</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/linux">Linux</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/machine-learning">Machine learning</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/mtcnn">Mtcnn</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/neuronal-networks">Neuronal networks</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/reinforcement-learning">Reinforcement learning</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/serverless">Serverless</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/stock">Stock</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/stocks">Stocks</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/storage">Storage</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/tensorflow">Tensorflow</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/tutorial">Tutorial</a></li>
+				<li class="list-inline-item">
+					<a href="/tags/websites">Websites</a></li>
+			</ul>
+		</div>
+
+		<!-- Widget Newsletter -->
+		<div class="newsletter">
+			<h4 class="mb-3">Stay Updated</h4>
+			<p></p>
+			<div id="mc_embed_signup">
+				<form action="https://cloud.us19.list-manage.com/subscribe/post?u=29b9af4020a7ab7d1e6a76d72&amp;amp;id=3622b2a9a6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+				novalidate>
+					<div id="mc_embed_signup_scroll">
+						<div class="mc-field-group">
+							</label>
+							<input type="email" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email">
+						</div>
+						<div class="mc-field-group">
+							<input type="text" name="FNAME" id="mce-FNAME" placeholder="First Name">
+						</div>
+						<div class="mc-field-group">
+							<input type="text" name="LNAME" id="mce-LNAME" placeholder="Last Name">
+						</div>
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>
+						
+						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+								name="mc-embedded-subscribe-form" tabindex="-1"></div>
+						<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+								class="button"></div>
+					</div>
+				</form>
+			</div>
+			<!--End mc_embed_signup-->
+		</div>
+	</div>
+</div>
+    </div>
+  </div>
+</section>
+<!-- /blog-single -->
+
+
+		
+	</div>
+	
+
+<!-- cta -->
+<section class="cta overlay-primary py-50 text-center text-lg-left"
+	style="background-image: url('https://www.datafortress.cloud/images/background/cta.webp');">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-lg-6">
+				<h3 class="text-white">DataFortress.cloud is your partner for high quality, state-of-the-art solutions.</h3>
+			</div>
+			<div class="col-lg-6 text-lg-right align-self-center">
+				
+				
+				<a id="getAQuoteButton" href="/contact" class="btn btn-light text-uppercase">Get a Quote</a>
+				
+				
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /cta -->
+<!-- footer -->
+<footer class="bg-secondary">
+	<div class="py-100 border-bottom" style="border-color: #454547 !important">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4">
+					<div class="mb-5 mb-md-0 text-center text-md-left">
+						<!-- logo -->
+						<img class="mb-30" src="https://www.datafortress.cloud/images/logo.webp" alt="logo">
+						 <p class="text-white mb-30"> Your partner for Cloud, Big-Data and AI. <a href="/contact">contact us</a> for a free 15-minute consultation.</p> 
+						<!-- social icon -->
+						<ul class="list-inline">
+							
+							<li class="list-inline-item">
+								<a class="social-icon-outline" href="https://www.facebook.com/guese.justin/">
+									<i class="ti-facebook"></i>
+								</a>
+							</li>
+							
+							<li class="list-inline-item">
+								<a class="social-icon-outline" href="https://www.linkedin.com/in/justin-guese/">
+									<i class="ti-linkedin"></i>
+								</a>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+				<!-- footer links -->
+				<div class="col-lg-2 col-md-4 col-6">
+					<h4 class="text-white mb-4">Services</h4>
+					<ul class="footer-links">
+						
+						<li><a href="https://www.datafortress.cloud/services/cloud/">Cloud</a></li>
+						
+						<li><a href="https://www.datafortress.cloud/services/data-science-data-engineering/">Data Science and Data Engineering</a></li>
+						
+						<li><a href="https://www.datafortress.cloud/services/financial-data-driven-planning/">Financial Data-driven Planning</a></li>
+						
+						<li><a href="https://www.datafortress.cloud/services/virtual-augmented-reality/">Virtual &amp; Augmented Reality</a></li>
+						
+						<li><a href="https://www.datafortress.cloud/services/business-consulting1/">Business Consulting</a></li>
+						
+						<li><a href="https://www.datafortress.cloud/services/translations-deep-learning/">Deep Learning translations</a></li>
+						
+					</ul>
+				</div>
+				<!-- footer links -->
+				<div class="col-lg-2 col-md-4 col-6">
+					<h4 class="text-white mb-4">Quick Links</h4>
+					<ul class="footer-links">
+						
+						
+						
+						
+						<li><a href="/project">Case Studies</a></li>
+						
+						
+						
+						<li><a href="/blog">Blog</a></li>
+						
+						
+						
+						<li><a href="/team">Team</a></li>
+						
+						
+						
+						<li><a href="/contact">Contact</a></li>
+						
+						
+						
+						<li><a href="/de/content/english/pages/newsletter/">Newsletter</a></li>
+						
+						
+						
+						
+					</ul>
+				</div>
+				<!-- subscribe form -->
+				<div class="col-lg-3 col-md-12 offset-lg-1">
+					<div class="mt-5 mt-lg-0 text-center text-md-left">
+						 <h4 class="mb-4 text-white">Subscribe Us</h4> 
+						 <p class="text-white mb-4">Receive exclusive tech/cloud/ai news into your inbox. Unsubscribe any time.</p> 
+						<div id="mc_embed_signup">
+							<form action="https://cloud.us19.list-manage.com/subscribe/post?u=29b9af4020a7ab7d1e6a76d72&amp;amp;id=3622b2a9a6" method="post" id="mc-embedded-subscribe-form"
+								name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+								<div id="mc_embed_signup_scroll" class="position-relative">
+									<input type="email" name="EMAIL" class="required email form-control subscribe" id="mce-EMAIL"
+										placeholder="Enter Your Email">
+									<button class="btn-subscribe" type="submit" name="subscribe" id="mc-embedded-subscribe-">
+										<i class="ti-arrow-right"></i>
+									</button>
+									<div style="position: absolute; left: -5000px;" aria-hidden="true">
+										<input type="text" name="mc-embedded-subscribe-form" tabindex="-1">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- copyright -->
+	<div class="pt-4 pb-3 position-relative">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-5">
+					<p class="text-white text-center text-md-left">Copyright © 2020 by Datafortress.cloud</p>
+				</div>
+				<div class="col-lg-6 col-md-7">
+					<ul class="list-inline text-center text-md-right">
+						
+						<li class="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
+							<a class="font-secondary text-white" href="/content/english/pages/impressum/">Legal</a>
+						</li>
+						
+						<li class="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
+							<a class="font-secondary text-white" href="/sitemap.xml">Sitemap</a>
+						</li>
+						
+						<li class="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
+							<a class="font-secondary text-white" href="/content/english/pages/privacy-policy/">Privacy Policy</a>
+						</li>
+						
+						<li class="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
+							<a class="font-secondary text-white" href="/content/english/pages/impressum/">Terms &amp; Conditions</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- back to top -->
+		<button class="back-to-top">
+			<i class="ti-angle-up"></i>
+		</button>
+	</div>
+</footer>
+<!-- /footer -->
+
+<!-- Essential Scripts -->
+<!-- Google Map API -->
+
+<!-- JS Plugins -->
+
+<script src="https://www.datafortress.cloud/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://www.datafortress.cloud/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://www.datafortress.cloud/plugins/slick/slick.min.js"></script>
+
+<script src="https://www.datafortress.cloud/plugins/magnific-popup/magnific-popup.min.js"></script>
+
+<script src="https://www.datafortress.cloud/plugins/filterizr/jquery.filterizr.min.js"></script>
+
+<!-- Chatbot Plugin -->
+
+
+<!-- Main Script -->
+
+<script src="https://www.datafortress.cloud/js/script.min.js"></script>
+<!-- google analitycs -->
+
+
+
+
+
+
+</html>

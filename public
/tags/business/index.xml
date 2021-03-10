@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Business on Datafortress.cloud</title>
+    <link>https://www.datafortress.cloud/tags/business/</link>
+    <description>Recent content in Business on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Jun 2020 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.datafortress.cloud/tags/business/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Top 6 best Cloud Storage services – Free, Paid and for Businesses</title>
+      <link>https://www.datafortress.cloud/blog/top-6-cloud-storage-solutions/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0200</pubDate>
+      
+      <guid>https://www.datafortress.cloud/blog/top-6-cloud-storage-solutions/</guid>
+      <description>Why should I store my data in the cloud?
+The computing industry has moved gradually away from local storage to remote, server-based storage and computing since the rise of the internet — what has been known as the cloud.</description>
+    </item>
+    
+  </channel>
+</rss>

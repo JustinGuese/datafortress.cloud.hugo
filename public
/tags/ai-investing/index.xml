@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ai investing on Datafortress.cloud</title>
+    <link>https://www.datafortress.cloud/tags/ai-investing/</link>
+    <description>Recent content in ai investing on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Jan 2021 23:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.datafortress.cloud/tags/ai-investing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Enhancing stock data for your Python Algorithmic Trading Model</title>
+      <link>https://www.datafortress.cloud/blog/enhancing-stock-data-for-your-python-algorithmic-trading-model/</link>
+      <pubDate>Tue, 26 Jan 2021 23:00:00 +0000</pubDate>
+      
+      <guid>https://www.datafortress.cloud/blog/enhancing-stock-data-for-your-python-algorithmic-trading-model/</guid>
+      <description>Your first steps building a trading algorithm Let us say you are planning to build your own algorithmic trading model.</description>
+    </item>
+    
+  </channel>
+</rss>

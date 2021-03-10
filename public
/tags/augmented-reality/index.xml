@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Augmented Reality on Datafortress.cloud</title>
+    <link>https://www.datafortress.cloud/tags/augmented-reality/</link>
+    <description>Recent content in Augmented Reality on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Sep 2020 11:10:07 +0600</lastBuildDate>
+    
+	<atom:link href="https://www.datafortress.cloud/tags/augmented-reality/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to integrate 3D models into websites and Quick View for Android and iOS devices</title>
+      <link>https://www.datafortress.cloud/blog/3d-model-integration/</link>
+      <pubDate>Thu, 24 Sep 2020 11:10:07 +0600</pubDate>
+      
+      <guid>https://www.datafortress.cloud/blog/3d-model-integration/</guid>
+      <description>Integrating a 3D model into a website using Quick View for Android and iOS Try it out: Rotate the 3D object below, or look at it in AR using your phone or even VR if a VR-glass is connected to your computer.</description>
+    </item>
+    
+    <item>
+      <title>The 5 typical applications of Augmented Reality</title>
+      <link>https://www.datafortress.cloud/blog/the-5-typical-applications-of-augmented-reality/</link>
+      <pubDate>Sun, 16 Aug 2020 22:00:00 +0000</pubDate>
+      
+      <guid>https://www.datafortress.cloud/blog/the-5-typical-applications-of-augmented-reality/</guid>
+      <description>What is AR? Why do I need Augmented Reality as a company?</description>
+    </item>
+    
+  </channel>
+</rss>

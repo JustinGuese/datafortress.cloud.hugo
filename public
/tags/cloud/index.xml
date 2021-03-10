@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud on Datafortress.cloud</title>
+    <link>https://www.datafortress.cloud/tags/cloud/</link>
+    <description>Recent content in Cloud on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Sep 2020 11:10:07 +0600</lastBuildDate>
+    
+	<atom:link href="https://www.datafortress.cloud/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Going from Wordpress to serverless, unhackable high-speed static websites</title>
+      <link>https://www.datafortress.cloud/blog/wordpress-to-serverless-highspeed-scalable-unhackable/</link>
+      <pubDate>Thu, 17 Sep 2020 11:10:07 +0600</pubDate>
+      
+      <guid>https://www.datafortress.cloud/blog/wordpress-to-serverless-highspeed-scalable-unhackable/</guid>
+      <description>Going from Wordpress to serverless, unhackable high-speed static websites I have been building websites in the past, but have always been struggling with the slow performance of WordPress.</description>
+    </item>
+    
+    <item>
+      <title>Top 6 best Cloud Storage services – Free, Paid and for Businesses</title>
+      <link>https://www.datafortress.cloud/blog/top-6-cloud-storage-solutions/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 +0200</pubDate>
+      
+      <guid>https://www.datafortress.cloud/blog/top-6-cloud-storage-solutions/</guid>
+      <description>Why should I store my data in the cloud?
+The computing industry has moved gradually away from local storage to remote, server-based storage and computing since the rise of the internet — what has been known as the cloud.</description>
+    </item>
+    
+  </channel>
+</rss>

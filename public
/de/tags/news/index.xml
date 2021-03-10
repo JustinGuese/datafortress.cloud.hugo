@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Datafortress.cloud</title>
+    <link>https://www.datafortress.cloud/de/tags/news/</link>
+    <description>Recent content in News on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Wed, 14 Oct 2020 11:10:07 +0600</lastBuildDate>
+    
+	<atom:link href="https://www.datafortress.cloud/de/tags/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TechNews 14.10.2020</title>
+      <link>https://www.datafortress.cloud/de/blog/technews-14.10.20/</link>
+      <pubDate>Wed, 14 Oct 2020 11:10:07 +0600</pubDate>
+      
+      <guid>https://www.datafortress.cloud/de/blog/technews-14.10.20/</guid>
+      <description>🔬 Wissenschaft und futuristische Technologie Wissenschaftler fanden einen neuen Weg zur Steuerung des Gehirns ohne chirurgischen Eingriff (4 Minuten Lesezeit) https://rebrand.</description>
+    </item>
+    
+    <item>
+      <title>TechNews 13.10.2020</title>
+      <link>https://www.datafortress.cloud/de/blog/technews-13.10.20/</link>
+      <pubDate>Tue, 13 Oct 2020 11:10:07 +0600</pubDate>
+      
+      <guid>https://www.datafortress.cloud/de/blog/technews-13.10.20/</guid>
+      <description>🔬 Wissenschaft und futuristische Technologie Alphabets neuestes X-Projekt ist ein Pflanzenschnüffel-Buggy (3 Minuten lesen) https://rebrand.</description>
+    </item>
+    
+    <item>
+      <title>TechNews 12.10.2020</title>
+      <link>https://www.datafortress.cloud/de/blog/technews-12.10.20-/</link>
+      <pubDate>Thu, 24 Sep 2020 11:10:07 +0600</pubDate>
+      
+      <guid>https://www.datafortress.cloud/de/blog/technews-12.10.20-/</guid>
+      <description>🔬 Wissenschaft und futuristische Technologie Preise und Erscheinungstermine der iPhone-12-Produktreihe im neuen Leak (3 Minuten Lesezeit) Einzelheiten darüber, was Apple auf seiner Veranstaltung am 13.</description>
+    </item>
+    
+    <item>
+      <title>TechNews 9.10.2020</title>
+      <link>https://www.datafortress.cloud/de/blog/technews-9.10.20/</link>
+      <pubDate>Thu, 24 Sep 2020 11:10:07 +0600</pubDate>
+      
+      <guid>https://www.datafortress.cloud/de/blog/technews-9.10.20/</guid>
+      <description>💻 Programmierung, Design und Data Science Wir haben 3 Monate lang Apple gehackt: Hier ist, was wir gefunden haben (1 Stunde Lesezeit) Während eines Zeitraums von drei Monaten arbeitete ein Team von fünf Hackern zusammen, um Schwachstellen in Apples Infrastruktur, Anwendungen und anderen Teilen des Unternehmens über das Bug-Bounty-Programm von Apple zu finden.</description>
+    </item>
+    
+  </channel>
+</rss>

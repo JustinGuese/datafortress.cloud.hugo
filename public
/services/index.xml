@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services - Cloud, Big-Data, AI services for your company on Datafortress.cloud</title>
+    <link>https://www.datafortress.cloud/services/</link>
+    <description>Recent content in Services - Cloud, Big-Data, AI services for your company on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Jul 2018 18:19:33 +0600</lastBuildDate>
+    
+	<atom:link href="https://www.datafortress.cloud/services/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cloud</title>
+      <link>https://www.datafortress.cloud/services/cloud/</link>
+      <pubDate>Sat, 29 Sep 2018 11:54:02 +0600</pubDate>
+      
+      <guid>https://www.datafortress.cloud/services/cloud/</guid>
+      <description>Why is Cloud Computing so important?  $330 billion USD is the market prediction for the global public cloud computing market in 2020</description>
+    </item>
+    
+    <item>
+      <title>Data Science and Data Engineering</title>
+      <link>https://www.datafortress.cloud/services/data-science-data-engineering/</link>
+      <pubDate>Sat, 29 Sep 2018 11:54:02 +0600</pubDate>
+      
+      <guid>https://www.datafortress.cloud/services/data-science-data-engineering/</guid>
+      <description>Data Science &amp;amp; Engineering Data is becoming more and more important.</description>
+    </item>
+    
+    <item>
+      <title>Financial Data-driven Planning</title>
+      <link>https://www.datafortress.cloud/services/financial-data-driven-planning/</link>
+      <pubDate>Sat, 29 Sep 2018 11:51:17 +0600</pubDate>
+      
+      <guid>https://www.datafortress.cloud/services/financial-data-driven-planning/</guid>
+      <description>Financial Data-driven Planning Nowadays people become to understand the importance of data for their business.</description>
+    </item>
+    
+    <item>
+      <title>Virtual &amp; Augmented Reality</title>
+      <link>https://www.datafortress.cloud/services/virtual-augmented-reality/</link>
+      <pubDate>Sat, 29 Sep 2018 11:51:17 +0600</pubDate>
+      
+      <guid>https://www.datafortress.cloud/services/virtual-augmented-reality/</guid>
+      <description>Virtual and Augmented Reality  Experts claim that by 2025 the AR/VR industry will be worth over $25 Billion and steadily rising.</description>
+    </item>
+    
+    <item>
+      <title>Business Consulting</title>
+      <link>https://www.datafortress.cloud/services/business-consulting1/</link>
+      <pubDate>Tue, 25 Sep 2018 15:51:35 +0600</pubDate>
+      
+      <guid>https://www.datafortress.cloud/services/business-consulting1/</guid>
+      <description>Make Your Business Ambitions a Reality Being a lean startup ourselves we are experts in constantly rethinking our business using data, the newest tools, and trying new experimental business fields.</description>
+    </item>
+    
+    <item>
+      <title>Deep Learning translations</title>
+      <link>https://www.datafortress.cloud/services/translations-deep-learning/</link>
+      <pubDate>Tue, 25 Sep 2018 15:51:35 +0600</pubDate>
+      
+      <guid>https://www.datafortress.cloud/services/translations-deep-learning/</guid>
+      <description>Deep Learning Translations Are you looking for a way to translate languages in a quick and inexpensive matter?</description>
+    </item>
+    
+  </channel>
+</rss>
