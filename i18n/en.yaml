@@ -18,6 +18,8 @@
   translation: Quick Links
 - id: contact_us
   translation: Contact Us
+- id: contact_freeconsult
+  translation: Get a free 15-minute consultation!
 - id: contact_form
   translation: Contact Form
 - id: submit
