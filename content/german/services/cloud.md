@@ -21,80 +21,88 @@ offDay: Sat, Su
 
 <Wir sind hier, um Missverständnisse auszuräumen.
 
-## Was ist Cloud Computing
+## Cloud Computing 
 
-Cloud Computing ist der Übergang von der traditionellen Infrastruktur vor Ort zu einem Service Provider, der entweder eine 1:1-Nachbildung der Umgebung vor Ort oder, was noch wahrscheinlicher ist, ein Upgrade bestehender Prozesse mit Hilfe von Diensten oder "Tools", die die Cloud bietet, beinhaltet.
+## Einleitung: 
 
-<br>
+Wenn Sie nach einer digitalen Transformation für Ihr Unternehmen suchen, können Sie sich mit der Cloud beschäftigen, die ganzheitliche End-to-End-Computing-Services bietet. Zweifellos bietet Cloud Computing eine phänomenale Bereitstellung von Computing-Diensten wie Netzwerken, Datenbanken, Software, Intelligenz, Analysen, Speicher und Servern. In der Tat ist es für Unternehmen, die nach Skaleneffekten, Innovation und flexiblen Ressourcen suchen, der reibungslose Übergang von konventioneller On-Premise-Infrastruktur zu zeitgemäßem Computing. Darüber hinaus müssen Sie nur für die in Anspruch genommenen Dienste bezahlen und können so Ihr Betriebsbudget senken und Ihre Infrastruktur mit der entsprechenden Skalierung Ihrer Geschäftsanforderungen recht effizient betreiben. In der Tat müssen Sie sich keine Sorgen um die Betriebskosten in Bezug auf Mitarbeiterschulungen, den Kauf von Geräten und die laufende Wartung machen, da diese alle vom Cloud Computing selbst verwaltet werden.
 
-## Was sind die Vorteile von Cloud Computing
+## Arten von Cloud Computing:
 
-<br>
+In Anbetracht der unterschiedlichen Bedürfnisse von Unternehmen und Privatpersonen haben sich im Laufe der Zeit mehrere unterschiedliche Typen, Dienste und Modelle entwickelt. Die verschiedenen Arten von Cloud Computing haben sich entwickelt, um eine präzise und angemessene Lösung für die gewünschten Anforderungen zu finden. Sie müssen zu Beginn feststellen, welche Art von Cloud Computing oder Bereitstellung implementiert werden soll. In diesem Zusammenhang können die folgenden drei Arten von Cloud Computing je nach Bedarf eingesetzt und betrieben werden.
 
-### **1. Wartungsreduzierung**
+### 1. Public Cloud: 
 
-<br>
+Die Public Clouds werden von Cloud Service Providern verwaltet, die als Drittanbieter und alleiniger Betreiber auftreten. Alle Computing-Ressourcen, einschließlich der Server und des Speichers im Internet, werden von den Cloud-Service-Providern bereitgestellt. In der Tat wird die Public Cloud vom Cloud Computing betrieben und gehört ihm. Sie können Computing-Services wie die gesamte Software, Hardware und andere Infrastruktur in Anspruch nehmen. Das bedeutet, dass alle Computing-Ressourcen in Rechenzentren verwaltet werden, anstatt sie vor Ort zu unterhalten. Es besteht also aus vielen Unternehmen, die die gleiche Infrastruktur nutzen. Einige renommierte Hyperscaler wie Amazon, Microsoft (Azure), Google Cloud und Alicloud befassen sich mit dem größten Cloud Computing im großen Maßstab.
 
-![](/images/annotation-2020-07-07-133825.webp)
+### 2. Private Cloud: 
 
-<br>
+Die Private Cloud ist effizienter und besser für Unternehmen, die ihre Ressourcen in einer Public Cloud teilen wollen. In der Tat sind die Server dieser Cloud-Modelle im Besitz und unter der Kontrolle der Unternehmen selbst. Der Zugriff erfolgt über das Internet oder ein privates Netzwerk. Diese Cloud bietet Ihnen eine Umgebung, in der Sie die Kontrolle über die Sicherheit und die Daten haben und eine spezifische Überwachung und andere Anforderungen gewährleisten.
 
-Wir sind technologisch führend, d.h. wir erforschen und implementieren ständig modernste Werkzeuge. Vermeiden Sie falsche Entscheidungen und lernen Sie, wie Sie Kunden in turbulenten neuen Zeiten begeistern können.  
-Alte Geschäftsmodelle verändern sich und müssen in die digitale Welt übertragen werden. Sparen Sie sich die Mühe und setzen Sie sich mit einem Experten in Verbindung.
+### 3. Hybride Cloud: 
 
-<br>
+Wie Hybrid Cloud schon sagt, handelt es sich um eine Kombination aus mehreren Clouds. Einige Unternehmen bevorzugen es, eine Kombination von Cloud-Umgebungen zu nutzen. Diese Verwendung von Cloud-Kombinationsumgebungen wird als Hybrid-Cloud-Modell bezeichnet. Der hybride Cloud-Ansatz kombiniert typischerweise private und öffentliche Clouds, die ihre Daten untereinander austauschen können. Die Möglichkeit, Anwendungen und Daten zwischen den privaten und öffentlichen Clouds zu teilen, macht das Unternehmen flexibler und bietet umfangreiche Entwicklungsmöglichkeiten. Zweifellos hilft dies bei der Maximierung Ihrer aktuellen Infrastruktur, insbesondere bei der Einhaltung von Vorschriften und der Sicherheit.
 
-### **2. Kosteneinsparungen**
+## Arten von Cloud-Diensten: 
 
-<br>
+Im Allgemeinen gibt es vier Arten von Cloud-Services. Diese Typen werden aufgrund ihrer konzipierten, aufeinander aufbauenden Struktur auch als Cloud Computing Stack bezeichnet. Wenn Sie Ihr Ziel mit Leichtigkeit erreichen wollen, müssen Sie diese vier Kategorien verstehen, insbesondere, wie und was sie sind:
 
-![](/images/annotation-2020-07-07-134349.webp)
+### 1. Infrastructure as a Service (IaaS): 
 
-<br>
+Iaas ist die rudimentärste Art des Cloud Computing. Wenn Sie sich für diesen Service entscheiden, mieten Sie IT-Infrastruktur. Ihre Mietinfrastruktur umfasst Speicher, Netzwerke, virtuelle Maschinen und Server sowie ein Betriebssystem. Dieser Infrastruktur-Service wird auf Basis eines Pay-as-you-go von einem Cloud-Computing-Anbieter bezogen.
 
-Zusammen mit dem oben genannten Punkt beinhaltet die Reduzierung der Ausfallzeiten Ihrer Dienste mehr Einnahmen und weniger Umsatzverluste und zählt somit ebenfalls zum Faktor Kosteneinsparung. Darüber hinaus können die großen Cloud-Unternehmen im Vergleich zu On-Premise-Umgebungen viel günstigere Hosting-Preise anbieten, da sie riesige Rechenzentren auf einmal verwalten und so ihre Kosten entsprechend der Masse der gekauften Waren reduzieren können. Oft mag es günstiger klingen, z.B. einen Server zu kaufen (\~1.200$), anstatt einen zu mieten (z.B. 1.200$ = 2$/h Mietpreis * 24 h = 25 Tage ROI), aber man muss bedenken, dass Komponenten ausfallen, was Ausfallzeiten, zusätzliche Ersatz- und Personalkosten, Stromverbrauch und so weiter verursacht. All diese Faktoren zusammengenommen machen es oft billiger, die Infrastruktur zu mieten, anstatt sie zu warten, ganz zu schweigen von den Einsparungen, die durch die Nutzung neuer Technologien wie Serverless möglich sind.
+### 2. Platform as a Service (PaaS): 
 
-<br>
+Wenn Sie eine Umgebung für das Testen, Entwickeln, Verwalten und Ausliefern verschiedener Softwareanwendungen wünschen, müssen Sie PaaS, einen Cloud-Computing-Service, in Anspruch nehmen. In der Tat hilft PaaS Entwicklern, mobile Apps oder verschiedene Webs einfach zu erstellen. Darüber hinaus erleichtert diese Plattform auch die Entwicklung von Apps ohne jegliche Infrastruktur der Datenbank, des Speichers und der für die Entwicklung erforderlichen Server.
 
-### **3. Eine neue Architektur / serverless**
+### 3. Serverless Computing: 
 
-<br>
+Serverless Computing geht über das PaaS hinaus und konzentriert sich auf die Entwicklung von Anwendungen, ohne die dafür benötigte Infrastruktur zu kontrollieren. Dieser Cloud-Service verwaltet das Server-Management, die Kapazitätsentwicklung und andere Einstellungen. Seine guten Eigenschaften sind seine Architekturen hoch skalierbar, die Ressourcen nur bei einer bestimmten Aktion verwenden.
 
-![](/images/serverless.webp)
+### 4. Software as a Service (SaaS): 
 
-<br>
+Es wird häufig von einem Unternehmen verwendet, um sich Software-Anwendungen zu nähern. Bei SaaS können Sie auf eine bestimmte Software-App zugreifen, die auf einem entfernten Server verwaltet wird. Tatsächlich wird sie auf Abonnementbasis genutzt. In dieser Hinsicht wird ein Webbrowser verwendet, um auf einen entfernten Server zuzugreifen, der von einem Drittanbieter gehostet wird.
 
-Natürlich wäre der einfachste Schritt, das Vor-Ort-System als Replikat in die Cloud zu überführen, aber der große Vorteil der Cloud sind ihre Dienste wie zum Beispiel serverless. Es hat eine Verlagerung im Infrastrukturmanagement stattgefunden, weg von dem Zwang, alles verwalten zu müssen, einschließlich Hardware-Reparaturen und so weiter, hin zu einer eher abstrakten Verwaltung genau der Programme, die ein Unternehmen benötigt. Nehmen wir ein datenwissenschaftliches Team als Beispiel. In der traditionellen Umgebung müssen sie die Hardware eines Computers einrichten, ein Betriebssystem installieren und warten, die neueste Version ihrer Programmiersprache installieren und warten und schließlich alles noch einmal machen, wenn etwas in ihrem System kaputt geht. Und das hat ihren Code, der für Ihr Unternehmen unerlässlich ist, nicht einmal berührt! Was wäre, wenn sie sich nur um ihren Code kümmern müssten und ihre Tools nach Belieben "ein-" und "ausschalten" könnten? Das ist im Wesentlichen das Ziel von Serverless. Ihr Team macht sich nur Sorgen um seinen Code, und alles andere wird im Hintergrund von einem Cloud-Provider erledigt.
+## Die Vorteile von Cloud Computing: 
 
-<br><br>
+Es ist nicht zu leugnen, dass Cloud Computing die traditionelle Art des Geschäftslebens in eine digitale On-Sign-Umgebung verwandelt hat. Es gibt eine Vielzahl von Vorteilen des Cloud Computing, aufgrund derer eine große Anzahl von Unternehmen Cloud Computing-Dienste in Anspruch nehmen. Auch Sie können diese mit zahlreichen Vorteilen gespickten Dienste in Anspruch nehmen, indem Sie unsere Website besuchen.
 
-### 4. Skalierung
+### 1. Kosten: 
 
-<br>
+Es entfallen die Betriebskosten Ihres Unternehmens, wie z.B. der Kauf von Software und Hardware. Außerdem entfallen für Sie die Investitionskosten für den Strom, die Rahmen der Server und die IT-Fachleute.
 
-![](/images/scaling.webp)
+### 2. Schnelligkeit: 
 
-<br>
+Die Computing-Services werden zügig bereitgestellt und machen das Unternehmen dadurch sehr flexibel. Daher kann ein Unternehmen, das solche Vorteile und Flexibilität hat, viele Dinge entlasten.
 
-Ein weiterer großer Vorteil ist die Skalierung. Nehmen wir den Schwarzen Freitag als Beispiel. Nehmen wir an, ein Online-Händler bearbeitet \~100 Bestellungen pro Tag. Deshalb kauft er eine Serverarchitektur, die \~200 Bestellungen pro Tag verarbeiten kann. Aber einmal im Jahr, am Schwarzen Freitag, gibt es 2000 Bestellungen pro Tag, wodurch sein System abstürzt und daher viele Bestellungen ausbleiben. Jetzt könnte er ein größeres System kaufen, um 3000 Bestellungen pro Tag abzuwickeln, aber das würde bedeuten, dass er an 364 Tagen im Jahr viel zu viel für seine Architektur bezahlt. Jetzt, wo er neue Technologien einsetzt, könnte er ein größeres System für einige Stunden bei einem Cloud-Provider mieten oder noch besser die automatische Skalierung nutzen. Denn in einigen Fällen kann die Nachfrage unvorhersehbar sein, wie z.B. ein viraler Post, der zu vielen Besuchern führt, oder etwas Ähnliches. Daher bieten neue Cloud-Technologien eine Möglichkeit der automatischen Skalierung, d.h. die Ressourcen können in einem Augenblick entsprechend der rechnerischen Nachfrage skaliert werden.
+### 3. Skalierung: 
 
-<br><br>
+Die Skalierung ist ein großer Vorteil von Cloud Computing. Cloud Computing mit neuen Technologien bietet eine Möglichkeit der automatischen und digitalisierten Skalierung.
+
+### 4. Sicherheit: 
+
+Es ist sicherer als viele On-Premise-Systeme. Viele On-Premise-Systemumgebungen werden einmal eingerichtet und nie wieder besucht, was verschiedene Sicherheitsrisiken mit sich bringt. Auf der anderen Seite halten die Cloud-Computing-Dienstleister das Serverless-Computing-System ständig auf dem neuesten Stand.
+Außerdem gibt es viele andere Vorteile wie Zuverlässigkeit, unvergleichliche Leistung und effiziente Produktivität, die Sie mit unvergleichlichen Diensten des Cloud Computing erhalten können.
+
+## Verwendungen von Cloud Computing:
+
+Cloud Computing wird für seine Wettbewerbsfähigkeit durch deutliche und eklatante Kostenreduzierung, optimale Ressourcennutzung, verlockende Flexibilität und natürlich seine Elastizität angesehen und bewundert. Nachfolgend finden Sie die effizienten Einsatzmöglichkeiten von Cloud Computing, die die Fähigkeiten zur Erreichung Ihrer Geschäftsziele verbessern.
+
+1. Man kann eine Cloud-native Anwendung entwickeln. Er oder sie kann diese Anwendung für Mobile, Web und API nutzen und dabei die Vorteile von Cloud-nativen Ansätzen nutzen.
+
+2. Die Test- und Entwicklungsumgebung ist ebenfalls eine der Nutzungsmöglichkeiten einer Cloud. Dies umfasst die Einsparung von On-Premise, die Reduzierung eines Budgetvolumens und die Schaffung einer Umgebung für Ihr Unternehmen durch die wichtigen Arbeitskräfte, physische Vermögenswerte und wertvolle Zeit.
+
+3. Big-Data-Analytik ist für die Nutzung von Cloud Computing von Bedeutung, wobei man riesige Mengen von sowohl strukturierten als auch unstrukturierten Daten verwalten kann. Dies kann genutzt werden, um den Vorteil des Herausziehens von Geschäftswert zu nutzen.
+
+4. Ein weiterer Vorteil von Cloud Computing ist die Kosteneffizienz in Bezug auf eine Disaster-Recovery-Lösung. Dies ermöglicht eine schnelle Wiederherstellung im Vergleich zu vernetzten physischen Standorten, insbesondere bei geringeren Kosten.
+
+Zusätzlich zu diesen besprochenen Verwendungszwecken gibt es noch einige weitere gängige Verwendungszwecke wie Cloud-Speicher, Datensicherung, hybride und mehrfarbige, Audio- und Video-Streaming, eingebettete Intelligenz, etc.
+
+# Fazit zum Cloud Computing:
+
+Bevor es Cloud-Service-Provider gab, sahen sich Unternehmen mit verschiedenen Problemen konfrontiert und mussten harte Geräte wie Server und Laufwerke für die Speicherung von Daten und Software verwenden. Aber das Cloud Computing hat die schwerfällige traditionelle Infrastruktur vor Ort in ein digitales Rechensystem verwandelt, das das Internet nutzt. Heute können sich Unternehmen schnell anpassen und skalieren und ihr Geschäft mit beschleunigter Innovation vorantreiben. Darüber hinaus ist es für Unternehmen sehr bequem geworden, ihre Abläufe effizient und kostengünstig zu gestalten, wodurch geringere Kosten entstehen. Wenn Sie diese hervorragenden Dienste in Anspruch nehmen möchten, können Sie unsere [Website](https://www.datafortress.cloud/contact/) besuchen, um alle notwendigen Cloud-Computing-Dienste zu erhalten. Wir sind sicher, dass Sie durch die Nutzung der unschätzbaren Dienste von Cloud Computing eine Menge Vorteile für Ihr Unternehmen erzielen werden.
 
 
-
-### 5. Sicherheit
-
-<br>
-
-![](/images/security.webp)
-
-<br>
-
-Auch wenn viele Menschen von vielen potenziellen Cloudnlecks hören, ist die Cloud alles in allem fast immer sicherer als eine Vor-Ort-Umgebung. Viele Vor-Ort-Systeme werden einmal eingerichtet, aber nie wieder aktualisiert oder überprüft, was Raum für viele potenzielle Sicherheitsbedrohungen lässt. Viele Cloud-Dienste hingegen werden ständig im Hintergrund aktualisiert, insbesondere wenn Sie eine serverlesse Architektur verwenden. Natürlich bietet die Cloud neue potenzielle Sicherheitslecks, wie z.B. das Offenlassen des Zugangs zu einem IP-Bereich außerhalb Ihres Unternehmens, aber sobald Sie wissen, was Sie tun und was Sie beachten sollten, ist die Cloud insgesamt sicherer.
-
-<br><br>
-
-**Nun, dies war nur ein kurzer Einblick in dieses riesige Thema der Cloud, und natürlich ist die Situation für jedes Unternehmen anders. Umso wichtiger ist es, mit einem Team zusammenzuarbeiten, das sich bereits durch viele potenzielle Sprungbretter gekämpft hat, um sich auf dem Weg zur Cloud Ärger und Geld zu sparen. Zögern Sie nicht, uns jederzeit zu kontaktieren und einen kostenlosen 15-minütigen Anruf zu erhalten, um Ihre offenen Fragen zu besprechen.**
 
 ### Unsere Cloud-Dienste:
 
