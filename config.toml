@@ -139,7 +139,7 @@ logo_white = "images/logo.webp"
 mail = "info@datafortress.cloud"
 mailchimp_form_action = "https://cloud.us19.list-manage.com/subscribe/post?u=29b9af4020a7ab7d1e6a76d72&amp;id=3622b2a9a6"
 mailchimp_form_name = "mc-embedded-subscribe-form"
-mobile = "+43 677 61178288"
+mobile = "+49 152 24556134"
 [params.gmap]
 enable = false
 gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
@@ -203,7 +203,7 @@ contact_item = "<a id='vcfAdd' href='/files/vcard_datafortress.vcf' download>Add
 [[params.contacts]]
 icon = "ti-mobile"
 [[params.contacts.contact]]
-contact_item = "<a id='contactPageCallATClick' href='callto:004367761178288'>+43 677 61178288</a>"
+contact_item = "<a id='contactPageCallATClick' href='callto:004367761178288'>+49 152 24556134</a>"
 [[params.contacts.contact]]
 contact_item = "<a id='contactPageCallUSClick' href='callto:+14132965682‬'>+1(413)296-5682‬</a>"
 [[params.contacts]]
