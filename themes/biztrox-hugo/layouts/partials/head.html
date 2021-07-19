@@ -12,7 +12,7 @@
 
     {{ "<!-- critical css plugins -->" | safeHTML }}
     {{ range .Site.Params.plugins.csscrit }}
-    <link rel="preload" href="{{ .URL | absURL }} "> <!--   media="print" onload="this.media='all'" -->
+    <link rel="stylesheet" href="{{ .URL | absURL }} "> <!--   media="print" onload="this.media='all'" -->
     {{ end }}
 
     <!-- Google Tag Manager -->
