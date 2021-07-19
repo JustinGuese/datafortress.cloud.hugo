@@ -151,14 +151,14 @@ enable = true
 link = "contact"
 [[params.plugins.csscrit]]
 URL = "plugins/bootstrap/bootstrap.min.css" # critical
+[[params.plugins.csscrit]]
+URL = "plugins/themify-icons/themify-icons.css" # preload
 [[params.plugins.css]]
 URL = "plugins/magnific-popup/magnific-popup.css" # defer
 [[params.plugins.csscrit]]
 URL = "plugins/slick/slick-min.css" # critical
 [[params.plugins.css]]
 URL = "plugins/slick/slick-theme-min.css" # defer
-[[params.plugins.css]]
-URL = "plugins/themify-icons/themify-icons.css" # defer
 [[params.plugins.css]]
 URL = "plugins/animate/animate.css" # defer
 [[params.plugins.js]]
