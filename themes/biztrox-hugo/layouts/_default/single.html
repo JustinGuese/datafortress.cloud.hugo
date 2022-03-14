@@ -21,6 +21,13 @@
               </li>
             </ul>
             <div class="post-content">
+              {{ if .Params.podcastfile }}
+              <audio controls>
+                <source src="{{ .Params.podcastfile | absURL }}" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+              {{ end }}
+              
               {{ .Content }}
             </div>
           </div>
