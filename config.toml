@@ -1,4 +1,4 @@
-baseURL = "https://www.datafortress.cloud/"
+baseURL = "https://datafortress.cloud/"
 disableLanguages = []
 disqusShortname = "datafortess-cloud"
 paginate = "6"
