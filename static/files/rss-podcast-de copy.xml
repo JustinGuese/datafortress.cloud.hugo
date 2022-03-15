@@ -1,0 +1,51 @@
+<rss version="2.0">
+      <channel>
+          <title>
+              DataFortress.cloud Tech News DE
+          </title>
+          <description>
+              Aktuellen Nachrichten aus der deutschsprachigen Tech Szene
+          </description>
+          <link>
+              https://www.datafortress.cloud/de/
+          </link>
+          <lastBuildDate>
+              Tue, 02 Aug 2005 08:42:43 +0100
+          </lastBuildDate>
+          <generator>
+              datafortress.cloud generator
+          </generator>
+          <image>
+              <url>           https://datafortress.cloud/files/podcast/blockchain-daily-cover.png
+              </url>
+              <title>
+                  podcast Logo
+              </title>
+              <link>
+              http://www.datafortress.cloud/de/blog
+              </link>
+              <description>
+                  Hier erfahren Sie alles zum Thema Technologie und Zukunft
+              </description>
+          </image>
+          <language>
+              de-de
+          </language>
+          <copyright>
+              CC datafortress.cloud 2022
+          </copyright>
+          <managingEditor>
+              info@datafortress.cloud (Justin Güse)
+          </managingEditor>
+          <webMaster>
+              info@datafortress.cloud (Justin Güse)
+          </webMaster>
+          <category>
+              News
+          </category>
+          <ttl>
+              1800
+          </ttl>
+          
+      </channel>
+</rss>

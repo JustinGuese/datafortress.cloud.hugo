@@ -1,0 +1,177 @@
+<rss version="2.0">
+      <channel>
+          <title>
+              DataFortress.cloud Tech News DE
+          </title>
+          <description>
+              Aktuellen Nachrichten aus der deutschsprachigen Tech Szene
+          </description>
+          <link>
+              https://www.datafortress.cloud/de/
+          </link>
+          <lastBuildDate>Tue, 15 Mar 2022 09:14:05 +0100</lastBuildDate>
+          <generator>
+              datafortress.cloud generator
+          </generator>
+          <image>
+              <url>           https://datafortress.cloud/files/podcast/blockchain-daily-cover.png
+              </url>
+              <title>
+                  podcast Logo
+              </title>
+              <link>
+              http://www.datafortress.cloud/de/blog
+              </link>
+              <description>
+                  Hier erfahren Sie alles zum Thema Technologie und Zukunft
+              </description>
+          </image>
+          <language>
+              de-de
+          </language>
+          <copyright>
+              CC datafortress.cloud 2022
+          </copyright>
+          <managingEditor>
+              info@datafortress.cloud (Justin Güse)
+          </managingEditor>
+          <webMaster>
+              info@datafortress.cloud (Justin Güse)
+          </webMaster>
+          <category>
+              News
+          </category>
+          <ttl>
+              1800
+          </ttl>
+<item>
+              <title>
+                  Crypto Update NEWS 2022-03-11
+              </title>
+              <link>
+                https://datafortress.cloud/blog/Crypto Update NEWS 2022-03-11
+              </link>
+              <description>
+                 Crypto Update NEWS 2022-03-11 - Themen: decentralized, crypto, nft
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <enclosure url="https://datafortress.cloud/podcastfile = 'podcast/de-DE/12482.mp3'"  
+                  type="audio/mpeg"
+              />
+          </item>
+<item>
+              <title>
+                  Tech NEWS 2022-03-14
+              </title>
+              <link>
+                https://datafortress.cloud/blog/Tech NEWS 2022-03-14
+              </link>
+              <description>
+                 Tech NEWS 2022-03-14 - Themen: fusion, macbook, m2
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <enclosure url="https://datafortress.cloud/podcastfile = 'podcast/de-DE/12531.mp3'"  
+                  type="audio/mpeg"
+              />
+          </item>
+<item>
+              <title>
+                  Crypto Update NEWS 2022-03-14
+              </title>
+              <link>
+                https://datafortress.cloud/blog/Crypto Update NEWS 2022-03-14
+              </link>
+              <description>
+                 Crypto Update NEWS 2022-03-14 - Themen: ethereum, web3.js, (4
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <enclosure url="https://datafortress.cloud/podcastfile = 'podcast/de-DE/12538.mp3'"  
+                  type="audio/mpeg"
+              />
+          </item>
+<item>
+              <title>
+                  Crypto Update NEWS 2022-03-11
+              </title>
+              <link>
+                https://datafortress.cloud/blog/Crypto Update NEWS 2022-03-11
+              </link>
+              <description>
+                 Crypto Update NEWS 2022-03-11 - Themen: decentralized, crypto, nft
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <enclosure url="https://datafortress.cloud/podcastfile = 'podcast/de-DE/12482.mp3'"  
+                  type="audio/mpeg"
+              />
+          </item>
+<item>
+              <title>
+                  Tech NEWS 2022-03-14
+              </title>
+              <link>
+                https://datafortress.cloud/blog/Tech NEWS 2022-03-14
+              </link>
+              <description>
+                 Tech NEWS 2022-03-14 - Themen: fusion, macbook, m2
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <enclosure url="https://datafortress.cloud/podcastfile = 'podcast/de-DE/12531.mp3'"  
+                  type="audio/mpeg"
+              />
+          </item>
+<item>
+              <title>
+                  Crypto Update NEWS 2022-03-14
+              </title>
+              <link>
+                https://datafortress.cloud/blog/Crypto Update NEWS 2022-03-14
+              </link>
+              <description>
+                 Crypto Update NEWS 2022-03-14 - Themen: ethereum, web3.js, (4
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <enclosure url="https://datafortress.cloud/podcastfile = 'podcast/de-DE/12538.mp3'"  
+                  type="audio/mpeg"
+              />
+          </item>
+<item>
+              <title>
+                  Crypto Update NEWS 2022-03-14
+              </title>
+              <link>
+                https://datafortress.cloud/blog/Crypto Update NEWS 2022-03-14
+              </link>
+              <description>
+                 Crypto Update NEWS 2022-03-14 - Themen: ethereum, web3.js, (4
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <enclosure url="https://datafortress.cloud/podcastfile = 'podcast/de-DE/12538.mp3'"  
+                  type="audio/mpeg"
+              />
+          </item>
+<item>
+              <title>
+                  Crypto Update NEWS 2022-03-14
+              </title>
+              <link>
+                https://datafortress.cloud/blog/Crypto Update NEWS 2022-03-14
+              </link>
+              <description>
+                 Crypto Update NEWS 2022-03-14 - Themen: ethereum, web3.js, (4
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <enclosure url="https://datafortress.cloud/podcastfile = 'podcast/de-DE/12538.mp3'"  
+                  type="audio/mpeg"
+              />
+          </item>
+          
+      </channel>
+</rss>
