@@ -2,50 +2,46 @@
 slider:
   enable: true
   slider_Item:
-  - bg_image: "/images/light-bulb-on-white-panel-1166643-min.webp"
+  - bg_image: "/images/homepage/pexels-pixabay-531767.webp"
     animation_from: left
-    subtitle: Wir sprechen
-    title: Innovation
-    content: Wir verfügen über einen breit gefächerten technischen Hintergrund und verbessern ständig unseren Tech-Stack.
-    pagination_icon: ti-light-bulb
-    pagination_name: Innovation
+    subtitle: Public and Private
+    title: Cloud & Kubernetes
+    content: Profitieren Sie von automatischer Skalierung, mehreren Rechenzentren und hohen Geschwindigkeiten
+    pagination_icon: ti-cloud
+    pagination_name: Cloud
     button:
       enable: true
       label: Mehr...
       link: about
-  - bg_image: "/images/person-in-white-long-sleeve-shirt-holding-tablet-computer-3740250-min.webp"
+  - bg_image: "/images/homepage/pexels-artem-podrez-6779567.webp"
     animation_from: up
-    subtitle: Datengetriebenes
-    title: Business Consulting
-    content: |-
-      Aufgrund unseres Datenhintergrunds testen und verbessern wir unsere Vorgehensweise <br/> ständig anhand von Daten, was uns zu einem perfekten datengesteuerten Beratungspartner für Ihr Unternehmen macht.
-    pagination_icon: ti-comments
-    pagination_name: Consulting
+    subtitle: regelkonform und effizient
+    title: Data Engineering
+    content: Nutzen Sie Ihre Daten und steigern Sie Ihren Gewinn
+    pagination_icon: ti-harddrives
+    pagination_name: Data Engineering
     button:
       enable: true
       label: Mehr...
       link: about
-  - bg_image: "/images/white-ceramic-mug-beside-spiral-notebook-and-laptop-3773413-min.webp"
+  - bg_image: "/images/homepage/pexels-tara-winstead-8386358.webp"
     animation_from: down
-    subtitle: Konzentrieren Sie Ihre Anstrengungen auf ihr
-    title: Kern-Business
-    content: Und lassen Sie uns das Projektmanagement, die Ausführung und die Qualitätssicherung übernehmen.
-    pagination_icon: ti-crown
-    pagination_name: Eine helfende Hand
+    subtitle: Skalierbares und mächtiges
+    title: Machine Learning
+    content: Überlassen Sie es den Machine- und Deeplearning-Modellen, sich um Ihre Daten zu kümmern und neue Möglichkeiten zu entdecken.
+    pagination_icon: ti-bar-chart
+    pagination_name: Machine Learning
     button:
       enable: true
       label: Mehr...
       link: about
-  - bg_image: "/images/black-drone-916015-min.webp"
+  - bg_image: "/images/homepage/pexels-ivan-babydov-7788004.webp"
     animation_from: right
-    subtitle: Wir sind Ihr Partner für
-    title: Cloud, Big-Data, AI
-    content: |-
-      Wir glauben an QUALITÄT <br>
-      Wir glauben an AGILITÄT<br>
-      Wir glauben an TECHNOLOGIE<br>
-    pagination_icon: ti-cloud-up
-    pagination_name: Cloud, Big-Data & AI
+    subtitle: Wir sind ihr Partner für
+    title: DeFi und Crypto
+    content: Egal ob DeFi Gaming oder die Zukunft der Finanzen. Wir sind Ihr Partner für die Zukunft.
+    pagination_icon: ti-wallet
+    pagination_name: Web3
     button:
       enable: true
       label: Mehr...
@@ -55,104 +51,95 @@ service:
 about:
   enable: true
   bg_image: images/background/about-bg.webp
-  title: Über uns
-  content:
-    Wir glauben, dass unsere Strategie die Arbeitsweise der Agenturen revolutionieren wird, und zusammen mit den neuesten Geschäftsstrategien und unseren skalierbaren Ressourcen können wir jedes Projekt, das Ihnen vorschwebt, umsetzen.
+  title: About us
+  content: |-
+    Wir lieben die Verbindung von Daten und Cloud. Viele Unternehmen machen keinen Gebrauch von ihren Daten, obwohl sich hier enorme neue Möglichkeiten verbergen.
+    Um diese riesigen Datenmengen zu verarbeiten, ist eine stabile öffentliche Cloud oder Kubernetes erforderlich, um die verteilte Verarbeitung und die automatische Skalierung zu nutzen. 
     <br/><br/>
     **Was wir tun?**
-    <br/><br/>Besuchen Sie unsere Fallstudien, um eine Übersicht unseres Portfolios zu sehen, oder kontaktieren Sie uns direkt für eine kostenlose 15-minütige Beratung.
-
-
-
+    <br/><br/>
+    Besuchen Sie unsere Case Studies, um unser Portfolio zu sehen, oder [kontaktieren Sie uns](/contact) gleich für eine kostenlose 15-minütige Beratung.
   bullet_point:
-  - Business Consulting
-  - Cloud Lösungen
-  - IT Security Audits
-  - Big Data
-  - VR & AR
-  - AI & Machine Learning
+  - Cloud
+  - Kubernetes
+  - Data Engineering
+  - Machine Learning
+  - Webhosting
+  - SAAS products
+  - DeFi
   button:
     enable: true
-    label: Erfahren Sie mehr
+    label: Mehr erfahren
     link: about
 skill:
   enable: true
   subtitle: Unsere Skills
-  title: Einige Gründe für die Zusammenarbeit
+  title: Einige Gründe zusammen zu arbeiten
   content: |-
-    **Wir glauben an Qualität**
+    **Wir glauben an die Qualität**
 
-    Nur die beste Qualität schafft eine vertrauensvolle Beziehung und entwickelt eine langfristige Zusammenarbeit.
+    Nur die beste Qualität schafft ein Vertrauensverhältnis und entwickelt eine langfristige Zusammenarbeit.
 
-    **Wir glauben an AGILITÄT**
+    **Wir glauben an Schnelligkeit**
 
-    Wir verwenden eine Strategie namens Rapid Prototyping, die mehrere Meilensteine während unserer Entwicklung wiederholt und Ihnen präsentiert, um sowohl Ideen zu testen als auch ein Endprodukt zu vermeiden, das nicht Ihren Anforderungen entspricht.
+    Wir verwenden eine Strategie, die sich "Rapid Prototyping" nennt. Dabei werden mehrere Meilensteine während der Entwicklung durchlaufen, um sowohl Ideen zu testen als auch ein Endprodukt zu vermeiden, das nicht Ihren Anforderungen entspricht.
 
-    **Wir glauben an TECHNOLOGIE**
+    **Wir glauben an die Technologie**
 
-    Um unsere Aufgabe zu erfüllen und die am besten passende Beratung zu bieten, sind wir ständig auf der Suche nach der neuesten Technologie und wenden diese an, um in der Branche führend zu bleiben.
-
-
+    Um unsere Aufgabe zu erfüllen und die bestmögliche Beratung zu bieten, sind wir ständig auf der Suche nach den neuesten Technologien, um in der Branche führend zu bleiben.
   funfacts:
   - icon: ti-server
-    title: Projekte vollendet
+    title: Projekte abgeschlossen
     count: "230"
   - icon: ti-face-smile
     title: Zufriedene Kunden
     count: "73"
   - icon: ti-thumb-up
-    title: Programme geschrieben
+    title: Github Repos
     count: "1582"
   progressbar:
   - title: Cloud
     progress: 100%
-  - title: Consulting
+  - title: Data Engineering
     progress: 100%
   - title: AI / Machine Learning
     progress: 100%
-  - title: Virtual and Augmented Reality
+  - title: DeFi & Web3
     progress: 100%
 project:
   enable: true
 mission:
   enable: true
-  subtitle: Konzentrieren Sie ihre Anstregungen darauf
-  title: wo ihr Unternehmen es benötigt.
+  subtitle: Setzen Sie Ihre Bemühungen dort ein
+  title: wo es wirklich wichtig ist.
   content: |-
-    Während meiner früheren Tätigkeit bei der Porsche Holding und als Selbständiger habe ich festgestellt, dass viele Agenturen und Beratungsunternehmen einerseits nicht das am besten passende Produkt für ihre Kunden anbieten und andererseits nicht eng mit dem Kunden zusammenarbeiten.
-
-    Meiner Meinung nach kann eine perfekte Lösung nur dann erreicht werden, wenn die Agentur sowohl beratend als auch produzierend tätig ist und ständig mit dem Kunden durch "Prototyp-Iterationen" zusammenarbeitet, d.h. es wird nicht ein Endprodukt geben, sondern ein ständiger "Dialog" mit dem Kunden, der mehrere kleinere Prototypen auf dem Weg zum Endprodukt anbietet.
-
+    Sie sollten sich keine Gedanken über die Geschwindigkeit Ihrer Server oder die Begrenzung der Ressourcen machen müssen. Konzentrieren Sie sich auf das, was Ihr Unternehmen braucht, und überlassen Sie uns die Handhabung der Technologie.
+    Wir sind Experten für das Hosting von Daten und Anwendungen gemäß den EU- und deutschen Vorschriften und können Bereitstellungen problemlos skalieren, indem wir entweder die öffentliche Cloud wie AWS oder ein privates Rechenzentrum mit Kubernetes nutzen.
   image: "/images/service/benifit.webp"
   accordion:
-  - title: Unternehmensberatung
-    description: Aufgrund unseres Datenhintergrunds testen und verbessern wir unser Geschäft ständig anhand von Zahlen, was uns zu einem perfekten datengesteuerten Beratungspartner für Ihr Unternehmen macht.
-  - title: Schnelle Lösungen
-    description: In Zeiten wie diesen ist Schnelligkeit ein wichtiger Faktor, den wir in unser Geschäft integriert haben. Wir setzen Automatisierung und Skalierung ein, um schnelle und präzise Lösungen liefern zu können.
-  - title: Innovation
-    description: Wir verfügen über einen breit gefächerten technischen Hintergrund und lernen und verbessern ständig unseren Tech-Stack.
-promo_video:
-  enable: true
-  title: We Are Alawys <br> Comited
-  bg_image: images/background/promo-video.webp
-  video_URL: static/files/introvideo.mp4
-  video_title: Lorem ipsum dolor <br> sit amet con.
+  - title: Autoscaling
+    description: Durch den Einsatz neuester Technologien sind wir in der Lage, Ihre Anwendungen je nach Bedarf zu skalieren. Warum ist das wichtig? Denken Sie an den Schwarzen Freitag. Einmal im Jahr ist der Verkehr auf den Shopping-Seiten so groß, dass normale Websites leicht zusammenbrechen können. Aber an den anderen Tagen ist der Verkehr gering. Wenn Sie nun einen riesigen Server kaufen würden, um den Datenverkehr am schwarzen Freitag zu bewältigen, würde er die restliche Zeit im Leerlauf laufen und Sie viel Geld kosten. Wäre es nicht schön, wenn er sich einfach an die Nachfrage anpassen würde? Das ist die Aufgabe der Autoskalierung.
+  - title: EU & Deutschland konformes Hosting
+    description: Amerikanische Unternehmen können nach dem Patriot Act gezwungen werden, auf Ihre Daten zuzugreifen. Darüber hinaus verpflichtet die neue DSGVO jedes europäische Unternehmen, sensible Daten in Europa statt in Amerika zu hosten. Abgesehen von den Imageproblemen und den intellektuellen Verlusten, die ein solcher Verlust mit sich bringen würde, kann das europäische Gesetz Geldstrafen von bis zu 4 % des Jahresumsatzes eines Unternehmens verhängen, wenn gegen bestimmte Vorschriften verstoßen wird. Handeln Sie jetzt und hosten Sie Ihre Daten auf sichere und gesetzeskonforme Weise.
+  - title: Ihre Daten nutzen
+    description: Verfügen Sie über Unmengen von Daten, wissen aber nicht, wie Sie diese nutzen können? Wir können Ihnen dabei helfen. Wir verfügen über umfassende Kenntnisse in den Bereichen Data Engineering und Analytik und können mithilfe von Modellen für maschinelles Lernen und verteiltem Computing Terabytes an Daten durchforsten. Schließen Sie sich den großen Unternehmen an und entdecken Sie neue Märkte, Kunden und versteckte Geheimnisse in Ihren Daten.
 testimonial:
   enable: true
-  subtitle: Kundenmeinungen
+  subtitle: Kunden
   title: Was unsere Kunden sagen
   image: images/client.webp
   testimonial_item:
-  - name: Markus
-    content: Ich arbeitete mit Justin für 8 Monate im Produktinnovationsprojekt zusammen, er ist ein authentische Person mit großartigen Ideen. Es war immer leicht, mit ihm zu arbeiten, gibt er und erhält sehr gute Kritiken, er hatte eine große Affinität zu jedem im Team, was es immer besser und produktiver macht, mit ihnen zu arbeiten. Als unser IT-Mann könnte er alle Probleme lösen, auch wenn er mehr arbeiten musste als erwartet. Wir haben die Gemeinsame Abschlussgala, es war mir ein Vergnügen, diese Präsentation zu halten und mit ihm zusammenarbeiten. Ich würde ihn für jede Arbeit oder Partnerschaft empfehlen.
+  - name: James
+    content: Justin could not have been a better hire! Not only did he drastically improve our backend architecture and nearly eliminate our tech-debt, he also taught us a great deal and pushed our company forward in the right direction. Justin is an expert architect who deeply understands how backend systems should be designed and is able to eloquently explain these concepts to members of the team who are less experienced. When things break, he is available to troubleshoot. When education is requested, he provides in-depth documentation, recorded videos, and one-on-one sessions to ensure that the concepts are understood by all and that tasks can be replicated without his assistance. He helped our team immensely and I whole-heartedly recommend him to any other team who is need of a highly proficient technical consultant -- whether your needs are from the architect and consulting side, the technical development side, or some combination of the two, Justin is your guy.
     designation: Happy Clients
   - name: Lazaar
-    content: Sehr professionell. Wir empfehlen Ihnen dringend, ihn auszuwählen, wenn Sie ein qualitativ hochwertiges Produkt wünschen.
+    content: Very professional. Strongly recommend you select him if you want a high-quality
+      product.
     designation: Happy Clients
 cta:
   enable: true
   bg_image: images/background/cta.webp
-  title: DataFortress.cloud ist ihr Partner für technisch hochwertige, skalierbare Lösungen.
+  title: DataFortress.cloud ist ihr Partner für hochqualitative, high-tech Produkte.
   button:
     enable: true
     label: Kontakt

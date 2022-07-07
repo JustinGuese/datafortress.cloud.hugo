@@ -2,52 +2,46 @@
 slider:
   enable: true
   slider_Item:
-  - bg_image: "/images/light-bulb-on-white-panel-1166643-min.webp"
+  - bg_image: "/images/homepage/pexels-pixabay-531767.webp"
     animation_from: left
-    subtitle: We speak
-    title: Innovation
-    content: We have a broad technical background and are constantly learning and
-      improving our tech-stack.
-    pagination_icon: ti-light-bulb
-    pagination_name: Innovation
+    subtitle: Public and Private
+    title: Cloud & Kubernetes
+    content: Profit from autoscaling, multiple data centers and fast speeds
+    pagination_icon: ti-cloud
+    pagination_name: Cloud
     button:
       enable: true
       label: More details
       link: about
-  - bg_image: "/images/person-in-white-long-sleeve-shirt-holding-tablet-computer-3740250-min.webp"
+  - bg_image: "/images/homepage/pexels-artem-podrez-6779567.webp"
     animation_from: up
-    subtitle: Data Driven
-    title: Business Consulting
-    content: |-
-      Due to our data-background, we are constantly testing and improving our business <br>
-      based on numbers, which makes us a perfect data-driven consulting partner for your business.
-    pagination_icon: ti-comments
-    pagination_name: Consulting
+    subtitle: compliant and efficient
+    title: Data Engineering
+    content: Use your data and increase your profits
+    pagination_icon: ti-harddrives
+    pagination_name: Data Engineering
     button:
       enable: true
       label: More details
       link: about
-  - bg_image: "/images/white-ceramic-mug-beside-spiral-notebook-and-laptop-3773413-min.webp"
+  - bg_image: "/images/homepage/pexels-tara-winstead-8386358.webp"
     animation_from: down
-    subtitle: Put your effort into your
-    title: CORE BUSINESS
-    content: And let us take care of project management, execution, and quality assurance.
-    pagination_icon: ti-crown
-    pagination_name: A Helping Hand
+    subtitle: Scalable and powerful
+    title: Machine Learning
+    content: Let Machine- and Deeplearning models take care of your data and discover new opportunities.
+    pagination_icon: ti-bar-chart
+    pagination_name: Machine Learning
     button:
       enable: true
       label: More details
       link: about
-  - bg_image: "/images/black-drone-916015-min.webp"
+  - bg_image: "/images/homepage/pexels-ivan-babydov-7788004.webp"
     animation_from: right
     subtitle: We are your partner for
-    title: Cloud, Big-Data, AI
-    content: |-
-      We believe in QUALITY <br>
-      We believe in SPEED<br>
-      We believe in TECHNOLOGY<br>
-    pagination_icon: ti-cloud-up
-    pagination_name: Cloud, Big-Data & AI
+    title: DeFi and Crypto
+    content: No matter if DeFi Gaming or the future of finance. We are your partner for the future.
+    pagination_icon: ti-wallet
+    pagination_name: Web3
     button:
       enable: true
       label: More details
@@ -58,19 +52,21 @@ about:
   enable: true
   bg_image: images/background/about-bg.webp
   title: About us
-  content:
-    We believe, that our strategy will revolutionize the way agencies work, and together with the newest business strategies and our scalable resources, we can match any project that you might have in mind.
+  content: |-
+    We love the union of Data and Cloud. Many companies do not make use of their data, even though enormous new opportunities are hiding in plain sight.
+    To process these huge amounts of data, a stable public cloud or Kubernetes is required, to make use of distributed processing and autoscaling. 
     <br/><br/>
     **What We Do ?**
     <br/><br/>
     Head over to our Case Studies to find our portfolio, or [contact us](/contact) right away for a free 15-minute consultation.
   bullet_point:
-  - Business Consulting
-  - Cloud Solutions
-  - IT Security Audits
-  - Big Data
-  - VR & AR
-  - AI & Machine Learning
+  - Cloud
+  - Kubernetes
+  - Data Engineering
+  - Machine Learning
+  - Webhosting
+  - SAAS products
+  - DeFi
   button:
     enable: true
     label: Explore More
@@ -84,11 +80,9 @@ skill:
 
     Only the best quality establishes a trust-based relationship and develops long-term cooperation.
 
-
     **We believe in Speed**
 
     We utilize a strategy called rapid prototyping, which iterates and presents you with several milestones during our development, to both test ideas, and avoid a final product that does not fit your requirements.
-
 
     **We Believe in Technology**
 
@@ -106,11 +100,11 @@ skill:
   progressbar:
   - title: Cloud
     progress: 100%
-  - title: Consulting
+  - title: Data Engineering
     progress: 100%
   - title: AI / Machine Learning
     progress: 100%
-  - title: Virtual and Augmented Reality
+  - title: DeFi & Web3
     progress: 100%
 project:
   enable: true
@@ -119,22 +113,16 @@ mission:
   subtitle: Put your effort
   title: Exactly where your business needs it.
   content: |-
-    Whilst working at Porsche Holding and being self-employed before, I discovered that many agencies and consulting agencies, on the one hand, do not offer the best fitting product for their customers, and on the other are not closely cooperating with the customer.
-
-    In my opinion, a perfect solution can only be achieved if the agency both works on the consulting and producing side of the business, and constantly cooperates with the client through “prototype iterations”, meaning that there will not be one final product, but rather a constant “dialogue” with the client offering several smaller prototypes on the way to the final product.
+    You should not have to worry about speed of your servers, or resource limits. Focus your attention on where your business needs it, and leave the handling of technology to us.
+    We are experts in Hosting of Data and Applications according to EU and German regulations, and can scale deployments easily using either the public cloud like AWS, or a private Datacenter which runs Kubernetes.
   image: "/images/service/benifit.webp"
   accordion:
-  - title: Business Consulting
-    description: Due to our data-background, we are constantly testing and improving
-      our business based on numbers, which makes us a perfect data-driven consulting
-      partner for your business.
-  - title: Fast Solutions
-    description: In times like these, speed is an important factor that we incorporated
-      into our business. We utilize automatization and scaling to be able to deliver
-      quick and precise solutions.
-  - title: Innovation
-    description: We have a broad technical background and are constantly learning
-      and improving our tech-stack.
+  - title: Autoscaling
+    description: Utilizing the newest technology, we are able to make your applications scalable according to demand. Why is this important? Think of Black Friday. Once a year the traffic to shopping sites is huge, and will crash normal websites easily. But on the other days traffic is low. Now if you would buy a huge server to handle the Black Friday traffic, it will idle the rest of the time and cost you a lot of money. Wouldn't it be nice if it just adapts to demand? This is what autoscaling does.
+  - title: EU & Germany compliant Hosting
+    description: American companies can be forced to access your data, according to the Patriot act. Besides that the new DSGVO regulations require every European company to host sensitive data in Europe instead of America. Apart from image problems and intellectual losses such a loss would entail, the European law can fine up to 4% of the comapany's yearly revenue if some regulations are violated. Act now and host your data in a secure and compliant way.
+  - title: Using your data
+    description: Are you sitting on tons of data but do not know how to use it? We can help you with that. We have extensive knowledge in Data Engineering and Analytics, and can churn through Terabytes of data using Machine Learning models and Distributed computing. Join the big companies and discover new markets, customers and hidden secrets in your data.
 promo_video:
   enable: false
   title: We Are Alawys <br> Comited
@@ -147,14 +135,8 @@ testimonial:
   title: What our Clients say
   image: images/client.webp
   testimonial_item:
-  - name: Markus
-    content: Worked with Justin for 8 moths in Product Innovation Project, he is a
-      authentic person with great ideas. It was aways easy to work with him, he gives
-      and receives reviews very well, he had a great affinity to everyone in the team,
-      what makes aways better and more productive to work with. As our IT guy he could
-      solve all the problems, even if he had to work more then expect. We did the
-      Final Gala presentation together, it was a pleasure to do this presentation
-      and work with him. I would recommend him for any job or partnership.
+  - name: James
+    content: Justin could not have been a better hire! Not only did he drastically improve our backend architecture and nearly eliminate our tech-debt, he also taught us a great deal and pushed our company forward in the right direction. Justin is an expert architect who deeply understands how backend systems should be designed and is able to eloquently explain these concepts to members of the team who are less experienced. When things break, he is available to troubleshoot. When education is requested, he provides in-depth documentation, recorded videos, and one-on-one sessions to ensure that the concepts are understood by all and that tasks can be replicated without his assistance. He helped our team immensely and I whole-heartedly recommend him to any other team who is need of a highly proficient technical consultant -- whether your needs are from the architect and consulting side, the technical development side, or some combination of the two, Justin is your guy.
     designation: Happy Clients
   - name: Lazaar
     content: Very professional. Strongly recommend you select him if you want a high-quality
