@@ -1,7 +1,7 @@
 ---
-title: Cloud
+title: Cloud & Kubernetes
 date: '2018-09-29T11:54:02.000+06:00'
-description: This is meta description
+description: Our cloud and kubernetes offering
 image: "/images/interior-of-office-building-325229-300x105.webp"
 bg_image: "/images/interior-of-office-building-325229-300x105.webp"
 icon: ti-cloud
@@ -11,7 +11,51 @@ regularTime: '08.00am - 06.00pm'
 offDay: Sat, Su
 
 ---
-## Why is Cloud Computing so important?
+
+We are helping customers in getting their Services and Data into the cloud. 
+Briefly said, the main benefits of the cloud are:
+1. **Scalability** 
+    - Get the resources you need whenever they are required
+2. **Reliability**
+    - Avoid downtimes of your websites and services by running them in several datacenters
+3. **Speed**
+    - The cloud allows for distributing your code worldwide, meaning each customer can access a "local" copy of the data instead of contacting the server in your office.
+
+## Our Cloud & Kubernetes services
+
+1. **1. EasyFAAS**
+    - Easy serverless functions running in DSGVO compliant servers in Germany
+    - Easy Hosting of Docker images
+    - Autoscaling, Reliance, Simplicity
+2. **2. EasyKube**
+    - Managed Kubernetes in Germany. DSGVO compliant, with Data centers in Nürnberg and Falkenstein.
+    - Limitless scaling possible, Easy setup, Full control
+    - Just download the kubeconfig file and start deploying!
+3. **3. EasyHost**
+    - Easily host your websites and apps
+    - Let us create and host your websites
+4. **4. EasyStore**
+    - Managed SQL and NoSQL databases in AWS or Kubernetes (German datacenters)
+    - Managed object storage (AWS S3 or Minio)
+    - Cheap and durable archive solutions
+    - DSGVO compliant in Germany
+5. **5. EasyHealth**
+    - Secure hosting of health data in German datacenters, according to the "Landeskrankenhausgesetz"
+    - Encrpytion
+    - Secure transfer
+    - German datacenters
+    - Reliability
+    - Premium Support
+6. **6. Consultation**
+    - Do you need help setting up your cloud? We are offering:
+        - Consultation
+        - Programming (Senior & Junior)
+
+---
+
+## Cloud computing described
+
+### Why is Cloud Computing so important?
 
 > **$330 billion USD** is the market prediction for the global public [cloud computing](https://www.datafortress.cloud/cloud-services/cloud-computing/) market in 2020
 

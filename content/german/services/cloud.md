@@ -1,5 +1,5 @@
 ---
-title: Cloud
+title: Cloud & Kubernetes
 date: '2018-09-29T11:54:02.000+06:00'
 description: This is meta description
 image: "/images/interior-of-office-building-325229-300x105.webp"
@@ -11,6 +11,48 @@ regularTime: '08.00am - 06.00pm'
 offDay: Sat, Su
 
 ---
+
+Wir helfen unseren Kunden dabei, ihre Dienste und Daten in die Cloud zu bringen. 
+Kurz gesagt, die wichtigsten Vorteile der Cloud sind:
+1. **Skalierbarkeit** 
+    - Sie erhalten die benötigten Ressourcen, wann immer sie benötigt werden
+2. **Zuverlässigkeit**
+    - Vermeiden Sie Ausfallzeiten Ihrer Websites und Dienste, indem Sie sie in mehreren Rechenzentren betreiben
+3. **Geschwindigkeit**
+    - Die Cloud ermöglicht es, Ihren Code weltweit zu verteilen, d.h. jeder Kunde kann auf eine "lokale" Kopie der Daten zugreifen, anstatt den Server in Ihrem Büro zu kontaktieren.
+
+## Unsere Cloud- & Kubernetes-Dienste
+
+1. **1. EasyFAAS**
+    - Einfache serverlose Funktionen auf DSGVO-konformen Servern in Deutschland
+    - Einfaches Hosting von Docker-Images
+    - Autoskalierung, Verlässlichkeit, Einfachheit
+2. **2. EasyKube**
+    - Managed Kubernetes in Deutschland. DSGVO-konform, mit Rechenzentren in Nürnberg und Falkenstein.
+    - Grenzenlose Skalierung möglich, einfaches Setup, volle Kontrolle
+    - Einfach die kubeconfig-Datei herunterladen und mit dem Deployment beginnen!
+3. **3. EasyHost**
+    - Hosten Sie Ihre Websites und Anwendungen ganz einfach
+    - Lassen Sie uns Ihre Websites erstellen und hosten
+4. **4. EasyStore**
+    - Verwaltete SQL- und NoSQL-Datenbanken in AWS oder Kubernetes (deutsche Rechenzentren)
+    - Verwalteter Objektspeicher (AWS S3 oder Minio)
+    - Günstige und langlebige Archivlösungen
+    - DSGVO-konform in Deutschland
+5. **5. EasyHealth**
+    - Sicheres Hosting von Gesundheitsdaten in deutschen Rechenzentren, gemäß Landeskrankenhausgesetz
+    - Verschlüsselung
+    - Sichere Übertragung
+    - Deutsche Rechenzentren
+    - Verlässlichkeit
+    - Premium-Unterstützung
+6. **6. Beratung**
+    - Brauchen Sie Hilfe beim Einrichten Ihrer Cloud? Wir bieten:
+        - Konsultation
+        - Programmierung (Senior & Junior)
+
+---
+
 ## Warum ist Cloud Computing so wichtig?
 
 > **$330 Milliarden USD** ist die Marktprognose für den globalen öffentlichen [Cloud Computing](https://www.datafortress.cloud/cloud-services/cloud-computing/) Markt im Jahr 2020
