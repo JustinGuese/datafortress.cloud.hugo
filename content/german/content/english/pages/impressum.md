@@ -10,20 +10,12 @@ Looking for the Privacy Policy? ([Link](/privacy-policy))
 
 Für diese Website verantwortlicher Herausgeber:
 
-Justin Güse DataFortress.cloud e.U.
+DataFortress.cloud UG
+Georgenstraße 13
+86152 Augsburg
+Germany
+DE345185498
 
-Einpersonenunternehmen (AT)
-
-UID No. ATU75882145
-
-Firmensitz entsprechend dem Firmenregister oder Standort der Gewerbeberechtigung
-
-Justin Güse DataFortress.cloud e.U.
-Justin Güse
-Schönbrunner Straße 266
-1/10
-Vienna, Vienna 1120
-Austria
 
 Bildrechte:
 

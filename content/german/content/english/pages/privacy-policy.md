@@ -52,15 +52,12 @@ Die Einwilligung der betroffenen Person ist jede Willensbekundung, die ohne Zwan
 2. Name und Adresse des Inhabers der Datensammlung
 Verantwortlicher für die Zwecke der Allgemeinen Datenschutzverordnung (GDPR), anderer in den Mitgliedstaaten der Europäischen Union geltender Datenschutzgesetze und anderer datenschutzrechtlicher Bestimmungen ist:
 
-DataFortress.cloud
+DataFortress.cloud UG
+Georgenstraße 13
+86152 Augsburg
+Germany
+DE345185498
 
-Schönbrunner Straße 266
-
-1120 Vienna
-
-Austria
-
-Phone: +43 677 61178288
 
 Email: info@datafortress.cloud
 Website:
