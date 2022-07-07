@@ -2,7 +2,7 @@
 author = "Justin Guese"
 bg_image = "/images/jupyter.png"
 categories = ["tutorial"]
-date = 2021-01-24T23:00:00Z
+date = 2022-01-24T23:00:00Z
 description = "If Anaconda (conda) and Jupyter Notebook (Jupyter Lab) are set up the right way the combination of them can become the perfect team, where you are able to easily switch between Deep Learning conda environments.  Some programs requiring Tensorflow 1.15, others Tensorflow 2.0? No problem! Just switch environments and Tensorflow versions with a simple click."
 image = "/images/jupyter.png"
 tags = ["deep learning", "tutorial", "anaconda", "jupyter notebook"]

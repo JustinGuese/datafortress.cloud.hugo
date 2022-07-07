@@ -2,7 +2,7 @@
 author = "Justin Güse"
 bg_image = ""
 categories = ["Augmented Reality"]
-date = 2020-08-16T22:00:00Z
+date = 2022-01-16T22:00:00Z
 description = "What is Augmented Reality? In this post I try to clear up some ambiguities about AR."
 image = "/images/augmented-reality-1957411_640-1.jpg"
 tags = ["Augmented Reality"]

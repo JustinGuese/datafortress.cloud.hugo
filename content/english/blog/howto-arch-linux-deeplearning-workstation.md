@@ -1,7 +1,7 @@
 ---
 title: How To - Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation
 bg_image: "/images/blog/deeplearningarch.png"
-date: 2020-09-29T07:10:46+02:00
+date: 2022-02-29T07:10:46+02:00
 author: Justin Guese
 description: Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation
 image: "/images/blog/deeplearningarch.png"

@@ -1,7 +1,7 @@
 ---
 title: Gesichtserkennung mittels MTCNN
 bg_image: "/images/index2-1-1280x720.webp"
-date: 2020-06-08T07:10:46+02:00
+date: 2022-05-08T07:10:46+02:00
 author: Justin Guese
 description: Gesichtserkennung mittels MTCNN - eine Anleitung mit Fokus auf Geschwindigkeit
 image: "/images/index2-1-1280x720.webp"

@@ -2,7 +2,7 @@
 author = "Justin Guese"
 bg_image = "/images/download.png"
 categories = ["algorithmic trading", "finance"]
-date = 2021-01-26T23:00:00Z
+date = 2022-01-26T23:00:00Z
 description = "Der typische maschinelle Lernalgorithmus kann nur mit den Daten arbeiten, die er erhalten hat. Er kann (in der Regel) keine neuen Merkmale oder Interpretationen wie \"Wenn das Volumen steigt und die 3. Ableitung des Preises steigt, wird der Preis höchstwahrscheinlich steigen\" erstellen, sondern kann stattdessen nur auf die Daten \"schauen\", die er erhalten hat. Das wären Berechnungen wie \"wenn der Preis über 100 USD liegt und das Volumen über 2000, wird der Preis höchstwahrscheinlich steigen\".  "
 image = "/images/download.png"
 tags = ["algorithmic trading", "finance", "stocks", "investing", "ai investing"]

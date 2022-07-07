@@ -2,7 +2,7 @@
 author = "Justin Güse"
 bg_image = ""
 categories = ["Augmented Reality"]
-date = 2020-08-16T22:00:00Z
+date = 2022-05-16T22:00:00Z
 description = ""
 image = "/images/augmented-reality-1957411_640.jpg"
 tags = ["augmented reality"]

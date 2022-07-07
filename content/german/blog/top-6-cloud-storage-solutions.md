@@ -1,7 +1,7 @@
 ---
 title: Top 6 der besten Cloud-Storage-Dienste - kostenlos, kostenpflichtig und für Unternehmen
 bg_image: "/images/silver-hard-drive-interals-33278-1200x675.webp"
-date: 2020-06-08T00:00:00+02:00
+date: 2022-01-08T00:00:00+02:00
 description: Top 6 der besten Cloud-Storage-Dienste - kostenlos, kostenpflichtig und für Unternehmen
 author: Justin Guese
 image: "/images/silver-hard-drive-interals-33278-1200x675.webp"

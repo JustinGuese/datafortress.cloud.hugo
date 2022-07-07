@@ -2,7 +2,7 @@
 author = "Justin Guese"
 bg_image = "/images/serverless-investing-bot-facebook-prophet-machine-learning.png"
 categories = ["algorithmic-trading", "aws", "serverless", "machine-learning"]
-date = 2020-08-23T22:00:00Z
+date = 2022-05-23T22:00:00Z
 description = "How to deploy an automated trading bot using the Facebook Prophet Machine Learning model to AWS Lambda (serverless)"
 image = "/images/serverless-investing-bot-facebook-prophet-machine-learning-1.png"
 tags = ["cloud-computing", "machine-learning", "algorithmic-trading", "stock", "aws", "aws-lambda", "serverless", "facebook-prophet"]

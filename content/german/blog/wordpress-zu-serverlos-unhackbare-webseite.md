@@ -1,7 +1,7 @@
 ---
 title: Von Wordpress zu serverlosen, unhackbaren statischen Hochgeschwindigkeits-Webseiten
 bg_image: "/images/blog/serverless-website.png"
-date: 2020-09-17T11:10:07.000+06:00
+date: 2022-05-17T11:10:07.000+06:00
 description: Ich habe mich entschieden, WordPress hinter mir zu lassen und stattdessen zu serverlosen, nicht hackbaren statischen Hochgeschwindigkeits-Websites zu wechseln.
 author: Justin Guese
 image: "/images/blog/serverless-website.png"

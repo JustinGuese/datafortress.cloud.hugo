@@ -2,7 +2,7 @@
 author = "Justin Guese"
 bg_image = "/images/download.png"
 categories = ["finance", "algorithmic trading"]
-date = 2021-01-26T23:00:00Z
+date = 2022-01-26T23:00:00Z
 description = "The typical machine learning algorithm can only work with the data it got. It (usually) can not create new features or interpretations like \"If volume increases and the 3rd derivative of price rises, the price will most likely go up\", but instead can only \"look\" at the data it got. These would be calculations like \"if the price is above 100 USD, and the volume above 2000, the price will most likely go up\"."
 image = "/images/download.png"
 tags = ["ai investing", "investing", "stocks", "finance", "algorithmic trading"]

@@ -6,7 +6,17 @@
     <description>Recent content in storage on Datafortress.cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Wed, 16 Jun 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0200</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Top 6 der besten Cloud-Storage-Dienste - kostenlos, kostenpflichtig und für Unternehmen</title>
+      <link>https://datafortress.cloud/de/blog/top-6-cloud-storage-solutions/</link>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0200</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/top-6-cloud-storage-solutions/</guid>
+      <description>Warum sollte ich meine Daten in der Cloud speichern?
+Die Computerindustrie hat sich seit dem Aufkommen des Internets - der so genannten Cloud - allmählich von der lokalen Speicherung zu einer entfernten, serverbasierten Speicherung und Datenverarbeitung entwickelt.</description>
+    </item>
+    
     <item>
       <title>Tech NEWS 2021-06-16</title>
       <link>https://datafortress.cloud/de/blog/tech-news-2021-06-16/</link>
@@ -32,16 +42,6 @@
       
       <guid>https://datafortress.cloud/de/blog/tech-news-2020-11-12/</guid>
       <description>YouTube ist weltweit ausgefallen, aber jetzt ist alles wieder in Ordnung (2 Minuten) YouTube hatte heute einen weltweiten Ausfall von etwa einer Stunde.</description>
-    </item>
-    
-    <item>
-      <title>Top 6 der besten Cloud-Storage-Dienste - kostenlos, kostenpflichtig und für Unternehmen</title>
-      <link>https://datafortress.cloud/de/blog/top-6-cloud-storage-solutions/</link>
-      <pubDate>Mon, 08 Jun 2020 00:00:00 +0200</pubDate>
-      
-      <guid>https://datafortress.cloud/de/blog/top-6-cloud-storage-solutions/</guid>
-      <description>Warum sollte ich meine Daten in der Cloud speichern?
-Die Computerindustrie hat sich seit dem Aufkommen des Internets - der so genannten Cloud - allmählich von der lokalen Speicherung zu einer entfernten, serverbasierten Speicherung und Datenverarbeitung entwickelt.</description>
     </item>
     
   </channel>

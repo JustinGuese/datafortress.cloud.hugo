@@ -1,7 +1,7 @@
 ---
 title: Going from Wordpress to serverless, unhackable high-speed static websites
 bg_image: "/images/blog/serverless-website.png"
-date: 2020-09-17T11:10:07.000+06:00
+date: 2022-06-17T11:10:07.000+06:00
 description: I chose to leave WordPress behind, and go to serverless, high-speed unhackable static websites instead
 author: Justin Guese
 image: "/images/blog/serverless-website.png"

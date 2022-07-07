@@ -6,11 +6,11 @@
     <description>Recent content in anaconda on Datafortress.cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Jan 2021 23:00:00 +0000</lastBuildDate><atom:link href="https://datafortress.cloud/tags/anaconda/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Jan 2022 23:00:00 +0000</lastBuildDate><atom:link href="https://datafortress.cloud/tags/anaconda/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to set up Anaconda and Jupyter Notebook the right way</title>
       <link>https://datafortress.cloud/blog/how-to-set-up-anaconda-and-jupyter-notebook-the-right-way/</link>
-      <pubDate>Sun, 24 Jan 2021 23:00:00 +0000</pubDate>
+      <pubDate>Mon, 24 Jan 2022 23:00:00 +0000</pubDate>
       
       <guid>https://datafortress.cloud/blog/how-to-set-up-anaconda-and-jupyter-notebook-the-right-way/</guid>
       <description>If Anaconda (conda) and Jupyter Notebook (Jupyter Lab) are set up the right way the combination of them can become the perfect team, where you are able to easily switch between Deep Learning conda environments.</description>

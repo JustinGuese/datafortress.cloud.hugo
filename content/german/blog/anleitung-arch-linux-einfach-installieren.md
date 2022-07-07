@@ -1,7 +1,7 @@
 ---
 title: How To - Arch Linux auf einfacher Weise mit verschlüsselten Laufwerken installieren
 bg_image: "/images/blog/Archlinux_GNOME_3.2.png"
-date: 2020-09-29T07:10:46+02:00
+date: 2022-05-29T07:10:46+02:00
 author: Justin Guese
 description: How To - Arch Linux auf einfache Weise mit verschlüsselten Laufwerken installieren
 image: "/images/blog/Archlinux_GNOME_3.2.png"

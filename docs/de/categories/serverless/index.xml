@@ -6,23 +6,23 @@
     <description>Recent content in serverless on Datafortress.cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Thu, 17 Sep 2020 11:10:07 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/categories/serverless/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Von Wordpress zu serverlosen, unhackbaren statischen Hochgeschwindigkeits-Webseiten</title>
-      <link>https://datafortress.cloud/de/blog/wordpress-zu-serverlos-unhackbare-webseite/</link>
-      <pubDate>Thu, 17 Sep 2020 11:10:07 +0600</pubDate>
-      
-      <guid>https://datafortress.cloud/de/blog/wordpress-zu-serverlos-unhackbare-webseite/</guid>
-      <description>Von Wordpress zu serverlosen, unhackbaren statischen Hochgeschwindigkeits-Websites Ich habe in der Vergangenheit Websites erstellt, aber immer mit der langsamen Leistung von WordPress zu kämpfen gehabt.</description>
-    </item>
-    
+    <lastBuildDate>Mon, 23 May 2022 22:00:00 +0000</lastBuildDate><atom:link href="https://datafortress.cloud/de/categories/serverless/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Howto: Einen automatisierten Machine-Learning Aktienhandels-Roboter mittels AWS Lambda serverlos betreiben</title>
       <link>https://datafortress.cloud/de/blog/howto-einen-automatisierten-machine-learning-aktienhandels-roboter-mittels-aws-lambda-serverlos-betreiben/</link>
-      <pubDate>Sun, 23 Aug 2020 22:00:00 +0000</pubDate>
+      <pubDate>Mon, 23 May 2022 22:00:00 +0000</pubDate>
       
       <guid>https://datafortress.cloud/de/blog/howto-einen-automatisierten-machine-learning-aktienhandels-roboter-mittels-aws-lambda-serverlos-betreiben/</guid>
       <description>In diesem Beitrag werde ich meinen Algorithmus für serverloses Investieren mit AWS Lambda, Facebook Prophet als ML-Modell und meiner benutzerdefinierten Lambda-Schicht vorstellen.</description>
+    </item>
+    
+    <item>
+      <title>Von Wordpress zu serverlosen, unhackbaren statischen Hochgeschwindigkeits-Webseiten</title>
+      <link>https://datafortress.cloud/de/blog/wordpress-zu-serverlos-unhackbare-webseite/</link>
+      <pubDate>Tue, 17 May 2022 11:10:07 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/wordpress-zu-serverlos-unhackbare-webseite/</guid>
+      <description>Von Wordpress zu serverlosen, unhackbaren statischen Hochgeschwindigkeits-Websites Ich habe in der Vergangenheit Websites erstellt, aber immer mit der langsamen Leistung von WordPress zu kämpfen gehabt.</description>
     </item>
     
   </channel>

@@ -6,7 +6,16 @@
     <description>Recent content in python on Datafortress.cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Fri, 05 Nov 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Jan 2022 23:00:00 +0000</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>So richten Sie Anaconda und Jupyter Notebook richtig ein</title>
+      <link>https://datafortress.cloud/de/blog/so-richten-sie-anaconda-und-jupyter-notebook-richtig-ein/</link>
+      <pubDate>Mon, 24 Jan 2022 23:00:00 +0000</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/so-richten-sie-anaconda-und-jupyter-notebook-richtig-ein/</guid>
+      <description>Wenn Anaconda (conda) und Jupyter Notebook (Jupyter Lab) richtig eingerichtet sind, kann die Kombination aus beiden ein perfektes Team werden, in dem man leicht zwischen den Deep Learning conda Umgebungen wechseln kann.</description>
+    </item>
+    
     <item>
       <title>Tech NEWS 2021-11-05</title>
       <link>https://datafortress.cloud/de/blog/tech-news-2021-11-05/</link>
@@ -23,15 +32,6 @@
       
       <guid>https://datafortress.cloud/de/blog/tech-news-2021-02-02/</guid>
       <description>Apple veröffentlicht Chrome-Erweiterung für iCloud-Passwörter (1 Minute Lesezeit) Apple hat iCloud Passwords veröffentlicht, eine offizielle iCloud Keychain Chrome-Erweiterung für Windows und Mac.</description>
-    </item>
-    
-    <item>
-      <title>So richten Sie Anaconda und Jupyter Notebook richtig ein</title>
-      <link>https://datafortress.cloud/de/blog/so-richten-sie-anaconda-und-jupyter-notebook-richtig-ein/</link>
-      <pubDate>Sun, 24 Jan 2021 23:00:00 +0000</pubDate>
-      
-      <guid>https://datafortress.cloud/de/blog/so-richten-sie-anaconda-und-jupyter-notebook-richtig-ein/</guid>
-      <description>Wenn Anaconda (conda) und Jupyter Notebook (Jupyter Lab) richtig eingerichtet sind, kann die Kombination aus beiden ein perfektes Team werden, in dem man leicht zwischen den Deep Learning conda Umgebungen wechseln kann.</description>
     </item>
     
     <item>

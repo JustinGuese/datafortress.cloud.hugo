@@ -2,7 +2,7 @@
 title: How to integrate 3D models into websites and Quick View for Android and iOS
   devices
 bg_image: "/images/annotation-2020-04-06-190049-1024x964.webp"
-date: 2020-09-24T11:10:07.000+06:00
+date: 2022-02-24T11:10:07.000+06:00
 description: This is meta description
 author: Justin Guese
 image: "/images/annotation-2020-04-06-190049-1024x964.webp"

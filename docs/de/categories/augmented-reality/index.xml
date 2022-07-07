@@ -6,23 +6,23 @@
     <description>Recent content in Augmented Reality on Datafortress.cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Thu, 24 Sep 2020 11:10:07 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/categories/augmented-reality/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Wie man 3D-Modelle in Websites und Schnellansichten für Android und iOS integriert</title>
-      <link>https://datafortress.cloud/de/blog/3d-model-integration/</link>
-      <pubDate>Thu, 24 Sep 2020 11:10:07 +0600</pubDate>
-      
-      <guid>https://datafortress.cloud/de/blog/3d-model-integration/</guid>
-      <description>Probieren Sie es aus: Drehen Sie das 3D-Objekt unten, oder betrachten Sie es in AR mit Ihrem Telefon oder sogar in VR, wenn ein VR-Glas an Ihren Computer angeschlossen ist.</description>
-    </item>
-    
+    <lastBuildDate>Mon, 16 May 2022 22:00:00 +0000</lastBuildDate><atom:link href="https://datafortress.cloud/de/categories/augmented-reality/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Die Top 5 typischen Anwendungen für Augmented Reality</title>
       <link>https://datafortress.cloud/de/blog/brauche-ich-als-firma-augmented-reality/</link>
-      <pubDate>Sun, 16 Aug 2020 22:00:00 +0000</pubDate>
+      <pubDate>Mon, 16 May 2022 22:00:00 +0000</pubDate>
       
       <guid>https://datafortress.cloud/de/blog/brauche-ich-als-firma-augmented-reality/</guid>
       <description>Was ist AR? Warum brauche ich als Firma Augmented Reality? Image by &amp;lt;a href=&amp;quot;https://pixabay.</description>
+    </item>
+    
+    <item>
+      <title>Wie man 3D-Modelle in Websites und Schnellansichten für Android und iOS integriert</title>
+      <link>https://datafortress.cloud/de/blog/3d-model-integration/</link>
+      <pubDate>Thu, 24 Feb 2022 11:10:07 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/3d-model-integration/</guid>
+      <description>Probieren Sie es aus: Drehen Sie das 3D-Objekt unten, oder betrachten Sie es in AR mit Ihrem Telefon oder sogar in VR, wenn ein VR-Glas an Ihren Computer angeschlossen ist.</description>
     </item>
     
   </channel>

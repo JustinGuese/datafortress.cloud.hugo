@@ -1,7 +1,7 @@
 ---
 title: Face Detection using MTCNN
 bg_image: "/images/index2-1-1280x720.webp"
-date: 2020-06-08T07:10:46+02:00
+date: 2022-06-08T07:10:46+02:00
 author: Justin Guese
 description: Face Detection using MTCNN – a guide for face extraction with a focus
   on speed

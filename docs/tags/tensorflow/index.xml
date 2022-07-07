@@ -5,12 +5,11 @@
     <link>https://datafortress.cloud/tags/tensorflow/</link>
     <description>Recent content in tensorflow on Datafortress.cloud</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2020 07:10:46 +0200</lastBuildDate><atom:link href="https://datafortress.cloud/tags/tensorflow/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://datafortress.cloud/tags/tensorflow/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How To - Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation</title>
       <link>https://datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/</link>
-      <pubDate>Tue, 29 Sep 2020 07:10:46 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/</guid>
       <description>How To: Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation Why should I ditch Ubuntu?</description>

@@ -2,7 +2,7 @@
 author = "Justin Guese"
 bg_image = "/images/jupyter.png"
 categories = ["tutorial"]
-date = 2021-01-24T23:00:00Z
+date = 2022-01-24T23:00:00Z
 description = "Wenn Anaconda (conda) und Jupyter Notebook (Jupyter Lab) richtig eingerichtet sind, kann die Kombination aus beiden ein perfektes Team werden, in dem man leicht zwischen den Deep Learning conda Umgebungen wechseln kann."
 image = "/images/jupyter.png"
 tags = ["installation", "conda environment", "python", "jupyter lab", "juypter notebook"]

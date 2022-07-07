@@ -6,23 +6,23 @@
     <description>Recent content in Websites on Datafortress.cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Thu, 24 Sep 2020 11:10:07 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/websites/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Wie man 3D-Modelle in Websites und Schnellansichten für Android und iOS integriert</title>
-      <link>https://datafortress.cloud/de/blog/3d-model-integration/</link>
-      <pubDate>Thu, 24 Sep 2020 11:10:07 +0600</pubDate>
-      
-      <guid>https://datafortress.cloud/de/blog/3d-model-integration/</guid>
-      <description>Probieren Sie es aus: Drehen Sie das 3D-Objekt unten, oder betrachten Sie es in AR mit Ihrem Telefon oder sogar in VR, wenn ein VR-Glas an Ihren Computer angeschlossen ist.</description>
-    </item>
-    
+    <lastBuildDate>Tue, 17 May 2022 11:10:07 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/websites/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Von Wordpress zu serverlosen, unhackbaren statischen Hochgeschwindigkeits-Webseiten</title>
       <link>https://datafortress.cloud/de/blog/wordpress-zu-serverlos-unhackbare-webseite/</link>
-      <pubDate>Thu, 17 Sep 2020 11:10:07 +0600</pubDate>
+      <pubDate>Tue, 17 May 2022 11:10:07 +0600</pubDate>
       
       <guid>https://datafortress.cloud/de/blog/wordpress-zu-serverlos-unhackbare-webseite/</guid>
       <description>Von Wordpress zu serverlosen, unhackbaren statischen Hochgeschwindigkeits-Websites Ich habe in der Vergangenheit Websites erstellt, aber immer mit der langsamen Leistung von WordPress zu kämpfen gehabt.</description>
+    </item>
+    
+    <item>
+      <title>Wie man 3D-Modelle in Websites und Schnellansichten für Android und iOS integriert</title>
+      <link>https://datafortress.cloud/de/blog/3d-model-integration/</link>
+      <pubDate>Thu, 24 Feb 2022 11:10:07 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/3d-model-integration/</guid>
+      <description>Probieren Sie es aus: Drehen Sie das 3D-Objekt unten, oder betrachten Sie es in AR mit Ihrem Telefon oder sogar in VR, wenn ein VR-Glas an Ihren Computer angeschlossen ist.</description>
     </item>
     
   </channel>

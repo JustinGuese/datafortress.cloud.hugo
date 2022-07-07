@@ -1,7 +1,7 @@
 ---
 title: How To - Installing Arch Linux the easy way with encrypted drives
 bg_image: "/images/blog/Archlinux_GNOME_3.2.png"
-date: 2020-09-29T07:10:46+02:00
+date: 2020-07-06T07:10:46+02:00
 author: Justin Guese
 description: Installing Arch Linux the easy way with encrypted drives
 image: "/images/blog/Archlinux_GNOME_3.2.png"

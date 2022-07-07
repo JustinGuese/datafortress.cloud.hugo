@@ -6,7 +6,16 @@
     <description>Recent content in 3D on Datafortress.cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Jan 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/3d/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Feb 2022 11:10:07 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/3d/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to integrate 3D models into websites and Quick View for Android and iOS devices</title>
+      <link>https://datafortress.cloud/blog/3d-model-integration/</link>
+      <pubDate>Thu, 24 Feb 2022 11:10:07 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/3d-model-integration/</guid>
+      <description>Integrating a 3D model into a website using Quick View for Android and iOS Try it out: Rotate the 3D object below, or look at it in AR using your phone or even VR if a VR-glass is connected to your computer.</description>
+    </item>
+    
     <item>
       <title>Tech NEWS 2022-01-17</title>
       <link>https://datafortress.cloud/blog/tech-news-2022-01-17/</link>
@@ -50,15 +59,6 @@
       
       <guid>https://datafortress.cloud/blog/tech-news-2020-12-30/</guid>
       <description>Apple Watch leak offers rare glimpse inside ‘Ultra security program’ (2 minute read) A video purporting to show an Apple Watch prototype has leaked.</description>
-    </item>
-    
-    <item>
-      <title>How to integrate 3D models into websites and Quick View for Android and iOS devices</title>
-      <link>https://datafortress.cloud/blog/3d-model-integration/</link>
-      <pubDate>Thu, 24 Sep 2020 11:10:07 +0600</pubDate>
-      
-      <guid>https://datafortress.cloud/blog/3d-model-integration/</guid>
-      <description>Integrating a 3D model into a website using Quick View for Android and iOS Try it out: Rotate the 3D object below, or look at it in AR using your phone or even VR if a VR-glass is connected to your computer.</description>
     </item>
     
     <item>

@@ -1,7 +1,7 @@
 ---
 title: How To - Weg mit Ubuntu zugunsten von Arch Linux für eine Deep Learning-optimierte Arbeitsumgebung
 bg_image: "/images/blog/deeplearningarch.png"
-date: 2020-09-29T07:10:46+02:00
+date: 2022-04-29T07:10:46+02:00
 author: Justin Guese
 description: Arch Linux für eine Deep Learning-optimierte Arbeitsumgebung
 image: "/images/blog/deeplearningarch.png"

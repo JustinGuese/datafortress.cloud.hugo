@@ -12,7 +12,7 @@ slider:
     button:
       enable: true
       label: More details
-      link: about
+      link: services
   - bg_image: "/images/homepage/pexels-artem-podrez-6779567.webp"
     animation_from: up
     subtitle: compliant and efficient
@@ -23,7 +23,7 @@ slider:
     button:
       enable: true
       label: More details
-      link: about
+      link: services
   - bg_image: "/images/homepage/pexels-tara-winstead-8386358.webp"
     animation_from: down
     subtitle: Scalable and powerful
@@ -34,7 +34,7 @@ slider:
     button:
       enable: true
       label: More details
-      link: about
+      link: services
   - bg_image: "/images/homepage/pexels-ivan-babydov-7788004.webp"
     animation_from: right
     subtitle: We are your partner for
@@ -45,7 +45,7 @@ slider:
     button:
       enable: true
       label: More details
-      link: about
+      link: services
 service:
   enable: true
 about:
@@ -65,12 +65,13 @@ about:
   - Data Engineering
   - Machine Learning
   - Webhosting
+  - Websites
   - SAAS products
   - DeFi
   button:
     enable: true
     label: Explore More
-    link: about
+    link: services
 skill:
   enable: true
   subtitle: Our Skills

@@ -6,7 +6,16 @@
     <description>Recent content in aws on Datafortress.cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Tue, 06 Jul 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 May 2022 22:00:00 +0000</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Howto: Einen automatisierten Machine-Learning Aktienhandels-Roboter mittels AWS Lambda serverlos betreiben</title>
+      <link>https://datafortress.cloud/de/blog/howto-einen-automatisierten-machine-learning-aktienhandels-roboter-mittels-aws-lambda-serverlos-betreiben/</link>
+      <pubDate>Mon, 23 May 2022 22:00:00 +0000</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/howto-einen-automatisierten-machine-learning-aktienhandels-roboter-mittels-aws-lambda-serverlos-betreiben/</guid>
+      <description>In diesem Beitrag werde ich meinen Algorithmus für serverloses Investieren mit AWS Lambda, Facebook Prophet als ML-Modell und meiner benutzerdefinierten Lambda-Schicht vorstellen.</description>
+    </item>
+    
     <item>
       <title>Tech NEWS 2021-07-06</title>
       <link>https://datafortress.cloud/de/blog/tech-news-2021-07-06/</link>
@@ -23,15 +32,6 @@
       
       <guid>https://datafortress.cloud/de/blog/tech-news-2021-03-24/</guid>
       <description>Microsoft führt Gespräche mit Discord über eine 10-Milliarden-Dollar-Übernahme (1 Minute Lesezeit) Microsoft ist in Gesprächen, um Discord für mehr als 10 Milliarden Dollar zu übernehmen.</description>
-    </item>
-    
-    <item>
-      <title>Howto: Einen automatisierten Machine-Learning Aktienhandels-Roboter mittels AWS Lambda serverlos betreiben</title>
-      <link>https://datafortress.cloud/de/blog/howto-einen-automatisierten-machine-learning-aktienhandels-roboter-mittels-aws-lambda-serverlos-betreiben/</link>
-      <pubDate>Sun, 23 Aug 2020 22:00:00 +0000</pubDate>
-      
-      <guid>https://datafortress.cloud/de/blog/howto-einen-automatisierten-machine-learning-aktienhandels-roboter-mittels-aws-lambda-serverlos-betreiben/</guid>
-      <description>In diesem Beitrag werde ich meinen Algorithmus für serverloses Investieren mit AWS Lambda, Facebook Prophet als ML-Modell und meiner benutzerdefinierten Lambda-Schicht vorstellen.</description>
     </item>
     
   </channel>
