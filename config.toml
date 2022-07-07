@@ -30,7 +30,7 @@ copyright = "Copyright &copy; 2021 by Datafortress.cloud"
 subscribe = "Subscribe Us"
 subscribe_content = "Receive exclusive tech/cloud/ai news into your inbox. Unsubscribe any time."
 [[menu.footer]]
-URL = "/content/english/pages/impressum/"
+URL = "/pages/impressum/"
 name = "Legal"
 weight = 1
 [[menu.footer]]
@@ -38,13 +38,15 @@ URL = "sitemap.xml"
 name = "Sitemap"
 weight = 2
 [[menu.footer]]
-URL = "/content/english/pages/privacy-policy/"
+URL = "/pages/privacy-policy/"
 name = "Privacy Policy"
 weight = 3
 [[menu.footer]]
-URL = "/content/english/pages/impressum/"
+URL = "/pages/impressum/"
 name = "Terms & Conditions"
 weight = 4
+
+
 [[menu.main]]
 URL = "about"
 name = "About"
@@ -54,21 +56,58 @@ URL = "about"
 name = "About"
 parent = "about"
 weight = 1
+[[menu.main]]
+URL = "team"
+name = "Team"
+parent = "about"
+weight = "2"
 [[menu.main]]
 URL = "/project/serverless-static-website/"
 name = "Why is this websites so fast?"
 parent = "about"
-weight = 2
-[[menu.main]]
-URL = "/content/english/pages/impressum/"
-name = "Impressum"
-parent = "about"
 weight = 3
 [[menu.main]]
-URL = "/content/english/pages/privacy-policy/"
-name = "Privacy Policy"
+URL = "/pages/impressum/"
+name = "Impressum"
 parent = "about"
 weight = 4
+[[menu.main]]
+URL = "/pages/privacy-policy/"
+name = "Privacy Policy"
+parent = "about"
+weight = 5
+
+[[menu.main]]
+URL = "products"
+name = "Products"
+#parent = "services"
+weight = 2
+[[menu.main]]
+URL = "/pages/products/easyfaas/"
+name = "EasyFAAS"
+parent = "Products"
+weight = 1
+[[menu.main]]
+URL = "/pages/products/easykube/"
+name = "EasyKube"
+parent = "Products"
+weight = 2
+[[menu.main]]
+URL = "/pages/products/easyhost/"
+name = "EasyHost"
+parent = "Products"
+weight = 3
+[[menu.main]]
+URL = "/pages/products/easystore/"
+name = "EasyStore"
+parent = "Products"
+weight = 4
+[[menu.main]]
+URL = "/pages/products/easyhealth/"
+name = "EasyHealth"
+parent = "Products"
+weight = 5
+
 [[menu.main]]
 URL = "services"
 name = "Services"
@@ -81,12 +120,12 @@ parent = "Services"
 weight = 1
 [[menu.main]]
 URL = "/services/cloud/"
-name = "Cloud"
+name = "Cloud & Kubernetes"
 parent = "Services"
 weight = 2
 [[menu.main]]
 URL = "/services/data-science-data-engineering/"
-name = "Data Science & Data Engineering"
+name = "Data Engineering & Science"
 parent = "Services"
 weight = 3
 [[menu.main]]
@@ -107,10 +146,6 @@ weight = "3"
 URL = "blog"
 name = "Blog"
 weight = "4"
-[[menu.main]]
-URL = "team"
-name = "Team"
-weight = "5"
 [[menu.main]]
 URL = "contact"
 name = "Contact"

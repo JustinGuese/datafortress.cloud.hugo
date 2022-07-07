@@ -120,7 +120,7 @@
                 />
   </url><url>
     <loc>https://datafortress.cloud/</loc>
-    <lastmod>2022-03-16T13:53:15+01:00</lastmod>
+    <lastmod>2022-07-07T20:57:13+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -34901,43 +34901,108 @@
                 href="https://datafortress.cloud/tags/z/"
                 />
   </url><url>
-    <loc>https://datafortress.cloud/content/</loc>
-    <lastmod>2021-03-09T17:45:23+01:00</lastmod>
+    <loc>https://datafortress.cloud/pages/products/easyfaas/</loc>
+    <lastmod>2020-07-12T17:02:17+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://datafortress.cloud/de/content/"
+                href="https://datafortress.cloud/de/pages/products/easyfaas/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://datafortress.cloud/content/"
+                href="https://datafortress.cloud/pages/products/easyfaas/"
                 />
   </url><url>
-    <loc>https://datafortress.cloud/content/english/pages/impressum/</loc>
-    <lastmod>2021-03-09T17:45:23+01:00</lastmod>
+    <loc>https://datafortress.cloud/pages/products/easyhealth/</loc>
+    <lastmod>2020-07-12T17:02:17+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://datafortress.cloud/de/content/english/pages/impressum/"
+                href="https://datafortress.cloud/de/pages/products/easyhealth/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://datafortress.cloud/content/english/pages/impressum/"
+                href="https://datafortress.cloud/pages/products/easyhealth/"
                 />
   </url><url>
-    <loc>https://datafortress.cloud/content/english/pages/privacy-policy/</loc>
-    <lastmod>2021-03-09T17:45:23+01:00</lastmod>
+    <loc>https://datafortress.cloud/pages/products/easyhost/</loc>
+    <lastmod>2020-07-12T17:02:17+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://datafortress.cloud/de/content/english/pages/privacy-policy/"
+                href="https://datafortress.cloud/de/pages/products/easyhost/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://datafortress.cloud/content/english/pages/privacy-policy/"
+                href="https://datafortress.cloud/pages/products/easyhost/"
+                />
+  </url><url>
+    <loc>https://datafortress.cloud/pages/products/easykube/</loc>
+    <lastmod>2020-07-12T17:02:17+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://datafortress.cloud/de/pages/products/easykube/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://datafortress.cloud/pages/products/easykube/"
+                />
+  </url><url>
+    <loc>https://datafortress.cloud/pages/products/easystore/</loc>
+    <lastmod>2020-07-12T17:02:17+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://datafortress.cloud/de/pages/products/easystore/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://datafortress.cloud/pages/products/easystore/"
+                />
+  </url><url>
+    <loc>https://datafortress.cloud/pages/impressum/</loc>
+    <lastmod>2020-07-12T17:02:17+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://datafortress.cloud/de/pages/impressum/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://datafortress.cloud/pages/impressum/"
+                />
+  </url><url>
+    <loc>https://datafortress.cloud/pages/</loc>
+    <lastmod>2020-07-12T17:02:17+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://datafortress.cloud/de/pages/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://datafortress.cloud/pages/"
+                />
+  </url><url>
+    <loc>https://datafortress.cloud/pages/privacy-policy/</loc>
+    <lastmod>2020-07-12T17:02:17+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://datafortress.cloud/de/pages/privacy-policy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://datafortress.cloud/pages/privacy-policy/"
                 />
   </url><url>
     <loc>https://datafortress.cloud/contact/</loc>
@@ -34953,17 +35018,17 @@
                 href="https://datafortress.cloud/contact/"
                 />
   </url><url>
-    <loc>https://datafortress.cloud/content/english/pages/newsletter/</loc>
-    <lastmod>2021-03-09T17:45:23+01:00</lastmod>
+    <loc>https://datafortress.cloud/pages/newsletter/</loc>
+    <lastmod>2020-07-12T18:19:33+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://datafortress.cloud/de/content/english/pages/newsletter/"
+                href="https://datafortress.cloud/de/pages/newsletter/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://datafortress.cloud/content/english/pages/newsletter/"
+                href="https://datafortress.cloud/pages/newsletter/"
                 />
   </url><url>
     <loc>https://datafortress.cloud/tags/dogecoin/</loc>
@@ -35643,7 +35708,7 @@
                 />
   </url><url>
     <loc>https://datafortress.cloud/services/cloud/</loc>
-    <lastmod>2021-03-15T15:16:22+01:00</lastmod>
+    <lastmod>2022-07-07T20:57:13+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
