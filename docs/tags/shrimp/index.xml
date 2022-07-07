@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shrimp on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/shrimp/</link>
+    <description>Recent content in shrimp on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Oct 2020 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/shrimp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2020-10-30</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-10-30/</link>
+      <pubDate>Fri, 30 Oct 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-10-30/</guid>
+      <description>Google brings Halloween to life using augmented reality (3 minute read) Google has updated its augmented reality models on Google search with Halloween-themed options.</description>
+    </item>
+    
+  </channel>
+</rss>

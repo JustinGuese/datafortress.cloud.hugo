@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>objects on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/objects/</link>
+    <description>Recent content in objects on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Feb 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/objects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-02-09</title>
+      <link>https://datafortress.cloud/blog/tech-news-2022-02-09/</link>
+      <pubDate>Wed, 09 Feb 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2022-02-09/</guid>
+      <description>Apple announces a way to buy stuff by tapping iPhones together (2 minute read) Apple is releasing a new Tap to Pay feature for the iPhone that allows people to receive payments.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-10-15</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-10-15/</link>
+      <pubDate>Thu, 15 Oct 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-10-15/</guid>
+      <description>Zoom is releasing a new tool to let paid users charge for admission to online events like conferences or fitness classes (3 minute read) OnZoom is Zoom&amp;rsquo;s new online event hosting platform.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-07-31</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-07-31/</link>
+      <pubDate>Fri, 31 Jul 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-07-31/</guid>
+      <description>Huawei tops Samsung as world’s No. 1 smartphone company for first time (2 minute read) Huawei has surpassed Samsung as the world&amp;rsquo;s number one supplier of smartphones.</description>
+    </item>
+    
+  </channel>
+</rss>

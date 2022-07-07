@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>site on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/tags/site/</link>
+    <description>Recent content in site on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Mon, 24 Jan 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/site/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-01-24</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2022-01-24/</link>
+      <pubDate>Mon, 24 Jan 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2022-01-24/</guid>
+      <description>Leak enthüllt Microsofts gecanceltes Windows-Betriebssystem für Geräte mit zwei Bildschirmen (2 Minuten Lesezeit) Microsoft arbeitete an einem geheimen Surface-Gerät für die Hosentasche, das mit einem benutzerdefinierten Windows-Betriebssystem betrieben wurde, bevor es sich für sein Surface Duo Android zuwandte.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-07-06</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2020-07-06/</link>
+      <pubDate>Mon, 06 Jul 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2020-07-06/</guid>
+      <description>Neue Informationen zur Software der Samsung Galaxy Watch 3 (2 Minuten Lesezeit) Samsungs Galaxy Watch 3 wird wahrscheinlich anpassbare Zifferblätter und Updates für die Musik-, E-Mail- und Kalender-Apps bieten.</description>
+    </item>
+    
+  </channel>
+</rss>

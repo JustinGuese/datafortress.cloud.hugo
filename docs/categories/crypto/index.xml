@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>crypto on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/categories/crypto/</link>
+    <description>Recent content in crypto on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Dec 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/categories/crypto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-12-27</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-12-27/</link>
+      <pubDate>Mon, 27 Dec 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-12-27/</guid>
+      <description>Exclusive: This is our first look at Android 13 “Tiramisu” and some of its upcoming features (5 minute read) A source with access to a very early Android 13 build has shared screenshots showing several upcoming features and changes.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-12-14</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-12-14/</link>
+      <pubDate>Tue, 14 Dec 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-12-14/</guid>
+      <description>The Matrix Awakens: An Unreal Engine 5 Experience&amp;rsquo; Hits PS5 and Xbox Series X/S (1 minute read) Epic Games has released The Matrix Awakens: An Unreal Engine 5 Experience, a tech demo with ultra-realistic visuals and open-world environments.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-11-26</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-11-26/</link>
+      <pubDate>Fri, 26 Nov 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-11-26/</guid>
+      <description>Adorable redesigned emoji—including Clippy—included in latest Windows 11 update (2 minute read) Microsoft will add redesigned emoji in the next Windows 11 update.</description>
+    </item>
+    
+  </channel>
+</rss>

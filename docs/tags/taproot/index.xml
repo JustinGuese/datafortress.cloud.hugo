@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>taproot on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/taproot/</link>
+    <description>Recent content in taproot on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Jun 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/taproot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-06-14</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-06-14/</link>
+      <pubDate>Mon, 14 Jun 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-06-14/</guid>
+      <description>Amazon details new warehouse robots, &amp;lsquo;Ernie&amp;rsquo; and &amp;lsquo;Bert&amp;rsquo; (2 minute read) Amazon is testing out two new robots, Ernie and Bert, to try to reduce strenuous movements for workers.</description>
+    </item>
+    
+  </channel>
+</rss>

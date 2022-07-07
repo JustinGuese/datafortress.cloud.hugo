@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>roku on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/roku/</link>
+    <description>Recent content in roku on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Oct 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/roku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-10-25</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-10-25/</link>
+      <pubDate>Mon, 25 Oct 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-10-25/</guid>
+      <description>Apple’s new M1 Max MacBook Pro may get a virtual turbo button for High Power Mode (2 minute read) The upcoming macOS Monterey will feature a High Power Mode in the new 16-inch M1 Max MacBook Pros.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-05-11</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-05-11/</link>
+      <pubDate>Tue, 11 May 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-05-11/</guid>
+      <description>Google foils Roku’s YouTube TV ban, adds service to the main YouTube app (3 minute read) Roku recently removed the YouTube TV app from its store due to a disagreement with its contract with Google.</description>
+    </item>
+    
+  </channel>
+</rss>

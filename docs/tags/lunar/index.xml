@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lunar on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/lunar/</link>
+    <description>Recent content in lunar on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Mar 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/lunar/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-03-10</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-03-10/</link>
+      <pubDate>Wed, 10 Mar 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-03-10/</guid>
+      <description>Amazon’s long-rumored Vesta home robot project details leak (2 minute read) Amazon&amp;rsquo;s project Vesta is a long-rumored home robot that features built-in Alexa, multiple integrated cameras, a display, and the ability to move around a home.</description>
+    </item>
+    
+  </channel>
+</rss>

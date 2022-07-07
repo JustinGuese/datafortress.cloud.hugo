@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>speeds on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/speeds/</link>
+    <description>Recent content in speeds on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Sep 2020 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/speeds/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2020-09-04</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-09-04/</link>
+      <pubDate>Fri, 04 Sep 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-09-04/</guid>
+      <description>New Mario Kart Live: Home Circuit Uses Augmented Reality to Race Inside Your Home (2 minute read) Nintendo has announced Mario Kart Live: Home Circuit, a game where players use their Nintendo Switches to pilot a physical kart around their home.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-08-17</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-08-17/</link>
+      <pubDate>Mon, 17 Aug 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-08-17/</guid>
+      <description>AMC movie theaters will reopen on Aug. 20 with 15-cent tickets (2 minute read) More than 100 AMC cinemas across the US will open on August 20.</description>
+    </item>
+    
+  </channel>
+</rss>

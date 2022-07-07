@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>polestar on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/categories/polestar/</link>
+    <description>Recent content in polestar on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Sep 2020 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/categories/polestar/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2020-09-07</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-09-07/</link>
+      <pubDate>Mon, 07 Sep 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-09-07/</guid>
+      <description>Driving the Polestar 2, the first electric car with a brain by Google (8 minute read) The Polestar 2 is a new luxury electric vehicle from Volvo.</description>
+    </item>
+    
+  </channel>
+</rss>

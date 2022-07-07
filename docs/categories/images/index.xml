@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>images on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/categories/images/</link>
+    <description>Recent content in images on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Mar 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/categories/images/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-03-15</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-03-15/</link>
+      <pubDate>Mon, 15 Mar 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-03-15/</guid>
+      <description>Facebook details AI that can understand videos (6 minute read) Learning from Videos is a project from Facebook that uses AI to automatically learn audio, textual, and visual representations from videos.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-01-06</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-01-06/</link>
+      <pubDate>Wed, 06 Jan 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-01-06/</guid>
+      <description>OpenAI’s DALL-E creates plausible images of literally anything you ask it to (5 minute read) OpenAI&amp;rsquo;s DALL-E is an AI that can generate images based on text descriptions.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-08-06</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-08-06/</link>
+      <pubDate>Thu, 06 Aug 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-08-06/</guid>
+      <description>Samsung announces the Galaxy Z Fold 2 with bigger screens and better cameras (2 minute read) The new Galaxy Z fold 2 handset was officially announced at Samsung&amp;rsquo;s Unpacked event.</description>
+    </item>
+    
+  </channel>
+</rss>

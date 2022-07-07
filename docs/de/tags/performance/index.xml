@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>performance on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/tags/performance/</link>
+    <description>Recent content in performance on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Wed, 09 Mar 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-03-09</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2022-03-09/</link>
+      <pubDate>Wed, 09 Mar 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2022-03-09/</guid>
+      <description>Die 7 größten Ankündigungen von Apples Peek-Performance-Event (3 Minuten Lesezeit) Apple hat auf seinem Peek Performance Event eine neue Version des iPhone SE, einen neuen Desktop-Mac, einen externen Monitor und mehr angekündigt.</description>
+    </item>
+    
+  </channel>
+</rss>

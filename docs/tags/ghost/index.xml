@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ghost on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/ghost/</link>
+    <description>Recent content in ghost on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Sep 2020 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/ghost/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2020-09-11</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-09-11/</link>
+      <pubDate>Fri, 11 Sep 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-09-11/</guid>
+      <description>Inside TikTok&amp;rsquo;s killer algorithm (5 minute read) TikTok has revealed how its algorithm works.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mission on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/mission/</link>
+    <description>Recent content in mission on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Aug 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/mission/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-08-04</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-08-04/</link>
+      <pubDate>Wed, 04 Aug 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-08-04/</guid>
+      <description>Facebook will host a paid movie premiere this month (2 minute read) Facebook will host the premiere of The Outsider, a documentary about the National 9/11 Memorial and Museum in New York City.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-02-02</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-02-02/</link>
+      <pubDate>Tue, 02 Feb 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-02-02/</guid>
+      <description>Apple releases Chrome extension for iCloud passwords (1 minute read) Apple has released iCloud Passwords, an official iCloud Keychain Chrome extension for Windows and Mac.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-08-18</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-08-18/</link>
+      <pubDate>Tue, 18 Aug 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-08-18/</guid>
+      <description>Apple Threatens to Terminate Epic Games&amp;rsquo; Developer Accounts on August 28 (3 minute read) Apple plans to terminate Epic Games&amp;rsquo; access to its App Store and app development tools by August 28.</description>
+    </item>
+    
+  </channel>
+</rss>

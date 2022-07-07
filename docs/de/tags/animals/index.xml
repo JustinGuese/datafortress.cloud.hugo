@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>animals on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/tags/animals/</link>
+    <description>Recent content in animals on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Tue, 02 Nov 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/animals/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-11-02</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-11-02/</link>
+      <pubDate>Tue, 02 Nov 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-11-02/</guid>
+      <description>Tesla lässt zum ersten Mal Nicht-Tesla-Elektrofahrzeuge sein Supercharger-Netz nutzen (3 Minuten Lesedauer) Zehn Supercharger-Stationen in den Niederlanden werden nun auch für Nicht-Tesla-Elektrofahrzeuge zugänglich gemacht.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-09-08</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-09-08/</link>
+      <pubDate>Wed, 08 Sep 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-09-08/</guid>
+      <description>Apple Event angekündigt: &amp;ldquo;California Streaming&amp;rdquo; am 14 September mit iPhone 13, Apple Watch Series 7 erwartet (3 Minuten lesen).</description>
+    </item>
+    
+  </channel>
+</rss>

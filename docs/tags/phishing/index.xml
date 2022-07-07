@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>phishing on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/phishing/</link>
+    <description>Recent content in phishing on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Oct 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/phishing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-10-15</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-10-15/</link>
+      <pubDate>Fri, 15 Oct 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-10-15/</guid>
+      <description>Microsoft to shut down LinkedIn in China (1 minute read) Microsoft will shut down its local version of LinkedIn in China due to a significantly more challenging operating environment and greater compliance requirements.</description>
+    </item>
+    
+  </channel>
+</rss>

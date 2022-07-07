@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ces on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/tags/ces/</link>
+    <description>Recent content in ces on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Thu, 06 Jan 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/ces/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-01-06</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2022-01-06/</link>
+      <pubDate>Thu, 06 Jan 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2022-01-06/</guid>
+      <description>Google plant Apple-ähnliche Integration zwischen seinen Produkten, um zu konkurrieren (3 Minuten Lesezeit) Google hat auf der CES 2022 Pläne angekündigt, mit Apples Ökosystem-Integration zu konkurrieren.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-01-12</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-01-12/</link>
+      <pubDate>Tue, 12 Jan 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-01-12/</guid>
+      <description>Samsungs CES 2021-Roboter werden Ihr Haus putzen und Ihnen ein Glas Wein einschenken (6 Minuten Lesedauer) Samsung hat am Montag auf seiner virtuellen CES-Pressekonferenz drei neue Roboter vorgestellt.</description>
+    </item>
+    
+  </channel>
+</rss>

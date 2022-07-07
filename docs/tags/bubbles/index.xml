@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bubbles on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/bubbles/</link>
+    <description>Recent content in bubbles on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 May 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/bubbles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-05-14</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-05-14/</link>
+      <pubDate>Fri, 14 May 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-05-14/</guid>
+      <description>Elon Musk’s SpaceX inks satellite connectivity deal with Google Cloud (3 minute read) Google has signed a deal with SpaceX to use Starlink with its cloud unit.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-01-07</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-01-07/</link>
+      <pubDate>Thu, 07 Jan 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-01-07/</guid>
+      <description>Microsoft Could Bring You Back From The Dead… As A Chat Bot (1 minute read) Microsoft has filed a patent for a method that would use social data such as images, voice data, social media posts, and other written media to build a profile of a person and create a chatbot with the personality of that person.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>basking on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/basking/</link>
+    <description>Recent content in basking on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jan 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/basking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-01-01</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-01-01/</link>
+      <pubDate>Fri, 01 Jan 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-01-01/</guid>
+      <description>Microsoft says hackers were able to see some of its source code (1 minute read) Microsoft&amp;rsquo;s systems were infiltrated by hackers who could view source code from a number of repositories.</description>
+    </item>
+    
+  </channel>
+</rss>

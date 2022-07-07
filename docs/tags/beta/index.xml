@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>beta on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/beta/</link>
+    <description>Recent content in beta on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Sep 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/beta/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-09-20</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-09-20/</link>
+      <pubDate>Mon, 20 Sep 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-09-20/</guid>
+      <description>Cameo launches Cameo Calls, a service for fans to video chat with celebs (2 minute read) Cameo Calls lets fans chat one-on-one with influencers and celebrities.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-08-17</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-08-17/</link>
+      <pubDate>Mon, 17 Aug 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-08-17/</guid>
+      <description>AMC movie theaters will reopen on Aug. 20 with 15-cent tickets (2 minute read) More than 100 AMC cinemas across the US will open on August 20.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-07-17</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-07-17/</link>
+      <pubDate>Fri, 17 Jul 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-07-17/</guid>
+      <description>Microsoft to launch xCloud streaming free with Xbox Game Pass Ultimate in September (6 minute read) Microsoft will launch xCloud free to its Xbox Game Pass Ultimate subscribers in September.</description>
+    </item>
+    
+  </channel>
+</rss>

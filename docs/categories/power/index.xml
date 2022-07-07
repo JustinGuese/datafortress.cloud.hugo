@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>power on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/categories/power/</link>
+    <description>Recent content in power on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Oct 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/categories/power/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-10-25</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-10-25/</link>
+      <pubDate>Mon, 25 Oct 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-10-25/</guid>
+      <description>Apple’s new M1 Max MacBook Pro may get a virtual turbo button for High Power Mode (2 minute read) The upcoming macOS Monterey will feature a High Power Mode in the new 16-inch M1 Max MacBook Pros.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-03-31</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-03-31/</link>
+      <pubDate>Wed, 31 Mar 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-03-31/</guid>
+      <description>Snap Plans Hardware Push With AR Spectacles, Drone (1 minute read) Snap&amp;rsquo;s next-gen Spectacles will be able to layer Snapchat lenses onto the surrounding environment without using a smartphone&amp;rsquo;s camera.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-03-03</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-03-03/</link>
+      <pubDate>Wed, 03 Mar 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-03-03/</guid>
+      <description>Microsoft Mesh aims to bring holographic virtual collaboration to all (5 minute read) Microsoft Mesh is Microsoft&amp;rsquo;s ambitious new attempt at unifying holographic virtual collaboration across multiple devices.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>millipede on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/categories/millipede/</link>
+    <description>Recent content in millipede on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Fri, 17 Dec 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/categories/millipede/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-12-17</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-12-17/</link>
+      <pubDate>Fri, 17 Dec 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-12-17/</guid>
+      <description>Apple will angeblich eigene Funkchips für das iPhone herstellen (2 Minuten Lesedauer) Apple eröffnet ein Büro in Südkalifornien und stellt Ingenieure ein, die an drahtlosen Funkgeräten, integrierten Hochfrequenzschaltungen und einem drahtlosen SoC arbeiten.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>covid-19 on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/categories/covid-19/</link>
+    <description>Recent content in covid-19 on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Wed, 16 Jun 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/categories/covid-19/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-06-16</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-06-16/</link>
+      <pubDate>Wed, 16 Jun 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-06-16/</guid>
+      <description>Windows 11-Leck zeigt neue Benutzeroberfläche, Startmenü und mehr (3 Minuten Lesezeit) Eine frühe Version von Windows 11 ist im Vorfeld der Enthüllung am 24.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-10-23</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2020-10-23/</link>
+      <pubDate>Fri, 23 Oct 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2020-10-23/</guid>
+      <description>FDA genehmigt Remdesivir zur Behandlung von COVID-19 (3 Minuten Lesezeit) Die FDA hat Remdesivir zur Behandlung von COVID-19 bei Krankenhauspatienten zugelassen.</description>
+    </item>
+    
+  </channel>
+</rss>

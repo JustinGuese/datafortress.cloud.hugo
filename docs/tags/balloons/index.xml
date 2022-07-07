@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>balloons on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/balloons/</link>
+    <description>Recent content in balloons on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Oct 2020 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/balloons/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2020-10-29</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-10-29/</link>
+      <pubDate>Thu, 29 Oct 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-10-29/</guid>
+      <description>Apple search engine efforts ‘stepping up’ as Google deal under threat (4 minute read) Apple has been working on its Applebot crawler since before 2015, and with Google under investigation for antitrust practices, it may have to put it to use.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-07-08</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-07-08/</link>
+      <pubDate>Wed, 08 Jul 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-07-08/</guid>
+      <description>Uber launches grocery delivery in Latin America, Canada, with US to follow (2 minute read) Uber has launched an app-based grocery service in several Latin American and Canadian cities through its UberEats app.</description>
+    </item>
+    
+  </channel>
+</rss>

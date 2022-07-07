@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pill on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/pill/</link>
+    <description>Recent content in pill on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Dec 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/pill/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-12-23</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-12-23/</link>
+      <pubDate>Thu, 23 Dec 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-12-23/</guid>
+      <description>Google Voice now lets you decide who goes to voicemail (1 minute read) Google Voice can now be configured to forward calls to a linked phone number or voicemail.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-03-25</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-03-25/</link>
+      <pubDate>Thu, 25 Mar 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-03-25/</guid>
+      <description>Pfizer trials new pill that could stop early-stage Covid in its tracks (3 minute read) Pfizer has started stage one clinical trials on an oral pill designed to be an early intervention for Covid-19.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>man on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/man/</link>
+    <description>Recent content in man on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Jul 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/man/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-07-16</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-07-16/</link>
+      <pubDate>Fri, 16 Jul 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-07-16/</guid>
+      <description>Square to Create a New Bitcoin Platform for Financial Services (1 minute read) Square is building an open developer platform to make it easier to provide non-custodial, decentralized financial services.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-01-15</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-01-15/</link>
+      <pubDate>Fri, 15 Jan 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-01-15/</guid>
+      <description>Samsung Galaxy S21, S21 Plus, and S21 Ultra first look: polished design (and prices) (8 minute read) Samsung&amp;rsquo;s Galaxy S21 ($799), Galaxy S21 Plus ($999), and Galaxy S21 Ultra ($1,199) have arrived.</description>
+    </item>
+    
+  </channel>
+</rss>

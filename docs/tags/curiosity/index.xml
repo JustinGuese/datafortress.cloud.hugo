@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>curiosity on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/curiosity/</link>
+    <description>Recent content in curiosity on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Jul 2020 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/curiosity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2020-07-08</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-07-08/</link>
+      <pubDate>Wed, 08 Jul 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-07-08/</guid>
+      <description>Uber launches grocery delivery in Latin America, Canada, with US to follow (2 minute read) Uber has launched an app-based grocery service in several Latin American and Canadian cities through its UberEats app.</description>
+    </item>
+    
+  </channel>
+</rss>

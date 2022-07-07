@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dating on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/dating/</link>
+    <description>Recent content in dating on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Apr 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/dating/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-04-16</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-04-16/</link>
+      <pubDate>Fri, 16 Apr 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-04-16/</guid>
+      <description>Google Earth is now a 3D time machine (3 minute read) Google Earth just had its biggest update since 2017, with a new 3D time-lapse feature that lets users fly around the virtual globe and view satellite imagery from the past 37 years.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-07-09</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-07-09/</link>
+      <pubDate>Thu, 09 Jul 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-07-09/</guid>
+      <description>This is Tinder’s new video chat feature, Face to Face (4 minute read) Tinder has introduced a new video call feature called Face to Face in 13 countries, including several regions in the US, Australia, Brazil, and France.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>well on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/well/</link>
+    <description>Recent content in well on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Jan 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/well/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-01-08</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-01-08/</link>
+      <pubDate>Fri, 08 Jan 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-01-08/</guid>
+      <description>How Boston Dynamics Taught Its Robots to Dance (12 minute read) Last week, Boston Dynamics released a video of its robots dancing.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-11-12</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-11-12/</link>
+      <pubDate>Thu, 12 Nov 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-11-12/</guid>
+      <description>YouTube went down around the world, but it’s now fixed (2 minute read) YouTube experienced a worldwide outage for about an hour today.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>privacy on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/privacy/</link>
+    <description>Recent content in privacy on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Feb 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-02-17</title>
+      <link>https://datafortress.cloud/blog/tech-news-2022-02-17/</link>
+      <pubDate>Thu, 17 Feb 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2022-02-17/</guid>
+      <description>Disney is developing planned communities for fans who never want to leave its clutches (3 minute read) Storyliving by Disney is a new part of the company&amp;rsquo;s theme park division that plans to develop a series of communities for residential living.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-11-06</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-11-06/</link>
+      <pubDate>Fri, 06 Nov 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-11-06/</guid>
+      <description>WhatsApp now lets you post ephemeral messages that disappear after 7 days (4 minute read) WhatsApp users can now mark messages to disappear after seven days.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>intelligence on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/tags/intelligence/</link>
+    <description>Recent content in intelligence on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Wed, 26 Jan 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-01-26</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2022-01-26/</link>
+      <pubDate>Wed, 26 Jan 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2022-01-26/</guid>
+      <description>Google gibt FLoC auf und führt die Topics-API ein, um Tracking-Cookies zu ersetzen (3 Minuten Lesezeit) Topics ist die neue Methode von Google, um Werbetreibenden zu zeigen, welche Anzeigen für Nutzer geschaltet werden sollen.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-06-09</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-06-09/</link>
+      <pubDate>Wed, 09 Jun 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-06-09/</guid>
+      <description>Apple führt Gespräche mit chinesischen Batterieherstellern für Apple Car (2 Minuten Lesezeit) Angeblich spricht Apple mit zwei großen chinesischen Batterieherstellern über die Lieferung von Batterien für sein Elektrofahrzeug.</description>
+    </item>
+    
+  </channel>
+</rss>

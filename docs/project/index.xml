@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Our Projects on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/project/</link>
+    <description>Recent content in Our Projects on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Jul 2018 18:19:33 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Animated Logo Creation</title>
+      <link>https://datafortress.cloud/project/logo-creation/</link>
+      <pubDate>Mon, 24 Sep 2018 14:48:03 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/project/logo-creation/</guid>
+      <description>Get moving Logos are becoming increasingly important in the digital age.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Big Data Analytics</title>
+      <link>https://datafortress.cloud/project/big-data-analytics/</link>
+      <pubDate>Mon, 24 Sep 2018 14:48:03 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/project/big-data-analytics/</guid>
+      <description>Enterprises have an enormous amount of data in their hands. Usually, this data is stored in several systems, with different data formats, different security measures, and locations.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Compliance</title>
+      <link>https://datafortress.cloud/project/cloud-compliance/</link>
+      <pubDate>Mon, 24 Sep 2018 14:48:03 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/project/cloud-compliance/</guid>
+      <description>Whilst working at my former company, we decided to implement some processes in the Cloud.</description>
+    </item>
+    
+    <item>
+      <title>Digital Twin</title>
+      <link>https://datafortress.cloud/project/digital-twin/</link>
+      <pubDate>Mon, 24 Sep 2018 14:48:03 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/project/digital-twin/</guid>
+      <description>“A digital twin is a digital replica of a living or non-living physical entity.</description>
+    </item>
+    
+    <item>
+      <title>GroupIT Website</title>
+      <link>https://datafortress.cloud/project/cloud-group-it/</link>
+      <pubDate>Mon, 24 Sep 2018 14:48:03 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/project/cloud-group-it/</guid>
+      <description>The GroupIT Website has been a requirement by Porsche to offer a way to efficiently deliver information, news, and instructions to its worldwide dealer network.</description>
+    </item>
+    
+    <item>
+      <title>Porsche AR Viewer</title>
+      <link>https://datafortress.cloud/project/ar-porsche-viewer/</link>
+      <pubDate>Mon, 24 Sep 2018 14:48:03 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/project/ar-porsche-viewer/</guid>
+      <description>The Porsche AR Viewer has been an Augmented Reality app I built during my time at Porsche Austria.</description>
+    </item>
+    
+    <item>
+      <title>Website: Porsche AR Viewer</title>
+      <link>https://datafortress.cloud/project/porsche-ar-website/</link>
+      <pubDate>Mon, 24 Sep 2018 14:48:03 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/project/porsche-ar-website/</guid>
+      <description>The website for the Porsche AR Viewer (http://www.discovar.at) had special requirements.</description>
+    </item>
+    
+    <item>
+      <title>#unraceable Virtual Reality Simulator</title>
+      <link>https://datafortress.cloud/project/unraceable-virtual-reality-simulator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://datafortress.cloud/project/unraceable-virtual-reality-simulator/</guid>
+      <description>Unraceable is the name of a virtual reality motionseat project and App that I managed for three years.</description>
+    </item>
+    
+    <item>
+      <title>360° Car Sales – Virtual Testdrives</title>
+      <link>https://datafortress.cloud/project/360-car-sales-virtual-testdrives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://datafortress.cloud/project/360-car-sales-virtual-testdrives/</guid>
+      <description>Selling used cars is heavily relying on trust. The investment of a car is oftentimes a decision that influences the customer for several years, therefore being a topic that is heavily researched beforehand by him.</description>
+    </item>
+    
+    <item>
+      <title>360° Virtual Tours – Real Estate</title>
+      <link>https://datafortress.cloud/project/360-virtual-tours-real-estate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://datafortress.cloud/project/360-virtual-tours-real-estate/</guid>
+      <description>In the spring of 2016, I offered Virtual Tours for Holiday Houses, with a focus on 360 degree and drone aerial photography.</description>
+    </item>
+    
+    <item>
+      <title>DataFortress.cloud</title>
+      <link>https://datafortress.cloud/project/serverless-static-website/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://datafortress.cloud/project/serverless-static-website/</guid>
+      <description>Why not WordPress? To give a further explanation as to why I chose to run this blog completely serverless, please check out my article first.</description>
+    </item>
+    
+  </channel>
+</rss>

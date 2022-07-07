@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gif on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/gif/</link>
+    <description>Recent content in gif on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Jan 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/gif/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-01-17</title>
+      <link>https://datafortress.cloud/blog/tech-news-2022-01-17/</link>
+      <pubDate>Mon, 17 Jan 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2022-01-17/</guid>
+      <description>Nvidia’s AI-powered scaling makes old games look better without a huge performance hit (3 minute read) Nvidia&amp;rsquo;s latest game-ready driver includes a tool called Deep Learning Dynamic Super Resolution (DLDSR) that can make most games look sharper.</description>
+    </item>
+    
+  </channel>
+</rss>

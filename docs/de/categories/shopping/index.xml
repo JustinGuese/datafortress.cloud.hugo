@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shopping on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/categories/shopping/</link>
+    <description>Recent content in shopping on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Wed, 20 Oct 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/categories/shopping/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-10-20</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-10-20/</link>
+      <pubDate>Wed, 20 Oct 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-10-20/</guid>
+      <description>Die größten Ankündigungen von Googles Pixel 6-Event (3 Minuten Lesezeit) Google hat endlich seine Pixel 6 und Pixel 6 Pro Telefone enthüllt.</description>
+    </item>
+    
+  </channel>
+</rss>

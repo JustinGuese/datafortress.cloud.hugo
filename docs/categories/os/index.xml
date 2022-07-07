@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>os on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/categories/os/</link>
+    <description>Recent content in os on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Feb 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/categories/os/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-02-16</title>
+      <link>https://datafortress.cloud/blog/tech-news-2022-02-16/</link>
+      <pubDate>Wed, 16 Feb 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2022-02-16/</guid>
+      <description>A first look at Microsoft’s new Windows 11 Android apps support (3 minute read) Microsoft has released the first preview of its Android app support in Windows 11 to testers in the Windows Insider program.</description>
+    </item>
+    
+  </channel>
+</rss>

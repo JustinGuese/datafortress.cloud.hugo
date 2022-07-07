@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>detect on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/categories/detect/</link>
+    <description>Recent content in detect on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Thu, 16 Sep 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/categories/detect/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-09-16</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-09-16/</link>
+      <pubDate>Thu, 16 Sep 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-09-16/</guid>
+      <description>Wie man den ersten rein zivilen Raumflug der Welt an Bord eines SpaceX-Schiffs beobachten kann (3 Minuten) Der Start von Inspiration4 ist für den 15.</description>
+    </item>
+    
+  </channel>
+</rss>

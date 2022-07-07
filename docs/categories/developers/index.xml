@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>developers on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/categories/developers/</link>
+    <description>Recent content in developers on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Feb 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/categories/developers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-02-17</title>
+      <link>https://datafortress.cloud/blog/tech-news-2022-02-17/</link>
+      <pubDate>Thu, 17 Feb 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2022-02-17/</guid>
+      <description>Disney is developing planned communities for fans who never want to leave its clutches (3 minute read) Storyliving by Disney is a new part of the company&amp;rsquo;s theme park division that plans to develop a series of communities for residential living.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-11-16</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-11-16/</link>
+      <pubDate>Tue, 16 Nov 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-11-16/</guid>
+      <description>Twitter makes big changes for devs as it eyes decentralized future (4 minute read) Twitter&amp;rsquo;s new API is ready to come out of early access.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-10-18</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-10-18/</link>
+      <pubDate>Mon, 18 Oct 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-10-18/</guid>
+      <description>Facebook is researching AI systems that see, hear, and remember everything you do (5 minute read) Ego4D is a research project at Facebook that is using first-person video data to train AI to develop skills such as episodic memory, forecasting, and audio-visual diarization.</description>
+    </item>
+    
+  </channel>
+</rss>

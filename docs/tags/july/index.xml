@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>july on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/july/</link>
+    <description>Recent content in july on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Jul 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/july/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-07-12</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-07-12/</link>
+      <pubDate>Mon, 12 Jul 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-07-12/</guid>
+      <description>Tesla finally releases Full Self-Driving Beta v9: here’s what it looks like (3 minute read) Tesla has released its Full Self-Driving Beta v9 update.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-07-05</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-07-05/</link>
+      <pubDate>Mon, 05 Jul 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-07-05/</guid>
+      <description>China regulator orders Didi ride-hailing app removed from stores (1 minute read) The Cyberspace Administration of China has accused Didi of illegally collecting users&amp;rsquo; personal data and ordered app stores to remove its Chuxing app from their libraries.</description>
+    </item>
+    
+  </channel>
+</rss>

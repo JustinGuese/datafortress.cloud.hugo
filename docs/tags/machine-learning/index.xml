@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/machine-learning/</link>
+    <description>Recent content in Machine Learning on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Sep 2020 07:10:46 +0200</lastBuildDate><atom:link href="https://datafortress.cloud/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How To - Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation</title>
+      <link>https://datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/</link>
+      <pubDate>Tue, 29 Sep 2020 07:10:46 +0200</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/</guid>
+      <description>How To: Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation Why should I ditch Ubuntu?</description>
+    </item>
+    
+    <item>
+      <title>How to deploy an automated trading bot using the Facebook Prophet Machine Learning model to AWS Lambda (serverless)</title>
+      <link>https://datafortress.cloud/blog/how-to-deploy-an-automated-trading-bot-using-the-facebook-prophet-machine-learning-model-to-aws-lambda-serverless/</link>
+      <pubDate>Sun, 23 Aug 2020 22:00:00 +0000</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/how-to-deploy-an-automated-trading-bot-using-the-facebook-prophet-machine-learning-model-to-aws-lambda-serverless/</guid>
+      <description>I divided this post into the “Why did I do it” and the “Technical How To”.</description>
+    </item>
+    
+    <item>
+      <title>Face Detection using MTCNN</title>
+      <link>https://datafortress.cloud/blog/face-detection-using-mtcnn/</link>
+      <pubDate>Mon, 08 Jun 2020 07:10:46 +0200</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/face-detection-using-mtcnn/</guid>
+      <description>What is MTCNN MTCNN is a python (pip) library written by Github user ipacz, which implements the [paper Zhang, Kaipeng et al.</description>
+    </item>
+    
+  </channel>
+</rss>

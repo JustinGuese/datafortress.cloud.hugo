@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sql on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/sql/</link>
+    <description>Recent content in sql on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 May 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-05-11</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-05-11/</link>
+      <pubDate>Tue, 11 May 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-05-11/</guid>
+      <description>Google foils Roku’s YouTube TV ban, adds service to the main YouTube app (3 minute read) Roku recently removed the YouTube TV app from its store due to a disagreement with its contract with Google.</description>
+    </item>
+    
+  </channel>
+</rss>

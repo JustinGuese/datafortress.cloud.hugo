@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>beta on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/tags/beta/</link>
+    <description>Recent content in beta on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Mon, 20 Sep 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/beta/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-09-20</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-09-20/</link>
+      <pubDate>Mon, 20 Sep 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-09-20/</guid>
+      <description>Cameo startet Cameo Calls, einen Service für Fans zum Videochat mit Prominenten (2 Minuten Lesezeit) Mit Cameo Calls können Fans mit Influencern und Prominenten unter vier Augen chatten.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-08-17</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2020-08-17/</link>
+      <pubDate>Mon, 17 Aug 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2020-08-17/</guid>
+      <description>AMC-Kinos werden am 20 August mit 15-Cent-Tickets wiedereröffnet (2 Minuten lesen).</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-07-17</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2020-07-17/</link>
+      <pubDate>Fri, 17 Jul 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2020-07-17/</guid>
+      <description>Microsoft bietet ab September mit dem Xbox Game Pass Ultimate kostenloses xCloud-Streaming an (6 Minuten Lesedauer) Microsoft wird im September xCloud kostenlos für seine Xbox Game Pass Ultimate-Abonnenten einführen.</description>
+    </item>
+    
+  </channel>
+</rss>

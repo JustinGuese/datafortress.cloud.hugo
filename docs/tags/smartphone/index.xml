@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>smartphone on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/smartphone/</link>
+    <description>Recent content in smartphone on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Aug 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/smartphone/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-08-10</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-08-10/</link>
+      <pubDate>Tue, 10 Aug 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-08-10/</guid>
+      <description>Netflix is working on a bunch of new reality shows, and you’re invited (2 minute read) Netflix has opened up casting for future programming to anyone over the age of 18 in the US, Canada, United Kingdom, and Ireland.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-09-09</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-09-09/</link>
+      <pubDate>Wed, 09 Sep 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-09-09/</guid>
+      <description>Samsung Is Developing A Transparent Smartphone (2 minute read) Samsung submitted a patent for a transparent smartphone in January.</description>
+    </item>
+    
+  </channel>
+</rss>

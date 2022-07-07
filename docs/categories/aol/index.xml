@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aol on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/categories/aol/</link>
+    <description>Recent content in aol on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Apr 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/categories/aol/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-04-29</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-04-29/</link>
+      <pubDate>Thu, 29 Apr 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-04-29/</guid>
+      <description>Netflix’s new ‘Play Something’ shuffle feature is here to solve your movie night indecision (1 minute read) Play Something is a new feature for Netflix that automatically suggests new shows and movies.</description>
+    </item>
+    
+  </channel>
+</rss>

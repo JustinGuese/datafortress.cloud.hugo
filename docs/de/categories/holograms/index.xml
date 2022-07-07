@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>holograms on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/categories/holograms/</link>
+    <description>Recent content in holograms on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Mon, 15 Mar 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/categories/holograms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-03-15</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-03-15/</link>
+      <pubDate>Mon, 15 Mar 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-03-15/</guid>
+      <description>Facebook stellt eine KI vor, die Videos verstehen kann (6 Minuten Lesedauer) Learning from Videos ist ein Projekt von Facebook, das KI nutzt, um automatisch Audio-, Text- und visuelle Darstellungen aus Videos zu lernen.</description>
+    </item>
+    
+  </channel>
+</rss>

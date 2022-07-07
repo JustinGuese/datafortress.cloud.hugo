@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>liquid on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/tags/liquid/</link>
+    <description>Recent content in liquid on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Wed, 15 Sep 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/liquid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-09-15</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-09-15/</link>
+      <pubDate>Wed, 15 Sep 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-09-15/</guid>
+      <description>Hier ist alles, was Apple auf seinem iPhone 13-Event angekündigt hat (3 Minuten Lesedauer) Apple hat auf seinem Streaming-Event in Kalifornien seine neueste Hardware-Reihe vorgestellt.</description>
+    </item>
+    
+  </channel>
+</rss>

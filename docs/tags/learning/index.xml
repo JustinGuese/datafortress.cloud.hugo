@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>learning on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/learning/</link>
+    <description>Recent content in learning on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Feb 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-02-09</title>
+      <link>https://datafortress.cloud/blog/tech-news-2022-02-09/</link>
+      <pubDate>Wed, 09 Feb 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2022-02-09/</guid>
+      <description>Apple announces a way to buy stuff by tapping iPhones together (2 minute read) Apple is releasing a new Tap to Pay feature for the iPhone that allows people to receive payments.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-09-27</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-09-27/</link>
+      <pubDate>Mon, 27 Sep 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-09-27/</guid>
+      <description>Yahoo has built a new calendar app called Day, and it’s recruited the co-founder of Sunrise to design it (3 minute read) Day is a new standalone calendar app from Yahoo.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-07-09</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-07-09/</link>
+      <pubDate>Fri, 09 Jul 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-07-09/</guid>
+      <description>Square is going to make a hardware wallet for bitcoin (1 minute read) Square is making a hardware wallet for bitcoin.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-03-15</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-03-15/</link>
+      <pubDate>Mon, 15 Mar 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-03-15/</guid>
+      <description>Facebook details AI that can understand videos (6 minute read) Learning from Videos is a project from Facebook that uses AI to automatically learn audio, textual, and visual representations from videos.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-10-05</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-10-05/</link>
+      <pubDate>Mon, 05 Oct 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-10-05/</guid>
+      <description>Apple imagines a foldable iPhone with a ‘self-healing’ display (2 minute read) Apple filed a patent in January for a foldable smartphone with a self-healing display that could repair dents or scratches on the screen.</description>
+    </item>
+    
+  </channel>
+</rss>

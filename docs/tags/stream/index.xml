@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stream on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/stream/</link>
+    <description>Recent content in stream on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Feb 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/stream/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-02-07</title>
+      <link>https://datafortress.cloud/blog/tech-news-2022-02-07/</link>
+      <pubDate>Mon, 07 Feb 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2022-02-07/</guid>
+      <description>Google Stream is what Stadia should have been from the start (3 minute read) Google Stream is a backend cloud gaming technology that Google is pitching to businesses.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-10-13</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-10-13/</link>
+      <pubDate>Wed, 13 Oct 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-10-13/</guid>
+      <description>&amp;lsquo;Unleashed&amp;rsquo; Apple Event Focusing on New Macs to Take Place on October 18 (2 minute read) Apple will be holding its Unleashed event on October 18 at 10 am Pacific Time at the Steve Jobs Theater on the Apple Park campus in Cupertino.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-10-20</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-10-20/</link>
+      <pubDate>Tue, 20 Oct 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-10-20/</guid>
+      <description>&amp;lsquo;Apple Music TV&amp;rsquo; Launches in U.S. (1 minute read) Apple has just launched Apple Music TV, a 24-hour stream of music videos, live shows, and events.</description>
+    </item>
+    
+  </channel>
+</rss>

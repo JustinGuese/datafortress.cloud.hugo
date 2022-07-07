@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blocks on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/blocks/</link>
+    <description>Recent content in blocks on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Jan 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/blocks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-01-28</title>
+      <link>https://datafortress.cloud/blog/tech-news-2022-01-28/</link>
+      <pubDate>Fri, 28 Jan 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2022-01-28/</guid>
+      <description>Apple will reportedly allow iPhones to accept contactless payments (2 minute read) Apple may soon be rolling out a feature that will let small businesses accept payments using their iPhones without any extra hardware.</description>
+    </item>
+    
+  </channel>
+</rss>

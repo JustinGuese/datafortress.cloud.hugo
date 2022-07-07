@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xcloud on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/tags/xcloud/</link>
+    <description>Recent content in xcloud on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Tue, 16 Feb 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/xcloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-02-16</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-02-16/</link>
+      <pubDate>Tue, 16 Feb 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-02-16/</guid>
+      <description>Ein weiterer neuer Tesla Semi-Prototyp in Kalifornien gesichtet (2 Minuten Lesezeit) Ein neuer Prototyp des Tesla Semi wurde in Truckee, Kalifornien, gesichtet.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-07-17</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2020-07-17/</link>
+      <pubDate>Fri, 17 Jul 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2020-07-17/</guid>
+      <description>Microsoft bietet ab September mit dem Xbox Game Pass Ultimate kostenloses xCloud-Streaming an (6 Minuten Lesedauer) Microsoft wird im September xCloud kostenlos für seine Xbox Game Pass Ultimate-Abonnenten einführen.</description>
+    </item>
+    
+  </channel>
+</rss>

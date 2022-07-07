@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>law on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/categories/law/</link>
+    <description>Recent content in law on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Jul 2020 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/categories/law/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2020-07-07</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-07-07/</link>
+      <pubDate>Tue, 07 Jul 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-07-07/</guid>
+      <description>Secretive data startup Palantir has confidentially filed for an IPO (2 minute read) Palantir is a secretive data and analytics startup that provides technologies to clients such as the US government.</description>
+    </item>
+    
+  </channel>
+</rss>

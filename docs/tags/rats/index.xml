@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rats on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/rats/</link>
+    <description>Recent content in rats on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Dec 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/rats/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-12-16</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-12-16/</link>
+      <pubDate>Thu, 16 Dec 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-12-16/</guid>
+      <description>Reddit files to take the company public (1 minute read) Reddit has started the process of going public by filing a confidential S-1 with the Securities and Exchange Commission.</description>
+    </item>
+    
+  </channel>
+</rss>

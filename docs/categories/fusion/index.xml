@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fusion on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/categories/fusion/</link>
+    <description>Recent content in fusion on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Mar 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/categories/fusion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-03-14</title>
+      <link>https://datafortress.cloud/blog/tech-news-2022-03-14/</link>
+      <pubDate>Mon, 14 Mar 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2022-03-14/</guid>
+      <description>New MacBook Air and 13-inch MacBook Pro with M2 coming later this year (3 minute read) New MacBooks with the M2 chip are coming later this year.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-08-19</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-08-19/</link>
+      <pubDate>Thu, 19 Aug 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-08-19/</guid>
+      <description>Facebook releases a report on the most-viewed content in News Feed (3 minute read) Facebook has released a report that shows what content was most widely viewed by Americans between April and June.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-09-22</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-09-22/</link>
+      <pubDate>Tue, 22 Sep 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-09-22/</guid>
+      <description>Microsoft purchases Bethesda Softworks in industry-changing acquisition (3 minute read) Microsoft has announced that it is buying the corporate parents of Bethesda Softworks, ZeniMax Media.</description>
+    </item>
+    
+  </channel>
+</rss>

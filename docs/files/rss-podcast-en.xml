@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+      <channel>
+          <title>
+              DataFortress.cloud Tech News EN
+          </title>
+        <itunes:owner>
+                <itunes:email>info@datafortress.cloud</itunes:email>
+                </itunes:owner>
+        <itunes:author>Justin Güse</itunes:author>
+          <description>
+              Current news out of the Tech and Future scene
+          </description>
+          <link>
+              https://datafortress.cloud/
+          </link>
+          <lastBuildDate>Wed, 16 Mar 2022 16:47:46 +0100</lastBuildDate>
+          <generator>
+              datafortress.cloud generator
+          </generator>
+          <itunes:image href="https://datafortress.cloud/images/df-technews.png" />
+          <language>
+              en-US
+          </language>
+          <copyright>
+              CC datafortress.cloud 2022
+          </copyright>
+          <managingEditor>
+              info@datafortress.cloud (Justin Güse)
+          </managingEditor>
+          <webMaster>
+              info@datafortress.cloud (Justin Güse)
+          </webMaster>
+          <category>
+              News
+          </category>
+          <ttl>
+              1800
+        </ttl>
+<item>
+              <title>
+                  Tech NEWS 2022-03-10
+              </title>
+              <link>
+                https://datafortress.cloud/blog/tech-news-2022-03-10
+              </link>
+              <description>
+                 Tech NEWS 2022-03-10 - topics: tor, service, music, eggs, available, soundon
+              </description>
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <pubDate>Wed, 16 Mar 2022 16:47:46 +0100</pubDate>
+              <enclosure url="https://datafortress.cloud/podcast/en-US/12460.mp3"  
+                  type="audio/mpeg"
+              />
+              <guid>entech-news-2022-03-10</guid>
+          </item>
+<item>
+              <title>
+                  Tech NEWS 2022-03-14
+              </title>
+              <link>
+                https://datafortress.cloud/blog/tech-news-2022-03-14
+              </link>
+              <description>
+                 Tech NEWS 2022-03-14 - topics: fusion, macbook, m2, vaccines, later, m1
+              </description>
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <pubDate>Wed, 16 Mar 2022 16:47:46 +0100</pubDate>
+              <enclosure url="https://datafortress.cloud/podcast/en-US/12531.mp3"  
+                  type="audio/mpeg"
+              />
+              <guid>entech-news-2022-03-14</guid>
+          </item>
+<item>
+              <title>
+                  Tech NEWS 2022-03-10
+              </title>
+              <link>
+                https://datafortress.cloud/blog/tech-news-2022-03-10
+              </link>
+              <description>
+                 Tech NEWS 2022-03-10 - topics: tor, service, music, eggs, available, soundon
+              </description>
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <pubDate>Wed, 16 Mar 2022 16:43:54 +0100</pubDate>
+              <enclosure url="https://datafortress.cloud/podcast/en-US/12460.mp3"  
+                  type="audio/mpeg"
+              />
+              <guid>entech-news-2022-03-10</guid>
+          </item>
+<item>
+              <title>
+                  Tech NEWS 2022-03-14
+              </title>
+              <link>
+                https://datafortress.cloud/blog/tech-news-2022-03-14
+              </link>
+              <description>
+                 Tech NEWS 2022-03-14 - topics: fusion, macbook, m2, vaccines, later, m1
+              </description>
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <pubDate>Wed, 16 Mar 2022 16:43:54 +0100</pubDate>
+              <enclosure url="https://datafortress.cloud/podcast/en-US/12531.mp3"  
+                  type="audio/mpeg"
+              />
+              <guid>entech-news-2022-03-14</guid>
+          </item>
+<item>
+              <title>
+                  Tech NEWS 2022-03-10
+              </title>
+              <link>
+                https://datafortress.cloud/blog/tech-news-2022-03-10
+              </link>
+              <description>
+                 Tech NEWS 2022-03-10 - topics: tor, service, music, eggs, available, soundon
+              </description>
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <pubDate>Wed, 16 Mar 2022 13:58:43 +0100</pubDate>
+              <enclosure url="https://datafortress.cloud/podcast/en-US/12460.mp3"  
+                  type="audio/mpeg"
+              />
+              <guid>entech-news-2022-03-10</guid>
+          </item>
+<item>
+              <title>
+                  Tech NEWS 2022-03-14
+              </title>
+              <link>
+                https://datafortress.cloud/blog/tech-news-2022-03-14
+              </link>
+              <description>
+                 Tech NEWS 2022-03-14 - topics: fusion, macbook, m2, vaccines, later, m1
+              </description>
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <pubDate>Wed, 16 Mar 2022 13:58:43 +0100</pubDate>
+              <enclosure url="https://datafortress.cloud/podcast/en-US/12531.mp3"  
+                  type="audio/mpeg"
+              />
+              <guid>entech-news-2022-03-14</guid>
+          </item>
+<item>
+              <title>
+                  Tech NEWS 2022-03-10
+              </title>
+              <link>
+                https://datafortress.cloud/blog/tech-news-2022-03-10
+              </link>
+              <description>
+                 Tech NEWS 2022-03-10 - topics: tor, service, music, eggs, available, soundon
+              </description>
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <pubDate>Wed, 16 Mar 2022 13:54:24 +0100</pubDate>
+              <enclosure url="https://datafortress.cloud/podcast/en-US/12460.mp3"  
+                  type="audio/mpeg"
+              />
+              <guid>entech-news-2022-03-10</guid>
+          </item>
+<item>
+              <title>
+                  Tech NEWS 2022-03-14
+              </title>
+              <link>
+                https://datafortress.cloud/blog/tech-news-2022-03-14
+              </link>
+              <description>
+                 Tech NEWS 2022-03-14 - topics: fusion, macbook, m2, vaccines, later, m1
+              </description>
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <pubDate>Wed, 16 Mar 2022 13:54:24 +0100</pubDate>
+              <enclosure url="https://datafortress.cloud/podcast/en-US/12531.mp3"  
+                  type="audio/mpeg"
+              />
+              <guid>entech-news-2022-03-14</guid>
+          </item>
+<item>
+              <title>
+                  Tech NEWS 2022-03-10
+              </title>
+              <link>
+                https://datafortress.cloud/blog/tech-news-2022-03-10
+              </link>
+              <description>
+                 Tech NEWS 2022-03-10 - topics: tor, service, music, eggs, available, soundon
+              </description>
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <pubDate>Wed, 16 Mar 2022 13:49:17 +0100</pubDate>
+              <enclosure url="https://datafortress.cloud/podcast/en-US/12460.mp3"  
+                  type="audio/mpeg"
+              />
+              <guid>entech-news-2022-03-10</guid>
+          </item>
+<item>
+              <title>
+                  Tech NEWS 2022-03-14
+              </title>
+              <link>
+                https://datafortress.cloud/blog/tech-news-2022-03-14
+              </link>
+              <description>
+                 Tech NEWS 2022-03-14 - topics: fusion, macbook, m2, vaccines, later, m1
+              </description>
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <pubDate>Wed, 16 Mar 2022 13:49:17 +0100</pubDate>
+              <enclosure url="https://datafortress.cloud/podcast/en-US/12531.mp3"  
+                  type="audio/mpeg"
+              />
+              <guid>entech-news-2022-03-14</guid>
+          </item>
+<item>
+              <title>
+                  Tech NEWS 2022-03-10
+              </title>
+              <link>
+                https://datafortress.cloud/blog/tech-news-2022-03-10
+              </link>
+              <description>
+                 Tech NEWS 2022-03-10 - topics: tor, service, music, eggs, available, soundon
+              </description>
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <pubDate>Tue, 15 Mar 2022 14:42:40 +0100</pubDate>
+              <enclosure url="https://datafortress.cloud/podcast/en-US/12460.mp3"  
+                  type="audio/mpeg"
+              />
+              <guid>entech-news-2022-03-10</guid>
+          </item>
+<item>
+              <title>
+                  Tech NEWS 2022-03-14
+              </title>
+              <link>
+                https://datafortress.cloud/blog/tech-news-2022-03-14
+              </link>
+              <description>
+                 Tech NEWS 2022-03-14 - topics: fusion, macbook, m2, vaccines, later, m1
+              </description>
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <pubDate>Tue, 15 Mar 2022 14:42:40 +0100</pubDate>
+              <enclosure url="https://datafortress.cloud/podcast/en-US/12531.mp3"  
+                  type="audio/mpeg"
+              />
+              <guid>entech-news-2022-03-14</guid>
+          </item>
+<item>
+              <title>
+                  Tech NEWS 2022-03-10
+              </title>
+              <link>
+                https://datafortress.cloud/blog/tech-news-2022-03-10
+              </link>
+              <description>
+                 Tech NEWS 2022-03-10 - topics: tor, service, music, eggs, available, soundon
+              </description>
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <pubDate>Tue, 15 Mar 2022 14:40:41 +0100</pubDate>
+              <enclosure url="https://datafortress.cloud/podcast/en-US/12460.mp3"  
+                  type="audio/mpeg"
+              />
+              <guid>entech-news-2022-03-10</guid>
+          </item>
+<item>
+              <title>
+                  Tech NEWS 2022-03-14
+              </title>
+              <link>
+                https://datafortress.cloud/blog/tech-news-2022-03-14
+              </link>
+              <description>
+                 Tech NEWS 2022-03-14 - topics: fusion, macbook, m2, vaccines, later, m1
+              </description>
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <pubDate>Tue, 15 Mar 2022 14:40:41 +0100</pubDate>
+              <enclosure url="https://datafortress.cloud/podcast/en-US/12531.mp3"  
+                  type="audio/mpeg"
+              />
+              <guid>entech-news-2022-03-14</guid>
+          </item>
+<item>
+              <title>
+                  Tech NEWS 2022-03-10
+              </title>
+              <link>
+                https://datafortress.cloud/blog/tech-news-2022-03-10
+              </link>
+              <description>
+                 Tech NEWS 2022-03-10 - topics: tor, service, (3, music, eggs, available
+              </description>
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <pubDate>Tue, 15 Mar 2022 09:59:28 +0100</pubDate>
+              <enclosure url="https://datafortress.cloud/podcast/en-US/12460.mp3"  
+                  type="audio/mpeg"
+              />
+              <guid>entech-news-2022-03-10</guid>
+          </item>
+<item>
+              <title>
+                  Crypto Update NEWS 2022-03-10
+              </title>
+              <link>
+                https://datafortress.cloud/blog/crypto-update-news-2022-03-10
+              </link>
+              <description>
+                 Crypto Update NEWS 2022-03-10 - topics: carbon, ethereum, nft, article, likvidi, launch
+              </description>
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <pubDate>Tue, 15 Mar 2022 09:59:28 +0100</pubDate>
+              <enclosure url="https://datafortress.cloud/podcast/en-US/12463.mp3"  
+                  type="audio/mpeg"
+              />
+              <guid>encrypto-update-news-2022-03-10</guid>
+          </item>
+<item>
+              <title>
+                  Crypto Update NEWS 2022-03-11
+              </title>
+              <link>
+                https://datafortress.cloud/blog/crypto-update-news-2022-03-11
+              </link>
+              <description>
+                 Crypto Update NEWS 2022-03-11 - topics: decentralized, crypto, nft, services, exchanges, stripe
+              </description>
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <pubDate>Tue, 15 Mar 2022 09:59:28 +0100</pubDate>
+              <enclosure url="https://datafortress.cloud/podcast/en-US/12482.mp3"  
+                  type="audio/mpeg"
+              />
+              <guid>encrypto-update-news-2022-03-11</guid>
+          </item>
+<item>
+              <title>
+                  Tech NEWS 2022-03-14
+              </title>
+              <link>
+                https://datafortress.cloud/blog/tech-news-2022-03-14
+              </link>
+              <description>
+                 Tech NEWS 2022-03-14 - topics: fusion, macbook, m2, vaccines, later, (3
+              </description>
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <pubDate>Tue, 15 Mar 2022 09:59:28 +0100</pubDate>
+              <enclosure url="https://datafortress.cloud/podcast/en-US/12531.mp3"  
+                  type="audio/mpeg"
+              />
+              <guid>entech-news-2022-03-14</guid>
+          </item>
+<item>
+              <title>
+                  Crypto Update NEWS 2022-03-14
+              </title>
+              <link>
+                https://datafortress.cloud/blog/crypto-update-news-2022-03-14
+              </link>
+              <description>
+                 Crypto Update NEWS 2022-03-14 - topics: ethereum, web3.js, (4, create, nfts, privacy
+              </description>
+              <author>
+                  info@datafortress.cloud (Justin Güse)
+              </author>
+              <pubDate>Tue, 15 Mar 2022 09:59:28 +0100</pubDate>
+              <enclosure url="https://datafortress.cloud/podcast/en-US/12538.mp3"  
+                  type="audio/mpeg"
+              />
+              <guid>encrypto-update-news-2022-03-14</guid>
+          </item>
+      </channel>
+</rss>

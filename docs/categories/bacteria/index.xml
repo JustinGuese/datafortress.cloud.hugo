@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bacteria on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/categories/bacteria/</link>
+    <description>Recent content in bacteria on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Feb 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/categories/bacteria/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-02-25</title>
+      <link>https://datafortress.cloud/blog/tech-news-2022-02-25/</link>
+      <pubDate>Fri, 25 Feb 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2022-02-25/</guid>
+      <description>Reddit app revamp adds a Discover Tab for finding communities, new navigation (4 minute read) Reddit has launched the first major change to its mobile app in two years.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-09-16</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-09-16/</link>
+      <pubDate>Wed, 16 Sep 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-09-16/</guid>
+      <description>Here’s everything Apple just announced (9 minute read) Apple has announced a new virtual fitness service, a subscription service called Apple One, and a new lineup of Apple Watches and iPads.</description>
+    </item>
+    
+  </channel>
+</rss>

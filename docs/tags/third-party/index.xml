@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>third-party on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/third-party/</link>
+    <description>Recent content in third-party on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Jan 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/third-party/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-01-12</title>
+      <link>https://datafortress.cloud/blog/tech-news-2022-01-12/</link>
+      <pubDate>Wed, 12 Jan 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2022-01-12/</guid>
+      <description>Locket, an app for sharing photos to friends’ homescreens, hits the top of the App Store (5 minute read) Locket is an app that turns Apple&amp;rsquo;s widget system into a private social networking platform.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-09-29</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-09-29/</link>
+      <pubDate>Wed, 29 Sep 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-09-29/</guid>
+      <description>Here’s everything Amazon just announced: A home robot named Astro, a fitness band and more (6 minute read) Amazon just announced a bunch of new gadgets ahead of the busy holiday shopping season.</description>
+    </item>
+    
+  </channel>
+</rss>

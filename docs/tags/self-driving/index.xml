@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>self-driving on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/self-driving/</link>
+    <description>Recent content in self-driving on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Jul 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/self-driving/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-07-12</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-07-12/</link>
+      <pubDate>Mon, 12 Jul 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-07-12/</guid>
+      <description>Tesla finally releases Full Self-Driving Beta v9: here’s what it looks like (3 minute read) Tesla has released its Full Self-Driving Beta v9 update.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-12-08</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-12-08/</link>
+      <pubDate>Tue, 08 Dec 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-12-08/</guid>
+      <description>Uber sells its self-driving unit to Aurora (2 minute read) Uber has sold its self-driving unit, Advanced Technologies Group (ATG), to competitor Aurora Innovation.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-10-23</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-10-23/</link>
+      <pubDate>Fri, 23 Oct 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-10-23/</guid>
+      <description>FDA approves remdesivir to treat COVID-19 (3 minute read) The FDA has approved remdesivir as a treatment for COVID-19 in hospitalized patients.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-10-21</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-10-21/</link>
+      <pubDate>Wed, 21 Oct 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-10-21/</guid>
+      <description>Elon Musk Says Autopilot Self-Driving Beta Is Rolling Out Tonight (2 minute read) Tesla&amp;rsquo;s Full Self-Driving (FSD) will be available in a small closed beta test beginning next week.</description>
+    </item>
+    
+  </channel>
+</rss>

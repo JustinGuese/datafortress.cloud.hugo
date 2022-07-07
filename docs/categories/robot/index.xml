@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>robot on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/categories/robot/</link>
+    <description>Recent content in robot on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Nov 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/categories/robot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-11-08</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-11-08/</link>
+      <pubDate>Mon, 08 Nov 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-11-08/</guid>
+      <description>Cruise lays out its plan for ‘how’ it will make robotaxis a reality (7 minute read) GM&amp;rsquo;s self-driving subsidiary Cruise recently presented a roadmap for how the company will build autonomous vehicles that will be safer and more scalable than any human-driven vehicle.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-08-23</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-08-23/</link>
+      <pubDate>Mon, 23 Aug 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-08-23/</guid>
+      <description>Elon Musk unveils Tesla Bot, a humanoid robot that uses vehicle AI (3 minute read) Elon Musk unveiled a humanoid robot called the Tesla Bot at the end of Tesla&amp;rsquo;s AI Day presentation last week.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-07-29</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-07-29/</link>
+      <pubDate>Thu, 29 Jul 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-07-29/</guid>
+      <description>SpaceX is almost ready to start turning Starship’s launch tower into ‘Mechazilla’ (3 minute read) SpaceX plans to use a giant tower with arms to catch its rockets.</description>
+    </item>
+    
+  </channel>
+</rss>

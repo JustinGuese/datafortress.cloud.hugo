@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>free on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/free/</link>
+    <description>Recent content in free on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Feb 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/free/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-02-02</title>
+      <link>https://datafortress.cloud/blog/tech-news-2022-02-02/</link>
+      <pubDate>Wed, 02 Feb 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2022-02-02/</guid>
+      <description>Gmail’s next big redesign starts rolling out next week (3 minute read) Google is rolling out its integrated view Gmail redesign next week.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-09-02</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-09-02/</link>
+      <pubDate>Thu, 02 Sep 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-09-02/</guid>
+      <description>Google developing own CPUs for Chromebook laptops (4 minute read) Google is developing its own central processors for its notebook and tablet computers and plans to roll them out around 2023.</description>
+    </item>
+    
+  </channel>
+</rss>

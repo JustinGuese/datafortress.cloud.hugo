@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stream on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/tags/stream/</link>
+    <description>Recent content in stream on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Mon, 07 Feb 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/stream/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-02-07</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2022-02-07/</link>
+      <pubDate>Mon, 07 Feb 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2022-02-07/</guid>
+      <description>Google Stream ist das, was Stadia von Anfang an hätte sein sollen (3 Minuten Lesezeit) Google Stream ist eine Backend-Cloud-Gaming-Technologie, die Google den Unternehmen anbietet.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-10-13</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-10-13/</link>
+      <pubDate>Wed, 13 Oct 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-10-13/</guid>
+      <description>Unleashed&amp;quot;-Event von Apple mit Schwerpunkt auf neuen Macs findet am 18 Oktober statt (2 Minuten Lesedauer).</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-10-20</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2020-10-20/</link>
+      <pubDate>Tue, 20 Oct 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2020-10-20/</guid>
+      <description>Apple Music TV&amp;quot; geht in den USA an den Start (1 Minute Lesezeit) Apple hat gerade Apple Music TV gestartet, einen 24-Stunden-Stream von Musikvideos, Live-Shows und Events.</description>
+    </item>
+    
+  </channel>
+</rss>

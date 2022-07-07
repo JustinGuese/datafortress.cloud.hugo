@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>option on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/option/</link>
+    <description>Recent content in option on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Jan 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/option/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-01-11</title>
+      <link>https://datafortress.cloud/blog/tech-news-2022-01-11/</link>
+      <pubDate>Tue, 11 Jan 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2022-01-11/</guid>
+      <description>Moxie Marlinspike steps down as CEO of Signal (2 minute read) Moxie Marlinspike is stepping down as CEO of Signal, leaving executive chairman Brian Acton to serve as acting CEO until a replacement is found.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-08-30</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-08-30/</link>
+      <pubDate>Mon, 30 Aug 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-08-30/</guid>
+      <description>Amazon partners with Affirm to roll out first buy now, pay later option on the e-commerce site (2 minute read) Amazon has partnered with Affirm to offer installment payment options.</description>
+    </item>
+    
+  </channel>
+</rss>

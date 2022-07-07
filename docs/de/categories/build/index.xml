@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>build on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/categories/build/</link>
+    <description>Recent content in build on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Thu, 20 Jan 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/categories/build/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-01-20</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2022-01-20/</link>
+      <pubDate>Thu, 20 Jan 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2022-01-20/</guid>
+      <description>Altos kommt mit 3 Milliarden Dollar, einem Traumteam in der Führungsetage und einem äußerst ehrgeizigen Plan zur Umkehrung von Krankheiten aus dem Verborgenen (3 Minuten Lesezeit) Altos Labs ist ein Biotech-Unternehmen, das eine Technologie entwickelt, die Zellen revitalisieren und Krankheiten rückgängig machen könnte, um letztlich das menschliche Leben zu verlängern.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-10-19</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2020-10-19/</link>
+      <pubDate>Mon, 19 Oct 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2020-10-19/</guid>
+      <description>Nokia erhält NASA-Auftrag zum Aufbau eines 4G-Netzes auf dem Mond (1 Minute Lesezeit) Nokia hat einen 14,1-Millionen-Dollar-Vertrag für den Aufbau eines Mobilfunknetzes auf dem Mond erhalten.</description>
+    </item>
+    
+  </channel>
+</rss>

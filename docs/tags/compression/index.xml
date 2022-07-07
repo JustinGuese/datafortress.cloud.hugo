@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>compression on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/compression/</link>
+    <description>Recent content in compression on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Oct 2020 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/compression/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2020-10-02</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-10-02/</link>
+      <pubDate>Fri, 02 Oct 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-10-02/</guid>
+      <description>Facebook is opening its experimental predictions app to all users (1 minute read) Forecast, Facebook&amp;rsquo;s community for crowdsourced predictions and collective insights, is now available for people in the US and Canada to participate in.</description>
+    </item>
+    
+  </channel>
+</rss>

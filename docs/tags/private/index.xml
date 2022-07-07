@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>private on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/private/</link>
+    <description>Recent content in private on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Feb 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/private/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-02-04</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-02-04/</link>
+      <pubDate>Thu, 04 Feb 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-02-04/</guid>
+      <description>Myanmar internet providers block Facebook services after government order (2 minute read) Internet providers in Myanmar blocked access to Facebook and its related services after military leaders seized power in a coup.</description>
+    </item>
+    
+  </channel>
+</rss>

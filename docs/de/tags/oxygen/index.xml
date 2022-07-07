@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>oxygen on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/tags/oxygen/</link>
+    <description>Recent content in oxygen on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Mon, 18 Oct 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/oxygen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-10-18</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-10-18/</link>
+      <pubDate>Mon, 18 Oct 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-10-18/</guid>
+      <description>Facebook forscht an KI-Systemen, die alles sehen, hören und sich merken können, was Sie tun (5 Minuten) Ego4D ist ein Forschungsprojekt von Facebook, bei dem KI mithilfe von First-Person-Videodaten trainiert wird, um Fähigkeiten wie episodisches Gedächtnis, Vorhersagen und audiovisuelle Tagebuchführung zu entwickeln.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-04-26</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-04-26/</link>
+      <pubDate>Mon, 26 Apr 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-04-26/</guid>
+      <description>Das Projekt Kiwi von Disney Imagineering ist ein frei laufender Roboter, der Sie an Groot glauben lässt (1 Minute Video) Project Kiwi ist ein kleiner, frei beweglicher Roboterdarsteller, der von Disneys Imagineers entwickelt wurde.</description>
+    </item>
+    
+  </channel>
+</rss>

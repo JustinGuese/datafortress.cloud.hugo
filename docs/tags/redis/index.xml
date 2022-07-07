@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>redis on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/redis/</link>
+    <description>Recent content in redis on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Nov 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/redis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-11-25</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-11-25/</link>
+      <pubDate>Thu, 25 Nov 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-11-25/</guid>
+      <description>Spotify tests a TikTok-like vertical video feed in its app (3 minute read) Spotify is currently testing a new vertical video feed feature called Discover.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>developing on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/tags/developing/</link>
+    <description>Recent content in developing on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Tue, 27 Jul 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/developing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-07-27</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-07-27/</link>
+      <pubDate>Tue, 27 Jul 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-07-27/</guid>
+      <description>Netflix entwickelt angeblich eine Live-Action-Pokémon-Serie (2 Minuten Lesezeit) Netflix befindet sich in der Anfangsphase der Entwicklung einer Live-Action-Pokémon-Fernsehserie.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-12-08</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2020-12-08/</link>
+      <pubDate>Tue, 08 Dec 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2020-12-08/</guid>
+      <description>Uber verkauft seine Selbstfahrereinheit an Aurora (2 Minuten Lesezeit) Uber hat seine Selbstfahrereinheit, Advanced Technologies Group (ATG), an den Konkurrenten Aurora Innovation verkauft.</description>
+    </item>
+    
+  </channel>
+</rss>

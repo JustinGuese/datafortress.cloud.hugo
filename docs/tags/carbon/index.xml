@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>carbon on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/carbon/</link>
+    <description>Recent content in carbon on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Dec 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/carbon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-12-17</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-12-17/</link>
+      <pubDate>Fri, 17 Dec 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-12-17/</guid>
+      <description>Apple reportedly wants to make its own wireless chips for the iPhone (2 minute read) Apple is opening an office in southern California and hiring engineers to work on wireless radios, radio-frequency integrated circuits, and a wireless SoC.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-08-13</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-08-13/</link>
+      <pubDate>Fri, 13 Aug 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-08-13/</guid>
+      <description>Nvidia Reveals Its CEO Was Computer Generated in Keynote Speech (2 minute read) Nvidia&amp;rsquo;s GTC conference in April featured a keynote presentation by its CEO Jensen Huang.</description>
+    </item>
+    
+  </channel>
+</rss>

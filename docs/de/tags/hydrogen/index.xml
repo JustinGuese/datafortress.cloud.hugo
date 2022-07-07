@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hydrogen on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/tags/hydrogen/</link>
+    <description>Recent content in hydrogen on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Thu, 06 Jan 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/hydrogen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-01-06</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2022-01-06/</link>
+      <pubDate>Thu, 06 Jan 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2022-01-06/</guid>
+      <description>Google plant Apple-ähnliche Integration zwischen seinen Produkten, um zu konkurrieren (3 Minuten Lesezeit) Google hat auf der CES 2022 Pläne angekündigt, mit Apples Ökosystem-Integration zu konkurrieren.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-02-05</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-02-05/</link>
+      <pubDate>Fri, 05 Feb 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-02-05/</guid>
+      <description>Google Pixel-Telefone werden bald die Herzfrequenz nur mit der Kamera aufzeichnen (3 Minuten Lesezeit) Die neueste Pixel-exklusive Funktion von Google ist die Möglichkeit, die Herz- und Atemfrequenz nur mit den vorhandenen Kameras zu messen.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-12-01</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2020-12-01/</link>
+      <pubDate>Tue, 01 Dec 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2020-12-01/</guid>
+      <description>Das wird alles verändern&amp;quot;: DeepMinds KI macht einen gigantischen Sprung bei der Lösung von Proteinstrukturen (8 Minuten Lesezeit) AlphaFold von DeepMind kann die 3D-Form eines Proteins anhand seiner Aminosäuresequenz bestimmen.</description>
+    </item>
+    
+  </channel>
+</rss>

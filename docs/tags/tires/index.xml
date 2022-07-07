@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tires on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/tires/</link>
+    <description>Recent content in tires on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Sep 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/tires/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-09-14</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-09-14/</link>
+      <pubDate>Tue, 14 Sep 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-09-14/</guid>
+      <description>Zoom is adding live translation services and coming to Facebook VR (2 minute read) Zoom plans to add real-time transcription for up to 30 languages and real-time translation across as many as 12 languages by the end of next year.</description>
+    </item>
+    
+  </channel>
+</rss>

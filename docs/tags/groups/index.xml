@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>groups on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/groups/</link>
+    <description>Recent content in groups on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Feb 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/groups/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-02-15</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-02-15/</link>
+      <pubDate>Mon, 15 Feb 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-02-15/</guid>
+      <description>Facebook Working on Smart Watch to Compete With Apple Watch (2 minute read) Facebook is working on a smart watch that will work without a tethered smartphone.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aids on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/aids/</link>
+    <description>Recent content in aids on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 May 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/aids/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-05-14</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-05-14/</link>
+      <pubDate>Fri, 14 May 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-05-14/</guid>
+      <description>Elon Musk’s SpaceX inks satellite connectivity deal with Google Cloud (3 minute read) Google has signed a deal with SpaceX to use Starlink with its cloud unit.</description>
+    </item>
+    
+  </channel>
+</rss>

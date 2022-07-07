@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>care on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/categories/care/</link>
+    <description>Recent content in care on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Wed, 09 Feb 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/categories/care/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-02-09</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2022-02-09/</link>
+      <pubDate>Wed, 09 Feb 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2022-02-09/</guid>
+      <description>Apple kündigt eine Möglichkeit an, Dinge durch Antippen von iPhones zu kaufen (2 Minuten Lesedauer) Apple stellt eine neue Tap to Pay-Funktion für das iPhone vor, mit der man Zahlungen empfangen kann.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-03-18</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-03-18/</link>
+      <pubDate>Thu, 18 Mar 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-03-18/</guid>
+      <description>Amazon weitet den Telegesundheitsdienst Amazon Care landesweit für seine Mitarbeiter und andere Unternehmen aus (3 Minuten Lesezeit) Amazon Care wird ab diesem Sommer für Amazon-Mitarbeiter in allen 50 Staaten eingeführt.</description>
+    </item>
+    
+  </channel>
+</rss>

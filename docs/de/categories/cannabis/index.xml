@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cannabis on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/categories/cannabis/</link>
+    <description>Recent content in cannabis on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Tue, 23 Nov 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/categories/cannabis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-11-23</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-11-23/</link>
+      <pubDate>Tue, 23 Nov 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-11-23/</guid>
+      <description>Android Messages Update verarbeitet Apple iMessage Reaktionen richtig (2 Minuten Lesezeit) Google Messages auf Android kann jetzt Emoji-Reaktionen, die von der Messages-App des iPhones gesendet werden, korrekt anzeigen.</description>
+    </item>
+    
+  </channel>
+</rss>

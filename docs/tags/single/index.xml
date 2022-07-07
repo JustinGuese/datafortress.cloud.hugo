@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>single on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/single/</link>
+    <description>Recent content in single on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Apr 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/single/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-04-02</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-04-02/</link>
+      <pubDate>Fri, 02 Apr 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-04-02/</guid>
+      <description>Apple will use Tesla’s ‘megapack’ batteries at its California solar farm (3 minute read) Apple will use Tesla battery packs at its big battery storage project in Northern California.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/categories/web/</link>
+    <description>Recent content in web on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Wed, 27 Oct 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/categories/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-10-27</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-10-27/</link>
+      <pubDate>Wed, 27 Oct 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-10-27/</guid>
+      <description>Uber steigt mit einem 15-Minuten-Service in Paris in den europäischen Markt für schnelle Lebensmittellieferungen ein (3 Minuten Lesezeit) Uber und Carrefour haben in Paris einen Dienst eingerichtet, der Kunden in nur 15 Minuten mit Lebensmitteln versorgt.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-02-16</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-02-16/</link>
+      <pubDate>Tue, 16 Feb 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-02-16/</guid>
+      <description>Ein weiterer neuer Tesla Semi-Prototyp in Kalifornien gesichtet (2 Minuten Lesezeit) Ein neuer Prototyp des Tesla Semi wurde in Truckee, Kalifornien, gesichtet.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-12-28</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2020-12-28/</link>
+      <pubDate>Mon, 28 Dec 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2020-12-28/</guid>
+      <description>Mit der neuen Boombox-Funktion von Tesla können Autobesitzer ahnungslose Nachbarn anpupsen (2 Minuten Lesedauer) Tesla hat sein Firmware-Update 2020.</description>
+    </item>
+    
+  </channel>
+</rss>

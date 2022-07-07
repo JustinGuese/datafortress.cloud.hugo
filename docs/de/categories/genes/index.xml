@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>genes on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/categories/genes/</link>
+    <description>Recent content in genes on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Fri, 14 May 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/categories/genes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-05-14</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-05-14/</link>
+      <pubDate>Fri, 14 May 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-05-14/</guid>
+      <description>SpaceX von Elon Musk schließt Vertrag über Satellitenkonnektivität mit Google Cloud (3 Minuten Lesezeit) Google hat mit SpaceX einen Vertrag über die Nutzung von Starlink für seine Cloud-Einheit unterzeichnet.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-11-17</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2020-11-17/</link>
+      <pubDate>Tue, 17 Nov 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2020-11-17/</guid>
+      <description>Foxconn testet angeblich ein faltbares iPhone, voraussichtliche Veröffentlichung im September 2022 (1 Minute Lesezeit) Berichten aus der Lieferkette zufolge testet Foxconn ein faltbares iPhone für Apple.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-08-13</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2020-08-13/</link>
+      <pubDate>Thu, 13 Aug 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2020-08-13/</guid>
+      <description>Das Surface Duo, das erste Android-Telefon von Microsoft, kostet 1 400 US-Dollar (6 Minuten).</description>
+    </item>
+    
+  </channel>
+</rss>

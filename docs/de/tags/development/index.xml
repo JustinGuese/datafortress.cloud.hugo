@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>development on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/tags/development/</link>
+    <description>Recent content in development on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Mon, 04 Oct 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-10-04</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-10-04/</link>
+      <pubDate>Mon, 04 Oct 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-10-04/</guid>
+      <description>Coinbase Multi-Faktor-Authentifizierungs-Hack betrifft mindestens 6 000 Kunden (1 Minute gelesen). Zwischen März und Mai dieses Jahres nutzten Hacker eine Schwachstelle im Kontowiederherstellungsprozess von Coinbase, um die SMS-Multifaktor-Authentifizierung zu umgehen und Geld von mindestens 6.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-08-12</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-08-12/</link>
+      <pubDate>Thu, 12 Aug 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-08-12/</guid>
+      <description>Hier ist alles, was Samsung auf seiner Unpacked-Veranstaltung im August angekündigt hat (3 Minuten Lesedauer) Samsung hat auf seinem Unpacked-Event am 11.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-01-13</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-01-13/</link>
+      <pubDate>Wed, 13 Jan 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-01-13/</guid>
+      <description>Visa und Plaid blasen nach Einwänden des Justizministeriums die 5,3 Milliarden Dollar schwere Fusion ab (3 Minuten Lesezeit) Visa und Plaid haben ihre Fusionspläne nach einem kartellrechtlichen Einspruch des Justizministeriums aufgegeben.</description>
+    </item>
+    
+  </channel>
+</rss>

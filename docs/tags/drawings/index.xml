@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>drawings on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/drawings/</link>
+    <description>Recent content in drawings on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Dec 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/drawings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-12-21</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-12-21/</link>
+      <pubDate>Tue, 21 Dec 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-12-21/</guid>
+      <description>Meta Has Created A New Tool To Animate Your Child’s Drawings Using AI (1 minute read) Animated Drawings is a tool from Meta that can automatically animate drawings of human-like figures.</description>
+    </item>
+    
+  </channel>
+</rss>

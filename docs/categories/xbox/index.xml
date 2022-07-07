@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xbox on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/categories/xbox/</link>
+    <description>Recent content in xbox on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Jul 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/categories/xbox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-07-23</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-07-23/</link>
+      <pubDate>Fri, 23 Jul 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-07-23/</guid>
+      <description>Netflix bleeds subscribers in US and Canada, with no sign of recovery (3 minute read) Netflix lost 430,000 subscribers in the US and Canada in the second quarter.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-10-20</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-10-20/</link>
+      <pubDate>Tue, 20 Oct 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-10-20/</guid>
+      <description>&amp;lsquo;Apple Music TV&amp;rsquo; Launches in U.S. (1 minute read) Apple has just launched Apple Music TV, a 24-hour stream of music videos, live shows, and events.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-07-17</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-07-17/</link>
+      <pubDate>Fri, 17 Jul 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-07-17/</guid>
+      <description>Microsoft to launch xCloud streaming free with Xbox Game Pass Ultimate in September (6 minute read) Microsoft will launch xCloud free to its Xbox Game Pass Ultimate subscribers in September.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>feed on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/tags/feed/</link>
+    <description>Recent content in feed on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Thu, 25 Nov 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/feed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-11-25</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2021-11-25/</link>
+      <pubDate>Thu, 25 Nov 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2021-11-25/</guid>
+      <description>Spotify testet einen TikTok-ähnlichen vertikalen Video-Feed in seiner App (3 Minuten Lesezeit) Spotify testet derzeit eine neue vertikale Video-Feed-Funktion namens Discover.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-12-02</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2020-12-02/</link>
+      <pubDate>Wed, 02 Dec 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2020-12-02/</guid>
+      <description>Google Maps konkurriert mit Facebook durch Einführung eines eigenen Newsfeeds (3 Minuten) Google Maps hat seine eigene News-Feed-Funktion eingeführt.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-11-24</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2020-11-24/</link>
+      <pubDate>Tue, 24 Nov 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2020-11-24/</guid>
+      <description>Snapchat führt einen TikTok-ähnlichen Feed namens Spotlight ein, der von zahlenden Kreativen ins Leben gerufen wurde (5 Minuten) Spotlight ist der neue TikTok-ähnliche Feed von Snapchat, mit dem Nutzer kurze, unterhaltsame Videos in einem vertikal scrollbaren Videoformat ansehen können.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-11-13</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2020-11-13/</link>
+      <pubDate>Fri, 13 Nov 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2020-11-13/</guid>
+      <description>Chipotle eröffnet sein erstes rein digitales Restaurant, da die Online-Bestellungen stark zunehmen (1 Minute Lesezeit) Chipotle Mexican Grill wird am Samstag sein erstes rein digitales Restaurant eröffnen.</description>
+    </item>
+    
+  </channel>
+</rss>

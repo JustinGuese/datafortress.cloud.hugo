@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cookies on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/tags/cookies/</link>
+    <description>Recent content in cookies on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Wed, 26 Jan 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/cookies/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-01-26</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2022-01-26/</link>
+      <pubDate>Wed, 26 Jan 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2022-01-26/</guid>
+      <description>Google gibt FLoC auf und führt die Topics-API ein, um Tracking-Cookies zu ersetzen (3 Minuten Lesezeit) Topics ist die neue Methode von Google, um Werbetreibenden zu zeigen, welche Anzeigen für Nutzer geschaltet werden sollen.</description>
+    </item>
+    
+  </channel>
+</rss>

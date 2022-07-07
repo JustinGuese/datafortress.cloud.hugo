@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>easy on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/easy/</link>
+    <description>Recent content in easy on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Oct 2020 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/easy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2020-10-22</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-10-22/</link>
+      <pubDate>Thu, 22 Oct 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-10-22/</guid>
+      <description>Facebook is testing mini social networks focused on you and your neighbors (2 minute read) Facebook is testing a new feature that encourages users to post and share news in social networks focused on small geographical areas.</description>
+    </item>
+    
+  </channel>
+</rss>

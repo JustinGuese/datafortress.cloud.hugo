@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>m1 on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/m1/</link>
+    <description>Recent content in m1 on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Mar 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/m1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-03-14</title>
+      <link>https://datafortress.cloud/blog/tech-news-2022-03-14/</link>
+      <pubDate>Mon, 14 Mar 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2022-03-14/</guid>
+      <description>New MacBook Air and 13-inch MacBook Pro with M2 coming later this year (3 minute read) New MacBooks with the M2 chip are coming later this year.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-10-25</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-10-25/</link>
+      <pubDate>Mon, 25 Oct 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-10-25/</guid>
+      <description>Apple’s new M1 Max MacBook Pro may get a virtual turbo button for High Power Mode (2 minute read) The upcoming macOS Monterey will feature a High Power Mode in the new 16-inch M1 Max MacBook Pros.</description>
+    </item>
+    
+  </channel>
+</rss>

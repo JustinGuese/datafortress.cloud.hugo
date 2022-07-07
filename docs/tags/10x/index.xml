@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>10x on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/10x/</link>
+    <description>Recent content in 10x on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Jan 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/10x/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-01-18</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-01-18/</link>
+      <pubDate>Mon, 18 Jan 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-01-18/</guid>
+      <description>DuckDuckGo surpasses 100 million daily search queries for the first time (2 minute read) DuckDuckGo recently recorded more than 100 million user search queries in a day.</description>
+    </item>
+    
+  </channel>
+</rss>

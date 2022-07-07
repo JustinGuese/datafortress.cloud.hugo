@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/categories/machine/</link>
+    <description>Recent content in machine on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Wed, 29 Jul 2020 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/categories/machine/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2020-07-29</title>
+      <link>https://datafortress.cloud/de/blog/tech-news-2020-07-29/</link>
+      <pubDate>Wed, 29 Jul 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/tech-news-2020-07-29/</guid>
+      <description>Apple droht, Airbnb wegen der Provision für virtuelle Erfahrungen aus dem App Store zu entfernen (2 Minuten Lesezeit) Apple hat eine Provision von 30 % für den Verkauf von Online-Kursen verlangt, die von Airbnb und ClassPass angeboten werden.</description>
+    </item>
+    
+  </channel>
+</rss>

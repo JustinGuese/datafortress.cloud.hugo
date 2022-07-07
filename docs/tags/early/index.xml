@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>early on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/early/</link>
+    <description>Recent content in early on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Nov 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/early/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-11-03</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-11-03/</link>
+      <pubDate>Wed, 03 Nov 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-11-03/</guid>
+      <description>Microsoft Teams enters the metaverse race with 3D avatars and immersive meetings (4 minute read) Microsoft is integrating Mesh directly into Microsoft Teams.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-05-27</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-05-27/</link>
+      <pubDate>Thu, 27 May 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-05-27/</guid>
+      <description>Poparazzi hypes itself to the top of the App Store (7 minute read) Poparazzi is a new social networking app that lets users create accounts that only their friends can post to.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-09-23</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-09-23/</link>
+      <pubDate>Wed, 23 Sep 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-09-23/</guid>
+      <description>Here are Tesla’s biggest announcements from Battery Day (3 minute read) Elon Musk made some big announcements at Tesla&amp;rsquo;s Battery Day event.</description>
+    </item>
+    
+  </channel>
+</rss>

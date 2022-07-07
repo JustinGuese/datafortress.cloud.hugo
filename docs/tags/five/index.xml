@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>five on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/five/</link>
+    <description>Recent content in five on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Jan 2022 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/five/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2022-01-04</title>
+      <link>https://datafortress.cloud/blog/tech-news-2022-01-04/</link>
+      <pubDate>Tue, 04 Jan 2022 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2022-01-04/</guid>
+      <description>Apple becomes first U.S. company to reach $3 trillion market cap (2 minute read) Apple hit a market cap of $3 trillion during intraday trading on Monday.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2020-12-09</title>
+      <link>https://datafortress.cloud/blog/tech-news-2020-12-09/</link>
+      <pubDate>Wed, 09 Dec 2020 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2020-12-09/</guid>
+      <description>Apple introduces AirPods Max, the magic of AirPods in a stunning over-ear design (6 minute read) Apple has revealed its over-ear wireless headphones, AirPods Max.</description>
+    </item>
+    
+  </channel>
+</rss>

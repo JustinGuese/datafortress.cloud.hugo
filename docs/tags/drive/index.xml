@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>drive on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/tags/drive/</link>
+    <description>Recent content in drive on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Dec 2021 12:40:24 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/tags/drive/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech NEWS 2021-12-13</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-12-13/</link>
+      <pubDate>Mon, 13 Dec 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-12-13/</guid>
+      <description>Samsung’s working on a rollable smartwatch with a camera (4 minute read) Samsung filed a patent in June for a Galaxy Watch with a rollable screen.</description>
+    </item>
+    
+    <item>
+      <title>Tech NEWS 2021-01-22</title>
+      <link>https://datafortress.cloud/blog/tech-news-2021-01-22/</link>
+      <pubDate>Fri, 22 Jan 2021 12:40:24 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/tech-news-2021-01-22/</guid>
+      <description>Pebble founder launches Beeper, a universal chat app that works with iMessage and others (4 minute read) Beeper is a new app that can connect with 15 different messaging services.</description>
+    </item>
+    
+  </channel>
+</rss>
