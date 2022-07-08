@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Products on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/products/</link>
+    <description>Recent content in Products on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Sun, 12 Jul 2020 17:02:17 +0200</lastBuildDate><atom:link href="https://datafortress.cloud/de/products/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EasyFAAS</title>
+      <link>https://datafortress.cloud/de/products/easyfaas/</link>
+      <pubDate>Sun, 12 Jul 2020 17:02:17 +0200</pubDate>
+      
+      <guid>https://datafortress.cloud/de/products/easyfaas/</guid>
+      <description>EasyFAAS serverless
+We are very delighted that you have shown interest in our enterprise.</description>
+    </item>
+    
+    <item>
+      <title>EasyHealth</title>
+      <link>https://datafortress.cloud/de/products/easyhealth/</link>
+      <pubDate>Sun, 12 Jul 2020 17:02:17 +0200</pubDate>
+      
+      <guid>https://datafortress.cloud/de/products/easyhealth/</guid>
+      <description>EasyHealth compliant and secure hosting of medical data
+We are very delighted that you have shown interest in our enterprise.</description>
+    </item>
+    
+    <item>
+      <title>EasyHost</title>
+      <link>https://datafortress.cloud/de/products/easyhost/</link>
+      <pubDate>Sun, 12 Jul 2020 17:02:17 +0200</pubDate>
+      
+      <guid>https://datafortress.cloud/de/products/easyhost/</guid>
+      <description>EasyHost Easy Website and App hosting
+We are very delighted that you have shown interest in our enterprise.</description>
+    </item>
+    
+    <item>
+      <title>EasyKube</title>
+      <link>https://datafortress.cloud/de/products/easykube/</link>
+      <pubDate>Sun, 12 Jul 2020 17:02:17 +0200</pubDate>
+      
+      <guid>https://datafortress.cloud/de/products/easykube/</guid>
+      <description>EasyKube managed kubernetes
+We are very delighted that you have shown interest in our enterprise.</description>
+    </item>
+    
+    <item>
+      <title>EasyStore</title>
+      <link>https://datafortress.cloud/de/products/easystore/</link>
+      <pubDate>Sun, 12 Jul 2020 17:02:17 +0200</pubDate>
+      
+      <guid>https://datafortress.cloud/de/products/easystore/</guid>
+      <description>EasyStore Easy Managed DB and Object storage, archive
+We are very delighted that you have shown interest in our enterprise.</description>
+    </item>
+    
+  </channel>
+</rss>

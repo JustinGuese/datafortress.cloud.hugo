@@ -83,30 +83,35 @@ name = "Products"
 #parent = "services"
 weight = 2
 [[menu.main]]
-URL = "/pages/products/easyfaas/"
-name = "EasyFAAS"
+URL = "/products/"
+name = "All Products"
 parent = "Products"
 weight = 1
 [[menu.main]]
-URL = "/pages/products/easykube/"
-name = "EasyKube"
+URL = "/products/easyfaas/"
+name = "EasyFAAS"
 parent = "Products"
 weight = 2
 [[menu.main]]
-URL = "/pages/products/easyhost/"
-name = "EasyHost"
+URL = "/products/easykube/"
+name = "EasyKube"
 parent = "Products"
 weight = 3
 [[menu.main]]
-URL = "/pages/products/easystore/"
-name = "EasyStore"
+URL = "/products/easyhost/"
+name = "EasyHost"
 parent = "Products"
 weight = 4
 [[menu.main]]
-URL = "/pages/products/easyhealth/"
-name = "EasyHealth"
+URL = "/products/easystore/"
+name = "EasyStore"
 parent = "Products"
 weight = 5
+[[menu.main]]
+URL = "/products/easyhealth/"
+name = "EasyHealth"
+parent = "Products"
+weight = 6
 
 [[menu.main]]
 URL = "services"
