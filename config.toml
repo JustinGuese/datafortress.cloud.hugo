@@ -212,22 +212,22 @@ enable = false
 preloader = "images/preloader.gif"
 [[params.clients_logo_slider]]
 link = "/project/hpe-bmw/"
-logo = "images/client-logo/hpe.png"
+logo = "images/client-logo/hpe-small.png"
 [[params.clients_logo_slider]]
 link = "/project/hpe-bmw/"
-logo = "images/client-logo/bmw.png"
+logo = "images/client-logo/bmw-small.png"
 [[params.clients_logo_slider]]
 link = "/project/porsche-holding/"
-logo = "images/client-logo/porsche-holding.png"
+logo = "images/client-logo/porsche-holding-small.png"
 [[params.clients_logo_slider]]
 link = "/project/buchinger-wilhelmi/"
-logo = "images/client-logo/buchinger-wilhelmi.png"
+logo = "images/client-logo/buchinger-wilhelmi-small.png"
 [[params.clients_logo_slider]]
 link = "/project/otto-ai/"
-logo = "images/client-logo/ottoai.png"
+logo = "images/client-logo/ottoai-small.png"
 [[params.clients_logo_slider]]
 link = "/project/summ-ai/"
-logo = "images/client-logo/summai.png"
+logo = "images/client-logo/summai-small.png"
 [[params.contacts]]
 icon = "ti-download"
 [[params.contacts.contact]]

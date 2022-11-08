@@ -148,4 +148,4 @@ cta:
 blog:
   enable: true
 clients_logo_slider:
-  enable: false
+  enable: true
