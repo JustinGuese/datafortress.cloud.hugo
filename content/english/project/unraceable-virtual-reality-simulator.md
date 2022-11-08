@@ -81,7 +81,4 @@ The next step has been to cooperate with the Austrian Skiing Association ([https
 <iframe width="339" height="191" src="https://www.youtube.com/embed/LpIVkCKFmyE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-
-
-</br>
-[Are you working on a similar project? Are you interested in something similar? [contact us](/contact) now for a free 15-minute consultation.](/contact/)
+[Are you working on a similar project? Are you interested in something similar? contact us now for a free 15-minute consultation.](/contact/)

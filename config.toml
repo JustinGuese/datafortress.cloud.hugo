@@ -143,9 +143,10 @@ URL = "/services/business-consulting1/"
 name = "Business Consulting"
 parent = "Services"
 weight = 6
+
 [[menu.main]]
 URL = "project"
-name = "Case Studies"
+name = "Portfolio"
 weight = "3"
 [[menu.main]]
 URL = "blog"
