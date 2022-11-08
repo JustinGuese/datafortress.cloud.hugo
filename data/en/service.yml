@@ -1,17 +1,17 @@
 ################################## Satisfied clients ###############################
 satisfied_clients:
-  enable : false
+  enable : true
   bg_image : images/background/clients-bg.webp
-  subtitle : Our Some
+  subtitle : Our
   title : Satisfied Clients
-  content : Excepteur sint occaecat cupidatat non proident sunt culpa officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis. natus error sit voluptem accusantium doloremqu laudantium totam remaperiam eaque ipsa quae
+  content : We have been lucky to work with industry leaders on multiple data and cloud related projects.
   logo:
-    - images/client-logo/client-logo-1-white.webp
-    - images/client-logo/client-logo-2-white.webp
-    - images/client-logo/client-logo-4-white.webp
-    - images/client-logo/client-logo-3-white.webp
-    - images/client-logo/client-logo-5-white.webp
-    - images/client-logo/client-logo-3-white.webp
+    - images/client-logo/hpe.png
+    - images/client-logo/bmw.png
+    - images/client-logo/porsche-holding.png
+    - images/client-logo/buchinger-wilhelmi.png
+    - images/client-logo/ottoai.png
+    - images/client-logo/summai.png
     
 ##################################### call to action #################################
 testimonial:

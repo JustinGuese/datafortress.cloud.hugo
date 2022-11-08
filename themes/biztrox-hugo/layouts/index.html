@@ -5,14 +5,15 @@
 {{ if $data.homepage.slider.enable }}
 {{ partial "hero-slider.html" . }}
 {{ end }}
+</br>
+<div class="container">
+		<a id="changeLanguageHomeLink" href="{{ i18n "change_language_dest" }}"><i class="ti-world"></i> Link: {{ i18n "change_language" }}</a>
+</div>
 
-	<br/><br/>
-	<div class="container">
-			<a id="changeLanguageHomeLink" href="{{ i18n "change_language_dest" }}"><i class="ti-world"></i> Link: {{ i18n "change_language" }}</a>
-	
-		</div>
-		<br/><br/><br/><br/>
-		
+{{ if $data.homepage.clients_logo_slider.enable }}
+{{ partial "clientsLogoSlider.html" . }}
+{{ end }}
+
 {{ partial "promoVideo.html" . }}
 
 {{ if $data.homepage.service.enable }}
@@ -133,9 +134,5 @@
 </section>
 {{ end }}
 {{ "<!-- /blog -->" | safeHTML }}
-
-{{ if $data.homepage.clients_logo_slider.enable }}
-{{ partial "clientsLogoSlider.html" . }}
-{{ end }}
 
 {{ end }}

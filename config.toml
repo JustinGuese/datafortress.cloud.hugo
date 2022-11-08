@@ -88,30 +88,35 @@ name = "All Products"
 parent = "Products"
 weight = 1
 [[menu.main]]
-URL = "/products/easyfaas/"
-name = "EasyFAAS"
+URL = "/products/easycloud//"
+name = "EasyCloud"
 parent = "Products"
 weight = 2
 [[menu.main]]
-URL = "/products/easykube/"
-name = "EasyKube"
+URL = "/products/aistockpriceprediction/"
+name = "AIStockpricePrediction"
 parent = "Products"
 weight = 3
 [[menu.main]]
-URL = "/products/easyhost/"
-name = "EasyHost"
+URL = "/products/myopiagraph/"
+name = "Myopiagraph"
 parent = "Products"
 weight = 4
 [[menu.main]]
-URL = "/products/easystore/"
-name = "EasyStore"
+URL = "/products/web3-kingdom/"
+name = "Web3 Kingdom Game"
 parent = "Products"
 weight = 5
 [[menu.main]]
-URL = "/products/easyhealth/"
-name = "EasyHealth"
+URL = "/products/tradingbots/"
+name = "Tradingbots"
 parent = "Products"
 weight = 6
+[[menu.main]]
+URL = "/products/pandas/"
+name = "Pandas to_sql"
+parent = "Products"
+weight = 7
 
 [[menu.main]]
 URL = "services"
@@ -206,23 +211,23 @@ URL = "plugins/filterizr/jquery.filterizr.min.js" # defer
 enable = false
 preloader = "images/preloader.gif"
 [[params.clients_logo_slider]]
-link = "#"
-logo = "images/client-logo/client-logo-1.webp"
+link = "/project/hpe-bmw/"
+logo = "images/client-logo/hpe.png"
 [[params.clients_logo_slider]]
-link = "https://examplesite.com"
-logo = "images/client-logo/client-logo-2.webp"
+link = "/project/hpe-bmw/"
+logo = "images/client-logo/bmw.png"
 [[params.clients_logo_slider]]
-link = "#"
-logo = "images/client-logo/client-logo-3.webp"
+link = "/project/porsche-holding/"
+logo = "images/client-logo/porsche-holding.png"
 [[params.clients_logo_slider]]
-link = "https://examplesite.com"
-logo = "images/client-logo/client-logo-4.webp"
+link = "/project/buchinger-wilhelmi/"
+logo = "images/client-logo/buchinger-wilhelmi.png"
 [[params.clients_logo_slider]]
-link = "#"
-logo = "images/client-logo/client-logo-5.webp"
+link = "/project/otto-ai/"
+logo = "images/client-logo/ottoai.png"
 [[params.clients_logo_slider]]
-link = "https://examplesite.com"
-logo = "images/client-logo/client-logo-3.webp"
+link = "/project/summ-ai/"
+logo = "images/client-logo/summai.png"
 [[params.contacts]]
 icon = "ti-download"
 [[params.contacts.contact]]
