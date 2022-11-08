@@ -124,18 +124,20 @@ mission:
     description: Amerikanische Unternehmen können nach dem Patriot Act gezwungen werden, auf Ihre Daten zuzugreifen. Darüber hinaus verpflichtet die neue DSGVO jedes europäische Unternehmen, sensible Daten in Europa statt in Amerika zu hosten. Abgesehen von den Imageproblemen und den intellektuellen Verlusten, die ein solcher Verlust mit sich bringen würde, kann das europäische Gesetz Geldstrafen von bis zu 4 % des Jahresumsatzes eines Unternehmens verhängen, wenn gegen bestimmte Vorschriften verstoßen wird. Handeln Sie jetzt und hosten Sie Ihre Daten auf sichere und gesetzeskonforme Weise.
   - title: Ihre Daten nutzen
     description: Verfügen Sie über Unmengen von Daten, wissen aber nicht, wie Sie diese nutzen können? Wir können Ihnen dabei helfen. Wir verfügen über umfassende Kenntnisse in den Bereichen Data Engineering und Analytik und können mithilfe von Modellen für maschinelles Lernen und verteiltem Computing Terabytes an Daten durchforsten. Schließen Sie sich den großen Unternehmen an und entdecken Sie neue Märkte, Kunden und versteckte Geheimnisse in Ihren Daten.
+promo_video:
+  enable: false
+  title: We Are Alawys <br> Comited
+  bg_image: images/background/promo-video.webp
+  video_URL: https://www.youtube.com/watch?v=jrkvirglgaQ
+  video_title: Lorem ipsum dolor <br> sit amet con.
 testimonial:
   enable: true
   subtitle: Kunden
   title: Was unsere Kunden sagen
   image: images/client.webp
   testimonial_item:
-  - name: James
-    content: Justin could not have been a better hire! Not only did he drastically improve our backend architecture and nearly eliminate our tech-debt, he also taught us a great deal and pushed our company forward in the right direction. Justin is an expert architect who deeply understands how backend systems should be designed and is able to eloquently explain these concepts to members of the team who are less experienced. When things break, he is available to troubleshoot. When education is requested, he provides in-depth documentation, recorded videos, and one-on-one sessions to ensure that the concepts are understood by all and that tasks can be replicated without his assistance. He helped our team immensely and I whole-heartedly recommend him to any other team who is need of a highly proficient technical consultant -- whether your needs are from the architect and consulting side, the technical development side, or some combination of the two, Justin is your guy.
-    designation: Happy Clients
-  - name: Lazaar
-    content: Very professional. Strongly recommend you select him if you want a high-quality
-      product.
+  - name: Holden (Otto.ai)
+    content: "Justin hätte kein besserer Mitarbeiter sein können! Er hat nicht nur unsere Backend-Architektur drastisch verbessert und unsere technischen Schulden fast beseitigt, er hat uns auch viel beigebracht und unser Unternehmen in die richtige Richtung gebracht. Justin ist ein erfahrener Architekt, der genau weiß, wie Backend-Systeme aufgebaut sein sollten, und der in der Lage ist, diese Konzepte den weniger erfahrenen Teammitgliedern eloquent zu erklären. Wenn etwas kaputt geht, ist er bei der Fehlerbehebung zur Stelle. Wenn Schulungen erforderlich sind, stellt er ausführliche Dokumentationen, aufgezeichnete Videos und Einzelgespräche zur Verfügung, um sicherzustellen, dass die Konzepte von allen verstanden werden und die Aufgaben auch ohne seine Hilfe ausgeführt werden können. Er hat unserem Team sehr geholfen, und ich empfehle ihn von ganzem Herzen jedem anderen Team, das einen hochkompetenten technischen Berater braucht - egal, ob Sie einen Architekten und Berater, einen technischen Entwickler oder eine Kombination aus beidem brauchen, Justin ist Ihr Mann."
     designation: Happy Clients
 cta:
   enable: true

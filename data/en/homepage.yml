@@ -136,12 +136,8 @@ testimonial:
   title: What our Clients say
   image: images/client.webp
   testimonial_item:
-  - name: James
-    content: Justin could not have been a better hire! Not only did he drastically improve our backend architecture and nearly eliminate our tech-debt, he also taught us a great deal and pushed our company forward in the right direction. Justin is an expert architect who deeply understands how backend systems should be designed and is able to eloquently explain these concepts to members of the team who are less experienced. When things break, he is available to troubleshoot. When education is requested, he provides in-depth documentation, recorded videos, and one-on-one sessions to ensure that the concepts are understood by all and that tasks can be replicated without his assistance. He helped our team immensely and I whole-heartedly recommend him to any other team who is need of a highly proficient technical consultant -- whether your needs are from the architect and consulting side, the technical development side, or some combination of the two, Justin is your guy.
-    designation: Happy Clients
-  - name: Lazaar
-    content: Very professional. Strongly recommend you select him if you want a high-quality
-      product.
+  - name: Holden (Otto.ai)
+    content: "Justin could not have been a better hire! Not only did he drastically improve our backend architecture and nearly eliminate our tech-debt, he also taught us a great deal and pushed our company forward in the right direction. Justin is an expert architect who deeply understands how backend systems should be designed and is able to eloquently explain these concepts to members of the team who are less experienced. When things break, he is available to troubleshoot. When education is requested, he provides in-depth documentation, recorded videos, and one-on-one sessions to ensure that the concepts are understood by all and that tasks can be replicated without his assistance. He helped our team immensely and I whole-heartedly recommend him to any other team who is need of a highly proficient technical consultant -- whether your needs are from the architect and consulting side, the technical development side, or some combination of the two, Justin is your guy."
     designation: Happy Clients
 cta:
   enable: true
