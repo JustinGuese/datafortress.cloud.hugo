@@ -1,10 +1,10 @@
 ---
 title: "Unleashing the Power of Private Clouds: Comparing the Top Providers and Their Offerings"
-bg_image: "/images/index2-1-1280x720.webp"
+bg_image: "/images/blog/kubernetes.jpg"
 date: 2023-01-18T07:10:46+02:00
 author: Justin Guese
 description: "Discover the benefits and features of top private cloud providers: SAP, OVH, OpenShift, and DataFortress.cloud."
-image: "/images/index2-1-1280x720.webp"
+image: "/images/blog/kubernetes.jpg"
 categories:
 - Private cloud
 tags: ["private cloud", "comparison"]

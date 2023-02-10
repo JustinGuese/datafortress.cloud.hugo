@@ -1,10 +1,10 @@
 ---
 title: "Maximizing Cost Savings in the Cloud: How to Run Kubernetes without a Load Balancer"
-bg_image: "/images/index2-1-1280x720.webp"
+bg_image: "/images/blog/kubernetes.jpg"
 date: 2023-01-18T07:10:46+02:00
 author: Justin Guese
 description: "Discover cost-saving tips for your Kubernetes cluster, from using one load balancer to even eliminating them altogether."
-image: "/images/index2-1-1280x720.webp"
+image: "/images/blog/kubernetes.jpg"
 categories:
 - Private cloud
 tags: ["private cloud", "comparison"]

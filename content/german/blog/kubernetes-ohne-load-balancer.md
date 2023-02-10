@@ -1,10 +1,10 @@
 ---
 title: "Maximierung der Kosteneinsparungen in der Cloud: Wie man Kubernetes ohne Load Balancer betreibt"
-bg_image: "/images/index2-1-1280x720.webp"
+bg_image: "/images/blog/kubernetes.jpg"
 date: 2023-01-18T07:10:46+02:00
 author: Justin Guese
 description: "Entdecken Sie kostensparende Tipps für Ihren Kubernetes-Cluster, von der Verwendung eines Load Balancers bis hin zur völligen Abschaffung."
-image: "/images/index2-1-1280x720.webp"
+image: "/images/blog/kubernetes.jpg"
 categories:
 - Private cloud
 - Kubernetes

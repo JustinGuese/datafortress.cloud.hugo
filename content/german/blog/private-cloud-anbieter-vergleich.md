@@ -1,10 +1,10 @@
 ---
 title: "Entfesseln Sie die Leistung von Private Clouds: Die wichtigsten Anbieter und ihre Angebote im Vergleich"
-bg_image: "/images/index2-1-1280x720.webp"
+bg_image: "/images/blog/kubernetes.jpg"
 date: 2023-01-18T07:10:46+02:00
 author: Justin Guese
 description: "Entdecken Sie die Vorteile und Funktionen der führenden Private-Cloud-Anbieter: SAP, OVH, OpenShift und DataFortress.cloud."
-image: "/images/index2-1-1280x720.webp"
+image: "/images/blog/kubernetes.jpg"
 categories:
 - Private cloud
 tags: ["private cloud", "comparison"]
