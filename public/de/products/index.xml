@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Products on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/products/</link>
+    <description>Recent content in Products on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Tue, 12 Jul 2022 17:02:17 +0200</lastBuildDate><atom:link href="https://datafortress.cloud/de/products/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AIStockpricePrediction</title>
+      <link>https://datafortress.cloud/de/products/aistockpriceprediction/</link>
+      <pubDate>Tue, 12 Jul 2022 17:02:17 +0200</pubDate>
+      
+      <guid>https://datafortress.cloud/de/products/aistockpriceprediction/</guid>
+      <description>AIStockpricePrediction https://aistockpriceprediction.com/
+AIStockpricePrediction.com ist mein &amp;ldquo;Frontend&amp;rdquo; zur Visualisierung meiner privaten Handelsideen und Algorithmen.</description>
+    </item>
+    
+    <item>
+      <title>DeFi/Web3: Kingdom Game</title>
+      <link>https://datafortress.cloud/de/products/web3-kingdom/</link>
+      <pubDate>Tue, 12 Jul 2022 17:02:17 +0200</pubDate>
+      
+      <guid>https://datafortress.cloud/de/products/web3-kingdom/</guid>
+      <description>DeFi/Web3: Kingdom Game https://github.com/JustinGuese/solidity-kingdom-game
+Ich habe ein Web3-Spiel geschrieben, das ein Königreich simuliert und gleichzeitig als Pool fungiert.</description>
+    </item>
+    
+    <item>
+      <title>EasyCloud</title>
+      <link>https://datafortress.cloud/de/products/easycloud/</link>
+      <pubDate>Tue, 12 Jul 2022 17:02:17 +0200</pubDate>
+      
+      <guid>https://datafortress.cloud/de/products/easycloud/</guid>
+      <description>EasyCloud https://easycloudhost.de/
+Hier biete ich mein eigenes Function-as-a-Service (FAAS) und verwaltetes Kubernetes (EasyKube) an.</description>
+    </item>
+    
+    <item>
+      <title>Myopiagraph</title>
+      <link>https://datafortress.cloud/de/products/myopiagraph/</link>
+      <pubDate>Tue, 12 Jul 2022 17:02:17 +0200</pubDate>
+      
+      <guid>https://datafortress.cloud/de/products/myopiagraph/</guid>
+      <description>Myopiagraph https://myopiagraph.com/
+Eine Software, die in 50 Augenarztpraxen in Bayern zur Visualisierung von Myopie bei Kindern eingesetzt wird.</description>
+    </item>
+    
+    <item>
+      <title>Open Source: Pandas to_sql</title>
+      <link>https://datafortress.cloud/de/products/pandas/</link>
+      <pubDate>Tue, 12 Jul 2022 17:02:17 +0200</pubDate>
+      
+      <guid>https://datafortress.cloud/de/products/pandas/</guid>
+      <description>Open Source: Pandas to_sql https://github.com/pandas-dev/pandas/pull/48331
+Pandas ist eine der meistgenutzten Data-Science-Bibliotheken in Python, und ich arbeite schon seit einiger Zeit mit anderen an der Funktion &amp;ldquo;to_sql&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Tradingbots</title>
+      <link>https://datafortress.cloud/de/products/tradingbots/</link>
+      <pubDate>Tue, 12 Jul 2022 17:02:17 +0200</pubDate>
+      
+      <guid>https://datafortress.cloud/de/products/tradingbots/</guid>
+      <description>Tradingbots Ich entwickle seit einiger Zeit Trading-Bots und habe eine Backtest-Software auf einem privaten Kubernetes-Cluster geschrieben, der eine reale Marktumgebung simuliert.</description>
+    </item>
+    
+  </channel>
+</rss>

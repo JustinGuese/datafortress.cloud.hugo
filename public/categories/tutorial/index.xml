@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tutorial on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/categories/tutorial/</link>
+    <description>Recent content in tutorial on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Jan 2022 23:00:00 +0000</lastBuildDate><atom:link href="https://datafortress.cloud/categories/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to set up Anaconda and Jupyter Notebook the right way</title>
+      <link>https://datafortress.cloud/blog/how-to-set-up-anaconda-and-jupyter-notebook-the-right-way/</link>
+      <pubDate>Mon, 24 Jan 2022 23:00:00 +0000</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/how-to-set-up-anaconda-and-jupyter-notebook-the-right-way/</guid>
+      <description>If Anaconda (conda) and Jupyter Notebook (Jupyter Lab) are set up the right way the combination of them can become the perfect team, where you are able to easily switch between Deep Learning conda environments.</description>
+    </item>
+    
+    <item>
+      <title>How To - Installing Arch Linux the easy way with encrypted drives</title>
+      <link>https://datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/</link>
+      <pubDate>Mon, 06 Jul 2020 07:10:46 +0200</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/</guid>
+      <description>Installing Arch Linux the easy way with encrypted drives for Deep Learning The benefits of Arch Linux In my other post, “How To: Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation”, I have been explaining why I switched from Ubuntu to Arch Linux for my Machine Learning workstation.</description>
+    </item>
+    
+    <item>
+      <title>How To - Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation</title>
+      <link>https://datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/</guid>
+      <description>How To: Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation Why should I ditch Ubuntu?</description>
+    </item>
+    
+  </channel>
+</rss>

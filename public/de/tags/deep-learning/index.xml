@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>deep learning on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/tags/deep-learning/</link>
+    <description>Recent content in deep learning on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Sun, 29 May 2022 07:10:46 +0200</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How To - Arch Linux auf einfacher Weise mit verschlüsselten Laufwerken installieren</title>
+      <link>https://datafortress.cloud/de/blog/anleitung-arch-linux-einfach-installieren/</link>
+      <pubDate>Sun, 29 May 2022 07:10:46 +0200</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/anleitung-arch-linux-einfach-installieren/</guid>
+      <description>Arch Linux auf einfache Weise mit verschlüsselten Laufwerken für tiefes Lernen installieren Die Vorteile von Arch Linux In meinem anderen Beitrag, &amp;ldquo;How To: Ditching Ubuntu for a Deep Learning Workstation&amp;rdquo;, habe ich erklärt, warum ich von Ubuntu zu Arch Linux für meine Machine Learning Workstation gewechselt habe.</description>
+    </item>
+    
+    <item>
+      <title>How To - Weg mit Ubuntu zugunsten von Arch Linux für eine Deep Learning-optimierte Arbeitsumgebung</title>
+      <link>https://datafortress.cloud/de/blog/anleitung-wie-bauche-ich-eine-arch-linux-machine-learning-workstation/</link>
+      <pubDate>Fri, 29 Apr 2022 07:10:46 +0200</pubDate>
+      
+      <guid>https://datafortress.cloud/de/blog/anleitung-wie-bauche-ich-eine-arch-linux-machine-learning-workstation/</guid>
+      <description>How To - Weg mit Ubuntu zugunsten von Arch Linux für eine Machine Learning-optimierte Arbeitsumgebung Warum sollte ich Ubuntu ersetzen?</description>
+    </item>
+    
+  </channel>
+</rss>

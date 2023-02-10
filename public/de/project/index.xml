@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Our Projects on Datafortress.cloud</title>
+    <link>https://datafortress.cloud/de/project/</link>
+    <description>Recent content in Our Projects on Datafortress.cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Thu, 12 Jul 2018 18:19:33 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Buchinger Wilhelmi Private Cloud</title>
+      <link>https://datafortress.cloud/de/project/buchinger-wilhelmi/</link>
+      <pubDate>Sat, 24 Sep 2022 14:48:03 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/project/buchinger-wilhelmi/</guid>
+      <description>Zusammenfassung Aufbau einer sicheren und DSGVO-konformen privaten Cloud mit Data Warehouse und datengesteuerten Analysen/Modellen</description>
+    </item>
+    
+    <item>
+      <title>HPW &amp; BMW Cloud Migration</title>
+      <link>https://datafortress.cloud/de/project/hpe-bmw/</link>
+      <pubDate>Sat, 24 Sep 2022 14:48:03 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/project/hpe-bmw/</guid>
+      <description>Zusammenfassung BMW plant, seine lokalen Daten in einer hybriden Cloud-Umgebung an 63 Standorten weltweit zu sichern.</description>
+    </item>
+    
+    <item>
+      <title>Jim Harris Real Time Stock Analytics</title>
+      <link>https://datafortress.cloud/de/project/jim-harris-corp/</link>
+      <pubDate>Sat, 24 Sep 2022 14:48:03 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/project/jim-harris-corp/</guid>
+      <description>Zusammenfassung Australische Aktienmarktvorhersage innerhalb von 5 Sekunden. Speicherung von Börsentickdaten und Aktienkursprognose.</description>
+    </item>
+    
+    <item>
+      <title>OttoAI Machine Learning (NLP) SAAS</title>
+      <link>https://datafortress.cloud/de/project/otto-ai/</link>
+      <pubDate>Sat, 24 Sep 2022 14:48:03 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/project/otto-ai/</guid>
+      <description>Zusammenfassung Entwicklung einer Software, die Informationen über potenzielle Kontakte aus verschiedenen Quellen sammelt, mit Hilfe von NLP eine personalisierte Nachricht generiert und die Kontakte dann automatisch über LinkedIn anschreibt.</description>
+    </item>
+    
+    <item>
+      <title>Porsche Holding Data Science</title>
+      <link>https://datafortress.cloud/de/project/porsche-holding/</link>
+      <pubDate>Sat, 24 Sep 2022 14:48:03 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/project/porsche-holding/</guid>
+      <description>Zusammenfassung Aufbau von Data Warehouse und datengesteuerten Analysen/Modellen
+Stichpunkte AWS, MS Azure, ETL Pipelines, Tensorflow, Elasticsearch, SQL, NoSQL, Kafka, Python</description>
+    </item>
+    
+    <item>
+      <title>SUMM AI serverless AWS architecture</title>
+      <link>https://datafortress.cloud/de/project/summ-ai/</link>
+      <pubDate>Sat, 24 Sep 2022 14:48:03 +0600</pubDate>
+      
+      <guid>https://datafortress.cloud/de/project/summ-ai/</guid>
+      <description>Zusammenfassung KI-Startup, das Sprache mit Transformer MLP-Modellen vereinfacht https://summ-ai.com/ Umwandlung einer bestehenden MariaDB-, Django- und ML-Architektur in eine serverlose AWS-Architektur.</description>
+    </item>
+    
+    <item>
+      <title>#unraceable Virtual Reality Simulator</title>
+      <link>https://datafortress.cloud/de/project/unraceable-virtual-reality-simulator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://datafortress.cloud/de/project/unraceable-virtual-reality-simulator/</guid>
+      <description>Unraceable ist der Name eines Virtual-Reality-Motionseat-Projekts und einer App, das ich drei Jahre lang geleitet habe.</description>
+    </item>
+    
+  </channel>
+</rss>
