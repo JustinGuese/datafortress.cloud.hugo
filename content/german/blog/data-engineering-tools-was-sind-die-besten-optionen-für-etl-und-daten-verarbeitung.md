@@ -1,10 +1,10 @@
 ---
 title: "Tools für die Datenverarbeitung: Was sind die besten Optionen für ETL und Datenverarbeitung?"
-bg_image: "/images/blog/data.jpg"
+bg_image: "/images/blog/cloud.jpg"
 date: 2023-02-01T04:32:46+02:00
 author: Justin Guese
 description: "In diesem Artikel werden wir uns mit den wichtigsten verfügbaren Data-Engineering-Tools befassen und Ihnen dabei helfen, herauszufinden, welche Tools am besten für die spezifischen Anforderungen Ihres Unternehmens geeignet sind."
-image: "/images/blog/data.jpg"
+image: "/images/blog/cloud.jpg"
 categories:
 - Data
 tags: ["engineering tools", "ETL", "data processing"]

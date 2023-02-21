@@ -1,10 +1,10 @@
 ---
 title: "Data engineering tools: What are the best options for ETL and data processing"
-bg_image: "/images/blog/data.jpg"
+bg_image: "/images/blog/cloud.jpg"
 date: 2023-02-01T04:32:46+02:00
 author: Justin Guese
 description: "In this article, we will explore the top data engineering tools available and help you determine which ones are the best fit for your organization's specific needs.."
-image: "/images/blog/data.jpg"
+image: "/images/blog/cloud.jpg"
 categories:
 - Data
 tags: ["engineering tools", "ETL", "data processing"]
