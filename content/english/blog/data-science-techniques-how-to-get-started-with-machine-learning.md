@@ -1,13 +1,13 @@
 ---
-title: "Data science techniques: How to get started with machine learning"
+title: "Data science techniques: How to get started with machine learning?"
 bg_image: "/images/blog/disk.jpg"
-date: 2023-02-02T04:32:46+02:00
+date: 2023-02-16T04:32:46+02:00
 author: Justin Guese
 description: "In this article, we'll provide a comprehensive guide to getting started with machine learning, including practical advice for choosing the right tools, building effective models, and unlocking the full potential of your data."
 image: "/images/blog/disk.jpg"
 categories:
-- AI
-tags: ["private cloud", "comparison", "machine learning", "ai"]
+- Private cloud
+tags: ["private cloud", "comparison"]
 type: post
 ---
 
@@ -36,8 +36,6 @@ One of the key concepts in machine learning is the idea of a model. A model is a
 Another important concept is the idea of training and testing. In order to create an effective machine learning model, you'll need to train it on a large dataset of examples. This training process will help the algorithm identify patterns in the data that it can use to make predictions. Once the model has been trained, you'll need to test it on a separate dataset to make sure that it's accurate.
 
 Of course, there are many other concepts that are important to understanding machine learning, from the different types of algorithms to the importance of feature selection. But by mastering the basics, you'll be well on your way to creating effective machine learning models that can help you make better business decisions.
-
-> Questions? Let our team of experienced [Machine Learning Engineers help you](/contact)
 
 ## Advanced Tools and Techniques for Machine Learning: How to Apply Them to Your Data
 
