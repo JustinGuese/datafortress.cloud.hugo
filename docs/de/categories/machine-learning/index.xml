@@ -1,1 +1,305 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Machine Learning on Datafortress.cloud</title><link>https://datafortress.cloud/de/categories/machine-learning/</link><description>Recent content in Machine Learning on Datafortress.cloud</description><generator>Hugo -- gohugo.io</generator><language>de-de</language><lastBuildDate>Wed, 08 Feb 2023 07:10:46 +0200</lastBuildDate><atom:link href="https://datafortress.cloud/de/categories/machine-learning/index.xml" rel="self" type="application/rss+xml"/><item><title>Erschließung des Potenzials des maschinellen Lernens mit privaten Cloud-Diensten: Fallstudien aus der Praxis</title><link>https://datafortress.cloud/de/blog/fallstudie-real-world-anwendungen-private-cloud/</link><pubDate>Wed, 08 Feb 2023 07:10:46 +0200</pubDate><guid>https://datafortress.cloud/de/blog/fallstudie-real-world-anwendungen-private-cloud/</guid><description>Erschließung des Potenzials des maschinellen Lernens mit privaten Cloud-Diensten: Fallstudien aus der Praxis Willkommen in der Welt des datengesteuerten Geschäftserfolgs!</description></item><item><title>Howto: Einen automatisierten Machine-Learning Aktienhandels-Roboter mittels AWS Lambda serverlos betreiben</title><link>https://datafortress.cloud/de/blog/howto-einen-automatisierten-machine-learning-aktienhandels-roboter-mittels-aws-lambda-serverlos-betreiben/</link><pubDate>Mon, 23 May 2022 22:00:00 +0000</pubDate><guid>https://datafortress.cloud/de/blog/howto-einen-automatisierten-machine-learning-aktienhandels-roboter-mittels-aws-lambda-serverlos-betreiben/</guid><description>In diesem Beitrag werde ich meinen Algorithmus für serverloses Investieren mit AWS Lambda, Facebook Prophet als ML-Modell und meiner benutzerdefinierten Lambda-Schicht vorstellen.</description></item><item><title>Gesichtserkennung mittels MTCNN</title><link>https://datafortress.cloud/de/blog/face-detection-using-mtcnn/</link><pubDate>Sun, 08 May 2022 07:10:46 +0200</pubDate><guid>https://datafortress.cloud/de/blog/face-detection-using-mtcnn/</guid><description>Was ist MTCNN MTCNN ist eine Python (pip)-Bibliothek, die von [Github-Benutzer ipacz] (https://github.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Machine Learning on Datafortress.cloud</title><link>https://datafortress.cloud/de/categories/machine-learning/</link><description>Recent content in Machine Learning on Datafortress.cloud</description><generator>Hugo -- gohugo.io</generator><language>de-de</language><managingEditor/><webMaster/><lastBuildDate>Wed, 08 Feb 2023 07:10:46 +0200</lastBuildDate><atom:link href="https://datafortress.cloud/de/categories/machine-learning/index.xml" rel="self" type="application/rss+xml"/><item><title>Entfaltung des Potenzials des maschinellen Lernens mit privaten Cloud-Diensten: Fallstudien aus der Praxis</title><link>https://datafortress.cloud/de/blog/case-study-real-world-applications-private-cloud/</link><pubDate>Wed, 08 Feb 2023 07:10:46 +0200</pubDate><author>Justin Guese</author><guid>https://datafortress.cloud/de/blog/case-study-real-world-applications-private-cloud/</guid><description>
+&lt;h1 id="unlocking-the-potential-of-machine-learning-with-private-cloud-services-real-world-fallstudien">Unlocking the Potential of Machine Learning with Private Cloud Services: Real-World Fallstudien&lt;/h1>
+&lt;p>Willkommen in der Welt des datengesteuerten Geschäftserfolgs! In der heutigen schnelllebigen und sich ständig verändernden Geschäftswelt, die Unternehmen suchen ständig nach neuen Wegen, um ihre Arbeitsabläufe zu verbessern und der Konkurrenz voraus zu sein. Maschinelles Lernen und private Cloud-Dienste haben sich als Wegbereiter erwiesen, Bereitstellung von Werkzeugen für Unternehmen, die das volle Potenzial ihrer Daten ausschöpfen wollen. In diesem Artikel, werfen wir einen Blick auf reale Beispiele von Unternehmen, die sich die Kraft dieser Spitzentechnologien zunutze gemacht haben, um ihr Wachstum zu fördern, den Betrieb rationalisieren, und schützen sensible Informationen. Also anschnallen, und machen Sie sich bereit, die vielen Vorteile von maschinellem Lernen und privaten Cloud-Diensten zu entdecken!&lt;/p>
+&lt;h2 id="fallstudie-1-automatisierte-betrugserkennung-für-ein-finanzdienstleistungsunternehmen">Fallstudie 1: Automatisierte Betrugserkennung für ein Finanzdienstleistungsunternehmen&lt;/h2>
+&lt;p>Finanzdienstleister verarbeiten täglich große Mengen sensibler Daten, die Aufdeckung von Betrug zu einer entscheidenden Komponente ihrer Tätigkeit machen. Leider, manuelle Verfahren zur Betrugserkennung sind zeitaufwändig, kostspielig, und sind oft nicht in der Lage, komplexe Betrugsfälle aufzudecken. An dieser Stelle kommt die Integration von maschinellem Lernen und privaten Cloud-Diensten ins Spiel.&lt;/p>
+&lt;p>In dieser Fallstudie, werfen wir einen Blick auf ein Finanzdienstleistungsunternehmen, das mit seinen manuellen Betrugserkennungsverfahren Probleme hatte. Das Unternehmen wandte sich an DataFortress.Cloud UG nach einer Lösung, die eine genaue und effiziente Betrugserkennung ermöglicht, bei gleichzeitigem Schutz sensibler Kundeninformationen.&lt;/p>
+&lt;p>DataFortress.cloud UG implementierte maschinelle Lernalgorithmen in einer sicheren privaten Cloud-Umgebung, den Prozess der Betrugserkennung zu automatisieren. Die Ergebnisse waren beeindruckend, Das Finanzdienstleistungsunternehmen konnte eine erhebliche Steigerung der Genauigkeit im Vergleich zu manuellen Prozessen verzeichnen.. Dies ermöglichte es dem Unternehmen, Betrugsversuche schneller und wirksamer aufzudecken., Verringerung des Risikos von finanziellen Verlusten und Schutz sensibler Kundeninformationen.&lt;/p>
+&lt;p>Zusammenfassend, Die Integration von maschinellem Lernen und privaten Cloud-Diensten bietet Finanzdienstleistern ein leistungsfähiges Instrument zur Automatisierung der Betrugserkennung und zum Schutz sensibler Daten. Wenn Sie Probleme mit manuellen Betrugserkennungsprozessen haben, Kontakt zu DataFortress.cloud UG, um mehr über unsere Lösungen zu erfahren.&lt;/p>
+&lt;h2 id="fallstudie-2-vorausschauende-wartung-für-ein-fertigungsunternehmen">Fallstudie 2: Vorausschauende Wartung für ein Fertigungsunternehmen&lt;/h2>
+&lt;p>In der verarbeitenden Industrie, Ausfallzeiten können kostspielig sein und sich auf das Endergebnis auswirken. Traditionelle Wartungsprozesse sind reaktiv, was bedeutet, dass die Geräte erst gewartet werden, wenn sie ausgefallen sind. Dies führt zu unerwarteten Ausfallzeiten, erhöhte Wartungskosten, und verringerte Produktivität.&lt;/p>
+&lt;p>Einstieg in die vorausschauende Wartung, ein proaktiver Ansatz, bei dem Algorithmen des maschinellen Lernens eingesetzt werden, um vorherzusagen, wann Geräte ausfallen werden, und die Wartung entsprechend zu planen. In dieser Fallstudie, werfen wir einen Blick auf ein Fertigungsunternehmen, das mit ineffizienten Wartungsprozessen und Ausfallzeiten zu kämpfen hatte.&lt;/p>
+&lt;p>Das Produktionsunternehmen arbeitet mit DataFortress zusammen.cloud UG zur Umsetzung der vorausschauenden Wartung in einer sicheren privaten Cloud-Umgebung. DataFortress.cloud UG nutzte Algorithmen des maschinellen Lernens, um Gerätedaten zu analysieren und vorherzusagen, wann eine Wartung erforderlich sein würde. Dies ermöglichte es dem Unternehmen, Wartungsarbeiten proaktiv zu planen., Verringerung der Ausfallzeiten und Verbesserung der Effizienz.&lt;/p>
+&lt;p>Die Ergebnisse waren bemerkenswert, Das Fertigungsunternehmen konnte die Ausfallzeiten erheblich reduzieren und die Produktivität steigern.. Darüber hinaus, das Unternehmen konnte seine Wartungsprozesse optimieren und die Kosten senken, was zu einer verbesserten Rentabilität führt.&lt;/p>
+&lt;p>Zusammenfassend, Vorausschauende Instandhaltung ist ein entscheidender Faktor für die Fertigungsindustrie. Durch den Einsatz von maschinellem Lernen und privaten Cloud-Diensten, Unternehmen können die Wartung proaktiv planen, Verringerung der Ausfallzeiten und Verbesserung der Effizienz. Wenn Sie Probleme mit reaktiven Wartungsprozessen haben, Kontakt zu DataFortress.cloud UG, um mehr über unsere Lösungen zu erfahren.&lt;/p>
+&lt;h2 id="fallstudie-3-kundensegmentierung-und-personalisierung-für-ein-einzelhandelsunternehmen">Fallstudie 3: Kundensegmentierung und Personalisierung für ein Einzelhandelsunternehmen&lt;/h2>
+&lt;p>In der wettbewerbsorientierten Einzelhandelslandschaft von heute, ein personalisiertes Einkaufserlebnis ist der Schlüssel zur Gewinnung und Bindung von Kunden. Kundensegmentierung, der Prozess der Einteilung von Kunden in Gruppen auf der Grundlage gemeinsamer Merkmale, ist ein wesentlicher Bestandteil der Personalisierung. Die manuelle Segmentierung von Kunden kann jedoch zeitaufwändig sein und durch menschliche Voreingenommenheit eingeschränkt werden..&lt;/p>
+&lt;p>Hier kommen das maschinelle Lernen und private Cloud-Dienste ins Spiel. In dieser Fallstudie, werfen wir einen Blick auf ein Einzelhandelsunternehmen, das Schwierigkeiten hatte, seinen Kunden personalisierte Erlebnisse zu bieten. Das Unternehmen wandte sich an DataFortress.Cloud UG für eine Lösung, die Kunden genau segmentieren und personalisierte Erfahrungen in einer sicheren Umgebung bieten kann.&lt;/p>
+&lt;p>DataFortress.cloud UG implementierte Algorithmen für maschinelles Lernen in einer privaten Cloud-Umgebung, um Kundendaten zu analysieren und Kunden anhand gemeinsamer Merkmale in Gruppen einzuteilen. Dies ermöglichte dem Einzelhandelsunternehmen, seinen Kunden personalisierte Erfahrungen zu bieten., einschließlich maßgeschneiderter Produktempfehlungen und gezielter Marketingkampagnen.&lt;/p>
+&lt;p>Die Ergebnisse waren beeindruckend, Das Einzelhandelsunternehmen verzeichnete einen Anstieg der Kundenbindung und des Umsatzes.. Das Unternehmen konnte außerdem wertvolle Erkenntnisse über das Verhalten und die Vorlieben seiner Kunden gewinnen, was eine kontinuierliche Optimierung und Verbesserung der Personalisierungsbemühungen ermöglichte.&lt;/p>
+&lt;p>Zusammenfassend, Kundensegmentierung und Personalisierung sind entscheidende Komponenten einer erfolgreichen Einzelhandelsstrategie. Durch den Einsatz von maschinellem Lernen und privaten Cloud-Diensten, Einzelhändler können Kunden genau segmentieren und personalisierte Erfahrungen anbieten, was zu mehr Engagement und Umsatz führt. Wenn Sie mit Herausforderungen bei der Kundensegmentierung und Personalisierung konfrontiert sind, Kontakt zu DataFortress.cloud UG, um mehr über unsere Lösungen zu erfahren.&lt;/p>
+&lt;h2 id="schlussfolgerung">Schlussfolgerung&lt;/h2>
+&lt;p>Zusammenfassend, maschinelles Lernen und private Cloud-Dienste sind leistungsstarke Werkzeuge für Unternehmen, die ihre Abläufe verbessern und sensible Daten schützen wollen. Die Fallstudien, die wir in diesem Artikel besprochen haben, zeigen nur einige der vielen Möglichkeiten auf, wie Unternehmen diese Technologien nutzen, um sich einen Wettbewerbsvorteil zu verschaffen.&lt;/p>
+&lt;p>Von der automatischen Betrugserkennung in der Finanzdienstleistungsbranche über die vorausschauende Wartung in der Fertigungsindustrie bis hin zur Kundensegmentierung und Personalisierung im Einzelhandel, die Vorteile von maschinellem Lernen und privaten Cloud-Diensten liegen auf der Hand. Die Unternehmen können ihre Effizienz verbessern, Kosten senken, und personalisierte Erfahrungen für ihre Kunden zu bieten, und das alles unter Wahrung der Sicherheit sensibler Daten.&lt;/p>
+&lt;p>Bei DataFortress.Wolke UG, Wir unterstützen Unternehmen dabei, die Leistung von maschinellem Lernen und privaten Cloud-Services zu nutzen, um ihre Ziele zu erreichen.. Ob Sie mit Herausforderungen bei der Betrugserkennung konfrontiert sind, Wartungsprozesse, oder Kundensegmentierung und Personalisierung, wir haben das Fachwissen und die Erfahrung, um zu helfen. Kontaktieren Sie uns noch heute, um mehr über unsere Lösungen zu erfahren und wie wir Ihrem Unternehmen zum Erfolg verhelfen können..&lt;/p></description></item><item><title>Erschließung des Potenzials des maschinellen Lernens mit privaten Cloud-Diensten: Fallstudien aus der Praxis</title><link>https://datafortress.cloud/de/blog/fallstudie-real-world-anwendungen-private-cloud/</link><pubDate>Wed, 08 Feb 2023 07:10:46 +0200</pubDate><author>Justin Guese</author><guid>https://datafortress.cloud/de/blog/fallstudie-real-world-anwendungen-private-cloud/</guid><description>
+&lt;h1 id="erschließung-des-potenzials-des-maschinellen-lernens-mit-privaten-cloud-diensten-fallstudien-aus-der-praxis">Erschließung des Potenzials des maschinellen Lernens mit privaten Cloud-Diensten: Fallstudien aus der Praxis&lt;/h1>
+&lt;p>Willkommen in der Welt des datengesteuerten Geschäftserfolgs! In der heutigen schnelllebigen und sich ständig verändernden Geschäftswelt suchen Unternehmen ständig nach neuen Möglichkeiten, ihre Abläufe zu verbessern und der Konkurrenz einen Schritt voraus zu sein. Maschinelles Lernen und private Cloud-Services haben sich als bahnbrechend erwiesen und bieten Unternehmen die Tools, die sie benötigen, um das volle Potenzial ihrer Daten auszuschöpfen. In diesem Artikel werfen wir einen Blick auf Beispiele aus der Praxis von Unternehmen, die sich diese Spitzentechnologien zunutze gemacht haben, um ihr Wachstum voranzutreiben, ihre Abläufe zu optimieren und sensible Daten zu schützen. Schnallen Sie sich also an und machen Sie sich bereit, die vielen Vorteile von maschinellem Lernen und privaten Cloud-Diensten zu entdecken!&lt;/p>
+&lt;h2 id="fallstudie-1-automatisierte-betrugserkennung-für-ein-finanzdienstleistungsunternehmen">Fallstudie 1: Automatisierte Betrugserkennung für ein Finanzdienstleistungsunternehmen&lt;/h2>
+&lt;p>Finanzdienstleister verarbeiten täglich riesige Mengen an sensiblen Daten, was die Betrugserkennung zu einem kritischen Bestandteil ihres Geschäftsbetriebs macht. Leider sind manuelle Betrugserkennungsprozesse zeitaufwändig, kostspielig und reichen oft nicht aus, um komplexe Betrugsversuche aufzudecken. An dieser Stelle kommt die Integration von maschinellem Lernen und privaten Cloud-Diensten ins Spiel.&lt;/p>
+&lt;p>In dieser Fallstudie werfen wir einen Blick auf ein Finanzdienstleistungsunternehmen, das mit seinen manuellen Betrugserkennungsprozessen Probleme hatte. Das Unternehmen wandte sich an DataFortress.cloud UG, um eine Lösung zu finden, die eine genaue und effiziente Betrugserkennung ermöglicht und gleichzeitig sensible Kundendaten schützt.&lt;/p>
+&lt;p>DataFortress.cloud UG implementierte maschinelle Lernalgorithmen innerhalb einer sicheren privaten Cloud-Umgebung, um den Betrugserkennungsprozess zu automatisieren. Die Ergebnisse waren beeindruckend: Das Finanzdienstleistungsunternehmen verzeichnete eine signifikante Steigerung der Genauigkeit im Vergleich zu manuellen Prozessen. Dadurch konnte das Unternehmen Betrugsversuche schneller und effektiver aufdecken, das Risiko finanzieller Verluste verringern und sensible Kundendaten schützen.&lt;/p>
+&lt;p>Zusammenfassend lässt sich sagen, dass die Integration von maschinellem Lernen und privaten Cloud-Diensten Finanzdienstleistern ein leistungsstarkes Tool zur Automatisierung der Betrugserkennung und zum Schutz sensibler Daten bietet. Wenn Sie mit manuellen Betrugserkennungsprozessen konfrontiert sind, kontaktieren Sie DataFortress.cloud UG, um mehr über unsere Lösungen zu erfahren.&lt;/p>
+&lt;h2 id="fallstudie-2-vorausschauende-wartung-für-ein-fertigungsunternehmen">Fallstudie 2: Vorausschauende Wartung für ein Fertigungsunternehmen&lt;/h2>
+&lt;p>In der Fertigungsindustrie können Ausfallzeiten kostspielig sein und sich auf das Endergebnis auswirken. Herkömmliche Wartungsprozesse sind reaktiv, was bedeutet, dass die Anlagen erst gewartet werden, wenn sie ausgefallen sind. Dies führt zu unerwarteten Ausfallzeiten, höheren Wartungskosten und geringerer Produktivität.&lt;/p>
+&lt;p>Hier kommt die vorausschauende Wartung ins Spiel, ein proaktiver Ansatz, bei dem Algorithmen des maschinellen Lernens eingesetzt werden, um vorherzusagen, wann Geräte ausfallen werden, und die Wartung entsprechend zu planen. In dieser Fallstudie werfen wir einen Blick auf ein Fertigungsunternehmen, das mit ineffizienten Wartungsprozessen und Ausfallzeiten zu kämpfen hatte.&lt;/p>
+&lt;p>Das Unternehmen ging eine Partnerschaft mit DataFortress.cloud UG ein, um die vorausschauende Wartung in einer sicheren privaten Cloud-Umgebung zu implementieren. DataFortress.cloud UG nutzte Algorithmen des maschinellen Lernens, um Anlagendaten zu analysieren und vorherzusagen, wann eine Wartung erforderlich sein würde. Dies ermöglichte es dem Unternehmen, die Wartung proaktiv zu planen, Ausfallzeiten zu reduzieren und die Effizienz zu verbessern.&lt;/p>
+&lt;p>Die Ergebnisse waren bemerkenswert: Das Fertigungsunternehmen konnte die Ausfallzeiten erheblich reduzieren und die Produktivität steigern. Darüber hinaus konnte das Unternehmen seine Wartungsprozesse optimieren und die Kosten senken, was zu einer verbesserten Rentabilität führte.&lt;/p>
+&lt;p>Zusammenfassend lässt sich sagen, dass die vorausschauende Wartung für die Fertigungsindustrie einen entscheidenden Wandel darstellt. Durch den Einsatz von maschinellem Lernen und privaten Cloud-Diensten können Unternehmen die Wartung proaktiv planen, Ausfallzeiten reduzieren und die Effizienz verbessern. Wenn Sie mit reaktiven Wartungsprozessen konfrontiert sind, kontaktieren Sie DataFortress.cloud UG, um mehr über unsere Lösungen zu erfahren.&lt;/p>
+&lt;h2 id="fallstudie-3-kundensegmentierung-und-personalisierung-für-ein-einzelhandelsunternehmen">Fallstudie 3: Kundensegmentierung und Personalisierung für ein Einzelhandelsunternehmen&lt;/h2>
+&lt;p>In der heutigen wettbewerbsintensiven Einzelhandelslandschaft ist ein personalisiertes Einkaufserlebnis der Schlüssel zur Gewinnung und Bindung von Kunden. Die Kundensegmentierung, d. h. die Einteilung von Kunden in Gruppen auf der Grundlage gemeinsamer Merkmale, ist ein wesentlicher Bestandteil der Personalisierung. Die manuelle Segmentierung von Kunden kann jedoch zeitaufwändig sein und durch menschliche Voreingenommenheit eingeschränkt werden.&lt;/p>
+&lt;p>An dieser Stelle kommen maschinelles Lernen und private Cloud-Services ins Spiel. In dieser Fallstudie werfen wir einen Blick auf ein Einzelhandelsunternehmen, das Schwierigkeiten hatte, personalisierte Erfahrungen für seine Kunden zu bieten. Das Unternehmen wandte sich an DataFortress.cloud UG, um eine Lösung zu finden, die Kunden genau segmentieren und personalisierte Erfahrungen in einer sicheren Umgebung bieten konnte.&lt;/p>
+&lt;p>DataFortress.cloud UG implementierte Algorithmen des maschinellen Lernens in einer privaten Cloud-Umgebung, um Kundendaten zu analysieren und Kunden anhand gemeinsamer Merkmale in Gruppen einzuteilen. Dies ermöglichte es dem Einzelhandelsunternehmen, seinen Kunden personalisierte Erfahrungen zu bieten, einschließlich maßgeschneiderter Produktempfehlungen und gezielter Marketingkampagnen.&lt;/p>
+&lt;p>Die Ergebnisse waren beeindruckend: Das Einzelhandelsunternehmen verzeichnete eine Steigerung der Kundenbindung und des Umsatzes. Darüber hinaus konnte das Unternehmen wertvolle Erkenntnisse über das Kundenverhalten und die Präferenzen seiner Kunden gewinnen, was eine kontinuierliche Optimierung und Verbesserung der Personalisierungsmaßnahmen ermöglichte.&lt;/p>
+&lt;p>Zusammenfassend lässt sich sagen, dass Kundensegmentierung und Personalisierung entscheidende Komponenten einer erfolgreichen Einzelhandelsstrategie sind. Durch den Einsatz von maschinellem Lernen und privaten Cloud-Diensten können Einzelhändler Kunden genau segmentieren und personalisierte Erlebnisse bieten, was zu mehr Engagement und Umsatz führt. Wenn Sie mit Herausforderungen bei der Kundensegmentierung und Personalisierung konfrontiert sind, kontaktieren Sie DataFortress.cloud UG, um mehr über unsere Lösungen zu erfahren.&lt;/p>
+&lt;h2 id="fazit">Fazit&lt;/h2>
+&lt;p>Zusammenfassend lässt sich sagen, dass maschinelles Lernen und private Cloud-Dienste leistungsstarke Werkzeuge für Unternehmen sind, die ihre Abläufe verbessern und sensible Daten schützen möchten. Die Fallstudien, die wir in diesem Artikel besprochen haben, zeigen nur einige der vielen Möglichkeiten auf, wie Unternehmen diese Technologien nutzen, um sich einen Wettbewerbsvorteil zu verschaffen.&lt;/p>
+&lt;p>Von der automatisierten Betrugserkennung in der Finanzdienstleistungsbranche über die vorausschauende Wartung in der Fertigungsindustrie bis hin zur Kundensegmentierung und Personalisierung im Einzelhandel liegen die Vorteile des maschinellen Lernens und der Private Cloud Services auf der Hand. Unternehmen sind in der Lage, ihre Effizienz zu steigern, Kosten zu senken und ihren Kunden personalisierte Erlebnisse zu bieten - und das alles unter Wahrung der Sicherheit sensibler Daten.&lt;/p>
+&lt;p>Die DataFortress.cloud UG unterstützt Unternehmen dabei, die Möglichkeiten des maschinellen Lernens und privater Cloud-Services zu nutzen, um ihre Ziele zu erreichen. Ganz gleich, ob Sie vor Herausforderungen bei der Betrugserkennung, bei Wartungsprozessen oder bei der Kundensegmentierung und -personalisierung stehen, wir haben das Know-how und die Erfahrung, um Ihnen zu helfen. Kontaktieren Sie uns noch heute, um mehr über unsere Lösungen zu erfahren und wie wir Ihrem Unternehmen zum Erfolg verhelfen können.&lt;/p></description></item><item><title>Howto: Einen automatisierten Machine-Learning Aktienhandels-Roboter mittels AWS Lambda serverlos betreiben</title><link>https://datafortress.cloud/de/blog/howto-einen-automatisierten-machine-learning-aktienhandels-roboter-mittels-aws-lambda-serverlos-betreiben/</link><pubDate>Mon, 23 May 2022 22:00:00 +0000</pubDate><author>Justin Guese</author><guid>https://datafortress.cloud/de/blog/howto-einen-automatisierten-machine-learning-aktienhandels-roboter-mittels-aws-lambda-serverlos-betreiben/</guid><description>
+&lt;p>In diesem Beitrag werde ich meinen Algorithmus für serverloses Investieren mit AWS Lambda, Facebook Prophet als ML-Modell und meiner benutzerdefinierten Lambda-Schicht vorstellen.&lt;/p>
+&lt;p>Ich habe diesen Beitrag in die Abschnitte &amp;ldquo;Warum habe ich das gemacht&amp;rdquo; und &amp;ldquo;Technisches How To&amp;rdquo; unterteilt. Wenn Sie den &amp;ldquo;Warum&amp;rdquo;-Teil überspringen möchten, können Sie direkt zum technischen Teil springen.&lt;/p>
+&lt;h2 id="warum-sollte-ich-ein-maschinelles-lernmodell-in-aws-lambda-einsetzen">Warum sollte ich ein maschinelles Lernmodell in AWS Lambda einsetzen?&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>Die Zuverlässigkeit&lt;/strong>: Der Algorithmus wird unabhängig von anderen Systemen, Updates, &amp;hellip;&lt;/li>
+&lt;li>&lt;strong>Leistungseffizienz&lt;/strong>: Ich kann mehrere Algorithmen auf einem (kleinen) System unabhängig voneinander ausführen.&lt;/li>
+&lt;li>&lt;strong>Kosteneinsparungen&lt;/strong>: AWS ermöglicht &lt;a href="https://aws.amazon.com/lambda/?did=ft_card&amp;amp;trk=ft_card">3,2 Millionen Rechensekunden pro Monat&lt;/a>, so dass ich im Grunde alle meine Algorithmen kostenlos ausführen kann.&lt;/li>
+&lt;/ol>
+&lt;p>Ich habe nach einer Möglichkeit gesucht, zunächst sicherzustellen, dass mein Investitions-Bot sicher ausgeführt wird, denn eine fehlgeschlagene Ausführung kann viel Geld kosten, wenn ein Handel nicht umgehend abgebrochen wird, wenn er in die falsche Richtung geht. Außerdem wollte ich vermeiden, meinen Computer die ganze Zeit laufen zu lassen, und sicherstellen, dass mehrere Algorithmen nebeneinander laufen können, ohne ihre Ausführung zu beeinflussen oder zu verzögern.&lt;/p>
+&lt;p>Darüber hinaus ist es ein schöner Gedanke, einen investierenden Algorithmus laufen zu lassen, ohne sich um Betriebssystem-Updates, Hardware-Ausfälle und Stromausfälle usw. zu kümmern, was der allgemeine Vorteil serverloser Technologien ist.&lt;/p>
+&lt;p>Im Moment kann ich mehrere Variationen des Algorithmus laufen lassen, um Änderungen des Algorithmus zu testen, und kann sicher sein, dass er läuft. Noch eine nette Sache? AWS bietet etwa 1 Million kostenlose Lambda-Aufrufe an, so dass ich die gesamte Architektur in ihrem Free Tier-Kontingent laufen lassen kann.&lt;/p>
+&lt;h2 id="der-investitionsalgorithmus">Der Investitionsalgorithmus&lt;/h2>
+&lt;p>Ich werde den Algorithmus in einem anderen Beitrag auf meiner Website &lt;a href="">www.datafortress.cloud&lt;/a> ausführlicher erläutern, aber mein typischer Aufbau eines Investitionsalgorithmus besteht aus:&lt;/p>
+&lt;ol>
+&lt;li>Testen des Algorithmus mit &lt;a href="https://www.backtrader.com/">Backtrader&lt;/a>, einem Open-Source-Backtesting-Framework, das in Python geschrieben wurde&lt;/li>
+&lt;li>Konvertieren des erfolgreichen Algorithmus in eine einzelne Python-Datei, die eine run()-Methode enthält, die zurückgibt, welche Investitionen getätigt wurden&lt;/li>
+&lt;li>Übertragen der Python-Datei zu AWS Lambda, wo ich die run()-Funktion mit der lambda_handler-Funktion von AWS Lambda aufrufe&lt;/li>
+&lt;/ol>
+&lt;p>In diesem Beispielalgorithmus treffe ich Investitionsentscheidungen in Abhängigkeit davon, ob der aktuelle Kurs über oder unter der Trendlinie liegt, die vom &lt;a href="https://facebook.github.io/prophet/">Prophetenmodell von Facebook&lt;/a> vorhergesagt wird. Ich habe Ideen von &lt;a href="http://seangtkelley.me/blog/2018/08/15/algo-trading-pt2">Sean Kelley übernommen&lt;/a>, der ein Backtrader-Setup geschrieben hat, wie man Prophet mit Backtrader einsetzen kann.&lt;/p>
+&lt;p>Mein Aktienuniversum in diesem Setup wird berechnet, indem ich die 20 besten Aktien aus dem SPY500-Index auswähle, der in den vergangenen X Zeitschritten die höchste Rendite erzielte.&lt;/p>
+&lt;p>Die Datenquelle ist Yahoo Finance, unter Verwendung der kostenlosen &lt;a href="">Yfinance-Bibliothek&lt;/a>, und als mein bevorzugter algorithmischer Broker habe ich &lt;a href="https://alpaca.markets/">Alpaca.markets&lt;/a> gewählt.&lt;/p>
+&lt;p>In meinem Setup wird der Algorithmus einmal pro Tag um 15 Uhr oder alle 15 Minuten während der Handelszeiten ausgeführt.&lt;/p>
+&lt;h2 id="die-probleme-beim-einsatz-des-facebook-propheten-bei-aws-lambda">Die Probleme beim Einsatz des Facebook-Propheten bei AWS Lambda&lt;/h2>
+&lt;p>AWS Lambda wird mit einigen Python-Bibliotheken vorinstalliert geliefert, aber wie viele von Ihnen vielleicht wissen, ist dies standardmäßig recht begrenzt (was für Lambda&amp;rsquo;s Versprechen angemessen ist). Dennoch erlaubt Lambda die Installation privater Pakete, was für kleinere Pakete recht einfach ist (siehe die&lt;a href="https://docs.aws.amazon.com/lambda/latest/dg/python-package.html"> offizielle Dokumentation&lt;/a>), aber etwas komplizierter wird, wenn es sich um Pakete handelt, die größer als 250 Mb sind. Unglücklicherweise überschreitet das Prophetenmodell von Facebook diese Grenze, aber glücklicherweise hat &lt;a href="https://towardsdatascience.com/how-to-get-fbprophet-work-on-aws-lambda-c3a33a081aaf">Alexandr Matsenov dieses Problem gelöst&lt;/a>, indem er die Paketgröße reduziert hat, und &lt;a href="https://github.com/marcmetz/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda">Marc Metz hat sich um Kompilierungsprobleme gekümmert, damit es auf AWS Lambda läuft.&lt;/a>&lt;/p>
+&lt;p>Nicht standardmäßige Bibliotheken können zu AWS Lambda hinzugefügt werden, indem man Layer verwendet, die alle benötigten Pakete enthalten. Wenn ein Layer importiert wird, können Sie die Pakete einfach in Ihrer Python-Funktion importieren, wie Sie es in Ihrem lokalen Setup tun würden.&lt;/p>
+&lt;h1 id="die-technische-anleitung">Die technische Anleitung&lt;/h1>
+&lt;p>Lassen Sie mich abschließend erklären, wie genau Sie dies erreichen können. Siehe dieses TLDR für die ungeduldigen Typen oder die detailliertere Version unten.&lt;/p>
+&lt;p>&lt;strong>TLDR;&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>Sie benötigen ein Lambda-Layer, laden Sie meine (&lt;a href="https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/raw/master/python.zip">Download&lt;/a>) mit Prophet, yfinance, &amp;hellip; auf einen S3-Bucket (privater Zugang)&lt;/li>
+&lt;li>Wählen Sie AWS Lambda, erstellen Sie eine Funktion, fügen Sie ein Layer hinzu und fügen Sie in Ihre S3-Objekt-URL ein&lt;/li>
+&lt;li>Fügen Sie Ihre lambda_function.py in den Lambda-Editor ein (&lt;a href="https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/blob/master/lambda_function.py">oder verwenden Sie meine&lt;/a>)&lt;/li>
+&lt;li>Richten Sie Ihre Umgebungsvariablen ein (optional)&lt;/li>
+&lt;li>Führen Sie es entweder manuell aus, indem Sie auf &amp;ldquo;Test&amp;rdquo; klicken, oder gehen Sie zu CloudWatch -&amp;gt; Regeln -&amp;gt; Regel erstellen und richten Sie &amp;ldquo;Ausführung planen&amp;rdquo; ein, um es in einem bestimmten Zeitintervall auszuführen&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Ausführliche Erläuterung:&lt;/strong>&lt;/p>
+&lt;h2 id="1-erstellen-eines-benutzerdefinierten-layers-für-aws-lambda">1. Erstellen eines benutzerdefinierten Layers für AWS Lambda&lt;/h2>
+&lt;p>Sie können entweder mein Lambda-Layer verwenden, die Facebook Prophet, NumPy, Pandas, Alpaka-Handels-API, yfinance (&lt;a href="https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda">GitHub&lt;/a>) enthält, oder Sie können Ihre eigene unter Verwendung der &lt;a href="https://medium.com/@marc.a.metz/docker-run-rm-it-v-pwd-var-task-lambci-lambda-build-python3-7-bash-c7d53f3b7eb2">von Marc gegebenen Erklärung zusammenstellen.&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Meine Lambda-Schicht verwenden&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>Laden Sie die Zip-Datei von meinem &lt;a href="https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/raw/master/python.zip">Github-Repo&lt;/a> herunter, die alle Pakete enthält (&lt;a href="https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/raw/master/python.zip">Link&lt;/a>)&lt;/li>
+&lt;li>Da Sie Layer nur bis zu einer Größe von 50 Mb direkt auf Lambda hochladen können, müssen wir die Datei zunächst auf AWS S3 hochladen.&lt;/li>
+&lt;li>Erstellen Sie einen Bucket und legen Sie die heruntergeladene Zip-Datei in diesen Eimer. Der Zugang kann privat bleiben und muss NICHT öffentlich sein! Kopieren Sie die URL in Ihre Datei (z.B. &lt;a href="https://BUCKETNAME.s3.REGION.amazonaws.com/python.zip" title="https://BUCKETNAME.s3.REGION.amazonaws.com/python.zip">https://BUCKETNAME.s3.REGION.amazonaws.com/python.zip&lt;/a>)&lt;/li>
+&lt;li>Loggen Sie sich in AWS ein und gehen Sie zu Lambda -&amp;gt; Layers (&lt;a href="https://eu-central-1.console.aws.amazon.com/lambda/home?region=eu-central-1#/layers">EU central Link&lt;/a>)&lt;/li>
+&lt;li>Klicken Sie auf &amp;ldquo;Layer erstellen&amp;rdquo;, geben Sie ihr einen passenden Namen und wählen Sie &amp;ldquo;Eine Datei von Amazon S3 hochladen&amp;rdquo;, und kopieren Sie den Code von Schritt 3 hinein. Wählen Sie als Runtimes Python 3.7. Klicken Sie auf &amp;ldquo;Erstellen&amp;rdquo;.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Kompilieren Sie Ihre eigenes Lambda-Layer&lt;/strong>&lt;/p>
+&lt;p>Bitte folgen Sie den &lt;a href="https://medium.com/@marc.a.metz/docker-run-rm-it-v-pwd-var-task-lambci-lambda-build-python3-7-bash-c7d53f3b7eb2">Anweisungen von Marc&lt;/a>.&lt;/p>
+&lt;h2 id="2-erstellen-einer-lambda-funktion">2. Erstellen einer Lambda Funktion&lt;/h2>
+&lt;ol>
+&lt;li>Öffnen Sie das Dashboard der Lambda-Funktion (&lt;a href="https://eu-central-1.console.aws.amazon.com/lambda/home?region=eu-central-1#/functions">EU central Link&lt;/a>) und klicken Sie auf &amp;ldquo;Funktion erstellen&amp;rdquo;.&lt;/li>
+&lt;li>Lassen Sie das Kontrollkästchen &amp;ldquo;Von Grund auf neu&amp;rdquo; unverändert und geben Sie ihm einen passenden Namen.&lt;/li>
+&lt;li>Wählen Sie in &amp;ldquo;Runtime&amp;rdquo; Python 3.7, lassen Sie den Rest unverändert und klicken Sie auf &amp;ldquo;Funktion erstellen&amp;rdquo;.&lt;/li>
+&lt;li>In der Übersicht der Registerkarte &amp;ldquo;Designer&amp;rdquo; sehen Sie eine grafische Darstellung Ihrer Lambda-Funktion. Klicken Sie auf das Feld &amp;ldquo;Schichten&amp;rdquo; darunter und klicken Sie auf &amp;ldquo;Eine Schicht hinzufügen&amp;rdquo;. Wenn Sie den Layer korrekt eingerichtet haben, können Sie ihn im folgenden Dialog auswählen. Klicken Sie schliesslich auf &amp;ldquo;Hinzufügen&amp;rdquo;.&lt;/li>
+&lt;li>In der Registerkarte &amp;ldquo;Designer&amp;rdquo; wählen Sie Ihre Lambda-Funktion aus. Wenn Sie nach unten scrollen, sehen Sie ein Standard-Python-Code-Snippet in einer Datei namens &amp;ldquo;lambda_function.py&amp;rdquo;. Wenn Sie Ihren Code genauso strukturiert haben wie meinen (&lt;a href="https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/blob/master/lambda_function.py">Link&lt;/a>), können Sie Ihre Funktion mit der run()-Funktion ausführen. Wenn eine Lambda-Funktion aufgerufen wird, wird sie die lambda_handler(event, context)-Funktion ausführen, von der aus Sie z.B. die run()-Funktion aufrufen können. Natürlich können Sie alle Dateien und Funktionen umbenennen, aber der Einfachheit halber habe ich dieses Projekt so belassen, wie es ist.&lt;/li>
+&lt;li>Fühlen Sie sich frei, &lt;a href="https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/blob/master/lambda_function.py">meine Funktion&lt;/a> einfach einzufügen und zu testen.&lt;/li>
+&lt;li>Ein Klick auf &amp;ldquo;Test&amp;rdquo; sollte zu einer erfolgreichen Ausführung führen, andernfalls werden die Fehler im Dialog angezeigt.&lt;/li>
+&lt;/ol>
+&lt;h2 id="3-umgebungsvariabeln-in-aws-lambda-hinzufügen-und-nutzen">3. Umgebungsvariabeln in AWS Lambda hinzufügen und nutzen&lt;/h2>
+&lt;p>Sie sollten Ihren Benutzer und Ihr Passwort niemals als Klartext in Ihrem Code hinterlassen, weshalb Sie immer Umgebungsvariablen verwenden sollten! Glücklicherweise verwendet auch Lambda diese, und sie können leicht mit dem Python-OS-Paket aufgerufen werden. In meinem Skript rufe ich z.B. die Benutzervariable mit os.environ[&amp;lsquo;ALPACAUSER&amp;rsquo;] auf. Die Umgebungsvariablen können im Hauptfunktionsbildschirm von Lambda eingerichtet werden, wenn Sie unter Ihrem Code-Editor nach unten scrollen.&lt;/p>
+&lt;h2 id="4-aws-lambda-funktionen-in-einem-bestimmten-zeitintervall-auslösen">4. AWS Lambda Funktionen in einem bestimmten Zeitintervall auslösen&lt;/h2>
+&lt;p>Das Konzept von Serverless und AWS Lambda basiert auf der Idee, dass eine Funktion ausgeführt wird, wenn ein Trigger-Ereignis eintritt. In meinem Setup wollte ich, dass die Funktion z.B. alle 15 Minuten während der Handelszeiten, Montag bis Freitag, aufgerufen wird. Glücklicherweise bietet AWS eine Möglichkeit, ein Ereignis auszulösen, ohne dass ein Server laufen muss, indem der CloudWatch-Dienst genutzt wird.&lt;/p>
+&lt;ol>
+&lt;li>Gehen Sie zu CloudWatch (&lt;a href="https://eu-central-1.console.aws.amazon.com/cloudwatch/home?region=eu-central-1">EU central Link&lt;/a>).&lt;/li>
+&lt;li>Wählen Sie in der linken Leiste &amp;ldquo;Events&amp;rdquo; und &amp;ldquo;Rule&amp;rdquo;.&lt;/li>
+&lt;li>Klicken Sie auf &amp;ldquo;Create Rule&amp;rdquo;, und wählen Sie &amp;ldquo;Schedule&amp;rdquo; anstelle von &amp;ldquo;Event pattern&amp;rdquo;. Hier können Sie den einfachen &amp;ldquo;Fixed-rate&amp;rdquo;-Dialog verwenden oder einen Cron-Ausdruck erstellen. Ich benutze &lt;a href="https://crontab.guru/" title="https://crontab.guru/">https://crontab.guru/&lt;/a> (kostenlos), um Cron-Ausdrücke zu erstellen. Mein Cron-Ausdruck für den oben erwähnten Anwendungsfall lautet &amp;ldquo;0/15 13-21 ? * MON-FRI *&amp;rdquo;.&lt;/li>
+&lt;li>Wählen Sie in der rechten Tafel &amp;ldquo;Add Target&amp;rdquo; und wählen Sie Ihre Lambda-Funktion. Sie wird automatisch zu Lambda hinzugefügt.&lt;/li>
+&lt;li>Klicken Sie schließlich auf &amp;ldquo;Details konfigurieren&amp;rdquo;, geben Sie ihr einen Namen und klicken Sie auf &amp;ldquo;Regel erstellen&amp;rdquo;.&lt;/li>
+&lt;/ol>
+&lt;h2 id="5-optional-log-analysen-errorsuche">5. (optional) Log Analysen, Errorsuche&lt;/h2>
+&lt;p>Wenn Sie es bis zu diesem Teil geschafft haben, sollten Sie fertig sein! Wenn Sie aber überprüfen wollen, ob alles funktioniert hat, können Sie mit CloudWatch einen Blick auf die Ausgaben der Lambda-Funktionen werfen. Gehen Sie zu CloudWatch -&amp;gt; Logs -&amp;gt; Log-Gruppen (&lt;a href="https://eu-central-1.console.aws.amazon.com/cloudwatch/home?region=eu-central-1#logsV2:log-groups">EU central Link&lt;/a>) und wählen Sie Ihre Lambda-Funktion aus. In dieser Übersicht sollten Sie die Ausgaben Ihrer Funktionen sehen können.&lt;/p>
+&lt;p>Wenn Ihnen dieser Beitrag gefallen hat, hinterlassen Sie einen Kommentar oder schauen Sie sich andere Beiträge an, um mich weiterhin zum Schreiben zu motivieren 😊.&lt;/p></description></item><item><title>Gesichtserkennung mittels MTCNN</title><link>https://datafortress.cloud/de/blog/face-detection-using-mtcnn/</link><pubDate>Sun, 08 May 2022 07:10:46 +0200</pubDate><author>Justin Guese</author><guid>https://datafortress.cloud/de/blog/face-detection-using-mtcnn/</guid><description>
+&lt;h1 id="was-ist-mtcnn">Was ist MTCNN&lt;/h1>
+&lt;!-- raw HTML omitted -->
+&lt;p>MTCNN ist eine Python (pip)-Bibliothek, die von [Github-Benutzer ipacz] (&lt;a href="https://github.com/ipazc/mtcnn">https://github.com/ipazc/mtcnn&lt;/a>) geschrieben wurde und die [das Papier Zhang, Kaipeng et al. &amp;ldquo;Joint Face Detection and Alignment Using Multitask Cascaded Convolutional Networks&amp;rdquo; implementiert. IEEE Signal Processing Letters 23.10 (2016): 1499-1503. Querverweis. Web](&lt;a href="https://arxiv.org/abs/1604.02878%5D(https://arxiv.org/abs/1604.02878%20%22https://arxiv.org/abs/1604.02878)">https://arxiv.org/abs/1604.02878%5D(https://arxiv.org/abs/1604.02878%20%22https://arxiv.org/abs/1604.02878)&lt;/a>.&lt;/p>
+&lt;p>In diesem Papier schlagen sie einen tief kaskadierten Multi-Task-Rahmen vor, der verschiedene Merkmale von &amp;ldquo;Untermodellen&amp;rdquo; verwendet, um jeweils ihre korrelierenden Stärken zu verstärken.&lt;/p>
+&lt;p>MTCNN ist auf einer CPU recht schnell, obwohl S3FD auf einer GPU immer noch schneller läuft - aber das ist ein Thema für einen anderen Beitrag.&lt;/p>
+&lt;p>Dieser Beitrag verwendet Code aus den beiden folgenden Quellen, schauen Sie sich diese an, sie sind ebenfalls interessant:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/" title="https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/">https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.kaggle.com/timesler/fast-mtcnn-detector-55-fps-at-full-resolution" title="https://www.kaggle.com/timesler/fast-mtcnn-detector-55-fps-at-full-resolution">https://www.kaggle.com/timesler/fast-mtcnn-detector-55-fps-at-full-resolution&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;!-- raw HTML omitted -->
+&lt;h1 id="grundlegende-verwendung-von-mtcnn">Grundlegende Verwendung von MTCNN&lt;/h1>
+&lt;!-- raw HTML omitted -->
+&lt;p>Zögern Sie nicht, auf das gesamte Notebook zuzugreifen:&lt;/p>
+&lt;p>&lt;a href="https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up" title="https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up">https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up&lt;/a>&lt;/p>
+&lt;pre>&lt;code>git clone https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up
+&lt;/code>&lt;/pre>
+&lt;p>Glücklicherweise ist MTCNN als Pip-Paket erhältlich, was bedeutet, dass wir es leicht installieren können mit&lt;/p>
+&lt;pre>&lt;code>pip install mtcnn
+&lt;/code>&lt;/pre>
+&lt;p>Wenn wir jetzt zu Python/Jupyter Notebook wechseln, können wir die Installation mit einem Import und einer schnellen Überprüfung überprüfen:&lt;/p>
+&lt;pre>&lt;code>import mtcnn
+# print version
+print(mtcnn.__version__)
+&lt;/code>&lt;/pre>
+&lt;p>Danach sind wir bereit, das Testbild mit der Matplotlib [imread-Funktion] (&lt;a href="https://bit.ly/2vo3INw">https://bit.ly/2vo3INw&lt;/a>) auszuladen.&lt;/p>
+&lt;pre>&lt;code>import matplotlib.pyplot as plt
+# load image from file
+filename = &amp;quot;glediston-bastos-ZtmmR9D_2tA-unsplash.webp&amp;quot;
+pixels = plt.imread(filename)
+print(&amp;quot;Shape of image/array:&amp;quot;,pixels.shape)
+imgplot = plt.imshow(pixels)
+plt.show()
+&lt;/code>&lt;/pre>
+&lt;p>Nun wird Ihre Ausgabe in etwa so aussehen:&lt;/p>
+&lt;pre>&lt;code>{'box': [1942, 716, 334, 415], 'Vertrauen': 0,999999997615814209, 'Schlüsselpunkte': {'linkes_Auge': (2053, 901), &amp;quot;rechtes_Auge&amp;quot;: (2205, 897), &amp;quot;Nase&amp;quot;: (2139, 976), &amp;quot;Mund_links&amp;quot;: (2139, 976), &amp;quot;Mund_links&amp;quot;: (2058, 1029), 'Mund_rechts': (2058, 1029), 'Mund_rechts': (2206, 1023)}}
+{&amp;quot;Kiste&amp;quot;: [2084, 396, 37, 46], 'Vertrauen': 0,9999206066131592, 'Schlüsselpunkte': {'linkes_Auge': [2084, 396, 37, 46], 'Vertrauen': [2084, 396, 37, 46], 'Vertrauen': 0,99999206066131592, 'Schlüsselpunkte': [0,9999206066131592], 'Vertrauen (2094, 414), &amp;quot;rechtes_Auge&amp;quot;: (2094, 414), &amp;quot;rechtes_Auge&amp;quot;: (2112, 414), &amp;quot;Nase&amp;quot;: (2094, 414), &amp;quot;Nase&amp;quot;: (2102, 426), &amp;quot;Mund_links&amp;quot;: (2095, 432), &amp;quot;Mund_rechts&amp;quot;: (2112, 431)}}
+{&amp;quot;Kiste&amp;quot;: [1980, 381, 44, 59], 'Vertrauen': 0,9998701810836792, 'Schlüsselpunkte': {'linkes_Auge': [1980, 381, 44, 59], 'Vertrauen': 0,9998701810836792, 'Schlüsselpunkte': [1980, 381, 44, 59]: (1997, 404), &amp;quot;rechtes_Auge&amp;quot;: (2019, 407), &amp;quot;Nase&amp;quot;: (1997, 404), &amp;quot;Nase&amp;quot;: (2010, 417), &amp;quot;Mund_links&amp;quot;: (2010, 417), &amp;quot;Mund_links&amp;quot;: (1995, 425), &amp;quot;Mund_rechts&amp;quot;: (1995, 425), &amp;quot;Mund_rechts&amp;quot;: (2015, 427)}}
+{&amp;quot;Kiste&amp;quot;: [2039, 395, 39, 46], 'Vertrauen': 0,9993435740470886, 'Schlüsselpunkte': {'linkes_Auge': [2039, 395, 39, 46], 'Vertrauen': 0,9993435740470886, 'Vertrauen': 0,9993435740470886, 'Schlüsselpunkte': [2039, 395, 39, 46]: (2054, 409), &amp;quot;rechtes_Auge&amp;quot;: (2054, 409), &amp;quot;rechtes_Auge&amp;quot;: (2071, 415), &amp;quot;Nase&amp;quot;: (2054, 409), &amp;quot;Nase&amp;quot;: (2058, 422), &amp;quot;Mund_links&amp;quot;: (2048, 425), 'Mund_rechts': (2048, 425), 'Mund_rechts': (2065, 431)}}
+&lt;/code>&lt;/pre>
+&lt;p>Was sagt uns das? Vieles davon ist selbsterklärend, aber im Grunde liefert es Koordinaten oder die Pixelwerte eines Rechtecks, in dem der MTCNN-Algorithmus Gesichter erkannt hat. Der obige &amp;ldquo;Kasten&amp;rdquo;-Wert gibt die Position des gesamten Gesichts zurück, gefolgt von einem &amp;ldquo;Vertrauens&amp;rdquo;-Level.&lt;/p>
+&lt;p>Wenn Sie fortgeschrittenere Extraktionen oder Algorithmen durchführen möchten, haben Sie auch Zugang zu anderen Landmarken des Gesichts, die als &amp;ldquo;Schlüsselpunkte&amp;rdquo; bezeichnet werden. Das MTCNN-Modell lokalisierte nämlich auch die Augen, den Mund und die Nase!&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h2 id="zeichnen-eines-kastens-um-gesichter">Zeichnen eines Kastens um Gesichter&lt;/h2>
+&lt;!-- raw HTML omitted -->
+&lt;p>Um dies noch besser zu demonstrieren, zeichnen wir mit matplotlib einen Kasten um das Gesicht:&lt;/p>
+&lt;pre>&lt;code># draw an image with detected objects
+def draw_facebox(filename, result_list):
+# load the image
+data = plt.imread(filename)
+# plot the image
+plt.imshow(data)
+# get the context for drawing boxes
+ax = plt.gca()
+# plot each box
+for result in result_list:
+# get coordinates
+x, y, width, height = result['box']
+# create the shape
+rect = plt.Rectangle((x, y), width, height, fill=False, color='green')
+# draw the box
+ax.add_patch(rect)
+# show the plot
+plt.show()
+# filename = 'test1.webp' # filename is defined above, otherwise uncomment
+# load image from file
+# pixels = plt.imread(filename) # defined above, otherwise uncomment
+# detector is defined above, otherwise uncomment
+#detector = mtcnn.MTCNN()
+# detect faces in the image
+faces = detector.detect_faces(pixels)
+# display faces on the original image
+draw_facebox(filename, faces)
+&lt;/code>&lt;/pre>
+&lt;p>&lt;img src="https://datafortress.cloud/images/index-1-150x150.webp" alt="">&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h2 id="darstellung-von-augen-mund-und-nase-um-gesichter">Darstellung von Augen, Mund und Nase um Gesichter&lt;/h2>
+&lt;!-- raw HTML omitted -->
+&lt;p>Werfen wir nun einen Blick auf die oben erwähnten &amp;ldquo;Schlüsselpunkte&amp;rdquo;, die das MTCNN-Modell zurückgebracht hat.&lt;/p>
+&lt;p>Wir werden diese nun auch für die Darstellung von Nase, Mund und Augen verwenden.&lt;br>
+Wir werden den folgenden Codeschnipsel zu unserem obigen Code hinzufügen:&lt;/p>
+&lt;pre>&lt;code># draw the dots
+for key, value in result['keypoints'].items():
+# create and draw dot
+dot = plt.Circle(value, radius=20, color='orange')
+ax.add_patch(dot)
+&lt;/code>&lt;/pre>
+&lt;p>Mit dem vollständigen Code von oben, der wie folgt aussieht:&lt;/p>
+&lt;pre>&lt;code># draw an image with detected objects
+def draw_facebox(filename, result_list):
+# load the image
+data = plt.imread(filename)
+# plot the image
+plt.imshow(data)
+# get the context for drawing boxes
+ax = plt.gca()
+# plot each box
+for result in result_list:
+# get coordinates
+x, y, width, height = result['box']
+# create the shape
+rect = plt.Rectangle((x, y), width, height,fill=False, color='orange')
+# draw the box
+ax.add_patch(rect)
+# draw the dots
+for key, value in result['keypoints'].items():
+# create and draw dot
+dot = plt.Circle(value, radius=20, color='red')
+ax.add_patch(dot)
+# show the plot
+plt.show()
+# filename = 'test1.webp' # filename is defined above, otherwise uncomment
+# load image from file
+# pixels = plt.imread(filename) # defined above, otherwise uncomment
+# detector is defined above, otherwise uncomment
+#detector = mtcnn.MTCNN()
+# detect faces in the image
+faces = detector.detect_faces(pixels)
+# display faces on the original image
+draw_facebox(filename, faces)
+&lt;/code>&lt;/pre>
+&lt;p>&lt;img src="https://datafortress.cloud/images/index2-150x150.webp" alt="">&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h2 id="erweitertes-mtcnn-beschleunigen-sie-es-x100">Erweitertes MTCNN: Beschleunigen Sie es (\\~x100)!&lt;/h2>
+&lt;!-- raw HTML omitted -->
+&lt;p>Kommen wir nun zum interessanten Teil. Wenn Sie Millionen von Bildern verarbeiten wollen, müssen Sie MTCNN beschleunigen, sonst werden Sie entweder einschlafen oder Ihre CPU wird verbrennen, bevor sie fertig ist.&lt;/p>
+&lt;p>Aber worüber genau reden wir hier? Wenn Sie den obigen Code ausführen, dauert es etwa eine Sekunde, d.h. wir werden etwa ein Bild pro Sekunde verarbeiten. Wenn Sie MTCNN auf einer GPU ausführen und die beschleunigte Version verwenden, werden etwa 60-100 Bilder pro Sekunde erreicht. Das ist eine Steigerung von bis zu &lt;strong>100 Mal&lt;/strong>!&lt;/p>
+&lt;p>Wenn Sie z.B. alle Gesichter eines Films extrahieren wollen, wobei Sie 10 Gesichter pro Sekunde extrahieren (eine Sekunde des Films hat im Durchschnitt etwa 24 Bilder, also jedes zweite Bild), dann sind es 10 * 60 (Sekunden) * 120 (Minuten) = 72.000 Bilder.&lt;/p>
+&lt;p>Das heißt, wenn die Verarbeitung eines Einzelbildes eine Sekunde dauert, dauert sie 72.000 * 1 (Sekunden) = 72.000s / 60s = 1.200m = &lt;strong>20 Stunden&lt;/strong>.&lt;/p>
+&lt;p>Mit der Beschleunigungsversion von MTCNN wird diese Aufgabe 72.000 (Frames) / 100 (Frames/sec) = 720 Sekunden = &lt;strong>12 Minuten&lt;/strong> dauern!&lt;/p>
+&lt;p>Um MTCNN auf einer GPU zu verwenden, müssen Sie CUDA, cudnn, pytorch usw. einrichten. &lt;a href="https://pytorch.org/get-started/locally/">Pytorch hat ein gutes Tutorial zu diesem Teil geschrieben&lt;/a>.&lt;/p>
+&lt;p>Nach der Installation werden wir die notwendigen Importe wie folgt durchführen:&lt;/p>
+&lt;pre>&lt;code>from facenet_pytorch import MTCNN
+from PIL import Image
+import torch
+from imutils.video import FileVideoStream
+import cv2
+import time
+import glob
+from tqdm.notebook import tqdm
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+filenames = [&amp;quot;glediston-bastos-ZtmmR9D_2tA-unsplash.webp&amp;quot;,&amp;quot;glediston-bastos-ZtmmR9D_2tA-unsplash.webp&amp;quot;]
+&lt;/code>&lt;/pre>
+&lt;p>Sehen Sie, wie wir das Gerät im obigen Code definiert haben. Sie können alles auch auf einer CPU laufen lassen, wenn Sie CUDA nicht einrichten wollen oder können.&lt;/p>
+&lt;p>Als nächstes werden wir den Extraktor definieren:&lt;/p>
+&lt;pre>&lt;code># define our extractor
+fast_mtcnn = FastMTCNN(
+stride=4,
+resize=0.5,
+margin=14,
+factor=0.6,
+keep_all=True,
+device=device
+)
+&lt;/code>&lt;/pre>
+&lt;p>In diesem Schnipsel geben wir einige Parameter weiter, wobei wir zum Beispiel nur die halbe Bildgröße verwenden, was einer der Haupteinflussfaktoren für die Beschleunigung ist.&lt;/p>
+&lt;p>Und schließlich lassen wir das Skript zur Gesichtsextraktion laufen:&lt;/p>
+&lt;pre>&lt;code>def run_detection(fast_mtcnn, filenames):
+frames = []
+frames_processed = 0
+faces_detected = 0
+batch_size = 60
+start = time.time()
+for filename in tqdm(filenames):
+v_cap = FileVideoStream(filename).start()
+v_len = int(v_cap.stream.get(cv2.CAP_PROP_FRAME_COUNT))
+for j in range(v_len):
+frame = v_cap.read()
+frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+frames.append(frame)
+if len(frames) &amp;gt;= batch_size or j == v_len - 1:
+faces = fast_mtcnn(frames)
+frames_processed += len(frames)
+faces_detected += len(faces)
+frames = []
+print(
+f'Frames per second: {frames_processed / (time.time() - start):.3f},',
+f'faces detected: {faces_detected}\r',
+end=''
+)
+v_cap.stop()
+run_detection(fast_mtcnn, filenames)
+&lt;/code>&lt;/pre>
+&lt;p>&lt;img src="https://datafortress.cloud/images/teslap100frames.webp" alt="">&lt;/p>
+&lt;p>Das obige Bild zeigt die Ausgabe des Codes, der auf einem NVIDIA Tesla P100 läuft. Je nach Quellmaterial, Grafikprozessor und Prozessor kann die Leistung also besser oder schlechter ausfallen.&lt;/p>
+&lt;p>&lt;a href="https://www.datafortress.cloud/de/contact/">Sie haben eine ähnliche Idee oder wir haben Ihr Interesse geweckt? Kontaktieren Sie uns jetzt für eine gratis 15-minütige Beratung!&lt;/a>&lt;/p></description></item></channel></rss>

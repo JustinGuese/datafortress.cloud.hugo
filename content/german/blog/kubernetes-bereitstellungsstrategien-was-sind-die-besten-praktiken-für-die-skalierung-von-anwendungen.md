@@ -18,7 +18,7 @@ Kubernetes ist eine Open-Source-Plattform, die leistungsstarke und effiziente Me
 
 Kubernetes ist ein Open-Source-System, das für die Automatisierung der Bereitstellung, Skalierung und Verwaltung von Container-Anwendungen verwendet wird. Es wird von vielen Cloud-Anbietern angeboten und findet in immer mehr Branchen Anwendung. Kubernetes erleichtert die Skalierung von Anwendungen in großem Maßstab auf einfache und effiziente Weise. Unternehmen müssen sich jetzt nicht mehr um die manuelle Verwaltung zusätzlicher Kapazitäten kümmern oder Zeit mit der Verwaltung automatischer Bereitstellungen verschwenden. Kubernetes vereinfacht zuvor komplexe Aufgaben wie Rolling Updates, Cluster Scheduling, Service Discovery, Application Failover und Skalierbarkeit durch die Bereitstellung einer automatisierbaren Infrastrukturebene. Mit seiner Flexibilität und der Fähigkeit, schnelle Bedarfsänderungen zu bewältigen, hat sich Kubernetes für Anwendungen von unschätzbarem Wert erwiesen.
 
-> Fragen? Lassen Sie sich von unserem Team erfahrener [Kubernetes-Ingenieure helfen](/Kontakt)
+> Fragen? Lassen Sie sich von unserem Team erfahrener [Kubernetes-Ingenieure helfen](/de/contact)
 
 ## Die drei beliebtesten Kubernetes-Bereitstellungsstrategien 
 

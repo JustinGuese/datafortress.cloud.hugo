@@ -1,1 +1,157 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ai investing on Datafortress.cloud</title><link>https://datafortress.cloud/de/tags/ai-investing/</link><description>Recent content in ai investing on Datafortress.cloud</description><generator>Hugo -- gohugo.io</generator><language>de-de</language><lastBuildDate>Wed, 26 Jan 2022 23:00:00 +0000</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/ai-investing/index.xml" rel="self" type="application/rss+xml"/><item><title>Anreichern von Aktiendaten für Ihr algorithmisches Python-Handelsmodell</title><link>https://datafortress.cloud/de/blog/anreichern-von-aktiendaten-fur-ihr-algorithmisches-python-handelsmodell/</link><pubDate>Wed, 26 Jan 2022 23:00:00 +0000</pubDate><guid>https://datafortress.cloud/de/blog/anreichern-von-aktiendaten-fur-ihr-algorithmisches-python-handelsmodell/</guid><description>Ihre ersten Schritte beim Aufbau eines Handelsalgorithmus Nehmen wir an, Sie planen, Ihr eigenes algorithmisches Handelsmodell zu erstellen.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ai investing on Datafortress.cloud</title><link>https://datafortress.cloud/de/tags/ai-investing/</link><description>Recent content in ai investing on Datafortress.cloud</description><generator>Hugo -- gohugo.io</generator><language>de-de</language><managingEditor/><webMaster/><lastBuildDate>Wed, 26 Jan 2022 23:00:00 +0000</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/ai-investing/index.xml" rel="self" type="application/rss+xml"/><item><title>Anreichern von Aktiendaten für Ihr algorithmisches Python-Handelsmodell</title><link>https://datafortress.cloud/de/blog/anreichern-von-aktiendaten-fur-ihr-algorithmisches-python-handelsmodell/</link><pubDate>Wed, 26 Jan 2022 23:00:00 +0000</pubDate><author>Justin Guese</author><guid>https://datafortress.cloud/de/blog/anreichern-von-aktiendaten-fur-ihr-algorithmisches-python-handelsmodell/</guid><description>
+&lt;h1 id="ihre-ersten-schritte-beim-aufbau-eines-handelsalgorithmus">Ihre ersten Schritte beim Aufbau eines Handelsalgorithmus&lt;/h1>
+&lt;p>Nehmen wir an, Sie planen, Ihr eigenes algorithmisches Handelsmodell zu erstellen.&lt;/p>
+&lt;p>Sie werden höchstwahrscheinlich nur Preisdaten (Close) für Ihr Modell und Ihren Algorithmus verwenden, aber bald werden Sie feststellen, dass Ihr Modell nicht gut performt.&lt;/p>
+&lt;p>Bald werden Sie typische OHLCV-Daten verwenden, die sich auf Open, High, Low, Close, Volume beziehen, was schon besser ist, aber das Modell scheint nicht gut genug zu funktionieren.&lt;/p>
+&lt;p>Was können Sie tun?&lt;/p>
+&lt;p>Ein praktisches Colab-Notebook zum Mitverfolgen:&lt;/p>
+&lt;p>&lt;a href="https://colab.research.google.com/drive/1ywqti1TuTDY_Z11ry0x4ITclCwxnXAeI?usp=sharing" title="https://colab.research.google.com/drive/1ywqti1TuTDY_Z11ry0x4ITclCwxnXAeI?usp=sharing">https://colab.research.google.com/drive/1ywqti1TuTDY_Z11ry0x4ITclCwxnXAeI?usp=sharing&lt;/a>&lt;/p>
+&lt;p>Gist:&lt;/p>
+&lt;p>&lt;a href="https://colab.research.google.com/drive/1ywqti1TuTDY_Z11ry0x4ITclCwxnXAeI?usp=sharing" title="https://colab.research.google.com/drive/1ywqti1TuTDY_Z11ry0x4ITclCwxnXAeI?usp=sharing">https://gist.github.com/JustinGuese/019e0e71100abe6555f78c32fd0b10a9&lt;/a>&lt;/p>
+&lt;h1 id="wie-mag-ein-machine-learning-trading-bot">Wie mag ein Machine Learning Trading Bot?&lt;/h1>
+&lt;p>Der typische maschinelle Lernalgorithmus kann nur mit den Daten arbeiten, die er erhalten hat. Er kann (in der Regel) keine neuen Merkmale oder Interpretationen wie &amp;ldquo;Wenn das Volumen steigt und die 3. Ableitung des Preises steigt, wird der Preis höchstwahrscheinlich steigen&amp;rdquo; erstellen, sondern kann stattdessen nur auf die Daten &amp;ldquo;schauen&amp;rdquo;, die er erhalten hat. Das wären dann Berechnungen wie &amp;ldquo;wenn der Preis über 100 USD liegt und das Volumen über 2000, wird der Preis höchstwahrscheinlich steigen&amp;rdquo;.&lt;/p>
+&lt;p>Neulinge im Bereich des maschinellen Lernens versuchen nun, dieses Problem zu lösen, indem sie jahrzehntelang trainieren oder immer mehr GPUs einsetzen, aber ein weitaus effizienterer Weg wäre es, den Algorithmus mit zusätzlichen Daten zu füttern, so dass er mehr Ressourcen für seine Berechnungen nutzen kann.&lt;/p>
+&lt;p>Dies kann erreicht werden durch:&lt;/p>
+&lt;ol>
+&lt;li>Mehr Daten erhalten (eine größere Zeitspanne)&lt;/li>
+&lt;li>Hinzufügen von statistischen Metriken&lt;/li>
+&lt;li>Hinzufügen Ihrer eigenen Signale und Interpretationen&lt;/li>
+&lt;/ol>
+&lt;h1 id="hands-on-anreicherung-ihrer-daten">Hands-on: Anreicherung Ihrer Daten&lt;/h1>
+&lt;h2 id="erste-schritte---beschaffung-ihrer-daten">Erste Schritte - Beschaffung Ihrer Daten&lt;/h2>
+&lt;p>Lassen Sie uns zunächst einige grundlegende OHLCV-Daten erfassen. Ich mag das yfinance (&lt;a href="https://pypi.org/project/yfinance/" title="https://pypi.org/project/yfinance/">https://pypi.org/project/yfinance/&lt;/a>) Modul wegen seiner Einfachheit. Es ist nicht vergleichbar mit Live-Streams von Daten, aber auf der anderen Seite ist es kostenlos und großartig zum Experimentieren!&lt;/p>
+&lt;pre>&lt;code>pip install yfinance pandas numpy matplotlib ta
+import yfinance as yf
+import matplotlib.pyplot as plt
+import pandas as pd
+&lt;/code>&lt;/pre>
+&lt;p>Holen Sie sich einige Bestandsdaten, Intervall und Periode beziehen sich auf die Timerbereiche.&lt;/p>
+&lt;p>interval akzeptiert Werte wie 1m,2m,5m,15m,30m,60m,90m,1h,1d,5d,1wk,1mo,3mo&lt;/p>
+&lt;p>Periode akzeptiert Werte wie 1d,5d,1mo,3mo,6mo,1y,2y,5y,10y,ytd,max&lt;/p>
+&lt;p>Nicht alle Kombinationen funktionieren, z.B. 1m (1 Minute) Intervalle funktionieren nur mit 7d max, 1h (1 Stunde) mit 3 Monaten max (muss als 90d geschrieben werden). Aber lassen Sie uns zuerst mit täglichen Daten arbeiten&lt;/p>
+&lt;pre>&lt;code>df = yf.download(&amp;quot;MSFT&amp;quot;,period=&amp;quot;5y&amp;quot;,interval=&amp;quot;1d&amp;quot;)
+df.head()
+&lt;/code>&lt;/pre>
+&lt;p>&lt;img src="https://datafortress.cloud/images/screenshot-from-2021-01-27-14-46-45.png" alt="">&lt;/p>
+&lt;p>Kurzer Exkurs: Was zum Geier ist Open, High, Low, Close, Adj Close und Volume? Wo ist der Preis?!&lt;/p>
+&lt;p>Es gibt keinen &amp;ldquo;einen Preis&amp;rdquo; an der Börse! Sie können sich die OHLCV-Daten als &amp;ldquo;Buckets&amp;rdquo; oder &amp;ldquo;Bins&amp;rdquo; in der Zeit vorstellen, die alle Trades zusammenfassen, die in diesem Fenster stattgefunden haben. Das typische &amp;ldquo;Linien&amp;rdquo;-Diagramm, das Sie kennen, bezieht sich normalerweise auf den &amp;ldquo;Close&amp;rdquo;-Kurs dieser Aktie im Zeitbereich X, d.h. den Wert, den die Aktie am Ende des Zeitbereichs hatte.&lt;/p>
+&lt;p>Wenn wir uns Tagesdaten ansehen, bezieht sich &amp;ldquo;Open&amp;rdquo; auf den durchschnittlichen (!) Aktienkurs bei Markteröffnung, während &amp;ldquo;Close&amp;rdquo; sich auf den durchschnittlichen (!) Kurs bezieht, den die Aktie bei Marktschluss hatte. Bei stündlichen Daten bezieht sich &amp;ldquo;Open&amp;rdquo; auf den Beginn der jeweiligen Stunde, z. B. 11 Uhr, und &amp;ldquo;Close&amp;rdquo; auf den Schluss der Stunde, also 11:59:59 Uhr.&lt;/p>
+&lt;p>Ebenso ist &amp;ldquo;High&amp;rdquo; der höchste Handel/Kurs, der in diesem Zeitrahmen aufgezeichnet wurde, und &amp;ldquo;Low&amp;rdquo; der niedrigste. Das Volumen bezieht sich auf die Anzahl der Assets oder Aktien, die in diesem Zeitbereich gehandelt wurden.&lt;/p>
+&lt;p>Das heißt, wenn z.B. &amp;ldquo;Low&amp;rdquo; und &amp;ldquo;Close&amp;rdquo; einer Spalte nahe beieinander liegen, sehen wir höchstwahrscheinlich einen Abwärtstrend, da der Close das aktuelle Low ist. Auch wenn das Volumen hoch ist, gibt es viele Trades, wenn also z.B. das Volumen höher ist als üblich, scheint etwas im Markt zu passieren. Aber wie auch immer, gehen Sie dazu auf &lt;a href="https://www.investopedia.com/," title="https://www.investopedia.com/,">https://www.investopedia.com/,&lt;/a> wir werden jetzt mit der Codierung fortfahren!&lt;/p>
+&lt;h3 id="was-ist-adj-close">Was ist &amp;ldquo;Adj Close&amp;rdquo;?&lt;/h3>
+&lt;p>Dies ist wichtig, da die meisten ML-Algorithmen durch &amp;ldquo;normale&amp;rdquo; Schlussdaten furchtbar verwirrt sind. Wenn es eine Aufspaltung der Aktie gibt, sehen die Daten so aus, als ob der Preis einen irrsinnigen Rückgang hat.&lt;/p>
+&lt;p>Der Grund ist, einfach gesagt, dass wenn eine Aktie zu teuer wird, das Unternehmen beschließt, die Aktie in zwei Teile zu &amp;ldquo;teilen&amp;rdquo;. Bedeutet das, dass sich meine Investition halbiert? Natürlich nicht, Sie erhalten einfach die doppelte Menge an Aktien, die Sie halten, so dass Sie auf dem Papier immer noch den gleichen Wert der Aktie halten.&lt;/p>
+&lt;p>Interessanterweise führt ein Split in der Regel zu steigenden Kursen (dumme Menschen!), und wenn Ihr maschineller Lernalgorithmus einen enormen Kursverfall sieht, wird er höchstwahrscheinlich die Aktie auf Teufel komm raus verkaufen.&lt;/p>
+&lt;p>Aus diesem Grund sollten Sie immer &amp;ldquo;bereinigte&amp;rdquo; Werte verwenden, die man sich als &amp;ldquo;bereinigte&amp;rdquo; Kursdaten vorstellen kann, bei denen Splits, Dividenden und alle anderen Ereignisse, die den wahren Wert der Daten nicht beeinflussen, berücksichtigt werden. Versuchen Sie daher, für Ihre Algorithmen immer bereinigte Daten zu verwenden!&lt;/p>
+&lt;p>Im Fall von yfinance ist dies einfach zu bewerkstelligen, da wir einfach &amp;ldquo;Adj Close&amp;rdquo; anstelle von &amp;ldquo;Close&amp;rdquo; verwenden können.&lt;/p>
+&lt;h3 id="plotten-der-daten">Plotten der Daten&lt;/h3>
+&lt;p>Wenn wir uns die Daten ansehen, können wir bereits eine schöne, bekannte Kurve erkennen&lt;/p>
+&lt;pre>&lt;code>plt.plot(df[&amp;quot;Adj Close&amp;quot;])
+&lt;/code>&lt;/pre>
+&lt;h2 id="schritt-2-anreichern-ihrer-daten-mit-statistischen-daten">Schritt 2: Anreichern Ihrer Daten mit statistischen Daten&lt;/h2>
+&lt;p>Wie bereits erwähnt, müssen wir weitere Informationen aus unseren Daten erzeugen, damit der Algorithmus sie verwenden kann, da er dies nicht alleine tun kann.&lt;/p>
+&lt;p>Ich verwende gerne die Bibliothek ta (&lt;a href="https://github.com/bukosabino/ta" title="https://github.com/bukosabino/ta">https://github.com/bukosabino/ta&lt;/a>), da sie wiederum super einfach zu bedienen ist und über 100 statistische Berechnungen enthält.&lt;/p>
+&lt;p>Installieren und importieren Sie sie mit&lt;/p>
+&lt;pre>&lt;code>pip install ta
+from ta import add_all_ta_features
+from ta.utils import dropna
+&lt;/code>&lt;/pre>
+&lt;p>Wenn Sie nun schon wissen, welche Werte Sie verwenden wollen, können Sie nur diese auswählen, ooooder wir schlagen einfach alle 100+ auf unsere Daten ein:&lt;/p>
+&lt;pre>&lt;code>df = dropna(df) # clean nans if present
+df = add_all_ta_features(df,open=&amp;quot;Open&amp;quot;, high=&amp;quot;High&amp;quot;, low=&amp;quot;Low&amp;quot;, close=&amp;quot;Adj Close&amp;quot;, volume=&amp;quot;Volume&amp;quot;)
+&lt;/code>&lt;/pre>
+&lt;p>Was haben wir also getan?&lt;/p>
+&lt;pre>&lt;code>df.columns
+Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'volume_adi',
+'volume_obv', 'volume_cmf', 'volume_fi', 'volume_mfi', 'volume_em',
+'volume_sma_em', 'volume_vpt', 'volume_nvi', 'volume_vwap',
+'volatility_atr', 'volatility_bbm', 'volatility_bbh', 'volatility_bbl',
+'volatility_bbw', 'volatility_bbp', 'volatility_bbhi',
+'volatility_bbli', 'volatility_kcc', 'volatility_kch', 'volatility_kcl',
+'volatility_kcw', 'volatility_kcp', 'volatility_kchi',
+'volatility_kcli', 'volatility_dcl', 'volatility_dch', 'volatility_dcm',
+'volatility_dcw', 'volatility_dcp', 'volatility_ui', 'trend_macd',
+'trend_macd_signal', 'trend_macd_diff', 'trend_sma_fast',
+'trend_sma_slow', 'trend_ema_fast', 'trend_ema_slow', 'trend_adx',
+'trend_adx_pos', 'trend_adx_neg', 'trend_vortex_ind_pos',
+'trend_vortex_ind_neg', 'trend_vortex_ind_diff', 'trend_trix',
+'trend_mass_index', 'trend_cci', 'trend_dpo', 'trend_kst',
+'trend_kst_sig', 'trend_kst_diff', 'trend_ichimoku_conv',
+'trend_ichimoku_base', 'trend_ichimoku_a', 'trend_ichimoku_b',
+'trend_visual_ichimoku_a', 'trend_visual_ichimoku_b', 'trend_aroon_up',
+'trend_aroon_down', 'trend_aroon_ind', 'trend_psar_up',
+'trend_psar_down', 'trend_psar_up_indicator',
+'trend_psar_down_indicator', 'trend_stc', 'momentum_rsi',
+'momentum_stoch_rsi', 'momentum_stoch_rsi_k', 'momentum_stoch_rsi_d',
+'momentum_tsi', 'momentum_uo', 'momentum_stoch',
+'momentum_stoch_signal', 'momentum_wr', 'momentum_ao', 'momentum_kama',
+'momentum_roc', 'momentum_ppo', 'momentum_ppo_signal',
+'momentum_ppo_hist', 'others_dr', 'others_dlr', 'others_cr'],
+dtype='object')
+&lt;/code>&lt;/pre>
+&lt;p>Nun, das sollte für den Moment reichen!&lt;/p>
+&lt;p>Außerdem ist immer noch eine Menge Nans drin, da einige Werte nur berechnet werden, wenn genug Zeit vergangen ist. Meiner Erfahrung nach funktioniert das Auffüllen mit Nullen ganz gut, auch wenn es dafür fortgeschrittenere Techniken gibt.&lt;/p>
+&lt;pre>&lt;code>df = df.fillna(0)
+&lt;/code>&lt;/pre>
+&lt;h2 id="schritt-3-erstellen-sie-ihre-eigenen-signale">Schritt 3: Erstellen Sie Ihre eigenen Signale&lt;/h2>
+&lt;p>Jetzt ist es an der Zeit, Ihre verrückten Handelsideen in Zahlen zu übersetzen!&lt;/p>
+&lt;p>Beginnen wir mit dem klassischen Moving Average Cross. Die Idee ist wie folgt: Wenn ein kurzer gleitender Durchschnitt einen langsameren gleitenden Durchschnitt kreuzt, deutet dies entweder auf einen Kursanstieg oder einen Kursrückgang hin, je nach Richtung des Kreuzes.&lt;/p>
+&lt;p>Auch hier können Sie bei investopedia Details nachlesen: &lt;a href="https://www.investopedia.com/articles/active-trading/052014/how-use-moving-average-buy-stocks.asp" title="https://www.investopedia.com/articles/active-trading/052014/how-use-moving-average-buy-stocks.asp">https://www.investopedia.com/articles/active-trading/052014/how-use-moving-average-buy-stocks.asp&lt;/a>&lt;/p>
+&lt;p>Unser Ziel ist es, zunächst die SMAs zu berechnen und dann die Kreuzungen als 1 und -1 zu formulieren, und 0, um keine Kreuzung zu signalisieren.&lt;/p>
+&lt;h3 id="erstellen-einfacher-gleitender-durchschnitte">Erstellen einfacher gleitender Durchschnitte&lt;/h3>
+&lt;pre>&lt;code># creating simple moving averages
+averages = [1,2,5,10,15,20,25,50,100]
+for average in averages:
+df['SMA_%d'%average] = df[&amp;quot;Adj Close&amp;quot;].rolling(window=average).mean()
+# visualize only SMAs
+filter_col = [col for col in df if col.startswith('SMA')]
+df[filter_col].tail()
+&lt;/code>&lt;/pre>
+&lt;p>Und Visualisierung:&lt;/p>
+&lt;pre>&lt;code># results in bigger figures
+plt.rcParams[&amp;quot;figure.figsize&amp;quot;] = (20,20)
+for filter in filter_col:
+plt.plot(df[filter],label=filter)
+plt.legend()
+&lt;/code>&lt;/pre>
+&lt;p>&lt;img src="https://datafortress.cloud/images/download.png" alt="">&lt;/p>
+&lt;h3 id="erzeugen-eines-crossover-signals">Erzeugen eines Crossover-Signals&lt;/h3>
+&lt;p>Lassen Sie uns eine kleine Hilfsfunktion verwenden&lt;/p>
+&lt;pre>&lt;code>def createCross(data,fastSMA,slowSMA):
+fast = 'SMA_%d'%fastSMA
+slow = 'SMA_%d'%slowSMA
+crossname = &amp;quot;cross_%d_%d&amp;quot;%(fastSMA,slowSMA)
+previous_fast = data[fast].shift(1)
+previous_slow = data[slow].shift(1)
+neg = ((data[fast] &amp;lt; data[slow]) &amp;amp; (previous_fast &amp;gt;= previous_slow))
+pos = ((data[fast] &amp;gt; data[slow]) &amp;amp; (previous_fast &amp;lt;= previous_slow))
+data[crossname] = 0
+data.loc[neg,crossname] = -1
+data.loc[pos,crossname] = 1
+return data
+&lt;/code>&lt;/pre>
+&lt;p>Und nun können Sie entweder eigene Werte einfügen oder unserem Beispiel folgen und einfach die Querprodukte nehmen:&lt;/p>
+&lt;pre>&lt;code>for fast in averages:
+for slow in averages:
+if fast != slow and slow &amp;gt; fast:
+df = createCross(df,fast,slow)
+&lt;/code>&lt;/pre>
+&lt;p>Dadurch wurde ein perfektes Klassifizierungssignal erzeugt, das ein Aufwärtskreuz mit 1 und ein Abwärtskreuz mit -1 signalisiert, wobei 0 ein neutraler Wert (kein Kreuz) ist.&lt;/p>
+&lt;p>Dies ist nur ein Beispiel dafür, welche weiteren Signale Sie geben können.&lt;/p>
+&lt;h3 id="erstellen-einer-spalte-für-die-prozentuale-veränderung">Erstellen einer Spalte für die prozentuale Veränderung&lt;/h3>
+&lt;p>Um ein weiteres Beispiel hinzuzufügen: Wenn Sie versuchen, die prozentuale Veränderung vorherzusagen, benötigen Sie eine Spalte, die die prozentuale Veränderung zum vorherigen Zeitbereich anzeigt. Dies lässt sich glücklicherweise leicht mit Pandas erledigen.&lt;/p>
+&lt;pre>&lt;code>df[&amp;quot;pct_change&amp;quot;] = df[&amp;quot;Adj Close&amp;quot;].pct_change()
+Date
+2021-01-21 0.013363
+2021-01-22 -0.004463
+2021-01-25 0.000538
+2021-01-26 0.009754
+2021-01-27 -0.010484
+Name: pct_change, dtype: float64
+&lt;/code>&lt;/pre>
+&lt;p>Was für ein perfektes Signal für ein regressives Modell!&lt;/p>
+&lt;h1 id="zusammenfassung">Zusammenfassung&lt;/h1>
+&lt;p>Bevor wir unsere Erweiterungen hinzugefügt haben, enthielt der Datenrahmen nur 5 Spalten, nicht viel für ein maschinelles Lernmodell!&lt;/p>
+&lt;p>Am Ende, nach dem Hinzufügen von statistischen Werten und unseren eigenen Signalen, haben wir bereits 135 Features und Spalten unseres Datenrahmens erreicht!&lt;/p>
+&lt;p>So viel besser für Ihr Modell!&lt;/p>
+&lt;p>Was sind Ihre Gedanken zu diesem Prozess? Habe ich etwas übersehen? Möchten Sie mehr Artikel von Justin lesen? Schauen Sie auf meiner Website vorbei und lesen Sie mehr!&lt;/p></description></item></channel></rss>

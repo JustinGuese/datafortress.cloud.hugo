@@ -5,7 +5,7 @@ paginate = "6"
 enableRobotsTXT = true
 enableGitInfo = true
 summaryLength = "10"
-theme = "biztrox-hugo"
+theme = "hugo-thirdhemisphere-master"
 title = "Datafortress.cloud"
 [Languages.en]
 contentDir = "content/english"

@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="hero is-dark is-fullheight" style="background: black url('{{ .Site.Params.heroindex | absURL }}') center top; background-size:cover;">
+    <div class="hero-body">
+	<div class="container has-text-centered is-narrow">
+            <h1 class="title is-1 transparent-bg">{{ .Site.Title }}</h1>
+            <h2 class="subtitle transparent-bg">{{ .Site.Params.description }}</h2>
+	</div>
+    </div>
+</section>
+<section class="section has-background-light">
+    <div class="content">
+	{{ .Content }}
+    </div>
+</section>
+{{ end }}

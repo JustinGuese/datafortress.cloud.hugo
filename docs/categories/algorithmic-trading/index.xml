@@ -1,1 +1,228 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>algorithmic trading on Datafortress.cloud</title><link>https://datafortress.cloud/categories/algorithmic-trading/</link><description>Recent content in algorithmic trading on Datafortress.cloud</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 23 May 2022 22:00:00 +0000</lastBuildDate><atom:link href="https://datafortress.cloud/categories/algorithmic-trading/index.xml" rel="self" type="application/rss+xml"/><item><title>How to deploy an automated trading bot using the Facebook Prophet Machine Learning model to AWS Lambda (serverless)</title><link>https://datafortress.cloud/blog/how-to-deploy-an-automated-trading-bot-using-the-facebook-prophet-machine-learning-model-to-aws-lambda-serverless/</link><pubDate>Mon, 23 May 2022 22:00:00 +0000</pubDate><guid>https://datafortress.cloud/blog/how-to-deploy-an-automated-trading-bot-using-the-facebook-prophet-machine-learning-model-to-aws-lambda-serverless/</guid><description>I divided this post into the “Why did I do it” and the “Technical How To”.</description></item><item><title>Enhancing stock data for your Python Algorithmic Trading Model</title><link>https://datafortress.cloud/blog/enhancing-stock-data-for-your-python-algorithmic-trading-model/</link><pubDate>Wed, 26 Jan 2022 23:00:00 +0000</pubDate><guid>https://datafortress.cloud/blog/enhancing-stock-data-for-your-python-algorithmic-trading-model/</guid><description>Your first steps building a trading algorithm Let us say you are planning to build your own algorithmic trading model.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>algorithmic trading on Datafortress.cloud</title><link>https://datafortress.cloud/categories/algorithmic-trading/</link><description>Recent content in algorithmic trading on Datafortress.cloud</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor/><webMaster/><lastBuildDate>Mon, 23 May 2022 22:00:00 +0000</lastBuildDate><atom:link href="https://datafortress.cloud/categories/algorithmic-trading/index.xml" rel="self" type="application/rss+xml"/><item><title>How to deploy an automated trading bot using the Facebook Prophet Machine Learning model to AWS Lambda (serverless)</title><link>https://datafortress.cloud/blog/how-to-deploy-an-automated-trading-bot-using-the-facebook-prophet-machine-learning-model-to-aws-lambda-serverless/</link><pubDate>Mon, 23 May 2022 22:00:00 +0000</pubDate><author>Justin Guese</author><guid>https://datafortress.cloud/blog/how-to-deploy-an-automated-trading-bot-using-the-facebook-prophet-machine-learning-model-to-aws-lambda-serverless/</guid><description>
+&lt;p>I divided this post into the “Why did I do it” and the “Technical How To”. If you want to skip the “Why” part, feel free to directly jump to the Technical part.&lt;/p>
+&lt;h1 id="why-should-i-deploy-a-machine-learning-model-in-aws-lambda">Why should I deploy a machine learning model in AWS Lambda?&lt;/h1>
+&lt;p>&lt;strong>1. Reliability:&lt;/strong> The algorithm will execute independently of other systems, updates, …&lt;/p>
+&lt;p>&lt;strong>2. Performance Efficiency:&lt;/strong> I can run several algorithms on one (small) system, independent from each other.&lt;/p>
+&lt;p>&lt;strong>3. Cost Savings:&lt;/strong> AWS allows for &lt;a href="https://aws.amazon.com/lambda/?did=ft_card&amp;amp;trk=ft_card">3,2 million compute-seconds&lt;/a> per month, basically letting me run all my algorithms for free.&lt;/p>
+&lt;p>I have been searching for a way to first make sure my investment bot surely executes because a failed execution might cost a lot of money if a trade is not canceled promptly if it goes in the wrong direction. Additionally, I wanted to avoid letting my computer run all the time and to make sure several algorithms could run next to each other, without influencing or delaying their execution.&lt;/p>
+&lt;p>Furthermore, it is a nice thought to have an investing algorithm run without worrying about operating system updates, hardware failures, and power cuts, etc, which is the general advantage of serverless technologies.&lt;/p>
+&lt;p>Right now, I can run several variations of the algorithm to test out alterations of the algorithm and can be sure that it will run. Another nice thing? AWS offers around 1 Million free Lambda calls, which lets me run the whole architecture in its free tier contingent.&lt;/p>
+&lt;h2 id="the-investing-algorithm">The investing algorithm&lt;/h2>
+&lt;p>I am going to explain the algorithm in more depth in another post on my website &lt;a href="http://www.datafortress.cloud">www.datafortress.cloud&lt;/a>, but my typical investment algorithm setup consists of:&lt;/p>
+&lt;ol>
+&lt;li>Testing the algorithm using &lt;a href="https://www.backtrader.com/">Backtrader&lt;/a>, an open-source backtesting framework written in python&lt;/li>
+&lt;li>Converting the successful algorithm into a single python file containing a run() method that returns which investments have been done&lt;/li>
+&lt;li>Transferring the python file to AWS Lambda, where I am calling the run() function with AWS Lambda’s lambda_handler function&lt;/li>
+&lt;/ol>
+&lt;p>In this example algorithm, I take investment decisions depending on if the current price is above or below the trendline predicted by &lt;a href="https://facebook.github.io/prophet/">Facebook’s prophet model&lt;/a>. I have &lt;a href="http://seangtkelley.me/blog/2018/08/15/algo-trading-pt2">taken ideas from Sean Kelley&lt;/a>, who wrote a Backtrader setup on how to utilize prophet with Backtrader.&lt;/p>
+&lt;p>My stock universe in this setup is calculated by choosing the top 20 stocks out of the SPY500 index, which achieved the highest return in the past X timesteps.&lt;/p>
+&lt;p>The data source is Yahoo finance, using the &lt;a href="https://pypi.org/project/yfinance/">free yfinance library&lt;/a>, and as my algorithmic broker of choice, I have chosen &lt;a href="https://alpaca.markets/">Alpaca.markets&lt;/a>.&lt;/p>
+&lt;p>In my setup, the algorithm will execute once per day at 3 p.m. or every 15 minutes during trading hours.&lt;/p>
+&lt;h3 id="the-problems-deploying-facebook-prophet-to-aws-lambda">The problems deploying Facebook Prophet to AWS Lambda&lt;/h3>
+&lt;p>AWS Lambda comes with some python libraries preinstalled, but as many of you might know, this is by default quite limited (which is reasonable for Lambda’s promise). Still, Lambda allows for private packages to be installed which is quite easy for smaller packages (see the &lt;a href="https://docs.aws.amazon.com/lambda/latest/dg/python-package.html">official documentation&lt;/a>) but becomes a little more complicated if dealing with packages that exceed 250 Mb in size. Unfortunately, Facebook’s prophet model exceeds this boundary, but luckily &lt;a href="https://towardsdatascience.com/how-to-get-fbprophet-work-on-aws-lambda-c3a33a081aaf">Alexandr Matsenov solved this issue by reducing the package size&lt;/a> and &lt;a href="https://github.com/marcmetz/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda">Marc Metz handled compilation issues to make it run on AWS Lambda&lt;/a>.&lt;/p>
+&lt;p>Non-default libraries can be added to AWS Lambda by using Layers, which contain all the packages needed. If a layer is imported, you can simply import the packages in your python function as you would do it in your local setup.&lt;/p>
+&lt;h2 id="how-to-technical">How to (technical)&lt;/h2>
+&lt;p>Finally, let me explain how exactly you can achieve this. See this TLDR for the impatient types, or the more detailed version below.&lt;/p>
+&lt;p>&lt;strong>TLDR;&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>You will need a Lambda Layer, upload mine (&lt;a href="https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/raw/master/python.zip">download&lt;/a>) containing Prophet, yfinance, … to an S3 bucket (private access)&lt;/li>
+&lt;li>Select AWS Lambda, create a function, add a layer and paste in your S3 object URL&lt;/li>
+&lt;li>Paste your lambda_function.py into the Lambda Editor (&lt;a href="https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/blob/master/lambda_function.py">or use mine&lt;/a>)&lt;/li>
+&lt;li>Set up your Environment variables (optional)&lt;/li>
+&lt;li>Either run it manually by clicking “test” or head over to CloudWatch -&amp;gt; Rules -&amp;gt; Create Rule and set up “Schedule Execution” to run it in a specified time interval&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Detailed Explanation&lt;/strong>:&lt;/p>
+&lt;h3 id="1-creating-a-custom-layer-for-aws-lambda">1. Creating a custom layer for AWS Lambda&lt;/h3>
+&lt;p>You can either use my Lambda layer containing Facebook Prophet, NumPy, pandas, &lt;a href="https://github.com/alpacahq/alpaca-trade-api-python">alpaca-trading-API&lt;/a>, yfinance (&lt;a href="https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda">GitHub&lt;/a>) or compile your own using the explanation given by &lt;a href="https://medium.com/@marc.a.metz/docker-run-rm-it-v-pwd-var-task-lambci-lambda-build-python3-7-bash-c7d53f3b7eb2">Marc&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Using my Lambda Layer&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>Download the zip file from my &lt;a href="https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/raw/master/python.zip">Github repo&lt;/a> containing all packages (&lt;a href="https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/raw/master/python.zip">Link&lt;/a>).&lt;/li>
+&lt;li>As you can only directly upload layers to Lambda until the size of 50 Mb, we will first need to upload the file to AWS S3.&lt;/li>
+&lt;li>Create a bucket and place the downloaded zip file into it. Access can remain private and does NOT need to be public! Copy the URL to your file (e.g. &lt;a href="https://BUCKETNAME.s3.REGION.amazonaws.com/python.zip" title="https://BUCKETNAME.s3.REGION.amazonaws.com/python.zip">https://BUCKETNAME.s3.REGION.amazonaws.com/python.zip&lt;/a>).&lt;/li>
+&lt;li>Log into AWS and go to Lambda -&amp;gt; Layers (&lt;a href="https://eu-central-1.console.aws.amazon.com/lambda/home?region=eu-central-1#/layers">EU central Link&lt;/a>).&lt;/li>
+&lt;li>Click “Create layer”, give it a matching name and select “Upload a file from Amazon S3”, and copy the code of step 3 into it. As Runtimes select Python 3.7. Click create.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Compiling your own Lambda Layer&lt;/strong>&lt;/p>
+&lt;p>Please &lt;a href="https://medium.com/@marc.a.metz/docker-run-rm-it-v-pwd-var-task-lambci-lambda-build-python3-7-bash-c7d53f3b7eb2">follow the instructions of Marc&lt;/a>.&lt;/p>
+&lt;h3 id="2-setting-up-an-aws-lambda-function">2. Setting up an AWS Lambda function&lt;/h3>
+&lt;ol>
+&lt;li>Open the Lambda Function Dashboard (&lt;a href="https://eu-central-1.console.aws.amazon.com/lambda/home?region=eu-central-1#/functions">EU central Link&lt;/a>) and click “Create function”&lt;/li>
+&lt;li>Leave the “Author from scratch” checkbox as is and give it a fitting name.&lt;/li>
+&lt;li>In “Runtime”, select Python 3.7, leave the rest as is and click “Create function”.&lt;/li>
+&lt;li>In the overview of the “designer” tab, you will see a graphical representation of your Lambda function. Click on the “layers” box below it and click “Add a layer”. If you correctly set up the layer, you will be able to select it in the following dialogue. Finally, click on “Add”.&lt;/li>
+&lt;li>In the “designer” tab, select your Lambda Function. If you scroll down, you will see a default python code snippet in a file called “lambda_function.py”. If you have structured your code the same as mine (&lt;a href="https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/blob/master/lambda_function.py">Link&lt;/a>), you can execute your function with the run() function. If a Lambda function is called, it will execute the lambda_handler(event, context) function from which you could e.g. call the run() function. Of course, you can rename all files and functions, but for the simplicity of this project, I left it as it is.&lt;/li>
+&lt;li>Feel free to just paste in &lt;a href="https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/blob/master/lambda_function.py">my function&lt;/a> and test it.&lt;/li>
+&lt;li>Clicking on “Test” should result in successful execution, otherwise, it will state the errors in the dialogue.&lt;/li>
+&lt;/ol>
+&lt;h3 id="3-using-environment-variables-in-aws-lambda">3. Using environment variables in AWS Lambda&lt;/h3>
+&lt;p>You should never leave your user and password as cleartext in your code, which is why you should always use environment variables! Luckily, Lambda uses them as well, and they can easily be called with the python os package. E.g. in my script I am calling the user variable with os.environ[&amp;lsquo;ALPACAUSER&amp;rsquo;]. The environment variables can be set up in the main Lambda function screen when scrolling down below your code editor.&lt;/p>
+&lt;h3 id="4-trigger-aws-lambda-functions-at-a-specified-time-interval">4. Trigger AWS Lambda functions at a specified time interval&lt;/h3>
+&lt;p>The concept of serverless and AWS Lambda is built on the idea that a function is executed when a trigger event happens. In my setup, I wanted the function to be called e.g. every 15 minutes during trading hours, Monday to Friday. Luckily, AWS offers a way to trigger an event without the need to run a server, using the CloudWatch service.&lt;/p>
+&lt;ol>
+&lt;li>Head over to CloudWatch (&lt;a href="https://eu-central-1.console.aws.amazon.com/cloudwatch/home?region=eu-central-1">EU central Link&lt;/a>).&lt;/li>
+&lt;li>In the left panel, select “Events” and “Rules”.&lt;/li>
+&lt;li>Click on “Create Rule”, and select “Schedule” instead of “Event pattern”. Here you can use the simple “Fixed-rate” dialogue, or create a cron expression. I am using &lt;a href="https://crontab.guru/" title="https://crontab.guru/">https://crontab.guru/&lt;/a> (free) to create cron expressions. My cron expression for the abovementioned use case is “0/15 13-21 ? * MON-FRI *”.&lt;/li>
+&lt;li>In the right panel, select “Add Target” and select your Lambda function. It will automatically be added to Lambda.&lt;/li>
+&lt;li>Finally click on “Configure details”, give it a name, and click on “Create rule”.&lt;/li>
+&lt;/ol>
+&lt;h3 id="5-optional-log-analysis-error-search">5. (optional) Log Analysis, Error Search&lt;/h3>
+&lt;p>If you have made it to this part, you should be done! But if you want to check if everything worked, you can use CloudWatch to have a look at the outputs of the Lambda functions. Head over to CloudWatch -&amp;gt; Logs -&amp;gt; Log groups (&lt;a href="https://eu-central-1.console.aws.amazon.com/cloudwatch/home?region=eu-central-1#logsV2:log-groups">EU central Link&lt;/a>) and select your Lambda function. In this overview, you should be able to see the output of your functions.&lt;/p>
+&lt;p>If you have liked this post leave a comment or head over to my blog &lt;a href="http://www.datafortress.cloud">www.datafortress.cloud&lt;/a> to keep me motivated 😊.&lt;/p></description></item><item><title>Enhancing stock data for your Python Algorithmic Trading Model</title><link>https://datafortress.cloud/blog/enhancing-stock-data-for-your-python-algorithmic-trading-model/</link><pubDate>Wed, 26 Jan 2022 23:00:00 +0000</pubDate><author>Justin Guese</author><guid>https://datafortress.cloud/blog/enhancing-stock-data-for-your-python-algorithmic-trading-model/</guid><description>
+&lt;h1 id="your-first-steps-building-a-trading-algorithm">Your first steps building a trading algorithm&lt;/h1>
+&lt;p>Let us say you are planning to build your own algorithmic trading model.&lt;/p>
+&lt;p>You will most likely use only price (Close) data for your model and algorithm, but soon you will discover, that your model does not perform well.&lt;/p>
+&lt;p>Soon you will use typical OHLCV data, which refers to Open, High, Low, Close, Volume, which is already better, but the model does not seem to perform quite well enough.&lt;/p>
+&lt;p>What can you do?&lt;/p>
+&lt;p>Handy Colab Notebook to follow along: &lt;a href="https://colab.research.google.com/drive/1ywqti1TuTDY_Z11ry0x4ITclCwxnXAeI?usp=sharing" title="https://colab.research.google.com/drive/1ywqti1TuTDY_Z11ry0x4ITclCwxnXAeI?usp=sharing">https://colab.research.google.com/drive/1ywqti1TuTDY_Z11ry0x4ITclCwxnXAeI?usp=sharing&lt;/a>&lt;/p>
+&lt;p>Gist:&lt;/p>
+&lt;p>&lt;a href="https://gist.github.com/JustinGuese/019e0e71100abe6555f78c32fd0b10a9" title="https://gist.github.com/JustinGuese/019e0e71100abe6555f78c32fd0b10a9">https://gist.github.com/JustinGuese/019e0e71100abe6555f78c32fd0b10a9&lt;/a>&lt;/p>
+&lt;h2 id="what-does-a-machine-learning-trading-bot-like">What does a Machine Learning Trading Bot like?&lt;/h2>
+&lt;p>The typical machine learning algorithm can only work with the data it got. It (usually) can not create new features or interpretations like &amp;ldquo;If volume increases and the 3rd derivative of price rises, the price will most likely go up&amp;rdquo;, but instead can only &amp;ldquo;look&amp;rdquo; at the data it got. These would be calculations like &amp;ldquo;if the price is above 100 USD, and the volume above 2000, the price will most likely go up&amp;rdquo;.&lt;/p>
+&lt;p>Newcomers to Machine Learning are now trying to solve this problem by training for decades, or using more and more GPUs, but a way more efficient way would be to feed that algorithm with additional data, such that it can use more resources to infer it&amp;rsquo;s calculations.&lt;/p>
+&lt;p>This can be achieved by:&lt;/p>
+&lt;ol>
+&lt;li>Getting more data (a bigger timespan)&lt;/li>
+&lt;li>Adding statistical metrics&lt;/li>
+&lt;li>Adding your own signals and interpretations&lt;/li>
+&lt;/ol>
+&lt;h1 id="hands-on-enhancing-your-data">Hands-on: Enhancing your data&lt;/h1>
+&lt;h2 id="first-steps---getting-your-data">First steps - Getting your data&lt;/h2>
+&lt;p>First, let us grab some basic OHLCV data. I like the yfinance (&lt;a href="https://pypi.org/project/yfinance/" title="https://pypi.org/project/yfinance/">https://pypi.org/project/yfinance/&lt;/a>) module for its simplicity. It is not comparable to live-streams of data, but on the other hand, it&amp;rsquo;s free and great for experimentation!&lt;/p>
+&lt;pre>&lt;code>pip install yfinance pandas numpy matplotlib ta
+&lt;/code>&lt;/pre>
+&lt;p>Import that module as well as Pandas Numpy Matplotlib&lt;/p>
+&lt;pre>&lt;code>import yfinance as yf
+import matplotlib.pyplot as plt
+import pandas as pd
+&lt;/code>&lt;/pre>
+&lt;p>Get some stock data, interval and period refer to the timeranges.&lt;/p>
+&lt;p>interval accepts values like 1m,2m,5m,15m,30m,60m,90m,1h,1d,5d,1wk,1mo,3mo&lt;/p>
+&lt;p>period accepts values like 1d,5d,1mo,3mo,6mo,1y,2y,5y,10y,ytd,max&lt;/p>
+&lt;p>Not all combinations work, like 1m (1 Minute) intervals are only working with 7d max, 1h (1 hour) with 3 months max (needs to be written as 90d). But let&amp;rsquo;s work with daily data first&lt;/p>
+&lt;pre>&lt;code>df = yf.download(&amp;quot;MSFT&amp;quot;,period=&amp;quot;5y&amp;quot;,interval=&amp;quot;1d&amp;quot;)
+df.head()
+&lt;/code>&lt;/pre>
+&lt;p>&lt;img src="https://datafortress.cloud/images/screenshot-from-2021-01-27-14-46-45.png" alt="">&lt;/p>
+&lt;p>Quick excourse: What the heck is Open, High, Low, Close, Adj Close, and Volume? Where is the price?!&lt;/p>
+&lt;p>There is no &amp;ldquo;one price&amp;rdquo; in the stock market! You can imagine OHLCV data as &amp;ldquo;buckets&amp;rdquo; or &amp;ldquo;bins&amp;rdquo; in time, summarizing all the trades that occurred in that window. The typical &amp;ldquo;line&amp;rdquo; chart you know usually refers to the &amp;ldquo;Close&amp;rdquo; price of that stock in time range X, e.g. the value the stock had at the close of the time range.&lt;/p>
+&lt;p>If we are looking at daily data, &amp;ldquo;Open&amp;rdquo; refers to the average (!) stock price at open of the markets, whilst &amp;ldquo;Close&amp;rdquo; refers to the average (!) price the stock had at the close of markets. If looking at hourly data, the &amp;ldquo;Open&amp;rdquo; refers to the beginning of that hour, like 11 am, and the &amp;ldquo;Close&amp;rdquo; to the close of that hour, so 11:59:59 am.&lt;/p>
+&lt;p>Equally &amp;ldquo;High&amp;rdquo; is the highest trade/price recorded in that time frame, and &amp;ldquo;Low&amp;rdquo; the lowest one. Volume refers to the number of assets or stocks traded in that time range.&lt;/p>
+&lt;p>Meaning if e.g. &amp;ldquo;Low&amp;rdquo; and &amp;ldquo;Close&amp;rdquo; of a column are close to each other, we are most likely seeing a downwards trend as the close is the current low. Also if Volume is high, there is a lot of trades going on, so if e.g. the Volume is higher than usual there seems to be something going on in the market. But anyway, head over to &lt;a href="https://www.investopedia.com/" title="https://www.investopedia.com/">https://www.investopedia.com/&lt;/a> for that, we will continue coding now!&lt;/p>
+&lt;h3 id="what-is-adj-close">What is &amp;ldquo;Adj Close&amp;rdquo;?&lt;/h3>
+&lt;p>This is important, as most ML algorithms are terribly confused by &amp;ldquo;normal&amp;rdquo; close-data. If there is a split in the stock, the data will look like the price has an insane drop.&lt;/p>
+&lt;p>The reason is, simply said, that if a stock get&amp;rsquo;s too expensive, the company decides to &amp;ldquo;split&amp;rdquo; the stock in two. Does that mean my investment halves? Of course not, you will simply get double the stocks you are holding, so on paper you still hold the same value of that stock.&lt;/p>
+&lt;p>Interestingly a split usually causes prices to rise (silly humans!), and if your machine learning algorithm sees a huge drop in price it will most likely sell the hell out of that stock.&lt;/p>
+&lt;p>For this reason, you should always use &amp;ldquo;adjusted&amp;rdquo; values, which can be imagined as &amp;ldquo;cleaned&amp;rdquo; price data, keeping in mind the splits, dividends, and all other events not affecting the true value of data. Therefore try to always use adjusted data for your algorithms!&lt;/p>
+&lt;p>In the case of yfinance it is easy to do, as we can just use &amp;ldquo;Adj Close&amp;rdquo; instead of &amp;ldquo;Close&amp;rdquo;.&lt;/p>
+&lt;h3 id="plotting-the-data">Plotting the data&lt;/h3>
+&lt;p>Looking at the data we can already see a nice, well-known curve&lt;/p>
+&lt;pre>&lt;code>plt.plot(df[&amp;quot;Adj Close&amp;quot;])
+&lt;/code>&lt;/pre>
+&lt;h2 id="step-two-enhancing-your-data-with-statistical-data">Step two: Enhancing your data with statistical data&lt;/h2>
+&lt;p>As said above, we need to create more information from our data for the algorithm to use, as it can not do this on its own.&lt;/p>
+&lt;p>I like to use the library ta (&lt;a href="https://github.com/bukosabino/ta" title="https://github.com/bukosabino/ta">https://github.com/bukosabino/ta&lt;/a>) as again, it is super easy to use and contains 100+ statistical calculations.&lt;/p>
+&lt;p>Install and import it with&lt;/p>
+&lt;pre>&lt;code>pip install ta
+from ta import add_all_ta_features
+from ta.utils import dropna
+&lt;/code>&lt;/pre>
+&lt;p>Now if you already know which values you want to use you can only pick these, oooor we just smash all 100+ at our data:&lt;/p>
+&lt;pre>&lt;code>df = dropna(df) # clean nans if present
+df = add_all_ta_features(df,open=&amp;quot;Open&amp;quot;, high=&amp;quot;High&amp;quot;, low=&amp;quot;Low&amp;quot;, close=&amp;quot;Adj Close&amp;quot;, volume=&amp;quot;Volume&amp;quot;)
+&lt;/code>&lt;/pre>
+&lt;p>So what have we done?&lt;/p>
+&lt;pre>&lt;code>df.columns
+Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'volume_adi',
+'volume_obv', 'volume_cmf', 'volume_fi', 'volume_mfi', 'volume_em',
+'volume_sma_em', 'volume_vpt', 'volume_nvi', 'volume_vwap',
+'volatility_atr', 'volatility_bbm', 'volatility_bbh', 'volatility_bbl',
+'volatility_bbw', 'volatility_bbp', 'volatility_bbhi',
+'volatility_bbli', 'volatility_kcc', 'volatility_kch', 'volatility_kcl',
+'volatility_kcw', 'volatility_kcp', 'volatility_kchi',
+'volatility_kcli', 'volatility_dcl', 'volatility_dch', 'volatility_dcm',
+'volatility_dcw', 'volatility_dcp', 'volatility_ui', 'trend_macd',
+'trend_macd_signal', 'trend_macd_diff', 'trend_sma_fast',
+'trend_sma_slow', 'trend_ema_fast', 'trend_ema_slow', 'trend_adx',
+'trend_adx_pos', 'trend_adx_neg', 'trend_vortex_ind_pos',
+'trend_vortex_ind_neg', 'trend_vortex_ind_diff', 'trend_trix',
+'trend_mass_index', 'trend_cci', 'trend_dpo', 'trend_kst',
+'trend_kst_sig', 'trend_kst_diff', 'trend_ichimoku_conv',
+'trend_ichimoku_base', 'trend_ichimoku_a', 'trend_ichimoku_b',
+'trend_visual_ichimoku_a', 'trend_visual_ichimoku_b', 'trend_aroon_up',
+'trend_aroon_down', 'trend_aroon_ind', 'trend_psar_up',
+'trend_psar_down', 'trend_psar_up_indicator',
+'trend_psar_down_indicator', 'trend_stc', 'momentum_rsi',
+'momentum_stoch_rsi', 'momentum_stoch_rsi_k', 'momentum_stoch_rsi_d',
+'momentum_tsi', 'momentum_uo', 'momentum_stoch',
+'momentum_stoch_signal', 'momentum_wr', 'momentum_ao', 'momentum_kama',
+'momentum_roc', 'momentum_ppo', 'momentum_ppo_signal',
+'momentum_ppo_hist', 'others_dr', 'others_dlr', 'others_cr'],
+dtype='object')
+&lt;/code>&lt;/pre>
+&lt;p>Well, that should be enough for now!&lt;/p>
+&lt;p>Also, there is still a lot of nans in there, as some values are only calculated if enough time passed. In my experience filling them with zeros works quite well, even though there are more advanced techniques for that.&lt;/p>
+&lt;pre>&lt;code>df = df.fillna(0)
+&lt;/code>&lt;/pre>
+&lt;h2 id="step-three-creating-your-own-signals">Step three: Creating your own signals&lt;/h2>
+&lt;p>Now it is time to translate your weird trade ideas into numbers!&lt;/p>
+&lt;p>Let us start with the classic Moving Average cross. The idea is as follows: If a short moving average crosses a slower moving average, it either indicates a price rise or fall, depending on the direction of the cross.&lt;/p>
+&lt;p>Again, have a look at investopedia for details: &lt;a href="https://www.investopedia.com/articles/active-trading/052014/how-use-moving-average-buy-stocks.asp" title="https://www.investopedia.com/articles/active-trading/052014/how-use-moving-average-buy-stocks.asp">https://www.investopedia.com/articles/active-trading/052014/how-use-moving-average-buy-stocks.asp&lt;/a>&lt;/p>
+&lt;p>Our goal is to first calculate the SMA&amp;rsquo;s, and then to formulate crosses as 1 and -1, and 0 to signal no cross.&lt;/p>
+&lt;h3 id="creating-simple-moving-averages">Creating Simple Moving Averages&lt;/h3>
+&lt;pre>&lt;code># creating simple moving averages
+averages = [1,2,5,10,15,20,25,50,100]
+for average in averages:
+df['SMA_%d'%average] = df[&amp;quot;Adj Close&amp;quot;].rolling(window=average).mean()
+# visualize only SMAs
+filter_col = [col for col in df if col.startswith('SMA')]
+df[filter_col].tail()
+&lt;/code>&lt;/pre>
+&lt;p>And some visualization:&lt;/p>
+&lt;pre>&lt;code># results in bigger figures
+plt.rcParams[&amp;quot;figure.figsize&amp;quot;] = (20,20)
+for filter in filter_col:
+plt.plot(df[filter],label=filter)
+plt.legend()
+&lt;/code>&lt;/pre>
+&lt;p>&lt;img src="https://datafortress.cloud/images/download.png" alt="SMA python trading" title="Image by author">&lt;/p>
+&lt;h3 id="creating-a-crossover-signal">Creating a crossover signal&lt;/h3>
+&lt;p>Let us use a little helper function&lt;/p>
+&lt;pre>&lt;code>def createCross(data,fastSMA,slowSMA):
+fast = 'SMA_%d'%fastSMA
+slow = 'SMA_%d'%slowSMA
+crossname = &amp;quot;cross_%d_%d&amp;quot;%(fastSMA,slowSMA)
+previous_fast = data[fast].shift(1)
+previous_slow = data[slow].shift(1)
+neg = ((data[fast] &amp;lt; data[slow]) &amp;amp; (previous_fast &amp;gt;= previous_slow))
+pos = ((data[fast] &amp;gt; data[slow]) &amp;amp; (previous_fast &amp;lt;= previous_slow))
+data[crossname] = 0
+data.loc[neg,crossname] = -1
+data.loc[pos,crossname] = 1
+return data
+&lt;/code>&lt;/pre>
+&lt;p>And now you could either insert custom values or follow our example and just take the cross products:&lt;/p>
+&lt;pre>&lt;code>for fast in averages:
+for slow in averages:
+if fast != slow and slow &amp;gt; fast:
+df = createCross(df,fast,slow)
+&lt;/code>&lt;/pre>
+&lt;p>This created a perfect classification signal signaling an upwards cross with 1, and a downwards cross with -1, with 0 being a neutral (no-cross).&lt;/p>
+&lt;p>This is just one example of what further signals you can provide.&lt;/p>
+&lt;h3 id="creating-a-percentage-change-column">Creating a percentage change column&lt;/h3>
+&lt;p>And to add another example, if you are trying to predict the percentage change you will need a column showing the percentage change to the previous time range. This can luckily be easily done using pandas.&lt;/p>
+&lt;pre>&lt;code>df[&amp;quot;pct_change&amp;quot;] = df[&amp;quot;Adj Close&amp;quot;].pct_change()
+Date
+2021-01-21 0.013363
+2021-01-22 -0.004463
+2021-01-25 0.000538
+2021-01-26 0.009754
+2021-01-27 -0.010484
+Name: pct_change, dtype: float64
+&lt;/code>&lt;/pre>
+&lt;p>What a perfect signal for a regressional model!&lt;/p>
+&lt;h1 id="summary">Summary&lt;/h1>
+&lt;p>Before we added our enhancements the dataframe just contained 5 columns, not much for a machine learning model!&lt;/p>
+&lt;p>In the end, after adding statistical values and our own signals, we already reached 135 features and columns of our dataframe!&lt;/p>
+&lt;p>So much better for your model!&lt;/p>
+&lt;p>What are your thoughts about this process? Did I miss something? Comment below!&lt;br>
+Do you want to read more articles by Justin? Head over to my website for more!&lt;/p></description></item></channel></rss>

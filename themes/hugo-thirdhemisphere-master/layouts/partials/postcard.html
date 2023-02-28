@@ -1,0 +1,45 @@
+{{ $pagecount := len .Pages}}
+<div class="card">
+  {{- if .Page.Params.Images }}
+  {{- if and (eq (len .Page.Params.Images) 1) (in (string .Site.BaseURL) "localhost") -}}reduce{{end}}
+  <div class="card-image">
+    <figure class="image is-3by2">
+      <a href="{{ .Permalink }}">
+	<img src="
+{{- if eq (len .Page.Params.Images) 1 -}}
+{{- index .Params.images 0 | absURL -}}
+{{ else }}
+{{- index .Params.images 1 | absURL -}}
+{{- end -}}
+" alt="{{ .Description }}" title="{{ .Description }}">
+      </a>
+    </figure>
+  </div>
+  {{- end }}
+  <div class="card-content">
+    <a class="title is-4" href="{{ .Permalink }}">{{ .Title }}</a>
+    <span class="heading">
+      <time datetime="{{ .Date.Format "2006-01-02"}}">{{ if gt .Lastmod .Date}}{{ .Lastmod.Format "2 January 2006"}}{{ else }}{{ .Date.Format "2 January 2006"}}{{ end }}</time>
+    </span>
+    <div class="content">
+      {{ .Description }}
+    </div>
+    {{- if ne $pagecount 0 }}
+    <div class="content">
+      <p class="has-text-grey">{{ $pagecount }} article{{ if ne $pagecount 1 }}s{{ end }}<a href="{{ .Permalink }}/index.xml" title="RSS feed"> <span class="icon fa-lg has-text-grey is-pulled-right"><i class="fas fa-rss"></i></a></span></p>
+    </div>
+    {{ else }}
+    <div class="tags">
+      {{- $root := .Site.BaseURL }}
+      {{- range .Params.categories }}
+      <a class="tag is-primary is-radiusless" href="{{ $root }}categories/{{ lower . }}/">{{ replace . "-" " " }}</a>
+      {{- end }}
+    </div>
+    <div class="tags">
+      {{- range .Params.tags }}
+      <a class="tag is-info is-radiusless" href="{{ $root }}tags/{{ lower . }}/">{{ replace . "-" " " }}</a>
+      {{- end }}
+    </div>
+    {{- end }}
+  </div>
+</div>

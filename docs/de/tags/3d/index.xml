@@ -1,1 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3D on Datafortress.cloud</title><link>https://datafortress.cloud/de/tags/3d/</link><description>Recent content in 3D on Datafortress.cloud</description><generator>Hugo -- gohugo.io</generator><language>de-de</language><lastBuildDate>Thu, 24 Feb 2022 11:10:07 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/3d/index.xml" rel="self" type="application/rss+xml"/><item><title>Wie man 3D-Modelle in Websites und Schnellansichten für Android und iOS integriert</title><link>https://datafortress.cloud/de/blog/3d-model-integration/</link><pubDate>Thu, 24 Feb 2022 11:10:07 +0600</pubDate><guid>https://datafortress.cloud/de/blog/3d-model-integration/</guid><description>Probieren Sie es aus: Drehen Sie das 3D-Objekt unten, oder betrachten Sie es in AR mit Ihrem Telefon oder sogar in VR, wenn ein VR-Glas an Ihren Computer angeschlossen ist.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3D on Datafortress.cloud</title><link>https://datafortress.cloud/de/tags/3d/</link><description>Recent content in 3D on Datafortress.cloud</description><generator>Hugo -- gohugo.io</generator><language>de-de</language><managingEditor/><webMaster/><lastBuildDate>Thu, 24 Feb 2022 11:10:07 +0600</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/3d/index.xml" rel="self" type="application/rss+xml"/><item><title>Wie man 3D-Modelle in Websites und Schnellansichten für Android und iOS integriert</title><link>https://datafortress.cloud/de/blog/3d-model-integration/</link><pubDate>Thu, 24 Feb 2022 11:10:07 +0600</pubDate><author>Justin Guese</author><guid>https://datafortress.cloud/de/blog/3d-model-integration/</guid><description>
+&lt;p>&lt;strong>Probieren Sie es aus:&lt;/strong> Drehen Sie das 3D-Objekt unten, oder betrachten Sie es in AR mit Ihrem Telefon oder sogar in VR, wenn ein VR-Glas an Ihren Computer angeschlossen ist.&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>Augmented Reality wurde durch die Veröffentlichung einer Funktion namens ar webview (Quick View in iOS) nun einfacher.&lt;/p>
+&lt;p>Mit nur wenigen Zeilen Code ist es möglich, 3D-Objekte in Ihre Websites zu integrieren, die bereit sind, auf der Website zu interagieren, mobile Geräte mit AR-Unterstützung (d.h. Sie können die Objekte in Ihrem Raum platzieren) und sogar Unterstützung für Virtual Reality. Wenn Sie diese Website auf einen Computer laden, an den ein VR-Headset angeschlossen ist, sollte er Ihnen eine Möglichkeit zeigen, dieses Objekt in VR zu betrachten.&lt;br>
+Sie unterstützt sogar Magic Leap!&lt;/p>
+&lt;p>Um die notwendigen Skripte zu laden, laden Sie einfach den folgenden Code in Ihren Bereich der Website:&lt;/p>
+&lt;pre>&lt;code>&amp;lt;script type=&amp;quot;module&amp;quot;
+src=&amp;quot;https://unpkg.com/@google/model-viewer/dist/model-viewer.js&amp;quot;&amp;gt;
+&amp;lt;/script&amp;gt;
+&amp;lt;!-- Loads &amp;lt;model-viewer&amp;gt; for old browsers like IE11: --&amp;gt;
+&amp;lt;script nomodule
+src=&amp;quot;https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js&amp;quot;&amp;gt;
+&amp;lt;/script&amp;gt;
+&amp;lt;!-- The following libraries and polyfills are recommended to maximize browser support --&amp;gt;
+&amp;lt;!-- NOTE: you must adjust the paths as appropriate for your project --&amp;gt;
+&amp;lt;!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox &amp;lt; 63 --&amp;gt;
+&amp;lt;script src=&amp;quot;https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 --&amp;gt;
+&amp;lt;script src=&amp;quot;https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers --&amp;gt;
+&amp;lt;script src=&amp;quot;https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;!-- 💁 OPTIONAL: Fullscreen polyfill is required for experimental AR features in Canary --&amp;gt;
+&amp;lt;!--&amp;lt;script src=&amp;quot;https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;--&amp;gt;
+&amp;lt;!-- 💁 OPTIONAL: Include prismatic.js for Magic Leap support --&amp;gt;
+&amp;lt;!--&amp;lt;script src=&amp;quot;https://unpkg.com/@magicleap/prismatic@0.18.2/prismatic.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;--&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;p>&lt;a href="https://gist.github.com/JustinGuese/6c2bd61252ac9947ce686928bc2bcb6e/raw/20ea3fc0de030ed04f09d44db0d0d11ae8b69781/3D%20Content%20with%20Webview">&lt;strong>view raw&lt;/strong>&lt;/a>&lt;a href="https://gist.github.com/JustinGuese/6c2bd61252ac9947ce686928bc2bcb6e#file-3d-content-with-webview">&lt;strong>3D Content with Webview&lt;/strong>&lt;/a> hosted with ❤ by &lt;a href="https://github.com/">&lt;strong>GitHub&lt;/strong>&lt;/a>&lt;/p>
+&lt;p>Danach brauchen Sie nur noch das Modell mit dem folgenden Snippet zu laden und das Modell in Ihres zu ändern.&lt;/p>
+&lt;p>Zu Demonstrationszwecken ist [&amp;ldquo;Rocket Ship&amp;rdquo; von Google Poly] (&lt;a href="https://poly.google.com/view/42PQqEaxb-P">https://poly.google.com/view/42PQqEaxb-P&lt;/a>) enthalten.&lt;/p>
+&lt;p>Der Code wurde übernommen und geändert von&lt;a href="https://github.com/Kristina-Simakova/ar-webview"> &lt;/a>&lt;a href="https://github.com/Kristina-Simakova/ar-webview" title="https://github.com/Kristina-Simakova/ar-webview">https://github.com/Kristina-Simakova/ar-webview&lt;/a>&lt;/p>
+&lt;pre>&lt;code>&amp;lt;model-viewer src=&amp;quot;assets/RocketShip_1393.gltf&amp;quot;
+ios-src=&amp;quot;assets/RocketShip_1393.usdz&amp;quot;
+ar
+auto-rotate
+camera-controls
+shadow-intensity=&amp;quot;1&amp;quot;
+alt=&amp;quot;A 3D model of a rocket&amp;quot; background-color=&amp;quot;#70BCD1&amp;quot;&amp;gt;
+&amp;lt;/model-viewer&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;p>&lt;a href="https://gist.github.com/JustinGuese/6b119644e4d1a640dd054c5b0a18b62c/raw/448cab85deae1d24978a65a6955573d90f5b8122/3D%20Content%20with%20Webview%20-%20modelload">&lt;strong>view raw&lt;/strong>&lt;/a>&lt;a href="https://gist.github.com/JustinGuese/6b119644e4d1a640dd054c5b0a18b62c#file-3d-content-with-webview-modelload">&lt;strong>3D Content with Webview - modelload&lt;/strong>&lt;/a> hosted with ❤ by &lt;a href="https://github.com/">&lt;strong>GitHub&lt;/strong>&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://www.datafortress.cloud/de/contact/">Sie haben eine ähnliche Idee oder wir haben Ihr Interesse geweckt? Kontaktieren Sie uns jetzt für eine gratis 15-minütige Beratung!&lt;/a>&lt;/p></description></item></channel></rss>

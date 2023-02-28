@@ -1,1 +1,76 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>jupyter lab on Datafortress.cloud</title><link>https://datafortress.cloud/de/tags/jupyter-lab/</link><description>Recent content in jupyter lab on Datafortress.cloud</description><generator>Hugo -- gohugo.io</generator><language>de-de</language><lastBuildDate>Mon, 24 Jan 2022 23:00:00 +0000</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/jupyter-lab/index.xml" rel="self" type="application/rss+xml"/><item><title>So richten Sie Anaconda und Jupyter Notebook richtig ein</title><link>https://datafortress.cloud/de/blog/so-richten-sie-anaconda-und-jupyter-notebook-richtig-ein/</link><pubDate>Mon, 24 Jan 2022 23:00:00 +0000</pubDate><guid>https://datafortress.cloud/de/blog/so-richten-sie-anaconda-und-jupyter-notebook-richtig-ein/</guid><description>Wenn Anaconda (conda) und Jupyter Notebook (Jupyter Lab) richtig eingerichtet sind, kann die Kombination aus beiden ein perfektes Team werden, in dem man leicht zwischen den Deep Learning conda Umgebungen wechseln kann.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>jupyter lab on Datafortress.cloud</title><link>https://datafortress.cloud/de/tags/jupyter-lab/</link><description>Recent content in jupyter lab on Datafortress.cloud</description><generator>Hugo -- gohugo.io</generator><language>de-de</language><managingEditor/><webMaster/><lastBuildDate>Mon, 24 Jan 2022 23:00:00 +0000</lastBuildDate><atom:link href="https://datafortress.cloud/de/tags/jupyter-lab/index.xml" rel="self" type="application/rss+xml"/><item><title>So richten Sie Anaconda und Jupyter Notebook richtig ein</title><link>https://datafortress.cloud/de/blog/so-richten-sie-anaconda-und-jupyter-notebook-richtig-ein/</link><pubDate>Mon, 24 Jan 2022 23:00:00 +0000</pubDate><author>Justin Guese</author><guid>https://datafortress.cloud/de/blog/so-richten-sie-anaconda-und-jupyter-notebook-richtig-ein/</guid><description>
+&lt;p>Wenn Anaconda (conda) und Jupyter Notebook (Jupyter Lab) richtig eingerichtet sind, kann die Kombination aus beiden ein perfektes Team werden, in dem man leicht zwischen den Deep Learning conda Umgebungen wechseln kann.&lt;/p>
+&lt;p>Einige Programme benötigen Tensorflow 1.15, andere Tensorflow 2.0? Kein Problem! Wechseln Sie Umgebungen und Tensorflow-Versionen mit einem einfachen Klick.&lt;/p>
+&lt;p>Haben Sie auch jemals Jupyter Notebook Erweiterungen in jeder conda Umgebung installiert? Machen Sie sich keine Sorgen mehr, wir werden die Erweiterungen einmal installieren und sie in jeder Umgebung verfügbar haben!&lt;/p>
+&lt;h1 id="wie-werden-wir-das-erreichen">Wie werden wir das erreichen?&lt;/h1>
+&lt;ol>
+&lt;li>Anaconda oder Miniconda installieren&lt;/li>
+&lt;li>Installieren Sie Jupyter Notebook / Lab in der Basisumgebung&lt;/li>
+&lt;li>Installieren Sie eine neue Umgebung&lt;/li>
+&lt;li>Aktivieren Sie die Umgebung für Jupyter Notebook&lt;/li>
+&lt;/ol>
+&lt;h1 id="wie-installiert-man-anaconda-oder-miniconda">Wie installiert man Anaconda oder Miniconda?&lt;/h1>
+&lt;p>Anaconda ist ein schönes Paket, das bereits viele Python-Pakete enthält und einen einfachen Einstieg in die Welt von Python ermöglicht. Zusätzlich erlaubt es das Erstellen von Umgebungen in Python, die verschiedene Versionen Ihrer Python-Pakete enthalten. Wenn z.B. ein Programm nur mit Python 2.7 oder älteren Versionen von Matplotlib läuft, können Sie einen eigenen Workspace für dieses Programm erstellen und mit einem Klick auf Python 3 zurückschalten. Darüber hinaus wird auch der Wechsel zwischen Tensorflow 2.0 und Tensorflow 1.15 einfach, was Ihnen endlich erlaubt, einfach zwischen den Versionen zu wechseln (was sonst ziemliche Kopfschmerzen bereiten kann).&lt;/p>
+&lt;p>Miniconda ist eine Barebone-Version von Anaconda und kann nützlich sein, wenn Sie z.B. auf einem Server arbeiten, wo der Speicherplatz begrenzt ist.&lt;/p>
+&lt;p>Um Anaconda oder Miniconda zu installieren, gehen Sie auf deren Website (&lt;a href="https://www.anaconda.com/products/individual#Downloads" title="https://www.anaconda.com/products/individual#Downloads">https://www.anaconda.com/products/individual#Downloads&lt;/a>), oder wenn Sie Linux benutzen, kopieren Sie einfach die folgenden Befehle.&lt;/p>
+&lt;p>Der erste Link durchsucht die Website nach der neuesten Version und schreibt sie in die Variable LATEST_ANACONDA.&lt;/p>
+&lt;pre>&lt;code>cd ~/Downloads
+LATEST_ANACONDA=$(wget -O - https://www.anaconda.com/distribution/ 2&amp;gt;/dev/null | sed -ne 's@.*\(https:\/\/repo\.anaconda\.com\/archive\/Anaconda3-.*-Linux-x86_64\.sh\)\&amp;quot;&amp;gt;64-Bit (x86) Installer.*@\1@p')
+wget $LATEST_ANACONDA
+chmod +x Anaconda3*.sh # make it executable
+./Anaconda3*.sh # execute the installer
+&lt;/code>&lt;/pre>
+&lt;p>Folgen Sie dem Dialog und stimmen Sie einfach den Voreinstellungen zu.&lt;/p>
+&lt;h3 id="prüfen-und-umschalten-der-conda-umgebungen">Prüfen und Umschalten der conda-Umgebungen&lt;/h3>
+&lt;p>Wenn conda korrekt installiert ist (eventuell ist ein Logout und Login oder ein Neustart erforderlich), sollten Sie die Ausgabe sehen können, wenn Sie conda in Ihr Terminal eingeben.&lt;/p>
+&lt;p>Um die aktuell installierten Umgebungen aufzulisten, geben Sie einfach conda env list ein&lt;/p>
+&lt;p>Es sollte derzeit nur die installierte &amp;ldquo;Basis&amp;rdquo;-Umgebung angezeigt werden.&lt;/p>
+&lt;p>Das Umschalten zwischen den Umgebungen funktioniert so einfach wie die Eingabe von conda activate [NAME] und wenn Sie damit fertig sind, deaktivieren Sie es (und gehen zurück zur Basisumgebung) mit conda deactivate.&lt;/p>
+&lt;p>Die Basisumgebung ist standardmäßig aktiviert.&lt;/p>
+&lt;h1 id="jupyter-notebook--lab-in-der-basisumgebung-installieren">Jupyter Notebook / Lab in der Basisumgebung installieren&lt;/h1>
+&lt;p>Jupyter Notebook kann einfach mit conda installiert werden. Unser Plan ist es, es nur in der Basisumgebung zu installieren und dann nur zwischen den Subumgebungen zu wechseln, um die Einrichtung von Jupyter Lab in jeder Umgebung zu vermeiden.&lt;/p>
+&lt;h2 id="installation-von-jupyter-notebook-standard">Installation von Jupyter Notebook (Standard)&lt;/h2>
+&lt;pre>&lt;code>conda install -c conda-forge notebook
+conda install -c conda-forge nb_conda_kernels
+&lt;/code>&lt;/pre>
+&lt;h2 id="jupyter-lab-installieren">Jupyter Lab installieren&lt;/h2>
+&lt;pre>&lt;code>conda installieren -c conda-forge jupyterlab
+conda install -c conda-forge nb_conda_kernels
+&lt;/code>&lt;/pre>
+&lt;h2 id="jupyter-notebook-erweiterungen-installieren">Jupyter-Notebook-Erweiterungen installieren&lt;/h2>
+&lt;p>Ich mag die Jupyter-Notebook-Erweiterungen sehr, da sie eine Menge Autovervollständigung, zusätzliche Informationen und generell Dinge, die das Leben leichter machen, unterstützen. Eine gute Voreinstellung ist in dem folgenden Installationsbefehl enthalten:&lt;/p>
+&lt;pre>&lt;code>conda install -c conda-forge jupyter_contrib_nbextensions
+&lt;/code>&lt;/pre>
+&lt;p>Eine gute Übersicht über andere Erweiterungen: &lt;a href="https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231" title="https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231">https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231&lt;/a>&lt;/p>
+&lt;h3 id="optional-installation-des-paketmanagers-pip">(Optional) Installation des Paketmanagers pip&lt;/h3>
+&lt;p>Meiner Meinung nach ist es eine gute Idee, den pip-Paketmanager zur Basis- (und jeder Unter-) Umgebung hinzuzufügen, da nicht alle Pakete von conda install unterstützt werden. Wenn pip nicht in jeder Sub-Umgebung installiert ist, kann es außerdem sein, dass das Paket nur in der &amp;ldquo;Basis&amp;rdquo;-conda-Umgebung installiert wird, was zu einem Fehler führt, wenn das Paket in Ihrer Sub-Umgebung nicht gefunden wird.&lt;/p>
+&lt;pre>&lt;code>conda install pip
+&lt;/code>&lt;/pre>
+&lt;h1 id="erstellen-von-umgebungen-in-conda-und-jupyter-notebook">Erstellen von Umgebungen in conda und Jupyter Notebook&lt;/h1>
+&lt;p>Sagen wir, Sie wollen sowohl Tensorflow 2.0 als auch Tensorflow 1.15 in Jupyter Notebook installieren.&lt;/p>
+&lt;p>Für dieses Beispiel vereinbaren Sie zuerst, ob Sie die GPU oder CPU Version von Tensorflow verwenden wollen. Für die Verwendung der GPU-Version fügen Sie &amp;ldquo;-gpu&amp;rdquo; zu TensorFlow hinzu, und ansonsten lassen Sie es einfach so wie es ist.&lt;/p>
+&lt;p>Um eine neue conda Umgebung zu erstellen, können wir ausführen&lt;/p>
+&lt;pre>&lt;code>conda create --name tf-2.0
+&lt;/code>&lt;/pre>
+&lt;p>Wenn Sie bereits vorhaben, einige Pakete mit zu installieren, fügen Sie diese einfach an das Ende an, wie:&lt;/p>
+&lt;pre>&lt;code>conda create -n tf-2.0 tensorflow-gpu pip ipykernel
+&lt;/code>&lt;/pre>
+&lt;p>Ich empfehle die Installation von pip für die Paketinstallation, und ipykernel wird benötigt, um Umgebungen mit Jupyter Notebook zu wechseln&lt;/p>
+&lt;p>Um eine Umgebung mit TensorFlow 1.15 zu installieren, verwenden Sie folgendes:&lt;/p>
+&lt;pre>&lt;code>conda create -n tf-1.15 tensorflow-gpu==1.15 pip ipykernel
+&lt;/code>&lt;/pre>
+&lt;p>Wenn dies erfolgreich durchgeführt wurde, sollten Sie in der Lage sein, drei Umgebungen zu sehen, wenn Sie den folgenden Befehl ausführen:&lt;/p>
+&lt;pre>&lt;code>conda env list
+&lt;/code>&lt;/pre>
+&lt;ol>
+&lt;li>base&lt;/li>
+&lt;li>tf-2.0&lt;/li>
+&lt;li>tf-1.15&lt;/li>
+&lt;/ol>
+&lt;h1 id="starten-sie-jupyter-notebook-und-überprüfen-sie-die-umgebungen-und-erweiterungen">Starten Sie Jupyter Notebook und überprüfen Sie die Umgebungen und Erweiterungen&lt;/h1>
+&lt;pre>&lt;code>jupyter notebook
+&lt;/code>&lt;/pre>
+&lt;p>Wenn Sie Jupyter Notebook in der Basisumgebung starten, sollten Sie eine Registerkarte mit &amp;ldquo;Erweiterungen&amp;rdquo; sowie &amp;ldquo;conda&amp;rdquo;/&amp;ldquo;Umgebungen&amp;rdquo; sehen können. Gehen Sie zu &amp;ldquo;Extensions&amp;rdquo; und aktivieren Sie die Erweiterungen, die Ihnen gefallen, und wenn Sie bereit sind, erstellen Sie ein neues Notebook mit der Schaltfläche &amp;ldquo;new&amp;rdquo;. Hier sollten Sie zwischen Ihrer Basis-, tf-2.0- und tf-1.15-Umgebung wählen können.&lt;/p>
+&lt;p>Achtung! Sie müssen das jupyter notebook immer in der Basis-Umgebung ausführen. Führen Sie conda deactivate aus, um Ihre aktuelle Umgebung zu verlassen und zur Basis-Umgebung zurückzukehren.&lt;/p>
+&lt;p>Wenn Sie weitere Pakete installieren müssen, aktivieren Sie eine Umgebung mit conda activate [NAME], führen Sie Ihre Befehle wie conda install X oder pip install X aus, und verlassen Sie die Umgebung mit conda deactivate.&lt;/p>
+&lt;p>Lassen Sie mich wissen, ob dies für Sie funktioniert hat, es hat mir sehr geholfen und ich wünschte, ich hätte das früher gewusst!&lt;/p></description></item></channel></rss>

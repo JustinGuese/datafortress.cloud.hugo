@@ -1,0 +1,35 @@
+/* Lucid Manager Hugo template */
+
+/* Basic layout  */
+.max-800px {
+    max-width: 960px;
+    margin:auto;
+}
+
+/* Transparent text background in hero */
+.transparent-bg {
+    background: rgba(64, 64, 64, 0.5);
+}
+
+/* Social sharing buttons */
+ul.share-buttons{
+    list-style: none;
+}
+
+ul.share-buttons li{
+    display: inline;
+}
+
+/* Verbatim code */
+code {
+    color: #666;
+}
+
+/* Headings */
+h2 {
+    padding-top: 1em;
+}
+
+content.h3 {
+    margin-top: 1em;
+}

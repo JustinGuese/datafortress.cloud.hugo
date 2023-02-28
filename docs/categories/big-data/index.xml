@@ -1,1 +1,362 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Big Data on Datafortress.cloud</title><link>https://datafortress.cloud/categories/big-data/</link><description>Recent content in Big Data on Datafortress.cloud</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 08 Jun 2022 07:10:46 +0200</lastBuildDate><atom:link href="https://datafortress.cloud/categories/big-data/index.xml" rel="self" type="application/rss+xml"/><item><title>Face Detection using MTCNN</title><link>https://datafortress.cloud/blog/face-detection-using-mtcnn/</link><pubDate>Wed, 08 Jun 2022 07:10:46 +0200</pubDate><guid>https://datafortress.cloud/blog/face-detection-using-mtcnn/</guid><description>What is MTCNN MTCNN is a python (pip) library written by Github user ipacz, which implements the [paper Zhang, Kaipeng et al.</description></item><item><title>How To - Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation</title><link>https://datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/</guid><description>How To: Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation Why should I ditch Ubuntu?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Big Data on Datafortress.cloud</title><link>https://datafortress.cloud/categories/big-data/</link><description>Recent content in Big Data on Datafortress.cloud</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor/><webMaster/><lastBuildDate>Wed, 08 Jun 2022 07:10:46 +0200</lastBuildDate><atom:link href="https://datafortress.cloud/categories/big-data/index.xml" rel="self" type="application/rss+xml"/><item><title>Face Detection using MTCNN</title><link>https://datafortress.cloud/blog/face-detection-using-mtcnn/</link><pubDate>Wed, 08 Jun 2022 07:10:46 +0200</pubDate><author>Justin Guese</author><guid>https://datafortress.cloud/blog/face-detection-using-mtcnn/</guid><description>
+&lt;h1 id="what-is-mtcnn">What is MTCNN&lt;/h1>
+&lt;!-- raw HTML omitted -->
+&lt;p>MTCNN is a python (pip) library written by &lt;a href="https://github.com/ipazc/mtcnn">Github user ipacz&lt;/a>, which implements the [paper Zhang, Kaipeng et al. “Joint Face Detection and Alignment Using Multitask Cascaded Convolutional Networks.” IEEE Signal Processing Letters 23.10 (2016): 1499–1503. Crossref. Web](&lt;a href="https://arxiv.org/abs/1604.02878%5D(https://arxiv.org/abs/1604.02878%20%22https://arxiv.org/abs/1604.02878)">https://arxiv.org/abs/1604.02878%5D(https://arxiv.org/abs/1604.02878%20%22https://arxiv.org/abs/1604.02878)&lt;/a>.&lt;/p>
+&lt;p>In this paper, they propose a deep cascaded multi-task framework using different features of “sub-models” to each boost their correlating strengths.&lt;/p>
+&lt;p>MTCNN performs quite fast on a CPU, even though S3FD is still quicker running on a GPU – but that is a topic for another post.&lt;/p>
+&lt;p>This post uses code from the following two sources, check them out, they are interesting as well:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/" title="https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/">https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.kaggle.com/timesler/fast-mtcnn-detector-55-fps-at-full-resolution" title="https://www.kaggle.com/timesler/fast-mtcnn-detector-55-fps-at-full-resolution">https://www.kaggle.com/timesler/fast-mtcnn-detector-55-fps-at-full-resolution&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;!-- raw HTML omitted -->
+&lt;h1 id="basic-usage-of-mtcnn">Basic usage of MTCNN&lt;/h1>
+&lt;!-- raw HTML omitted -->
+&lt;p>Feel free to access the whole notebook via:&lt;/p>
+&lt;p>&lt;a href="https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up" title="https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up">https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up&lt;/a>&lt;/p>
+&lt;pre>&lt;code>git clone https://github.com/JustinGuese/mtcnn-face-extraction-eyes-mouth-nose-and-speeding-it-up
+&lt;/code>&lt;/pre>
+&lt;p>Luckily MTCNN is available as a pip package, meaning we can easily install it using&lt;/p>
+&lt;pre>&lt;code>pip install mtcnn
+&lt;/code>&lt;/pre>
+&lt;p>Now switching to Python/Jupyter Notebook we can check the installation with an import and quick verification:&lt;/p>
+&lt;pre>&lt;code>import mtcnn
+# print version
+print(mtcnn.__version__)
+&lt;/code>&lt;/pre>
+&lt;p>Afterwards, we are ready to load out test image using the matplotlib &lt;a href="https://bit.ly/2vo3INw">imread function&lt;/a>.&lt;/p>
+&lt;pre>&lt;code>import matplotlib.pyplot as plt
+# load image from file
+filename = &amp;quot;glediston-bastos-ZtmmR9D_2tA-unsplash.webp&amp;quot;
+pixels = plt.imread(filename)
+print(&amp;quot;Shape of image/array:&amp;quot;,pixels.shape)
+imgplot = plt.imshow(pixels)
+plt.show()
+&lt;/code>&lt;/pre>
+&lt;p>Now your output will look a lot like this:&lt;/p>
+&lt;pre>&lt;code>{'box': [1942, 716, 334, 415], 'confidence': 0.9999997615814209, 'keypoints': {'left_eye': (2053, 901), 'right_eye': (2205, 897), 'nose': (2139, 976), 'mouth_left': (2058, 1029), 'mouth_right': (2206, 1023)}}
+{'box': [2084, 396, 37, 46], 'confidence': 0.9999206066131592, 'keypoints': {'left_eye': (2094, 414), 'right_eye': (2112, 414), 'nose': (2102, 426), 'mouth_left': (2095, 432), 'mouth_right': (2112, 431)}}
+{'box': [1980, 381, 44, 59], 'confidence': 0.9998701810836792, 'keypoints': {'left_eye': (1997, 404), 'right_eye': (2019, 407), 'nose': (2010, 417), 'mouth_left': (1995, 425), 'mouth_right': (2015, 427)}}
+{'box': [2039, 395, 39, 46], 'confidence': 0.9993435740470886, 'keypoints': {'left_eye': (2054, 409), 'right_eye': (2071, 415), 'nose': (2058, 422), 'mouth_left': (2048, 425), 'mouth_right': (2065, 431)}}
+&lt;/code>&lt;/pre>
+&lt;p>What does this tell us? A lot of it is self-explanatory, but it basically returns coordinates, or the pixel values of a rectangle where the MTCNN algorithm detected faces. The “box” value above returns the location of the whole face, followed by a “confidence” level.&lt;/p>
+&lt;p>If you want to do more advanced extractions or algorithms, you will have access to other facial landmarks, called “keypoints” as well. Namely the MTCNN model located the eyes, mouth and nose as well!&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h2 id="drawing-a-box-around-faces">Drawing a box around faces&lt;/h2>
+&lt;!-- raw HTML omitted -->
+&lt;p>To demonstrate this even better let us draw a box around the face using matplotlib:&lt;/p>
+&lt;pre>&lt;code># draw an image with detected objects
+def draw_facebox(filename, result_list):
+# load the image
+data = plt.imread(filename)
+# plot the image
+plt.imshow(data)
+# get the context for drawing boxes
+ax = plt.gca()
+# plot each box
+for result in result_list:
+# get coordinates
+x, y, width, height = result['box']
+# create the shape
+rect = plt.Rectangle((x, y), width, height, fill=False, color='green')
+# draw the box
+ax.add_patch(rect)
+# show the plot
+plt.show()
+# filename = 'test1.webp' # filename is defined above, otherwise uncomment
+# load image from file
+# pixels = plt.imread(filename) # defined above, otherwise uncomment
+# detector is defined above, otherwise uncomment
+#detector = mtcnn.MTCNN()
+# detect faces in the image
+faces = detector.detect_faces(pixels)
+# display faces on the original image
+draw_facebox(filename, faces)
+&lt;/code>&lt;/pre>
+&lt;p>&lt;img src="https://datafortress.cloud/images/index-1-150x150.webp" alt="">&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h2 id="displaying-eyes-mouth-and-nose-around-faces">Displaying eyes, mouth, and nose around faces&lt;/h2>
+&lt;!-- raw HTML omitted -->
+&lt;p>Now let us take a look at the aforementioned “keypoints” that the MTCNN model returned.&lt;/p>
+&lt;p>We will now use these to graph the nose, mouth, and eyes as well.&lt;br>
+We will add the following code snippet to our code above:&lt;/p>
+&lt;pre>&lt;code># draw the dots
+for key, value in result['keypoints'].items():
+# create and draw dot
+dot = plt.Circle(value, radius=20, color='orange')
+ax.add_patch(dot)
+&lt;/code>&lt;/pre>
+&lt;p>With the full code from above looking like this:&lt;/p>
+&lt;pre>&lt;code># draw an image with detected objects
+def draw_facebox(filename, result_list):
+# load the image
+data = plt.imread(filename)
+# plot the image
+plt.imshow(data)
+# get the context for drawing boxes
+ax = plt.gca()
+# plot each box
+for result in result_list:
+# get coordinates
+x, y, width, height = result['box']
+# create the shape
+rect = plt.Rectangle((x, y), width, height,fill=False, color='orange')
+# draw the box
+ax.add_patch(rect)
+# draw the dots
+for key, value in result['keypoints'].items():
+# create and draw dot
+dot = plt.Circle(value, radius=20, color='red')
+ax.add_patch(dot)
+# show the plot
+plt.show()
+# filename = 'test1.webp' # filename is defined above, otherwise uncomment
+# load image from file
+# pixels = plt.imread(filename) # defined above, otherwise uncomment
+# detector is defined above, otherwise uncomment
+#detector = mtcnn.MTCNN()
+# detect faces in the image
+faces = detector.detect_faces(pixels)
+# display faces on the original image
+draw_facebox(filename, faces)
+&lt;/code>&lt;/pre>
+&lt;p>&lt;img src="https://datafortress.cloud/images/index2-150x150.webp" alt="">&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h2 id="advanced-mtcnn-speed-it-up-x100">Advanced MTCNN: Speed it up (\~x100)!&lt;/h2>
+&lt;!-- raw HTML omitted -->
+&lt;p>Now let us come to the interesting part. If you are going to process millions of pictures you will need to speed up MTCNN, otherwise, you will either fall asleep or your CPU will burn before it will be done.&lt;/p>
+&lt;p>But what exactly are we talking about? If you are running the above code it will take around one second, meaning we will process around one picture per second. If you are running MTCNN on a GPU and use the sped-up version it will achieve around 60-100 pictures/frames a second. That is a boost of up to &lt;strong>100 times&lt;/strong>!&lt;/p>
+&lt;p>If you are for example going to extract all faces of a movie, where you will extract 10 faces per second (one second of the movie has on average around 24 frames, so every second frame) it will be 10 * 60 (seconds) * 120 (minutes) = 72,000 frames.&lt;/p>
+&lt;p>Meaning if it takes one second to process one frame it will take 72,000 * 1 (seconds) = 72,000s / 60s = 1,200m = &lt;strong>20 hours&lt;/strong>&lt;/p>
+&lt;p>With the sped-up version of MTCNN this task will take 72,000 (frames) / 100 (frames/sec) = 720 seconds = &lt;strong>12 minutes&lt;/strong>!&lt;/p>
+&lt;p>To use MTCNN on a GPU you will need to set up CUDA, cudnn, pytorch and so on. &lt;a href="https://pytorch.org/get-started/locally/">Pytorch wrote a good tutorial about that part&lt;/a>.&lt;/p>
+&lt;p>Once installed we will do the necessary imports as follows:&lt;/p>
+&lt;pre>&lt;code>from facenet_pytorch import MTCNN
+from PIL import Image
+import torch
+from imutils.video import FileVideoStream
+import cv2
+import time
+import glob
+from tqdm.notebook import tqdm
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+filenames = [&amp;quot;glediston-bastos-ZtmmR9D_2tA-unsplash.webp&amp;quot;,&amp;quot;glediston-bastos-ZtmmR9D_2tA-unsplash.webp&amp;quot;]
+&lt;/code>&lt;/pre>
+&lt;p>See how we defined the device in the code above? You will be able to run everything on a CPU as well if you do not want or can set up CUDA.&lt;/p>
+&lt;p>Next, we will define the extractor:&lt;/p>
+&lt;pre>&lt;code># define our extractor
+fast_mtcnn = FastMTCNN(
+stride=4,
+resize=0.5,
+margin=14,
+factor=0.6,
+keep_all=True,
+device=device
+)
+&lt;/code>&lt;/pre>
+&lt;p>In this snippet, we pass along some parameters, where we for example only use half of the image size, which is one of the main impact factors for speeding it up.&lt;/p>
+&lt;p>And finally, let us run the face extraction script:&lt;/p>
+&lt;pre>&lt;code>def run_detection(fast_mtcnn, filenames):
+frames = []
+frames_processed = 0
+faces_detected = 0
+batch_size = 60
+start = time.time()
+for filename in tqdm(filenames):
+v_cap = FileVideoStream(filename).start()
+v_len = int(v_cap.stream.get(cv2.CAP_PROP_FRAME_COUNT))
+for j in range(v_len):
+frame = v_cap.read()
+frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+frames.append(frame)
+if len(frames) &amp;gt;= batch_size or j == v_len - 1:
+faces = fast_mtcnn(frames)
+frames_processed += len(frames)
+faces_detected += len(faces)
+frames = []
+print(
+f'Frames per second: {frames_processed / (time.time() - start):.3f},',
+f'faces detected: {faces_detected}\r',
+end=''
+)
+v_cap.stop()
+run_detection(fast_mtcnn, filenames)
+&lt;/code>&lt;/pre>
+&lt;p>&lt;img src="https://datafortress.cloud/images/teslap100frames.webp" alt="">&lt;/p>
+&lt;p>The above image shows the output of the code running on an NVIDIA Tesla P100, so depending on the source material, GPU and processor you might experience better or worse performance.&lt;/p>
+&lt;!-- raw HTML omitted --></description></item><item><title>How To - Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation</title><link>https://datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>Justin Guese</author><guid>https://datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/</guid><description>
+&lt;h1 id="how-to-ditching-ubuntu-in-favor-of-arch-linux-for-a-deep-learning-workstation">How To: Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation&lt;/h1>
+&lt;h2 id="why-should-i-ditch-ubuntu">Why should I ditch Ubuntu?&lt;/h2>
+&lt;p>Most of you might be using Ubuntu for their workstations, and that is fine for the more inexperienced users. One of the issues I had with Ubuntu and the Tensorflow/CUDA though, has been that handling the different drivers and versions of CUDA, cudnn, TensorFlow, and so on has been quite a struggle. I’m not sure about you, but once I had a working Tensorflow 1.15 or 2.0 environment, I usually did not touch it anymore being scared to mess up this holy configuration.&lt;/p>
+&lt;p>Working with different programs it would be nice to have a way of switching between the two most used TensorFlow versions of 1.15 and 2.0 like you can do with Google Colab in a single command, but installing a different TensorFlow version usually messed up my system again.&lt;/p>
+&lt;p>Additionally, Arch has always been on my To-Do list, as it is the most “barebone” Linux distro you can get, meaning you are working way closer on the hardware compared to “higher abstractions” like Ubuntu. In their own words, Ubuntu is built to “work out of the box and make the installation process as easy as possible for new users”, whilst the motto of Arch Linux is “customize everything”.
+Being way closer to the hardware Arch is insanely faster compared to Ubuntu (and miles ahead of Windows), for the cost of more Terminal usage.&lt;/p>
+&lt;p>When I have been using Arch in the past weeks, RAM usage usually halved compared to Ubuntu, and installing Machine Learning packages is a breeze. I can have both TensorFlow 1.15 and 2.0 working together, switching the versions with Anaconda environments. Also, the system works quite stable, as I am using the LTS (long term support) kernels of Linux, and usually updates to the famous AUR (user-made packages in Arch) are coming out a month ahead of the Debian (Ubuntu) packages.&lt;/p>
+&lt;p>All in all, I can only recommend setting up an Arch Linux Deep Learning station as it is:&lt;/p>
+&lt;ol>
+&lt;li>Faster, like packages will install super fast, deep learning is supercharged, &amp;hellip;&lt;/li>
+&lt;li>More stable&lt;/li>
+&lt;li>Easier to switch between TensorFlow versions
+compared to Ubuntu.&lt;/li>
+&lt;/ol>
+&lt;p>I will split the how-to in two parts, the first one being “How to I install Arch Linux” and the second one being “How to install the Deep Learning workstation packages”.&lt;/p>
+&lt;p>For the general &lt;a href="//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/">“How to install Arch Linux”, head over to this article&lt;/a>.&lt;/p>
+&lt;p>If Arch is too complex for now, you could try out &lt;a href="//manjaro.org/">Manjaro&lt;/a>, which is a user-friendly version of Arch, even though I can not guarantee that all packages will work the same, as they are slightly different. All in all it should work the same though.&lt;/p>
+&lt;p>I was thinking about creating a ready to install Image (iso or img), if enough people are interested leave a comment below or message me!&lt;/p>
+&lt;h2 id="installing-the-deep-learning-tensorflow-cuda-cudnn-anaconda-setup-on-a-fresh-arch-linux-installation">Installing the Deep Learning (TensorFlow, CUDA, CUDNN, Anaconda) setup on a fresh Arch Linux installation&lt;/h2>
+&lt;p>Once you are &lt;a href="//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/">done with the Arch installation (phew!)&lt;/a>, let us first change some settings such that our system works more stable.&lt;/p>
+&lt;h3 id="1-switching-to-the-fastest-mirrors">1. Switching to the fastest mirrors&lt;/h3>
+&lt;p>Software is downloaded from so-called “mirrors”, which are servers containing all the Arch libraries. If not done automatically, it could happen that your servers are not optimized yet. Therefore, we are going to install a small tool that finds and saves the fastest servers called “reflector”&lt;/p>
+&lt;p>Install reflector using&lt;/p>
+&lt;blockquote>
+&lt;p>sudo pacman -S reflector&lt;/p>
+&lt;/blockquote>
+&lt;p>Find and download the best servers&lt;/p>
+&lt;blockquote>
+&lt;p>reflector &amp;ndash;verbose -l 20 -n 20 &amp;ndash;sort rate &amp;ndash;save /etc/pacman.d/mirrorlist&lt;/p>
+&lt;/blockquote>
+&lt;p>Check the output if it makes sense, e.g. if the domains are close to your location. If not, you could add the country tag to get more precise results, e.g. for Germany and Austria:&lt;/p>
+&lt;blockquote>
+&lt;p>reflector -c “AT,DE” &amp;ndash;verbose -l 20 -n 20 &amp;ndash;sort rate &amp;ndash;save /etc/pacman.d/mirrorlist&lt;/p>
+&lt;/blockquote>
+&lt;p>Update your installation&lt;/p>
+&lt;blockquote>
+&lt;p>sudo pacman -Syyu&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="2-changing-the-desktop-environment">2. Changing the Desktop Environment&lt;/h3>
+&lt;p>If you are using Manjaro or chose the “Gnome” Desktop environment as you know it from Ubuntu, it might be worth it to think about changing it as Gnome is known to eat more RAM than Chrome, and we surely need RAM in our Deep Learning setup.&lt;/p>
+&lt;p>If you like Gnome, feel free to skip this step. Otherwise, I can recommend the Xfce desktop as it is a good combination of lightweight and full of features.&lt;/p>
+&lt;p>Download Xfce&lt;/p>
+&lt;blockquote>
+&lt;p>sudo pacman -S xfce4 xfce4-goodies lxdm&lt;/p>
+&lt;/blockquote>
+&lt;p>Lxdm is a display manager that allows you to use multiple desktops.&lt;/p>
+&lt;p>Log out of your current session and press Alt + F2 (or Alt + F3 if it does not work) to get a terminal. First disable Gnome and afterward “activate” Xfce:&lt;/p>
+&lt;p>Deactivate and uninstall gnome:&lt;/p>
+&lt;blockquote>
+&lt;p>sudo systemctl disable gdm &lt;br>
+sudo pacman -R gnome gnome-extras&lt;/p>
+&lt;/blockquote>
+&lt;p>Activate Xfce&lt;/p>
+&lt;blockquote>
+&lt;p>sudo systemctl enable lxdm &lt;br>
+sudo systemctl start lxdm&lt;/p>
+&lt;/blockquote>
+&lt;p>If the new Xfce desktop does open just login and explore, if not try to reboot (sudo reboot). If that does not help proceed to crying and rolling on the floor, and send me a message or comment afterward.&lt;/p>
+&lt;h3 id="3-installing-the-lts-long-term-support-linux-kernels-for-better-stability">3. Installing the LTS (long term support) Linux kernels for better stability&lt;/h3>
+&lt;p>Arch is famous for being really close to the current Linux kernels, which is good if you always want the newest packages and Linux features, but a bad idea if you are building a Deep Learning Workstation.&lt;/p>
+&lt;p>That is why I switched to the LTS kernels, which are basically kernels that receive more support and are more stable than the newer versions of the Linux Kernel.&lt;/p>
+&lt;p>Luckily switching kernels is super easy in Arch. First we will download the kernels, and afterward tell our boot manager which kernel to choose.&lt;/p>
+&lt;p>First download the LTS kernels:&lt;/p>
+&lt;blockquote>
+&lt;p>sudo pacman -S linux-lts linux-lts-headers&lt;/p>
+&lt;/blockquote>
+&lt;p>Have a look at your current kernel versions:&lt;/p>
+&lt;blockquote>
+&lt;p>ls -lsha /boot&lt;/p>
+&lt;/blockquote>
+&lt;p>One kernel should be named vmlinuz-linux.img and initramfs-linux.img (your current versions) and the LTS ones the same with -lts at the end.&lt;/p>
+&lt;p>If you are seeing two kernels you can now proceed to delete the old kernels:&lt;/p>
+&lt;blockquote>
+&lt;p>sudo pacman -R linux&lt;/p>
+&lt;/blockquote>
+&lt;p>Now a more advanced part is that you will need to tell your bootloader which kernel to choose. The question is which bootloader you are using, but in most cases it is Grub. If you followed my Arch installation tutorial your bootloader is systemd-boot.&lt;/p>
+&lt;p>My recommendation is try the Grub instructions, and if that does not work proceed to the others.&lt;/p>
+&lt;h4 id="changing-the-grub-bootloader-for-the-lts-linux-kernels">Changing the Grub bootloader for the LTS linux kernels&lt;/h4>
+&lt;blockquote>
+&lt;p>grub-mkconfig -o /boot/grub/grub.cfg&lt;/p>
+&lt;/blockquote>
+&lt;p>If you see an error proceed to the next bootloader, otherwise reboot (sudo reboot).&lt;/p>
+&lt;h4 id="changing-the-syslinux-bootloader-for-the-lts-linux-kernels">Changing the syslinux bootloader for the LTS linux kernels&lt;/h4>
+&lt;p>Edit the config file:&lt;/p>
+&lt;blockquote>
+&lt;p>sudo nano /boot/syslinux/syslinux.cfg&lt;/p>
+&lt;/blockquote>
+&lt;p>Simply add “-lts” to the vmlinuz-linux.img and initramfs-linux.img, such that they are vmlinuz-linux-lts.img and initramfs-linux-lts.img&lt;/p>
+&lt;h4 id="changing-the-systemd-boot-bootloader-for-the-lts-linux-kernels">Changing the systemd-boot bootloader for the LTS linux kernels&lt;/h4>
+&lt;p>If you are coming from my Arch installation guide, this is your bootloader.&lt;/p>
+&lt;p>Edit the config file:&lt;/p>
+&lt;blockquote>
+&lt;p>sudo nano /boot/loader/entries/arch.conf&lt;/p>
+&lt;/blockquote>
+&lt;p>Simply add “-lts” to the vmlinuz-linux.img and initramfs-linux.img, such that they are vmlinuz-linux-lts.img and initramfs-linux-lts.img&lt;/p>
+&lt;h3 id="4-installing-yay-an-easy-way-to-install-aur-packages">4. Installing yay, an easy way to install AUR packages&lt;/h3>
+&lt;p>You should prefer to use the ultra-fast pacman to install most packages, but an amazing thing about Arch is that users create millions of custom packages that are super easy to install. You can basically find any program you can think of in this repo.&lt;/p>
+&lt;p>Install git SVC&lt;/p>
+&lt;blockquote>
+&lt;p>sudo pacman -S git &lt;br>
+mkdir ~/tmp &lt;br>
+git clone &lt;a href="https://aur.archlinux.org/yay-git.git">https://aur.archlinux.org/yay-git.git&lt;/a> ~/tmp/yay &lt;br>
+cd ~/tmp/yay &lt;br>
+makepkg -si&lt;/p>
+&lt;/blockquote>
+&lt;p>Now you can browse all the nice AUR packages in &lt;a href="https://aur.archlinux.org/packages/">https://aur.archlinux.org/packages/&lt;/a> or just go for it and type:&lt;/p>
+&lt;blockquote>
+&lt;p>yay -S [PACKAGE]&lt;/p>
+&lt;/blockquote>
+&lt;p>To install it.&lt;/p>
+&lt;h3 id="5-finally-the-real-cuda-cudnn-anaconda-installation-running-both-tensorflow-115-and-20">5. Finally, the real cuda, cudnn, anaconda installation running both TensorFlow 1.15 and 2.0&lt;/h3>
+&lt;p>Install Nvidia drivers, cuda, cudnn with a simple command&lt;/p>
+&lt;blockquote>
+&lt;p>sudo pacman -S nvidia nvidia-utils cuda cudnn&lt;/p>
+&lt;/blockquote>
+&lt;p>This takes some time, so grab a coffee or proceed with the next steps&lt;/p>
+&lt;p>Download Anaconda, I like Miniconda:&lt;/p>
+&lt;blockquote>
+&lt;p>wget &lt;a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh">https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh&lt;/a> ~/&lt;/p>
+&lt;/blockquote>
+&lt;p>Make it executable and install&lt;/p>
+&lt;blockquote>
+&lt;p>cd ~/ &lt;br>
+chmod +x ./Miniconda*.sh &lt;br>
+./Miniconda*.sh&lt;/p>
+&lt;/blockquote>
+&lt;p>Just leave everything as default.&lt;/p>
+&lt;blockquote>
+&lt;p>source ./bash_profile&lt;/p>
+&lt;/blockquote>
+&lt;p>Reboot your system&lt;/p>
+&lt;blockquote>
+&lt;p>sudo reboot&lt;/p>
+&lt;/blockquote>
+&lt;p>Install tensorflow&lt;/p>
+&lt;p>Now is the time to decide between TensorFlow for CPU or GPU. I will continue with the GPU option, but if you want to run the CPU version just remove the “-gpu” from the package name.&lt;/p>
+&lt;h5 id="create-an-anaconda-environment-for-tensorflow-20">Create an anaconda environment for Tensorflow 2.0&lt;/h5>
+&lt;blockquote>
+&lt;p>conda create &amp;ndash;name tf2.0 &lt;br>
+conda activate tf2.0 &lt;br>
+conda install pip &lt;br>
+conda install tensorflow-gpu pandas numpy&lt;/p>
+&lt;/blockquote>
+&lt;p>Done! Now check the result with:&lt;/p>
+&lt;blockquote>
+&lt;p>python &lt;br>
+from tensorflow.python.client import device_lib &lt;br>
+device_lib.list_local_devices()&lt;/p>
+&lt;/blockquote>
+&lt;p>If the result shows a device name like this you are done!&lt;/p>
+&lt;p>2018-05-01 05:25:25.929575: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties:
+name: GeForce GTX 3080 10GB major: …&lt;/p>
+&lt;h5 id="create-an-anaconda-environment-for-tensorflow-115">Create an anaconda environment for Tensorflow 1.15&lt;/h5>
+&lt;blockquote>
+&lt;p>conda deactivate &lt;br>
+conda create &amp;ndash;name tf1.15 &lt;br>
+conda activate tf1.15 &lt;br>
+conda install pip python==3.7 &lt;br>
+conda install tensorflow-gpu==1.15&lt;/p>
+&lt;/blockquote>
+&lt;p>And again check if everything works and your gpu is recognized:&lt;/p>
+&lt;blockquote>
+&lt;p>python &lt;br>
+from tensorflow.python.client import device_lib &lt;br>
+device_lib.list_local_devices()&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="6-switching-between-tensorflow-115-and-tensorflow-20-on-one-device">6. Switching between TensorFlow 1.15 and TensorFlow 2.0 on one device!&lt;/h3>
+&lt;p>Just a dream coming true in my opinion, just select the 1.15 version with&lt;/p>
+&lt;blockquote>
+&lt;p>conda activate tf1.15&lt;/p>
+&lt;/blockquote>
+&lt;p>And the TensorFlow 2.0 version with&lt;/p>
+&lt;blockquote>
+&lt;p>conda activate tf2.0&lt;/p>
+&lt;/blockquote></description></item></channel></rss>
