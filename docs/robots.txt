@@ -1,4 +1,1 @@
-User-Agent: *
-Sitemap: https://datafortress.cloud//sitemap.xml
-Disallow: https://datafortress.cloud/pdf/$
-
+User-agent: *
