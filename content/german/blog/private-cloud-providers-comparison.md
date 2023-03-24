@@ -68,7 +68,7 @@ Ein weiterer wichtiger Vorteil von DataFortress.der privaten Cloud ist die Konze
 
 Insgesamt, DataFortress.Die private Cloud von Cloud ist eine gute Wahl für Unternehmen, die Wert auf Sicherheit legen., Datenschutz, und verwaltete Dienste. Wenn Sie nach einer privaten Cloud-Lösung suchen, die Ihnen hilft, Ihre Compliance-Anforderungen zu erfüllen und Ihre sensiblen Daten zu schützen, DataFortress.Cloud ist definitiv eine Überlegung wert.
 
-[Wenn Sie an weiteren Einzelheiten interessiert sind, nehmen Sie Kontakt mit uns auf](/de/contact)
+[Wenn Sie an weiteren Einzelheiten interessiert sind, nehmen Sie Kontakt mit uns auf](/Kontakt)
 
 # Zusammenfassung
 

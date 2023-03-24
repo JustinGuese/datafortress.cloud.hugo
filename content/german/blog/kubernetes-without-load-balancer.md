@@ -101,7 +101,7 @@ spez:
 
 Wenden Sie es mit `kubectl apply -f testdf-ingress.yaml`, und verweisen Sie die von Ihnen verwendete Domäne auf den von Ihrem Knoten verwendeten Load Balancer. Bald sollten Sie sehen, wie er in Ihrem Cluster hochfährt, und sehen Sie Ihren Dienst in der Domäne, die Sie in der Ingress. 
 Zur Fehlersuche, Schauen Sie sich den nginx-Pod oder die Zertifikate an. 
-Haben Sie Probleme? [Kontaktieren Sie uns](/de/contact) und wir werden Ihnen helfen!
+Haben Sie Probleme? [Kontaktieren Sie uns](/Kontakt) und wir werden Ihnen helfen!
 
 Mit dieser Lösung können Sie zwar Geld bei Ihrer Cloud-Rechnung sparen, Es ist wichtig zu beachten, dass der Verzicht auf Load Balancer eine Reihe von Herausforderungen mit sich bringen kann. Zum Beispiel, wenn ein Knoten ausfällt, der Datenverkehr wird nicht automatisch an einen gesunden Server weitergeleitet, was zu Ausfallzeiten für Ihren Dienst führt. In vielen Fällen, Ein Load Balancer ist immer noch die beste Option, da er eine automatische Ausfallsicherung bietet und sicherstellt, dass Ihre Dienste für Ihre Kunden verfügbar bleiben.. Es liegt an Ihnen, die Kosteneinsparungen gegen die potenziellen Risiken abzuwägen und eine fundierte Entscheidung für die beste Lösung für Ihre Bedürfnisse zu treffen.
 
@@ -127,4 +127,4 @@ Der Einsatz von Lastverteilern sorgt für die Stabilität eines Clusters., es is
 
 ## Fazit: Ist es das wert?
 
-Zusammenfassend, Es gibt mehrere Möglichkeiten, Kosten in Ihrem Kubernetes-Cluster zu sparen, von der Verwendung von nur einem Load Balancer mit Nginx Ingress zur Verwendung von 0 Load Balancern und dem Verlassen auf Nodeports. Ein Load Balancer hat zwar seine Vorteile in Bezug auf die Stabilität und die Sicherstellung der Verkehrslenkung, es gibt Alternativen, die zur Kostensenkung beitragen können. Wenn Sie immer noch unsicher sind, wie Sie am besten Geld in Ihrem Kubernetes-Cluster sparen können, [Erwägen Sie die Nutzung der kostengünstigen, gemeinsam genutzten Kubernetes-Cluster, die von DataFortress angeboten werden..Wolke, oder lassen Sie sich bei der Verwaltung Ihrer Clusterkosten von uns unterstützen](/de/contact).
+Zusammenfassend, Es gibt mehrere Möglichkeiten, Kosten in Ihrem Kubernetes-Cluster zu sparen, von der Verwendung von nur einem Load Balancer mit Nginx Ingress zur Verwendung von 0 Load Balancern und dem Verlassen auf Nodeports. Ein Load Balancer hat zwar seine Vorteile in Bezug auf die Stabilität und die Sicherstellung der Verkehrslenkung, es gibt Alternativen, die zur Kostensenkung beitragen können. Wenn Sie immer noch unsicher sind, wie Sie am besten Geld in Ihrem Kubernetes-Cluster sparen können, [Erwägen Sie die Nutzung der kostengünstigen, gemeinsam genutzten Kubernetes-Cluster, die von DataFortress angeboten werden..Wolke, oder lassen Sie sich bei der Verwaltung Ihrer Clusterkosten von uns unterstützen](/Kontakt).
