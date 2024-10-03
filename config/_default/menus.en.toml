@@ -1,0 +1,244 @@
+# main menu
+[[main]]
+name = "Home"
+url = ""
+weight = 1
+
+[[main]]
+weight = 2
+name = "Portfolio"
+hasChildren = true
+
+[[main]]
+parent = "Portfolio"
+name = "All"
+url = "/portfolio"
+weight = 1
+
+[[main]]
+parent = "Portfolio"
+name = "VW / HPE: Solution Architecture"
+url = "/portfolio/vw-hpe-solution-architecture"
+weight = 2
+
+[[main]]
+parent = "Portfolio"
+name = "Google TimesFM – Opensource contribution"
+url = "/portfolio/google-timesfm"
+weight = 3
+
+[[main]]
+parent = "Portfolio"
+name = "Atruvia / Sparkasse / Volksbank – Data Warehouse"
+url = "/portfolio/atruvia-sparkasse-volksbank-data-warehouse"
+weight = 4
+
+[[main]]
+parent = "Portfolio"
+name = "BMW / HPE: Worldwide backup solution for VMs"
+url = "/portfolio/bmw-worldwide-backup-solution"
+weight = 5
+
+[[main]]
+parent = "Portfolio"
+name = "Clinic Buchinger Wilhelmi - Medical Data Warehouse"
+url = "/portfolio/clinic-buchinger-wilhelmi-data-warehouse"
+weight = 6
+
+[[main]]
+parent = "Portfolio"
+name = "Vios Investments – Trading Infrastructure"
+url = "/portfolio/vios-investments-trading-infrastructure"
+weight = 7
+
+
+[[main]]
+weight = 6
+name = "Products"
+hasChildren = true
+[main.params]
+isMenuLarge = true
+
+[[main]]
+parent = "Products"
+name = "DokuChat"
+pre = "<i class='dropdown-icon fas fa-users'></i>"
+post = "<small class='dropdown-subtitle'>AI SaaS application to allow users to chat with their emails and documents</small>"
+url = "/products/dokuchat"
+weight = 1
+
+[[main]]
+parent = "Products"
+name = "Help Desk"
+pre = "<i class='dropdown-icon fas fa-dice-d6'></i>"
+post = "<small class='dropdown-subtitle'>Software to deliver great customer support.</small>"
+url = "/products/product-2"
+weight = 2
+
+[[main]]
+parent = "Products"
+name = "Workplace"
+pre = "<i class='dropdown-icon fas fa-laptop-house'></i>"
+post = "<small class='dropdown-subtitle'>Application built to improve productivity.</small>"
+url = "/products/product-3"
+weight = 3
+
+[[main]]
+parent = "Products"
+name = "Analytics"
+pre = "<i class='dropdown-icon fas fa-chart-bar'></i>"
+post = "<small class='dropdown-subtitle'>Create custom reports from any data set.</small>"
+url = "/products/product-4"
+weight = 4
+
+[[main]]
+parent = "Products"
+name = "View All Product"
+pre = "<i class='dropdown-icon text-primary fas fa-arrow-right'></i>"
+url = "/products"
+weight = 5
+
+[[main]]
+weight = 13
+name = "Blog"
+hasChildren = true
+
+[[main]]
+parent = "Blog"
+name = "Blog Posts"
+url = "/blog"
+weight = 3
+
+[[main]]
+parent = "Blog"
+name = "Blog Details"
+url = "/blog/post-1"
+weight = 8
+
+[[main]]
+parent = "Blog"
+name = "Author"
+url = "/author"
+weight = 11
+
+[[main]]
+parent = "Blog"
+name = "Author Details"
+url = "/author/awab-husameldin"
+weight = 12
+
+[[main]]
+weight = 15
+name = "Pages"
+hasChildren = true
+
+[[main]]
+parent = "Pages"
+name = "Pricing"
+url = "/pricing"
+weight = 1
+
+[[main]]
+parent = "Pages"
+name = "Case Studies"
+url = "/case-studies"
+weight = 4
+
+[[main]]
+parent = "Pages"
+name = "Case Studies Details"
+url = "/case-studies/case-1"
+weight = 5
+
+[[main]]
+parent = "Pages"
+name = "Contact"
+url = "/contact"
+weight = 10
+
+[[main]]
+parent = "Pages"
+name = "FAQ"
+url = "/faq"
+weight = 16
+
+[[main]]
+parent = "Pages"
+name = "Privacy Policy"
+url = "/privacy-policy"
+weight = 20
+
+[[main]]
+parent = "Pages"
+name = "Terms & Conditions"
+url = "/terms-conditions"
+weight = 24
+
+[[main]]
+name = "Contact"
+url = "/contact"
+weight = 30
+
+# footer menu left
+[[footer_left]]
+name = "About Us"
+url = "/about"
+weight = 1
+
+[[footer_left]]
+name = "Team"
+url = "/team"
+weight = 2
+
+[[footer_left]]
+name = "How It Works"
+url = "/how-it-works"
+weight = 3
+
+[[footer_left]]
+name = "Career"
+url = "/career"
+weight = 4
+
+
+# footer menu middle
+[[footer_middle]]
+name = "CRM"
+url = "/products/product-1"
+weight = 1
+
+[[footer_middle]]
+name = "Help Desk"
+url = "/products/product-2"
+weight = 2
+
+[[footer_middle]]
+name = "Workplace"
+url = "/products/product-3"
+weight = 3
+
+[[footer_middle]]
+name = "Analytics"
+url = "/products/product-4"
+weight = 4
+
+# footer menu right
+[[footer_right]]
+name = "FAQ"
+url = "/faq"
+weight = 1
+
+[[footer_right]]
+name = "Contact"
+url = "/contact"
+weight = 2
+
+[[footer_right]]
+name = "Privacy Policy"
+url = "/privacy-policy"
+weight = 3
+
+[[footer_right]]
+name = "Terms & Conditions"
+url = "/terms-conditions"
+weight = 4

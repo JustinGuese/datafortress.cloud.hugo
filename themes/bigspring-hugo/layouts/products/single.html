@@ -1,0 +1,100 @@
+{{define "main"}}
+
+{{with .Params.banner}}
+<section class="section {{with .background_class}}{{.}} {{end}}">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-5 col-md-10 mb-5 mb-lg-0">
+        <div class="pe-0 pe-lg-5 text-center text-lg-start">
+          <h1 class="section-title h2">{{ .title | markdownify }}</h1>
+          <p class="mb-5">{{ .content | markdownify }}</p>
+          {{ if .button.enable }}
+          {{ with .button }}
+          <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn btn-outline-primary">{{ .label }}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-lg-7 text-center">
+        {{ partial "image" (dict "Src" .image "Alt" .Title "Class" "rounded-2 shadow" ) }}
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+
+<!-- about_this_product -->
+{{with .Params.about_this_product}}
+<section class="section {{with .background_class}}{{.}} {{end}}">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-7 mb-4 text-center mx-auto">
+        <h2 class="section-title h3">{{ .title | markdownify }}</h2>
+        <div class="content mb-5">
+          {{.content | markdownify}}
+        </div>
+      </div>
+    </div>
+    <div class="row gy-5">
+      {{range .features}}
+      <div class="col-lg-6">
+        <div class="px-5 px-lg-6 rounded-3">
+          <div class="display-3 mb-4">
+            <i class="{{.icon}} text-primary"></i>
+          </div>
+
+          <h2 class="h4 mb-3">{{.title | markdownify}}</h2>
+          <div class="content">{{.content | markdownify}}</div>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</section>
+{{end}}
+<!-- /about_this_product -->
+
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg">
+        <div class="content border-top pt-5 mt-5">
+          {{.Content}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- call to action -->
+{{with site.GetPage "portfolio"}}
+{{ if .Params.call_to_action.enable }}
+{{ with .Params.call_to_action }}
+<section class="section pt-0">
+  <div class="container">
+    <div class="row g-6 align-items-center justify-content-center text-md-left">
+      <div class="col-lg-4 col-md-5 mb-4 mb-md-0 text-center">
+        {{ partial "image" (dict "Src" .image "Alt" "call to action image" "Class" "img-fluid w-100") }}
+      </div>
+      <div class="col-lg-4">
+        <div class="ps-0 ps-lg-5 text-center text-lg-start">
+          <h2 class="section-title h3">{{ .title | markdownify }}</h2>
+          {{with .content }}<p class="mb-4">{{ . | markdownify }}</p>{{ end }}
+          {{ if .button.enable }}
+          {{ with .button }}
+          <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}
+<!-- /call to action -->
+
+{{end}}
