@@ -13,7 +13,7 @@ banner:
   content : "Our AI SaaS application to allow users to chat with their emails and documents."
   button:
     enable : true
-    label : "Try for Free"
+    label : "Try it for Free"
     link : "https://doku-chat.de/"
   background_class: "bg-light"
 

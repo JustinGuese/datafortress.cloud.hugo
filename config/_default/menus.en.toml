@@ -69,10 +69,10 @@ weight = 1
 
 [[main]]
 parent = "Products"
-name = "Help Desk"
-pre = "<i class='dropdown-icon fas fa-dice-d6'></i>"
-post = "<small class='dropdown-subtitle'>Software to deliver great customer support.</small>"
-url = "/products/product-2"
+name = "Myopiagraph"
+pre = "<i class='dropdown-icon fas fa-eye'></i>"
+post = "<small class='dropdown-subtitle'>Myopiagraph is a healthcare software for Myopia management</small>"
+url = "/products/myopiagraph"
 weight = 2
 
 [[main]]
