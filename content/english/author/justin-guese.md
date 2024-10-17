@@ -4,13 +4,13 @@ image: "images/justin-guese-bg-removed.png"
 social:
   - icon : "fab fa-facebook"
     name: "facebook"
-    link : "#!"
+    link : "https://www.facebook.com/guese.justin/"
   - icon : "fab fa-linkedin-in"
     name: "linkedin"
-    link : "#!"
-  - icon : "fab fa-twitter"
-    name: "twitter"
-    link : "#!"
+    link : "https://www.linkedin.com/in/justin-guese/"
+  - icon : "fab fa-github"
+    name: "github"
+    link : "https://github.com/JustinGuese"
 ---
 
 Justin Güse
