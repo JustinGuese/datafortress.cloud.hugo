@@ -58,7 +58,7 @@ languageName = "ES"
 languageCode = "es-ES"
 contentDir = "content/spanish"
 weight = 1
-[fr.params]
+[es.params]
 ########### footer content ##########
 footer_menu_left = "Empresa"
 footer_menu_middle = "Productos"
@@ -71,7 +71,7 @@ languageName = "HI"
 languageCode = "hi-IN"
 contentDir = "content/hindi"
 weight = 1
-[fr.params]
+[hi.params]
 ########### footer content ##########
 footer_menu_left = "कंपनी"
 footer_menu_middle = "उत्पाद"
