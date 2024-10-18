@@ -1,54 +1,54 @@
 ---
-title: "How can I ensure the security and compliance of my data in the cloud"
-bg_image: "images/blog/cloud.jpg"
-date: 2023-02-21T01:42:46+02:00
-author: "Justin Guese"
-description: "This article explores the key concepts of cloud security and compliance, including the types of threats that can affect cloud data, different security models, and the regulations that businesses must comply with.."
-image: "images/blog/cloud.jpg"
+author: जस्टिन गुएसे
+bg_image: images/blog/cloud.jpg
 categories:
-- Private cloud
-tags: ["private cloud", "comparison"]
+- निजी क्लाउड
+date: '2023-02-21T01:42:46+02:00'
+description: यह लेख क्लाउड सुरक्षा और अनुपालन की प्रमुख अवधारणाओं की खोज करता है,
+  जिसमें क्लाउड डेटा को प्रभावित करने वाली खतरों की प्रजातियाँ, विभिन्न सुरक्षा मॉडल
+  और वे नियम शामिल हैं जिनका व्यवसायों को पालन करना होता है।
+image: images/blog/cloud.jpg
+tags:
+- private cloud
+- comparison
+title: कैसे मैं अपने क्लाउड डेटा की सुरक्षा और अनुपालन सुनिश्चित कर सकता हूँ?
 type: post
+
 ---
+क्लाउड के कई लाभ हैं, लेकिन डेटा सुरक्षा और अनुपालन चिंता का विषय हो सकता है। यह लेख क्लाउड सुरक्षा और अनुपालन की मूलभूत अवधारणाओं जैसे क्लाउड डेटा को प्रभावित करने वाली विभिन्न धमकियाँ, विभिन्न सुरक्षा मॉडल और व्यवसायों द्वारा पालन की जाने वाली नियम-पत्रिकाओं में तल्लीन होता है। अपने डेटा को सुरक्षित करने और अनुपालन सुनिश्चित करने के लिए सर्वोत्तम अभ्यासों की खोज करें, साथ ही क्लाउड सुरक्षा में निरंतर निगरानी और सुधार का महत्व भी देखें।
 
+## क्लाउड डेटा सुरक्षा और अनुपालन का अवलोकन
 
-The cloud has many benefits, but data security and compliance can be a concern. This article delves into the fundamental concepts of cloud security and compliance, such as the various threats that can affect cloud data, different security models, and the regulations that businesses must follow. Discover the best practices for securing your data and ensuring compliance, as well as the significance of continuous monitoring and improvement in cloud security.
+क्लाउड कंप्यूटिंग ने व्यवसायों के डेटा संग्रहीत करने, एक्सेस करने और प्रबंधित करने के तरीके को बदल दिया है। हालांकि, इससे डेटा सुरक्षा और अनुपालन के मामले में नई चुनौतियाँ भी पैदा होती हैं। इस खंड में, हम क्लाउड सुरक्षा अवधारणाओं और नियम-पत्रिकाओं का अवलोकन प्रदान करेंगे, साथ ही यह भी समझाएंगे कि क्लाउड सुरक्षा पारंपरिक आईटी सुरक्षा से कैसे अलग है।
 
-## An Overview of Cloud Data Security and Compliance
+अनधिकृत पहुँच, डेटा उल्लंघन और साइबर हमले केवल कुछ ही ऐसी धमकियाँ हैं जिनसे क्लाउड डेटा का सामना हो सकता है। इन जोखिमों को कम करने के लिए, इंफ्रास्ट्रक्चर एज़ ए सर्विस (आईएएस), प्लेटफ़ॉर्म एज़ ए सर्विस (पीएएस), और सॉफ़्टवेयर एज़ ए सर्विस (एसएएएस) जैसे विभिन्न क्लाउड सुरक्षा मॉडल विकसित किए गए हैं। ये मॉडल डेटा सुरक्षा के लिए अलग-अलग स्तर का नियंत्रण और ज़िम्मेदारी प्रदान करते हैं, और व्यवसायों को प्रत्येक के निहितार्थों को समझना आवश्यक है।
 
-Cloud computing has transformed the way businesses store, access, and manage data. However, it also introduces new challenges in terms of data security and compliance. In this section, we will provide an overview of cloud security concepts and regulations, as well as explain how cloud security differs from traditional IT security.
+क्लाउड में संवेदनशील डेटा की सुरक्षा सुनिश्चित करने के लिए अनुपालन नियम-पत्रिकाएँ महत्वपूर्ण हैं। सामान्य डेटा सुरक्षा विनियम (जीडीपीआर), स्वास्थ्य बीमा पोर्टेबिलिटी और जवाबदेही अधिनियम (एचआईपीएए), और पेमेंट कार्ड उद्योग डेटा सुरक्षा मानक (पीसीआई डीएसएस) प्रमुख नियम-पत्रिकाएँ हैं। प्रत्येक नियम-पत्रिका में विशिष्ट आवश्यकताएँ हैं जिन्हें पूरा किया जाना चाहिए, और ऐसा न करने से भारी जुर्माना और कानूनी परिणाम हो सकते हैं।
 
-Unauthorized access, data breaches, and cyber-attacks are just some of the threats that cloud data can face. To mitigate these risks, various cloud security models such as Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) have been developed (SaaS). These models provide varying degrees of control and responsibility for data security, and businesses must understand the implications of each.
+साझा ज़िम्मेदारी मॉडल क्लाउड सुरक्षा को पारंपरिक आईटी सुरक्षा से अलग करता है। इस मॉडल में क्लाउड प्रदाता अंतर्निहित बुनियादी ढाँचे की सुरक्षा के लिए ज़िम्मेदार होता है, जबकि ग्राहक क्लाउड में संग्रहीत डेटा और अनुप्रयोगों की सुरक्षा के लिए ज़िम्मेदार होता है। इसका मतलब है कि व्यवसायों को अपने डेटा की सुरक्षा सुनिश्चित करने के लिए उपयुक्त सुरक्षा नियंत्रण और निगरानी लागू करनी चाहिए।
 
-Compliance regulations are critical in ensuring the security of sensitive data in the cloud. The General Data Protection Regulation (GDPR), the Health Insurance Portability and Accountability Act (HIPAA), and the Payment Card Industry Data Security Standard are all major regulations (PCI DSS). Each regulation has specific requirements that must be met, and failure to do so can result in significant fines and legal ramifications.
+## जोखिमों और खतरों को पहचानना
 
-The shared responsibility model distinguishes cloud security from traditional IT security. The cloud provider is responsible for securing the underlying infrastructure in this model, while the customer is responsible for securing the data and applications stored in the cloud. This means that businesses must implement appropriate security controls and monitoring in order to ensure the security of their data.
+क्लाउड डेटा सुरक्षा का सबसे कठिन पहलू लगातार बदलता रहने वाला खतरे का परिदृश्य है। अपने डेटा की प्रभावी सुरक्षा के लिए, आपको सबसे पहले उन संभावित जोखिमों और खतरों को समझना होगा जिनका आपके व्यवसाय का क्लाउड में सामना हो सकता है।
 
-## Recognizing Risks and Threats
+डेटा उल्लंघन, अंदरूनी धमकियाँ और साइबर हमले कुछ सबसे आम क्लाउड सुरक्षा जोखिम हैं। अनधिकृत उपयोगकर्ता संवेदनशील जानकारी तक पहुँच या चोरी कर सकते हैं, जिसके परिणामस्वरूप डेटा उल्लंघन होता है। कर्मचारियों या अन्य अंदरूनी लोगों द्वारा डेटा चोरी या तोड़फोड़ का जोखिम अंदरूनी धमकी कहलाता है। किसी सिस्टम या नेटवर्क को बाधित करने, क्षति पहुँचाने या अनधिकृत पहुँच प्राप्त करने के दुर्भावनापूर्ण प्रयासों को साइबर हमले कहते हैं।
 
-The constantly changing threat landscape is one of the most difficult aspects of cloud data security. To effectively protect your data, you must first understand the potential risks and threats that your company faces in the cloud.
+इन जोखिमों के अलावा, व्यवसायों को क्लाउड अनुपालन जोखिमों के बारे में भी पता होना चाहिए। जीडीपीआर, एचआईपीएए या पीसीआई डीएसएस जैसे नियमों का पालन न करने से भारी जुर्माना और प्रतिष्ठा को नुकसान हो सकता है।
 
-Data breaches, insider threats, and cyber-attacks are some of the most common cloud security risks. Unauthorized users can access or steal sensitive information, resulting in data breaches. The risk of data theft or sabotage by employees or other insiders is referred to as an insider threat. Malicious attempts to disrupt, damage, or gain unauthorized access to a system or network are known as cyber-attacks.
+क्लाउड डेटा सुरक्षा को खतरे में डालने वाले कई तरह के खतरे पैदा करने वाले अभिकर्ता भी हैं। हैकर्स, साइबर अपराधी, राष्ट्र-राज्य अभिकर्ता और यहां तक कि असंतुष्ट कर्मचारी भी उनमें शामिल हैं। इनमें से प्रत्येक खतरे पैदा करने वाले अभिकर्ता की अलग-अलग प्रेरणाएं और क्षमताएं होती हैं, और व्यवसायों को प्रत्येक के जोखिमों के बारे में पता होना चाहिए।
 
-In addition to these risks, businesses must be aware of cloud compliance risks. Failure to comply with regulations such as GDPR, HIPAA, or PCI DSS can result in significant fines and reputational damage.
+व्यवसायों को इन जोखिमों को प्रभावी ढंग से प्रबंधित करने और क्लाउड में अपने डेटा की सुरक्षा के लिए मजबूत सुरक्षा और अनुपालन कार्यक्रम लागू करने चाहिए। इसमें अत्याधुनिक सुरक्षा प्रौद्योगिकियों का उपयोग, डेटा पहुँच की नियमित निगरानी और ऑडिटिंग, और कर्मचारियों को सतत प्रशिक्षण और जागरूकता प्रदान करना शामिल है। संभावित जोखिमों और खतरों की पहचान और कम करके, व्यवसाय क्लाउड में अपने डेटा की सुरक्षा और अखंडता सुनिश्चित करने में मदद कर सकते हैं।
 
-There are also a variety of threat actors who can jeopardize cloud data security. Hackers, cybercriminals, nation-state actors, and even disgruntled employees are among them. Each of these threat actors has distinct motivations and capabilities, and businesses must be aware of the risks that each poses.
+## क्लाउड डेटा सुरक्षा और अनुपालन रणनीतियाँ
 
-Businesses must implement robust security and compliance programs to effectively manage these risks and protect their data in the cloud. This includes employing cutting-edge security technologies, regularly monitoring and auditing data access, and providing employees with ongoing training and awareness. Businesses can help ensure the security and integrity of their data in the cloud by identifying and mitigating potential risks and threats.
+क्लाउड-आधारित व्यवसायों के लिए क्लाउड डेटा को सुरक्षित करने और उद्योग नियम-पत्रिकाओं और मानकों का अनुपालन सुनिश्चित करने के लिए सर्वोत्तम अभ्यासों को लागू करना महत्वपूर्ण है। क्लाउड डेटा की सुरक्षा में उपयुक्त सुरक्षा उपाय जैसे एन्क्रिप्शन, पहचान और पहुँच प्रबंधन और नेटवर्क सुरक्षा को लागू करना सबसे महत्वपूर्ण कदमों में से एक है। एन्क्रिप्शन डेटा को अनधिकृत पहुँच से बचाता है, और पहचान और पहुँच प्रबंधन यह सुनिश्चित करता है कि केवल अधिकृत कर्मियों को ही डेटा तक पहुँच हो। उदाहरण के लिए, फ़ायरवॉल और घुसपैठ पहचान प्रणालियाँ साइबर हमलों और डेटा उल्लंघनों को रोकने में मदद कर सकती हैं।
 
-## Cloud Data Security and Compliance Strategies
+सुरक्षा उपायों को लागू करने के अलावा, जीडीपीआर, एचआईपीएए और पीसीआई डीएसएस जैसे उद्योग नियम-पत्रिकाओं और मानकों का पालन करना महत्वपूर्ण है, जिसमें डेटा प्रशासन, जोखिम मूल्यांकन, ऑडिटिंग और रिपोर्टिंग शामिल हैं। उदाहरण के लिए, जीडीपीआर के अनुसार, व्यवसायों को व्यक्तियों की व्यक्तिगत जानकारी एकत्र करने और संसाधित करने से पहले उनकी स्पष्ट सहमति प्राप्त करनी होती है, जबकि एचआईपीएए के अनुसार, स्वास्थ्य सेवा प्रदाताओं को अपने रोगियों के डेटा की गोपनीयता और सुरक्षा की रक्षा करनी होती है।
 
-Implementing best practices for securing cloud data and ensuring compliance with industry regulations and standards is critical for cloud-based businesses. Implementing appropriate security measures such as encryption, identity and access management, and network security is one of the most important steps in protecting cloud data. Encryption protects data from unauthorized access, and identity and access management ensures that only authorized personnel have access to the data. Firewalls and intrusion detection systems, for example, can aid in the prevention of cyber-attacks and data breaches.
+अंत में, कंपनियों को क्लाउड सुरक्षा और अनुपालन में निरंतर निगरानी और सुधार को प्राथमिकता देनी चाहिए। नियमित भेद्यता स्कैनिंग और पैचिंग संभावित सुरक्षा खतरों की पहचान और कम करने में मदद कर सकते हैं, जबकि पहुँच लॉग और उपयोगकर्ता व्यवहार की निगरानी अनधिकृत क्लाउड डेटा पहुँच का पता लगाने और रोकने में मदद कर सकती है। क्लाउड डेटा की सुरक्षा और गोपनीयता सुनिश्चित करने के लिए, नवीनतम सुरक्षा सर्वोत्तम अभ्यासों और अनुपालन आवश्यकताओं के बारे में अपडेट रहना महत्वपूर्ण है।
 
-In addition to implementing security measures, it is critical to comply with industry regulations and standards such as GDPR, HIPAA, and PCI DSS, which include data governance, risk assessments, auditing, and reporting. GDPR, for example, requires businesses to obtain individuals' explicit consent before collecting and processing their personal data, whereas HIPAA requires healthcare providers to protect the privacy and security of their patients' data.
+## क्लाउड सुरक्षा की निगरानी और प्रबंधन
 
-Finally, companies should prioritize continuous monitoring and improvement in cloud security and compliance. Regular vulnerability scanning and patching can aid in identifying and mitigating potential security threats, while monitoring access logs and user behavior can aid in detecting and preventing unauthorized cloud data access. To ensure the safety and privacy of cloud data, it is critical to stay current on the latest security best practices and compliance requirements.
+क्लाउड सुरक्षा की निगरानी और प्रबंधन किसी भी सफल क्लाउड सुरक्षा रणनीति का महत्वपूर्ण घटक है। व्यवसाय सही उपकरणों और प्रौद्योगिकियों को लागू करके, क्लाउड में सुरक्षा घटनाओं की पहचान और प्रतिक्रिया करके, और निरंतर निगरानी और निरंतर सुधार सुनिश्चित करके अपने क्लाउड डेटा को संभावित खतरों से बचाने और उद्योग नियम-पत्रिकाओं और मानकों का अनुपालन करने में मदद कर सकते हैं।
 
-## Monitoring and management of cloud security
-
-Monitoring and management of cloud security are critical components of any successful cloud security strategy. Businesses can help protect their cloud data from potential threats and remain in compliance with industry regulations and standards by implementing the right tools and technologies, identifying and responding to security incidents in the cloud, and ensuring ongoing monitoring and continuous improvement.
-
-We understand the significance of cloud security and compliance at DataFortress.cloud. Our experienced security professionals can assist businesses in identifying and mitigating potential risks, implementing appropriate security measures, and ensuring ongoing monitoring and management of cloud data. To learn more about how we can assist your business with cloud security and compliance, please visit https://datafortress.cloud/contact.
-
-
-
+DataFortress.cloud पर हमें क्लाउड सुरक्षा और अनुपालन के महत्व को समझते हैं। हमारे अनुभवी सुरक्षा पेशेवर व्यवसायों को संभावित जोखिमों की पहचान और कम करने, उपयुक्त सुरक्षा उपायों को लागू करने और क्लाउड डेटा की निरंतर निगरानी और प्रबंधन सुनिश्चित करने में मदद कर सकते हैं। हमारे द्वारा आपके व्यवसाय को क्लाउड सुरक्षा और अनुपालन में कैसे मदद की जा सकती है, इसके बारे में अधिक जानने के लिए, कृपया https://datafortress.cloud/contact पर जाएँ।

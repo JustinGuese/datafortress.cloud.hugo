@@ -1,12 +1,11 @@
 ---
-title: "How To - Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation"
-date: 2020-08-18T10:07:21+06:00
-author: "Justin Guese"
-description: "Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation"
-image: "images/blog/deeplearningarch.png"
+author: जस्टिन गुएसे
 categories:
-- big data
-- tutorial
+- विशाल डेटा
+- ट्यूटोरियल
+date: '2020-08-18T10:07:21+06:00'
+description: गहरे शिक्षण कार्य केंद्र के लिए आर्च लिनक्स के पक्ष में उबंटू को छोड़ना
+image: images/blog/deeplearningarch.png
 tags:
 - big data
 - tutorial
@@ -15,240 +14,240 @@ tags:
 - reinforcement learning
 - tensorflow
 - machine learning
+title: कैसे करें - गहन शिक्षण वर्कस्टेशन के लिए उबंटू को छोड़कर आर्क लिनक्स को अपनाना
 
 ---
+## Ubuntu को क्यों छोड़ना चाहिए?
+
+आप में से ज़्यादातर लोग अपने वर्कस्टेशन के लिए Ubuntu का इस्तेमाल करते होंगे, और यह कम अनुभवी यूज़र्स के लिए ठीक है। लेकिन मुझे Ubuntu और TensorFlow/CUDA के साथ एक समस्या थी,  CUDA, cuDNN, TensorFlow, इत्यादि के अलग-अलग ड्राइवरों और वर्ज़न को संभालना काफी मुश्किल था। मुझे यकीन नहीं है कि आपको भी ऐसा लगता है या नहीं, लेकिन एक बार जब मैं TensorFlow 1.15 या 2.0 का एक काम करने वाला एन्वायरनमेंट तैयार कर लेता, तो मैं उसे छूना भी नहीं चाहता था, क्यूंकि मुझे डर था कि मैं इसे बिगाड़ दूँगा।
+
+अलग-अलग प्रोग्रामों के साथ काम करते वक़्त, दो सबसे ज़्यादा इस्तेमाल किए जाने वाले TensorFlow वर्ज़न 1.15 और 2.0 के बीच स्विच करने का कोई तरीका होना अच्छा होगा, जैसे आप Google Colab में एक ही कमांड से कर सकते हैं, लेकिन एक अलग TensorFlow वर्ज़न इंस्टॉल करने से अक्सर मेरी सिस्टम ख़राब हो जाती थी।
+
+इसके अलावा, Arch हमेशा मेरी टू-डू लिस्ट में रहा है, क्योंकि यह सबसे "बेसिक" Linux डिस्ट्रो है, जिसका मतलब है कि आप हार्डवेयर के बहुत करीब काम कर रहे हैं, Ubuntu जैसी "उच्च एब्स्ट्रेक्शन" की तुलना में। उनके अपने शब्दों में, Ubuntu को "बॉक्स से काम करने और नए यूज़र्स के लिए इंस्टॉलेशन प्रक्रिया को जितना संभव हो उतना आसान बनाने" के लिए डिज़ाइन किया गया है, जबकि Arch Linux का आदर्श वाक्य है "सब कुछ कस्टमाइज़ करें"।
+हार्डवेयर के बहुत करीब होने से, Arch, Ubuntu (और Windows से भी कहीं आगे) की तुलना में काफी तेज है,  इसकी कीमत के रूप में अधिक टर्मिनल उपयोग की आवश्यकता होती है।
+
+पिछले हफ्तों में जब मैंने Arch का इस्तेमाल किया, तो Ubuntu की तुलना में RAM का इस्तेमाल आधा हो गया, और मशीन लर्निंग पैकेज इंस्टॉल करना बहुत आसान हो गया।  मैं TensorFlow 1.15 और 2.0 दोनों को साथ में चला सकता हूँ और Anaconda एन्वायरमेंट के साथ वर्ज़नों को स्विच कर सकता हूँ। साथ ही, सिस्टम काफी स्थिर काम करता है, क्योंकि मैं Linux के LTS (लंबी अवधि के समर्थन) कर्नेल का इस्तेमाल कर रहा हूँ, और आमतौर पर Arch के AUR (यूजर-निर्मित पैकेज) में अपडेट Debian (Ubuntu) पैकेजों से एक महीने पहले आते हैं।
+
+सबकुछ मिलाकर, मैं सिर्फ़ एक Arch Linux Deep Learning स्टेशन स्थापित करने की ही सलाह दे सकता हूँ, क्योंकि यह:
+1. तेज है, जैसे पैकेज बहुत तेज़ी से इंस्टॉल होंगे, डिप लर्निंग बहुत तेज़ हो जाएगी, ...
+2. अधिक स्थिर है
+3. TensorFlow वर्ज़नों के बीच स्विच करना आसान है
+Ubuntu की तुलना में।
 
 
-## Why should I ditch Ubuntu? 
+मैं  how-to को दो भागों में बाँटूँगा, पहला भाग "Arch Linux कैसे इंस्टॉल करें" और दूसरा "Deep Learning Workstation पैकेज कैसे इंस्टॉल करें"।
 
-Most of you might be using Ubuntu for their workstations, and that is fine for the more inexperienced users. One of the issues I had with Ubuntu and the Tensorflow/CUDA though, has been that handling the different drivers and versions of CUDA, cudnn, TensorFlow, and so on has been quite a struggle. I’m not sure about you, but once I had a working Tensorflow 1.15 or 2.0 environment, I usually did not touch it anymore being scared to mess up this holy configuration.
+सामान्य [“Arch Linux कैसे इंस्टॉल करें", इस लेख पर जाएँ](//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/).
 
-Working with different programs it would be nice to have a way of switching between the two most used TensorFlow versions of 1.15 and 2.0 like you can do with Google Colab in a single command, but installing a different TensorFlow version usually messed up my system again. 
+अगर Arch अभी तक जटिल लग रहा है, तो आप [Manjaro](//manjaro.org/) को आज़मा सकते हैं, जो Arch का एक यूज़र-फ़्रेंडली वर्ज़न है, भले ही मैं गारंटी नहीं दे सकता कि सभी पैकेज समान रूप से काम करेंगे, क्योंकि वे थोड़े अलग हैं।  हालांकि,  सब कुछ वैसे ही काम करना चाहिए।
 
-Additionally, Arch has always been on my To-Do list, as it is the most “barebone”  Linux distro you can get, meaning you are working way closer on the hardware compared to “higher abstractions” like Ubuntu. In their own words, Ubuntu is built to “work out of the box and make the installation process as easy as possible for new users”, whilst the motto of Arch Linux is “customize everything”. 
-Being way closer to the hardware Arch is insanely faster compared to Ubuntu (and miles ahead of Windows), for the cost of more Terminal usage. 
-
-When I have been using Arch in the past weeks, RAM usage usually halved compared to Ubuntu, and installing Machine Learning packages is a breeze. I can have both TensorFlow 1.15 and 2.0 working together, switching the versions with Anaconda environments. Also, the system works quite stable, as I am using the LTS (long term support) kernels of Linux, and usually updates to the famous AUR (user-made packages in Arch) are coming out a month ahead of the Debian (Ubuntu) packages.
-
-All in all, I can only recommend setting up an Arch Linux Deep Learning station as it is:
-1. Faster, like packages will install super fast, deep learning is supercharged, ...
-2. More stable
-3. Easier to switch between TensorFlow versions
-compared to Ubuntu. 
+मैं सोच रहा हूँ कि एक तैयार इंस्टॉल करने योग्य इमेज (iso या img) बनाने की, अगर पर्याप्त लोग रुचि रखते हैं तो नीचे एक टिप्पणी या संदेश छोड़ें!
 
 
-I will split the how-to in two parts, the first one being “How to I install Arch Linux” and the second one being “How to install the Deep Learning workstation packages”. 
+## एक नए Arch Linux इंस्टॉलेशन पर Deep Learning (TensorFlow, CUDA, CUDNN, Anaconda) सेटअप इंस्टॉल करना
+एक बार जब आप [Arch इंस्टॉलेशन (वाह!) पूरा कर लेते हैं](//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/), तो सबसे पहले कुछ सेटिंग्स को बदलते हैं ताकि हमारा सिस्टम अधिक स्थिर काम करे।
 
-For the general [“How to install Arch Linux”, head over to this article](//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/). 
+### 1. सबसे तेज़ मिरर पर स्विच करना
 
-If Arch is too complex for now, you could try out [Manjaro](//manjaro.org/), which is a user-friendly version of Arch, even though I can not guarantee that all packages will work the same, as they are slightly different. All in all it should work the same though.
+सॉफ़्टवेयर तथाकथित "मिरर" से डाउनलोड किया जाता है, जो ऐसे सर्वर होते हैं जिनमें सभी Arch लाइब्रेरी होती हैं। अगर यह स्वतः नहीं हो रहा है, तो यह हो सकता है कि आपके सर्वर अभी तक अनुकूलित न हों। इसलिए, हम एक छोटा सा टूल इंस्टॉल करने जा रहे हैं जो सबसे तेज़ सर्वर को ढूंढता और सहेजता है जिसे "reflector" कहते हैं।
 
-I was thinking about creating a ready to install Image (iso or img), if enough people are interested leave a comment below or message me!
-
-## Installing the Deep Learning (TensorFlow, CUDA, CUDNN, Anaconda) setup on a fresh Arch Linux installation
-Once you are [done with the Arch installation (phew!)](//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/), let us first change some settings such that our system works more stable.
-
-### 1. Switching to the fastest mirrors
-
-Software is downloaded from so-called “mirrors”, which are servers containing all the Arch libraries. If not done automatically, it could happen that your servers are not optimized yet. Therefore, we are going to install a small tool that finds and saves the fastest servers called “reflector”
-
-Install reflector using
+Reflector को इंस्टॉल करें:
 
 > sudo pacman -S reflector
 
-Find and download the best servers
+सर्वश्रेष्ठ सर्वर ढूंढें और डाउनलोड करें:
 
 > reflector --verbose -l 20 -n 20 --sort rate --save /etc/pacman.d/mirrorlist
 
-Check the output if it makes sense, e.g. if the domains are close to your location. If not, you could add the country tag to get more precise results, e.g. for Germany and Austria:
+आउटपुट देखें कि क्या यह समझ में आता है, जैसे कि क्या डोमेन आपके स्थान के पास हैं। यदि नहीं, तो अधिक सटीक परिणाम प्राप्त करने के लिए आप देश टैग जोड़ सकते हैं, जैसे जर्मनी और ऑस्ट्रिया के लिए:
 
 > reflector -c “AT,DE” --verbose -l 20 -n 20 --sort rate --save /etc/pacman.d/mirrorlist
 
-Update your installation
+अपना इंस्टॉलेशन अपडेट करें:
 
 > sudo pacman -Syyu
 
-### 2. Changing the Desktop Environment
+### 2. डेस्कटॉप एन्वायरमेंट बदलना
 
-If you are using Manjaro or chose the “Gnome” Desktop environment as you know it from Ubuntu, it might be worth it to think about changing it as Gnome is known to eat more RAM than Chrome, and we surely need RAM in our Deep Learning setup.
+अगर आप Manjaro का इस्तेमाल कर रहे हैं या Ubuntu से परिचित "Gnome" डेस्कटॉप एन्वायरमेंट चुना है, तो इसे बदलने के बारे में सोचना उचित हो सकता है, क्योंकि Gnome Chrome से ज्यादा RAM खाता है, और हमें निश्चित रूप से हमारे Deep Learning सेटअप में RAM की ज़रूरत है।
 
-If you like Gnome, feel free to skip this step. Otherwise, I can recommend the Xfce desktop as it is a good combination of lightweight and full of features. 
+अगर आप Gnome पसंद करते हैं, तो इस स्टेप को छोड़ दें। अन्यथा, मैं Xfce डेस्कटॉप की सिफारिश कर सकता हूँ, क्योंकि यह हल्का और सुविधाओं से भरपूर होने का अच्छा मिश्रण है।
 
-Download Xfce
+Xfce डाउनलोड करें:
 
 > sudo pacman -S xfce4 xfce4-goodies lxdm
 
-Lxdm is a display manager that allows you to use multiple desktops.
+Lxdm एक डिस्प्ले मैनेजर है जो आपको कई डेस्कटॉप का उपयोग करने की अनुमति देता है।
 
-Log out of your current session and press Alt + F2 (or Alt + F3 if it does not work) to get a terminal. First disable Gnome and afterward “activate” Xfce:
+अपने वर्तमान सत्र से लॉग आउट करें और Alt + F2 (या Alt + F3 अगर यह काम नहीं करता है) दबाएँ ताकि टर्मिनल खुल जाए। पहले Gnome को डिसेबल करें और बाद में "Xfce को सक्रिय करें":
 
-Deactivate and uninstall gnome:
+Gnome को निष्क्रिय और अनइंस्टॉल करें:
 
-> sudo systemctl disable gdm \
+> sudo systemctl disable gdm
 > sudo pacman -R gnome gnome-extras
 
-Activate Xfce
 
-> sudo systemctl enable lxdm \
+Xfce सक्रिय करें:
+
+> sudo systemctl enable lxdm
 > sudo systemctl start lxdm
 
-If the new Xfce desktop does open just login and explore, if not try to reboot (sudo reboot). If that does not help proceed to crying and rolling on the floor, and send me a message or comment afterward.
 
-### 3. Installing the LTS (long term support) Linux kernels for better stability
+यदि नया Xfce डेस्कटॉप खुले नहीं तो लॉगिन करें और इसे ब्राउज़ करें, अगर नहीं तो पुनरारंभ करें (sudo reboot)। यदि यह काम नहीं करता है, तो चिल्लाएं, जमीन पर लोटे, और मुझे बाद में एक संदेश या टिप्पणी भेजें।
 
-Arch is famous for being really close to the current Linux kernels, which is good if you always want the newest packages and Linux features, but a bad idea if you are building a Deep Learning Workstation. 
 
-That is why I switched to the LTS kernels, which are basically kernels that receive more support and are more stable than the newer versions of the Linux Kernel. 
+### 3. बेहतर स्थिरता के लिए LTS (लंबी अवधि के समर्थन) Linux कर्नेल इंस्टॉल करना
 
-Luckily switching kernels is super easy in Arch. First we will download the kernels, and afterward tell our boot manager which kernel to choose.
+Arch के बारे में प्रसिद्ध बात यह है कि यह हमेशा के लिए नए Linux कर्नेल के बहुत करीब है, जो कि अच्छा है यदि आपको हमेशा नवीनतम पैकेज और Linux विशेषताएँ चाहिए, लेकिन यदि आप एक Deep Learning Workstation बना रहे हैं, तो यह बुरा विचार है। 
 
-First download the LTS kernels:
+इसलिए, मैं LTS कर्नेल पर स्विच कर रहा हूँ, जो मूल रूप से ऐसे कर्नेल होते हैं जो अधिक समर्थन प्राप्त करते हैं और नए Linux कर्नेल से अधिक स्थिर होते हैं।
+
+क्षमा करें, यह Arch में बहुत आसान है। सबसे पहले, हम कर्नेल डाउनलोड करेंगे, और बाद में अपने बूट मैनेजर को बताएँगे कि कौन सा कर्नेल चुनना है।
+
+सबसे पहले, LTS कर्नेल डाउनलोड करें:
 
 > sudo pacman -S linux-lts linux-lts-headers
 
-Have a look at your current kernel versions:
+अपने वर्तमान कर्नेल संस्करणों पर एक नज़र डालें:
 
 > ls -lsha /boot
 
-One kernel should be named vmlinuz-linux.img and initramfs-linux.img (your current versions) and the LTS ones the same with -lts at the end. 
 
-If you are seeing two kernels you can now proceed to delete the old kernels:
+एक कर्नेल vmlinuz-linux.img और initramfs-linux.img होना चाहिए (आपके वर्तमान संस्करण) और LTS वाले समान के अंत में -lts के साथ।
+
+यदि आपको दो कर्नेल दिखाई दे रहे हैं, तो आप अब पुराने कर्नेल को हटा सकते हैं:
 
 > sudo pacman -R linux
 
-Now a more advanced part is that you will need to tell your bootloader which kernel to choose. The question is which bootloader you are using, but in most cases it is Grub. If you followed my Arch installation tutorial your bootloader is systemd-boot.
+आगे एक अधिक उन्नत भाग है कि आपको अपने बूटलोडर को बताना होगा कि कौन सा कर्नेल चुनना है। सवाल यह है कि आप किस बूटलोडर का उपयोग कर रहे हैं, लेकिन ज्यादातर मामलों में यह Grub है। यदि आपने मेरे Arch इंस्टॉलेशन ट्यूटोरियल का पालन किया है तो आपका बूटलोडर systemd-boot है।
 
-My recommendation is try the Grub instructions, and if that does not work proceed to the others.
+मेरी सिफ़ारिश है कि Grub निर्देशों को आज़माएँ, और अगर वह काम नहीं करता है, तो अन्य को जारी रखें।
 
-#### Changing the Grub bootloader for the LTS linux kernels
+
+#### LTS Linux कर्नेल के लिए Grub बूटलोडर बदलना
 
 > grub-mkconfig -o /boot/grub/grub.cfg
 
-If you see an error proceed to the next bootloader, otherwise reboot (sudo reboot).
+यदि आप कोई त्रुटि देखते हैं तो अगले बूटलोडर पर जाएँ, अन्यथा पुनरारंभ करें (sudo reboot)।
 
-#### Changing the syslinux bootloader for the LTS linux kernels
 
-Edit the config file:
+#### LTS Linux कर्नेल के लिए syslinux बूटलोडर बदलना
+
+कॉन्फ़िगरेशन फ़ाइल को संपादित करें:
 
 > sudo nano /boot/syslinux/syslinux.cfg
 
-Simply add “-lts” to the vmlinuz-linux.img and initramfs-linux.img, such that they are vmlinuz-linux-lts.img and initramfs-linux-lts.img 
+बस vmlinuz-linux.img और initramfs-linux.img में "-lts" जोड़ें, ताकि वे vmlinuz-linux-lts.img और initramfs-linux-lts.img बन जाएँ।
 
-#### Changing the systemd-boot bootloader for the LTS linux kernels
 
-If you are coming from my Arch installation guide, this is your bootloader. 
+#### LTS Linux कर्नेल के लिए systemd-boot बूटलोडर बदलना
 
-Edit the config file:
+यदि आप मेरे Arch इंस्टॉलेशन गाइड से आ रहे हैं, तो यह आपका बूटलोडर है।
+
+कॉन्फ़िगरेशन फ़ाइल को संपादित करें:
 
 > sudo nano /boot/loader/entries/arch.conf
 
-Simply add “-lts” to the vmlinuz-linux.img and initramfs-linux.img, such that they are vmlinuz-linux-lts.img and initramfs-linux-lts.img 
+
+बस vmlinuz-linux.img और initramfs-linux.img में "-lts" जोड़ें, ताकि वे vmlinuz-linux-lts.img और initramfs-linux-lts.img बन जाएँ।
 
 
-### 4. Installing yay, an easy way to install AUR packages
 
-You should prefer to use the ultra-fast pacman to install most packages, but an amazing thing about Arch is that users create millions of custom packages that are super easy to install. You can basically find any program you can think of in this repo. 
+### 4. AUR पैकेज इंस्टॉल करने का आसान तरीका yay इंस्टॉल करना
 
-Install git SVC
+आपको ज्यादातर पैकेज इंस्टॉल करने के लिए अल्ट्रा-फ़ास्ट pacman का इस्तेमाल करना चाहिए, लेकिन Arch के बारे में एक अद्भुत बात यह है कि यूजर्स लाखों कस्टम पैकेज बनाते हैं जिन्हें इंस्टॉल करना बहुत आसान है। आप मूल रूप से कोई भी प्रोग्राम पा सकते हैं जिसे आप सोच सकते हैं।
 
-> sudo pacman -S git \
-> mkdir ~/tmp \
-> git clone https://aur.archlinux.org/yay-git.git ~/tmp/yay \
-> cd ~/tmp/yay \
+git SVC इंस्टॉल करें:
+
+> sudo pacman -S git
+> mkdir ~/tmp
+> git clone https://aur.archlinux.org/yay-git.git ~/tmp/yay
+> cd ~/tmp/yay
 > makepkg -si
 
-Now you can browse all the nice AUR packages in https://aur.archlinux.org/packages/ or just go for it and type:
+अब आप सभी अच्छे AUR पैकेजों को https://aur.archlinux.org/packages/ ब्राउज़ कर सकते हैं या बस इसे करने के लिए लिख सकते हैं:
 
-> yay -S [PACKAGE] 
+> yay -S [पैकेज]
 
-To install it. 
+इसे इंस्टॉल करने के लिए।
 
-### 5. Finally, the real cuda, cudnn, anaconda installation running both TensorFlow 1.15 and 2.0
 
-Install Nvidia drivers, cuda, cudnn with a simple command
+### 5. अंत में, वास्तविक cuda, cudnn, anaconda इंस्टॉलेशन जो TensorFlow 1.15 और 2.0 दोनों को चलाता है
+
+एक साधारण कमांड के साथ Nvidia ड्राइवर, cuda, cudnn इंस्टॉल करें:
 
 > sudo pacman -S nvidia nvidia-utils cuda cudnn
 
-This takes some time, so grab a coffee or proceed with the next steps
+इसमें थोड़ा समय लगता है, इसलिए कॉफ़ी लें या अगले चरणों पर आगे बढ़एँ।
 
-Download Anaconda, I like Miniconda:
+Anaconda डाउनलोड करें, मुझे Miniconda पसंद है:
 
 > wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh ~/
 
-Make it executable and install
+इसे निष्पादन योग्य बनाएँ और इंस्टॉल करें:
 
-> cd ~/ \
-> chmod +x ./Miniconda*.sh \
+> cd ~/
+> chmod +x ./Miniconda*.sh
 > ./Miniconda*.sh
 
-Just leave everything as default.
+बस सबकुछ डिफ़ॉल्ट के रूप में छोड़ दें।
 
 > source ./bash_profile
 
-Reboot your system
+
+अपना सिस्टम पुनरारंभ करें:
 
 > sudo reboot
 
-Install tensorflow
 
-Now is the time to decide between TensorFlow for CPU or GPU. I will continue with the GPU option, but if you want to run the CPU version just remove the “-gpu” from the package name.
+TensorFlow इंस्टॉल करें
 
-##### Create an anaconda environment for Tensorflow 2.0
+अब यह तय करने का समय आ गया है कि CPU या GPU के लिए TensorFlow इंस्टॉल करना है। मैं GPU विकल्प जारी रखूँगा, लेकिन यदि आप CPU संस्करण चलाना चाहते हैं तो पैकेज नाम से "gpu" हटा दें।
 
-> conda create --name tf2.0 \
-> conda activate tf2.0 \
-> conda install pip \
+
+##### TensorFlow 2.0 के लिए एक anaconda एन्वायरमेंट बनाएँ
+
+> conda create --name tf2.0
+> conda activate tf2.0
+> conda install pip
 > conda install tensorflow-gpu pandas numpy
 
-Done! Now check the result with:
 
-> python \
-> from tensorflow.python.client import device_lib \
+हो गया! अब परिणाम इस प्रकार जाँच लें:
+
+> python
+> from tensorflow.python.client import device_lib
 > device_lib.list_local_devices()
 
-If the result shows a device name like this you are done!
+
+यदि परिणाम में इस तरह का डिवाइस नाम दिखता है तो आप कर चुके हैं!
 
 2018-05-01 05:25:25.929575: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties:
 name: GeForce GTX 3080 10GB major: …
 
-##### Create an anaconda environment for Tensorflow 1.15
 
-> conda deactivate \
-> conda create --name tf1.15 \
-> conda activate tf1.15 \
-> conda install pip python==3.7 \
+
+##### TensorFlow 1.15 के लिए एक anaconda एन्वायरमेंट बनाएँ
+
+> conda deactivate
+> conda create --name tf1.15
+> conda activate tf1.15
+> conda install pip python==3.7
 > conda install tensorflow-gpu==1.15
 
-And again check if everything works and your gpu is recognized:
 
-> python \
-> from tensorflow.python.client import device_lib \
+और फिर से जाँचें कि सबकुछ काम कर रहा है और आपका gpu पहचाना जा रहा है:
+
+> python
+> from tensorflow.python.client import device_lib
 > device_lib.list_local_devices()
 
 
-### 6. Switching between TensorFlow 1.15 and TensorFlow 2.0 on one device!
+### 6. एक डिवाइस पर TensorFlow 1.15 और TensorFlow 2.0 के बीच स्विच करना!
 
-Just a dream coming true in my opinion, just select the 1.15 version with
+मेरी राय में, यह सपना सच होने जा रहा है, बस 1.15 संस्करण का चयन करें:
 > conda activate tf1.15
 
-And the TensorFlow 2.0 version with
+
+और TensorFlow 2.0 संस्करण के साथ:
 > conda activate tf2.0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

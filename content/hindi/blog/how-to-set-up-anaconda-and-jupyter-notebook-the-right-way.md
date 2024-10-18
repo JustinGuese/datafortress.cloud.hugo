@@ -1,121 +1,148 @@
 ---
-author: "Justin Guese"
-bg_image: "/images/jupyter.png"
-categories: ["tutorial"]
-date: 2022-01-24T23:00:00Z
-description: "If Anaconda (conda) and Jupyter Notebook (Jupyter Lab) are set up the right way the combination of them can become the perfect team, where you are able to easily switch between Deep Learning conda environments.  Some programs requiring Tensorflow 1.15, others Tensorflow 2.0? No problem! Just switch environments and Tensorflow versions with a simple click."
-image: "/images/jupyter.png"
-tags: ["deep learning", "tutorial", "anaconda", "jupyter notebook"]
-title: "How to set up Anaconda and Jupyter Notebook the right way"
-type: "post"
+author: जस्टिन गुएसे
+bg_image: /images/jupyter.png
+categories:
+- ट्यूटोरियल
+date: '2022-01-24T23:00:00+00:00'
+description: 'यदि एनाकोंडा (कोंडा) और जुपिटर नोटबुक (जुपिटर लैब) सही तरीके से सेटअप
+  किए गए हैं, तो उनका संयोजन एक आदर्श टीम बन सकता है, जहाँ आप आसानी से डीप लर्निंग
+  के कोंडा एन्वायरमेंट के बीच स्विच कर सकते हैं। कुछ प्रोग्रामों को टेन्सरफ़्लो 1.15
+  की आवश्यकता होती है, जबकि अन्य को टेन्सरफ़्लो 2.0 की? कोई दिक्कत नहीं! बस एक क्लिक
+  से एन्वायरमेंट और टेन्सरफ़्लो के वर्ज़न को स्विच कर दें।
+
+  '
+image: /images/jupyter.png
+tags:
+- deep learning
+- tutorial
+- anaconda
+- jupyter notebook
+title: अनाकोंडा और जुपिटर नोटबुक को सही तरीके से कैसे सेट अप करें
+type: post
+
 ---
+अगर एनाकोंडा (कॉनडा) और जुपिटर नोटबुक (जुपिटर लैब) को सही तरीके से सेटअप किया जाए, तो इनका संयोजन एक आदर्श टीम बन सकता है, जहाँ आप आसानी से डीप लर्निंग कॉनडा एनवायरनमेंट्स के बीच स्विच कर सकते हैं।
 
-If Anaconda (conda) and Jupyter Notebook (Jupyter Lab) are set up the right way the combination of them can become the perfect team, where you are able to easily switch between Deep Learning conda environments.
+कुछ प्रोग्रामों को टेंसॉरफ्लो 1.15 की आवश्यकता होती है, तो अन्य को टेंसॉरफ्लो 2.0 की? कोई दिक्कत नहीं! बस एक क्लिक से एनवायरनमेंट और टेंसॉरफ्लो वर्ज़न्स को स्विच कर दें।
 
-Some programs requiring Tensorflow 1.15, others Tensorflow 2.0? No problem! Just switch environments and Tensorflow versions with a simple click.
-
-Also, did you ever install Jupyter Notebook extensions in each conda environment? Do not worry anymore, we are going to install the extensions once, and have them available in each environment!
+क्या आपने प्रत्येक कॉनडा एनवायरनमेंट में जुपिटर नोटबुक एक्सटेंशन इंस्टॉल किए हैं? अब चिंता मत कीजिए, हम एक बार एक्सटेंशन इंस्टॉल कर देंगे, और वे प्रत्येक एनवायरनमेंट में उपलब्ध हो जाएँगे!
 
 
-1. Install Anaconda or Miniconda
-2. Install Jupyter Notebook / Lab in the base environment
-3. Install a new environment
-4. Activate the environment for Jupyter Notebook
+1. एनाकोंडा या मिनिकॉनडा इंस्टॉल करें
+2. बेस एनवायरनमेंट में जुपिटर नोटबुक/लैब इंस्टॉल करें
+3. एक नया एनवायरनमेंट इंस्टॉल करें
+4. जुपिटर नोटबुक के लिए एनवायरनमेंट एक्टिवेट करें
 
-# How to install Anaconda or Miniconda?
+# एनाकोंडा या मिनिकॉनडा कैसे इंस्टॉल करें?
 
-Anaconda is a nice package containing a lot of Python packages already and allows for an easy start into the world of Python. Additionally, it allows creating environments in python, which contain different versions of your Python packages. E.g. if a program only runs with Python 2.7 or older versions of Matplotlib, you can create an own workspace for this program and switch back to Python 3 with a click of a button. Furthermore switching between Tensorflow 2.0 and Tensorflow 1.15 becomes easy as well, finally allowing you to switch between versions easily (which can be quite a headache otherwise).
+एनाकोंडा एक अच्छा पैकेज है जिसमें पहले से ही कई पायथन पैकेज शामिल होते हैं और पायथन की दुनिया में आसानी से शुरुआत करने की अनुमति देता है। इसके अतिरिक्त, यह पायथन में एनवायरनमेंट्स बनाने की अनुमति देता है, जिनमें आपके पायथन पैकेजों के विभिन्न संस्करण शामिल होते हैं। उदाहरण के लिए, यदि कोई प्रोग्राम केवल पायथन 2.7 या मैटप्लोटलिब के पुराने संस्करणों के साथ चलता है, तो आप इस प्रोग्राम के लिए एक स्वयं का वर्कस्पेस बना सकते हैं और एक बटन के क्लिक से पायथन 3 पर वापस स्विच कर सकते हैं। इसके अलावा, टेंसॉरफ्लो 2.0 और टेंसॉरफ्लो 1.15 के बीच स्विच करना भी आसान हो जाता है, अंततः आपको संस्करणों के बीच आसानी से स्विच करने की अनुमति देता है (जो अन्यथा काफी परेशानी पैदा कर सकता है)।
 
-Miniconda is a barebones version of Anaconda and can be nice if you are e.g. working on a server, where disk space is limited.
+मिनिकॉनडा एनाकोंडा का एक न्यूनतम संस्करण है और यह तब उपयोगी हो सकता है जब आप किसी सर्वर पर काम कर रहे हों जहाँ डिस्क स्पेस सीमित हो।
 
-To install Anaconda or Miniconda head over to their website ([https://www.anaconda.com/products/individual#Downloads](https://www.anaconda.com/products/individual#Downloads "https://www.anaconda.com/products/individual#Downloads")), or if you are using Linux just copy the following commands.
+एनाकोंडा या मिनिकॉनडा इंस्टॉल करने के लिए उनकी वेबसाइट पर जाएँ ([https://www.anaconda.com/products/individual#Downloads](https://www.anaconda.com/products/individual#Downloads)), या अगर आप लिनक्स का इस्तेमाल कर रहे हैं, तो निम्न कमांड को कॉपी करें।
 
-The first link crawls the website for the newest version and writes it to the LATEST_ANACONDA variable.
+पहला लिंक वेबसाइट से नवीनतम संस्करण को क्रॉल करता है और इसे LATEST_ANACONDA वेरिएबल में लिखता है।
 
-    cd ~/Downloads
-    LATEST_ANACONDA=$(wget -O - https://www.anaconda.com/distribution/ 2>/dev/null | sed -ne 's@.*\(https:\/\/repo\.anaconda\.com\/archive\/Anaconda3-.*-Linux-x86_64\.sh\)\">64-Bit (x86) Installer.*@\1@p')
-    wget $LATEST_ANACONDA
-    chmod +x Anaconda3*.sh # make it executable
-    ./Anaconda3*.sh # execute the installer
+```
+cd ~/Downloads
+LATEST_ANACONDA=$(wget -O - https://www.anaconda.com/distribution/ 2>/dev/null | sed -ne 's@.*\(https:\/\/repo\.anaconda\.com\/archive\/Anaconda3-.*-Linux-x86_64\.sh\)\">64-Bit (x86) Installer.*@\1@p')
+wget $LATEST_ANACONDA
+chmod +x Anaconda3*.sh # इसे निष्पादन योग्य बनाएँ
+./Anaconda3*.sh # इंस्टॉलर को निष्पादित करें
+```
 
-Follow the dialogue, and just agree on the defaults.
+डायलॉग का पालन करें, और डिफ़ॉल्ट पर सहमत रहें।
 
-### Checking and switching the conda environments
+### कॉनडा एनवायरनमेंट्स की जाँच और स्विचिंग
 
-If conda is installed correctly (might need a logout and login, or restart), you should be able to see the output when typing `conda` into your terminal.
+अगर कॉनडा सही ढंग से इंस्टॉल हो गया है (शायद लॉग आउट और लॉग इन करने या पुनः आरंभ करने की आवश्यकता है), तो आपको अपने टर्मिनल में `conda` टाइप करने पर आउटपुट देखने में सक्षम होना चाहिए।
 
-To list the currently installed environments just type `conda env list`
+वर्तमान में इंस्टॉल किए गए एनवायरनमेंट्स को सूचीबद्ध करने के लिए बस `conda env list` टाइप करें
 
-It should currently just show the "base" environment installed.
+इस समय यह केवल इंस्टॉल किए गए "बेस" एनवायरनमेंट को दिखाना चाहिए।
 
-Switching between environments works as simply as typing `conda activate [NAME]` and if done with it deactivating it (and going back to the base environment) with `conda deactivate`.
+एनवायरनमेंट्स के बीच स्विच करना उतना ही आसान है जितना `conda activate [NAME]` टाइप करना और यदि इसे इसके साथ किया जाता है तो इसे निष्क्रिय करना (और बेस एनवायरनमेंट पर वापस आना) `conda deactivate` के साथ।
 
-The base environment is activated by default.
+बेस एनवायरनमेंट डिफ़ॉल्ट रूप से सक्रिय होता है।
 
-# Install Jupyter Notebook / Lab in the base environment
+# बेस एनवायरनमेंट में जुपिटर नोटबुक/लैब इंस्टॉल करें
 
-Jupyter Notebook can easily be installed using conda. Our plan is to only install it in the base environment, and then just switch between sub-environments to avoid setting up Jupyter Lab in each environment. 
+कॉनडा का उपयोग करके जुपिटर नोटबुक को आसानी से इंस्टॉल किया जा सकता है। हमारा योजना यह है कि इसे केवल बेस एनवायरनमेंट में ही इंस्टॉल करें, और फिर प्रत्येक एनवायरनमेंट में जुपिटर लैब को सेटअप करने से बचने के लिए सब-एनवायरनमेंट्स के बीच स्विच करें।
 
-## Installing Jupyter Notebook (default)
+## जुपिटर नोटबुक (डिफ़ॉल्ट) इंस्टॉल करना
 
-    conda install -c conda-forge notebook
-    conda install -c conda-forge nb_conda_kernels
+```
+conda install -c conda-forge notebook
+conda install -c conda-forge nb_conda_kernels
+```
 
-## Installing Jupyter Lab
+## जुपिटर लैब इंस्टॉल करना
 
-    conda install -c conda-forge jupyterlab
-    conda install -c conda-forge nb_conda_kernels
+```
+conda install -c conda-forge jupyterlab
+conda install -c conda-forge nb_conda_kernels
+```
 
-## Installing Jupyter Notebook extensions
+## जुपिटर नोटबुक एक्सटेंशन इंस्टॉल करना
 
-I really like Jupyter Notebook extensions, which support a lot of autocompletion, additional information, and in general things that make your life easier. A good default setting is included with the following install command:
+मुझे जुपिटर नोटबुक एक्सटेंशन बहुत पसंद हैं, जो बहुत सारे ऑटो-संपूर्ण, अतिरिक्त जानकारी और सामान्य तौर पर ऐसी चीजें प्रदान करते हैं जो आपकी ज़िन्दगी को आसान बनाती हैं। निम्नलिखित इंस्टॉल कमांड के साथ एक अच्छा डिफ़ॉल्ट सेटिंग शामिल है:
 
-    conda install -c conda-forge jupyter_contrib_nbextensions
+```
+conda install -c conda-forge jupyter_contrib_nbextensions
+```
 
-A good overview over other extensions: [https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231](https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231 "https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231")
+अन्य एक्सटेंशन पर एक अच्छा अवलोकन: [https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231](https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231)
 
-### (Optional) Installing pip package manager
+### (वैकल्पिक) पाइप पैकेज मैनेजर इंस्टॉल करना
 
-In my opinion it is a good idea to add the pip package manager to the base (and each sub-) environment, as not all packages are supported by conda install. Also, if pip is not installed in each sub-environment the package might just be installed in the "base" conda environment, causing an error where the package is not found in your sub-environment. 
+मेरे विचार से पाइप पैकेज मैनेजर को बेस (और प्रत्येक सब-) एनवायरनमेंट में जोड़ना एक अच्छा विचार है, क्योंकि सभी पैकेज कॉनडा इंस्टॉल द्वारा समर्थित नहीं होते हैं। इसके अलावा, यदि प्रत्येक सब-एनवायरनमेंट में पाइप इंस्टॉल नहीं है, तो पैकेज बस "बेस" कॉनडा एनवायरनमेंट में इंस्टॉल हो सकता है, जिससे एक त्रुटि हो सकती है जहाँ पैकेज आपके सब-एनवायरनमेंट में नहीं पाया जाता है।
 
-    conda install pip
+```
+conda install pip
+```
 
-# Creating environments in conda and Jupyter Notebook
+# कॉनडा और जुपिटर नोटबुक में एनवायरनमेंट बनाना
 
-Let us say you want to install both Tensorflow 2.0 and Tensorflow 1.15 in Jupyter Notebook. 
+मान लीजिए कि आप जुपिटर नोटबुक में टेंसॉरफ्लो 2.0 और टेंसॉरफ्लो 1.15 दोनों को इंस्टॉल करना चाहते हैं।
 
-For this example first, agree if you want to use the GPU or CPU version of Tensorflow. For using the GPU version add "-gpu" to TensorFlow, and otherwise, just leave it as is.
+इस उदाहरण के लिए पहले, तय करें कि आप टेंसॉरफ्लो का जीपीयू या सीपीयू संस्करण इस्तेमाल करना चाहते हैं। जीपीयू संस्करण का उपयोग करने के लिए, टेंसॉरफ्लो में "-gpu" जोड़ें, अन्यथा, इसे जैसा है वैसा ही छोड़ दें।
 
-To create a new conda environment we can run 
+एक नया कॉनडा एनवायरनमेंट बनाने के लिए हम `conda create --name tf-2.0` चला सकते हैं।
 
-`conda create --name tf-2.0`
+यदि आप पहले से ही कुछ पैकेज इसे के साथ इंस्टॉल करने की योजना बना रहे हैं तो उन्हें अंत में जोड़ें, जैसे:
 
-If you already plan to install some packages with it just add them to the end, like:
+```
+conda create -n tf-2.0 tensorflow-gpu pip ipykernel
+```
 
-    conda create -n tf-2.0 tensorflow-gpu pip ipykernel
+मैं पैकेज इंस्टॉलेशन के लिए `pip` इंस्टॉल करने की सलाह देता हूँ, और `ipykernel` जुपिटर नोटबुक का इस्तेमाल करके एनवायरनमेंट्स को स्विच करने के लिए आवश्यक होगा।
 
-I recommend installing `pip` for package installation, and `ipykernel` will be needed to switch environments using Jupyter Notebook
+टेंसॉरफ्लो 1.15 का इस्तेमाल करते हुए  एनवायरनमेंट को इंस्टॉल करने के लिए निम्न प्रयोग करें:
 
-To install an environment using TensorFlow 1.15 use the following:
+```
+conda create -n tf-1.15 tensorflow-gpu==1.15 pip ipykernel
+```
 
-    conda create -n tf-1.15 tensorflow-gpu==1.15 pip ipykernel
+यदि सफलतापूर्वक किया गया, तो आपको निम्न कमांड को निष्पादित करते समय तीन एनवायरनमेंट्स दिखाई देने चाहिए:
 
-If done successfully, you should be able to see three environments when executing the following command:
+```
+conda env list
+```
 
-    conda env list
-
-1. base
+1. बेस
 2. tf-2.0
 3. tf-1.15
 
-# Start Jupyter Notebook and check the environments and extensions
+# जुपिटर नोटबुक शुरू करें और एनवायरनमेंट्स और एक्सटेंशन की जाँच करें
 
-    jupyter notebook
+```
+jupyter notebook
+```
 
-Running Jupyter Notebook in the base environment should allow you to see a tab containing "Extensions", as well as "conda"/"environments". Head over to Extensions and activate whichever extensions you like, and if you are ready, create a new notebook using the "new" button. Here, you should be able to choose between your base, tf-2.0 and tf-1.15 environment. 
+बेस एनवायरनमेंट में जुपिटर नोटबुक चलाने से आपको "एक्सटेंशन", साथ ही "कॉनडा"/"एनवायरनमेंट्स" वाला एक टैब दिखाई देना चाहिए। एक्सटेंशन पर जाएं और अपनी पसंद के एक्सटेंशन को सक्रिय करें, और यदि आप तैयार हैं, तो "नया" बटन का उपयोग करके एक नया नोटबुक बनाएँ। यहाँ, आपको अपने बेस, tf-2.0 और tf-1.15 एनवायरनमेंट्स में से चुनने में सक्षम होना चाहिए।
 
-Attention: You always need to run jupyter notebook in the base environment. Run `conda deactivate` to leave your current environment and return to the base one. 
+ध्यान दें: आपको हमेशा बेस एनवायरनमेंट में जुपिटर नोटबुक को चलाना होगा। अपने वर्तमान एनवायरनमेंट को छोड़ने और बेस वाले पर वापस जाने के लिए `conda deactivate` चलाएँ।
 
-If you need to install further packages activate an environment using `conda activate [NAME]`, run your commands like `conda install X` or `pip install X`, and leave the environment using `conda deactivate`. 
+अगर आपको और पैकेज इंस्टॉल करने की आवश्यकता है, तो `conda activate [NAME]` का उपयोग करके एक एनवायरनमेंट एक्टिवेट करें, `conda install X` या `pip install X` जैसी अपनी कमांड चलाएँ, और `conda deactivate` का उपयोग करके एनवायरनमेंट छोड़ दें।
 
-Let me know if this worked for you, it helped me a lot and I wished I would have known about this earlier!
+मुझे बताएं कि क्या यह आपके लिए काम किया, इससे मुझे बहुत मदद मिली और मुझे पता होता तो इससे पहले इसका इस्तेमाल कर लेता।

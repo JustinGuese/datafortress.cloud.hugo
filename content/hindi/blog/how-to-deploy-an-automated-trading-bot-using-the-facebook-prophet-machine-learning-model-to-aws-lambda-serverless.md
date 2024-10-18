@@ -1,108 +1,126 @@
 ---
-author: "Justin Guese"
-bg_image: "/images/serverless-investing-bot-facebook-prophet-machine-learning.png"
-categories: ["algorithmic-trading", "aws", "serverless", "machine-learning"]
-date: 2022-05-23T22:00:00Z
-description: "How to deploy an automated trading bot using the Facebook Prophet Machine Learning model to AWS Lambda (serverless)"
-image: "/images/serverless-investing-bot-facebook-prophet-machine-learning-1.png"
-tags: ["cloud-computing", "machine-learning", "algorithmic-trading", "stock", "aws", "aws-lambda", "serverless", "facebook-prophet"]
-title: "How to deploy an automated trading bot using the Facebook Prophet Machine Learning model to AWS Lambda (serverless)"
-type: "post"
+author: जस्टिन गुएसे
+bg_image: /images/serverless-investing-bot-facebook-prophet-machine-learning.png
+categories:
+- एल्गोरिथ्म-आधारित ट्रेडिंग
+- aws
+- सर्वरलेस
+- मशीन लर्निंग
+date: '2022-05-23T22:00:00+00:00'
+description: एफेसबुक प्रॉफिट मशीन लर्निंग मॉडल का उपयोग करके एडब्ल्यूएस लैम्ब्डा (सर्वरलेस)
+  पर एक स्वचालित ट्रेडिंग बॉट को कैसे तैनात करें
+image: /images/serverless-investing-bot-facebook-prophet-machine-learning-1.png
+tags:
+- cloud-computing
+- machine-learning
+- algorithmic-trading
+- stock
+- aws
+- aws-lambda
+- serverless
+- facebook-prophet
+title: एफएसीबीबुक प्रोफेट मशीन लर्निंग मॉडल का उपयोग करके एडब्ल्यूएस लैम्ब्डा (सर्वरलेस)
+  पर स्वचालित ट्रेडिंग बॉट को कैसे तैनात करें
+type: post
+
 ---
+इस पोस्ट को मैंने दो हिस्सों में बांटा है: "मैंने ऐसा क्यों किया" और "तकनीकी कैसे करें"। यदि आप "क्यों" वाले हिस्से को छोड़ना चाहते हैं, तो आप सीधे "तकनीकी" भाग पर जा सकते हैं।
 
-I divided this post into the “Why did I do it” and the “Technical How To”. If you want to skip the “Why” part, feel free to directly jump to the Technical part.
+
+**1. विश्वसनीयता:** एल्गोरिथ्म अन्य सिस्टम, अपडेट, आदि से स्वतंत्र रूप से चलेगा।
+
+**2. दक्षता:** मैं एक (छोटे) सिस्टम पर कई एल्गोरिदम चला सकता हूँ, जो एक-दूसरे से स्वतंत्र हैं।
+
+**3. लागत बचत:** AWS प्रति माह [32 लाख गणना सेकंड](https://aws.amazon.com/lambda/?did=ft_card&trk=ft_card) तक की अनुमति देता है, जिससे मूलतः मुझे सभी एल्गोरिदम मुफ्त में चलाने की सुविधा मिलती है।
+
+मैंने एक ऐसे तरीके की तलाश की है जिससे मेरा निवेश बॉट सुनिश्चित रूप से निष्पादित हो, क्योंकि असफल निष्पादन से बहुत अधिक नुकसान हो सकता है यदि कोई कारोबार गलत दिशा में जाने पर तुरंत रद्द नहीं किया जाता है। इसके अतिरिक्त, मैं चाहता था कि मेरा कंप्यूटर लगातार न चले और यह सुनिश्चित किया जाए कि कई एल्गोरिदम एक साथ बिना एक-दूसरे को प्रभावित या विलंब किए चल सकें।
+
+इसके अतिरिक्त, यह एक अच्छा विचार है कि कोई निवेश एल्गोरिथ्म ऑपरेटिंग सिस्टम के अपडेट, हार्डवेयर खराबी और बिजली कटौती आदि की चिंता किए बिना चल सके, जो सर्वरलेस तकनीकों का आम लाभ है।
+
+अभी, मैं एल्गोरिथ्म के विभिन्न संस्करणों को परीक्षण करने के लिए चला सकता हूँ ताकि एल्गोरिथ्म में बदलावों का परीक्षण कर सकूँ और यह सुनिश्चित कर सकूँ कि यह चलेगा। एक और अच्छी बात? AWS लगभग 1 मिलियन मुफ्त Lambda कॉल प्रदान करता है जो मुझे पूरे आर्किटेक्चर को अपने मुफ्त स्तर पर चलाने की अनुमति देता है।
 
 
-**1. Reliability:** The algorithm will execute independently of other systems, updates, …
+## निवेश एल्गोरिथ्म
 
-**2. Performance Efficiency:** I can run several algorithms on one (small) system, independent from each other.
+मैं अपने वेबसाइट [www.datafortress.cloud](http://www.datafortress.cloud) पर एक और पोस्ट में एल्गोरिथ्म को और विस्तार से समझाऊँगा, लेकिन मेरी विशिष्ट निवेश एल्गोरिथ्म सेटअप में शामिल हैं:
 
-**3. Cost Savings:** AWS allows for [3,2 million compute-seconds](https://aws.amazon.com/lambda/?did=ft_card&trk=ft_card) per month, basically letting me run all my algorithms for free.
+1. [Backtrader](https://www.backtrader.com/) का उपयोग करके एल्गोरिथ्म का परीक्षण करना, जो पायथन में लिखा गया एक ओपन-सोर्स बैकटेस्टिंग फ्रेमवर्क है।
+2. सफल एल्गोरिथ्म को एक एकल पायथन फ़ाइल में परिवर्तित करना जिसमें एक रन() विधि होती है जो बताती है कि कौन से निवेश किए गए हैं।
+3. पायथन फ़ाइल को AWS Lambda में स्थानांतरित करना, जहाँ मैं AWS Lambda के lambda_handler फ़ंक्शन के साथ रन() फ़ंक्शन को कॉल कर रहा हूँ।
 
-I have been searching for a way to first make sure my investment bot surely executes because a failed execution might cost a lot of money if a trade is not canceled promptly if it goes in the wrong direction. Additionally, I wanted to avoid letting my computer run all the time and to make sure several algorithms could run next to each other, without influencing or delaying their execution.
+इस उदाहरण एल्गोरिथ्म में, मैं निवेश निर्णय लेता हूँ कि क्या वर्तमान कीमत [फ़ेसबुक के पैगंबर मॉडल](https://facebook.github.io/prophet/) द्वारा भविष्यवाणी की गई ट्रेंडलाइन से ऊपर या नीचे है। मेरे द्वारा [शॉन केली](http://seangtkelley.me/blog/2018/08/15/algo-trading-pt2) से विचार लिए गए हैं, जिन्होंने Backtrader पर पैगंबर को कैसे उपयोग किया जाए, इसके बारे में Backtrader सेटअप लिखा है।
 
-Furthermore, it is a nice thought to have an investing algorithm run without worrying about operating system updates, hardware failures, and power cuts, etc, which is the general advantage of serverless technologies.
+इस सेटअप में मेरा स्टॉक यूनिवर्स SPY500 इंडेक्स में शीर्ष 20 शेयरों को चुनकर गणना की जाती है, जिन्होंने पिछले X टाइमस्टेप्स में सबसे अधिक रिटर्न प्राप्त किया है।
 
-Right now, I can run several variations of the algorithm to test out alterations of the algorithm and can be sure that it will run. Another nice thing? AWS offers around 1 Million free Lambda calls, which lets me run the whole architecture in its free tier contingent.
+डेटा स्रोत Yahoo वित्त है, जो [मुफ्त yfinance लाइब्रेरी](https://pypi.org/project/yfinance/) का उपयोग कर रहा है, और मेरी एल्गोरिदमिक ब्रोकर पसंद के रूप में मैंने [Alpaca.markets](https://alpaca.markets/) को चुना है।
 
-## The investing algorithm
+मेरे सेटअप में, एल्गोरिथ्म दिन में 3 बजे या कारोबार के घंटों के दौरान हर 15 मिनट में एक बार निष्पादित होगा।
 
-I am going to explain the algorithm in more depth in another post on my website [www.datafortress.cloud](http://www.datafortress.cloud), but my typical investment algorithm setup consists of:
+### AWS Lambda में फ़ेसबुक पैगंबर को तैनात करने में समस्याएँ
 
-1. Testing the algorithm using [Backtrader](https://www.backtrader.com/), an open-source backtesting framework written in python
-2. Converting the successful algorithm into a single python file containing a run() method that returns which investments have been done
-3. Transferring the python file to AWS Lambda, where I am calling the run() function with AWS Lambda’s lambda_handler function
+AWS Lambda कुछ पायथन लाइब्रेरी पूर्व-स्थापित करता है, लेकिन जैसा कि आप में से कई जानते होंगे, यह डिफ़ॉल्ट रूप से काफी सीमित है (जो Lambda के वादे के लिए उचित है)। फिर भी, Lambda निजी पैकेज स्थापित करने की अनुमति देता है जो छोटे पैकेजों के लिए काफी आसान है (देखें [आधिकारिक दस्तावेज़](https://docs.aws.amazon.com/lambda/latest/dg/python-package.html)) लेकिन पैकेजों से निपटने पर थोड़ा अधिक जटिल हो जाता है जिनका आकार 250 Mb से अधिक होता है। दुर्भाग्य से, फ़ेसबुक का पैगंबर मॉडल इस सीमा से अधिक है, लेकिन सौभाग्य से [एलेक्जेंडर मत्सेनोव ने पैकेज के आकार को कम करके इस समस्या को हल किया](https://towardsdatascience.com/how-to-get-fbprophet-work-on-aws-lambda-c3a33a081aaf) और [मार्क मेट्ज़ ने AWS Lambda पर इसे चलाने के लिए संकलन समस्याओं को संभाला](https://github.com/marcmetz/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda)।
 
-In this example algorithm, I take investment decisions depending on if the current price is above or below the trendline predicted by [Facebook’s prophet model](https://facebook.github.io/prophet/). I have [taken ideas from Sean Kelley](http://seangtkelley.me/blog/2018/08/15/algo-trading-pt2), who wrote a Backtrader setup on how to utilize prophet with Backtrader.
+गैर-डिफ़ॉल्ट लाइब्रेरी को लेयर्स का उपयोग करके AWS Lambda में जोड़ा जा सकता है, जिसमें आवश्यक सभी पैकेज होते हैं। यदि कोई परत आयात की जाती है, तो आप अपने पायथन फ़ंक्शन में पैकेजों को उसी तरह आयात कर सकते हैं जैसे आप अपने स्थानीय सेटअप में करते हैं।
 
-My stock universe in this setup is calculated by choosing the top 20 stocks out of the SPY500 index, which achieved the highest return in the past X timesteps.
 
-The data source is Yahoo finance, using the [free yfinance library](https://pypi.org/project/yfinance/), and as my algorithmic broker of choice, I have chosen [Alpaca.markets](https://alpaca.markets/).
+## कैसे करें (तकनीकी)
 
-In my setup, the algorithm will execute once per day at 3 p.m. or every 15 minutes during trading hours.
-
-### The problems deploying Facebook Prophet to AWS Lambda
-
-AWS Lambda comes with some python libraries preinstalled, but as many of you might know, this is by default quite limited (which is reasonable for Lambda’s promise). Still, Lambda allows for private packages to be installed which is quite easy for smaller packages (see the [official documentation](https://docs.aws.amazon.com/lambda/latest/dg/python-package.html)) but becomes a little more complicated if dealing with packages that exceed 250 Mb in size. Unfortunately, Facebook’s prophet model exceeds this boundary, but luckily [Alexandr Matsenov solved this issue by reducing the package size](https://towardsdatascience.com/how-to-get-fbprophet-work-on-aws-lambda-c3a33a081aaf) and [Marc Metz handled compilation issues to make it run on AWS Lambda](https://github.com/marcmetz/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda).
-
-Non-default libraries can be added to AWS Lambda by using Layers, which contain all the packages needed. If a layer is imported, you can simply import the packages in your python function as you would do it in your local setup.
-
-## How to (technical)
-
-Finally, let me explain how exactly you can achieve this. See this TLDR for the impatient types, or the more detailed version below.
+अंत में, मैं आपको यह समझाने देता हूँ कि आप इसे कैसे प्राप्त कर सकते हैं। अधीर लोगों के लिए यह TLDR देखें, या नीचे दिया गया अधिक विस्तृत संस्करण देखें।
 
 **TLDR;**
 
-1. You will need a Lambda Layer, upload mine ([download](https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/raw/master/python.zip)) containing Prophet, yfinance, … to an S3 bucket (private access)
-2. Select AWS Lambda, create a function, add a layer and paste in your S3 object URL
-3. Paste your lambda_function.py into the Lambda Editor ([or use mine](https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/blob/master/lambda_function.py))
-4. Set up your Environment variables (optional)
-5. Either run it manually by clicking “test” or head over to CloudWatch -> Rules -> Create Rule and set up “Schedule Execution” to run it in a specified time interval
+1. आपको एक Lambda लेयर की आवश्यकता होगी, मेरा ([डाउनलोड करें](https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/raw/master/python.zip)) पैगंबर, yfinance, आदि को S3 बाल्टी (निजी एक्सेस) में अपलोड करें।
+2. AWS Lambda चुनें, एक फ़ंक्शन बनाएँ, एक परत जोड़ें और अपनी S3 ऑब्जेक्ट URL पेस्ट करें।
+3. अपना lambda_function.py Lambda संपादक में पेस्ट करें ([या मेरा उपयोग करें](https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/blob/master/lambda_function.py))।
+4. अपने पर्यावरण चर (वैकल्पिक) सेट करें।
+5. इसे मैन्युअल रूप से "टेस्ट" पर क्लिक करके चलाएँ या CloudWatch -> नियम -> नियम बनाएँ पर जाएँ और इसे निर्दिष्ट समय अंतराल पर चलाने के लिए "अनुसूचित निष्पादन" सेट करें।
 
-**Detailed Explanation**:
 
-### 1. Creating a custom layer for AWS Lambda
+**विवरण:**
 
-You can either use my Lambda layer containing Facebook Prophet, NumPy, pandas, [alpaca-trading-API](https://github.com/alpacahq/alpaca-trade-api-python), yfinance ([GitHub](https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda)) or compile your own using the explanation given by [Marc](https://medium.com/@marc.a.metz/docker-run-rm-it-v-pwd-var-task-lambci-lambda-build-python3-7-bash-c7d53f3b7eb2).
+### 1. AWS Lambda के लिए कस्टम परत बनाना
 
-**Using my Lambda Layer**
+आप या तो मेरे Lambda लेयर का उपयोग कर सकते हैं जिसमें फ़ेसबुक पैगंबर, NumPy, pandas, [alpaca-ट्रेडिंग-API](https://github.com/alpacahq/alpaca-trade-api-python), yfinance ([GitHub](https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda)) शामिल हैं, या अपने स्वयं के संकलन का उपयोग करें [मार्क](https://medium.com/@marc.a.metz/docker-run-rm-it-v-pwd-var-task-lambci-lambda-build-python3-7-bash-c7d53f3b7eb2) द्वारा दिए गए स्पष्टीकरण का उपयोग करके।
 
-1. Download the zip file from my [Github repo](https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/raw/master/python.zip) containing all packages ([Link](https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/raw/master/python.zip)).
-2. As you can only directly upload layers to Lambda until the size of 50 Mb, we will first need to upload the file to AWS S3.
-3. Create a bucket and place the downloaded zip file into it. Access can remain private and does NOT need to be public! Copy the URL to your file (e.g. [https://BUCKETNAME.s3.REGION.amazonaws.com/python.zip](https://BUCKETNAME.s3.REGION.amazonaws.com/python.zip "https://BUCKETNAME.s3.REGION.amazonaws.com/python.zip")).
-4. Log into AWS and go to Lambda -> Layers ([EU central Link](https://eu-central-1.console.aws.amazon.com/lambda/home?region=eu-central-1#/layers)).
-5. Click “Create layer”, give it a matching name and select “Upload a file from Amazon S3”, and copy the code of step 3 into it. As Runtimes select Python 3.7. Click create.
+**मेरे Lambda लेयर का उपयोग करना**
 
-**Compiling your own Lambda Layer**
+1. मेरे [GitHub रिपो](https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/raw/master/python.zip) से ज़िप फ़ाइल डाउनलोड करें जिसमें सभी पैकेज ([लिंक](https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/raw/master/python.zip)) शामिल हैं।
+2. चूँकि आप केवल 50 Mb के आकार तक Lambda में सीधे परतें अपलोड कर सकते हैं, हमें पहले फ़ाइल को AWS S3 में अपलोड करना होगा।
+3. एक बाल्टी बनाएँ और डाउनलोड की गई ज़िप फ़ाइल को इसमें रखें। पहुँच निजी बनी रह सकती है और सार्वजनिक होने की ज़रूरत नहीं है! अपनी फ़ाइल का URL कॉपी करें (जैसे [https://BUCKETNAME.s3.REGION.amazonaws.com/python.zip](https://BUCKETNAME.s3.REGION.amazonaws.com/python.zip "https://BUCKETNAME.s3.REGION.amazonaws.com/python.zip")).
+4. AWS में लॉग इन करें और Lambda -> परतें ([EU मध्य लिंक](https://eu-central-1.console.aws.amazon.com/lambda/home?region=eu-central-1#/layers)) पर जाएँ।
+5. "परत बनाएँ" पर क्लिक करें, इसे एक संगत नाम दें और "Amazon S3 से एक फ़ाइल अपलोड करें" चुनें, और चरण 3 का कोड इसमें कॉपी करें। रनटाइम के रूप में पायथन 3.7 चुनें। बनाएँ पर क्लिक करें।
 
-Please [follow the instructions of Marc](https://medium.com/@marc.a.metz/docker-run-rm-it-v-pwd-var-task-lambci-lambda-build-python3-7-bash-c7d53f3b7eb2).
+**अपना स्वयं का Lambda लेयर संकलित करना**
 
-### 2. Setting up an AWS Lambda function
+कृपया [मार्क के निर्देशों का पालन करें](https://medium.com/@marc.a.metz/docker-run-rm-it-v-pwd-var-task-lambci-lambda-build-python3-7-bash-c7d53f3b7eb2)।
 
-1. Open the Lambda Function Dashboard ([EU central Link](https://eu-central-1.console.aws.amazon.com/lambda/home?region=eu-central-1#/functions)) and click “Create function”
-2. Leave the “Author from scratch” checkbox as is and give it a fitting name.
-3. In “Runtime”, select Python 3.7, leave the rest as is and click “Create function”.
-4. In the overview of the “designer” tab, you will see a graphical representation of your Lambda function. Click on the “layers” box below it and click “Add a layer”. If you correctly set up the layer, you will be able to select it in the following dialogue. Finally, click on “Add”.
-5. In the “designer” tab, select your Lambda Function. If you scroll down, you will see a default python code snippet in a file called “lambda_function.py”. If you have structured your code the same as mine ([Link](https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/blob/master/lambda_function.py)), you can execute your function with the run() function. If a Lambda function is called, it will execute the lambda_handler(event, context) function from which you could e.g. call the run() function. Of course, you can rename all files and functions, but for the simplicity of this project, I left it as it is.
-6. Feel free to just paste in [my function](https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/blob/master/lambda_function.py) and test it.
-7. Clicking on “Test” should result in successful execution, otherwise, it will state the errors in the dialogue.
+### 2. AWS Lambda फ़ंक्शन सेट करना
 
-### 3. Using environment variables in AWS Lambda
+1. Lambda फ़ंक्शन डैशबोर्ड खोलें ([EU मध्य लिंक](https://eu-central-1.console.aws.amazon.com/lambda/home?region=eu-central-1#/functions)) और "फ़ंक्शन बनाएँ" पर क्लिक करें।
+2. "खरोंच से लेखक" चेकबॉक्स को वैसा ही छोड़ दें और इसे एक उपयुक्त नाम दें।
+3. "रनटाइम" में, पायथन 3.7 चुनें, बाकी को वैसा ही छोड़ दें और "फ़ंक्शन बनाएँ" पर क्लिक करें।
+4. "डिजाइनर" टैब के अवलोकन में, आप अपने Lambda फ़ंक्शन का ग्राफ़िकल प्रतिनिधित्व देखेंगे। इसके नीचे "परतें" बॉक्स पर क्लिक करें और "परत जोड़ें" पर क्लिक करें। यदि आपने परत को सही ढंग से सेट किया है, तो आप निम्न संवाद में इसे चुन पाएँगे। अंत में, "स्थिर" पर क्लिक करें।
+5. "डिजाइनर" टैब में, अपना Lambda फ़ंक्शन चुनें। यदि आप नीचे स्क्रॉल करते हैं, तो आपको "lambda_function.py" नाम की फ़ाइल में डिफ़ॉल्ट पायथन कोड स्निपेट दिखाई देगा। यदि आपने मेरे कोड को [लिंक](https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/blob/master/lambda_function.py) जैसा ही संरचित किया है, तो आप रन() फ़ंक्शन के साथ अपने फ़ंक्शन को निष्पादित कर सकते हैं। यदि कोई Lambda फ़ंक्शन कॉल किया जाता है, तो यह lambda_handler(event, context) फ़ंक्शन को निष्पादित करेगा, जिससे आप कॉल कर सकते हैं जैसे रन() फ़ंक्शन। बेशक, आप सभी फ़ाइलों और फ़ंक्शनों का नाम बदल सकते हैं, लेकिन इस परियोजना की सादगी के लिए, मैंने इसे वैसा ही छोड़ा है।
+6. कृपया [मेरा फ़ंक्शन](https://github.com/JustinGuese/How-To-Deploy-Facebook-Prophet-on-AWS-Lambda/blob/master/lambda_function.py) पेस्ट करें और इसे टेस्ट करें।
+7. "टेस्ट" पर क्लिक करने से सफल निष्पादन होना चाहिए, अन्यथा यह संवाद में त्रुटियों को बताएगा।
 
-You should never leave your user and password as cleartext in your code, which is why you should always use environment variables! Luckily, Lambda uses them as well, and they can easily be called with the python os package. E.g. in my script I am calling the user variable with os.environ\['ALPACAUSER'\]. The environment variables can be set up in the main Lambda function screen when scrolling down below your code editor.
+### 3. AWS Lambda में पर्यावरण चर का उपयोग करना
 
-### 4. Trigger AWS Lambda functions at a specified time interval
+आपको कभी भी अपने उपयोगकर्ता और पासवर्ड को अपने कोड में स्पष्ट रूप से नहीं छोड़ना चाहिए, यही कारण है कि आपको हमेशा पर्यावरण चर का उपयोग करना चाहिए! सौभाग्य से, Lambda इनका उपयोग करता है, और उन्हें पायथन os पैकेज के साथ आसानी से कॉल किया जा सकता है। उदाहरण के लिए, मेरे स्क्रिप्ट में मैं उपयोगकर्ता चर को os.environ\['ALPACAUSER'\] के साथ कॉल कर रहा हूँ। पर्यावरण चर आपके कोड संपादक के नीचे स्क्रॉल करते समय, मुख्य Lambda फ़ंक्शन स्क्रीन में सेट किए जा सकते हैं।
 
-The concept of serverless and AWS Lambda is built on the idea that a function is executed when a trigger event happens. In my setup, I wanted the function to be called e.g. every 15 minutes during trading hours, Monday to Friday. Luckily, AWS offers a way to trigger an event without the need to run a server, using the CloudWatch service.
+### 4. निर्दिष्ट समय अंतराल पर AWS Lambda फ़ंक्शन ट्रिगर करना
 
-1. Head over to CloudWatch ([EU central Link](https://eu-central-1.console.aws.amazon.com/cloudwatch/home?region=eu-central-1)).
-2. In the left panel, select “Events” and “Rules”.
-3. Click on “Create Rule”, and select “Schedule” instead of “Event pattern”. Here you can use the simple “Fixed-rate” dialogue, or create a cron expression. I am using [https://crontab.guru/](https://crontab.guru/ "https://crontab.guru/") (free) to create cron expressions. My cron expression for the abovementioned use case is “0/15 13-21 ? * MON-FRI *”.
-4. In the right panel, select “Add Target” and select your Lambda function. It will automatically be added to Lambda.
-5. Finally click on “Configure details”, give it a name, and click on “Create rule”.
+सर्वरलेस और AWS Lambda की अवधारणा इस विचार पर आधारित है कि जब कोई ट्रिगर ईवेंट होता है तो कोई फ़ंक्शन निष्पादित होता है। मेरे सेटअप में, मैं चाहता था कि फ़ंक्शन को उदाहरण के लिए, सोमवार से शुक्रवार तक कारोबारी घंटों के दौरान हर 15 मिनट में कॉल किया जाए। सौभाग्य से, AWS में क्लाउडवॉच सेवा का उपयोग करके बिना सर्वर चलाए ईवेंट ट्रिगर करने का तरीका है।
 
-### 5. (optional) Log Analysis, Error Search
+1. CloudWatch ([EU मध्य लिंक](https://eu-central-1.console.aws.amazon.com/cloudwatch/home?region=eu-central-1)) पर जाएँ।
+2. बाईं ओर के पैनल में, "ईवेंट" और "नियम" चुनें।
+3. "नियम बनाएँ" पर क्लिक करें और "घटना पैटर्न" के बजाय "अनुसूची" चुनें। यहाँ आप सरल "निश्चित-दर" संवाद का उपयोग कर सकते हैं, या क्रोन अभिव्यक्ति बना सकते हैं। मैं [https://crontab.guru/](https://crontab.guru/) (मुफ्त) का उपयोग क्रोन अभिव्यक्ति बनाने के लिए कर रहा हूँ। उपरोक्त उपयोग के मामले के लिए मेरी क्रोन अभिव्यक्ति "0/15 13-21 ? * MON-FRI *" है।
+4. दाहिने पैनल में, "लक्ष्य जोड़ें" चुनें और अपना Lambda फ़ंक्शन चुनें। यह अपने आप Lambda में जुड़ जाएगा।
+5. अंत में "विवरण कॉन्फ़िगर करें" पर क्लिक करें, इसे एक नाम दें और "नियम बनाएँ" पर क्लिक करें।
 
-If you have made it to this part, you should be done! But if you want to check if everything worked, you can use CloudWatch to have a look at the outputs of the Lambda functions. Head over to CloudWatch -> Logs -> Log groups ([EU central Link](https://eu-central-1.console.aws.amazon.com/cloudwatch/home?region=eu-central-1#logsV2:log-groups)) and select your Lambda function. In this overview, you should be able to see the output of your functions.
+### 5. (वैकल्पिक) लॉग विश्लेषण, त्रुटि खोज
 
-If you have liked this post leave a comment or head over to my blog [www.datafortress.cloud](http://www.datafortress.cloud) to keep me motivated 😊.
+यदि आप इस भाग तक पहुँच चुके हैं, तो आपको काम खत्म करना चाहिए! लेकिन अगर आप यह देखना चाहते हैं कि सब कुछ ठीक से काम किया है, तो आप Lambda फ़ंक्शन के आउटपुट को देखने के लिए CloudWatch का उपयोग कर सकते हैं। CloudWatch -> लॉग्स -> लॉग ग्रुप ([EU मध्य लिंक](https://eu-central-1.console.aws.amazon.com/cloudwatch/home?region=eu-central-1#logsV2:log-groups)) पर जाएँ और अपना Lambda फ़ंक्शन चुनें। इस अवलोकन में, आपको अपने फ़ंक्शन के आउटपुट देखने में सक्षम होना चाहिए।
+
+
+यदि आपको यह पोस्ट पसंद आई है तो कमेंट करें या मेरे ब्लॉग [www.datafortress.cloud](http://www.datafortress.cloud) पर जाएं ताकि मुझे प्रेरित रखा जा सके 😊।
