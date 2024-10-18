@@ -77,18 +77,10 @@ weight = 2
 
 [[main]]
 parent = "Products"
-name = "Workplace"
-pre = "<i class='dropdown-icon fas fa-laptop-house'></i>"
-post = "<small class='dropdown-subtitle'>Application built to improve productivity.</small>"
-url = "/products/product-3"
-weight = 3
-
-[[main]]
-parent = "Products"
-name = "Analytics"
+name = "AI Investing Bots"
 pre = "<i class='dropdown-icon fas fa-chart-bar'></i>"
-post = "<small class='dropdown-subtitle'>Create custom reports from any data set.</small>"
-url = "/products/product-4"
+post = "<small class='dropdown-subtitle'>AI Investing Bots is a website publishing our trade ideas and investment strategies.</small>"
+url = "/products/aiinvestingbots"
 weight = 4
 
 [[main]]

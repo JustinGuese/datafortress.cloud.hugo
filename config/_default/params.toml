@@ -52,7 +52,7 @@ crisp_website_id = "4453c713-998c-44d9-8968-96ad05471989" # replace this code wi
 # seo meta data for OpenGraph / Twitter Card
 [metadata]
 keywords = ["Data Engineering", "Data", "Kubernetes", "Hosting in Germany", "Managed Kubernetes", "Jupyter Notebook", "ETL Pipelines"]
-description = "This is meta description"
+description = "DataFortress.cloud (GmbH) specializes in delivering scalable data engineering, cloud infrastructure, and Kubernetes solutions for enterprise customers. We provide customized services, including cloud migration, DevOps integration, Kubernetes orchestration, and secure data pipeline management. With expertise in multi-cloud and hybrid environments, we help businesses optimize performance, ensure security, and achieve cost efficiency. Trusted by enterprises across industries, DataFortress.cloud is your partner in transforming IT infrastructure for the modern cloud era."
 author = "DataFortress.cloud"
 image = "images/logo.png"                           # this image will be used as fallback if a page has no image of its own
 
