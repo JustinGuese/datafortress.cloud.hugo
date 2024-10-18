@@ -1,8 +1,8 @@
 ---
-title: "Alle Produkte"
-subtitle: "Das Betriebssystem für Ihr Unternehmen"
+title: "All Products"
+subtitle: "The Operation System for your Business"
 # meta description
-description: "Das Betriebssystem für Ihr Unternehmen"
+description: "The Operation System for your Business"
 draft: false
 # content section
 section: "products"

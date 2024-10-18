@@ -85,7 +85,7 @@ weight = 4
 
 [[main]]
 parent = "Products"
-name = "View All Product"
+name = "View All Products"
 pre = "<i class='dropdown-icon text-primary fas fa-arrow-right'></i>"
 url = "/products"
 weight = 5

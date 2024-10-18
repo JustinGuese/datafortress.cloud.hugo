@@ -1,71 +1,74 @@
 ---
 ####################### Banner #########################
 banner:
-  title : "Lassen Sie uns Ihre kritischen Herausforderungen bei der Website-Entwicklung lösen"
+  title : "Von staubigen Daten zu Umsatzgold"
   image : "images/banner-art.svg"
-  content : "Create a best strategic tool, share it with your team and ensure it’s on track with intuitive dashboards. <br> Simple enough with the sophistication and flexibility to meet the needs of large enterprises"
+  imagetwo: "images/justin-guese-bg-removed.png"
+  content : "Datenengineering, DevOps (K8s, OS), KI <br> Wir sind hier, um zu helfen"
   button:
     enable : true
-    label : "Kostenlos starten"
-    link : "get-demo/"
+    label : "Kostenlose 15-minütige Beratung"
+    link : "contact/"
 
 
 ########################## Clients Logo Slider #########################
 clients_logo_slider:
   enable : true
-  title: "Die besten Kundenerlebnisse entstehen mit Bigspring"
+  title: "Vertraut von den besten Unternehmen der Welt"
   logos:
-  - "images/brands/01-colored.png"
-  - "images/brands/02-colored.png"
-  - "images/brands/03-colored.png"
-  - "images/brands/04-colored.png"
-  - "images/brands/05-colored.png"
-  - "images/brands/06-colored.png"
-  - "images/brands/03-colored.png"
-  - "images/brands/01-colored.png"
-  - "images/brands/02-colored.png"
-  - "images/brands/04-colored.png"
-  - "images/brands/05-colored.png"
-  - "images/brands/06-colored.png"
+    - "images/client-logo/bmw.png"
+    - "images/client-logo/volksbank.png"
+    - "images/client-logo/sparkasse.png"
+    - "images/client-logo/hpe-small.png"
+    - "images/client-logo/porsche-holding.png"
+    - "images/client-logo/vw.png"
+    - "images/client-logo/atruvia.png"
+    - "images/client-logo/buchinger-wilhelmi.png"
+    - "images/client-logo/ottoai.png"
+    - "images/client-logo/summai.png"
+
 
 ##################### Feature ##########################
 feature:
   enable : true
-  title : "Die ultimative Plattform zum Erstellen, Teilen und Ausführen."
-  content : "We are helping thousands of organizations run their business strategies and achieve their ambitious results! We make big plans happen."
+  title : "Viele Unternehmen kämpfen damit, das Potenzial ihrer Daten freizusetzen"
+  content : "
+Hier kommen wir ins Spiel.l.
+Während AWS und öffentliche Clouds teuer sein können und oft durch deutsche Finanz- und Gesundheitsvorschriften eingeschränkt sind, bieten wir sichere Kubernetes-Hosting-Lösungen an.tes-Hosting-Lösungen an.
+Mit einer nachgewiesenen Erfolgsbilanz bei der Zusammenarbeit mit Unternehmen wie VW, HPE, Porsche und großen Banken können wir Ihre Daten in wertvollen Umsatz verwandeln."
   button:
     enable : true
-    label : "Try for Free"
-    link : "get-demo/"
+    label : "Kostenlose 15-minütige Beratung"
+    link : "contact/"
   feature_item:
-  # feature item loop
-  - name : "Cloud Support"
-    icon : "fab fa-mixcloud"
-    content : "Fugiat similique nobis porro cumque stinctio iusto quaerat corrupti."
-    
-  # feature item loop
-  - name : "Object Oriented"
-    icon : "far fa-dot-circle"
-    content : "Fugiat similique nobis porro cumque voluptates tempus eupo stinctio."
-    
-  # feature item loop
-  - name : "24h Service"
-    icon : "fas fa-headphones-alt"
-    content : "Fugiat similique nobis porro cumque voluptates tempus eupo stinctio."
-    
-  # feature item loop
-  - name : "Faster Response"
-    icon : "far fa-thumbs-up"
-    content : "Fugiat similique nobis porro cumque voluptates tempus eupo stinctio."
+    # feature item loop
+    - name : "Big Data"
+      icon : "fa fa-database"
+      content : "Data Warehousing, Data Lakes, Data Marts, ETL Pipelines und Trino/Hadoop. Wir können alle Daten aufnehmen und verarbeiten!"
+      
+    # feature item loop
+    - name : "Cloud/Kubernetes"
+      icon : "fa fa-cloud"
+      content : "Kubernetes auf Bare-Metal und in der (Hybrid-)Cloud. Nicht sicher, welche Sie wählen sollen? Rufen Sie uns an!"
+      
+    # feature item loop
+    - name : "KI/ML"
+      icon : "fas fa-robot"
+      content : "EU-konforme und skalierbare KI-Lösungen. ML Ops zur Skalierung Ihrer KI-Workloads."
+      
+    # feature item loop
+    - name : "End-to-End-Dienstleistungen"
+      icon : "far fa-thumbs-up"
+      content : "Wir bieten umfassende End-to-End-Dienstleistungen, die alles von Beratung und Architektur bis hin zur Programmierung abdecken."
       
       
 ######################### Intro Video #####################
 intro_video:
   enable: true
-  title: "Exklusiv für Sie gebaut"
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin."
-  video_url: "https://www.youtube.com/embed/dyZcRRWiuuw"
-  video_thumbnail: "images/video-popup.jpg"
+  title: "DataFortress.cloud in 60 Sekunden"
+  content: "denn manchmal sagt ein Video mehr als tausend Worte."
+  video_url: "https://www.youtube.com/embed/eEWvARX0FT0"
+  video_thumbnail: "images/video-popup.png"
 
       
       
@@ -74,47 +77,78 @@ service:
   enable : true
   service_item:
   # service item loop
-  - title : "Es ist das fortschrittlichste Unternehmen für digitales Marketing."
+  - title : "Enterprise Solution Architecture: Revolutionierung des Datenflusses im VW-Sampling-Prozess mit HPE"
     images:
-    - "images/service-1.png"
-    - "images/service-2.png"
+    - "images/client-logo/vw.png"
+    - "images/client-logo/hpe-small.png"
     - "images/service-3.png"
-    content : "Adipiscing elit Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+    content : "In Zusammenarbeit mit Hewlett Packard Enterprise (HPE) und Volkswagen (VW) haben wir eine hochmoderne Lösungsarchitektur entwickelt, die den Material-Sampling-Prozess von VW revolutionierte. Durch die Integration einer SaaS-Plattform in die komplexe Systemarchitektur von VW haben wir die Markteinführungszeit neuer Fahrzeugmodelle erheblich verkürzt und den gesamten Sampling-Workflow optimiert.ng-Workflow optimiert.
+<br/><br/>
+Unsere Lösung nutzte eine modulare Microservice-Architektur, die einen sicheren, konformen Datentransfer zwischen verschiedenen VW-Systemen und der neuen Plattform ermöglichte. Das Ergebnis? Eine bemerkenswerte Reduzierung der Sampling-Zeit und Fehlerquoten um 64%, während gleichzeitig die VW- und VDA-Compliance-Standards eingehalten wurden. Dieses Projekt zeigt unser Fachwissen bei der Bewältigung technologischer Herausforderungen, der Verbesserung der Effizienz und der Bereitstellung wirkungsvoller Lösungen für globale Marktführer wie VW."
       
   # service item loop
-  - title : "Es ist ein privat geführtes Unternehmen für Informations- und Cybersicherheit"
+  - title : "Datenengineering: Transformation des Datenmanagements für Atruvia, Sparkasse und Volksbank"
     images:
-    - "images/service-1.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
-      
+    - "images/client-logo/volksbank.png"
+    - "images/client-logo/sparkasse.png"
+    - "images/client-logo/atruvia.png"
+    content : "In Zusammenarbeit mit Atruvia, dem IT-Dienstleister für Volksbank und Sparkasse, haben wir eine teure Hadoop-basierte Infrastruktur durch ein modernes, Open-Source-Datenlager ersetzt. Diese BaFin-konforme Architektur, die auf Trino und S3-Autoscaling-Clustern basiert, verarbeitet riesige Mengen an Finanzdaten von Millionen von Kunden und bietet gleichzeitig außergewöhnliche Leistung zu reduzierten Kosten.che Leistung zu reduzierten Kosten.
+<br/><br/>
+Durch die Gestaltung einer Microservice-Architektur und die Bereitstellung benutzerfreundlicher Analyseumgebungen haben wir die Teams von Atruvia in die Lage versetzt, große Datensätze nahtlos zu analysieren, ohne komplexe Konfigurationen. Unsere Lösung verbesserte nicht nur die Skalierbarkeit und Datenleistung, sondern stellte auch die Einhaltung der Vorschriften sicher und positionierte Atruvia für zukünftiges Wachstum. Dieses Projekt zeigt unsere Fähigkeit, innovative, kosteneffiziente Datenarchitekturen zu liefern, die den höchsten Branchenstandards entsprechen."
+
   # service item loop
-  - title : "Es ist ein Team von erfahrenen und kompetenten Mitarbeitern mit Vertrieb"
+  - title : "Open Source: Verbesserung von Google’s TimesFM mit CI/CD und Python Poetry"
     images:
-    - "images/service-2.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
-      
+    - "images/client-logo/googleresearch.jpg"
+    content : "Im Rahmen meiner Open-Source-Beiträge zum TimesFM-Projekt von Google Research habe ich wichtige Verbesserungen implementiert, die den Entwicklungsprozess optimierten und die Benutzerfreundlichkeit erhöhten. TimesFM, ein hochmodernes Prognosemodell, das auf 100 Milliarden realen Zeitpunkten vortrainiert wurde, bietet beeindruckende Zero-Shot-Leistung für Zeitreihenprognosen in Branchen wie Einzelhandel, Finanzen und Gesundheitswesen. Trotz seiner robusten Fähigkeiten benötigte das Projekt Verbesserungen bei der Bereitstellung und dem Abhängigkeitsmanagement, um seine Wirkung zu maximieren.
+  <br/><br/>
+  Ich habe durch die Integration einer Continuous Integration/Continuous Deployment (CI/CD)-Pipeline mit GitHub Actions beigetragen, die Test- und Bereitstellungs-Workflows automatisiert und eine konsistente Codequalität sicherstellt. Zusätzlich habe ich Python Poetry für ein nahtloses Abhängigkeitsmanagement implementiert, was die Installation vereinfachte und die Reproduzierbarkeit verbesserte. Diese Verbesserungen senkten die Einstiegshürde für neue Benutzer und Entwickler, steigerten die Produktivität und förderten eine bessere Zusammenarbeit, sodass TimesFM weiterhin an der Spitze der Zeitreihenprognose-Innovation bleibt.
+  <br/><br/>
+  Durch die Optimierung der Entwicklungsumgebung und der Bereitstellungsprozesse haben meine Beiträge sichergestellt, dass TimesFM weiterhin leistungsstarke Prognosefähigkeiten mit größerer Effizienz und Leichtigkeit liefern kann."
+
   # service item loop
-  - title : "Ein Unternehmen, das sich von anderen unterscheidet"
+  - title : "Enterprise Solution Architecture: BMW / HPE: Weltweite Backup-Lösung für VMs"
     images:
-    - "images/service-3.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
-       
-       
+    - "images/client-logo/bmw.png"
+    content : "In Zusammenarbeit mit BMW und HPE haben wir eine skalierbare und kosteneffiziente globale Backup-Lösung entwickelt, um die umfangreichen virtuellen Maschinen (VM)-Systeme und die Dateifreigabe-Infrastruktur von BMW zu unterstützen. Angesichts der Herausforderung, Hunderte von Petabytes an Daten über ein weltweites Netzwerk zu verwalten, haben wir eine hybride Strategie entwickelt, die Cloud-Speicheranbieter nahtlos mit lokalen HPE-Deduplizierungsservern integriert.
+  <br/><br/>
+  Durch die Nutzung der Stärken von AWS, Google Cloud und Azure in Kombination mit der fortschrittlichen Deduplizierungstechnologie von HPE haben wir Bandbreitenbeschränkungen überwunden und die Speicherkosten erheblich reduziert. Unsere Lösung gewährleistete die Zuverlässigkeit der Daten durch Multi-Cloud-Redundanz und ermöglichte ein skalierbares Wachstum im Einklang mit den zukünftigen Anforderungen von BMW. Dieses Projekt unterstreicht unser Fachwissen in der Architektur globaler Datensicherungssysteme, die robuste Leistung, Kosteneffizienz und langfristige Nachhaltigkeit bieten."
+
+
+  # service item loop
+  - title : "Open Source: Verbesserung von Google’s TimesFM mit CI/CD und Python Poetry"
+    images:
+    - "images/client-logo/googleresearch.jpg"
+    content : "Im Rahmen meiner Open-Source-Beiträge zum TimesFM-Projekt von Google Research habe ich wichtige Verbesserungen implementiert, die den Entwicklungsprozess optimierten und die Benutzerfreundlichkeit erhöhten. TimesFM, ein hochmodernes Prognosemodell, das auf 100 Milliarden realen Zeitpunkten vortrainiert wurde, bietet beeindruckende Zero-Shot-Leistung für Zeitreihenprognosen in Branchen wie Einzelhandel, Finanzen und Gesundheitswesen. Trotz seiner robusten Fähigkeiten benötigte das Projekt Verbesserungen bei der Bereitstellung und dem Abhängigkeitsmanagement, um seine Wirkung zu maximieren.
+<br/><br/>
+Ich habe durch die Integration einer Continuous Integration/Continuous Deployment (CI/CD)-Pipeline mit GitHub Actions beigetragen, die Test- und Bereitstellungs-Workflows automatisiert und eine konsistente Codequalität sicherstellt. Zusätzlich habe ich Python Poetry für ein nahtloses Abhängigkeitsmanagement implementiert, was die Installation vereinfachte und die Reproduzierbarkeit verbesserte. Diese Verbesserungen senkten die Einstiegshürde für neue Benutzer und Entwickler, steigerten die Produktivität und förderten eine bessere Zusammenarbeit, sodass TimesFM weiterhin an der Spitze der Zeitreihenprognose-Innovation bleibt.
+<br/><br/>
+Durch die Optimierung der Entwicklungsumgebung und der Bereitstellungsprozesse haben meine Beiträge sichergestellt, dass TimesFM weiterhin leistungsstarke Prognosefähigkeiten mit größerer Effizienz und Leichtigkeit liefern kann."
+        
+  # service item loop
+  - title : "Enterprise Solution Architecture: BMW / HPE: Weltweite Backup-Lösung für VMs"
+    images:
+    - "images/client-logo/bmw.png"
+    content : "In Zusammenarbeit mit BMW und HPE haben wir eine skalierbare und kosteneffiziente globale Backup-Lösung entwickelt, um die umfangreichen virtuellen Maschinen (VM)-Systeme und die Dateifreigabe-Infrastruktur von BMW zu unterstützen. Angesichts der Herausforderung, Hunderte von Petabytes an Daten über ein weltweites Netzwerk zu verwalten, haben wir eine hybride Strategie entwickelt, die Cloud-Speicheranbieter nahtlos mit lokalen HPE-Deduplizierungsservern integriert.
+<br/><br/>
+Durch die Nutzung der Stärken von AWS, Google Cloud und Azure in Kombination mit der fortschrittlichen Deduplizierungstechnologie von HPE haben wir Bandbreitenbeschränkungen überwunden und die Speicherkosten erheblich reduziert. Unsere Lösung gewährleistete die Zuverlässigkeit der Daten durch Multi-Cloud-Redundanz und ermöglichte ein skalierbares Wachstum im Einklang mit den zukünftigen Anforderungen von BMW. Dieses Projekt unterstreicht unser Fachwissen in der Architektur globaler Datensicherungssysteme, die robuste Leistung, Kosteneffizienz und langfristige Nachhaltigkeit bieten."
+
+
 ################### Testimonials ########################
 testimonials:
-  enable: true
-  title: "Vertrauen von denen, denen Sie vertrauen"
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin."
+  enable: false
+  title: "Trusted by leading enterprises"
+  content: ""
   
   testimonials_quotes:
   - quote: "Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs dolor faucibus"
-    name: "David Cameron"
-    designation: "CEO, Nexuspay"
+    name: "Ryder Stewart"
+    designation: "Lynch, Marquardt"
     image: "images/avatar/02.jpg"
 
   - quote: "Conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor faucibus"
-    name: "David Cameron"
-    designation: "CEO, Nexuspay"
+    name: "Kade Kim"
+    designation: "Champlin Group"
     image: "images/avatar/03.jpg"
 
   - quote: "Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor"
@@ -126,20 +160,24 @@ testimonials:
 ################### tools_intregrate ########################
 tools_intregrate:
   enable : true
-  title : "Integrieren Sie alle Tools, die Ihre Teams gerne verwenden"
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin."
+  title : "Integriert sich mit allen Tools, die Ihr Team gerne verwendet"
+  content: "Von öffentlichen Cloud-Anbietern bis hin zu einfachem Excel - wir können jede Datenquelle verarbeiten und integrieren."
   image : "images/screenshot.svg"
 
   tools:
-  - "images/tools/01.png"
-  - "images/tools/02.png"
-  - "images/tools/03.png"
-  - "images/tools/04.png"
-  - "images/tools/05.png"
-  - "images/tools/06.png"
-  - "images/tools/08.png"
-  - "images/tools/09.png"
-  - "images/tools/10.png"
+    - "images/tools/Amazon_Web_Services-Logo.wine.png"
+    - "images/tools/hetzner.png"
+    - "images/tools/sap.png"
+    - "images/tools/azure.svg.png"
+    - "images/tools/jupyter-notebook.png"
+    - "images/tools/snowflake.svg.png"
+    - "images/tools/docker.png"
+    - "images/tools/kubernetes.jpg"
+    - "images/tools/trino-logo.png"
+    - "images/tools/excel.jpeg"
+    - "images/tools/linux.png"
+    - "images/tools/google-cloud-logo-3.png"
+    - "images/tools/python.svg.png"
 
   
 
@@ -147,9 +185,9 @@ tools_intregrate:
 call_to_action:
   enable : true
   title : "Bereit anzufangen?"
-  content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat eget amtempus eu at consecttur."
+  content : "Kontaktieren Sie uns für eine kostenlose 15-minütige Beratung und erzählen Sie uns von Ihren Daten-/Cloud-Herausforderungen."
   button:
     enable : true
-    label : "Contact Us"
+    label : "Kontaktieren Sie uns"
     link : "contact/"
 ---
