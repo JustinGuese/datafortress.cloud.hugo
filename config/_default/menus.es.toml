@@ -1,0 +1,181 @@
+# main menu
+[[main]]
+name = "Inicio"
+url = ""
+weight = 1
+
+[[main]]
+weight = 2
+name = "Portafolio"
+hasChildren = true
+
+[[main]]
+parent = "Portafolio"
+name = "Todo"
+url = "/portfolio"
+weight = 1
+
+[[main]]
+parent = "Portafolio"
+name = "VW / HPE: Arquitectura de Soluciones"
+url = "/portfolio/vw-hpe-solution-architecture"
+weight = 2
+
+[[main]]
+parent = "Portafolio"
+name = "Google TimesFM – Contribución de código abierto"
+url = "/portfolio/google-timesfm"
+weight = 3
+
+[[main]]
+parent = "Portafolio"
+name = "Atruvia / Sparkasse / Volksbank – Almacén de Datos"
+url = "/portfolio/atruvia-sparkasse-volksbank-data-warehouse"
+weight = 4
+
+[[main]]
+parent = "Portafolio"
+name = "BMW / HPE: Solución de respaldo mundial para VMs"
+url = "/portfolio/bmw-worldwide-backup-solution"
+weight = 5
+
+[[main]]
+parent = "Portafolio"
+name = "Clínica Buchinger Wilhelmi - Almacén de Datos Médicos"
+url = "/portfolio/clinic-buchinger-wilhelmi-data-warehouse"
+weight = 6
+
+[[main]]
+parent = "Portafolio"
+name = "Vios Investments – Infraestructura de Comercio"
+url = "/portfolio/vios-investments-trading-infrastructure"
+weight = 7
+
+[[main]]
+weight = 6
+name = "Productos"
+hasChildren = true
+[main.params]
+isMenuLarge = true
+
+[[main]]
+parent = "Productos"
+name = "DokuChat"
+pre = "<i class='dropdown-icon fas fa-users'></i>"
+post = "<small class='dropdown-subtitle'>Aplicación SaaS de IA que permite a los usuarios chatear con sus correos electrónicos y documentos</small>"
+url = "/products/dokuchat"
+weight = 1
+
+[[main]]
+parent = "Productos"
+name = "Myopiagraph"
+pre = "<i class='dropdown-icon fas fa-eye'></i>"
+post = "<small class='dropdown-subtitle'>Myopiagraph es un software de salud para la gestión de la miopía</small>"
+url = "/products/myopiagraph"
+weight = 2
+
+[[main]]
+parent = "Productos"
+name = "Bots de Inversión IA"
+pre = "<i class='dropdown-icon fas fa-chart-bar'></i>"
+post = "<small class='dropdown-subtitle'>Bots de Inversión IA es un sitio web que publica nuestras ideas de comercio y estrategias de inversión.</small>"
+url = "/products/aiinvestingbots"
+weight = 4
+
+[[main]]
+parent = "Productos"
+name = "Ver Todos los Productos"
+pre = "<i class='dropdown-icon text-primary fas fa-arrow-right'></i>"
+url = "/products"
+weight = 5
+
+[[main]]
+weight = 13
+name = "Blog"
+url = "/blog"
+
+[[main]]
+weight = 15
+name = "Acerca de"
+hasChildren = true
+
+[[main]]
+parent = "Acerca de"
+name = "Preguntas Frecuentes"
+url = "/about/faq"
+weight = 1
+
+[[main]]
+parent = "Acerca de"
+name = "Imprint"
+url = "/about/imprint"
+weight = 2
+
+[[main]]
+parent = "Acerca de"
+name = "Política de Privacidad"
+url = "/about/privacy-policy"
+weight = 3
+
+[[main]]
+name = "Contacto"
+url = "/contact"
+weight = 30
+
+# footer menu left
+[[footer_left]]
+name = "Política de Privacidad"
+url = "/about/privacy-policy"
+weight = 1
+
+[[footer_left]]
+name = "Contacto"
+url = "/contact"
+weight = 2
+
+[[footer_left]]
+name = "Imprint"
+url = "/about/imprint"
+weight = 3
+
+[[footer_left]]
+name = "Preguntas Frecuentes"
+url = "/about/faq"
+weight = 4
+
+# footer menu middle
+[[footer_middle]]
+name = "DokuChat"
+url = "/products/dokuchat"
+weight = 1
+
+[[footer_middle]]
+name = "Myopiagraph"
+url = "/products/myopiagraph"
+weight = 2
+
+[[footer_middle]]
+name = "Bots de Inversión IA"
+url = "/products/aiinvestingbots"
+weight = 4
+
+# footer menu right
+[[footer_right]]
+name = "VW / HPE: Arquitectura de Soluciones"
+url = "/portfolio/vw-hpe-solution-architecture"
+weight = 2
+
+[[footer_right]]
+name = "Google TimesFM – Contribución de código abierto"
+url = "/portfolio/google-timesfm"
+weight = 3
+
+[[footer_right]]
+name = "Atruvia / Sparkasse / Volksbank – Almacén de Datos"
+url = "/portfolio/atruvia-sparkasse-volksbank-data-warehouse"
+weight = 4
+
+[[footer_right]]
+name = "BMW / HPE: Solución de respaldo mundial para VMs"
+url = "/portfolio/bmw-worldwide-backup-solution"
+weight = 5
