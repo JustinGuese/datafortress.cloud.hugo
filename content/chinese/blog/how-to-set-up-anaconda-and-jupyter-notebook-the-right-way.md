@@ -1,121 +1,150 @@
-+++
-author = "Justin Guese"
-bg_image = "/images/jupyter.png"
-categories = ["tutorial"]
-date = 2022-01-24T23:00:00Z
-description = "If Anaconda (conda) and Jupyter Notebook (Jupyter Lab) are set up the right way the combination of them can become the perfect team, where you are able to easily switch between Deep Learning conda environments.  Some programs requiring Tensorflow 1.15, others Tensorflow 2.0? No problem! Just switch environments and Tensorflow versions with a simple click."
-image = "/images/jupyter.png"
-tags = ["deep learning", "tutorial", "anaconda", "jupyter notebook"]
-title = "How to set up Anaconda and Jupyter Notebook the right way"
-type = "post"
+---
+author: 贾斯汀·古斯
+bg_image: /images/jupyter.png
+categories:
+- 教程
+date: '2022-01-24T23:00:00+00:00'
+description: '如果 Anaconda (conda) 和 Jupyter Notebook (Jupyter Lab) 设置正确，它们可以组成完美的团队，让你轻松地在深度学习
+  conda 环境之间切换。某些程序需要 TensorFlow 1.15，另一些需要 TensorFlow 2.0？没问题！只需点击一下即可切换环境和 TensorFlow
+  版本。
 
-+++
-If Anaconda (conda) and Jupyter Notebook (Jupyter Lab) are set up the right way the combination of them can become the perfect team, where you are able to easily switch between Deep Learning conda environments.
+  '
+image: /images/jupyter.png
+tags:
+- deep learning
+- tutorial
+- anaconda
+- jupyter notebook
+title: 如何正确设置 Anaconda 和 Jupyter Notebook
+type: post
 
-Some programs requiring Tensorflow 1.15, others Tensorflow 2.0? No problem! Just switch environments and Tensorflow versions with a simple click.
+---
+如果正确地设置了 Anaconda (conda) 和 Jupyter Notebook (Jupyter Lab)，它们可以完美地协同工作，方便地在深度学习 conda 环境之间切换。
 
-Also, did you ever install Jupyter Notebook extensions in each conda environment? Do not worry anymore, we are going to install the extensions once, and have them available in each environment!
+有些程序需要 TensorFlow 1.15，另一些需要 TensorFlow 2.0？没问题！只需点击一下即可切换环境和 TensorFlow 版本。
+
+您是否曾经在每个 conda 环境中安装 Jupyter Notebook 扩展？现在不用担心了，我们将安装一次扩展，并在每个环境中使用它们！
 
 
-1. Install Anaconda or Miniconda
-2. Install Jupyter Notebook / Lab in the base environment
-3. Install a new environment
-4. Activate the environment for Jupyter Notebook
+1. 安装 Anaconda 或 Miniconda
+2. 在基础环境中安装 Jupyter Notebook/Lab
+3. 安装新的环境
+4. 激活 Jupyter Notebook 的环境
 
-# How to install Anaconda or Miniconda?
+# 如何安装 Anaconda 或 Miniconda？
 
-Anaconda is a nice package containing a lot of Python packages already and allows for an easy start into the world of Python. Additionally, it allows creating environments in python, which contain different versions of your Python packages. E.g. if a program only runs with Python 2.7 or older versions of Matplotlib, you can create an own workspace for this program and switch back to Python 3 with a click of a button. Furthermore switching between Tensorflow 2.0 and Tensorflow 1.15 becomes easy as well, finally allowing you to switch between versions easily (which can be quite a headache otherwise).
+Anaconda 包含许多 Python 包，并提供一个易于上手的 Python 环境。此外，它允许创建包含不同 Python 包版本的 Python 环境。例如，如果某个程序仅在 Python 2.7 或更早版本的 Matplotlib 下运行，您可以为此程序创建一个专属工作空间，并通过点击按钮切换回 Python 3。同样，在 TensorFlow 2.0 和 TensorFlow 1.15 之间切换也变得容易，最终能够轻松地切换版本（否则这可能会很麻烦）。
 
-Miniconda is a barebones version of Anaconda and can be nice if you are e.g. working on a server, where disk space is limited.
+Miniconda 是 Anaconda 的精简版，如果您在磁盘空间有限的服务器上工作，它会很有用。
 
-To install Anaconda or Miniconda head over to their website ([https://www.anaconda.com/products/individual#Downloads](https://www.anaconda.com/products/individual#Downloads "https://www.anaconda.com/products/individual#Downloads")), or if you are using Linux just copy the following commands.
+要安装 Anaconda 或 Miniconda，请访问其网站 ([https://www.anaconda.com/products/individual#Downloads](https://www.anaconda.com/products/individual#Downloads "https://www.anaconda.com/products/individual#Downloads"))，或者如果您使用的是 Linux，请复制以下命令。
 
-The first link crawls the website for the newest version and writes it to the LATEST_ANACONDA variable.
+第一个链接会抓取网站以获取最新版本，并将其写入 LATEST_ANACONDA 变量中。
 
-    cd ~/Downloads
-    LATEST_ANACONDA=$(wget -O - https://www.anaconda.com/distribution/ 2>/dev/null | sed -ne 's@.*\(https:\/\/repo\.anaconda\.com\/archive\/Anaconda3-.*-Linux-x86_64\.sh\)\">64-Bit (x86) Installer.*@\1@p')
-    wget $LATEST_ANACONDA
-    chmod +x Anaconda3*.sh # make it executable
-    ./Anaconda3*.sh # execute the installer
+```
+cd ~/Downloads
+LATEST_ANACONDA=$(wget -O - https://www.anaconda.com/distribution/ 2>/dev/null | sed -ne 's@.*\(https:\/\/repo\.anaconda\.com\/archive\/Anaconda3-.*-Linux-x86_64\.sh\)\">64-Bit (x86) Installer.*@\1@p')
+wget $LATEST_ANACONDA
+chmod +x Anaconda3*.sh # 使其可执行
+./Anaconda3*.sh # 执行安装程序
+```
 
-Follow the dialogue, and just agree on the defaults.
+按照对话框操作，并接受默认选项。
 
-### Checking and switching the conda environments
+### 检查和切换 conda 环境
 
-If conda is installed correctly (might need a logout and login, or restart), you should be able to see the output when typing `conda` into your terminal.
+如果 conda 安装正确（可能需要注销并重新登录，或重新启动），则在终端中输入 `conda` 后应该可以看到输出。
 
-To list the currently installed environments just type `conda env list`
+要列出当前已安装的环境，请键入 `conda env list`
 
-It should currently just show the "base" environment installed.
+当前它应该只显示已安装的“base”环境。
 
-Switching between environments works as simply as typing `conda activate [NAME]` and if done with it deactivating it (and going back to the base environment) with `conda deactivate`.
+在环境之间切换就像输入 `conda activate [名称]` 一样简单，使用 `conda deactivate` 完成后将其停用（并返回到基础环境）。
 
-The base environment is activated by default.
+默认情况下，基础环境处于激活状态。
 
-# Install Jupyter Notebook / Lab in the base environment
+# 在基础环境中安装 Jupyter Notebook/Lab
 
-Jupyter Notebook can easily be installed using conda. Our plan is to only install it in the base environment, and then just switch between sub-environments to avoid setting up Jupyter Lab in each environment. 
+可以使用 conda 轻松安装 Jupyter Notebook。我们的计划是仅在基础环境中安装它，然后只需在子环境之间切换即可避免在每个环境中设置 Jupyter Lab。
 
-## Installing Jupyter Notebook (default)
 
-    conda install -c conda-forge notebook
-    conda install -c conda-forge nb_conda_kernels
+## 安装 Jupyter Notebook（默认）
 
-## Installing Jupyter Lab
+```
+conda install -c conda-forge notebook
+conda install -c conda-forge nb_conda_kernels
+```
 
-    conda install -c conda-forge jupyterlab
-    conda install -c conda-forge nb_conda_kernels
+## 安装 Jupyter Lab
 
-## Installing Jupyter Notebook extensions
+```
+conda install -c conda-forge jupyterlab
+conda install -c conda-forge nb_conda_kernels
+```
 
-I really like Jupyter Notebook extensions, which support a lot of autocompletion, additional information, and in general things that make your life easier. A good default setting is included with the following install command:
+## 安装 Jupyter Notebook 扩展
 
-    conda install -c conda-forge jupyter_contrib_nbextensions
+我非常喜欢 Jupyter Notebook 扩展，它们支持许多自动完成、附加信息以及一般使您的生活更容易的功能。以下安装命令包含一个良好的默认设置：
 
-A good overview over other extensions: [https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231](https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231 "https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231")
+```
+conda install -c conda-forge jupyter_contrib_nbextensions
+```
 
-### (Optional) Installing pip package manager
+有关其他扩展的好概述：[https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231](https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231 "https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231")
 
-In my opinion it is a good idea to add the pip package manager to the base (and each sub-) environment, as not all packages are supported by conda install. Also, if pip is not installed in each sub-environment the package might just be installed in the "base" conda environment, causing an error where the package is not found in your sub-environment. 
 
-    conda install pip
+### （可选）安装 pip 包管理器
 
-# Creating environments in conda and Jupyter Notebook
+我认为将 pip 包管理器添加到基础（和每个子）环境是一个好主意，因为并非所有包都支持 conda install。此外，如果每个子环境中都没有安装 pip，该包可能会只安装在“基础” conda 环境中，从而导致在您的子环境中找不到该包的错误。
 
-Let us say you want to install both Tensorflow 2.0 and Tensorflow 1.15 in Jupyter Notebook. 
+```
+conda install pip
+```
 
-For this example first, agree if you want to use the GPU or CPU version of Tensorflow. For using the GPU version add "-gpu" to TensorFlow, and otherwise, just leave it as is.
+# 在 conda 和 Jupyter Notebook 中创建环境
 
-To create a new conda environment we can run 
+假设您想在 Jupyter Notebook 中安装 TensorFlow 2.0 和 TensorFlow 1.15。
+
+在此示例中，首先，同意是否要使用 TensorFlow 的 GPU 或 CPU 版本。要使用 GPU 版本，请在 TensorFlow 后添加“-gpu”，否则，将其保持不变。
+
+要创建新的 conda 环境，我们可以运行：
 
 `conda create --name tf-2.0`
 
-If you already plan to install some packages with it just add them to the end, like:
+如果您已计划安装一些包，只需将它们添加到末尾，例如：
 
-    conda create -n tf-2.0 tensorflow-gpu pip ipykernel
+```
+conda create -n tf-2.0 tensorflow-gpu pip ipykernel
+```
 
-I recommend installing `pip` for package installation, and `ipykernel` will be needed to switch environments using Jupyter Notebook
+建议安装 `pip` 用于包安装，`ipykernel` 将用于使用 Jupyter Notebook 切换环境
 
-To install an environment using TensorFlow 1.15 use the following:
+要安装使用 TensorFlow 1.15 的环境，请使用以下命令：
 
-    conda create -n tf-1.15 tensorflow-gpu==1.15 pip ipykernel
+```
+conda create -n tf-1.15 tensorflow-gpu==1.15 pip ipykernel
+```
 
-If done successfully, you should be able to see three environments when executing the following command:
+如果成功，执行以下命令时应该可以看到三个环境：
 
-    conda env list
+```
+conda env list
+```
 
 1. base
 2. tf-2.0
 3. tf-1.15
 
-# Start Jupyter Notebook and check the environments and extensions
+# 启动 Jupyter Notebook 并检查环境和扩展
 
-    jupyter notebook
+```
+jupyter notebook
+```
 
-Running Jupyter Notebook in the base environment should allow you to see a tab containing "Extensions", as well as "conda"/"environments". Head over to Extensions and activate whichever extensions you like, and if you are ready, create a new notebook using the "new" button. Here, you should be able to choose between your base, tf-2.0 and tf-1.15 environment. 
+在基础环境中运行 Jupyter Notebook 应该允许您看到包含“扩展”以及“conda”/“环境”的选项卡。转到扩展并激活您喜欢的扩展，如果准备就绪，请使用“新建”按钮创建新的笔记本。在这里，您应该能够在您的基础环境、tf-2.0 和 tf-1.15 环境之间进行选择。
 
-Attention: You always need to run jupyter notebook in the base environment. Run `conda deactivate` to leave your current environment and return to the base one. 
+注意：您始终需要在基础环境中运行 jupyter notebook。运行 `conda deactivate` 以离开当前环境并返回基础环境。
 
-If you need to install further packages activate an environment using `conda activate [NAME]`, run your commands like `conda install X` or `pip install X`, and leave the environment using `conda deactivate`. 
+如果您需要安装其他软件包，请使用 `conda activate [名称]` 激活环境，运行类似于 `conda install X` 或 `pip install X` 的命令，并使用 `conda deactivate` 离开环境。
 
-Let me know if this worked for you, it helped me a lot and I wished I would have known about this earlier!
+请告诉我这是否对您有效，这对我帮助很大，我希望我早点知道！

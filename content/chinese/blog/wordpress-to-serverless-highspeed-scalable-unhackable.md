@@ -1,124 +1,107 @@
 ---
-title: Going from Wordpress to serverless, unhackable high-speed static websites
-bg_image: "images/blog/serverless-website.png"
-date: 2022-06-17T11:10:07.000+06:00
-description: I chose to leave WordPress behind, and go to serverless, high-speed unhackable static websites instead
-author: "Justin Guese"
-image: "images/blog/serverless-website.png"
+author: 贾斯丁·古埃斯
+bg_image: images/blog/serverless-website.png
 categories:
-- serverless
+- 无服务器
+date: '2022-06-17T11:10:07+06:00'
+description: 我选择放弃 WordPress，转而使用无服务器、高速且难以入侵的静态网站。
+image: images/blog/serverless-website.png
 tags:
 - cloud
 - websites
 - serverless
+title: 从 WordPress 到无服务器、安全高速的静态网站
 type: post
 
 ---
+我过去一直在搭建网站，但一直苦于 WordPress 的性能缓慢。如果加载了大量插件，它会需要相当的资源，如果只是在小型服务器上开发想法，这可能会很麻烦。
 
 
-
-I have been building websites in the past, but have always been struggling with the slow performance of WordPress. If it is loaded with plugins, it will need quite some resources and can be a pain if you are just developing an idea on a small server. 
-
-
-Additionally, safety is of concern as well, and as a system that [33,6% of websites are using](https://en.wikipedia.org/wiki/WordPress), it is quite attractive for hackers to find exploits and other issues in it. 
-But again, as it is massively popular, there is almost every time a plugin for the issues you are having, which makes it easy to use, and a great "all-in-one" tool.
-
-
-
-
-## Idea 1: Improving WordPress Development
-
-
-
-One of the first things I did in the past has been to develop WordPress locally (e.g. [see this AWS post](https://www.smashingmagazine.com/2018/04/wordpress-local-development-beginners-setup-deployment/)), and then just publish the result on a server. Programming and writing speeds increased enormously, but the uploading part proved to be a problem, as WordPress links are usually "hardwired" into the SQL database it uses. Meaning all my links were referring to "https://www.datafotress.cloud" (My Computer) instead of the target domain. There are ways to solve this, like rewriting your URLs in SQL, or using rewriting htaccess rules to refer "old" URLs to the "new" ones, but still, it was a lot of struggle to get going. 
+此外，安全性也是一个问题，作为 [33.6% 的网站都在使用](https://en.wikipedia.org/wiki/WordPress) 的系统，黑客很容易在其漏洞和问题中找到利用点。
+但话又说回来，由于它非常流行，几乎每次都有针对你遇到的问题的插件，这使得它易于使用，并且是一个很棒的“一站式”工具。
 
 
 
 
-## Idea 2: Online Development with Offloaded Media files
+## 想法 1：改进 WordPress 开发
+
+
+我过去做的事情之一是在本地开发 WordPress（例如，[请参阅这篇 AWS 文章](https://www.smashingmagazine.com/2018/04/wordpress-local-development-beginners-setup-deployment/)），然后将结果发布到服务器上。编程和写作速度大大提高，但上传部分却成了问题，因为 WordPress 的链接通常“硬编码”到其使用的 SQL 数据库中。这意味着我所有的链接都指向“https://www.datafotress.cloud”（我的电脑），而不是目标域名。解决这个问题的方法包括在 SQL 中重写你的 URL，或者使用重写 htaccess 规则将“旧”URL 指向“新”URL，但启动过程仍然需要很多努力。
 
 
 
-This URL rewriting issue got on my nerves real quick, and local development is bad for multiple developers. That is why I decided to "go online" again, and work "with the cloud". The architecture I followed has been to deploy one development server, that is only accessible to developers, and to upload media files to shared storage (AWS S3) from which end users are pulling the media files. As media files (pictures, videos, ...) are the most demanding parts of WordPress, speed increased drastically, and additionally, it has been easy to set up a CDN on top of it, which basically means the media files are deployed all over the world at unlimited capacity (basically serverless). This means, that one user in e.g. Puerto Rico does not need to access my server in Frankfurt, but has a "local" copy close to him. Additionally, as the "heavy" part of WordPress has been "outsourced", only "small" servers were needed to handle PHP requests and the "back-office" parts of WordPress. Feel free to ask me more about it in the comments or a direct message, or [check out a similar approach by AWS](https://devops.com/hosting-scalable-wordpress-on-aws/).
 
-![Architecture for wordpress on AWS](/images/blog/Webp.net-resizeimage.png)
-
-Together with Autoscaling, this seemed to be the most ideal setup for WordPress, and it proved great. BUT...
+## 想法 2：在线开发，并外包媒体文件
 
 
-You still had to check for Plugin Updates, Security, and Monitoring in general. Even though AWS helps a lot to make this architecture quite resilient and fast, there is still a high operational demand. Additionally, running a separate development, database, load balancing, and so on the server can be quite cost expensive, especially for a website that does not have many users. 
-And what did Werner Vogels say at re:invent 2015?
+这个 URL 重写问题很快就让我烦不胜烦，而本地开发对多位开发人员来说并不理想。因此，我决定再次“上云”，并“与云合作”。我遵循的架构是部署一个仅供开发人员访问的开发服务器，并将媒体文件上传到共享存储（AWS S3），最终用户从该存储中提取媒体文件。由于媒体文件（图片、视频等）是 WordPress 的资源消耗最大部分，速度因此大幅提升，此外，在它上面建立 CDN 也很容易，这基本上意味着媒体文件在全球范围内以无限容量部署（基本上是无服务器的）。这意味着，例如，波多黎各的用户不必访问我位于法兰克福的服务器，而是可以访问离他更近的“本地”副本。此外，由于 WordPress 的“重型”部分已经“外包”，因此只需要“小型”服务器来处理 PHP 请求和 WordPress 的“后台”部分。欢迎你在评论区或私信中提出更多问题，或者[查看 AWS 的类似方法](https://devops.com/hosting-scalable-wordpress-on-aws/)。
 
-> **"No server is easier to manage than no server"**
+![使用 AWS 的 WordPress 架构](/images/blog/Webp.net-resizeimage.png)
+
+结合自动缩放技术，这似乎是 WordPress 最理想的设置，并且效果很好。但是...
+
+
+你仍然需要检查插件更新、安全性和整体监控。即使 AWS 帮助我们使这个架构非常稳定和快速，仍然有很高的运营需求。此外，在服务器上运行单独的开发、数据库、负载均衡等操作可能非常昂贵，特别是对于没有太多用户的网站。
+那么，Werner Vogels 在 2015 年 re:invent 大会上说了什么？
+
+> **“没有比没有服务器更容易管理的服务器了”**
 > 
-> Werner Vogels at re:invent 2015
+> Werner Vogels 在 2015 年的 re:invent 大会上
 
 
-## Excursion: A brief history of the Code of web
-
-
-
-
-WordPress is great for writers and editors, but form the perspective of a solution architect it is not great. Why? Even though everything is clickable, easy to handle, and so on, all resources and information are pulled from a database in the background, even though if it is pulled for the 100000th time this day. There are methods to reduce the query load on SQL databases, like Redis and Memcached, but why should I "calculate" the same webpage for every single user? "Back in the day", websites did just load in seconds (except someone has been on the phone) and they were super small - what has changed? Together with new design demands, today's websites are full of effects and designs that are heavy on computational resources. Even though this is definitely an improvement to the 90s black and white style, loading times of websites increased dramatically - especially as the world's connection standard is still mobile network. 
+## 插曲：Web 代码简史
 
 
 
-To render all the effects, PHP code is used in the background, which is code executed on the server itself. Meaning every time a user connects to a website, the server is calculating the website it is going to show to the user. The 90s version of websites featured just plain HTML code, which are basically simple instructions to the browser on how to handle things. Like the <h1> tag tells the browser this is a heading, and <p> is a paragraph. No (sorry for reducing complexity!) calculations are needed. 
+
+WordPress 非常适合撰稿人和编辑人员，但从解决方案架构师的角度来看，它并不伟大。为什么？尽管一切都是可点击的、易于处理的等等，但所有资源和信息都在后台从数据库中提取，即使今天是第 100000 次提取。有方法可以减少 SQL 数据库的查询负载，如 Redis 和 Memcached，但为什么我要为每个用户“计算”同一个网页？在“旧时代”，网站只需几秒钟就可以加载（除非有人接电话），而且它们非常小——有什么变化？随着新设计需求的出现，如今的网站充满了计算资源密集的特效和设计。尽管这无疑是对 90 年代黑白风格的改进，但网站的加载时间却急剧增加——特别是随着世界联网标准仍然是移动网络。
 
 
-
-Additionally, Javascript and CSS go a similar path as CSS describes design in a similar approach to HTML, and Javascript is executed not on the server, but on the client-side. Meaning the server does not calculate itself, but "sends instructions" to the client's browser (e.g. your phone). 
-
+为了呈现所有效果，PHP 代码在后台使用，该代码在服务器本身执行。这意味着每次用户连接到网站时，服务器都会计算它将显示给用户的网站。90 年代版本的网站仅包含纯 HTML 代码，这些代码基本上是对浏览器处理事物的简单说明。例如，<h1> 标签告诉浏览器这是一个标题，<p> 是一个段落。不需要任何（抱歉，为了减少复杂性！）计算。
 
 
-So why don't we use just HTML, Javascript, and CSS? PHP enables us to do a lot of things and allows for content creation frameworks like WordPress to make our lives easier. But the efficient way to produce websites would be to generate them once and then just distribute them already rendered to the masses. 
+此外，JavaScript 和 CSS 与 CSS 描述设计的类似方法和 HTML 相似，JavaScript 并非在服务器端，而是在客户端执行。这意味着服务器不自己计算，而是“向客户端的浏览器（例如你的手机）发送指令”。
+
+
+那么，为什么不只使用 HTML、JavaScript 和 CSS 呢？PHP 使我们可以做很多事情，并且允许像 WordPress 这样的内容创建框架使我们的生活更轻松。但是，产生网站的有效方法是将其生成一次，然后将已渲染好的网站分发给大众。
 
 
 
 
 
-## Idea 4: Going back to the roots 
+## 想法 4：回归根本
 
 
+我的意思是说我们应该回到 90 年代的黑白 HTML 页面吗？当然不是，但是 HTML 和 CSS 的结合可以产生很好的结果，JavaScript 的功能越来越强大，可以处理过去只有 PHP 才能处理的流程。如果需要计算，则有许多新的无服务器可能性，例如 AWS Lambda（请查看我的博客以了解 Lambda 的一些应用）。
 
 
-So am I saying we should go back to the black and white HTML pages of the 90s? Of course not, but the combination of HTML and CSS can produce great results, and Javascript becomes more and more capable to handle processes only PHP could handle in the past. And if calculations are needed, there are great new serverless possibilities available like AWS Lambda (check out my blog for some applications of Lambda). 
+回到主题，我已决定用纯 HTML、CSS 和 JS 编写我的博客和未来的网站，因为我不需要
+
+1. **管理服务器**——我可以将其几乎免费托管在 GitHub 或 AWS S3 上
+2. **不必担心高需求**——S3 和 GitHub 自动缩放，这意味着如果成千上万的访问者访问我的网站，我的服务器不会崩溃
+3. **不必担心安全问题**——我的博客基本上无法入侵
 
 
-
-Going back to the main topic, I have decided to write my blog and any future websites in plain HTML, CSS, and JS, as I do not need to 
-
-1. **manage a server** - I can just host it for almost free on Github or AWS S3
-2. **worry about high-demands**  - S3 and Github scale automatically, meaning if thousands of visitors arrive on my website it will not crash my server
-pay much - as I do not need as many calculations as with WordPress, running this blog is completely free
-3. **do not need to worry about security issues** - my blog is basically unhackable
+此外，网站速度非常快，Google PageSpeed 得分为 100%，这也会对页面排名产生积极影响，因为 Google 偏爱高速网站。目前得分下降到 90% 的唯一原因是我决定在我的博客上添加 CRM 和跟踪工具。你上次看到一个免费网站获得这个分数是什么时候？
 
 
-Additionally, the website is blazingly fast, with a Google Pagespeed score of 100%, which has a great effect on page ranking as well, as Google favors high-speed websites. The only reason why the current score is down to 90%, is that I decided to include CRM and tracking tools on my blog. When was the last time you saw a free website achieving this score?
-
-
-All in all, it is just great, but am I writing all the HTML code by myself?
-
-
-
-
-
-## Introducing: Static Website Generators
-
-
-
-
-Of course not, and luckily there are great tools to handle this for me. Static website builders like [Jekyll](https://jekyllrb.com/) or [Hugo](https://gohugo.io/) help a lot to let you basically just type in Markdown language (basically a simple txt file) and convert your texts into HTML and a nice website. The code is just calculated once and can be uploaded to a server, or Github pages and AWS S3 right away to be completely serverless. [How does it work? Check out my case studies on my blog for an in-depth explanation](/project/serverless-static-website/).
+总而言之，这真是太棒了，但我需要自己编写所有 HTML 代码吗？
 
 
 
 
 
-## Summary
+## 介绍：静态网站生成器
+
+
+当然不需要，幸运的是，有一些很棒的工具可以帮助我处理这个问题。静态网站生成器，例如 [Jekyll](https://jekyllrb.com/) 或 [Hugo](https://gohugo.io/)，非常有用，因为你基本上只需输入 Markdown 语言（基本上是一个简单的文本文件）并将你的文本转换为 HTML 和漂亮的网站。代码只需计算一次，就可以直接上传到服务器、GitHub Pages 或 AWS S3，以实现完全无服务器。[如何运作？请查看我博客中的案例研究，以获取更深入的解释](/project/serverless-static-website/)。
 
 
 
 
-It feels great to not worry about uptime, scaling, and security anymore. Is it harder than WordPress? It depends. As this technology just develops, there is a rethinking to be done if you worked with WordPress and others in the past, but again there are many great tools that make static website builders similar to the "known" WordPress environment, like forestry.io for example. How? [Check out my blog at www.datafortress.cloud to see the in-depth explanation](/project/serverless-static-website/). 
-For now, I would be interested if you ever tried to go serverless, or what your experiences with WordPress are. [Shoot me a message, or write a comment below](/contact/). 
 
+## 总结
+
+
+不再需要担心正常运行时间、可伸缩性和安全性，感觉真是太好了。这比 WordPress 更难吗？这取决于情况。由于这项技术仍在发展中，如果您过去使用过 WordPress 和其他类似工具，您需要重新思考，但也有许多功能强大的工具，让静态网站生成器与“已知的”WordPress 环境类似，例如 forestry.io。如何？[请访问我的博客 www.datafortress.cloud 查看更深入的说明](/project/serverless-static-website/)。
+目前，我很好奇你是否尝试过无服务器，或者你对 WordPress 的体验如何。[给我发消息，或在下面写评论](/contact/)。

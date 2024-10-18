@@ -1,12 +1,11 @@
 ---
-title: "How To - Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation"
-date: 2020-08-18T10:07:21+06:00
-author: "Justin Guese"
-description: "Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation"
-image: "images/blog/deeplearningarch.png"
+author: 贾斯汀·格斯
 categories:
-- big data
-- tutorial
+- 大数据
+- 教程
+date: '2020-08-18T10:07:21+06:00'
+description: 放弃Ubuntu转而使用Arch Linux构建深度学习工作站
+image: images/blog/deeplearningarch.png
 tags:
 - big data
 - tutorial
@@ -15,240 +14,237 @@ tags:
 - reinforcement learning
 - tensorflow
 - machine learning
+title: 如何 - 从Ubuntu迁移到Arch Linux构建深度学习工作站
 
 ---
+# 为什么应该放弃 Ubuntu？
+
+许多人可能都在使用 Ubuntu 作为他们的工作站，对于经验不足的用户来说，这很好。但我使用 Ubuntu 和 TensorFlow/CUDA 时遇到一个问题，那就是处理各种 CUDA、cuDNN、TensorFlow 的不同驱动程序和版本非常麻烦。我不确定你是否也这样，但一旦我建立了一个工作的 TensorFlow 1.15 或 2.0 环境，我通常就不再碰它了，因为害怕搞乱这个神圣的配置。
+
+在使用不同的程序时，能够像在 Google Colab 中那样，通过一条命令在两种最常用的 TensorFlow 版本（1.15 和 2.0）之间切换，将会非常方便，但是安装不同的 TensorFlow 版本通常还会再次弄乱我的系统。
+
+此外，Arch 一直都在我的待办事项列表中，因为它是最“基础”的 Linux 发行版，这意味着与像 Ubuntu 这样的“更高层抽象”相比，你更接近硬件。用他们自己的话说，Ubuntu 的目标是“开箱即用，尽可能地让新用户简化安装过程”，而 Arch Linux 的座右铭是“自定义一切”。
+由于更接近硬件，与 Ubuntu（以及 Windows）相比，Arch 的速度要快得多，代价是需要更多地使用终端。
+
+在过去的几周里，我使用 Arch 时，内存使用量通常比 Ubuntu 少一半，安装机器学习软件包轻松无比。我可以让 TensorFlow 1.15 和 2.0 协同工作，并通过 Anaconda 环境在它们之间切换。此外，该系统工作非常稳定，因为我使用的是 Linux 的 LTS（长期支持）内核，而且通常 Arch 中的 AUR（用户创建的软件包）更新比 Debian（Ubuntu）软件包提前一个月。
+
+总而言之，我强烈建议你搭建一个 Arch Linux 深度学习工作站，因为它：
+1. 速度更快，例如软件包安装速度超快，深度学习性能超强，……
+2. 更稳定
+3. 更容易在 TensorFlow 版本之间切换
+与 Ubuntu 相比。
 
 
-## Why should I ditch Ubuntu? 
+我将把安装指南分成两部分：第一部分是“如何安装 Arch Linux”，第二部分是“如何在 Arch Linux 上安装深度学习工作站软件包”。
 
-Most of you might be using Ubuntu for their workstations, and that is fine for the more inexperienced users. One of the issues I had with Ubuntu and the Tensorflow/CUDA though, has been that handling the different drivers and versions of CUDA, cudnn, TensorFlow, and so on has been quite a struggle. I’m not sure about you, but once I had a working Tensorflow 1.15 or 2.0 environment, I usually did not touch it anymore being scared to mess up this holy configuration.
+对于一般性的“[如何安装 Arch Linux”，请访问这篇文章](//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/)。
 
-Working with different programs it would be nice to have a way of switching between the two most used TensorFlow versions of 1.15 and 2.0 like you can do with Google Colab in a single command, but installing a different TensorFlow version usually messed up my system again. 
+如果 Arch 现在对你来说过于复杂，你可以尝试 [Manjaro](//manjaro.org/)，它是一个易于使用的 Arch 版本，尽管我无法保证所有软件包都能以相同的方式工作，因为它们略有不同。不过，总体来说，它们应该以相同的方式工作。
 
-Additionally, Arch has always been on my To-Do list, as it is the most “barebone”  Linux distro you can get, meaning you are working way closer on the hardware compared to “higher abstractions” like Ubuntu. In their own words, Ubuntu is built to “work out of the box and make the installation process as easy as possible for new users”, whilst the motto of Arch Linux is “customize everything”. 
-Being way closer to the hardware Arch is insanely faster compared to Ubuntu (and miles ahead of Windows), for the cost of more Terminal usage. 
-
-When I have been using Arch in the past weeks, RAM usage usually halved compared to Ubuntu, and installing Machine Learning packages is a breeze. I can have both TensorFlow 1.15 and 2.0 working together, switching the versions with Anaconda environments. Also, the system works quite stable, as I am using the LTS (long term support) kernels of Linux, and usually updates to the famous AUR (user-made packages in Arch) are coming out a month ahead of the Debian (Ubuntu) packages.
-
-All in all, I can only recommend setting up an Arch Linux Deep Learning station as it is:
-1. Faster, like packages will install super fast, deep learning is supercharged, ...
-2. More stable
-3. Easier to switch between TensorFlow versions
-compared to Ubuntu. 
+我想创建一个可直接安装的镜像 (iso 或 img)，如果足够多的人感兴趣，请在下方评论或给我发送消息！
 
 
-I will split the how-to in two parts, the first one being “How to I install Arch Linux” and the second one being “How to install the Deep Learning workstation packages”. 
+## 在全新的 Arch Linux 安装上安装深度学习 (TensorFlow、CUDA、cuDNN、Anaconda) 环境
+一旦你[完成了 Arch 的安装 (呼!) ](//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/)，让我们首先更改一些设置，使我们的系统运行得更稳定。
 
-For the general [“How to install Arch Linux”, head over to this article](//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/). 
+### 1. 切换到最快的镜像
 
-If Arch is too complex for now, you could try out [Manjaro](//manjaro.org/), which is a user-friendly version of Arch, even though I can not guarantee that all packages will work the same, as they are slightly different. All in all it should work the same though.
+软件从所谓的“镜像”服务器下载，这些服务器包含所有 Arch 库。如果没有自动完成，可能会发生你的服务器还未优化的情况。因此，我们将安装一个名为“reflector”的小型工具来查找和保存最快的服务器。
 
-I was thinking about creating a ready to install Image (iso or img), if enough people are interested leave a comment below or message me!
-
-## Installing the Deep Learning (TensorFlow, CUDA, CUDNN, Anaconda) setup on a fresh Arch Linux installation
-Once you are [done with the Arch installation (phew!)](//www.datafortress.cloud/blog/howto-install-arch-linux-the-easy-way/), let us first change some settings such that our system works more stable.
-
-### 1. Switching to the fastest mirrors
-
-Software is downloaded from so-called “mirrors”, which are servers containing all the Arch libraries. If not done automatically, it could happen that your servers are not optimized yet. Therefore, we are going to install a small tool that finds and saves the fastest servers called “reflector”
-
-Install reflector using
+使用以下命令安装 reflector：
 
 > sudo pacman -S reflector
 
-Find and download the best servers
+查找并下载最佳服务器：
 
 > reflector --verbose -l 20 -n 20 --sort rate --save /etc/pacman.d/mirrorlist
 
-Check the output if it makes sense, e.g. if the domains are close to your location. If not, you could add the country tag to get more precise results, e.g. for Germany and Austria:
+检查输出是否合理，例如，服务器域名是否靠近你的位置。如果不是，你可以添加国家标签来获得更精确的结果，例如对于德国和奥地利：
 
 > reflector -c “AT,DE” --verbose -l 20 -n 20 --sort rate --save /etc/pacman.d/mirrorlist
 
-Update your installation
+更新你的安装：
 
 > sudo pacman -Syyu
 
-### 2. Changing the Desktop Environment
 
-If you are using Manjaro or chose the “Gnome” Desktop environment as you know it from Ubuntu, it might be worth it to think about changing it as Gnome is known to eat more RAM than Chrome, and we surely need RAM in our Deep Learning setup.
+### 2. 更改桌面环境
 
-If you like Gnome, feel free to skip this step. Otherwise, I can recommend the Xfce desktop as it is a good combination of lightweight and full of features. 
+如果你使用的是 Manjaro 或选择你熟悉的“GNOME”桌面环境，你可能值得考虑更改它，因为 GNOME 据悉比 Chrome 占用更多的内存，而我们确实需要深度学习配置中有足够的内存。
 
-Download Xfce
+如果你喜欢 GNOME，可以跳过此步骤。否则，我推荐 Xfce 桌面环境，因为它结合了轻量级和功能齐全的优点。
+
+下载 Xfce：
 
 > sudo pacman -S xfce4 xfce4-goodies lxdm
 
-Lxdm is a display manager that allows you to use multiple desktops.
+Lxdm 是一个显示管理器，允许你使用多个桌面。
 
-Log out of your current session and press Alt + F2 (or Alt + F3 if it does not work) to get a terminal. First disable Gnome and afterward “activate” Xfce:
+注销当前会话，然后按 Alt + F2（或如果不起作用，则按 Alt + F3）打开一个终端。首先禁用 GNOME，然后“激活”Xfce：
 
-Deactivate and uninstall gnome:
+禁用并卸载 GNOME：
 
-> sudo systemctl disable gdm \
+> sudo systemctl disable gdm
 > sudo pacman -R gnome gnome-extras
 
-Activate Xfce
 
-> sudo systemctl enable lxdm \
+激活 Xfce：
+
+> sudo systemctl enable lxdm
 > sudo systemctl start lxdm
 
-If the new Xfce desktop does open just login and explore, if not try to reboot (sudo reboot). If that does not help proceed to crying and rolling on the floor, and send me a message or comment afterward.
+如果新的 Xfce 桌面并未打开，请登录并探索，如果不行，请尝试重新启动 (sudo reboot)。如果这也不起作用，请继续尝试，并在之后给我发消息或留言。
 
-### 3. Installing the LTS (long term support) Linux kernels for better stability
 
-Arch is famous for being really close to the current Linux kernels, which is good if you always want the newest packages and Linux features, but a bad idea if you are building a Deep Learning Workstation. 
+### 3. 安装 LTS（长期支持）Linux 内核以提高稳定性
 
-That is why I switched to the LTS kernels, which are basically kernels that receive more support and are more stable than the newer versions of the Linux Kernel. 
+Arch 以非常接近当前 Linux 内核而闻名，如果你总是想要最新的软件包和 Linux 功能，这很好，但是如果你正在构建深度学习工作站，这可能不是一个好主意。
 
-Luckily switching kernels is super easy in Arch. First we will download the kernels, and afterward tell our boot manager which kernel to choose.
+因此，我切换到了 LTS 内核，这些内核实际上获得了更多支持，并且比 Linux 内核的较新版本更稳定。
 
-First download the LTS kernels:
+幸运的是，在 Arch 中切换内核非常容易。首先我们将下载内核，然后告诉我们的引导管理器选择哪个内核。
+
+首先下载 LTS 内核：
 
 > sudo pacman -S linux-lts linux-lts-headers
 
-Have a look at your current kernel versions:
+查看当前内核版本：
 
 > ls -lsha /boot
 
-One kernel should be named vmlinuz-linux.img and initramfs-linux.img (your current versions) and the LTS ones the same with -lts at the end. 
+一个内核应该命名为 vmlinuz-linux.img 和 initramfs-linux.img（你的当前版本），LTS 内核命名相同，并在其后加上 -lts。
 
-If you are seeing two kernels you can now proceed to delete the old kernels:
+如果你看到两个内核，现在你可以继续删除旧的内核：
 
 > sudo pacman -R linux
 
-Now a more advanced part is that you will need to tell your bootloader which kernel to choose. The question is which bootloader you are using, but in most cases it is Grub. If you followed my Arch installation tutorial your bootloader is systemd-boot.
 
-My recommendation is try the Grub instructions, and if that does not work proceed to the others.
+现在更高级的部分是，你需要告诉你的引导加载程序选择哪个内核。问题是你要使用哪个引导加载程序，但在大多数情况下是 Grub。如果你遵循了我的 Arch 安装教程，你的引导加载程序是 systemd-boot。
 
-#### Changing the Grub bootloader for the LTS linux kernels
+我的建议是尝试 Grub 指令，如果不行，请继续尝试其他引导加载程序。
+
+
+#### 更改 Grub 引导加载程序以使用 LTS Linux 内核
 
 > grub-mkconfig -o /boot/grub/grub.cfg
 
-If you see an error proceed to the next bootloader, otherwise reboot (sudo reboot).
 
-#### Changing the syslinux bootloader for the LTS linux kernels
+如果出现错误，继续使用下一个引导加载程序。否则，重新启动 (sudo reboot)。
 
-Edit the config file:
+
+#### 更改 syslinux 引导加载程序以使用 LTS Linux 内核
+
+编辑配置文件：
 
 > sudo nano /boot/syslinux/syslinux.cfg
 
-Simply add “-lts” to the vmlinuz-linux.img and initramfs-linux.img, such that they are vmlinuz-linux-lts.img and initramfs-linux-lts.img 
+只需将 vmlinuz-linux.img 和 initramfs-linux.img 添加为 vmlinuz-linux-lts.img 和 initramfs-linux-lts.img。
 
-#### Changing the systemd-boot bootloader for the LTS linux kernels
 
-If you are coming from my Arch installation guide, this is your bootloader. 
+#### 更改 systemd-boot 引导加载程序以使用 LTS Linux 内核
 
-Edit the config file:
+如果你来自我的 Arch 安装指南，这就是你的引导加载程序。
+
+编辑配置文件：
 
 > sudo nano /boot/loader/entries/arch.conf
 
-Simply add “-lts” to the vmlinuz-linux.img and initramfs-linux.img, such that they are vmlinuz-linux-lts.img and initramfs-linux-lts.img 
+只需将 vmlinuz-linux.img 和 initramfs-linux.img 添加为 vmlinuz-linux-lts.img 和 initramfs-linux-lts.img。
 
 
-### 4. Installing yay, an easy way to install AUR packages
+### 4. 安装 yay，一种便捷的 AUR 软件包安装方式
 
-You should prefer to use the ultra-fast pacman to install most packages, but an amazing thing about Arch is that users create millions of custom packages that are super easy to install. You can basically find any program you can think of in this repo. 
+你应该优先使用超快的 pacman 安装大多数软件包，但是 Arch 的一个惊人之处在于用户创建了数百万个自定义软件包，安装起来非常容易。你基本上可以在该资源库中找到任何你能想到的程序。
 
-Install git SVC
+安装 git SVC：
 
-> sudo pacman -S git \
-> mkdir ~/tmp \
-> git clone https://aur.archlinux.org/yay-git.git ~/tmp/yay \
-> cd ~/tmp/yay \
-> makepkg -si
+```
+sudo pacman -S git
+mkdir ~/tmp
+git clone https://aur.archlinux.org/yay-git.git ~/tmp/yay
+cd ~/tmp/yay
+makepkg -si
+```
 
-Now you can browse all the nice AUR packages in https://aur.archlinux.org/packages/ or just go for it and type:
+现在，你可以浏览 https://aur.archlinux.org/packages/ 中的所有优秀的 AUR 软件包，或者直接输入：
 
-> yay -S [PACKAGE] 
+> yay -S [软件包名称]
 
-To install it. 
+来安装它。
 
-### 5. Finally, the real cuda, cudnn, anaconda installation running both TensorFlow 1.15 and 2.0
 
-Install Nvidia drivers, cuda, cudnn with a simple command
+### 5. 最后，在同一个设备上运行 TensorFlow 1.15 和 2.0 的真正的 CUDA、cuDNN 和 Anaconda 安装
+
+使用一条简单的命令安装 Nvidia 驱动程序、CUDA 和 cuDNN：
 
 > sudo pacman -S nvidia nvidia-utils cuda cudnn
 
-This takes some time, so grab a coffee or proceed with the next steps
+这需要一些时间，所以喝杯咖啡或继续下一步。
 
-Download Anaconda, I like Miniconda:
+下载 Anaconda，我喜欢 Miniconda：
 
 > wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh ~/
-
-Make it executable and install
-
-> cd ~/ \
-> chmod +x ./Miniconda*.sh \
+> cd ~/
+> chmod +x ./Miniconda*.sh
 > ./Miniconda*.sh
 
-Just leave everything as default.
+保持所有默认设置。
 
 > source ./bash_profile
 
-Reboot your system
+重新启动你的系统：
 
 > sudo reboot
 
-Install tensorflow
+安装 TensorFlow
 
-Now is the time to decide between TensorFlow for CPU or GPU. I will continue with the GPU option, but if you want to run the CPU version just remove the “-gpu” from the package name.
+现在是时候选择用于 CPU 或 GPU 的 TensorFlow 了。我将继续使用 GPU 选项，但如果你想运行 CPU 版本，只需从软件包名称中删除“-gpu”即可。
 
-##### Create an anaconda environment for Tensorflow 2.0
+##### 为 TensorFlow 2.0 创建 Anaconda 环境
 
-> conda create --name tf2.0 \
-> conda activate tf2.0 \
-> conda install pip \
-> conda install tensorflow-gpu pandas numpy
+```
+conda create --name tf2.0
+conda activate tf2.0
+conda install pip
+conda install tensorflow-gpu pandas numpy
+```
 
-Done! Now check the result with:
+大功告成！现在使用以下命令检查结果：
 
-> python \
-> from tensorflow.python.client import device_lib \
-> device_lib.list_local_devices()
+```
+python
+from tensorflow.python.client import device_lib
+device_lib.list_local_devices()
+```
 
-If the result shows a device name like this you are done!
+如果结果显示类似这样的设备名称，那么你已经完成了！
 
 2018-05-01 05:25:25.929575: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties:
 name: GeForce GTX 3080 10GB major: …
 
-##### Create an anaconda environment for Tensorflow 1.15
+##### 为 TensorFlow 1.15 创建 Anaconda 环境
 
-> conda deactivate \
-> conda create --name tf1.15 \
-> conda activate tf1.15 \
-> conda install pip python==3.7 \
-> conda install tensorflow-gpu==1.15
+```
+conda deactivate
+conda create --name tf1.15
+conda activate tf1.15
+conda install pip python==3.7
+conda install tensorflow-gpu==1.15
+```
 
-And again check if everything works and your gpu is recognized:
+再次检查一切是否正常运行，你的 GPU 是否被识别：
 
-> python \
-> from tensorflow.python.client import device_lib \
-> device_lib.list_local_devices()
+```
+python
+from tensorflow.python.client import device_lib
+device_lib.list_local_devices()
+```
 
 
-### 6. Switching between TensorFlow 1.15 and TensorFlow 2.0 on one device!
+### 6. 在一个设备上切换 TensorFlow 1.15 和 TensorFlow 2.0!
 
-Just a dream coming true in my opinion, just select the 1.15 version with
+在我看来，这简直是梦想成真，只需使用以下命令选择 1.15 版本：
 > conda activate tf1.15
 
-And the TensorFlow 2.0 version with
+并使用以下命令选择 TensorFlow 2.0 版本：
 > conda activate tf2.0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
