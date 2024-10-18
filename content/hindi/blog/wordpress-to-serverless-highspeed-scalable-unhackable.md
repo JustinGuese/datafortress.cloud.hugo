@@ -1,124 +1,107 @@
 ---
-title: Going from Wordpress to serverless, unhackable high-speed static websites
-bg_image: "images/blog/serverless-website.png"
-date: 2022-06-17T11:10:07.000+06:00
-description: I chose to leave WordPress behind, and go to serverless, high-speed unhackable static websites instead
-author: "Justin Guese"
-image: "images/blog/serverless-website.png"
+author: जस्टिन गुएसे
+bg_image: images/blog/serverless-website.png
 categories:
-- serverless
+- सेर्वरलेस
+date: '2022-06-17T11:10:07+06:00'
+description: मैंने वर्डप्रेस को छोड़कर, इसके बजाय सर्वरलेस, उच्च गति वाले, अनहैक करने
+  योग्य स्टेटिक वेबसाइटों को चुन लिया।
+image: images/blog/serverless-website.png
 tags:
 - cloud
 - websites
 - serverless
+title: वर्डप्रेस से सर्वरलेस, हैकिंग से सुरक्षित उच्च गति वाले स्टैटिक वेबसाइटों पर
+  जाने का रास्ता
 type: post
 
 ---
+मैंने पहले वेबसाइटें बनाई हैं, लेकिन वर्डप्रेस के धीमे प्रदर्शन से हमेशा ही जूझता रहा हूं। यदि यह प्लगइन्स से भरा हुआ है, तो उसे काफी संसाधनों की आवश्यकता होगी और यदि आप किसी छोटे सर्वर पर किसी विचार को विकसित कर रहे हैं तो यह काफी परेशानीदायक हो सकता है।
 
 
-
-I have been building websites in the past, but have always been struggling with the slow performance of WordPress. If it is loaded with plugins, it will need quite some resources and can be a pain if you are just developing an idea on a small server. 
-
-
-Additionally, safety is of concern as well, and as a system that [33,6% of websites are using](https://en.wikipedia.org/wiki/WordPress), it is quite attractive for hackers to find exploits and other issues in it. 
-But again, as it is massively popular, there is almost every time a plugin for the issues you are having, which makes it easy to use, and a great "all-in-one" tool.
-
-
-
-
-## Idea 1: Improving WordPress Development
-
-
-
-One of the first things I did in the past has been to develop WordPress locally (e.g. [see this AWS post](https://www.smashingmagazine.com/2018/04/wordpress-local-development-beginners-setup-deployment/)), and then just publish the result on a server. Programming and writing speeds increased enormously, but the uploading part proved to be a problem, as WordPress links are usually "hardwired" into the SQL database it uses. Meaning all my links were referring to "https://www.datafotress.cloud" (My Computer) instead of the target domain. There are ways to solve this, like rewriting your URLs in SQL, or using rewriting htaccess rules to refer "old" URLs to the "new" ones, but still, it was a lot of struggle to get going. 
+इसके अतिरिक्त, सुरक्षा भी चिंता का विषय है, और एक ऐसी प्रणाली के रूप में जिसमें [33.6% वेबसाइटें उपयोग करती हैं](https://en.wikipedia.org/wiki/WordPress), हैकर्स के लिए इसमें खामियाँ और अन्य समस्याएँ ढूँढ़ना काफी आकर्षक है।
+लेकिन फिर से, चूँकि यह व्यापक रूप से लोकप्रिय है, आपके द्वारा सामना की जा रही समस्याओं के लिए लगभग हर बार एक प्लगइन होता है, जिससे इसका उपयोग करना आसान हो जाता है, और यह एक महान "ऑल-इन-वन" टूल है।
 
 
 
 
-## Idea 2: Online Development with Offloaded Media files
+## विचार 1: वर्डप्रेस विकास में सुधार
+
+
+मैंने पहले जो पहला काम किया है, उसमें से एक वर्डप्रेस को स्थानीय रूप से विकसित करना (उदाहरण के लिए [यह एडब्ल्यूएस पोस्ट देखें](https://www.smashingmagazine.com/2018/04/wordpress-local-development-beginners-setup-deployment/)) और फिर परिणाम को सर्वर पर प्रकाशित करना है। प्रोग्रामिंग और लेखन की गति में बहुत अधिक वृद्धि हुई, लेकिन अपलोडिंग भाग एक समस्या साबित हुआ, क्योंकि वर्डप्रेस लिंक आमतौर पर SQL डेटाबेस में "हार्डवायर्ड" होते हैं जिसका उपयोग करता है। जिसका अर्थ है कि मेरे सभी लिंक "https://www.datafotress.cloud" (मेरा कंप्यूटर) को इंगित कर रहे थे, न कि लक्षित डोमेन को। इसे हल करने के तरीके हैं, जैसे SQL में अपने URL को फिर से लिखना, या "पुराने" URL को "नये" URL पर निर्देशित करने के लिए htaccess नियमों को फिर से लिखना, लेकिन फिर भी, शुरू होने के लिए यह बहुत अधिक संघर्ष था।
 
 
 
-This URL rewriting issue got on my nerves real quick, and local development is bad for multiple developers. That is why I decided to "go online" again, and work "with the cloud". The architecture I followed has been to deploy one development server, that is only accessible to developers, and to upload media files to shared storage (AWS S3) from which end users are pulling the media files. As media files (pictures, videos, ...) are the most demanding parts of WordPress, speed increased drastically, and additionally, it has been easy to set up a CDN on top of it, which basically means the media files are deployed all over the world at unlimited capacity (basically serverless). This means, that one user in e.g. Puerto Rico does not need to access my server in Frankfurt, but has a "local" copy close to him. Additionally, as the "heavy" part of WordPress has been "outsourced", only "small" servers were needed to handle PHP requests and the "back-office" parts of WordPress. Feel free to ask me more about it in the comments or a direct message, or [check out a similar approach by AWS](https://devops.com/hosting-scalable-wordpress-on-aws/).
 
-![Architecture for wordpress on AWS](/images/blog/Webp.net-resizeimage.png)
-
-Together with Autoscaling, this seemed to be the most ideal setup for WordPress, and it proved great. BUT...
+## विचार 2: ऑफलोड किए गए मीडिया फ़ाइलों के साथ ऑनलाइन विकास
 
 
-You still had to check for Plugin Updates, Security, and Monitoring in general. Even though AWS helps a lot to make this architecture quite resilient and fast, there is still a high operational demand. Additionally, running a separate development, database, load balancing, and so on the server can be quite cost expensive, especially for a website that does not have many users. 
-And what did Werner Vogels say at re:invent 2015?
+यह URL फिर से लिखने की समस्या ने मुझे वास्तव में जल्दी ही परेशान किया, और स्थानीय विकास कई डेवलपर्स के लिए खराब होता है। इसलिए मैंने फिर से "ऑनलाइन जाने" और "क्लाउड के साथ काम करने" का फैसला किया। मैंने जिस आर्किटेक्चर का पालन किया, वह एक विकास सर्वर पर तैनात करना था, जो केवल डेवलपर्स के लिए सुलभ है, और मीडिया फ़ाइलों को साझा स्टोरेज (एडब्ल्यूएस एस3) में अपलोड करना है, जिससे अंतिम उपयोगकर्ता मीडिया फ़ाइलें खींचते हैं। चूंकि मीडिया फ़ाइलें (चित्र, वीडियो, ...) वर्डप्रेस के सबसे अधिक मांग वाले भाग हैं, इसलिए गति में भारी वृद्धि हुई, और इसके अलावा, इसके ऊपर एक सीडीएन सेट करना आसान रहा है, जिसका मूल रूप से अर्थ है कि मीडिया फ़ाइलें दुनिया भर में असीमित क्षमता पर तैनात हैं (मूल रूप से सर्वरलेस)। इसका मतलब है कि उदाहरण के लिए, प्यूर्टो रिको में एक उपयोगकर्ता को फ्रैंकफर्ट में मेरे सर्वर तक पहुँचने की आवश्यकता नहीं है, बल्कि उसके पास "स्थानीय" प्रतिलिपि है जो उसके करीब है। इसके अतिरिक्त, चूंकि वर्डप्रेस का "भारी" भाग "आउटसोर्स" किया गया है, इसलिए PHP अनुरोधों और वर्डप्रेस के "बैक-ऑफ़िस" भागों को संभालने के लिए केवल "छोटे" सर्वर की आवश्यकता थी। टिप्पणियों या सीधे संदेश में या [AWS द्वारा एक समान दृष्टिकोण की जाँच करें](https://devops.com/hosting-scalable-wordpress-on-aws/) के बारे में मुझसे और अधिक पूछने के लिए कृपया स्वतंत्र महसूस करें।
 
-> **"No server is easier to manage than no server"**
+![एडब्ल्यूएस पर वर्डप्रेस के लिए आर्किटेक्चर](/images/blog/Webp.net-resizeimage.png)
+
+ऑटोस्केलिंग के साथ, यह वर्डप्रेस के लिए सबसे आदर्श सेटअप लग रहा था, और यह बहुत अच्छा साबित हुआ। लेकिन...
+
+आपको अभी भी प्लगइन अपडेट, सुरक्षा और सामान्य रूप से निगरानी की जांच करनी पड़ती थी। भले ही AWS इस आर्किटेक्चर को काफी लचीला और तेज बनाने में बहुत मदद करता है, फिर भी एक उच्च परिचालन मांग है। इसके अतिरिक्त, सर्वर पर एक अलग विकास, डेटाबेस, लोड बैलेंसिंग, आदि चलाना काफी महंगा हो सकता है, खासकर उन वेबसाइटों के लिए जिनके बहुत कम उपयोगकर्ता हैं।
+और रे:इंवेंट 2015 में वर्नर वोगल्स ने क्या कहा था?
+
+> **"कोई भी सर्वर प्रबंधित करने में आसान नहीं होता है जितना कोई सर्वर नहीं होता है"**
 > 
-> Werner Vogels at re:invent 2015
+> रे:इंवेंट 2015 में वर्नर वोगल्स
 
 
-## Excursion: A brief history of the Code of web
+## भ्रमण: वेब के कोड का संक्षिप्त इतिहास
 
 
+लेखकों और संपादकों के लिए वर्डप्रेस बहुत अच्छा है, लेकिन एक समाधान वास्तुकार के दृष्टिकोण से यह अच्छा नहीं है। क्यों? भले ही सब कुछ क्लिक करने योग्य, संचालित करने में आसान हो, और इसी तरह, सभी संसाधन और जानकारी पृष्ठभूमि में एक डेटाबेस से प्राप्त की जाती हैं, भले ही यह इस दिन 100000वीं बार खींची गई हो। SQL डेटाबेस पर क्वेरी लोड को कम करने के तरीके हैं, जैसे रेडिस और मेमकैश, लेकिन मुझे प्रत्येक उपयोगकर्ता के लिए उसी वेबपेज की "गणना" क्यों करनी चाहिए? "पुराने दिनों में", वेबसाइटें कुछ सेकंड में लोड होती थीं (सिवाय इसके कि कोई फ़ोन पर बात कर रहा हो) और वे बहुत छोटी थीं - क्या बदल गया है? नई डिज़ाइन की माँगों के साथ, आज की वेबसाइटें प्रभावों और डिज़ाइन से भरी हुई हैं जो कम्प्यूटेशनल संसाधनों पर बोझ डालती हैं। यद्यपि यह निश्चित रूप से 90 के दशक की श्वेत-श्याम शैली में सुधार है, वेबसाइटों के लोडिंग समय में नाटकीय वृद्धि हुई है - खासकर जब दुनिया का कनेक्शन मानक अभी भी मोबाइल नेटवर्क है।
 
 
-WordPress is great for writers and editors, but form the perspective of a solution architect it is not great. Why? Even though everything is clickable, easy to handle, and so on, all resources and information are pulled from a database in the background, even though if it is pulled for the 100000th time this day. There are methods to reduce the query load on SQL databases, like Redis and Memcached, but why should I "calculate" the same webpage for every single user? "Back in the day", websites did just load in seconds (except someone has been on the phone) and they were super small - what has changed? Together with new design demands, today's websites are full of effects and designs that are heavy on computational resources. Even though this is definitely an improvement to the 90s black and white style, loading times of websites increased dramatically - especially as the world's connection standard is still mobile network. 
+सभी प्रभावों को प्रस्तुत करने के लिए, पीएचपी कोड का उपयोग पृष्ठभूमि में किया जाता है, जो सर्वर पर ही निष्पादित होने वाला कोड है। जिसका अर्थ है कि हर बार जब कोई उपयोगकर्ता किसी वेबसाइट से जुड़ता है, तो सर्वर उस वेबसाइट की गणना करता है जिसे वह उपयोगकर्ता को दिखाने जा रहा है। 90 के दशक के संस्करण की वेबसाइटों में केवल सादे HTML कोड थे, जो मूल रूप से ब्राउज़र को चीजों को कैसे संभालना है, इसके बारे में सरल निर्देश हैं। जैसे <h1> टैग ब्राउज़र को बताता है कि यह एक शीर्षक है, और <p> एक पैराग्राफ है। किसी भी (जटिलता को कम करने के लिए क्षमा करें!) गणना की आवश्यकता नहीं है।
 
 
-
-To render all the effects, PHP code is used in the background, which is code executed on the server itself. Meaning every time a user connects to a website, the server is calculating the website it is going to show to the user. The 90s version of websites featured just plain HTML code, which are basically simple instructions to the browser on how to handle things. Like the <h1> tag tells the browser this is a heading, and <p> is a paragraph. No (sorry for reducing complexity!) calculations are needed. 
-
+इसके अतिरिक्त, जावास्क्रिप्ट और CSS CSS डिज़ाइन को HTML के समान दृष्टिकोण में वर्णित करते हैं, और जावास्क्रिप्ट सर्वर पर नहीं, बल्कि क्लाइंट-साइड पर निष्पादित होता है। जिसका अर्थ है कि सर्वर स्वयं गणना नहीं करता है, लेकिन क्लाइंट के ब्राउज़र (उदाहरण के लिए, आपका फ़ोन) को "निर्देश भेजता है"।
 
 
-Additionally, Javascript and CSS go a similar path as CSS describes design in a similar approach to HTML, and Javascript is executed not on the server, but on the client-side. Meaning the server does not calculate itself, but "sends instructions" to the client's browser (e.g. your phone). 
-
-
-
-So why don't we use just HTML, Javascript, and CSS? PHP enables us to do a lot of things and allows for content creation frameworks like WordPress to make our lives easier. But the efficient way to produce websites would be to generate them once and then just distribute them already rendered to the masses. 
+तो हम केवल HTML, जावास्क्रिप्ट और CSS का उपयोग क्यों नहीं करते हैं? पीएचपी हमें बहुत सी चीजें करने में सक्षम बनाता है और वर्डप्रेस जैसे सामग्री निर्माण फ़्रेमवर्क के लिए हमारे जीवन को आसान बनाने की अनुमति देता है। लेकिन वेबसाइट बनाने का कुशल तरीका एक बार उन्हें उत्पन्न करना होगा और फिर उन्हें पहले से ही तैयार किए गए रूप में लोगों तक पहुँचाना होगा।
 
 
 
 
 
-## Idea 4: Going back to the roots 
+## विचार 4: जड़ों में वापस जाना
 
 
+क्या मैं कह रहा हूँ कि हमें 90 के दशक के श्वेत-श्याम HTML पृष्ठों पर वापस जाना चाहिए? बिल्कुल नहीं, लेकिन HTML और CSS का संयोजन शानदार परिणाम दे सकता है, और जावास्क्रिप्ट पीएचपी द्वारा अतीत में जो काम संभव था, उसे संभालने के लिए अधिक से अधिक सक्षम हो रहा है। और यदि गणना की आवश्यकता है, तो उपलब्ध महान नए सर्वरलेस संभावनाएँ हैं जैसे AWS Lambda (Lambda के कुछ अनुप्रयोगों के लिए मेरे ब्लॉग पर देखें)।
 
 
-So am I saying we should go back to the black and white HTML pages of the 90s? Of course not, but the combination of HTML and CSS can produce great results, and Javascript becomes more and more capable to handle processes only PHP could handle in the past. And if calculations are needed, there are great new serverless possibilities available like AWS Lambda (check out my blog for some applications of Lambda). 
+मुख्य विषय पर वापस आते हुए, मैंने अपना ब्लॉग और भविष्य की किसी भी वेबसाइट को सादे HTML, CSS और JS में लिखने का निर्णय लिया है, क्योंकि मुझे इसकी आवश्यकता नहीं है
+
+1. **एक सर्वर का प्रबंधन करें** - मैं इसे लगभग मुफ्त में GitHub या AWS S3 पर होस्ट कर सकता हूँ
+2. **उच्च माँगों के बारे में चिंता करें** - S3 और GitHub स्वचालित रूप से स्केल होते हैं, जिसका अर्थ है कि अगर मेरी वेबसाइट पर हजारों आगंतुक आते हैं तो मेरा सर्वर क्रैश नहीं होगा
+3. **बहुत अधिक भुगतान करने की आवश्यकता नहीं है** - चूंकि मुझे वर्डप्रेस की तरह इतनी गणनाएँ करने की आवश्यकता नहीं है, इस ब्लॉग को चलाना पूरी तरह से मुफ़्त है
+3. **सुरक्षा समस्याओं के बारे में चिंता न करें** - मेरा ब्लॉग मूल रूप से अनहैक करने योग्य है
 
 
-
-Going back to the main topic, I have decided to write my blog and any future websites in plain HTML, CSS, and JS, as I do not need to 
-
-1. **manage a server** - I can just host it for almost free on Github or AWS S3
-2. **worry about high-demands**  - S3 and Github scale automatically, meaning if thousands of visitors arrive on my website it will not crash my server
-pay much - as I do not need as many calculations as with WordPress, running this blog is completely free
-3. **do not need to worry about security issues** - my blog is basically unhackable
+इसके अतिरिक्त, वेबसाइट तेज़ी से चमकती है, जिसमें 100% का Google पेजेसपीड स्कोर है, जिसका पेज रैंकिंग पर भी बहुत अच्छा प्रभाव पड़ता है, क्योंकि Google तेज वेबसाइटों को प्राथमिकता देता है। वर्तमान स्कोर 90% तक गिरने का एकमात्र कारण यह है कि मैंने अपने ब्लॉग पर CRM और ट्रैकिंग टूल शामिल करने का फैसला किया। पिछली बार आप क्या मुफ़्त वेबसाइट को ऐसा स्कोर हासिल करते हुए देखते हैं?
 
 
-Additionally, the website is blazingly fast, with a Google Pagespeed score of 100%, which has a great effect on page ranking as well, as Google favors high-speed websites. The only reason why the current score is down to 90%, is that I decided to include CRM and tracking tools on my blog. When was the last time you saw a free website achieving this score?
-
-
-All in all, it is just great, but am I writing all the HTML code by myself?
-
-
-
-
-
-## Introducing: Static Website Generators
-
-
-
-
-Of course not, and luckily there are great tools to handle this for me. Static website builders like [Jekyll](https://jekyllrb.com/) or [Hugo](https://gohugo.io/) help a lot to let you basically just type in Markdown language (basically a simple txt file) and convert your texts into HTML and a nice website. The code is just calculated once and can be uploaded to a server, or Github pages and AWS S3 right away to be completely serverless. [How does it work? Check out my case studies on my blog for an in-depth explanation](/project/serverless-static-website/).
+सामान्य तौर पर, यह बहुत अच्छा है, लेकिन क्या मैं सभी HTML कोड खुद लिख रहा हूँ?
 
 
 
 
 
-## Summary
+## परिचय: स्थिर वेबसाइट जनरेटर
+
+
+बिल्कुल नहीं, और सौभाग्य से, मेरे लिए इसे संभालने के लिए बहुत अच्छे उपकरण हैं। स्थिर वेबसाइट बिल्डर जैसे [जेकिल](https://jekyllrb.com/) या [ह्यूगो](https://gohugo.io/) बहुत मदद करते हैं जिससे आपको मूल रूप से बस मार्कडाउन भाषा (मूल रूप से एक साधारण txt फ़ाइल) में टाइप करने और अपने ग्रंथों को HTML और एक सुंदर वेबसाइट में बदलने की अनुमति मिलती है। कोड की गणना केवल एक बार की जाती है और इसे एक सर्वर, या GitHub पेज और AWS S3 पर तुरंत अपलोड किया जा सकता है ताकि यह पूरी तरह से सर्वरलेस हो। [यह कैसे काम करता है? गहन व्याख्या के लिए मेरे ब्लॉग पर मेरे सफलता के मामलों की जाँच करें](/project/serverless-static-website/)।
 
 
 
 
-It feels great to not worry about uptime, scaling, and security anymore. Is it harder than WordPress? It depends. As this technology just develops, there is a rethinking to be done if you worked with WordPress and others in the past, but again there are many great tools that make static website builders similar to the "known" WordPress environment, like forestry.io for example. How? [Check out my blog at www.datafortress.cloud to see the in-depth explanation](/project/serverless-static-website/). 
-For now, I would be interested if you ever tried to go serverless, or what your experiences with WordPress are. [Shoot me a message, or write a comment below](/contact/). 
 
+## सारांश
+
+
+अब मुझे सर्वर अपटाइम, स्केलिंग और सुरक्षा के बारे में चिंता करने की ज़रूरत नहीं है। क्या यह वर्डप्रेस से कठिन है? यह निर्भर करता है। चूंकि यह तकनीक अभी विकसित हो रही है, यदि आपने अतीत में वर्डप्रेस और अन्य के साथ काम किया है, तो इसे पुनर्विचार करने की आवश्यकता है, लेकिन फिर भी ऐसे कई अच्छे उपकरण हैं जो स्थिर वेबसाइट बिल्डर को "ज्ञात" वर्डप्रेस वातावरण के समान बनाते हैं, जैसे वनस्पति विज्ञान।io उदाहरण के लिए। कैसे? [गहन व्याख्या देखने के लिए www.datafortress.cloud पर मेरे ब्लॉग की जाँच करें](/project/serverless-static-website/)।
+अभी के लिए, मैं उत्सुक हूँ अगर आपने कभी सर्वरलेस जाने की कोशिश की है, या वर्डप्रेस के साथ आपके अनुभव क्या हैं। [मुझे एक संदेश भेजें, या नीचे एक टिप्पणी लिखें](/contact/)।
