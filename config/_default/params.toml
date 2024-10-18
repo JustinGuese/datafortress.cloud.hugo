@@ -94,7 +94,7 @@ mastodon = "" # Your verification code
 # cookies module: https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent
 [cookies]
 enable = true
-expire_days = 2
+expire_days = 7
 content = "This site uses cookies. By continuing to use this website, you agree to their use."
 button = "I Accept"
 
@@ -102,7 +102,7 @@ button = "I Accept"
 [[social]]
 title = "facebook"
 icon = "fab fa-facebook" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#!"
+link = "https://www.facebook.com/datafortress.cloud"
 
 # [[social]]
 # title = "twitter"
@@ -117,9 +117,9 @@ link = "#!"
 [[social]]
 title = "github"
 icon = "fab fa-github" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#!"
+link = "https://github.com/JustinGuese"
 
 [[social]]
 title = "linkedin"
 icon = "fab fa-linkedin" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#!"
+link = "https://www.linkedin.com/company/49084538"
