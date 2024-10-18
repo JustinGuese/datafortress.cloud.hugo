@@ -8,7 +8,7 @@ weight = 1
 ########### footer content ##########
 footer_menu_left = "Company"
 footer_menu_middle = "Products"
-footer_menu_right = "Support"
+footer_menu_right = "Case Studies"
 footer_content = "From Dusty Data to Revenue Gold. Data Engineering, DevOps (K8s, OS), AI <br> We’re Here to Help"
 
 
@@ -22,8 +22,8 @@ weight = 2
 ########### footer content ##########
 footer_menu_left = "Firma"
 footer_menu_middle = "Produkte"
-footer_menu_right = "Support"
-footer_content = "From Dusty Data to Revenue Gold. Data Engineering, DevOps (K8s, OS), AI <br> We’re Here to Help."
+footer_menu_right = "Case Studies"
+footer_content = "Von staubigen Daten zu Einnahmengold. Datenengineering, DevOps (K8s, OS), KI <br> Wir sind hier, um zu helfen."
 
 
 ################################### Chinese language #####################################
@@ -38,3 +38,16 @@ footer_menu_left = "公司"
 footer_menu_middle = "产品"
 footer_menu_right = "支持"
 footer_content = "痛苦本身就是爱"
+
+################################### French language #####################################
+[fr]
+languageName = "FR"
+languageCode = "fr"
+contentDir = "content/french"
+weight = 1
+[fr.params]
+########### footer content ##########
+footer_menu_left = "Entreprise"
+footer_menu_middle = "Produits"
+footer_menu_right = "Études de cas"
+footer_content = "Des données poussiéreuses à l'or des revenus. Ingénierie des données, DevOps (K8s, OS), IA <br> Nous sommes là pour vous aider"
