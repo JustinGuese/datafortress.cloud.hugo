@@ -51,3 +51,29 @@ footer_menu_left = "Entreprise"
 footer_menu_middle = "Produits"
 footer_menu_right = "Études de cas"
 footer_content = "Des données poussiéreuses à l'or des revenus. Ingénierie des données, DevOps (K8s, OS), IA <br> Nous sommes là pour vous aider"
+
+################################### Spanish language #####################################
+[es]
+languageName = "ES"
+languageCode = "es-ES"
+contentDir = "content/spanish"
+weight = 1
+[fr.params]
+########### footer content ##########
+footer_menu_left = "Empresa"
+footer_menu_middle = "Productos"
+footer_menu_right = "Estudios de caso"
+footer_content = "De datos polvorientos a oro de ingresos. Ingeniería de datos, DevOps (K8s, OS), IA <br> Estamos aquí para ayudar"
+
+################################### Hindi language #####################################
+[hi]
+languageName = "HI"
+languageCode = "hi-IN"
+contentDir = "content/hindi"
+weight = 1
+[fr.params]
+########### footer content ##########
+footer_menu_left = "कंपनी"
+footer_menu_middle = "उत्पाद"
+footer_menu_right = "मामले का अध्ययन"
+footer_content = "धूल भरे डेटा से राजस्व सोना। डेटा इंजीनियरिंग, देवऑप्स (K8s, OS), एआई <br> हम मदद करने के लिए यहाँ हैं"

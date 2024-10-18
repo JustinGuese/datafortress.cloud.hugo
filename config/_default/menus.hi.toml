@@ -1,0 +1,181 @@
+# main menu
+[[main]]
+name = "मुख्य पृष्ठ"
+url = ""
+weight = 1
+
+[[main]]
+weight = 2
+name = "पोर्टफोलियो"
+hasChildren = true
+
+[[main]]
+parent = "पोर्टफोलियो"
+name = "सभी"
+url = "/portfolio"
+weight = 1
+
+[[main]]
+parent = "पोर्टफोलियो"
+name = "वीडब्ल्यू / एचपीई: समाधान वास्तुकला"
+url = "/portfolio/vw-hpe-solution-architecture"
+weight = 2
+
+[[main]]
+parent = "पोर्टफोलियो"
+name = "गूगल टाइम्सएफएम – ओपनसोर्स योगदान"
+url = "/portfolio/google-timesfm"
+weight = 3
+
+[[main]]
+parent = "पोर्टफोलियो"
+name = "अत्रुविया / स्पार्कसे / वोल्क्सबैंक – डेटा वेयरहाउस"
+url = "/portfolio/atruvia-sparkasse-volksbank-data-warehouse"
+weight = 4
+
+[[main]]
+parent = "पोर्टफोलियो"
+name = "बीएमडब्ल्यू / एचपीई: वीएम के लिए विश्वव्यापी बैकअप समाधान"
+url = "/portfolio/bmw-worldwide-backup-solution"
+weight = 5
+
+[[main]]
+parent = "पोर्टफोलियो"
+name = "क्लिनिक बुचिंगर विल्हेल्मी - मेडिकल डेटा वेयरहाउस"
+url = "/portfolio/clinic-buchinger-wilhelmi-data-warehouse"
+weight = 6
+
+[[main]]
+parent = "पोर्टफोलियो"
+name = "वियोस इन्वेस्टमेंट्स – ट्रेडिंग इन्फ्रास्ट्रक्चर"
+url = "/portfolio/vios-investments-trading-infrastructure"
+weight = 7
+
+[[main]]
+weight = 6
+name = "उत्पाद"
+hasChildren = true
+[main.params]
+isMenuLarge = true
+
+[[main]]
+parent = "उत्पाद"
+name = "डोकूचैट"
+pre = "<i class='dropdown-icon fas fa-users'></i>"
+post = "<small class='dropdown-subtitle'>उपयोगकर्ताओं को उनके ईमेल और दस्तावेज़ों के साथ चैट करने की अनुमति देने के लिए एआई सास एप्लिकेशन</small>"
+url = "/products/dokuchat"
+weight = 1
+
+[[main]]
+parent = "उत्पाद"
+name = "मायोपियाग्राफ"
+pre = "<i class='dropdown-icon fas fa-eye'></i>"
+post = "<small class='dropdown-subtitle'>मायोपियाग्राफ मायोपिया प्रबंधन के लिए एक स्वास्थ्य सेवा सॉफ्टवेयर है</small>"
+url = "/products/myopiagraph"
+weight = 2
+
+[[main]]
+parent = "उत्पाद"
+name = "एआई निवेश बॉट्स"
+pre = "<i class='dropdown-icon fas fa-chart-bar'></i>"
+post = "<small class='dropdown-subtitle'>एआई निवेश बॉट्स हमारी व्यापारिक विचारों और निवेश रणनीतियों को प्रकाशित करने वाली वेबसाइट है।</small>"
+url = "/products/aiinvestingbots"
+weight = 4
+
+[[main]]
+parent = "उत्पाद"
+name = "सभी उत्पाद देखें"
+pre = "<i class='dropdown-icon text-primary fas fa-arrow-right'></i>"
+url = "/products"
+weight = 5
+
+[[main]]
+weight = 13
+name = "ब्लॉग"
+url = "/blog"
+
+[[main]]
+weight = 15
+name = "के बारे में"
+hasChildren = true
+
+[[main]]
+parent = "के बारे में"
+name = "सामान्य प्रश्न"
+url = "/about/faq"
+weight = 1
+
+[[main]]
+parent = "के बारे में"
+name = "छाप"
+url = "/about/imprint"
+weight = 2
+
+[[main]]
+parent = "के बारे में"
+name = "गोपनीयता नीति"
+url = "/about/privacy-policy"
+weight = 3
+
+[[main]]
+name = "संपर्क करें"
+url = "/contact"
+weight = 30
+
+# footer menu left
+[[footer_left]]
+name = "गोपनीयता नीति"
+url = "/about/privacy-policy"
+weight = 1
+
+[[footer_left]]
+name = "संपर्क करें"
+url = "/contact"
+weight = 2
+
+[[footer_left]]
+name = "छाप"
+url = "/about/imprint"
+weight = 3
+
+[[footer_left]]
+name = "सामान्य प्रश्न"
+url = "/about/faq"
+weight = 4
+
+# footer menu middle
+[[footer_middle]]
+name = "डोकूचैट"
+url = "/products/dokuchat"
+weight = 1
+
+[[footer_middle]]
+name = "मायोपियाग्राफ"
+url = "/products/myopiagraph"
+weight = 2
+
+[[footer_middle]]
+name = "एआई निवेश बॉट्स"
+url = "/products/aiinvestingbots"
+weight = 4
+
+# footer menu right
+[[footer_right]]
+name = "वीडब्ल्यू / एचपीई: समाधान वास्तुकला"
+url = "/portfolio/vw-hpe-solution-architecture"
+weight = 2
+
+[[footer_right]]
+name = "गूगल टाइम्सएफएम – ओपनसोर्स योगदान"
+url = "/portfolio/google-timesfm"
+weight = 3
+
+[[footer_right]]
+name = "अत्रुविया / स्पार्कसे / वोल्क्सबैंक – डेटा वेयरहाउस"
+url = "/portfolio/atruvia-sparkasse-volksbank-data-warehouse"
+weight = 4
+
+[[footer_right]]
+name = "बीएमडब्ल्यू / एचपीई: वीएम के लिए विश्वव्यापी बैकअप समाधान"
+url = "/portfolio/bmw-worldwide-backup-solution"
+weight = 5
