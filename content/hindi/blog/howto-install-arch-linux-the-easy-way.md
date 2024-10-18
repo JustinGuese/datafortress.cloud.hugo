@@ -1,13 +1,12 @@
 ---
-title: How To - Installing Arch Linux the easy way with encrypted drives
-bg_image: "images/blog/Archlinux_GNOME_3.2.png"
-date: 2020-07-06T07:10:46+02:00
-author: "Justin Guese"
-description: Installing Arch Linux the easy way with encrypted drives
-image: "images/blog/Archlinux_GNOME_3.2.png"
+author: जस्टिन गुएसे
+bg_image: images/blog/Archlinux_GNOME_3.2.png
 categories:
-- linux
-- tutorial
+- लिनक्स
+- ट्यूटोरियल
+date: '2020-07-06T07:10:46+02:00'
+description: Arch Linux को एन्क्रिप्टेड ड्राइव्स के साथ आसान तरीके से इंस्टॉल करना
+image: images/blog/Archlinux_GNOME_3.2.png
 tags:
 - tutorial
 - arch linux
@@ -16,147 +15,152 @@ tags:
 - linux
 - encryption
 - encypt data at rest
+title: कैसे करें - एन्क्रिप्टेड ड्राइवों के साथ आर्क लिनक्स को आसान तरीके से इंस्टॉल
+  करना
 type: post
 
 ---
+## आर्क लिनक्स के लाभ
 
-## The benefits of Arch Linux
+मेरे पिछले पोस्ट में, [“How To: Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation”](//www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/), मैंने समझाया था कि मैंने अपनी मशीन लर्निंग वर्कस्टेशन के लिए उबंटू से आर्क लिनक्स क्यों बदला। संक्षेप में, इसका मुख्य कारण गति है, क्योंकि आर्क हार्डवेयर के बहुत करीब है और इसलिए बहुत तेज है, कम ब्लोटवेयर है और इसलिए कम रैम का उपयोग होता है जिसकी मुझे मशीन लर्निंग के लिए आवश्यकता है, और अद्भुत पैकमैन और AUR पैकेज जो तेज़ और आसानी से इंस्टॉल हो सकते हैं।
 
-In my other post, [“How To: Ditching Ubuntu in favor of Arch Linux for a Deep Learning Workstation”](//www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/), I have been explaining why I switched from Ubuntu to Arch Linux for my Machine Learning workstation. Summarized it is mostly because of speed, because Arch is way closer to the hardware and therefore way faster, less bloatware and therefore less RAM usage which I need to machine learning, and the amazing pacman and AUR packages which are fast and easy to install.
+उदाहरण के लिए, उबंटू में, डीप लर्निंग के लिए टेंसोरफ्लो और CUDA को काम करना काफी मुश्किल है, क्योंकि डेबियन पैकेज संरचना अलग है और आर्क की तुलना में इंस्टॉलेशन धीमा है। आर्क में, निर्भरताओं को अच्छी तरह से संभाला जाता है, और पैकेज उतने अमूर्त नहीं होते हैं क्योंकि आर्क मूल रूप से "शुद्ध" लिनक्स कर्नेल ही है।
 
-In Ubuntu, for example, it is quite hard to get TensorFlow and CUDA working for Deep Learning, as the Debian package structure is different and the installation slower compared to Arch. In Arch, dependencies are handled nicely, and packages are not that abstracted as Arch is basically the “pure” Linux kernel itself.
+इसके अतिरिक्त, पैकेज बहुत तेज़ी से आ रहे हैं, और आर्कविकी को किसी भी ऑपरेटिंग सिस्टम के लिए सबसे व्यापक दस्तावेज़ीकरण कहा जाता है।
 
-Additionally packages are coming out way faster, and the ArchWiki is said to be the most extensive documentation there is for an operating system. 
+आर्क का आदर्श वाक्य "सब कुछ अनुकूलित करें, और जितना हो सके तेज़ बनें" है, जबकि उबंटू का आदर्श वाक्य "नए उपयोगकर्ताओं के लिए इंस्टॉलेशन और उपयोग को यथासंभव आसान बनाना" होगा। अब, मैं कहना नहीं चाहता कि उबंटू खराब है, क्योंकि समुदाय बहुत बड़ा है, और यह लिनक्स की दुनिया में अपनी यात्रा शुरू करने के लिए एकदम सही डिस्ट्रो है, लेकिन एक बार जब आप लिनक्स के अधिक अभ्यस्त हो जाते हैं और अधिक गति की आवश्यकता होती है, तो आर्क शायद सबसे अच्छा अगला कदम हो सकता है।
 
-The motto of Arch can be described as “Customize everything, and be as fast as possible”, whilst Ubuntu’s motto would be “Make the installation and usage as easy as possible for new users”. Now, I am not saying that Ubuntu is bad, because the community is huge, and it is the perfect Distro to start your journey into the world of Linux, but once you are more used to Linux and need more speed, Arch might be the best next step.
+मैं कम से कम आर्क से खुश हूँ, क्योंकि यह मेरे द्वारा पहले देखे गए किसी भी चीज़ से बहुत तेज है, और मैं सब कुछ अनुकूलित कर सकता हूँ।
 
-I am at least happy with Arch, as it is way faster than everything I have seen before, and I can customize everything. 
+मैंने अपने डीप लर्निंग बिल्ड के लिए एक आसान इंस्टॉलेशन के लिए एक आईएसओ या इमेज प्रदान करने के बारे में सोचा है। यदि आप रुचि रखते हैं तो कृपया टिप्पणी करें या मुझे एक संदेश भेजें।
 
-I have been thinking about providing an iso or img for my Deep Learning build for an easy install. If you are interested please comment or send me a message. 
+इसके अतिरिक्त, यदि आप थोड़ी सी अमूर्त परत [मैनजैरो आर्क](//manjaro.org/) से सहमत हैं, तो यह आपके लिए एक अच्छा विकल्प हो सकता है। यह मूल रूप से आर्क है, लेकिन इसे आसान और उपयोगकर्ता के अनुकूल बनाया गया है। मुझे यह बहुत पसंद आया, लेकिन मैनजैरो अपने स्वयं के पैकेज का उपयोग करता है, जो अभी भी अच्छे हैं, लेकिन "शुद्ध" आर्क पैकेजों की तरह नहीं हैं। यदि आप कोई शक्तिशाली उपयोगकर्ता नहीं हैं, तो यह आपके लिए विकल्प हो सकता है।
 
-Additionally, if you are fine with a slight abstraction layer [Manjaro Arch](//manjaro.org/) might be a good choice for you. It is basically Arch, but made easy and user-friendly. I loved it, but moved to Arch as Manjaro uses their own packages, which are still good, but not the same as the “pure” Arch packages. If you are not a power-user this might be the choice for you. 
 
-## How to Install Arch Linux the easy way
+## आसान तरीके से आर्क लिनक्स कैसे स्थापित करें
 
-Whilst the [introductory guide](//wiki.archlinux.org/index.php/installation_guide) provided by arch is quite good already, it can be confusing for newcomers. That is why I have decided to write my own tutorial. 
+जबकि आर्क द्वारा प्रदान किया गया [प्रारंभिक मार्गदर्शिका](//wiki.archlinux.org/index.php/installation_guide) पहले से ही काफी अच्छा है, यह नए लोगों के लिए भ्रामक हो सकता है। इसीलिए मैंने अपना खुद का ट्यूटोरियल लिखने का फैसला किया है।
 
-My goal has been to install Arch with encrypted drives, as I need to secure the data at rest for my clients. 
+मेरा लक्ष्य एन्क्रिप्टेड ड्राइव के साथ आर्क स्थापित करना था, क्योंकि मुझे अपने ग्राहकों के लिए आराम पर डेटा सुरक्षित करने की आवश्यकता है।
 
-### 1. Downloading the Arch Linux Image
+### 1. आर्क लिनक्स इमेज डाउनलोड करना
 
-Head over to https://www.archlinux.org/download/ and download the image. 
+https://www.archlinux.org/download/ पर जाएं और इमेज डाउनलोड करें।
 
-Write it to an USB stick. E.g. (but you can use your own program) for:
+इसे USB स्टिक में लिखें। उदाहरण के लिए (लेकिन आप अपना प्रोग्राम इस्तेमाल कर सकते हैं):
 
-Linux:
+लिनक्स:
 > dd if=ISOFILE of=/dev/sdX status=progress
- 
-Where the sdX is your usb stick. Check it with “lsblk”
 
-Windows / Mac:
-I liked to use Etcher https://www.balena.io/etcher/
+जहाँ sdX आपकी USB स्टिक है। इसे "lsblk" से जांचें।
 
-Boot into the USB stick using your Boot menu (F11, F12 in most cases)
+विंडोज़ / मैक:
+मुझे Etcher https://www.balena.io/etcher/ का इस्तेमाल करना पसंद आया।
 
-### 2. First setup in Live ISO
+अपने बूट मेनू (ज्यादातर मामलों में F11, F12) का उपयोग करके USB स्टिक में बूट करें।
 
-Once you are in the Live ISO of Arch, you should see the basic command line of Arch. 
+### 2. लाइव आईएसओ में पहला सेटअप
 
-**Not an US keyboard**? Load your keys with:
-> loadkeys KEYMAP 
+एक बार जब आप आर्क के लाइव आईएसओ में होते हैं, तो आपको आर्क की बुनियादी कमांड लाइन दिखाई देनी चाहिए।
 
-Where Keymap is your locale. Get your locale with
+**क्या आपकी कीबोर्ड यूएस कीबोर्ड नहीं है?** अपने की-मैप से लोड करें:
+> loadkeys KEYMAP
+
+जहाँ Keymap आपका लोकल है। अपने लोकल को प्राप्त करें:
 
 > localectl list-keymaps | grep -i SEARCHTERM
 
-E.g. using the above command with SEARCHTERM = Germany returns de-latin1, for which the loadkeys command is:
+उदाहरण के लिए, SEARCHTERM = जर्मनी के साथ उपरोक्त कमांड का उपयोग करने पर de-latin1 प्राप्त होता है, जिसके लिए loadkeys कमांड है:
 > loadkeys de-latin1
 
 
-(Optional) If you do not have ethernet you might have to connect to your wifi with the following commands. Replace WIFINETWORK and WIFIPASSWORD with your wifi name and password.
+(वैकल्पिक) यदि आपके पास इथरनेट नहीं है, तो आपको निम्नलिखित कमांड के साथ अपने वाईफाई से कनेक्ट होना पड़ सकता है। WIFINETWORK और WIFIPASSWORD को अपने वाईफाई नाम और पासवर्ड से बदलें।
 
 > wpa_passphrase 'WIFINETWORK’ 'WIFIPASSWORD' >> /etc/wpa_supplicant/wpa_supplicant.conf \
 > wpa_supplicant -Bc /etc/wpa_supplicant/wpa_supplicant.conf -i 'wlan0' \
-If the second command does not work your wifi device name might be different. You can check it with “ifconfig”
+यदि दूसरा कमांड काम नहीं करता है, तो आपका वाईफाई डिवाइस नाम अलग हो सकता है। आप इसे "ifconfig" से जाँच सकते हैं।
 > dhclient
 
-Check your connection with curling a website. If the response looks like HTML you are connected, if it says something along the lines of “404”, “timed out” or “no connection” repeat the above steps and watch for typos. 
+अपनी कनेक्शन की जांच करें। यदि प्रतिक्रिया HTML जैसी दिखती है तो आप कनेक्टेड हैं, यदि यह "404", "टाइम आउट" या "कोई कनेक्शन नहीं" जैसा कुछ कहता है, तो उपरोक्त चरणों को दोहराएं और टाइपो के लिए देखें।
 > curl www.datafortress.cloud
 
-### 2. Partitioning the drives
+### 2. ड्राइव को विभाजित करना
 
-This is the most difficult step, so once you are done with it you are almost done! I chose the more advanced version where the drive is completely encrypted for advanced security, but feel free to use the “[standard method](//wiki.archlinux.org/index.php/Partitioning)” instead. 
+यह सबसे कठिन चरण है, इसलिए एक बार जब आप इसे कर लेते हैं तो आप लगभग इसे पूरा कर लेते हैं! मैंने उन्नत सुरक्षा के लिए पूरी ड्राइव को पूरी तरह से एन्क्रिप्ट किया हुआ चुन लिया, लेकिन यदि चाहें तो आप “[मानक विधि](//wiki.archlinux.org/index.php/Partitioning)” का भी उपयोग कर सकते हैं।
 
-This guide will assume you are planning to wipe your whole drive. So be sure that all data is backed up. Of course, a dual-boot with windows or so is possible as well, but I will explain that in another guide.
+यह गाइड मान लेता है कि आप अपनी पूरी ड्राइव को साफ करने की योजना बना रहे हैं। इसलिए सुनिश्चित करें कि सभी डेटा का बैकअप लिया गया है। बेशक, विंडोज़ या अन्य के साथ डुअल बूट भी संभव है, लेकिन मैं इसे दूसरे गाइड में समझाऊँगा।
 
-The plan is to have two partitions:
-First partition: EFI boot drive - which tells your PC how to boot into Arch
-Second partition: Completely encrypted drive with “sub”-drives containing the swap file, the root folder and a separate /home drive for security. 
-Why three partitions on the second drive? Let’s say you mess up your root installation. In that case your home folder with your documents, settings and so on will be on a separate partition and can easily be reused in a new install. Meaning you could install a fresh new Arch install in the root partition, and just “reuse” your home folder. Nice. 
+योजना दो पार्टीशन रखने की है:
+पहला विभाजन: EFI बूट डिस्क - जो आपके पीसी को आर्क में बूट करने के तरीके को बताता है।
+दूसरा विभाजन: पूरी तरह से एन्क्रिप्टेड ड्राइव जिसमें "उप"-ड्राइव होती हैं जिनमें स्वैप फ़ाइल, रूट फ़ोल्डर और सुरक्षा के लिए एक अलग /होम ड्राइव होती है।
+दूसरी ड्राइव पर तीन विभाजन क्यों? मान लें कि आप अपने रूट इंस्टॉलेशन में गड़बड़ी करते हैं। उस मामले में, आपके दस्तावेज़, सेटिंग्स और इतने पर आपके होम फ़ोल्डर एक अलग विभाजन पर होंगे और आसानी से नए इंस्टॉलेशन में पुन: उपयोग किए जा सकते हैं। इसका मतलब है कि आप रूट विभाजन में एक नया आर्क इंस्टॉल कर सकते हैं और बस अपने होम फ़ोल्डर को “पुन: उपयोग” कर सकते हैं। अच्छा।
 
-#### Step 1: Get the name of your Drive
 
-> lbslk -lh
+#### चरण 1: अपनी ड्राइव का नाम प्राप्त करना
 
- This shows you all connected drives. Usually your main drive should be called /dev/sda and your USB stick /dev/sdb. 
+> lsblk -lh
 
-**Check if sda is really your main drive according to the GB storage capacity and everything. If you simply copy and paste the following commands with sda you might wipe the wrong drive!!**
-That is why I will name the device sdX in the following paragraphs, but replace the X with your device number (a,b,c, …). Some drives are having different names, just compare and replace accordingly. 
+यह आपको सभी कनेक्टेड ड्राइव दिखाता है। आमतौर पर आपकी मुख्य ड्राइव का नाम /dev/sda और आपकी USB स्टिक /dev/sdb होना चाहिए।
 
-#### Step 2: Partition
+**यदि sda वास्तव में आपकी मुख्य ड्राइव है, तो उसकी GB संग्रहण क्षमता और सब कुछ के अनुसार जांचें। यदि आप केवल निम्नलिखित कमांड को sda के साथ कॉपी और पेस्ट करते हैं, तो आप गलत ड्राइव को मिटा सकते हैं!!** यही कारण है कि मैं निम्नलिखित पैराग्राफ में डिवाइस sdX का नाम दूँगा, लेकिन X को अपने डिवाइस नंबर (a, b, c, ...) से बदलें। कुछ ड्राइव के अलग-अलग नाम होते हैं, बस तुलना करें और उसी अनुसार बदलें।
 
-Start gdisk
+
+#### चरण 2: विभाजन
+
+gdisk प्रारंभ करें
 
 > gdisk /dev/sdX
 
-Boot EFI Drive Setup
-1. Type ‘o’ to create a partition table
-2. Type ‘n’ for a new partition
-3. Enter
-4. Enter
+EFI ड्राइव सेटअप
+1. पार्टीशन टेबल बनाने के लिए 'o' टाइप करें
+2. नए पार्टीशन के लिए 'n' टाइप करें
+3. दर्ज करें
+4. दर्ज करें
 5. +256M
 6. EF00
-This will create a 256 mb partition with the EFI format that we need for booting
+यह EFI प्रारूप के साथ 256 एमबी पार्टीशन बनाएगा जिसकी हमें बूटिंग के लिए आवश्यकता है।
 
-Encrypted Arch Drive setup
-1. Type ‘n’ to create a new partition
-2. Enter
-3. Enter
-4. Enter
+एंक्रिप्टेड आर्क ड्राइव सेटअप
+1. नए पार्टीशन बनाने के लिए 'n' टाइप करें
+2. दर्ज करें
+3. दर्ज करें
+4. दर्ज करें
 5. 8309
 
-Check if everything looks right with pressing ‘p’. It should look like this:
+यह देखने के लिए कि सब कुछ सही लग रहा है, 'p' दबाएं। यह इस तरह दिखना चाहिए:
 
 >Number  Start (sector)    End (sector)  Size       Code  Name \
 >   1            2048         1050623   256.0 MiB   EF00  EFI System \
 >   2         1050624       242187466   115.0 GiB   8309  Linux LUKS
 
-Looks good? Press ‘w’ to write changes to disk. 
+ठीक लग रहा है? डिस्क में परिवर्तन लिखने के लिए 'w' दबाएँ।
 
-### 3. Create the encrypted filesystems
 
-The partitions are empty right now. Next we will create the filesystems and encrypted “sub”-partitions. Remember to replace the X with your drive number (usually a).
+### 3. एन्क्रिप्टेड फ़ाइल सिस्टम बनाएँ
+
+पार्टीशन अभी खाली हैं। अगला हम फ़ाइल सिस्टम और एन्क्रिप्टेड "उप"-विभाजन बनाएँगे। X को अपने ड्राइव नंबर (आमतौर पर a) से बदलना याद रखें।
 
 > cryptsetup luksFormat /dev/sdX2 \
 > cryptsetup open /dev/sdX2 cryptlvm \
 > pvcreate /dev/mapper/cryptlvm \
 > vgcreate datafortress /dev/mapper/cryptlvm
 
-Feel free to replace the following disk sizes in front of the “G” for Gigabyte with your desired size. For Deep Learning Swap should be 32 Gb, for other cases around the size of your RAM. I recommend the root system to be 40Gb, but the minimum should be 10Gb. 
-You can replace datafortress with anything, or leave it as is to be the cool kid in town. 
+अपनी इच्छित साइज़ से गीगाबाइट के आगे निम्न ड्राइव साइज़ को बदलने में संकोच न करें। डीप लर्निंग के लिए स्वैप 32 जीबी होना चाहिए, अन्य मामलों में आपके रैम का आकार। मैं रूट सिस्टम को 40 जीबी रखने की सलाह दूंगा, लेकिन न्यूनतम 10 जीबी होना चाहिए।
+आप datafortress को किसी भी चीज़ से बदल सकते हैं या वैसे ही रख सकते हैं ताकि आप शहर में कूल किड बनें।
+
 
 > lvcreate -L 16G datafortress -n swap \
 > lvcreate -L 40G datafortress -n root \
 > lvcreate -l +100%FREE datafortress -n home
 
-Create filesystems
+फ़ाइल सिस्टम बनाएँ
 
 > mkfs.vat -F32 /dev/sdX1 \
 > mkfs.ext4 /dev/mapper/datafortress-root \
 > mkfs.ext4 /dev/mapper/datafortress-home \
 > mkswap /dev/mapper/datafortress-swap
 
-Mount them
+उनको माउंट करें
 
 > mount /dev/mapper/datafortress-root /mnt \
 > mkdir /mnt/home \
@@ -165,146 +169,150 @@ Mount them
 > mount /dev/sdX1 /mnt/boot \
 > swapon /dev/mapper/datafortress-swap
 
-### 4. Install base Linux
+### 4. बेस लिनक्स इंस्टॉल करें
 
-Before installing it is recommended to update your mirrorlist such that packages are downloaded from the closest mirrors. [Head over to my other article and search for “reflector” for an instruction on how to do that](//www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/). 
+इंस्टॉल करने से पहले, अपने मिररलिस्ट को अपडेट करने की सलाह दी जाती है ताकि पैकेज निकटतम मिरर से डाउनलोड किए जा सकें। [कृपया मेरे दूसरे लेख में "रिफ्लेक्टर" खोजें, ताकि यह कैसे करें, इसकी निर्देशिका मिल सके](//www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/).
 
 > pacstrap /mnt base base-devel linux linux-firmware nano
 
-### 5. Install Fstab 
+### 5. Fstab स्थापित करें
 
-Fstab is basically an instruction how to mount your drives. Just copy paste it for now.
+Fstab मूल रूप से यह बताने के निर्देश हैं कि आपकी ड्राइव को कैसे माउंट किया जाए। अभी के लिए इसे कॉपी-पेस्ट करें।
 
 > genfstab -U /mnt >> /mnt/etc/fstab
 
-### 6. Last polishing touches 
 
-We are going to chroot into our mount, which is basically like running sudo in our system.
+### 6. अंतिम पॉलिशिंग टच
+
+हम अपने माउंट पर chroot करने जा रहे हैं, जो मूल रूप से हमारे सिस्टम में sudo चलाने जैसा है।
 
 > arch-chroot /mnt \
-> ln -s /usr/share/zoneinfo/REGION/CITY /etc/localtime 
+> ln -s /usr/share/zoneinfo/REGION/CITY /etc/localtime
 
-Where Region is your region (just use tab to see the options if you types the /usr/…./zoneinfo/, like Europe, and CITY your city, like Vienna.
+REGION आपके क्षेत्र (यदि आप /usr/…./zoneinfo/ लिखते हैं तो विकल्प देखने के लिए टैब का उपयोग करें, जैसे यूरोप, और CITY आपका शहर, जैसे वियना)।
 
 > hwclock --systohc
 
-Set your hostname. The funny part when installing Arch is you get to do things Ubuntu and others do for you. Set the hostname for your device, e.g. if you are going to ssh into your device later you do not have to type an IP, but can use this name instead. E.g. “ssh user@hunneybunney” could be way nicer to remember than 192.168.0.231.
+
+अपना होस्टनाम सेट करें। आर्क इंस्टॉल करते समय मज़ेदार हिस्सा यह है कि आपको उबंटू और अन्य चीजें करते हैं जो आपके लिए कर देते हैं। अपने डिवाइस का होस्टनेम सेट करें, उदाहरण के लिए, यदि आप बाद में अपने डिवाइस में ssh करना चाहते हैं, तो आपको कोई आईपी टाइप करने की आवश्यकता नहीं है, बल्कि आप इसके नाम का उपयोग कर सकते हैं। उदाहरण के लिए, “ssh user@hunneybunney” 192.168.0.231 की तुलना में याद रखने में बहुत आसान है।
 
 > echo NAME > /etc/hostname
 
-Next we are setting our locale, basically the system language. Open the file in nano and search for your language code. Use the UTF-8 version if possible. Searching with nano is possible using Strg + W. [Nano tutorial](//www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/). 
-E.g. I wanted to have German and English (US), that is why I uncommented en_US.UTF-8 UTF-8  and de_DE.UTF-8 UTF-8  
+अगला, हम अपना लोकल सेट कर रहे हैं, मूल रूप से सिस्टम भाषा। फ़ाइल को नैनो में खोलें और अपनी भाषा कोड खोजें। यदि संभव हो तो UTF-8 संस्करण का उपयोग करें। नैनो का उपयोग करके खोज करना संभव है, स्ट्रिंग + डब्ल्यू का उपयोग करें। [नैनो ट्यूटोरियल](//www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/).
+उदाहरण के लिए, मैं जर्मन और अंग्रेज़ी (यूएस) चाहता था, इसलिए मैंने en_US.UTF-8 UTF-8 और de_DE.UTF-8 UTF-8 को अनकॉमेंट किया।\
 > nano /etc/locale.gen
 
-Generate locales
+लोकेल्स उत्पन्न करो\
 > locale-gen
 
-(Optional) Now if you are using a non-US Keyboard add your keymap:
+(वैकल्पिक) अब यदि आप गैर-यूएस कीबोर्ड का उपयोग कर रहे हैं, तो अपना की-मैप जोड़ें:
 
 > echo KEYMAP > /etc/vconsole.conf
 
-Use the Keymap from the beginning, like de-latin1
+उस Keymap का उपयोग करें जिसके बारे में हमने शुरुआत में बात की थी, जैसे de-latin1
 
-Next install some software. If you already know pacman packages you want to install, do it now. I recommend just using the minimum first and then continue installation of packages if everything works fine. 
+अगला कुछ सॉफ्टवेयर इंस्टॉल करें। यदि आप पहले से ही उस pacman पैकेज को जानते हैं जिसे आप इंस्टॉल करना चाहते हैं, तो इसे अभी करें। मैं पहले न्यूनतम पैकेज के साथ ही शुरुआत करने की अनुशंसा करता हूँ और फिर सब कुछ ठीक से काम करने पर पैकेज स्थापित करना जारी रखें।
 
-**Minimum**
+**न्यूनतम**
 > pacman -Syu \
 > pacman -S wpa_supplicant dhclient lvm2 dialog
 
-**Installing a desktop environment**
-Feel free to install a desktop environment already, which allows you to have a GUI of everything. 
+**डेस्कटॉप वातावरण स्थापित करना**
+किसी डेस्कटॉप वातावरण को पहले से ही इंस्टॉल करने में संकोच न करें, जो आपको सबकुछ का GUI देता है।
 
-Install a display manager 
+डिस्प्ले मैनेजर स्थापित करें
 > pacman -S lightdm
 
-Now the benefits of Arch are choosing your own Desktop environment. For the looks choose Gnome, but it will be RAM hungry, for efficiency choose Xfce. 
+अब आर्क के लाभ यह है कि आप अपना खुद का डेस्कटॉप वातावरण चुनते हैं। लुक के लिए गनोम चुनें, लेकिन यह रैम का भूखा होगा, दक्षता के लिए एक्सफेज चुनें।
 
-**Only install ONE of the following**
+**निम्नलिखित में से केवल एक स्थापित करें**
 
-To install GNOME:
+GNOME स्थापित करने के लिए:
 
 > pacman -S gnome gnome-extra
 
-To install Cinnamon:
+सिनिमाॉन स्थापित करने के लिए:
 
 > pacman -S cinnamon nemo-fileroller
 
-To install XFCE:
+XFCE स्थापित करने के लिए:
 
 > pacman -S xfce4 xfce4-goodies
 
-To install KDE:
+KDE स्थापित करने के लिए:
 
 >pacman -S plasma
 
-To install MATE:
+MATE स्थापित करने के लिए:
 
 > pacman -S mate mate-extra
 
-### 7. Adding users
+### 7. उपयोगकर्ता जोड़ना
 
-I recommend using different passwords for the root and default user. 
+मैं रूट और डिफ़ॉल्ट उपयोगकर्ता के लिए अलग-अलग पासवर्ड का उपयोग करने की सलाह देता हूँ।
 
 > useradd -m -G wheel ‘USERNAME’ \
 > passwd ‘USERNAME’
 
-Create a password for the root user
+रूट उपयोगकर्ता के लिए पासवर्ड बनाएँ
 
-> passwd 
+> passwd
 
-You will login with your default user. If you need to do administrative stuff you can switch users with “su - root” 
 
-### 8. Boot configuration
+आप अपने डिफ़ॉल्ट उपयोगकर्ता के साथ लॉगिन करेंगे। यदि आपको व्यवस्थापकीय कार्य करने की आवश्यकता है, तो आप “su - root” से उपयोगकर्ता बदल सकते हैं।
 
-Now there are a lot of boot managers, but I liked the systemd-boot loader the most. [Feel free to choose another one](//wiki.archlinux.org/index.php/Category:Boot_loaders). 
+### 8. बूट कॉन्फ़िगरेशन
 
-> nano /etc/mkinitcpio.conf 
+अब बहुत सारे बूट मैनेजर हैं, लेकिन मुझे systemd बूट लोडर सबसे ज़्यादा पसंद आया। [अन्य विकल्प चुनने में संकोच न करें](//wiki.archlinux.org/index.php/Category:Boot_loaders)।
 
-Search for the HOOKS line and edit it accordingly. Order matters!
+> nano /etc/mkinitcpio.conf
+
+HOOKS लाइन खोजें और उसे उसी अनुक्रम में संपादित करें। क्रम मायने रखता है!
 
 > HOOKS=(base udev autodetect keyboard keymap consolefont modconf block encrypt lvm2 filesystems resume fsck)
 
-Close and Save the file (Strg + X, y)
+फ़ाइल को बंद और सहेजें (Strg + X, y)।
 
 > mkinitcpio -p linux \
-> bootctl install 
+> bootctl install
 
-Edit your boot entries
 
-You will need the partition id of the encrypted drive. Usually this will be /dev/sda2, but can be different. It will not be the first 256mb drive, as this is the boot partition. 
+अपने बूट प्रविष्टियाँ संपादित करें
 
-Check for the name and note it down, most likely it is /dev/sda2
+आपको एन्क्रिप्टेड ड्राइव का पार्टीशन आईडी की आवश्यकता होगी। आमतौर पर यह /dev/sda2 होगा, लेकिन अलग भी हो सकता है। यह पहला 256 एमबी ड्राइव नहीं होगा, क्योंकि यह बूट पार्टीशन है।
+
+नाम खोजें और इसे नोट करें, ज़्यादातर संभावना /dev/sda2 है।
 
 > lsblk -lh
 
-Then look for the UUID string in the output of following command at the device id /dev/sdX2
+फिर निम्न कमांड के आउटपुट में UUID स्ट्रिंग की तलाश करें:\
+/dev/sdX2 डिवाइस आईडी पर
 
-> blkid 
+> blkid
 
-You can try the same command with a filter as well:
+आप एक फ़िल्टर के साथ भी उसी कमांड की कोशिश कर सकते हैं:
 
 > blkid | grep UUID=
 
-Example UUID: 727cac18-044b-4504-87f1-a5aefa774bda
+उदाहरण UUID: 727cac18-044b-4504-87f1-a5aefa774bda
 
 
 > nano /boot/loader/entries/arch.conf
-Add the following:
+निम्नलिखित जोड़ें:
 
 >title	ArchLinux \
 >linux	/vmlinuz-linux \
 >initrd	/initramfs-linux.img \
 >options cryptdevice=UUID=<YOUR-PARTITION-UUID>:lvm:allow-discards resume=/dev/mapper/datafortress-swap root=/dev/mapper/datafortress-root rw quiet
 
-Remember to replace datafortress with the id you chose if you changed it. Otherwise leave as is.
+यदि आपने datafortress को बदल दिया है तो datafortress को आपके द्वारा चुने गए आईडी से बदलना याद रखें। नहीं तो वैसे ही छोड़ दें।
 
-### 9. Locking up
+### 9. लॉक करना
 
-DONE! Now reboot, remove the USB stick and hope everything worked.
+हो गया! अब रिबूट करें, यूएसबी स्टिक निकालें और उम्मीद करें कि सब कुछ ठीक से काम किया।
 
 > exit \
 > umount -R /mnt \
 > reboot
 
-**[I recommend setting up LTS kernels, as they are more stable, and update the mirrorlist. Check my guide on “creating an Arch Linux Deep Learning station” for more information on how to do that](//www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/).**
-
+**[मैं एलटीएस कर्नेल सेट अप करने की सलाह देता हूँ, क्योंकि वे अधिक स्थिर होते हैं, और मिररलिस्ट को अपडेट करें। अधिक जानकारी के लिए मेरे "आर्क लिनक्स डीप लर्निंग स्टेशन बनाना" गाइड देखें](//www.datafortress.cloud/blog/howto-arch-linux-deeplearning-workstation/).**

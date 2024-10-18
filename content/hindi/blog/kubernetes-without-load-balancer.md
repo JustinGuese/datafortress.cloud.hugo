@@ -1,25 +1,27 @@
 ---
-title: "Maximizing Cost Savings in the Cloud: How to Run Kubernetes without a Load Balancer"
-bg_image: "images/blog/kubernetes.jpg"
-date: 2023-01-18T07:10:46+02:00
-author: "Justin Guese"
-description: "Discover cost-saving tips for your Kubernetes cluster, from using one load balancer to even eliminating them altogether."
-image: "images/blog/kubernetes.jpg"
+author: जस्टिन गुएसे
+bg_image: images/blog/kubernetes.jpg
 categories:
-- Private cloud
-tags: ["private cloud", "comparison"]
+- निजी क्लाउड
+date: '2023-01-18T07:10:46+02:00'
+description: अपने Kubernetes क्लस्टर के लिए लागत बचाने के सुझाव खोजें, एक लोड बैलैंसर
+  का उपयोग करने से लेकर उन्हें पूरी तरह से समाप्त करने तक।
+image: images/blog/kubernetes.jpg
+tags:
+- private cloud
+- comparison
+title: 'क्लाउड में लागत बचत को अधिकतम करना: लोड बैलेंसर के बिना Kubernetes कैसे चलाएं'
 type: post
+
 ---
+जब क्लाउड में कुबरनेट्स चलाने की बात आती है, तो सबसे महत्वपूर्ण खर्चों में से एक प्रत्येक सेवा के लिए लोड बैलैंसर का उपयोग करने से आता है। प्रति लोड बैलैंसर प्रति माह लगभग 15 डॉलर से शुरू होने वाली कीमतों के साथ, लागतें जल्दी बढ़ जाती हैं, खासकर यदि आपके पास बड़ी संख्या में पॉड्स हैं। लेकिन क्या होगा अगर हम आपको बताएं कि उच्च उपलब्धता और स्वचालित फेलओवर के लाभ प्राप्त करते हुए बिना लोड बैलैंसर के कुबरनेट्स चलाने का एक तरीका है? इस लेख में, हम देखेंगे कि आप क्लाउड में लागत कैसे बचा सकते हैं, बिना लोड बैलैंसर के कुबरनेट्स चलाकर।
 
+## संस्करण 1: एनजीएनएक्स इंग्रेस के साथ सर्ट मैनेजर का इस्तेमाल करके केवल एक लोड बैलैंसर का उपयोग करें
 
-When it comes to running Kubernetes in the cloud, one of the most significant costs can come from using a load balancer for each service. With prices starting at around $15 per month per load balancer, it's easy for costs to quickly add up, especially if you have a large number of pods. However, what if we told you that there's a way to run Kubernetes without the need for a load balancer and still get the benefits of high availability and automatic failover? In this article, we'll explore how you can achieve cost savings in the cloud by running Kubernetes without a load balancer.
+एक लागत बचाने की रणनीति पूरे क्लस्टर के लिए केवल एक लोड बैलैंसर का उपयोग करना है, बजाय इसके कि प्रत्येक सेवा के लिए अलग लोड बैलैंसर का इस्तेमाल करें। यह [एनजीएनएक्स इंग्रेस](https://kubernetes.github.io/ingress-nginx/) का उपयोग करके प्राप्त किया जा सकता है, जो क्लस्टर के लिए सभी बाहरी ट्रैफ़िक के लिए एकल प्रवेश बिंदु के रूप में कार्य करता है। एनजीएनएक्स इंग्रेस फिर डोमेन नाम के आधार पर ट्रैफ़िक को उपयुक्त पॉड्स में वितरित करता है, न कि प्रति सेवा एक लोड बैलैंसर बनाए।
+सबसे अच्छी बात: यदि आप [सर्ट मैनेजर](https://cert-manager.io/docs/installation/helm/) जोड़ रहे हैं, तो आपको मुफ्त लेट्सएन्क्रिप्ट एसएसएल प्रमाणपत्र मिलेंगे!
 
-## Version 1: Nginx Ingress with Cert Manager to just use one Load Balancer
-
-One cost-saving strategy is to use only one load balancer for the entire cluster, rather than a separate load balancer for each service. This can be achieved by using an [Nginx Ingress](https://kubernetes.github.io/ingress-nginx/), which acts as a single entry point for all external traffic to the cluster. The Nginx Ingress then distributes the traffic to the appropriate pods based on the domain name, instead of creating one load balancer per service.
-The best part: If you are adding [cert manager](https://cert-manager.io/docs/installation/helm/), you will get free LetsEncrypt SSL certificates!
-
-The easiest way to deploy the Nginx Ingress in your cluster, is by using Helm:
+अपने क्लस्टर में एनजीएनएक्स इंग्रेस को तैनात करने का सबसे आसान तरीका हेल्म का उपयोग करना है:
 
 ```
 helm upgrade --install ingress-nginx ingress-nginx \
@@ -27,7 +29,7 @@ helm upgrade --install ingress-nginx ingress-nginx \
   --namespace ingress-nginx --create-namespace
 ```
 
-After that, to ensure https and SSL running for your services, you need to deploy Cert Manager with the following command:
+उसके बाद, अपनी सेवाओं के लिए https और SSL चलाने सुनिश्चित करने के लिए, आपको निम्नलिखित कमांड के साथ सर्ट मैनेजर को तैनात करना होगा:
 
 ```
 helm install \
@@ -37,7 +39,7 @@ helm install \
         --set installCRDs=true
 ```
 
-Then, you need to create a "ClusterIssuer" in order to tell LetsEncrypt who you are. Create a file "clusterissuer.yaml" with the content adapted to your Email:
+फिर, लेट्सएन्क्रिप्ट को बताने के लिए आपको "क्लस्टरइश्यूअर" बनाना होगा कि आप कौन हैं। अपने ईमेल के अनुकूलित किए गए कंटेंट के साथ एक फ़ाइल "clusterissuer.yaml" बनाएं:
 
 ```
 apiVersion: cert-manager.io/v1
@@ -47,23 +49,23 @@ metadata:
 spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory
-#change to your email
+#अपना ईमेल बदलें
     email: EMAIL
     privateKeySecretRef:
        name: letsencrypt-prod
     solvers:
     - http01:
         ingress:
-          class: nginx # public or nginx depending on version
+          class: nginx # सार्वजनिक या nginx, संस्करण के आधार पर
 ```
 
-After that, apply it to your cluster with `kubectl apply -f clusterissuer.yaml` and you are set up!
+उसके बाद, इसे `kubectl apply -f clusterissuer.yaml` के साथ अपने क्लस्टर पर लागू करें और आप सेट हो गए!
 
-### Creating an Ingress
+### एक इंग्रेस बनाना
 
-Now, you need to grab the name of your service that you want to expose to the world. You can get it with `kubectl get service`.
+अब, आपको उस सेवा का नाम प्राप्त करने की आवश्यकता है जिसे आप दुनिया के सामने उजागर करना चाहते हैं। इसे `kubectl get service` से प्राप्त कर सकते हैं।
 
-In this example, let's assume your service is named "nginx" in the default namespace. To route your domain "test.datafortress.cloud" to it, you need to create the following testdf-ingress.yaml:
+इस उदाहरण में, मान लें कि आपकी सेवा डिफ़ॉल्ट नेमस्पेस में "nginx" नाम की है। अपने डोमेन "test.datafortress.cloud" को इसे रूट करने के लिए, आपको निम्नलिखित testdf-ingress.yaml बनाना होगा:
 
 ```
 apiVersion: networking.k8s.io/v1
@@ -76,11 +78,11 @@ metadata:
 spec:
   tls:
   - hosts:
-#change to your domain
+#अपने डोमेन को बदलें
     - test.datafortress.cloud
     secretName: tls-secret
   rules:
-#change to your domain
+#अपने डोमेन को बदलें
   - host: test.datafortress.cloud
     http:
       paths:
@@ -93,17 +95,17 @@ spec:
                 number: 80
 ```
 
-Apply it with `kubectl apply -f testdf-ingress.yaml`, and point the domain you used to the load balancer used by your node. Soon you should see it spin up in your cluster, and see your service at the domain you stated in the ingress. 
-To debug, have a look at the nginx pod or certificates. 
-Struggling? [Contact us](/contact) and we will help you out!
+इसे `kubectl apply -f testdf-ingress.yaml` के साथ लागू करें, और अपने नोड द्वारा उपयोग किए जाने वाले लोड बैलैंसर को अपने द्वारा उपयोग किए गए डोमेन को इंगित करें। जल्द ही आपको इसे अपने क्लस्टर में काम करते हुए दिखाई देगा, और आपकी सेवा उस डोमेन पर दिखाई देगी जिसे आपने इंग्रेस में बताया है। 
+डिबग करने के लिए, nginx पॉड या प्रमाणपत्र देखें। 
+समस्या आ रही है? [हमसे संपर्क करें](/contact) और हम आपकी मदद करेंगे!
 
-While this solution may save you money on your cloud bill, it's important to note that using no load balancers can come with its own set of challenges. For example, if a node fails, the traffic won't be automatically routed to a healthy server, leading to downtime for your service. In many cases, having a load balancer is still the best option as it provides automatic failover and ensures that your services remain available to your customers. It's up to you to weigh the cost savings against the potential risks and make an informed decision on the best solution for your needs.
+हालांकि यह समाधान आपको अपने क्लाउड बिल पर पैसे बचा सकता है, ध्यान रखना महत्वपूर्ण है कि बिना लोड बैलैंसर का उपयोग करने से अपनी चुनौतियां हो सकती हैं। उदाहरण के लिए, यदि कोई नोड विफल हो जाता है, तो ट्रैफ़िक स्वचालित रूप से किसी स्वस्थ सर्वर पर नहीं भेजा जाएगा, जिससे आपकी सेवा के लिए डाउनटाइम हो सकता है। कई मामलों में, लोड बैलैंसर अभी भी सबसे अच्छा विकल्प है क्योंकि यह स्वचालित फेलओवर प्रदान करता है और सुनिश्चित करता है कि आपकी सेवाएँ आपके ग्राहकों के लिए उपलब्ध रहें। आपके लिए लागत बचत को संभावित जोखिमों को तौलना और अपनी आवश्यकताओं के लिए सबसे अच्छा समाधान चुनना है।
 
-## Version 2: Saving even more money with 0 load balancers!
+## संस्करण 2: 0 लोड बैलैंसर के साथ और भी अधिक पैसे बचाएँ!
 
-If you're looking to save even more money on your cloud bill, there's an alternative to the above solution that uses no load balancers at all! Instead of using Nginx Ingress, this solution utilizes the nodePorts 80 and 443 on the server to redirect traffic to the appropriate pods. This eliminates the need for any load balancers, which can significantly reduce your cloud costs. Let's dive into the details of this solution.
+यदि आप अपने क्लाउड बिल पर और भी अधिक पैसे बचाना चाहते हैं, तो उपरोक्त समाधान का एक विकल्प है जो बिल्कुल भी लोड बैलैंसर का उपयोग नहीं करता है! एनजीएनएक्स इंग्रेस का उपयोग करने के बजाय, यह समाधान सर्वर पर नोडपोर्ट 80 और 443 का उपयोग करता है ताकि ट्रैफ़िक को उपयुक्त पॉड्स में पुनर्निर्देशित किया जा सके। इससे किसी भी लोड बैलैंसर की आवश्यकता समाप्त हो जाती है, जिससे आपकी क्लाउड लागतों में काफी कमी आ सकती है। आइए इस समाधान के विवरण में गहराई से देखें।
 
-To do this, we will upgrade our existing nginx ingress to use NodePorts instead of Load Balancers:
+ऐसा करने के लिए, हम अपने मौजूदा nginx इंग्रेस को नोडपोर्ट का उपयोग करने के लिए अपग्रेड करेंगे बजाय लोड बैलैंसर के:
 
 ```
 helm upgrade --install ingress-nginx ingress-nginx/ingress-nginx
@@ -115,10 +117,10 @@ helm upgrade --install ingress-nginx ingress-nginx/ingress-nginx
     --set controller.service.ports.https=443
 ```
 
-You should soon see your ingress-nginx service to switch to Nodeport, and the load balancer should disappear. 
+जल्द ही आपको अपने ingress-nginx सर्विस को नोडपोर्ट पर स्विच करते हुए दिखाई देना चाहिए, और लोड बैलैंसर गायब होना चाहिए।
 
-While using load balancers provides stability to a cluster, it is a legitimate way to save money with one-node Kubernetes distributions. By eliminating the need for load balancers and relying solely on the node ports 80 and 443, you can reduce your monthly costs significantly. However, it's important to keep in mind that not having a load balancer also means that in case of a failing node, the traffic will not be automatically routed to a healthy server. If you are operating a one-node Kubernetes distribution, this trade-off between stability and cost savings is worth considering.
+जबकि लोड बैलैंसर क्लस्टर में स्थिरता प्रदान करते हैं, यह एकल-नोड कुबरनेट्स वितरण के साथ पैसे बचाने का एक वैध तरीका है। लोड बैलैंसर की आवश्यकता समाप्त करके और केवल नोड पोर्ट 80 और 443 पर निर्भर करके, आप अपनी मासिक लागत में काफी कमी ला सकते हैं। हालाँकि, यह ध्यान रखना महत्वपूर्ण है कि लोड बैलैंसर के न होने का मतलब यह भी है कि किसी नोड के विफल होने की स्थिति में, ट्रैफ़िक स्वतः किसी स्वस्थ सर्वर पर नहीं जाएगा। यदि आप एकल-नोड क्यूबरनेट्स वितरण चला रहे हैं, तो स्थिरता और लागत बचत के बीच यह व्यापार-बदल सोचने लायक है।
 
-## Verdict: Is it worth it?
+## निर्णय: क्या यह इसके लायक है?
 
-In conclusion, there are multiple ways to save costs in your Kubernetes cluster, from using only one load balancer with nginx ingress to using 0 load balancers and relying on nodeports. While a load balancer has its benefits in terms of stability and ensuring traffic routing, there are alternatives that can help reduce costs. If you're still unsure of the best way to save money in your Kubernetes cluster, [consider taking advantage of the cost-effective shared Kubernetes clusters offered by DataFortress.cloud, or seek our assistance in managing your cluster costs](/contact).
+संक्षेप में, आपके कुबरनेट्स क्लस्टर में लागत कम करने के कई तरीके हैं, एनजीएनएक्स इंग्रेस के साथ केवल एक लोड बैलैंसर का उपयोग करने से लेकर नोडपोर्ट पर निर्भर रहते हुए 0 लोड बैलैंसर तक। जबकि लोड बैलैंसर की अपनी स्थिरता और ट्रैफ़िक रूटिंग सुनिश्चित करने की विशेषताएं हैं, ऐसे विकल्प मौजूद हैं जो लागत कम करने में मदद कर सकते हैं। यदि आप अभी भी अपने कुबरनेट्स क्लस्टर में पैसे बचाने के सबसे अच्छे तरीके से अनिश्चित हैं, [डेटाफोर्ट्रेस.क्लाउड द्वारा दी जाने वाली लागत-प्रभावी साझा कुबरनेट्स क्लस्टर का लाभ उठाएं, या अपने क्लस्टर लागतों के प्रबंधन में हमारी सहायता लें](/contact)।
