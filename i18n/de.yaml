@@ -1,11 +1,11 @@
 - id: read_more
-  translation: Weiterlesen
-  
+  translation: Mehr lesen
+
 - id: read_case_study
   translation: Lesen Sie die vollständige Fallstudie
-  
+
 - id: view_product
-  translation: Produkt anzeigen
+  translation: Produkt ansehen
 
 - id: send
   translation: Nachricht senden
@@ -14,13 +14,13 @@
   translation: Kategorie
 
 - id: tags
-  translation: Stichworte
+  translation: Schlagwörter
 
 - id: by
   translation: von
 
 - id: min_read
-  translation: minute Lesen
+  translation: Min. Lesezeit
 
 - id: admin
   translation: Admin
@@ -35,7 +35,7 @@
   translation: Nächster Fall
 
 - id: apply_for_position
-  translation: Bewerben Sie sich auf Position
+  translation: Für Position bewerben
 
 - id: view_all_positions
   translation: Alle Positionen anzeigen
@@ -47,46 +47,46 @@
   translation: "Teilen Sie diesen Job:"
 
 - id: other_jobs
-  translation: Andere Beschäftigungen
+  translation: Andere Jobs
 
 - id: all_jobs
   translation: Alle Jobs
-  
+
 - id: fname
   translation: Vorname
-  
+
 - id: full_name
   translation: Vollständiger Name
-  
+
 - id: lname
   translation: Nachname
-  
+
 - id: email
-  translation: E-Mail-Addresse
-  
+  translation: E-Mail-Adresse
+
 - id: website
   translation: Webseite
-  
+
 - id: organization_size
   translation: Organisationsgröße (Mitarbeiter)*
-  
+
 - id: region
   translation: Region*
-  
+
 - id: message
   translation: Nachricht
-  
+
 - id: submit_now
-  translation: Jetzt Absenden
-  
+  translation: Jetzt absenden
+
 - id: get_demo
-  translation: Demo herunterladen
-  
+  translation: Demo anfordern
+
 - id: cv_note
-  translation: nur doc, pdf-Datei erlaubt & Dateigröße wird weniger als 2 MB betragen
-  
+  translation: Nur doc-, pdf-Dateien erlaubt & Dateigröße unter 2MB
+
 - id: upload_cv
   translation: Lebenslauf hochladen
-  
+
 - id: search_faq
-  translation: Klicken und suchen FAQ..
+  translation: Klicken und FAQ durchsuchen

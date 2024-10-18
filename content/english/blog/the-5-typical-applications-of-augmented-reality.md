@@ -1,15 +1,14 @@
-+++
-author = "Justin Güse"
-bg_image = ""
-categories = ["Augmented Reality"]
-date = 2022-01-16T22:00:00Z
-description = "What is Augmented Reality? In this post I try to clear up some ambiguities about AR."
-image = "/images/augmented-reality-1957411_640-1.jpg"
-tags = ["Augmented Reality"]
-title = "The 5 typical applications of Augmented Reality"
-type = "post"
-
-+++
+---
+author: "Justin Güse"
+bg_image: ""
+categories: ["Augmented Reality"]
+date: 2022-01-16T22:00:00Z
+description: "What is Augmented Reality? In this post I try to clear up some ambiguities about AR."
+image: "/images/augmented-reality-1957411_640-1.jpg"
+tags: ["Augmented Reality"]
+title: "The 5 typical applications of Augmented Reality"
+type: "post"
+---
 
 Image by <a href="[https://pixabay.com/users/zedinteractive-4197605/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1957411](https://pixabay.com/users/zedinteractive-4197605/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1957411 "https://pixabay.com/users/zedinteractive-4197605/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1957411")">zedinteractive</a> from <a href="[https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1957411](https://pixabay.com/users/zedinteractive-4197605/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1957411 "https://pixabay.com/users/zedinteractive-4197605/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1957411")">Pixabay</a>
 

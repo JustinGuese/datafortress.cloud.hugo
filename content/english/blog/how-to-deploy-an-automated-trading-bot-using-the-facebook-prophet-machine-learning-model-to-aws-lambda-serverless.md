@@ -1,15 +1,15 @@
-+++
-author = "Justin Guese"
-bg_image = "/images/serverless-investing-bot-facebook-prophet-machine-learning.png"
-categories = ["algorithmic-trading", "aws", "serverless", "machine-learning"]
-date = 2022-05-23T22:00:00Z
-description = "How to deploy an automated trading bot using the Facebook Prophet Machine Learning model to AWS Lambda (serverless)"
-image = "/images/serverless-investing-bot-facebook-prophet-machine-learning-1.png"
-tags = ["cloud-computing", "machine-learning", "algorithmic-trading", "stock", "aws", "aws-lambda", "serverless", "facebook-prophet"]
-title = "How to deploy an automated trading bot using the Facebook Prophet Machine Learning model to AWS Lambda (serverless)"
-type = "post"
+---
+author: "Justin Guese"
+bg_image: "/images/serverless-investing-bot-facebook-prophet-machine-learning.png"
+categories: ["algorithmic-trading", "aws", "serverless", "machine-learning"]
+date: 2022-05-23T22:00:00Z
+description: "How to deploy an automated trading bot using the Facebook Prophet Machine Learning model to AWS Lambda (serverless)"
+image: "/images/serverless-investing-bot-facebook-prophet-machine-learning-1.png"
+tags: ["cloud-computing", "machine-learning", "algorithmic-trading", "stock", "aws", "aws-lambda", "serverless", "facebook-prophet"]
+title: "How to deploy an automated trading bot using the Facebook Prophet Machine Learning model to AWS Lambda (serverless)"
+type: "post"
+---
 
-+++
 I divided this post into the “Why did I do it” and the “Technical How To”. If you want to skip the “Why” part, feel free to directly jump to the Technical part.
 
 
