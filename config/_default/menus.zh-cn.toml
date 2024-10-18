@@ -1,43 +1,55 @@
 # main menu
 [[main]]
-name = "家"
+name = "首页"
 url = ""
 weight = 1
 
 [[main]]
-weight = 4
-name = "公司"
+weight = 2
+name = "作品集"
 hasChildren = true
 
 [[main]]
-parent = "公司"
-name = "关于"
-url = "/about"
+parent = "作品集"
+name = "全部"
+url = "/portfolio"
 weight = 1
 
 [[main]]
-parent = "公司"
-name = "团队"
-url = "/team"
+parent = "作品集"
+name = "大众 / HPE: 解决方案架构"
+url = "/portfolio/vw-hpe-solution-architecture"
+weight = 2
+
+[[main]]
+parent = "作品集"
+name = "谷歌 TimesFM – 开源贡献"
+url = "/portfolio/google-timesfm"
+weight = 3
+
+[[main]]
+parent = "作品集"
+name = "Atruvia / Sparkasse / Volksbank – 数据仓库"
+url = "/portfolio/atruvia-sparkasse-volksbank-data-warehouse"
 weight = 4
 
 [[main]]
-parent = "公司"
-name = "这个怎么运作"
-url = "/how-it-works"
-weight = 8
+parent = "作品集"
+name = "宝马 / HPE: 全球虚拟机备份解决方案"
+url = "/portfolio/bmw-worldwide-backup-solution"
+weight = 5
 
 [[main]]
-parent = "公司"
-name = "职业"
-url = "/career"
-weight = 9
+parent = "作品集"
+name = "布兴格威尔赫尔米诊所 - 医疗数据仓库"
+url = "/portfolio/clinic-buchinger-wilhelmi-data-warehouse"
+weight = 6
 
 [[main]]
-parent = "公司"
-name = "职业详情"
-url = "/career/sr-executive-service-assurance"
-weight = 10
+parent = "作品集"
+name = "Vios 投资 – 交易基础设施"
+url = "/portfolio/vios-investments-trading-infrastructure"
+weight = 7
 
 [[main]]
 weight = 6
@@ -48,34 +60,26 @@ isMenuLarge = true
 
 [[main]]
 parent = "产品"
-name = "CRM"
+name = "DokuChat"
 pre = "<i class='dropdown-icon fas fa-users'></i>"
-post = "<small class='dropdown-subtitle'>更快地转换潜在客户并完成销售交易</small>"
-url = "/products/product-1"
+post = "<small class='dropdown-subtitle'>AI SaaS 应用程序，允许用户与他们的电子邮件和文档聊天</small>"
+url = "/products/dokuchat"
 weight = 1
 
 [[main]]
 parent = "产品"
-name = "Help Desk"
-pre = "<i class='dropdown-icon fas fa-dice-d6'></i>"
-post = "<small class='dropdown-subtitle'>提供出色客户支持的软件。</small>"
-url = "/products/product-2"
+name = "Myopiagraph"
+pre = "<i class='dropdown-icon fas fa-eye'></i>"
+post = "<small class='dropdown-subtitle'>Myopiagraph 是用于近视管理的医疗软件</small>"
+url = "/products/myopiagraph"
 weight = 2
 
 [[main]]
 parent = "产品"
-name = "Workplace"
-pre = "<i class='dropdown-icon fas fa-laptop-house'></i>"
-post = "<small class='dropdown-subtitle'>为提高生产力而构建的应用程序。</small>"
-url = "/products/product-3"
-weight = 3
-
-[[main]]
-parent = "产品"
-name = "Analytics"
+name = "AI 投资机器人"
 pre = "<i class='dropdown-icon fas fa-chart-bar'></i>"
-post = "<small class='dropdown-subtitle'>从任何数据集创建自定义报告。</small>"
-url = "/products/product-4"
+post = "<small class='dropdown-subtitle'>AI 投资机器人是一个发布我们的交易想法和投资策略的网站。</small>"
+url = "/products/aiinvestingbots"
 weight = 4
 
 [[main]]
@@ -88,144 +92,90 @@ weight = 5
 [[main]]
 weight = 13
 name = "博客"
-hasChildren = true
-
-[[main]]
-parent = "博客"
-name = "博客文章"
 url = "/blog"
-weight = 3
-
-[[main]]
-parent = "博客"
-name = "博客详情"
-url = "/blog/post-2"
-weight = 8
-
-[[main]]
-parent = "博客"
-name = "元素"
-url = "/blog/post-1"
-weight = 9
-
-[[main]]
-parent = "博客"
-name = "作者"
-url = "/author"
-weight = 11
-
-[[main]]
-parent = "博客"
-name = "作者详情"
-url = "/author/awab-husameldin"
-weight = 12
 
 [[main]]
 weight = 15
-name = "页面"
+name = "关于"
 hasChildren = true
 
 [[main]]
-parent = "页面"
-name = "价钱"
-url = "/pricing"
+parent = "关于"
+name = "常见问题"
+url = "/about/faq"
 weight = 1
 
 [[main]]
-parent = "页面"
-name = "实例探究"
-url = "/case-studies"
-weight = 4
+parent = "关于"
+name = "印记"
+url = "/about/imprint"
+weight = 2
 
 [[main]]
-parent = "页面"
-name = "案例研究详情"
-url = "/case-studies/case-1"
-weight = 5
-
-[[main]]
-parent = "页面"
-name = "FAQ"
-url = "/faq"
-weight = 16
-
-[[main]]
-parent = "页面"
+parent = "关于"
 name = "隐私政策"
-url = "/privacy-policy"
-weight = 20
+url = "/about/privacy-policy"
+weight = 3
 
 [[main]]
-parent = "页面"
-name = "条款和条件"
-url = "/terms-conditions"
-weight = 24
-
-[[main]]
-name = "接触"
+name = "联系"
 url = "/contact"
 weight = 30
 
 # footer menu left
 [[footer_left]]
-name = "关于"
-url = "/about"
+name = "隐私政策"
+url = "/about/privacy-policy"
 weight = 1
 
 [[footer_left]]
-name = "团队"
-url = "/team"
+name = "联系"
+url = "/contact"
 weight = 2
 
 [[footer_left]]
-name = "这个怎么运作"
-url = "/how-it-works"
+name = "印记"
+url = "/about/imprint"
 weight = 3
 
 [[footer_left]]
-name = "职业"
-url = "/career"
+name = "常见问题"
+url = "/about/faq"
 weight = 4
-
 
 # footer menu middle
 [[footer_middle]]
-name = "CRM"
-url = "/products/product-1"
+name = "DokuChat"
+url = "/products/dokuchat"
 weight = 1
 
 [[footer_middle]]
-name = "Help Desk"
-url = "/products/product-2"
+name = "Myopiagraph"
+url = "/products/myopiagraph"
 weight = 2
 
 [[footer_middle]]
-name = "Workplace"
-url = "/products/product-3"
-weight = 3
-
-[[footer_middle]]
-name = "Analytics"
-url = "/products/product-4"
+name = "AI 投资机器人"
+url = "/products/aiinvestingbots"
 weight = 4
 
 # footer menu right
 [[footer_right]]
-name = "FAQ"
-url = "/faq"
-weight = 1
-
-[[footer_right]]
-name = "接触"
-url = "/contact"
+name = "大众 / HPE: 解决方案架构"
+url = "/portfolio/vw-hpe-solution-architecture"
 weight = 2
 
 [[footer_right]]
-name = "隐私政策"
-url = "/privacy-policy"
+name = "谷歌 TimesFM – 开源贡献"
+url = "/portfolio/google-timesfm"
 weight = 3
 
 [[footer_right]]
-name = "条款和条件"
-url = "/terms-conditions"
+name = "Atruvia / Sparkasse / Volksbank – 数据仓库"
+url = "/portfolio/atruvia-sparkasse-volksbank-data-warehouse"
 weight = 4
+
+[[footer_right]]
+name = "宝马 / HPE: 全球虚拟机备份解决方案"
+url = "/portfolio/bmw-worldwide-backup-solution"
+weight = 5
