@@ -1,57 +1,60 @@
 ---
-author: "Justin Güse"
-bg_image: ""
-categories: ["Augmented Reality"]
-date: 2022-01-16T22:00:00Z
-description: "What is Augmented Reality? In this post I try to clear up some ambiguities about AR."
-image: "/images/augmented-reality-1957411_640-1.jpg"
-tags: ["Augmented Reality"]
-title: "The 5 typical applications of Augmented Reality"
-type: "post"
+author: जस्टिन गूसे
+bg_image: ''
+categories:
+- संवर्धित वास्तविकता
+date: '2022-01-16T22:00:00+00:00'
+description: वर्धित वास्तविकता क्या है? इस पोस्ट में, मैं AR के बारे में कुछ अस्पष्टताओं
+  को दूर करने का प्रयास करता हूँ।
+image: /images/augmented-reality-1957411_640-1.jpg
+tags:
+- Augmented Reality
+title: '**बढ़ते हुए वास्तविकता के 5 सामान्य अनुप्रयोग**'
+type: post
+
 ---
+चित्र <a href="[https://pixabay.com/users/zedinteractive-4197605/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1957411](https://pixabay.com/users/zedinteractive-4197605/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1957411)">zedinteractive</a> द्वारा <a href="[https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1957411](https://pixabay.com/users/zedinteractive-4197605/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1957411)">Pixabay</a> से लिया गया है।
 
-Image by <a href="[https://pixabay.com/users/zedinteractive-4197605/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1957411](https://pixabay.com/users/zedinteractive-4197605/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1957411 "https://pixabay.com/users/zedinteractive-4197605/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1957411")">zedinteractive</a> from <a href="[https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1957411](https://pixabay.com/users/zedinteractive-4197605/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1957411 "https://pixabay.com/users/zedinteractive-4197605/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1957411")">Pixabay</a>
+2018 वास्तव में संवर्धित वास्तविकता का वर्ष रहा है। संवर्धित वास्तविकता पहली बार "पोकेमोन गो" और जैसे गेमों के माध्यम से जनता के सामने आई, लेकिन मूल तकनीक सदियों पुरानी है - पहला सक्षम "हेड्स-अप डिस्प्ले" 1980 के दशक में विकसित किए गए थे ([लिंक](http://techland.time.com/2012/11/02/eye-am-a-camera-surveillance-and-sousveillance-in-the-glassage/)), लेकिन संवर्धित वास्तविकता अब सफलता क्यों पा रही है और यह आखिर क्या है? इस पृष्ठ पर जानें!
 
-2018 has truly been the year of Augmented Reality. Augmented Reality first came into the public eye through games like "Pokemon Go" and co, but the basic technology has been around for ages - the first capable "Heads-Up Displays" were developed in the 1980s ([Link](http://techland.time.com/2012/11/02/eye-am-a-camera-surveillance-and-sousveillance-in-the-glassage/)), but why is an augmented reality only now making a breakthrough and what is AR anyway? Find out on this page!
+संवर्धित वास्तविकता, या संवर्धित वास्तविकता, हमारे अनुभूति प्रभावों को कृत्रिम रूप से बनाई गई अतिरिक्त जानकारी से भरने का वर्णन करने के लिए इस्तेमाल किया जाने वाला शब्द है। AR की शास्त्रीय परिभाषा अतिरिक्त जानकारी को इस तथ्य तक सीमित करती है कि इसे कंप्यूटर के माध्यम से आभासी रूप से प्रसारित किया जाना चाहिए ([लिंक](https://www.bloomberg.com/news/videos/2016-11-17/ar-vr-is-fourth-wave-of-technology-digi-capital-founder)और [लिंक](https://doi.org/10.1117/12.197321))।
 
-Augmented Reality, or augmented reality, is the term used to describe the enrichment of our perceived sensory impressions with artificially created additional information. The classical definition of AR limits the additional information to the fact that it has to be transmitted virtually via a PC ([link ](https://www.bloomberg.com/news/videos/2016-11-17/ar-vr-is-fourth-wave-of-technology-digi-capital-founder)and [link](https://doi.org/10.1117/12.197321)).
+सेना के लिए या सामान्य दृश्यीकरण के लिए संवर्धित वास्तविकता के अनुप्रयोग शुरुआती वर्षों से ही मौजूद हैं, लेकिन सफलता अब क्यों मिली इसका कारण यह है कि उस समय कंप्यूटर, साथ ही स्क्रीनें, जनता के लिए किफायती होने के लिए बहुत बड़ी थी और दूसरा, वे काफी हद तक पोर्टेबल नहीं थी। सौभाग्य से, आजकल हर किसी के पास अपनी जेब में पोर्टेबल कंप्यूटर है - स्मार्टफोन। जैसे-जैसे स्मार्टफोन अधिक व्यापक होते जा रहे हैं, संवर्धित वास्तविकता अधिक सुलभ होती जा रही है, और कोई भी बिना किसी बड़ी तकनीकी लागत के AR का उपयोग कर सकता है। अंततः, यह संवर्धित वास्तविकता के लिए सफलता का कारण बना।
 
-Augmented Reality applications for the military, or for general visualizations, have been around since the early years, but the reason why the breakthrough only happened now is that at that time a PC set, as well as the screens, were much too bulky to be affordable for the masses, and secondly, they were reasonably portable. Nowadays, fortunately, everyone has a portable computer in their pocket - the smartphone. As smartphones become more widespread, augmented reality is becoming more accessible, and anyone can use AR at no great technical cost. In the end, this was the trigger for Augmented Reality to make its breakthrough.
+इसके अतिरिक्त, कई बड़ी कंपनियां अनुमान लगाती हैं कि AR और VR बाजार 2021 में 108 अरब अमेरिकी डॉलर के आंकड़े पार कर जाएगा ([लिंक](https://techcrunch.com/2017/01/11/the-reality-of-vrar-growth/)) और इस प्रकार मानव इतिहास के सबसे तेजी से बढ़ने वाले बाजारों में से एक होगा।
 
-Furthermore, several large companies predict that the AR and VR market will exceed the 108 billion US dollar mark in 2021 ([Link](https://techcrunch.com/2017/01/11/the-reality-of-vrar-growth/)) and thus be one of the fastest-growing markets in human history.
+## संवर्धित वास्तविकता कैसे काम करती है?
 
-## How does Augmented Reality work?
+मोटे तौर पर, अंतिम उपयोगकर्ता के लिए, AR स्मार्टफोन पर एक ऐप से ज्यादा कुछ नहीं है। हमेशा एक ट्रिगर, या "ट्रिगर" होगा जो ऐप में सामग्री को ट्रिगर करता है, जिसे फिर डिवाइस की स्क्रीन पर प्रोजेक्ट किया जाता है।
 
-Roughly speaking, for the end-user, AR is nothing more than an app on the smartphone. There will always be a trigger, or "trigger", that triggers content in the app, which is then projected onto the screen of the device.
+इस मामले में एक ट्रिगर को क्यूआर कोड होने की ज़रूरत नहीं है, जैसा कि कई लोग गलती से सोचते हैं, बल्कि यह किसी भी चीज़ से हो सकता है, चित्र से लेकर 3डी ऑब्जेक्ट तक। पृष्ठभूमि में एल्गोरिदम की कला ट्रिगर की स्थिति और आकार को निर्धारित करना और सामग्री को ऑप्टिकल रूप से सही तरीके से उस पर प्रोजेक्ट करना है। सामग्री क्या है, यह लगभग अप्रासंगिक है। आप किसी चित्र पर एक वीडियो या किसी चित्र पर एक एनिमेटेड 3डी ऑब्जेक्ट चला सकते हैं - संभावनाएं अनंत हैं।
 
-A trigger in this case does not have to be a QR Code, as many mistakenly think, but can be anything from a picture to a 3D object. The art of the algorithm in the background is to determine the position and size of the trigger and to project the content optically correct onto it. What the content is, is almost irrelevant. You can play a video over an image, or an animated 3D object over an image - the possibilities are endless.
+# संवर्धित वास्तविकता के 5 विशिष्ट अनुप्रयोग
 
-# The 5 typical applications of Augmented Reality
+बेशक, वर्चुअल रियलिटी की तरह, उपयोग के मामले अनगिनत हैं, लेकिन मैंने इसे पाँच सबसे विशिष्ट क्षेत्रों में तोड़ने की कोशिश की है:
 
-Of course, as with virtual reality, the use cases are countless, but I have tried to break it down to the five most typical areas:
+### 1. AR विपणन और विज्ञापन
 
-### 1. AR marketing and advertising
+संवर्धित वास्तविकता के लिए सबसे बड़ी संभावना निश्चित रूप से विज्ञापन है। प्रिंट विज्ञापन को अक्सर नजरअंदाज कर दिया जाता है क्योंकि हाल के वर्षों में जानकारी की बाढ़ आ गई है और कोई भी प्रिंट विज्ञापन वास्तव में अपने लक्षित प्रभाव को प्राप्त नहीं कर पाया है। AR के साथ यह बदल जाएगा क्योंकि AR के साथ एक "उबाऊ" प्रिंट विज्ञापन को जीवंत किया जा सकता है। उदाहरण के लिए, बस स्टॉप पर एक कार के अपने मानक प्रिंट विज्ञापन की कल्पना करें और ग्राहकों पर मानक प्रिंट और कार के "खिड़की से गुज़रने" के एनीमेशन के बीच प्रभाव की तुलना करें और इंटरैक्टिव रूप से चलना संभव है - AR अनुभव निश्चित रूप से अधिक यादगार होगा।
 
-The greatest potential for Augmented Reality is certainly advertising. Print advertising is often ignored because there has simply been a flood of information in recent years and no print advertising can really achieve its targeted effect. This will change with AR because with AR a "boring" print advertisement can be brought to life. Imagine for example your standard print ad of a car at a bus stop and compare the effect on customers between the standard print and an animation of how the car "drives through the window" and can be walked on interactively - the AR experience will definitely be more memorable.
+### 2. संवर्धित वास्तविकता के माध्यम से सूचना संवर्धन
 
-### 2. Information enrichment through augmented reality
+संवर्धित वास्तविकता हमारे पिछले अनुभव को और जानकारी से भरने के लिए पूरी तरह से उपयुक्त होगी। इस मामले में सबसे प्रसिद्ध उदाहरण, "Google चश्मे" जैसे AR चश्मे हैं। यहां आप दुनिया को "जैसा कि आम तौर पर" देखते हैं, लेकिन आप हमेशा अधिक जानकारी देने के लिए और जानकारी को थोड़ा-थोड़ा दिखा सकते हैं। उदाहरण के लिए, कल्पना करें कि आपके द्वारा देखी जाने वाली प्रत्येक व्यक्ति के ऊपर उनका नाम होगा, या आपको कभी "यह कौन सी कार है?" पूछने की ज़रूरत नहीं होगी क्योंकि उनके AR चश्मे ने आपको यह जानकारी पहले ही दिखा दी होगी।
 
-The augmented reality will be perfectly suited to enrich our previous perception with further information. The best-known example, in this case, is AR-glasses like the "Google Glasses". Here you see the world "as usual", but you can always fade in more information to give more information. For example, imagine that every person you see would have their name above them, or you would never have to ask "What kind of car is this?" because their AR-Glasses would have shown you this information long ago.
+### 3. संवर्धित वास्तविकता के साथ दूरस्थ सहायता/प्रशिक्षण
 
-### 3. remote assistance/training with augmented reality
+संवर्धित वास्तविकता प्रशिक्षण में भी क्रांति लाएगी क्योंकि भविष्य में तकनीशियनों या सहायक कर्मचारियों की एक सेना का समर्थन करने के लिए "सहायता केंद्र" होंगे। किसी मशीन निर्माता के लिए एक मरम्मत करने वाले व्यक्ति का उदाहरण लें। कोई भी मैकेनिक हर मशीन को नहीं जानता है, और अक्सर एक विशेष तकनीशियन को लाने और मशीन की मरम्मत करने में हफ्तों और बहुत समय लगता है। संवर्धित वास्तविकता (AR) के साथ, एक निम्न स्तर के मैकेनिक को अब दूरस्थ रूप से विशेष मैकेनिक द्वारा सहायता की जा सकती है और ऐसे ऑपरेशन किए जा सकते हैं जिनमें पहले हफ्तों और लाखों यूरो लगते थे। व्यावहारिक रूप से, इसका मतलब हो सकता है, उदाहरण के लिए, कि विशेष मैकेनिक स्थानीय कार्यकर्ता के AR चश्मे में जानकारी डाल सकते हैं और "देख सकते हैं कि वह क्या देख रहा है", और ऐसा कार्य कर सकते हैं जैसे वह वहां मौजूद हो, केवल आधे मिलियन यूरो कम खर्च में।
 
-Augmented Reality will also revolutionize training because in the future there will be "support centers" to support an armada of technicians or support staff. Take the example of a repairman for a machine manufacturer. No mechanic knows every machine, and it often takes weeks and a lot of time to fly in a special technician and have the machine repaired. With augmented reality (AR), a low-level mechanic can now be assisted over distance by the specialized mechanic and perform operations that would previously have taken weeks and millions. In practical terms, this could mean, for example, that the specialized mechanic can put information into the AR glasses of the local worker and "see what he sees", and act as if he were on site, only for half a million Euros less.
+### 4. गेमिंग और मनोरंजन में AR
 
-### 4. AR in gaming and entertainment
+वर्चुअल रियलिटी की तरह, संवर्धित वास्तविकता को भी गेमिंग उद्योग द्वारा बड़े पैमाने पर चलाया गया है। भले ही AR, VR जितनी इमर्सिव नहीं है (VR पृष्ठ देखें), यह अधिक सुलभ है क्योंकि आपको VR चश्मे या उच्च प्रदर्शन वाले कंप्यूटर की आवश्यकता नहीं होती है। यह एक नया प्रारूप भी है और उन लोगों के लिए बहुत सुलभ है जिनके पास कोई पिछला गेमिंग अनुभव नहीं है क्योंकि खेल सिद्धांत परिचित बातचीत के समान है। यही कारण था कि "पोकेमोन गो" ने अपने लांच के बाद पहले तीन महीनों में 600 मिलियन अमेरिकी डॉलर की बिक्री की ([लिंक](http://venturebeat.com/2016/10/20/pokemon-go-is-the-fastest-mobile-game-to-hit-600-million-in-revenues/))। आपने अपने ऐप से कितनी आय अर्जित की?
 
-Like virtual reality, augmented reality has also been massively driven by the games industry. Even though AR is not as immersive as VR (see VR page), it is more accessible because you don't need VR glasses or a high-performance PC. It is also a new format and very accessible for people who have no previous gaming experience because the game principle is comparable to familiar interactions. This was one of the reasons why "Pokemon Go" prescribed 600 million US dollars in sales in the first three months after its launch alone ([Link](http://venturebeat.com/2016/10/20/pokemon-go-is-the-fastest-mobile-game-to-hit-600-million-in-revenues/)). How much revenue did you generate with your app?
+### 5. संवर्धित वास्तविकता से शिक्षा में क्रांति
 
-### 5. education revolutionized by augmented reality
+हालांकि, यह वास्तव में मेरे द्वारा उजागर किए गए पिछले बिंदुओं में से एक है क्योंकि AR के हमारे शिक्षा प्रणाली पर इतना बड़ा प्रभाव पड़ेगा कि यह अपने आप में एक बिंदु के लायक है। वर्तमान शिक्षा प्रणाली बहुत पीछे है - मैं आपको आश्वस्त करता हूँ कि कोई भी छात्र या विद्यार्थी परीक्षा के दो सप्ताह बाद से अधिक सामग्री को 30 प्रतिशत से अधिक नहीं याद रख पाएगा। कल्पना कीजिए कि आपको शरीर के सभी तंत्रिका मार्गों को याद रखना है। यदि आप अब अपने हाथ पर AR को केंद्रित कर सकते हैं और अपने शरीर पर तंत्रिका पथों के नाम एनिमेटेड देख सकते हैं, तो आप निश्चित रूप से इसे एक किताब में पढ़ने की तुलना में बेहतर याद रखेंगे। ऐसा इसलिए है क्योंकि AR कई अधिक इंद्रियों को संबोधित कर सकता है और किताब से सीखने की तुलना में अधिक इंटरैक्टिव है ([लिंक](https://pdfs.semanticscholar.org/1881/0b28c827511c3d1695de59078c3ee8eaaa37.pdf))।
 
-Although this is actually one of the previous points I have highlighted it because AR will have such a massive impact on our education system that it is worth a point of its own. The current educational system is far behind - I assure you that no student or pupil will remember more than 30 percent of the content two weeks after the exam. Imagine you have to memorize all the nerve tracts of the body. If you could now aim AR at your own arm and get the names of the nerve tracts on your own body animated, you would certainly remember this much better than if you read it in a book. The reason is that AR can address many more senses and is much more interactive than learning with a book ([Link](https://pdfs.semanticscholar.org/1881/0b28c827511c3d1695de59078c3ee8eaaa37.pdf)).
+## और आपका व्यवसाय कैसे AR को बेहतर बना सकता है?
 
-## And how can AR improve your business?
+इस लिंक के माध्यम से मेरे साथ मुफ्त पंद्रह मिनट की बातचीत बुक करें](https://www.datafortress.cloud/service/virtual-augmented-reality/) या संपर्क पृष्ठ पर जाएं और मुझे अपने विचारों के बारे में बताएं। मैं आपको झूठ नहीं बोलूंगा - AR का हमेशा तुक-बात नहीं होती है, लेकिन साथ में हम यह पता लगा सकते हैं कि आपकी कंपनी में क्या तुक-बात है और क्या नहीं।
 
-Just book a [free fifteen-minute conversation with me via this link](https://www.datafortress.cloud/service/virtual-augmented-reality/) or visit the contact page and tell me about your ideas. I won't lie - AR doesn't always make sense, but together we can find out what makes sense in your company and what doesn't.
-
-Looking for more information about AR? [Then have a look at our own page.](https://www.datafortress.cloud/service/virtual-augmented-reality/)
+AR के बारे में और जानकारी चाहिए? [फिर हमारी अपनी वेबसाइट देखें।](https://www.datafortress.cloud/service/virtual-augmented-reality/)

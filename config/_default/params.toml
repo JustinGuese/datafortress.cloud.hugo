@@ -23,7 +23,7 @@ demo_form_action = "https://formspree.io/mknvkdpr" # demo form works with [https
 # career form action
 career_form_action = "https://formspree.io/mknvkdpr"
 # google tag manager, see https://developers.google.com/tag-manager/
-google_tag_manager = "G-TQJWDVKV9N" # example: G-XXXXXXXXXX
+google_tag_manager = "GTM-5G9F7KK" # example: G-XXXXXXXXXX
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
 custom_script = ""
 # copyright
