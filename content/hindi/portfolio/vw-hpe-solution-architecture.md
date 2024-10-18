@@ -1,46 +1,44 @@
 ---
-date: "2024-08-14"
+date: '2024-08-14'
 draft: false
-title: "VW/HPE: Solution Architecture data flow of sampling report data"
-logo: "images/client-logo/vw.png"
+logo: images/client-logo/vw.png
+title: 'VW/HPE: Solution Architecture data flow of sampling report data'
+
 ---
+> मौजूदा उद्यम सामग्री नमूनाकरण प्रक्रिया में एक नए सॉफ़्टवेयर का एकीकरण, नए मॉडलों की बाजार पहुँच की गति में सुधार और सामान्य रूप से नमूनाकरण प्रक्रिया पर बिताए गए समय को कम करना।
 
+{{< image title="VW/HPE: नमूना रिपोर्ट डेटा का समाधान आर्किटेक्चर डेटा प्रवाह" w="50%" o="webp q100" p="center" c="img-fluid shadow rounded-1" src="images/client-logo/vw.png" alt="बदलें-पाठ" >}}
 
-> Integration of a new software into the existing enterprise material sampling process, improving the speed to market of new models and reducing the time spent on the sampling process in general.
+## केस स्टडी: HPE और वोक्सवैगन के लिए समाधान आर्किटेक्चर
 
-{{< image title="VW/HPE: Solution Architecture data flow of sampling report data" w="50%" o="webp q100" p="center" c="img-fluid shadow rounded-1" src="images/client-logo/vw.png" alt="alter-text" >}}
+- ग्राहक: Hewlett Packard Enterprise (HPE) और वोक्सवैगन (VW)
+- परियोजना: वोक्सवैगन की सिस्टम आर्किटेक्चर में एक SaaS प्लेटफ़ॉर्म का एकीकरण
 
-## Case Study: Solution Architecture for HPE and Volkswagen
+### उद्देश्य:
 
-- Client: Hewlett Packard Enterprise (HPE) and Volkswagen (VW)
-- Project: Integration of a SaaS Platform into Volkswagen’s System Architecture
+वोक्सवैगन के मौजूदा सिस्टम आर्किटेक्चर में एक SaaS प्लेटफॉर्म को एकीकृत करने के लिए एक मजबूत समाधान आर्किटेक्चर डिजाइन करना, ताकि नमूनाकरण प्रक्रिया परिणामों के डेटा अनुपालन, सुरक्षा और ऑडिट-प्रूफ भंडारण सुनिश्चित हो सके।
 
-### Objective:
+### चुनौतियाँ:
 
-To design a robust solution architecture for integrating a SaaS platform into Volkswagen’s existing system architecture, ensuring data compliance, security, and audit-proof storage of sampling process results.
+1. जटिल तकनीकी स्टैक: कई विविध तकनीकी स्टैक्स को एक साथ जोड़ना एक महत्वपूर्ण चुनौती थी।
+2. अनुपालन और सुरक्षा: आर्किटेक्चर को VW सॉफ़्टवेयर और VDA (Verband der Automobilindustrie) की आवश्यकताओं को पूरा करना सुनिश्चित करना।
+3. स्केलेबिलिटी और दक्षता: बड़ी मात्रा में नमूनाकरण प्रक्रियाओं को कुशलतापूर्वक संभालना।
 
-### Challenges:
+### समाधान:
 
-1. Complex Technology Stacks: Uniting several diverse technology stacks posed a significant challenge.
-2. Compliance and Security: Ensuring the architecture met VW software and VDA (Verband der Automobilindustrie) requirements.
-3. Scalability and Efficiency: Handling a large volume of sampling processes efficiently.
+आर्किटेक्चर के लिए विभिन्न VW सिस्टम से डेटा को SaaS प्लेटफॉर्म में सुरक्षित रूप से लोड करने के लिए एक माइक्रोसर्विस फ्रेमवर्क को लागू करना आवश्यक था। समाधान की प्रमुख विशेषताओं में शामिल हैं:
 
-### Solution:
+1. माइक्रोसर्विस आर्किटेक्चर: मॉड्यूलर एकीकरण को सक्षम बनाया, जिससे VW सिस्टम और SaaS प्लेटफॉर्म के बीच सहज डेटा प्रवाह संभव हुआ।
+2. अनुपालन डेटा हैंडलिंग: यह सुनिश्चित किया गया कि सभी डेटा ट्रांसफर और भंडारण कड़े VW और VDA अनुपालन और सुरक्षा मानकों को पूरा करे।
+3. ऑडिट-प्रूफ स्टोरेज: अंतिम नमूनाकरण प्रक्रिया परिणामों के लिए सुरक्षित भंडारण समाधान लागू किए गए, जो ऑडिट तत्परता और अखंडता की गारंटी देते हैं।
 
-The architecture required the implementation of a microservice framework to securely load data from various VW systems into the SaaS platform. Key features of the solution included:
+### परिणाम:
 
-1. Microservice Architecture: Enabled modular integration, allowing seamless data flow between VW systems and the SaaS platform.
-2. Compliant Data Handling: Ensured all data transfer and storage met stringent VW and VDA compliance and security standards.
-3. Audit-Proof Storage: Implemented secure storage solutions for final sampling process results, guaranteeing audit readiness and integrity.
+लागू की गई प्रणाली अब दुनिया भर के आपूर्तिकर्ताओं से 30,000 नमूनाकरण प्रक्रियाओं को संभालती है। प्रमुख प्रभावों में शामिल हैं:
 
-### Results:
+1. बढ़ी हुई दक्षता: नमूनाकरण प्रक्रिया के लिए आवश्यक समय में 64% की कमी आई।
+2. त्रुटि में कमी: मैनुअल त्रुटियों को काफी कम कर दिया गया, जिससे समग्र प्रक्रिया सटीकता और विश्वसनीयता में वृद्धि हुई।
 
-The implemented system now handles 30,000 sampling processes from suppliers worldwide. Key impacts include:
+### निष्कर्ष:
 
-1. Increased Efficiency: The time required for the sampling process was reduced by 64%.
-2. Error Reduction: Manual errors were significantly minimized, enhancing overall process accuracy and reliability.
-
-### Conclusion:
-
-This project successfully demonstrated our ability to design and implement complex solution architectures that meet rigorous compliance and security standards while significantly improving operational efficiency. Our collaboration with HPE and Volkswagen highlights our expertise in integrating cutting-edge technologies to deliver impactful business outcomes.
-Discover how to seamlessly integrate complex data flows into your enterprise landscape—schedule your free consultation today!
+इस परियोजना ने सफलतापूर्वक जटिल समाधान आर्किटेक्चर डिजाइन और कार्यान्वयन करने की हमारी क्षमता का प्रदर्शन किया जो कड़े अनुपालन और सुरक्षा मानकों को पूरा करते हैं और साथ ही परिचालन दक्षता में काफी सुधार करते हैं। HPE और वोक्सवैगन के साथ हमारे सहयोग से उन्नत तकनीकों को व्यवसाय के लिए महत्वपूर्ण परिणाम देने के लिए एकीकृत करने की हमारी विशेषज्ञता को उजागर किया गया है। आज ही अपनी निःशुल्क परामर्श के लिए शेड्यूल करें, यह जानने के लिए कि कैसे जटिल डेटा प्रवाह को अपने उद्यम परिदृश्य में आसानी से एकीकृत किया जा सकता है!

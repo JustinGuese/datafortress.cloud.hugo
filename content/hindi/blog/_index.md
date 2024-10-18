@@ -1,7 +1,7 @@
 ---
-title: "Latest News"
-subtitle: "Read all latest blog posts"
-# meta description
-description: "Read all latest blog posts"
+description: सभी नवीनतम ब्लॉग पोस्ट पढ़ें
 draft: false
+subtitle: सभी नवीनतम ब्लॉग पोस्ट पढ़ें
+title: ताज़ा खबरें
+
 ---

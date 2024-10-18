@@ -1,10 +1,10 @@
 ---
-title: "All Products"
-subtitle: "The Operation System for your Business"
-# meta description
-description: "The Operation System for your Business"
+description: आपके व्यवसाय के लिए ऑपरेटिंग सिस्टम
 draft: false
-# content section
-section: "products"
+section: उत्पाद
+subtitle: आपके व्यवसाय के लिए परिचालन प्रणाली
+title: सभी उत्पाद
+
 ---
+
 

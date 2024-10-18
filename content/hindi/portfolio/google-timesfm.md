@@ -1,60 +1,59 @@
 ---
-date: "2024-08-14"
+date: '2024-08-14'
 draft: false
-title: "Google TimesFM – Opensource contribution"
-logo: "images/client-logo/googleresearch.jpg"
+logo: images/client-logo/googleresearch.jpg
+title: गुगल टाइम्सएफएम – ओपनसोर्स योगदान
+
 ---
+> गूगल रिसर्च के "टाइम्सएफएम" प्रोजेक्ट के लिए गिथब पर ओपन सोर्स योगदान।
 
 
-> Open Source contributions on Github to the Google Research "TimesFM" project.
-
-
-{{< image title="Google TimesFM – Opensource contribution" w="50%" o="webp q100" p="center" c="img-fluid shadow rounded-1" src="images/client-logo/googleresearch.jpg" alt="alter-text" >}}
+{{< image title="गूगल टाइम्सएफएम – ओपनसोर्स योगदान" w="50%" o="webp q100" p="center" c="img-fluid shadow rounded-1" src="images/client-logo/googleresearch.jpg" alt="विकल्प-पाठ" >}}
 
 https://github.com/google-research/timesfm
 
 https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/
 
-## Project Summary: Enhancing the Google Research TimesFM Project with CI/CD and Python Poetry
+## प्रोजेक्ट सारांश: CI/CD और पायथन पॉइज़ी के साथ गूगल रिसर्च टाइम्सएफएम प्रोजेक्ट को बेहतर बनाना
 
-Open Source Contribution: Continuous Integration/Continuous Deployment (CI/CD) and Dependency Management for TimesFM
+ओपन सोर्स योगदान: टाइम्सएफएम के लिए निरंतर एकीकरण/निरंतर परिनियोजन (CI/CD) और निर्भरता प्रबंधन
 
-### Project Overview:
+### प्रोजेक्ट अवलोकन:
 
-TimesFM is an advanced forecasting model developed by Google Research, pre-trained on a vast corpus of 100 billion real-world time-points. It delivers impressive zero-shot performance across various public benchmarks from multiple domains and granularities. This model stands out in time-series forecasting, which is critical in industries such as retail, finance, manufacturing, healthcare, and natural sciences. TimesFM is particularly impactful in retail, where accurate demand forecasting can significantly reduce inventory costs and boost revenue.
+टाइम्सएफएम गूगल रिसर्च द्वारा विकसित एक उन्नत पूर्वानुमान मॉडल है, जिसे 100 बिलियन वास्तविक-विश्व समय-बिंदुओं के विशाल कॉर्पस पर पूर्व-प्रशिक्षित किया गया है। यह विभिन्न डोमेन और सूक्ष्म स्तरों से कई सार्वजनिक बेंचमार्क में प्रभावशाली शून्य-शॉट प्रदर्शन प्रदान करता है। यह मॉडल समय-श्रृंखला पूर्वानुमान में विशिष्ट है, जो खुदरा, वित्त, विनिर्माण, स्वास्थ्य सेवा और प्राकृतिक विज्ञान जैसे उद्योगों में महत्वपूर्ण है। खुदरा में, टाइम्सएफएम विशेष रूप से प्रभावी है, जहाँ सटीक मांग पूर्वानुमान से इन्वेंट्री लागत में काफी कमी आ सकती है और राजस्व में वृद्धि हो सकती है।
 
-Despite its robust performance, TimesFM faced challenges common to many deep learning (DL) models: the need for extensive training and validation cycles before deployment. To address this, TimesFM was designed as a foundation model that offers strong out-of-the-box forecasting capabilities on new time-series data without additional training. This allows users to quickly implement and refine forecasts for specific tasks, such as retail demand planning.
+इसके मजबूत प्रदर्शन के बावजूद, टाइम्सएफएम को कई गहन शिक्षण (डीएल) मॉडलों की सामान्य चुनौतियों का सामना करना पड़ा: तैनाती से पहले व्यापक प्रशिक्षण और सत्यापन चक्रों की आवश्यकता। इसे संबोधित करने के लिए, टाइम्सएफएम को एक फाउंडेशन मॉडल के रूप में डिज़ाइन किया गया था जो अतिरिक्त प्रशिक्षण के बिना नई समय-श्रृंखला डेटा पर मजबूत आउट-ऑफ-द-बॉक्स पूर्वानुमान क्षमता प्रदान करता है। इससे उपयोगकर्ता विशिष्ट कार्यों, जैसे खुदरा मांग योजना के लिए पूर्वानुमानों को जल्दी से लागू और परिष्कृत कर सकते हैं।
 
-### My Contributions:
+### मेरे योगदान:
 
-To further enhance the usability and accessibility of TimesFM, I contributed to the project by implementing a Continuous Integration/Continuous Deployment (CI/CD) pipeline using GitHub Actions and integrating Python Poetry for dependency management and packaging. These contributions aimed to simplify the installation process and streamline development workflows.
+टाइम्सएफएम की उपयोगिता और पहुँच को और बढ़ाने के लिए, मैंने गिथहब एक्शन्स का उपयोग करके एक निरंतर एकीकरण/निरंतर परिनियोजन (CI/CD) पाइपलाइन लागू करके और निर्भरता प्रबंधन और पैकेजिंग के लिए पायथन पॉइज़ी को एकीकृत करके परियोजना में योगदान दिया। इन योगदानों का उद्देश्य स्थापना प्रक्रिया को सरल बनाना और विकास कार्यप्रवाहों को सुव्यवस्थित करना था।
 
-### Key Enhancements:
+### प्रमुख संवर्द्धन:
 
-#### CI/CD Pipeline with GitHub Actions:
+#### गिथहब एक्शन्स के साथ CI/CD पाइपलाइन:
 
-- **Automation**: Automated the testing, building, and deployment processes, ensuring that any changes to the codebase are verified through a consistent and reliable workflow.
-- **Quality Assurance**: Enhanced code quality by running automated tests on each pull request, catching issues early in the development cycle.
-- **Deployment**: Streamlined the deployment process, allowing for faster and more reliable updates to the TimesFM model.
+- **स्वचालन**: कोडबेस में किसी भी परिवर्तन को सुसंगत और विश्वसनीय कार्यप्रवाह के माध्यम से सत्यापित सुनिश्चित करने, परीक्षण, निर्माण और परिनियोजन प्रक्रियाओं को स्वचालित किया गया।
+- **गुणवत्ता आश्वासन**: प्रत्येक पुल अनुरोध पर स्वचालित परीक्षण चलाकर कोड गुणवत्ता में सुधार किया गया जिससे विकास चक्र में जल्दी समस्याएँ पकड़ी जा सकें।
+- **परिनियोजन**: परिनियोजन प्रक्रिया को सुव्यवस्थित किया गया जिससे टाइम्सएफएम मॉडल के तेज और अधिक विश्वसनीय अपडेट किए जा सकें।
 
-#### Python Poetry Integration:
+#### पायथन पॉइज़ी एकीकरण:
 
-- **Simplified Installation**: Enabled users to install TimesFM more easily with a single command (`pip install timesfm`), reducing the friction for new users and developers.
-- **Dependency Management**: Improved dependency management by using Poetry, which handles package dependencies more efficiently and ensures that the correct versions are used.
-- **Reproducibility**: Enhanced the reproducibility of the development environment, making it easier for contributors to set up and maintain their development setups.
+- **स्थापना सरलीकृत**: उपयोगकर्ताओं को एक ही कमांड (`pip install timesfm`) के साथ टाइम्सएफएम को आसानी से स्थापित करने में सक्षम बनाया गया, जिससे नए उपयोगकर्ताओं और डेवलपर्स के लिए घर्षण कम हुआ।
+- **निर्भरता प्रबंधन**: पॉइज़ी का उपयोग करके निर्भरता प्रबंधन में सुधार किया गया, जो पैकेज निर्भरताओं को अधिक कुशलता से संभालता है और यह सुनिश्चित करता है कि सही संस्करणों का उपयोग किया जाए।
+- **पुनरुत्पादनक्षमता**: विकास वातावरण की पुनरुत्पादनक्षमता में सुधार किया गया जिससे योगदानकर्ताओं के लिए अपने विकास सेटअप को स्थापित और बनाए रखना आसान हो गया।
 
-### Impact of Contributions:
+### योगदान का प्रभाव:
 
-- **Ease of Use**: Lowered the barrier to entry for new users and contributors, making it simpler to get started with TimesFM.
-- **Improved Productivity**: By automating routine tasks and ensuring a consistent development environment, developers can focus more on innovation and less on setup and maintenance.
-- **Enhanced Collaboration**: The automated CI/CD pipeline fosters a more collaborative and efficient development process, where code changes are continuously integrated and tested.
+- **उपयोग में आसानी**: नए उपयोगकर्ताओं और योगदानकर्ताओं के लिए प्रवेश बाधा को कम किया गया, जिससे टाइम्सएफएम के साथ आरंभ करना आसान हो गया।
+- **उत्पादकता में सुधार**: नियमित कार्यों को स्वचालित करके और एक सुसंगत विकास वातावरण सुनिश्चित करके डेवलपर्स नवाचार पर अधिक ध्यान केंद्रित कर सकते हैं और सेटअप और रखरखाव पर कम ध्यान दे सकते हैं।
+- **सहयोग में वृद्धि**: स्वचालित CI/CD पाइपलाइन एक अधिक सहयोगात्मक और कुशल विकास प्रक्रिया को बढ़ावा देती है, जहाँ कोड परिवर्तन लगातार एकीकृत और परीक्षण किए जाते हैं।
 
-### About TimesFM:
+### टाइम्सएफएम के बारे में:
 
-TimesFM represents a significant advancement in time-series forecasting. It is much smaller than the latest large language models (200M parameters) yet achieves near state-of-the-art performance on a variety of unseen datasets. This makes it a powerful tool for industries that rely on accurate time-series predictions.
+टाइम्सएफएम समय-श्रृंखला पूर्वानुमान में एक महत्वपूर्ण प्रगति का प्रतिनिधित्व करता है। यह नवीनतम बड़े भाषा मॉडलों (200M पैरामीटर) की तुलना में बहुत छोटा है फिर भी विभिन्न अनदेखे डेटासेट पर लगभग अत्याधुनिक प्रदर्शन प्राप्त करता है। यह उन उद्योगों के लिए एक शक्तिशाली उपकरण बनाता है जो सटीक समय-श्रृंखला भविष्यवाणियों पर निर्भर करते हैं।
 
-For more information and to access the model, please visit the HuggingFace and GitHub repositories.
+मॉडल के बारे में अधिक जानकारी और पहुँच के लिए, कृपया हगिंगफ़ेस और गिथहब रिपॉजिटरीज़ पर जाएँ।
 
-### Conclusion:
+### निष्कर्ष:
 
-My contributions to the TimesFM project have significantly enhanced its usability and development efficiency. By implementing a CI/CD pipeline and integrating Python Poetry, I have helped streamline workflows and make the model more accessible to users and developers. These improvements support the ongoing success of TimesFM in providing robust, zero-shot forecasting capabilities across various domains.
+टाइम्सएफएम परियोजना में मेरे योगदानों ने इसकी उपयोगिता और विकास दक्षता में काफी वृद्धि की है। CI/CD पाइपलाइन और पायथन पॉइज़ी को एकीकृत करके, मैंने कार्यप्रवाहों को सुव्यवस्थित करने और मॉडल को उपयोगकर्ताओं और डेवलपर्स के लिए अधिक सुलभ बनाने में मदद की है। ये सुधार विभिन्न डोमेन में मजबूत, शून्य-शॉट पूर्वानुमान क्षमताएँ प्रदान करने में टाइम्सएफएम की निरंतर सफलता का समर्थन करते हैं।

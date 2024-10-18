@@ -1,76 +1,75 @@
 ---
-date: "2024-08-14"
+date: '2024-08-14'
 draft: false
-title: "Atruvia / Sparkasse / Volksbank – Data Warehouse"
-logo: "images/client-logo/sparkasse.png"
+logo: images/client-logo/sparkasse.png
+title: एट्रूविया / स्पार्कसे / वोल्क्सबैंक – डेटा वेयरहाउस
+
 ---
+> ट्रिनो पर बने डेटा वेयरहाउस के साथ हडूप को बदलना, लाखों जर्मन ग्राहकों के वित्तीय डेटा को संभालने के लिए ऑटोस्केलिंग माइक्रोसर्विस आर्किटेक्चर के साथ बनाया गया है।
 
+{{< image title="एट्रुविया / स्पार्कसे / वोल्क्सबैंक – डेटा वेयरहाउस" w="50%" o="webp q100" p="center" c="img-fluid shadow rounded-1" src="images/client-logo/sparkasse.png" alt="बदला हुआ टेक्स्ट" >}}
 
-> Replacing Hadoop with a Data Warehouse built on top of Trino, built with an autoscaling microservice architecture to handle finance data of millions of German customers.
+## केस स्टडी: ओपन सोर्स सॉल्यूशन्स के साथ एट्रुविया के लिए डेटा मैनेजमेंट में क्रांति
 
-{{< image title="Atruvia / Sparkasse / Volksbank – Data Warehouse" w="50%" o="webp q100" p="center" c="img-fluid shadow rounded-1" src="images/client-logo/sparkasse.png" alt="alter-text" >}}
+## ग्राहक: एट्रुविया (वोल्क्सबैंक और स्पार्कसे के लिए आईटी प्रोवाइडर)
 
-## Case Study: Revolutionizing Data Management for Atruvia with Open Source Solutions
+### प्रोजेक्ट अवलोकन:
 
-## Client: Atruvia (IT Provider for Volksbank and Sparkasse)
+वोल्क्सबैंक और स्पार्कसे के लिए आईटी बैकबोन, एट्रुविया, अपनी हडूप-आधारित डेटा मैनेजमेंट इन्फ्रास्ट्रक्चर के साथ बढ़ती लागत और सीमाओं का सामना कर रहा था। अधिक लागत-प्रभावी और उन्नत समाधान की आवश्यकता को समझते हुए, एट्रुविया ने अत्याधुनिक तकनीकों का उपयोग करते हुए एक आधुनिक डेटा वेयरहाउस बनाने की मांग की। लक्ष्य केवल ओपन-सोर्स टूल्स का उपयोग करके और किसी भी पब्लिक क्लाउड घटकों से बचते हुए, एक बैफिन-अनुपालक माइक्रोसर्विस आर्किटेक्चर बनाना था जो एनालिटिक्स टीमों को आसानी से विशाल डेटासेट को संभालने में सक्षम बनाता है।
 
-### Project Overview:
+### उद्देश्य:
 
-Atruvia, the IT backbone for Volksbank and Sparkasse, was facing escalating costs and limitations with their Hadoop-based data management infrastructure. Recognizing the need for a more cost-effective and advanced solution, Atruvia sought to build a modern data warehouse leveraging cutting-edge technologies. The goal was to create a BaFin-compliant microservice architecture that empowers analytics teams to handle massive datasets with ease, using only open-source tools and avoiding any public cloud components.
+महंगी हडूप इन्फ्रास्ट्रक्चर को ट्रिनो और एस3 ऑटोस्केलिंग क्लस्टर पर निर्मित एक स्केलेबल, कुशल और लागत-प्रभावी डेटा वेयरहाउस समाधान से बदलना, बैफिन नियमों के अनुपालन सुनिश्चित करना और अंतिम उपयोगकर्ताओं के लिए डेटा प्रदर्शन को अनुकूलित करना।
 
-### Objective:
+### समाधान डिज़ाइन प्रक्रिया:
 
-To replace the expensive Hadoop infrastructure with a scalable, efficient, and cost-effective data warehouse solution built on Trino and S3 autoscaling clusters, ensuring compliance with BaFin regulations and optimizing data performance for end-users.
+#### आवश्यकता विश्लेषण:
 
-### Solution Design Process:
+एट्रुविया की आईटी और एनालिटिक्स टीमों के साथ गहन चर्चाएँ करने के लिए उनकी विशिष्ट आवश्यकताओं, चुनौतियों और नियामक आवश्यकताओं को समझना।
+लागत में कमी, स्केलेबिलिटी, डेटा प्रदर्शन और एनालिटिक्स टीमों के लिए उपयोग में आसानी जैसे महत्वपूर्ण पहलुओं की पहचान करना।
 
-#### Requirement Analysis:
+#### प्रौद्योगिकी मूल्यांकन:
 
-Conducted in-depth discussions with Atruvia’s IT and analytics teams to understand their specific needs, challenges, and regulatory requirements.
-Identified critical aspects such as cost reduction, scalability, data performance, and ease of use for analytics teams.
+- हडूप को बदलने के लिए विभिन्न ओपन-सोर्स प्रौद्योगिकियों का मूल्यांकन करना, ट्रिनो पर ध्यान केंद्रित करते हुए इसकी शक्तिशाली एसक्यूएल क्वेरी क्षमताओं और कुशल डेटा भंडारण के लिए एस3 ऑटोस्केलिंग क्लस्टर पर।
+- सुनिश्चित करना कि सभी चयनित प्रौद्योगिकियां बैफिन नियमों का अनुपालन करती हैं और एट्रुविया के मौजूदा ढाँचे में निर्बाध रूप से एकीकृत हो सकती हैं।
 
-#### Technology Evaluation:
+#### आर्किटेक्चर डिज़ाइन:
 
-- Evaluated various open-source technologies to replace Hadoop, focusing on Trino for its powerful SQL query capabilities and S3 autoscaling clusters for efficient data storage.
-- Ensured all selected technologies were compliant with BaFin regulations and could be seamlessly integrated into Atruvia’s existing infrastructure.
+- संपूर्ण डेटा वेयरहाउस और एनालिटिक्स वातावरण को होस्ट करने के लिए ओपनशिफ्ट का उपयोग करके एक माइक्रोसर्विस आर्किटेक्चर डिजाइन करें।
+- विशाल डेटासेट के लिए स्केलेबिलिटी सुनिश्चित करते हुए पारंपरिक डेटाबेस को बदलकर, एस3 ऑटोस्केलिंग क्लस्टर को प्राथमिक भंडारण समाधान के रूप में लागू करना।
+- डेटा सुरक्षा और नियामक अनुपालन को प्रबंधित करने के लिए एक बैफिन-अनुपालक ढांचा विकसित करना।
 
-#### Architecture Design:
+#### उपयोगकर्ता-अनुकूल उपकरण और वातावरण:
 
-- Designed a microservice architecture using OpenShift to host the entire data warehouse and analytics environment.
-- Implemented S3 autoscaling clusters as the primary storage solution, replacing traditional databases and ensuring scalability for huge datasets.
-- Developed a BaFin-compliant framework to manage data security and regulatory compliance.
+- एनालिटिक्स टीमों को बड़ी मात्रा में डेटासेट अपलोड करने, विश्लेषण करने और विज़ुअलाइज़ करने में सक्षम बनाने के लिए पूर्व-संरचित जुपिटर नोटबुक वातावरण बनाना, जिसमें व्यापक तकनीकी ज्ञान की आवश्यकता नहीं होती।
+- वास्तविक समय की अंतर्दृष्टि प्रदान करने और डेटा विश्लेषण प्रक्रियाओं को सुव्यवस्थित करने के लिए इंटरैक्टिव डैशबोर्ड को एकीकृत करना।
 
-#### User-Friendly Tools and Environments:
+### कार्यान्वयन:
 
-- Created pre-configured Jupyter Notebook environments to enable analytics teams to upload, analyze, and visualize large datasets without needing extensive technical knowledge.
-- Integrated interactive dashboards to provide real-time insights and streamline data analysis processes.
+#### अवसंरचना सेटअप:
 
-### Implementation:
+- उच्च उपलब्धता और स्केलेबिलिटी सुनिश्चित करते हुए, ओपनशिफ्ट वातावरण के भीतर ट्रिनो और एस3 ऑटोस्केलिंग क्लस्टर को तैनात करना।
+- डेटा इनगेशन, प्रोसेसिंग और क्वेरी को कुशलतापूर्वक संभालने के लिए माइक्रोसर्विस आर्किटेक्चर को कॉन्फ़िगर करना।
 
-#### Infrastructure Setup:
+#### डेटा माइग्रेशन:
 
-- Deployed Trino and S3 autoscaling clusters within the OpenShift environment, ensuring high availability and scalability.
-- Configured the microservice architecture to handle data ingestion, processing, and querying efficiently.
+- हडूप इन्फ्रास्ट्रक्चर से नए ट्रिनो और एस3-आधारित डेटा वेयरहाउस में डेटा का निर्बाध रूप से माइग्रेशन किया गया।
+- पूरे माइग्रेशन प्रक्रिया में डेटा की अखंडता और अनुपालन सुनिश्चित करना।
 
-#### Data Migration:
+#### उपयोगकर्ता प्रशिक्षण और समर्थन:
 
-- Executed a seamless migration of data from the Hadoop infrastructure to the new Trino and S3-based data warehouse.
-- Ensured data integrity and compliance throughout the migration process.
+- एनालिटिक्स टीमों के लिए नए उपकरणों और कार्यप्रवाह से परिचित होने के लिए व्यापक प्रशिक्षण सत्र प्रदान करना।
+- नए वातावरण में संक्रमण करने और इसके लाभों को अधिकतम करने में उपयोगकर्ताओं की सहायता करने के लिए एक समर्थन ढांचा स्थापित करना।
 
-#### User Training and Support:
+### परिणाम:
 
-- Provided comprehensive training sessions for the analytics teams to familiarize them with the new tools and workflows.
-- Established a support framework to assist users in transitioning to the new environment and maximizing its benefits.
+- लागत में कमी: महंगी हडूप इन्फ्रास्ट्रक्चर को अधिक कुशल ओपन-सोर्स समाधान से बदलकर डेटा प्रबंधन लागत में सफलतापूर्वक कमी।
+- स्केलेबिलिटी और प्रदर्शन: डेटा स्केलेबिलिटी और प्रदर्शन में महत्वपूर्ण सुधार प्राप्त करना, विशाल डेटासेट को निर्बाध रूप से संभालने में सक्षम बनाना।
+- नियामक अनुपालन: एक सुरक्षित और विश्वसनीय डेटा प्रबंधन वातावरण प्रदान करते हुए, बैफिन नियमों का पूर्ण अनुपालन सुनिश्चित करना।
+- उपयोगकर्ता सशक्तिकरण: आसान-से-उपयोग उपकरणों के साथ एनालिटिक्स टीमों को सशक्त बनाना, पायस्पर और जटिल कॉन्फ़िगरेशन की आवश्यकता को समाप्त करना और उन्हें डेटा से अंतर्दृष्टि प्राप्त करने पर ध्यान केंद्रित करने में सक्षम बनाना।
 
-### Results:
+### निष्कर्ष:
 
-- Cost Reduction: Successfully reduced data management costs by replacing the expensive Hadoop infrastructure with a more efficient open-source solution.
-- Scalability and Performance: Achieved significant improvements in data scalability and performance, enabling seamless handling of massive datasets.
-- Regulatory Compliance: Ensured full compliance with BaFin regulations, providing a secure and reliable data management environment.
-- User Empowerment: Empowered analytics teams with easy-to-use tools, eliminating the need for PySpark and complex configurations, and enabling them to focus on deriving insights from data.
+यह परियोजना एट्रुविया के लिए एक परिवर्तनकारी डेटा प्रबंधन समाधान में परिणत हुई, जो ओपन-सोर्स तकनीकों का उपयोग स्केलेबल, लागत-प्रभावी और बैफिन-अनुपालक डेटा वेयरहाउस देने के लिए करती है। हडूप को ट्रिनो और एस3 ऑटोस्केलिंग क्लस्टर से बदलकर, और उपयोगकर्ता-अनुकूल एनालिटिक्स उपकरण प्रदान करके, एट्रुविया ने अपनी डेटा क्षमताओं में काफी वृद्धि की, जिससे इष्टतम प्रदर्शन सुनिश्चित हुआ और अपनी एनालिटिक्स टीमों को सशक्त बनाया।
 
-### Conclusion:
-
-The project resulted in a transformative data management solution for Atruvia, leveraging open-source technologies to deliver a scalable, cost-effective, and BaFin-compliant data warehouse. By replacing Hadoop with Trino and S3 autoscaling clusters, and providing user-friendly analytics tools, Atruvia significantly enhanced its data capabilities, ensuring optimal performance and empowering its analytics teams.
-
-Are You Looking to Modernize Your Data Infrastructure? Contact us today to discover how we can help you build a scalable, cost-effective, and compliant data management solution tailored to your needs!
+क्या आप अपनी डेटा इन्फ्रास्ट्रक्चर को आधुनिक बनाना चाहते हैं? आज ही हमसे संपर्क करें और जानें कि हम आपकी आवश्यकताओं के अनुरूप एक स्केलेबल, लागत-प्रभावी और अनुपालक डेटा प्रबंधन समाधान कैसे बना सकते हैं!

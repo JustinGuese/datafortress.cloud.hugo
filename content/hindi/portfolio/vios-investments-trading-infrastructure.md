@@ -1,81 +1,79 @@
 ---
-date: "2024-08-14"
+date: '2024-08-14'
 draft: false
-title: "Vios Investments – Trading Infrastructure"
-logo: "images/client-logo/vios.png"
+logo: images/client-logo/vios.png
+title: वीओएस निवेश – ट्रेडिंग अवसंरचना
+
 ---
-
-
-> Creation and deployment of an LSTM model which predicts the optimal Sharpe ratio of a given stock universe
-
+> एक दिए गए स्टॉक यूनिवर्स के इष्टतम शार्प अनुपात की भविष्यवाणी करने वाले एक एलएसटीएम मॉडल का निर्माण और परिनियोजन
 
 {{< image title="Vios Investments – Trading Infrastructure" w="50%" o="webp q100" p="center" c="img-fluid shadow rounded-1" src="images/client-logo/vios.png" alt="alter-text" >}}
 
-## Use Case: Predicting Optimal Sharpe Maximized Stock Selection for Vios Investing
+## उपयोग का मामला: वायोस निवेश के लिए इष्टतम शार्प अधिकतम स्टॉक चयन की भविष्यवाणी करना
 
-**Client**: Vios Investing (Taiwan)
+**ग्राहक**: वायोस निवेश (ताइवान)
 
-### Overview:
+### अवलोकन:
 
-Vios Investing, a leading investment firm in Taiwan, sought to enhance their stock selection strategy by predicting the optimal Sharpe maximized selection of stocks listed on the Taiwan Stock Exchange (TWSE). By leveraging advanced statistical techniques and deep learning models, the goal was to improve their investment returns and achieve superior risk-adjusted performance.
+ताइवान में एक प्रमुख निवेश फर्म, वायोस निवेश, ताइवान स्टॉक एक्सचेंज (TWSE) पर सूचीबद्ध स्टॉक के इष्टतम शार्प अधिकतम चयन की भविष्यवाणी करके अपनी स्टॉक चयन रणनीति को बढ़ाने की मांग करता है। उन्नत सांख्यिकीय तकनीकों और गहन शिक्षण मॉडल का उपयोग करके, लक्ष्य अपने निवेश रिटर्न में सुधार करना और बेहतर जोखिम-समायोजित प्रदर्शन प्राप्त करना था।
 
-### Objective:
+### उद्देश्य:
 
-To develop a predictive model using LSTM (Long Short-Term Memory) networks to forecast future stock weights that maximize the Sharpe ratio, thereby enhancing investment decisions. The solution needed to be robust, scalable, and deployable within Vios Investing’s existing infrastructure.
+एलएसटीएम (लॉन्ग शॉर्ट-टर्म मेमोरी) नेटवर्क का उपयोग करके एक भविष्यसूचक मॉडल विकसित करना ताकि भविष्य के स्टॉक भार की भविष्यवाणी की जा सके जो शार्प अनुपात को अधिकतम करता है, जिससे निवेश निर्णयों में वृद्धि होगी। समाधान को वायोस निवेश के मौजूदा बुनियादी ढांचे के भीतर मजबूत, स्केलेबल और परिनियोज्य होने की आवश्यकता थी।
 
-### Solution Design Process:
+### समाधान डिजाइन प्रक्रिया:
 
-#### Requirement Analysis:
+#### आवश्यकता विश्लेषण:
 
-- Collaborated with Vios Investing’s financial analysts and IT team to understand their specific requirements and objectives.
-- Identified key performance metrics, including the Sharpe ratio, and the constraints of the TWSE market.
+- वायोस निवेश के वित्तीय विश्लेषकों और आईटी टीम के साथ उनकी विशिष्ट आवश्यकताओं और उद्देश्यों को समझने के लिए सहयोग किया गया।
+- शार्प अनुपात सहित प्रमुख प्रदर्शन मेट्रिक्स और TWSE बाजार की बाधाओं की पहचान की गई।
 
-#### Data Preparation:
+#### डेटा तैयारी:
 
-- Collected historical stock data from the TWSE, focusing on price movements, trading volumes, and other relevant financial indicators.
-- Applied statistical enhancements and denoising techniques to clean and preprocess the data, ensuring high-quality inputs for the model.
+- मूल्य आंदोलनों, व्यापारिक मात्रा और अन्य प्रासंगिक वित्तीय संकेतकों पर ध्यान केंद्रित करते हुए, TWSE से ऐतिहासिक स्टॉक डेटा एकत्र किया गया।
+- मॉडल के लिए उच्च-गुणवत्ता वाले इनपुट सुनिश्चित करते हुए, डेटा को साफ और पूर्व-संसाधित करने के लिए सांख्यिकीय सुधार और शोर-कम करने की तकनीकों को लागू किया गया।
 
-#### Model Development:
+#### मॉडल विकास:
 
-- Developed an LSTM model to predict future stock weights aimed at maximizing the Sharpe ratio.
-- Implemented the model using Python and deep learning libraries, ensuring robustness and accuracy.
+- शार्प अनुपात को अधिकतम करने के उद्देश्य से भविष्य के स्टॉक भार की भविष्यवाणी करने के लिए एक एलएसटीएम मॉडल विकसित किया गया।
+- मजबूती और सटीकता सुनिश्चित करते हुए, पायथन और गहन शिक्षण पुस्तकालयों का उपयोग करके मॉडल को लागू किया गया।
 
-#### Backtesting and Validation:
+#### बैकटेस्टिंग और सत्यापन:
 
-- Conducted extensive backtesting using historical data to validate the model’s performance.
-- Evaluated the model’s ability to achieve superior risk-adjusted returns, with a particular focus on achieving a high alpha over the TWSE index.
+- मॉडल के प्रदर्शन को मान्य करने के लिए ऐतिहासिक डेटा का उपयोग करके व्यापक बैकटेस्टिंग की गई।
+- TWSE सूचकांक पर उच्च अल्फा प्राप्त करने पर विशेष ध्यान देने के साथ, बेहतर जोखिम-समायोजित रिटर्न प्राप्त करने की मॉडल की क्षमता का मूल्यांकन किया गया।
 
-### Deployment:
+### परिनियोजन:
 
-#### Infrastructure Setup:
+#### बुनियादी संरचना सेटअप:
 
-- Set up a Kubernetes cluster with GPU support to provide the necessary computational power for the LSTM model.
-- Deployed the Docker image containing the predictive model to the Kubernetes cluster, ensuring seamless integration with Vios Investing’s existing infrastructure.
+- एलएसटीएम मॉडल के लिए आवश्यक कम्प्यूटेशनल शक्ति प्रदान करने के लिए GPU समर्थन के साथ एक कुबरनेट्स क्लस्टर सेट अप किया गया।
+- वायोस निवेश के मौजूदा बुनियादी ढांचे के साथ निर्बाध एकीकरण सुनिश्चित करते हुए, भविष्यसूचक मॉडल वाले डोकर इमेज को कुबरनेट्स क्लस्टर में तैनात किया गया।
 
-#### Model Training and Tuning:
+#### मॉडल प्रशिक्षण और ट्यूनिंग:
 
-- Trained the LSTM model on preprocessed historical data, fine-tuning hyperparameters to optimize performance.
-- Incorporated feedback from initial test runs to refine the model and improve prediction accuracy.
+- प्रदर्शन को अनुकूलित करने के लिए हाइपरपैरामीटर को ठीक करते हुए, पूर्व-संसाधित ऐतिहासिक डेटा पर एलएसटीएम मॉडल को प्रशिक्षित किया गया।
+- मॉडल को परिष्कृत करने और भविष्यवाणी की सटीकता में सुधार करने के लिए प्रारंभिक परीक्षण रनों से प्राप्त प्रतिक्रिया को शामिल किया गया।
 
-#### Backtesting Results:
+#### बैकटेस्टिंग परिणाम:
 
-- Ran extensive backtests using demo data to simulate real-world trading scenarios.
-- Achieved an alpha of 22 points per year over the TWSE index, indicating a promising enhancement in investment performance.
+- वास्तविक दुनिया के ट्रेडिंग परिदृश्यों को अनुकरण करने के लिए डेमो डेटा का उपयोग करके व्यापक बैकटेस्ट चलाए गए।
+- TWSE सूचकांक पर प्रति वर्ष 22 अंक का अल्फा प्राप्त किया गया, जो निवेश प्रदर्शन में उल्लेखनीय वृद्धि का संकेत देता है।
 
-#### Ongoing Testing:
+#### जारी परीक्षण:
 
-- Provided Vios Investing with the deployed model for further testing and validation on live data.
-- Established a feedback loop to continuously monitor model performance and make necessary adjustments.
+- लाइव डेटा पर आगे परीक्षण और सत्यापन के लिए वायोस निवेश को तैनात मॉडल प्रदान किया गया।
+- मॉडल के प्रदर्शन की निरंतर निगरानी और आवश्यक समायोजन करने के लिए एक प्रतिक्रिया लूप स्थापित किया गया।
 
-### Results and Impact:
+### परिणाम और प्रभाव:
 
-- **Alpha Generation**: The backtesting results demonstrated an impressive alpha of 22 points per year over the TWSE index, highlighting the model’s potential to significantly enhance investment returns.
-- **Sharpe Ratio Optimization**: Successfully developed a predictive model that optimizes stock weights to maximize the Sharpe ratio, providing superior risk-adjusted returns.
-- **Scalable Deployment**: Deployed the model using Docker and Kubernetes, ensuring scalability, reliability, and efficient use of computational resources.
-- **Real-Time Predictions**: Enabled Vios Investing to leverage real-time data for ongoing predictions, enhancing their trading strategies and decision-making process.
+- **अल्फा उत्पादन**: बैकटेस्टिंग परिणामों ने TWSE सूचकांक पर प्रति वर्ष 22 अंक का प्रभावशाली अल्फा प्रदर्शित किया, जिससे मॉडल की निवेश रिटर्न को महत्वपूर्ण रूप से बढ़ाने की क्षमता का पता चलता है।
+- **शार्प अनुपात अनुकूलन**: शार्प अनुपात को अधिकतम करने के लिए स्टॉक भार को अनुकूलित करने वाला एक भविष्यसूचक मॉडल सफलतापूर्वक विकसित किया गया, जिससे बेहतर जोखिम-समायोजित रिटर्न मिलते हैं।
+- **स्केलेबल परिनियोजन**: डोकर और कुबरनेट्स का उपयोग करके मॉडल को तैनात किया गया, जिससे स्केलेबिलिटी, विश्वसनीयता और कम्प्यूटेशनल संसाधनों का कुशल उपयोग सुनिश्चित होता है।
+- **वास्तविक समय की भविष्यवाणियाँ**: वायोस निवेश को चल रहे पूर्वानुमानों के लिए वास्तविक समय के डेटा का लाभ उठाने में सक्षम बनाया गया, जिससे उनकी ट्रेडिंग रणनीतियाँ और निर्णय लेने की प्रक्रिया में वृद्धि हुई।
 
-### Conclusion:
+### निष्कर्ष:
 
-The project resulted in a highly effective predictive model for Vios Investing, leveraging advanced statistical techniques and deep learning to optimize stock selection on the TWSE. By achieving a significant alpha over the index, the solution promises to enhance the firm’s investment performance. The scalable deployment on Kubernetes with GPU support ensures that Vios Investing can continue to leverage cutting-edge technology for superior investment outcomes.
+यह परियोजना वायोस निवेश के लिए एक अत्यधिक प्रभावी भविष्यसूचक मॉडल में परिणत हुई, जिसने उन्नत सांख्यिकीय तकनीकों और गहन शिक्षण का उपयोग करके TWSE पर स्टॉक चयन को अनुकूलित किया। सूचकांक पर महत्वपूर्ण अल्फा प्राप्त करने से, यह समाधान फर्म के निवेश प्रदर्शन को बढ़ाने का वादा करता है। GPU समर्थन के साथ कुबरनेट्स पर स्केलेबल परिनियोजन यह सुनिश्चित करता है कि वायोस निवेश बेहतर निवेश परिणामों के लिए अत्याधुनिक तकनीक का लाभ उठाना जारी रख सके।
 
-**Are you planning on employing machine learning to predict time series models?** Contact us now for a free consultation.
+**क्या आप समय श्रृंखला मॉडल की भविष्यवाणी करने के लिए मशीन लर्निंग को नियोजित करने की योजना बना रहे हैं?** अब मुफ्त परामर्श के लिए हमसे संपर्क करें।
