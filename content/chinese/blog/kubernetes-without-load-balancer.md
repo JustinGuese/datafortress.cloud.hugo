@@ -1,25 +1,26 @@
 ---
-title: "Maximizing Cost Savings in the Cloud: How to Run Kubernetes without a Load Balancer"
-bg_image: "images/blog/kubernetes.jpg"
-date: 2023-01-18T07:10:46+02:00
-author: "Justin Guese"
-description: "Discover cost-saving tips for your Kubernetes cluster, from using one load balancer to even eliminating them altogether."
-image: "images/blog/kubernetes.jpg"
+author: 贾斯汀·古埃斯
+bg_image: images/blog/kubernetes.jpg
 categories:
-- Private cloud
-tags: ["private cloud", "comparison"]
+- 私有云
+date: '2023-01-18T07:10:46+02:00'
+description: 发现节省 Kubernetes 集群成本的技巧，从使用一个负载均衡器到完全消除负载均衡器。
+image: images/blog/kubernetes.jpg
+tags:
+- private cloud
+- comparison
+title: 云端最大化成本节约：如何无需负载均衡器运行 Kubernetes
 type: post
+
 ---
+在云端运行 Kubernetes 时，最显著的成本之一可能来自为每个服务使用负载均衡器。每个负载均衡器的价格从每月约 15 美元开始，如果你的 Pod 数量很大，成本很容易迅速增加。但是，如果我们告诉你，有一种方法可以在无需负载均衡器的情况下运行 Kubernetes，同时仍然获得高可用性和自动故障转移的好处呢？本文将探讨如何在云端通过在无需负载均衡器的情况下运行 Kubernetes 来节省成本。
 
+## 版本 1：使用 Cert Manager 的 Nginx Ingress 只使用一个负载均衡器
 
-When it comes to running Kubernetes in the cloud, one of the most significant costs can come from using a load balancer for each service. With prices starting at around $15 per month per load balancer, it's easy for costs to quickly add up, especially if you have a large number of pods. However, what if we told you that there's a way to run Kubernetes without the need for a load balancer and still get the benefits of high availability and automatic failover? In this article, we'll explore how you can achieve cost savings in the cloud by running Kubernetes without a load balancer.
+一种省钱的策略是仅使用整个集群的一个负载均衡器，而不是为每个服务使用单独的负载均衡器。这可以通过使用 [Nginx Ingress](https://kubernetes.github.io/ingress-nginx/) 来实现，它充当所有外部流量到集群的单个入口点。然后，Nginx Ingress 会根据域名将流量分发到相应的 Pod，而不是为每个服务创建一个负载均衡器。
+最棒的是：如果你添加了 [Cert Manager](https://cert-manager.io/docs/installation/helm/)，你将获得免费的 Let's Encrypt SSL 证书！
 
-## Version 1: Nginx Ingress with Cert Manager to just use one Load Balancer
-
-One cost-saving strategy is to use only one load balancer for the entire cluster, rather than a separate load balancer for each service. This can be achieved by using an [Nginx Ingress](https://kubernetes.github.io/ingress-nginx/), which acts as a single entry point for all external traffic to the cluster. The Nginx Ingress then distributes the traffic to the appropriate pods based on the domain name, instead of creating one load balancer per service.
-The best part: If you are adding [cert manager](https://cert-manager.io/docs/installation/helm/), you will get free LetsEncrypt SSL certificates!
-
-The easiest way to deploy the Nginx Ingress in your cluster, is by using Helm:
+在你的集群中部署 Nginx Ingress 的最简单方法是使用 Helm：
 
 ```
 helm upgrade --install ingress-nginx ingress-nginx \
@@ -27,7 +28,7 @@ helm upgrade --install ingress-nginx ingress-nginx \
   --namespace ingress-nginx --create-namespace
 ```
 
-After that, to ensure https and SSL running for your services, you need to deploy Cert Manager with the following command:
+之后，为了确保你的服务运行 https 和 SSL，你需要部署 Cert Manager，使用以下命令：
 
 ```
 helm install \
@@ -37,7 +38,7 @@ helm install \
         --set installCRDs=true
 ```
 
-Then, you need to create a "ClusterIssuer" in order to tell LetsEncrypt who you are. Create a file "clusterissuer.yaml" with the content adapted to your Email:
+然后，你需要创建一个“ClusterIssuer”来告诉 Let's Encrypt 你是谁。创建一个名为“clusterissuer.yaml”的文件，其内容已根据你的电子邮件地址进行调整：
 
 ```
 apiVersion: cert-manager.io/v1
@@ -47,23 +48,23 @@ metadata:
 spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory
-#change to your email
+#更改为你的电子邮件地址
     email: EMAIL
     privateKeySecretRef:
        name: letsencrypt-prod
     solvers:
     - http01:
         ingress:
-          class: nginx # public or nginx depending on version
+          class: nginx # public 或 nginx，取决于版本
 ```
 
-After that, apply it to your cluster with `kubectl apply -f clusterissuer.yaml` and you are set up!
+之后，使用 `kubectl apply -f clusterissuer.yaml` 将其应用到你的集群，你已准备好！
 
-### Creating an Ingress
+### 创建 Ingress
 
-Now, you need to grab the name of your service that you want to expose to the world. You can get it with `kubectl get service`.
+现在，你需要获取你想要暴露给世界的服务的名称。你可以使用 `kubectl get service` 获取它。
 
-In this example, let's assume your service is named "nginx" in the default namespace. To route your domain "test.datafortress.cloud" to it, you need to create the following testdf-ingress.yaml:
+在这个例子中，假设你的服务在默认命名空间中名为“nginx”。要将你的域名 “test.datafortress.cloud” 路由到它，你需要创建以下 testdf-ingress.yaml：
 
 ```
 apiVersion: networking.k8s.io/v1
@@ -76,11 +77,11 @@ metadata:
 spec:
   tls:
   - hosts:
-#change to your domain
+#更改为你的域名
     - test.datafortress.cloud
     secretName: tls-secret
   rules:
-#change to your domain
+#更改为你的域名
   - host: test.datafortress.cloud
     http:
       paths:
@@ -93,17 +94,17 @@ spec:
                 number: 80
 ```
 
-Apply it with `kubectl apply -f testdf-ingress.yaml`, and point the domain you used to the load balancer used by your node. Soon you should see it spin up in your cluster, and see your service at the domain you stated in the ingress. 
-To debug, have a look at the nginx pod or certificates. 
-Struggling? [Contact us](/contact) and we will help you out!
+使用 `kubectl apply -f testdf-ingress.yaml` 应用它，并将你使用的域名指向你的节点使用的负载均衡器。很快你应该会在你的群集看到它启动，并在你指定的域名中看到你的服务。
+要调试，请查看 nginx Pod 或证书。
+遇到困难？[联系我们](/contact)，我们将协助你！
 
-While this solution may save you money on your cloud bill, it's important to note that using no load balancers can come with its own set of challenges. For example, if a node fails, the traffic won't be automatically routed to a healthy server, leading to downtime for your service. In many cases, having a load balancer is still the best option as it provides automatic failover and ensures that your services remain available to your customers. It's up to you to weigh the cost savings against the potential risks and make an informed decision on the best solution for your needs.
+虽然此解决方案可能会节省你的云账单费用，但需要注意的是，不使用负载均衡器也会带来自身的一系列挑战。例如，如果某个节点失败，流量不会自动路由到健康的服务器，导致你的服务出现停机时间。在许多情况下，拥有负载均衡器仍然是最佳选择，因为它提供了自动故障转移并确保你的服务保持可访问。你必须权衡成本节省与潜在风险，并就最适合你需求的解决方案做出明智的决定。
 
-## Version 2: Saving even more money with 0 load balancers!
+## 版本 2：使用 0 个负载均衡器进一步节省成本！
 
-If you're looking to save even more money on your cloud bill, there's an alternative to the above solution that uses no load balancers at all! Instead of using Nginx Ingress, this solution utilizes the nodePorts 80 and 443 on the server to redirect traffic to the appropriate pods. This eliminates the need for any load balancers, which can significantly reduce your cloud costs. Let's dive into the details of this solution.
+如果你想进一步节省你的云账单，上述解决方案有一个替代方案，它完全不使用负载均衡器！此解决方案不使用 Nginx Ingress，而是使用服务器上的节点端口 80 和 443 将流量重定向到相应的 Pod。这消除了对任何负载均衡器的需求，这可以显著降低你的云成本。让我们深入了解此解决方案的细节。
 
-To do this, we will upgrade our existing nginx ingress to use NodePorts instead of Load Balancers:
+为此，我们将升级现有的 nginx ingress 以使用 NodePort 而不是负载均衡器：
 
 ```
 helm upgrade --install ingress-nginx ingress-nginx/ingress-nginx
@@ -115,10 +116,10 @@ helm upgrade --install ingress-nginx ingress-nginx/ingress-nginx
     --set controller.service.ports.https=443
 ```
 
-You should soon see your ingress-nginx service to switch to Nodeport, and the load balancer should disappear. 
+你很快就会看到你的 ingress-nginx 服务切换到 NodePort，负载均衡器应该会消失。
 
-While using load balancers provides stability to a cluster, it is a legitimate way to save money with one-node Kubernetes distributions. By eliminating the need for load balancers and relying solely on the node ports 80 and 443, you can reduce your monthly costs significantly. However, it's important to keep in mind that not having a load balancer also means that in case of a failing node, the traffic will not be automatically routed to a healthy server. If you are operating a one-node Kubernetes distribution, this trade-off between stability and cost savings is worth considering.
+虽然使用负载均衡器为集群提供了稳定性，但对于单节点 Kubernetes 分布式，它确实是一种合法的省钱方式。通过完全消除负载均衡器的需求，并仅依赖节点端口 80 和 443，你可以显著降低你的每月成本。但是，请记住，没有负载均衡器意味着，如果某个节点失败，流量不会自动路由到健康的服务器。如果你正在运行单节点 Kubernetes 分布式，那么在稳定性和成本节省之间进行权衡是有意义的。
 
-## Verdict: Is it worth it?
+## 结论：值得吗？
 
-In conclusion, there are multiple ways to save costs in your Kubernetes cluster, from using only one load balancer with nginx ingress to using 0 load balancers and relying on nodeports. While a load balancer has its benefits in terms of stability and ensuring traffic routing, there are alternatives that can help reduce costs. If you're still unsure of the best way to save money in your Kubernetes cluster, [consider taking advantage of the cost-effective shared Kubernetes clusters offered by DataFortress.cloud, or seek our assistance in managing your cluster costs](/contact).
+总之，有很多方法可以节省你的 Kubernetes 集群成本，从只使用一个带有 nginx ingress 的负载均衡器到使用 0 个负载均衡器并依赖节点端口。虽然负载均衡器在稳定性和确保流量路由方面有其优势，但还有其他替代方案可以帮助降低成本。如果你仍然不确定在你的 Kubernetes 集群中节省成本的最佳方法，[请考虑利用 DataFortress.cloud 提供的经济实惠的共享 Kubernetes 集群，或者寻求我们的帮助来管理你的集群成本](/contact)。
