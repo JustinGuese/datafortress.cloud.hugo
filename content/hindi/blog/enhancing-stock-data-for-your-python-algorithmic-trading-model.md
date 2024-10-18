@@ -1,183 +1,174 @@
 ---
-author: "Justin Guese"
-bg_image: "/images/download.png"
-categories: ["finance", "algorithmic trading"]
-date: 2022-01-26T23:00:00Z
-description: "The typical machine learning algorithm can only work with the data it got. It (usually) can not create new features or interpretations like \"If volume increases and the 3rd derivative of price rises, the price will most likely go up\", but instead can only \"look\" at the data it got. These would be calculations like \"if the price is above 100 USD, and the volume above 2000, the price will most likely go up\"."
-image: "/images/download.png"
-tags: ["ai investing", "investing", "stocks", "finance", "algorithmic trading"]
-title: "Enhancing stock data for your Python Algorithmic Trading Model"
-type: "post"
+author: जस्टिन गुएसे
+bg_image: /images/download.png
+categories:
+- वित्त
+- एल्गोरिथ्म ट्रेडिंग
+date: '2022-01-26T23:00:00+00:00'
+description: एक विशिष्ट मशीन लर्निंग एल्गोरिथ्म केवल उस डेटा के साथ काम कर सकता है
+  जो उसे प्राप्त हुआ है। यह (आमतौर पर) "यदि मात्रा बढ़ती है और कीमत का तीसरा अवकलज
+  बढ़ता है, तो कीमत की अधिक संभावना बढ़ेगी" जैसी नई विशेषताएँ या व्याख्याएँ नहीं बना
+  सकता, बल्कि केवल उसे प्राप्त डेटा को "देख" सकता है। ये गणनाएं इस प्रकार होंगी, "यदि
+  कीमत 100 अमरीकी डालर से अधिक है और मात्रा 2000 से अधिक है, तो कीमत की अधिक संभावना
+  बढ़ेगी"।
+image: /images/download.png
+tags:
+- ai investing
+- investing
+- stocks
+- finance
+- algorithmic trading
+title: अपने पायथन एल्गोरिथ्मिक ट्रेडिंग मॉडल के लिए स्टॉक डेटा में सुधार
+type: post
+
 ---
+मान लीजिए कि आप अपना खुद का एल्गोरिथमिक ट्रेडिंग मॉडल बनाने की योजना बना रहे हैं।
 
-Let us say you are planning to build your own algorithmic trading model.
+सबसे अधिक संभावना है कि आप अपने मॉडल और एल्गोरिथ्म के लिए केवल मूल्य (बंद) डेटा का उपयोग करेंगे, लेकिन जल्द ही आपको पता चल जाएगा कि आपका मॉडल अच्छा प्रदर्शन नहीं कर रहा है।
 
-You will most likely use only price (Close) data for your model and algorithm, but soon you will discover, that your model does not perform well.
+जल्द ही आप विशिष्ट OHLCV डेटा का उपयोग करेंगे, जो ओपन, हाई, लो, क्लोज, वॉल्यूम को संदर्भित करता है, जो पहले से ही बेहतर है, लेकिन मॉडल अभी भी पर्याप्त अच्छा प्रदर्शन नहीं कर रहा है।
 
-Soon you will use typical OHLCV data, which refers to Open, High, Low, Close, Volume, which is already better, but the model does not seem to perform quite well enough.
+आप क्या कर सकते हैं?
 
-What can you do?
+साथ रहने के लिए सुविधाजनक कोलैब नोटबुक: [https://colab.research.google.com/drive/1ywqti1TuTDY_Z11ry0x4ITclCwxnXAeI?usp=sharing](https://colab.research.google.com/drive/1ywqti1TuTDY_Z11ry0x4ITclCwxnXAeI?usp=sharing)
 
-Handy Colab Notebook to follow along: [https://colab.research.google.com/drive/1ywqti1TuTDY_Z11ry0x4ITclCwxnXAeI?usp=sharing](https://colab.research.google.com/drive/1ywqti1TuTDY_Z11ry0x4ITclCwxnXAeI?usp=sharing "https://colab.research.google.com/drive/1ywqti1TuTDY_Z11ry0x4ITclCwxnXAeI?usp=sharing")
+सारांश:
 
-Gist:
+[https://gist.github.com/JustinGuese/019e0e71100abe6555f78c32fd0b10a9](https://gist.github.com/JustinGuese/019e0e71100abe6555f78c32fd0b10a9)
 
-[https://gist.github.com/JustinGuese/019e0e71100abe6555f78c32fd0b10a9](https://gist.github.com/JustinGuese/019e0e71100abe6555f78c32fd0b10a9 "https://gist.github.com/JustinGuese/019e0e71100abe6555f78c32fd0b10a9")
+## मशीन लर्निंग ट्रेडिंग बॉट को क्या पसंद है?
 
-## What does a Machine Learning Trading Bot like?
+टिपिकल मशीन लर्निंग एल्गोरिथ्म केवल उस डेटा के साथ काम कर सकता है जो उसे मिलता है। यह (आमतौर पर) नई विशेषताएँ या व्याख्याएँ नहीं बना सकता है जैसे "यदि वॉल्यूम बढ़ता है और कीमत का तीसरा व्युत्पन्न बढ़ता है, तो कीमत सबसे अधिक संभावना ऊपर जाएगी", बल्कि केवल उस डेटा को "देख" सकता है जो उसे मिला है। ये गणनाएँ जैसे "यदि कीमत 100 अमेरिकी डॉलर से ऊपर है और वॉल्यूम 2000 से ऊपर है, तो कीमत सबसे अधिक संभावना ऊपर जाएगी"।
 
-The typical machine learning algorithm can only work with the data it got. It (usually) can not create new features or interpretations like "If volume increases and the 3rd derivative of price rises, the price will most likely go up", but instead can only "look" at the data it got. These would be calculations like "if the price is above 100 USD, and the volume above 2000, the price will most likely go up".
+मशीन लर्निंग के नए लोग अब इस समस्या को दशकों तक प्रशिक्षण देकर या अधिक से अधिक GPU का उपयोग करके हल करने की कोशिश कर रहे हैं, लेकिन एक और अधिक कुशल तरीका यह होगा कि उस एल्गोरिथ्म को अतिरिक्त डेटा के साथ खिलाया जाए, जिससे यह अपनी गणनाओं को इन्फर करने के लिए अधिक संसाधन का उपयोग कर सके।
 
-Newcomers to Machine Learning are now trying to solve this problem by training for decades, or using more and more GPUs, but a way more efficient way would be to feed that algorithm with additional data, such that it can use more resources to infer it's calculations.
+यह प्राप्त किया जा सकता है:
 
-This can be achieved by:
+1. अधिक डेटा (एक बड़ा समय अवधि) प्राप्त करना
+2. सांख्यिकीय मीट्रिक जोड़ना
+3. अपने स्वयं के सिग्नल और व्याख्याएँ जोड़ना
 
-1. Getting more data (a bigger timespan)
-2. Adding statistical metrics
-3. Adding your own signals and interpretations
+# व्यावहारिक: अपने डेटा को बढ़ाना
 
-# Hands-on: Enhancing your data
+## पहला कदम - अपना डेटा प्राप्त करना
 
-## First steps - Getting your data
-
-First, let us grab some basic OHLCV data. I like the yfinance ([https://pypi.org/project/yfinance/](https://pypi.org/project/yfinance/ "https://pypi.org/project/yfinance/")) module for its simplicity. It is not comparable to live-streams of data, but on the other hand, it's free and great for experimentation!
+सबसे पहले, आइए कुछ बुनियादी OHLCV डेटा प्राप्त करें। मुझे अपनी सादगी के लिए yfinance ([https://pypi.org/project/yfinance/](https://pypi.org/project/yfinance/)) मॉड्यूल पसंद है। यह डेटा के लाइव-स्ट्रीम के बराबर नहीं है, लेकिन दूसरी ओर, यह मुफ़्त है और प्रयोगों के लिए बढ़िया है!
 
     pip install yfinance pandas numpy matplotlib ta
 
-Import that module as well as Pandas Numpy Matplotlib
+उस मॉड्यूल के साथ-साथ पांडा, न्यूमपी, मैटलॉटलिब भी आयात करें
 
     import yfinance as yf
     import matplotlib.pyplot as plt
     import pandas as pd
 
-Get some stock data, interval and period refer to the timeranges.
+कुछ स्टॉक डेटा प्राप्त करें, अंतराल और अवधि टाइमरेंज को संदर्भित करते हैं।
 
-interval accepts values like 1m,2m,5m,15m,30m,60m,90m,1h,1d,5d,1wk,1mo,3mo
+`interval` 1m, 2m, 5m, 15m, 30m, 60m, 90m, 1h, 1d, 5d, 1wk, 1mo, 3mo जैसे मान स्वीकार करता है
 
-period accepts values like 1d,5d,1mo,3mo,6mo,1y,2y,5y,10y,ytd,max
+`period` 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max जैसे मान स्वीकार करता है
 
-Not all combinations work, like 1m (1 Minute) intervals are only working with 7d max, 1h (1 hour) with 3 months max (needs to be written as 90d). But let's work with daily data first
+सभी संयोजन काम नहीं करते हैं, जैसे 1m (1 मिनट) अंतराल केवल अधिकतम 7 दिनों के साथ काम करते हैं, 1 घंटे (1 घंटा) अधिकतम 3 महीने के साथ (90d के रूप में लिखना होगा)। लेकिन आइए पहले दैनिक डेटा के साथ काम करें
 
     df:yf.download("MSFT",period="5y",interval="1d")
     df.head()
 
-![](/images/screenshot-from-2021-01-27-14-46-45.png)
+![चित्र](/images/screenshot-from-2021-01-27-14-46-45.png)
 
-Quick excourse: What the heck is Open, High, Low, Close, Adj Close, and Volume? Where is the price?!
+त्वरित भ्रमण: ओपन, हाई, लो, क्लोज, एडजस्ट क्लोज और वॉल्यूम क्या है? कीमत कहां है?!
 
-There is no "one price" in the stock market! You can imagine OHLCV data as "buckets" or "bins" in time, summarizing all the trades that occurred in that window. The typical "line" chart you know usually refers to the "Close" price of that stock in time range X, e.g. the value the stock had at the close of the time range.
+स्टॉक बाजार में कोई "एक कीमत" नहीं है! आप OHLCV डेटा को समय में "बाल्टी" या "बिन" के रूप में कल्पना कर सकते हैं, जो उस विंडो में हुई सभी ट्रेडों को सारांशित करते हैं। आपको पता चलता है कि टिपिकल "लाइन" चार्ट आमतौर पर उस स्टॉक के "क्लोज" मूल्य को समय सीमा X में संदर्भित करता है, उदाहरण के लिए, जिस मूल्य पर स्टॉक का मूल्य समय सीमा के बंद होने पर था।
 
-If we are looking at daily data, "Open" refers to the average (!) stock price at open of the markets, whilst "Close" refers to the average (!) price the stock had at the close of markets. If looking at hourly data, the "Open" refers to the beginning of that hour, like 11 am, and the "Close" to the close of that hour, so 11:59:59 am.
+यदि हम दैनिक डेटा देख रहे हैं, तो "ओपन" का अर्थ है बाजार के खुलने पर औसत (!) स्टॉक मूल्य, जबकि "बंद" का अर्थ है कि बाजार के बंद होने पर स्टॉक का औसत (!) मूल्य था। यदि हम घंटे के डेटा को देखें, तो "खुला" उस घंटे की शुरुआत को संदर्भित करता है, जैसे 11 AM, और "बंद" उस घंटे के बंद होने को, यानी 11:59 am को।
 
-Equally "High" is the highest trade/price recorded in that time frame, and "Low" the lowest one. Volume refers to the number of assets or stocks traded in that time range.
+इसी तरह "उच्च" उस समय सीमा में दर्ज की गई उच्चतम ट्रेड/मूल्य है, और "निम्न" सबसे कम है। वॉल्यूम उस समय सीमा में कारोबार किए गए संपत्तियों या स्टॉक की संख्या को संदर्भित करता है।
 
-Meaning if e.g. "Low" and "Close" of a column are close to each other, we are most likely seeing a downwards trend as the close is the current low. Also if Volume is high, there is a lot of trades going on, so if e.g. the Volume is higher than usual there seems to be something going on in the market. But anyway, head over to [https://www.investopedia.com/](https://www.investopedia.com/  "https://www.investopedia.com/") for that, we will continue coding now!
+अर्थ, उदाहरण के लिए, यदि किसी कॉलम के "निम्न" और "बंद" एक-दूसरे के करीब हैं, तो हम सबसे अधिक संभावना है कि एक नीचे की ओर प्रवृत्ति देख रहे हैं क्योंकि बंद वर्तमान न्यूनतम है। इसके अलावा, यदि वॉल्यूम अधिक है, तो बहुत सारे ट्रेड चल रहे हैं, इसलिए अगर, उदाहरण के लिए, वॉल्यूम सामान्य से अधिक है, तो ऐसा लगता है कि बाजार में कुछ हो रहा है। लेकिन वैसे भी, के लिए [https://www.investopedia.com/](https://www.investopedia.com/) पर जाएं, हम अब कोडिंग जारी रखेंगे!
 
-### What is "Adj Close"?
+### "एडजस्ट क्लोज" क्या है?
 
-This is important, as most ML algorithms are terribly confused by "normal" close-data. If there is a split in the stock, the data will look like the price has an insane drop.
+यह महत्वपूर्ण है, क्योंकि अधिकांश एमएल एल्गोरिदम "सामान्य" बंद डेटा से बहुत भ्रमित होते हैं। यदि स्टॉक में कोई विभाजन है, तो डेटा ऐसा दिखाई देगा जैसे कीमत में बहुत तेजी से गिरावट आई है।
 
-The reason is, simply said, that if a stock get's too expensive, the company decides to "split" the stock in two. Does that mean my investment halves? Of course not, you will simply get double the stocks you are holding, so on paper you still hold the same value of that stock.
+कारण, सीधे शब्दों में कहें, यह है कि यदि कोई स्टॉक बहुत महंगा हो जाता है, तो कंपनी स्टॉक को "विभाजित" करने का निर्णय लेती है। क्या इसका मतलब है कि मेरा निवेश आधा हो गया? बिल्कुल नहीं, आपको जो स्टॉक होल्ड कर रहे हैं, उसे दो में विभाजित करने पर आपको उतने ही स्टॉक मिलेंगे, इसलिए कागज पर आप स्टॉक का समान मूल्य रखते हैं।
 
-Interestingly a split usually causes prices to rise (silly humans!), and if your machine learning algorithm sees a huge drop in price it will most likely sell the hell out of that stock.
+दिलचस्प बात यह है कि विभाजन आमतौर पर कीमतों को बढ़ाता है (मूर्ख इंसान!), और यदि आपके मशीन लर्निंग एल्गोरिदम को कीमत में भारी गिरावट दिखती है, तो यह सबसे अधिक संभावना है कि वह उस स्टॉक को बेच देगा।
 
-For this reason, you should always use "adjusted" values, which can be imagined as "cleaned" price data, keeping in mind the splits, dividends, and all other events not affecting the true value of data. Therefore try to always use adjusted data for your algorithms!
+इसलिए, आपको हमेशा "समायोजित" मानों का उपयोग करना चाहिए, जिन्हें "साफ" मूल्य डेटा के रूप में समझा जा सकता है, जिसमें स्प्लिट, डिविडेंड और अन्य सभी घटनाओं को ध्यान में रखा जाता है जो डेटा के वास्तविक मूल्य को प्रभावित नहीं करती हैं। इसलिए, हमेशा अपने एल्गोरिदम के लिए समायोजित डेटा का उपयोग करने का प्रयास करें!
 
-In the case of yfinance it is easy to do, as we can just use "Adj Close" instead of "Close".
+yfinance के मामले में, यह करना आसान है, क्योंकि हम "एडजस्ट क्लोज" के बजाय "क्लोज" का उपयोग कर सकते हैं।
 
-### Plotting the data
+### डेटा प्लॉट करना
 
-Looking at the data we can already see a nice, well-known curve
+डेटा को देखते हुए, हम पहले से ही एक अच्छी, अच्छी तरह से जानी-पहचानी हुई वक्र देख सकते हैं
 
     plt.plot(df["Adj Close"])
 
-## Step two: Enhancing your data with statistical data
+## दूसरा चरण: सांख्यिकीय डेटा के साथ अपने डेटा को बढ़ाना
 
-As said above, we need to create more information from our data for the algorithm to use, as it can not do this on its own.
+जैसा कि ऊपर कहा गया है, हमें एल्गोरिथ्म के लिए उपयोग करने के लिए अपने डेटा से और अधिक जानकारी बनानी है, क्योंकि यह ऐसा स्वयं नहीं कर सकता है।
 
-I like to use the library ta ([https://github.com/bukosabino/ta](https://github.com/bukosabino/ta "https://github.com/bukosabino/ta")) as again, it is super easy to use and contains 100+ statistical calculations.
+मुझे ta ([https://github.com/bukosabino/ta](https://github.com/bukosabino/ta)) लाइब्रेरी पसंद है, क्योंकि यह फिर से उपयोग करने में बहुत आसान है और इसमें 100+ सांख्यिकीय गणनाएँ हैं।
 
-Install and import it with
+इसे स्थापित करें और इसके साथ आयात करें
 
     pip install ta
     from ta import add_all_ta_features
     from ta.utils import dropna
 
-Now if you already know which values you want to use you can only pick these, oooor we just smash all 100+ at our data:
+अब यदि आप पहले से जानते हैं कि आप किन मानों का उपयोग करना चाहते हैं, तो आप केवल इन्हें चुन सकते हैं, या हम अपने डेटा पर सभी 100+ को तोड़ सकते हैं:
 
-    df:dropna(df) # clean nans if present
+    df:dropna(df) # मौजूद नैन को साफ करें
     df:add_all_ta_features(df,open="Open", high="High", low="Low", close="Adj Close", volume="Volume")
 
-So what have we done?
+तो हमने क्या किया है?
 
     df.columns
     Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'volume_adi',
            'volume_obv', 'volume_cmf', 'volume_fi', 'volume_mfi', 'volume_em',
            'volume_sma_em', 'volume_vpt', 'volume_nvi', 'volume_vwap',
-           'volatility_atr', 'volatility_bbm', 'volatility_bbh', 'volatility_bbl',
-           'volatility_bbw', 'volatility_bbp', 'volatility_bbhi',
-           'volatility_bbli', 'volatility_kcc', 'volatility_kch', 'volatility_kcl',
-           'volatility_kcw', 'volatility_kcp', 'volatility_kchi',
-           'volatility_kcli', 'volatility_dcl', 'volatility_dch', 'volatility_dcm',
-           'volatility_dcw', 'volatility_dcp', 'volatility_ui', 'trend_macd',
-           'trend_macd_signal', 'trend_macd_diff', 'trend_sma_fast',
-           'trend_sma_slow', 'trend_ema_fast', 'trend_ema_slow', 'trend_adx',
-           'trend_adx_pos', 'trend_adx_neg', 'trend_vortex_ind_pos',
-           'trend_vortex_ind_neg', 'trend_vortex_ind_diff', 'trend_trix',
-           'trend_mass_index', 'trend_cci', 'trend_dpo', 'trend_kst',
-           'trend_kst_sig', 'trend_kst_diff', 'trend_ichimoku_conv',
-           'trend_ichimoku_base', 'trend_ichimoku_a', 'trend_ichimoku_b',
-           'trend_visual_ichimoku_a', 'trend_visual_ichimoku_b', 'trend_aroon_up',
-           'trend_aroon_down', 'trend_aroon_ind', 'trend_psar_up',
-           'trend_psar_down', 'trend_psar_up_indicator',
-           'trend_psar_down_indicator', 'trend_stc', 'momentum_rsi',
-           'momentum_stoch_rsi', 'momentum_stoch_rsi_k', 'momentum_stoch_rsi_d',
-           'momentum_tsi', 'momentum_uo', 'momentum_stoch',
-           'momentum_stoch_signal', 'momentum_wr', 'momentum_ao', 'momentum_kama',
-           'momentum_roc', 'momentum_ppo', 'momentum_ppo_signal',
-           'momentum_ppo_hist', 'others_dr', 'others_dlr', 'others_cr'],
-          dtype='object')
+           ...
+              ])
 
-Well, that should be enough for now!
+अब इसके लिए पर्याप्त होना चाहिए!
 
-Also, there is still a lot of nans in there, as some values are only calculated if enough time passed. In my experience filling them with zeros works quite well, even though there are more advanced techniques for that.
+इसके अलावा, वहाँ अभी भी बहुत सारे नैन हैं, क्योंकि कुछ मानों की गणना केवल तभी की जाती है जब पर्याप्त समय बीत गया हो। मेरे अनुभव में, उन्हें शून्य से भरना काफी अच्छा काम करता है, भले ही इसके लिए और उन्नत तकनीकें हों।
 
     df:df.fillna(0)
 
-## Step three: Creating your own signals
+## तीसरा चरण: अपने खुद के संकेत बनाना
 
-Now it is time to translate your weird trade ideas into numbers!
+अब यह आपके अजीब व्यापारिक विचारों को संख्याओं में बदलने का समय है!
 
-Let us start with the classic Moving Average cross. The idea is as follows: If a short moving average crosses a slower moving average, it either indicates a price rise or fall, depending on the direction of the cross.
+आइए क्लासिक मूविंग एवरेज क्रॉस से शुरू करें। विचार इस प्रकार है: यदि एक छोटी मूविंग एवरेज धीमी मूविंग एवरेज को पार करती है, तो यह या तो कीमत में वृद्धि या गिरावट का संकेत देती है, क्रॉस की दिशा के आधार पर।
 
-Again, have a look at investopedia for details: [https://www.investopedia.com/articles/active-trading/052014/how-use-moving-average-buy-stocks.asp](https://www.investopedia.com/articles/active-trading/052014/how-use-moving-average-buy-stocks.asp "https://www.investopedia.com/articles/active-trading/052014/how-use-moving-average-buy-stocks.asp")
+विवरण के लिए फिर से इन्वेस्टोपीडिया देखें: [https://www.investopedia.com/](https://www.investopedia.com/)
 
-Our goal is to first calculate the SMA's, and then to formulate crosses as 1 and -1, and 0 to signal no cross.
+हमारा लक्ष्य पहले SMA की गणना करना है, और फिर क्रॉस को 1 और -1, और 0 को कोई क्रॉस नहीं दिखाने के लिए तैयार करना है।
 
-### Creating Simple Moving Averages
+### सरल चलते औसत बनाना
 
-    # creating simple moving averages
+    # सरल चलती औसत बनाना
     averages:[1,2,5,10,15,20,25,50,100]
     for average in averages:
       df['SMA_%d'%average]:df["Adj Close"].rolling(window=average).mean()
     
-    # visualize only SMAs 
+    # केवल SMA को विजुअलाइज करें
     filter_col:[col for col in df if col.startswith('SMA')]
     df[filter_col].tail()
 
-And some visualization:
+और कुछ विजुअलाइजेशन:
 
-    # results in bigger figures
+    # बड़े आंकड़े प्राप्त करें
     plt.rcParams["figure.figsize"]:(20,20)
     for filter in filter_col:
       plt.plot(df[filter],label=filter)
     plt.legend()
 
-![SMA python trading](/images/download.png "Image by author")
+![एसएमए पायथन ट्रेडिंग](/images/download.png)
 
-### Creating a crossover signal
+### एक क्रॉसओवर सिग्नल बनाना
 
-Let us use a little helper function
+आइए एक छोटी सहायक फ़ंक्शन का उपयोग करें
 
     def createCross(data,fastSMA,slowSMA):
       fast:'SMA_%d'%fastSMA
@@ -192,23 +183,24 @@ Let us use a little helper function
       data.loc[pos,crossname]:1
       return data
 
-And now you could either insert custom values or follow our example and just take the cross products:
+और अब आप या तो अनुकूलित मान डाल सकते हैं या हमारे उदाहरण का पालन कर सकते हैं और केवल क्रॉस उत्पाद ले सकते हैं:
 
     for fast in averages:
       for slow in averages:
         if fast != slow and slow > fast:
           df:createCross(df,fast,slow)
 
-This created a perfect classification signal signaling an upwards cross with 1, and a downwards cross with -1, with 0 being a neutral (no-cross).
+इसने एक आदर्श वर्गीकरण सिग्नल बनाया जो ऊपर की ओर क्रॉस को 1 और नीचे की ओर क्रॉस को -1 के साथ संकेत करता है, 0 एक तटस्थ (कोई क्रॉस नहीं) होता है।
 
-This is just one example of what further signals you can provide.
+यह आपके द्वारा प्रदान किए जा सकने वाले अन्य संकेतों का केवल एक उदाहरण है।
 
-### Creating a percentage change column
+### प्रतिशत परिवर्तन कॉलम बनाना
 
-And to add another example, if you are trying to predict the percentage change you will need a column showing the percentage change to the previous time range. This can luckily be easily done using pandas.
+और एक और उदाहरण जोड़ने के लिए, यदि आप प्रतिशत परिवर्तन की भविष्यवाणी करने का प्रयास कर रहे हैं, तो आपको पिछली समय अवधि के प्रतिशत परिवर्तन दिखाने वाला एक कॉलम की आवश्यकता होगी। पांडा का उपयोग करके इसे आसानी से किया जा सकता है।
 
     df["pct_change"]:df["Adj Close"].pct_change()
     
+    #आउटपुट
     Date
     2021-01-21    0.013363
     2021-01-22   -0.004463
@@ -217,15 +209,14 @@ And to add another example, if you are trying to predict the percentage change y
     2021-01-27   -0.010484
     Name: pct_change, dtype: float64
 
-What a perfect signal for a regressional model!
+एक प्रतिगामी मॉडल के लिए यह एकदम सही संकेत है!
 
-# Summary
+# सारांश
 
-Before we added our enhancements the dataframe just contained 5 columns, not much for a machine learning model!
+इससे पहले कि हम अपने संवर्द्धन जोड़ते, डेटाफ़्रेम में केवल 5 कॉलम थे, मशीन लर्निंग मॉडल के लिए बहुत कुछ नहीं!
 
-In the end, after adding statistical values and our own signals, we already reached 135 features and columns of our dataframe!
+अंत में, सांख्यिकीय मान और अपने स्वयं के संकेत जोड़ने के बाद, हम पहले से ही अपने डेटाफ़्रेम के 135 फ़ीचर और कॉलम तक पहुँच गए!
 
-So much better for your model!
+यह आपके मॉडल के लिए बहुत बेहतर है!
 
-What are your thoughts about this process? Did I miss something? Comment below!  
-Do you want to read more articles by Justin? Head over to my website for more!
+इस प्रक्रिया के बारे में आपका क्या विचार है? क्या मुझे कुछ याद आया? नीचे टिप्पणी करें! क्या आप जस्टिन द्वारा और लेख पढ़ना चाहते हैं? अधिक जानकारी के लिए मेरी वेबसाइट पर जाएँ!
