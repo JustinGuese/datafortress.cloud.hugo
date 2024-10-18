@@ -42,7 +42,7 @@ footer_content = "痛苦本身就是爱"
 ################################### French language #####################################
 [fr]
 languageName = "FR"
-languageCode = "fr"
+languageCode = "fr-FR"
 contentDir = "content/french"
 weight = 1
 [fr.params]

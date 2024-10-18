@@ -1,15 +1,14 @@
-+++
-author = "Justin Guese"
-bg_image = "/images/download.png"
-categories = ["finance", "algorithmic trading"]
-date = 2022-01-26T23:00:00Z
-description = "The typical machine learning algorithm can only work with the data it got. It (usually) can not create new features or interpretations like \"If volume increases and the 3rd derivative of price rises, the price will most likely go up\", but instead can only \"look\" at the data it got. These would be calculations like \"if the price is above 100 USD, and the volume above 2000, the price will most likely go up\"."
-image = "/images/download.png"
-tags = ["ai investing", "investing", "stocks", "finance", "algorithmic trading"]
-title = "Enhancing stock data for your Python Algorithmic Trading Model"
-type = "post"
-
-+++
+---
+author: "Justin Guese"
+bg_image: "/images/download.png"
+categories: ["finance", "algorithmic trading"]
+date: 2022-01-26T23:00:00Z
+description: "The typical machine learning algorithm can only work with the data it got. It (usually) can not create new features or interpretations like \"If volume increases and the 3rd derivative of price rises, the price will most likely go up\", but instead can only \"look\" at the data it got. These would be calculations like \"if the price is above 100 USD, and the volume above 2000, the price will most likely go up\"."
+image: "/images/download.png"
+tags: ["ai investing", "investing", "stocks", "finance", "algorithmic trading"]
+title: "Enhancing stock data for your Python Algorithmic Trading Model"
+type: "post"
+---
 
 Let us say you are planning to build your own algorithmic trading model.
 
@@ -59,7 +58,7 @@ period accepts values like 1d,5d,1mo,3mo,6mo,1y,2y,5y,10y,ytd,max
 
 Not all combinations work, like 1m (1 Minute) intervals are only working with 7d max, 1h (1 hour) with 3 months max (needs to be written as 90d). But let's work with daily data first
 
-    df = yf.download("MSFT",period="5y",interval="1d")
+    df:yf.download("MSFT",period="5y",interval="1d")
     df.head()
 
 ![](/images/screenshot-from-2021-01-27-14-46-45.png)
@@ -106,8 +105,8 @@ Install and import it with
 
 Now if you already know which values you want to use you can only pick these, oooor we just smash all 100+ at our data:
 
-    df = dropna(df) # clean nans if present
-    df = add_all_ta_features(df,open="Open", high="High", low="Low", close="Adj Close", volume="Volume")
+    df:dropna(df) # clean nans if present
+    df:add_all_ta_features(df,open="Open", high="High", low="Low", close="Adj Close", volume="Volume")
 
 So what have we done?
 
@@ -143,7 +142,7 @@ Well, that should be enough for now!
 
 Also, there is still a lot of nans in there, as some values are only calculated if enough time passed. In my experience filling them with zeros works quite well, even though there are more advanced techniques for that.
 
-    df = df.fillna(0)
+    df:df.fillna(0)
 
 ## Step three: Creating your own signals
 
@@ -158,18 +157,18 @@ Our goal is to first calculate the SMA's, and then to formulate crosses as 1 and
 ### Creating Simple Moving Averages
 
     # creating simple moving averages
-    averages = [1,2,5,10,15,20,25,50,100]
+    averages:[1,2,5,10,15,20,25,50,100]
     for average in averages:
-      df['SMA_%d'%average] = df["Adj Close"].rolling(window=average).mean()
+      df['SMA_%d'%average]:df["Adj Close"].rolling(window=average).mean()
     
     # visualize only SMAs 
-    filter_col = [col for col in df if col.startswith('SMA')]
+    filter_col:[col for col in df if col.startswith('SMA')]
     df[filter_col].tail()
 
 And some visualization:
 
     # results in bigger figures
-    plt.rcParams["figure.figsize"] = (20,20)
+    plt.rcParams["figure.figsize"]:(20,20)
     for filter in filter_col:
       plt.plot(df[filter],label=filter)
     plt.legend()
@@ -181,16 +180,16 @@ And some visualization:
 Let us use a little helper function
 
     def createCross(data,fastSMA,slowSMA):
-      fast = 'SMA_%d'%fastSMA
-      slow = 'SMA_%d'%slowSMA
-      crossname = "cross_%d_%d"%(fastSMA,slowSMA)
-      previous_fast = data[fast].shift(1)
-      previous_slow = data[slow].shift(1)
-      neg = ((data[fast] < data[slow]) & (previous_fast >= previous_slow))
-      pos = ((data[fast] > data[slow]) & (previous_fast <= previous_slow))
-      data[crossname] = 0
-      data.loc[neg,crossname] = -1
-      data.loc[pos,crossname] = 1
+      fast:'SMA_%d'%fastSMA
+      slow:'SMA_%d'%slowSMA
+      crossname: "cross_%d_%d"%(fastSMA,slowSMA)
+      previous_fast:data[fast].shift(1)
+      previous_slow:data[slow].shift(1)
+      neg:((data[fast] < data[slow]) & (previous_fast >= previous_slow))
+      pos:((data[fast] > data[slow]) & (previous_fast <= previous_slow))
+      data[crossname]:0
+      data.loc[neg,crossname]:-1
+      data.loc[pos,crossname]:1
       return data
 
 And now you could either insert custom values or follow our example and just take the cross products:
@@ -198,7 +197,7 @@ And now you could either insert custom values or follow our example and just tak
     for fast in averages:
       for slow in averages:
         if fast != slow and slow > fast:
-          df = createCross(df,fast,slow)
+          df:createCross(df,fast,slow)
 
 This created a perfect classification signal signaling an upwards cross with 1, and a downwards cross with -1, with 0 being a neutral (no-cross).
 
@@ -208,7 +207,7 @@ This is just one example of what further signals you can provide.
 
 And to add another example, if you are trying to predict the percentage change you will need a column showing the percentage change to the previous time range. This can luckily be easily done using pandas.
 
-    df["pct_change"] = df["Adj Close"].pct_change()
+    df["pct_change"]:df["Adj Close"].pct_change()
     
     Date
     2021-01-21    0.013363
