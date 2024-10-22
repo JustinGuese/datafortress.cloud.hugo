@@ -5,7 +5,7 @@ draft: false
 image: "images/legal.webp"
 ---
 
-Email: info@datafortress.cloud
+Email: <a id="mail" href="mailto:info@datafortress.cloud">info@dat<!--...-->afortress.cloud</a>
 
 Geschäftsführer: Justin Güse
 

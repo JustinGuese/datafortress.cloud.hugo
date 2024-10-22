@@ -5,7 +5,7 @@ image: images/legal.webp
 title: 印记
 
 ---
-info@datafortress.cloud
+<a id="mail" href="mailto:info@datafortress.cloud">info@dat<!--...-->afortress.cloud</a>
 
 首席执行官：Justin Güse
 

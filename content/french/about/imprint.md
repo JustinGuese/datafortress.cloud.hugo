@@ -5,7 +5,7 @@ image: images/legal.webp
 title: Imprimerie
 
 ---
-info@datafortress.cloud
+<a id="mail" href="mailto:info@datafortress.cloud">info@dat<!--...-->afortress.cloud</a>
 
 Président-directeur général : Justin Güse
 

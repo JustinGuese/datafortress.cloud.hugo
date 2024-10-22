@@ -5,7 +5,7 @@ draft: false
 image: "images/legal.webp"
 ---
 
-info@datafortress.cloud
+<a id="mail" href="mailto:info@datafortress.cloud">info@dat<!--...-->afortress.cloud</a>
 
 CEO: Justin Güse
 

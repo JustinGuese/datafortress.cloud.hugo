@@ -63,7 +63,7 @@ DE345185498
 
 HRB 36456 
 
-Email: info@datafortress.cloud
+Email: <a id="mail" href="mailto:info@datafortress.cloud">info@dat<!--...-->afortress.cloud</a>
 Website: https://www.datafotress.cloud
 
 ## Cookies
