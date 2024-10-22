@@ -5,7 +5,7 @@ image: images/legal.webp
 title: मुद्रण
 
 ---
-info@datafortress.cloud
+<a id="mail" href="mailto:info@datafortress.cloud">info@dat<!--...-->afortress.cloud</a>
 
 सीईओ: जस्टिन गुसे
 

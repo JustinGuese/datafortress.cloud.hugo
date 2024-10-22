@@ -60,7 +60,7 @@ Germany
 DE345185498
 
 
-Email: info@datafortress.cloud
+Email: <a id="mail" href="mailto:info@datafortress.cloud">info@dat<!--...-->afortress.cloud</a>
 Website:
 
 3. Cookies

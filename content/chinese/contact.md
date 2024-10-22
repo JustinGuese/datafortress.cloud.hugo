@@ -12,9 +12,9 @@ layout: "contact"
 
 欢迎联系我们，享受免费的15分钟咨询，告诉我们您的数据/云计算挑战。
 
-* **电话 德国: <a href="tel:+4917616813692">+49 176 16813692</a>** 
-* **电话 美国:  <a href="tel:+16503820775">+1 650 382 0775</a>** 
-* **邮箱: info@datafortress.cloud**
+* **电话 德国: <a id="phone_de"  href="tel:+4917616813692">+49 176 16813692</a>** 
+* **电话 美国:  <a id="phone_us" href="tel:+16503820775">+1 650 382 0775</a>** 
+* **邮箱: <a id="mail" href="mailto:info@datafortress.cloud">info@dat<!--...-->afortress.cloud</a>**
 * **地址: 德国奥格斯堡**
 
 ##### 或直接与 Justin 预约会议
