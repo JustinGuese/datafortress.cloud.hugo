@@ -1,5 +1,4 @@
 ---
-date: 14 de agosto de 2024
 draft: false
 logo: images/client-logo/sparkasse.png
 title: Atruvia / Sparkasse / Volksbank – Almacén de Datos
@@ -10,6 +9,8 @@ title: Atruvia / Sparkasse / Volksbank – Almacén de Datos
 {{< image title="Atruvia / Sparkasse / Volksbank – Almacén de Datos" w="50%" o="webp q100" p="center" c="img-fluid shadow rounded-1" src="images/client-logo/sparkasse.png" alt="texto alternativo" >}}
 
 ## Caso de Estudio: Revolucionando la Gestión de Datos para Atruvia con Soluciones de Código Abierto
+
+{{< youtube iS2nGaXtnCc >}}
 
 ## Cliente: Atruvia (Proveedor de TI para Volksbank y Sparkasse)
 

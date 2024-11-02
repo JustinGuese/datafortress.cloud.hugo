@@ -19,6 +19,8 @@ https://research.google/blog/a-decoder-only-foundation-model-for-time-series-for
 
 Open Source Contribution: Continuous Integration/Continuous Deployment (CI/CD) and Dependency Management for TimesFM
 
+{{< youtube e3koi4ph_es >}}
+
 ### Project Overview:
 
 TimesFM is an advanced forecasting model developed by Google Research, pre-trained on a vast corpus of 100 billion real-world time-points. It delivers impressive zero-shot performance across various public benchmarks from multiple domains and granularities. This model stands out in time-series forecasting, which is critical in industries such as retail, finance, manufacturing, healthcare, and natural sciences. TimesFM is particularly impactful in retail, where accurate demand forecasting can significantly reduce inventory costs and boost revenue.

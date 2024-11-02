@@ -15,6 +15,8 @@ logo: "images/client-logo/vw.png"
 - Client: Hewlett Packard Enterprise (HPE) and Volkswagen (VW)
 - Project: Integration of a SaaS Platform into Volkswagen’s System Architecture
 
+{{< youtube X91cgYPjIgM >}}
+
 ### Objective:
 
 To design a robust solution architecture for integrating a SaaS platform into Volkswagen’s existing system architecture, ensuring data compliance, security, and audit-proof storage of sampling process results.

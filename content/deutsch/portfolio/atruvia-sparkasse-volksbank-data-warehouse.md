@@ -12,6 +12,8 @@ logo: "images/client-logo/sparkasse.png"
 
 ## Fallstudie: Revolutionierung des Datenmanagements für Atruvia mit Open-Source-Lösungen
 
+{{< youtube iS2nGaXtnCc >}}
+
 ## Kunde: Atruvia (IT-Dienstleister für Volksbank und Sparkasse)
 
 ### Projektübersicht:

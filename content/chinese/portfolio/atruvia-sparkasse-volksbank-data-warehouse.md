@@ -11,6 +11,8 @@ logo: "images/client-logo/sparkasse.png"
 
 ## 案例研究：利用开源解决方案革新Atruvia的数据管理
 
+{{< youtube iS2nGaXtnCc >}}
+
 ## 客户：Atruvia（Volksbank和Sparkasse的IT提供商）
 
 ### 项目概述：

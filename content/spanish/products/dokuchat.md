@@ -49,7 +49,6 @@ banner:
   title: 'Doku-Chat.de – Chat de documents IA
 
     '
-date: 14 de julio de 2024
 description: 'Nuestra aplicación SaaS de IA para permitir a los usuarios chatear con
   sus correos electrónicos y documentos.
 

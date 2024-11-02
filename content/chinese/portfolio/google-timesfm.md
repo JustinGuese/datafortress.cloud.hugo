@@ -17,6 +17,8 @@ https://research.google/blog/a-decoder-only-foundation-model-for-time-series-for
 
 ## 项目总结：通过CI/CD和Python Poetry增强Google Research TimesFM项目
 
+{{< youtube e3koi4ph_es >}}
+
 开源贡献：TimesFM的持续集成/持续部署（CI/CD）和依赖管理
 
 ### 项目概述：
