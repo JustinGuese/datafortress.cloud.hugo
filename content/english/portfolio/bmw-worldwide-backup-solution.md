@@ -14,6 +14,8 @@ logo: "images/client-logo/bmw.png"
 
 **Client**: BMW / HPE
 
+{{< youtube OEPQSiFrDR8 >}}
+
 ### Project Overview:
 
 BMW required a robust and scalable backup solution for their extensive and globally distributed virtual machine (VM) systems and file sharing tools. The primary challenge was to identify a backup solution capable of handling the massive data volume, amounting to hundreds of petabytes, while ensuring data reliability, efficient deduplication, and overcoming bandwidth limitations.

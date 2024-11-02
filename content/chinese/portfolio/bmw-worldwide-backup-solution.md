@@ -12,6 +12,8 @@ logo: "images/client-logo/bmw.png"
 
 ## 案例研究：为宝马设计全球虚拟机和文件共享工具备份解决方案
 
+{{< youtube OEPQSiFrDR8 >}}
+
 **客户**：宝马 / HPE
 
 ### 项目概述：

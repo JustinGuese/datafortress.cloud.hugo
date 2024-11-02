@@ -14,6 +14,8 @@ title: 'VW/HPE: Solution Architecture data flow of sampling report data'
 - Cliente: Hewlett Packard Enterprise (HPE) y Volkswagen (VW)
 - Proyecto: Integración de una Plataforma SaaS en la Arquitectura del Sistema de Volkswagen
 
+{{< youtube X91cgYPjIgM >}}
+
 ### Objetivo:
 
 Diseñar una arquitectura robusta de solución para integrar una plataforma SaaS en la arquitectura del sistema existente de Volkswagen, garantizando el cumplimiento de datos, la seguridad y el almacenamiento a prueba de auditoría de los resultados del proceso de muestreo.

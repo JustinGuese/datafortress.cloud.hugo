@@ -12,6 +12,8 @@ logo: "images/client-logo/sparkasse.png"
 
 ## Case Study: Revolutionizing Data Management for Atruvia with Open Source Solutions
 
+{{< youtube iS2nGaXtnCc >}}
+
 ## Client: Atruvia (IT Provider for Volksbank and Sparkasse)
 
 ### Project Overview:

@@ -13,6 +13,8 @@ title: 'BMW / HPE : Solution de sauvegarde mondiale pour machines virtuelles'
 
 **Client :** BMW / HPE
 
+{{< youtube OEPQSiFrDR8 >}}
+
 ### Aperçu du projet :
 
 BMW avait besoin d'une solution de sauvegarde robuste et évolutive pour ses systèmes de machines virtuelles (VM) et outils de partage de fichiers étendus et distribués mondialement. Le défi principal était de trouver une solution de sauvegarde capable de gérer le volume de données massif, s'élevant à des centaines de pétaoctets, tout en garantissant la fiabilité des données, une déduplication efficace et en surmontant les limitations de bande passante.

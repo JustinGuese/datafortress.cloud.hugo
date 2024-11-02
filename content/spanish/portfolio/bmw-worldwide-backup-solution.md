@@ -1,5 +1,4 @@
 ---
-date: 14 de agosto de 2024
 draft: false
 logo: images/client-logo/bmw.png
 title: 'BMW / HPE: Solución de respaldo mundial para máquinas virtuales (VM).
@@ -14,6 +13,8 @@ title: 'BMW / HPE: Solución de respaldo mundial para máquinas virtuales (VM).
 ## Estudio de Caso: Diseño de una Solución Global de Copia de Seguridad para las Máquinas Virtuales y Herramientas de Compartición de Archivos de BMW
 
 **Cliente**: BMW / HPE
+
+{{< youtube OEPQSiFrDR8 >}}
 
 ### Descripción del Proyecto:
 

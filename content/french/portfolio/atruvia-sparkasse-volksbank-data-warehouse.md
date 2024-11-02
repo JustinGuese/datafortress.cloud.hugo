@@ -11,6 +11,8 @@ title: Atruvia / Sparkasse / Volksbank – Entrepôt de données
 
 ## Étude de cas : Révolutionner la gestion des données pour Atruvia avec des solutions open source
 
+{{< youtube iS2nGaXtnCc >}}
+
 ## Client : Atruvia (Fournisseur informatique de Volksbank et Sparkasse)
 
 ### Vue d'ensemble du projet :
