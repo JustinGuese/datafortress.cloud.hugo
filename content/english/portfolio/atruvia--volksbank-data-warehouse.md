@@ -1,24 +1,23 @@
 ---
-date: "2024-08-14"
+date: '2024-08-14'
 draft: false
-title: "Atruvia / Sparkasse / Volksbank – Data Warehouse"
-logo: "images/client-logo/sparkasse.png"
+title: 'Atruvia / Volksbank – Data Warehouse'
+logo: 'images/client-logo/volksbank.png'
 ---
-
 
 > Replacing Hadoop with a Data Warehouse built on top of Trino, built with an autoscaling microservice architecture to handle finance data of millions of German customers.
 
-{{< image title="Atruvia / Sparkasse / Volksbank – Data Warehouse" w="50%" o="webp q100" p="center" c="img-fluid shadow rounded-1" src="images/client-logo/sparkasse.png" alt="alter-text" >}}
+{{< image title="Atruvia / Volksbank – Data Warehouse" w="50%" o="webp q100" p="center" c="img-fluid shadow rounded-1" src="images/client-logo/volksbank.png" alt="alter-text" >}}
 
 ## Case Study: Revolutionizing Data Management for Atruvia with Open Source Solutions
 
 {{< youtube iS2nGaXtnCc >}}
 
-## Client: Atruvia (IT Provider for Volksbank and Sparkasse)
+## Client: Atruvia (IT Provider for Volksbank)
 
 ### Project Overview:
 
-Atruvia, the IT backbone for Volksbank and Sparkasse, was facing escalating costs and limitations with their Hadoop-based data management infrastructure. Recognizing the need for a more cost-effective and advanced solution, Atruvia sought to build a modern data warehouse leveraging cutting-edge technologies. The goal was to create a BaFin-compliant microservice architecture that empowers analytics teams to handle massive datasets with ease, using only open-source tools and avoiding any public cloud components.
+Atruvia, the IT backbone for Volksbank, was facing escalating costs and limitations with their Hadoop-based data management infrastructure. Recognizing the need for a more cost-effective and advanced solution, Atruvia sought to build a modern data warehouse leveraging cutting-edge technologies. The goal was to create a BaFin-compliant microservice architecture that empowers analytics teams to handle massive datasets with ease, using only open-source tools and avoiding any public cloud components.
 
 ### Objective:
 

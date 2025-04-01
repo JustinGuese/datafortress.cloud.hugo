@@ -29,8 +29,8 @@ weight = 3
 
 [[main]]
 parent = "作品集"
-name = "Atruvia / Sparkasse / Volksbank – 数据仓库"
-url = "/portfolio/atruvia-sparkasse-volksbank-data-warehouse"
+name = "Atruvia / Volksbank – 数据仓库"
+url = "/portfolio/atruvia--volksbank-data-warehouse"
 weight = 4
 
 [[main]]
@@ -171,8 +171,8 @@ url = "/portfolio/google-timesfm"
 weight = 3
 
 [[footer_right]]
-name = "Atruvia / Sparkasse / Volksbank – 数据仓库"
-url = "/portfolio/atruvia-sparkasse-volksbank-data-warehouse"
+name = "Atruvia / Volksbank – 数据仓库"
+url = "/portfolio/atruvia--volksbank-data-warehouse"
 weight = 4
 
 [[footer_right]]

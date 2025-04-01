@@ -18,7 +18,7 @@ clients_logo_slider:
   logos:
   - "images/client-logo/bmw.png"
   - "images/client-logo/volksbank.png"
-  - "images/client-logo/sparkasse.png"
+  - "images/client-logo/volksbank.png"
   - "images/client-logo/hpe-small.png"
   - "images/client-logo/porsche-holding.png"
   - "images/client-logo/vw.png"
@@ -87,12 +87,12 @@ service:
 Our solution leveraged a modular microservice architecture, enabling secure, compliant data transfer between diverse VW systems and the new platform. The result? A remarkable 64% reduction in sampling time and error rates, all while meeting VW and VDA compliance standards. This project showcases our expertise in tackling technological challenges, improving efficiency, and delivering impactful solutions for global leaders like VW."
       
   # service item loop
-  - title : "Data Engineering: Transforming Data Management for Atruvia, Sparkasse, and Volksbank"
+  - title : "Data Engineering: Transforming Data Management for Atruvia and Volksbank"
     images:
     - "images/client-logo/volksbank.png"
-    - "images/client-logo/sparkasse.png"
+    - "images/client-logo/volksbank.png"
     - "images/client-logo/atruvia.png"
-    content : "In collaboration with Atruvia, the IT provider for Volksbank and Sparkasse, we replaced an expensive Hadoop-based infrastructure with a modern, open-source data warehouse. Built on Trino and S3 autoscaling clusters, this BaFin-compliant architecture handles vast amounts of finance data from millions of customers while delivering exceptional performance at a reduced cost.
+    content : "In collaboration with Atruvia, the IT provider for the Volksbank, we replaced an expensive Hadoop-based infrastructure with a modern, open-source data warehouse. Built on Trino and S3 autoscaling clusters, this BaFin-compliant architecture handles vast amounts of finance data from millions of customers while delivering exceptional performance at a reduced cost.
 <br/><br/>
 By designing a microservice architecture and providing user-friendly analytics environments, we empowered Atruvia’s teams to seamlessly analyze large datasets without complex configurations. Our solution not only enhanced scalability and data performance but also ensured regulatory compliance, positioning Atruvia for future growth. This project showcases our ability to deliver innovative, cost-efficient data architectures that meet the highest industry standards."
       

@@ -1,22 +1,22 @@
 ---
 draft: false
-logo: images/client-logo/sparkasse.png
-title: Atruvia / Sparkasse / Volksbank – Almacén de Datos
-
+logo: images/client-logo/volksbank.png
+title: Atruvia / Volksbank – Almacén de Datos
 ---
+
 > Reemplazando Hadoop con un almacén de datos construido sobre Trino, desarrollado con una arquitectura de microservicios con autosescalamiento para manejar datos financieros de millones de clientes alemanes.
 
-{{< image title="Atruvia / Sparkasse / Volksbank – Almacén de Datos" w="50%" o="webp q100" p="center" c="img-fluid shadow rounded-1" src="images/client-logo/sparkasse.png" alt="texto alternativo" >}}
+{{< image title="Atruvia / Volksbank – Almacén de Datos" w="50%" o="webp q100" p="center" c="img-fluid shadow rounded-1" src="images/client-logo/volksbank.png" alt="texto alternativo" >}}
 
 ## Caso de Estudio: Revolucionando la Gestión de Datos para Atruvia con Soluciones de Código Abierto
 
 {{< youtube iS2nGaXtnCc >}}
 
-## Cliente: Atruvia (Proveedor de TI para Volksbank y Sparkasse)
+## Cliente: Atruvia (Proveedor de TI para Volksbank)
 
 ### Descripción del Proyecto:
 
-Atruvia, la columna vertebral de TI para Volksbank y Sparkasse, se enfrentaba a costos crecientes y limitaciones con su infraestructura de gestión de datos basada en Hadoop. Reconociendo la necesidad de una solución más rentable y avanzada, Atruvia buscó construir un almacén de datos moderno aprovechando tecnologías de vanguardia. El objetivo era crear una arquitectura de microservicios compatible con BaFin que permitiera a los equipos de análisis manejar conjuntos de datos masivos con facilidad, utilizando únicamente herramientas de código abierto y evitando cualquier componente de la nube pública.
+Atruvia, la columna vertebral de TI para Volksbank, se enfrentaba a costos crecientes y limitaciones con su infraestructura de gestión de datos basada en Hadoop. Reconociendo la necesidad de una solución más rentable y avanzada, Atruvia buscó construir un almacén de datos moderno aprovechando tecnologías de vanguardia. El objetivo era crear una arquitectura de microservicios compatible con BaFin que permitiera a los equipos de análisis manejar conjuntos de datos masivos con facilidad, utilizando únicamente herramientas de código abierto y evitando cualquier componente de la nube pública.
 
 ### Objetivo:
 

@@ -18,7 +18,7 @@ clients_logo_slider:
   logos:
   - "images/client-logo/bmw.png"
   - "images/client-logo/volksbank.png"
-  - "images/client-logo/sparkasse.png"
+  - "images/client-logo/volksbank.png"
   - "images/client-logo/hpe-small.png"
   - "images/client-logo/porsche-holding.png"
   - "images/client-logo/vw.png"
@@ -87,12 +87,12 @@ service:
 Nuestra solución aprovechó una arquitectura de microservicios modular, permitiendo una transferencia de datos segura y compatible entre los diversos sistemas de VW y la nueva plataforma. ¿El resultado? Una notable reducción del 64% en el tiempo de muestreo y las tasas de error, todo mientras cumplíamos con los estándares de cumplimiento de VW y VDA. Este proyecto muestra nuestra experiencia en abordar desafíos tecnológicos, mejorar la eficiencia y ofrecer soluciones impactantes para líderes globales como VW."
       
   # service item loop
-  - title : "Ingeniería de Datos: Transformando la Gestión de Datos para Atruvia, Sparkasse y Volksbank"
+  - title : "Ingeniería de Datos: Transformando la Gestión de Datos para Atruvia y Volksbank"
     images:
     - "images/client-logo/volksbank.png"
-    - "images/client-logo/sparkasse.png"
+    - "images/client-logo/volksbank.png"
     - "images/client-logo/atruvia.png"
-    content : "En colaboración con Atruvia, el proveedor de TI para Volksbank y Sparkasse, reemplazamos una infraestructura costosa basada en Hadoop con un moderno almacén de datos de código abierto. Construida sobre clústeres de autoscaling de Trino y S3, esta arquitectura compatible con BaFin maneja grandes cantidades de datos financieros de millones de clientes mientras ofrece un rendimiento excepcional a un costo reducido.
+    content : "En colaboración con Atruvia, el proveedor de TI para Volksbank, reemplazamos una infraestructura costosa basada en Hadoop con un moderno almacén de datos de código abierto. Construida sobre clústeres de autoscaling de Trino y S3, esta arquitectura compatible con BaFin maneja grandes cantidades de datos financieros de millones de clientes mientras ofrece un rendimiento excepcional a un costo reducido.
 <br/><br/>
 Al diseñar una arquitectura de microservicios y proporcionar entornos de análisis fáciles de usar, empoderamos a los equipos de Atruvia para analizar grandes conjuntos de datos sin configuraciones complejas. Nuestra solución no solo mejoró la escalabilidad y el rendimiento de los datos, sino que también aseguró el cumplimiento regulatorio, posicionando a Atruvia para el crecimiento futuro. Este proyecto muestra nuestra capacidad para ofrecer arquitecturas de datos innovadoras y rentables que cumplen con los más altos estándares de la industria."
       

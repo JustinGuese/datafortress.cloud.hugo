@@ -18,7 +18,7 @@ clients_logo_slider:
   logos:
     - "images/client-logo/bmw.png"
     - "images/client-logo/volksbank.png"
-    - "images/client-logo/sparkasse.png"
+    - "images/client-logo/volksbank.png"
     - "images/client-logo/hpe-small.png"
     - "images/client-logo/porsche-holding.png"
     - "images/client-logo/vw.png"
@@ -87,12 +87,12 @@ service:
 Unsere Lösung nutzte eine modulare Microservice-Architektur, die einen sicheren, konformen Datentransfer zwischen verschiedenen VW-Systemen und der neuen Plattform ermöglichte. Das Ergebnis? Eine bemerkenswerte Reduzierung der Sampling-Zeit und Fehlerquoten um 64%, während gleichzeitig die VW- und VDA-Compliance-Standards eingehalten wurden. Dieses Projekt zeigt unser Fachwissen bei der Bewältigung technologischer Herausforderungen, der Verbesserung der Effizienz und der Bereitstellung wirkungsvoller Lösungen für globale Marktführer wie VW."
       
   # service item loop
-  - title : "Datenengineering: Transformation des Datenmanagements für Atruvia, Sparkasse und Volksbank"
+  - title : "Datenengineering: Transformation des Datenmanagements für Atruvia und Volksbank"
     images:
     - "images/client-logo/volksbank.png"
-    - "images/client-logo/sparkasse.png"
+    - "images/client-logo/volksbank.png"
     - "images/client-logo/atruvia.png"
-    content : "In Zusammenarbeit mit Atruvia, dem IT-Dienstleister für Volksbank und Sparkasse, haben wir eine teure Hadoop-basierte Infrastruktur durch ein modernes, Open-Source-Datenlager ersetzt. Diese BaFin-konforme Architektur, die auf Trino und S3-Autoscaling-Clustern basiert, verarbeitet riesige Mengen an Finanzdaten von Millionen von Kunden und bietet gleichzeitig außergewöhnliche Leistung zu reduzierten Kosten.che Leistung zu reduzierten Kosten.
+    content : "In Zusammenarbeit mit Atruvia, dem IT-Dienstleister für die Volksbank, haben wir eine teure Hadoop-basierte Infrastruktur durch ein modernes, Open-Source-Datenlager ersetzt. Diese BaFin-konforme Architektur, die auf Trino und S3-Autoscaling-Clustern basiert, verarbeitet riesige Mengen an Finanzdaten von Millionen von Kunden und bietet gleichzeitig außergewöhnliche Leistung zu reduzierten Kosten.che Leistung zu reduzierten Kosten.
 <br/><br/>
 Durch die Gestaltung einer Microservice-Architektur und die Bereitstellung benutzerfreundlicher Analyseumgebungen haben wir die Teams von Atruvia in die Lage versetzt, große Datensätze nahtlos zu analysieren, ohne komplexe Konfigurationen. Unsere Lösung verbesserte nicht nur die Skalierbarkeit und Datenleistung, sondern stellte auch die Einhaltung der Vorschriften sicher und positionierte Atruvia für zukünftiges Wachstum. Dieses Projekt zeigt unsere Fähigkeit, innovative, kosteneffiziente Datenarchitekturen zu liefern, die den höchsten Branchenstandards entsprechen."
 
