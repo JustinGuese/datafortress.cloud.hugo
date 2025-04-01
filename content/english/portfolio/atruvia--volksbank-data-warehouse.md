@@ -11,8 +11,6 @@ logo: 'images/client-logo/volksbank.png'
 
 ## Case Study: Revolutionizing Data Management for Atruvia with Open Source Solutions
 
-{{< youtube iS2nGaXtnCc >}}
-
 ## Client: Atruvia (IT Provider for Volksbank)
 
 ### Project Overview:
