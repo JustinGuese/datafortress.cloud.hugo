@@ -18,7 +18,7 @@ clients_logo_slider:
   logos:
   - "images/client-logo/bmw.png"
   - "images/client-logo/volksbank.png"
-  - "images/client-logo/sparkasse.png"
+  - "images/client-logo/volksbank.png"
   - "images/client-logo/hpe-small.png"
   - "images/client-logo/porsche-holding.png"
   - "images/client-logo/vw.png"
@@ -87,12 +87,12 @@ service:
 我们的解决方案利用模块化微服务架构，实现了大众汽车各系统与新平台之间的安全、合规的数据传输。结果？采样时间和错误率显著减少了64%，同时满足了大众汽车和VDA的合规标准。这个项目展示了我们在解决技术挑战、提高效率和为全球领导者提供有影响力的解决方案方面的专业知识。"
       
   # 服务项目循环
-  - title : "数据工程：为Atruvia、Sparkasse和Volksbank转变数据管理"
+  - title : "数据工程：为Atruvia、和Volksbank转变数据管理"
     images:
     - "images/client-logo/volksbank.png"
-    - "images/client-logo/sparkasse.png"
+    - "images/client-logo/volksbank.png"
     - "images/client-logo/atruvia.png"
-    content : "我们与Atruvia（Volksbank和Sparkasse的IT提供商）合作，用现代的开源数据仓库取代了昂贵的Hadoop基础设施。基于Trino和S3自动扩展集群的BaFin合规架构处理来自数百万客户的大量金融数据，同时以较低的成本提供卓越的性能。
+    content : "我们与Atruvia（Volksbank和的IT提供商）合作，用现代的开源数据仓库取代了昂贵的Hadoop基础设施。基于Trino和S3自动扩展集群的BaFin合规架构处理来自数百万客户的大量金融数据，同时以较低的成本提供卓越的性能。
 <br/><br/>
 通过设计微服务架构并提供用户友好的分析环境，我们使Atruvia的团队能够无缝分析大型数据集，而无需复杂的配置。我们的解决方案不仅增强了可扩展性和数据性能，还确保了合规性，为Atruvia的未来增长做好了准备。这个项目展示了我们在提供创新、成本效益高的数据架构方面的能力，这些架构符合最高的行业标准。"
       

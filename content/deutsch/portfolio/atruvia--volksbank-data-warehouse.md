@@ -1,24 +1,23 @@
 ---
-date: "2024-08-14"
+date: '2024-08-14'
 draft: false
-title: "Atruvia / Sparkasse / Volksbank – Data Warehouse"
-logo: "images/client-logo/sparkasse.png"
+title: 'Atruvia / Volksbank – Data Warehouse'
+logo: 'images/client-logo/volksbank.png'
 ---
-
 
 > Ersetzen von Hadoop durch ein Data Warehouse auf Basis von Trino, aufgebaut mit einer autoskalierenden Microservice-Architektur zur Verarbeitung von Finanzdaten von Millionen deutscher Kunden.
 
-{{< image title="Atruvia / Sparkasse / Volksbank – Data Warehouse" w="50%" o="webp q100" p="center" c="img-fluid shadow rounded-1" src="images/client-logo/sparkasse.png" alt="alter-text" >}}
+{{< image title="Atruvia / Volksbank – Data Warehouse" w="50%" o="webp q100" p="center" c="img-fluid shadow rounded-1" src="images/client-logo/volksbank.png" alt="alter-text" >}}
 
 ## Fallstudie: Revolutionierung des Datenmanagements für Atruvia mit Open-Source-Lösungen
 
 {{< youtube iS2nGaXtnCc >}}
 
-## Kunde: Atruvia (IT-Dienstleister für Volksbank und Sparkasse)
+## Kunde: Atruvia (IT-Dienstleister der Volksbank)
 
 ### Projektübersicht:
 
-Atruvia, das IT-Rückgrat von Volksbank und Sparkasse, sah sich mit steigenden Kosten und Einschränkungen ihrer Hadoop-basierten Datenmanagement-Infrastruktur konfrontiert. In der Erkenntnis, dass eine kostengünstigere und fortschrittlichere Lösung erforderlich war, strebte Atruvia den Aufbau eines modernen Data Warehouses an, das auf modernsten Technologien basiert. Ziel war es, eine BaFin-konforme Microservice-Architektur zu schaffen, die es den Analytik-Teams ermöglicht, riesige Datensätze mühelos zu verarbeiten, ausschließlich mit Open-Source-Tools und ohne öffentliche Cloud-Komponenten.
+Atruvia, das IT-Rückgrat der Volksbank, sah sich mit steigenden Kosten und Einschränkungen ihrer Hadoop-basierten Datenmanagement-Infrastruktur konfrontiert. In der Erkenntnis, dass eine kostengünstigere und fortschrittlichere Lösung erforderlich war, strebte Atruvia den Aufbau eines modernen Data Warehouses an, das auf modernsten Technologien basiert. Ziel war es, eine BaFin-konforme Microservice-Architektur zu schaffen, die es den Analytik-Teams ermöglicht, riesige Datensätze mühelos zu verarbeiten, ausschließlich mit Open-Source-Tools und ohne öffentliche Cloud-Komponenten.
 
 ### Zielsetzung:
 

@@ -30,7 +30,7 @@ weight = 3
 [[main]]
 parent = "पोर्टफोलियो"
 name = "अत्रुविया / स्पार्कसे / वोल्क्सबैंक – डेटा वेयरहाउस"
-url = "/portfolio/atruvia-sparkasse-volksbank-data-warehouse"
+url = "/portfolio/atruvia--volksbank-data-warehouse"
 weight = 4
 
 [[main]]
@@ -172,7 +172,7 @@ weight = 3
 
 [[footer_right]]
 name = "अत्रुविया / स्पार्कसे / वोल्क्सबैंक – डेटा वेयरहाउस"
-url = "/portfolio/atruvia-sparkasse-volksbank-data-warehouse"
+url = "/portfolio/atruvia--volksbank-data-warehouse"
 weight = 4
 
 [[footer_right]]

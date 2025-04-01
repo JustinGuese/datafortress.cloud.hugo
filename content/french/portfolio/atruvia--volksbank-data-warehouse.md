@@ -1,23 +1,23 @@
 ---
 date: '2024-08-14'
 draft: false
-logo: images/client-logo/sparkasse.png
-title: Atruvia / Sparkasse / Volksbank – Entrepôt de données
-
+logo: images/client-logo/volksbank.png
+title: Atruvia / Volksbank – Entrepôt de données
 ---
+
 > Remplacement de Hadoop par un entrepôt de données basé sur Trino, construit avec une architecture microservices à mise à l'échelle automatique pour gérer les données financières de millions de clients allemands.
 
-{{< image title="Atruvia / Sparkasse / Volksbank – Entrepôt de données" w="50%" o="webp q100" p="center" c="img-fluid shadow rounded-1" src="images/client-logo/sparkasse.png" alt="autre texte" >}}
+{{< image title="Atruvia / Volksbank – Entrepôt de données" w="50%" o="webp q100" p="center" c="img-fluid shadow rounded-1" src="images/client-logo/volksbank.png" alt="autre texte" >}}
 
 ## Étude de cas : Révolutionner la gestion des données pour Atruvia avec des solutions open source
 
 {{< youtube iS2nGaXtnCc >}}
 
-## Client : Atruvia (Fournisseur informatique de Volksbank et Sparkasse)
+## Client : Atruvia (Fournisseur informatique de Volksbank)
 
 ### Vue d'ensemble du projet :
 
-Atruvia, l'épine dorsale informatique de Volksbank et Sparkasse, se heurtait à des coûts croissants et à des limitations avec son infrastructure de gestion de données basée sur Hadoop. Reconnaissant le besoin d'une solution plus économique et plus avancée, Atruvia a cherché à construire un entrepôt de données moderne en utilisant des technologies de pointe. L'objectif était de créer une architecture microservices conforme à la réglementation BaFin qui permette aux équipes d'analystes de gérer facilement d'énormes ensembles de données, en utilisant uniquement des outils open source et en évitant tout composant de cloud public.
+Atruvia, l'épine dorsale informatique de Volksbank, se heurtait à des coûts croissants et à des limitations avec son infrastructure de gestion de données basée sur Hadoop. Reconnaissant le besoin d'une solution plus économique et plus avancée, Atruvia a cherché à construire un entrepôt de données moderne en utilisant des technologies de pointe. L'objectif était de créer une architecture microservices conforme à la réglementation BaFin qui permette aux équipes d'analystes de gérer facilement d'énormes ensembles de données, en utilisant uniquement des outils open source et en évitant tout composant de cloud public.
 
 ### Objectif :
 
