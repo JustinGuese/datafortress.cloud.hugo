@@ -11,8 +11,6 @@ logo: 'images/client-logo/volksbank.png'
 
 ## 案例研究：利用开源解决方案革新 Atruvia 的数据管理
 
-{{< youtube iS2nGaXtnCc >}}
-
 ## 客户：Atruvia（Volksbank 和 的 IT 提供商）
 
 ### 项目概述：

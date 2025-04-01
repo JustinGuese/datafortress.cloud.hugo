@@ -10,8 +10,6 @@ title: Atruvia / Volksbank – Almacén de Datos
 
 ## Caso de Estudio: Revolucionando la Gestión de Datos para Atruvia con Soluciones de Código Abierto
 
-{{< youtube iS2nGaXtnCc >}}
-
 ## Cliente: Atruvia (Proveedor de TI para Volksbank)
 
 ### Descripción del Proyecto:

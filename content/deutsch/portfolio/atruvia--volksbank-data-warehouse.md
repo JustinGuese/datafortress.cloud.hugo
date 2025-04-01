@@ -11,8 +11,6 @@ logo: 'images/client-logo/volksbank.png'
 
 ## Fallstudie: Revolutionierung des Datenmanagements für Atruvia mit Open-Source-Lösungen
 
-{{< youtube iS2nGaXtnCc >}}
-
 ## Kunde: Atruvia (IT-Dienstleister der Volksbank)
 
 ### Projektübersicht:
