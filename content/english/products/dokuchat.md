@@ -1,7 +1,7 @@
 ---
 date: "2024-07-14"
 draft: false
-title: "DokuChat"
+title: "DocumentChat"
 description: "Our AI SaaS application to allow users to chat with their emails and documents."
 icon: "fas fa-users"  # fontawesome icon pack : https://fontawesome.com/icons/
 
@@ -9,12 +9,12 @@ icon: "fas fa-users"  # fontawesome icon pack : https://fontawesome.com/icons/
 ######################### banner #####################
 banner:
   title: "Doku-Chat.de – AI Document chat"
-  image: "images/products/dokuchat.webp"
+  image: "images/products/DocumentChat.webp"
   content : "Our AI SaaS application to allow users to chat with their emails and documents."
   button:
     enable : true
     label : "Try it for Free"
-    link : "https://doku-chat.de/"
+    link : "https://document-chat.com/"
   background_class: "bg-light"
 
 
@@ -37,6 +37,7 @@ Vector Databases: Employs vector databases to securely store and manage company 
 Contextual Understanding: The AI models are trained to understand context, providing more accurate and relevant responses, thereby enhancing user experience and efficiency. "
 
 ---
+
 ### Doku-Chat: Secure, AI-Driven Platform for Chatting with Documents and Emails
 
 To provide businesses with a secure, AI-driven platform that allows users to chat with their emails and documents, enhancing productivity and ensuring compliance with German data protection laws.

@@ -1,63 +1,68 @@
 ---
 about_this_product:
   background_class: ''
-  content: 'Doku-Chat est notre propre application SaaS IA de pointe conçue pour révolutionner
+  content:
+    "Doku-Chat est notre propre application SaaS IA de pointe conçue pour révolutionner
     la manière dont les entreprises interagissent avec leurs emails et documents.  Né
-    du besoin d''une alternative sécurisée et conforme aux réglementations aux chatbots
+    du besoin d'une alternative sécurisée et conforme aux réglementations aux chatbots
     IA généraux comme ChatGPT, Doku-Chat garantit la confidentialité des connaissances
-    de l''entreprise tout en offrant des interactions puissantes basées sur l''IA.
+    de l'entreprise tout en offrant des interactions puissantes basées sur l'IA.
     En exploitant des modèles IA hébergés en Allemagne et des bases de données vectorielles,
     Doku-Chat prévient les fuites de données et respecte les réglementations strictes
     concernant la confidentialité des données.
 
-    '
+    "
   enable: false
   features:
-  - content: 'Modèles IA hébergés en Allemagne : Doku-Chat utilise des modèles IA
-      hébergés en Allemagne, garantissant la conformité aux réglementations locales
-      de protection des données (telles que le RGPD). Bases de données vectorielles :
-      Utilise des bases de données vectorielles pour stocker et gérer en toute sécurité
-      les connaissances de l''entreprise, empêchant tout accès ou fuite non autorisé
-      de données.
+    - content:
+        "Modèles IA hébergés en Allemagne : Doku-Chat utilise des modèles IA
+        hébergés en Allemagne, garantissant la conformité aux réglementations locales
+        de protection des données (telles que le RGPD). Bases de données vectorielles :
+        Utilise des bases de données vectorielles pour stocker et gérer en toute sécurité
+        les connaissances de l'entreprise, empêchant tout accès ou fuite non autorisé
+        de données.
 
-      '
-    icon: fas fa-tty
-    title: Interaction sécurisée avec l'IA
-  - content: '**Conversation avec les documents et les emails :** Permet aux utilisateurs
-      d''interagir avec leurs emails et documents via une interface conversationnelle,
-      optimisant les flux de travail et rendant l''information plus accessible.
+        "
+      icon: fas fa-tty
+      title: Interaction sécurisée avec l'IA
+    - content:
+        "**Conversation avec les documents et les emails :** Permet aux utilisateurs
+        d'interagir avec leurs emails et documents via une interface conversationnelle,
+        optimisant les flux de travail et rendant l'information plus accessible.
 
-      **Compréhension contextuelle :** Les modèles d''IA sont entraînés à comprendre
-      le contexte, fournissant des réponses plus précises et pertinentes, améliorant
-      ainsi l''expérience utilisateur et l''efficacité.
+        **Compréhension contextuelle :** Les modèles d'IA sont entraînés à comprendre
+        le contexte, fournissant des réponses plus précises et pertinentes, améliorant
+        ainsi l'expérience utilisateur et l'efficacité.
 
-      '
-    icon: fas fa-sync
-    title: Productivité améliorée
+        "
+      icon: fas fa-sync
+      title: Productivité améliorée
   title: Amélioration de l'interaction des documents et des emails avec Doku-Chat
 banner:
   background_class: gris clair
   button:
     enable: true
     label: Essayez gratuitement
-    link: https://doku-chat.de/
-  content: 'Notre application SaaS d''IA permettant aux utilisateurs de discuter avec
+    link: https://document-chat.com/
+  content:
+    "Notre application SaaS d'IA permettant aux utilisateurs de discuter avec
     leurs e-mails et documents.
 
-    '
-  image: images/products/dokuchat.webp
+    "
+  image: images/products/DocumentChat.webp
   title: 'Doku-Chat.de – Chat de documents IA
 
     '
-description: 'Nuestra aplicación SaaS de IA para permitir a los usuarios chatear con
+description:
+  'Nuestra aplicación SaaS de IA para permitir a los usuarios chatear con
   sus correos electrónicos y documentos.
 
   '
 draft: false
 icon: fas fa-users
-title: DokuChat
-
+title: DocumentChat
 ---
+
 ### Doku-Chat: Plataforma segura y basada en IA para chatear con documentos y correos electrónicos
 
 Proporcionar a las empresas una plataforma segura y basada en IA que permite a los usuarios chatear con sus correos electrónicos y documentos, mejorando la productividad y garantizando el cumplimiento de las leyes alemanas de protección de datos.
@@ -83,7 +88,6 @@ Proporcionar a las empresas una plataforma segura y basada en IA que permite a l
 
 - **Cumplimiento con los requisitos de alojamiento alemanes**: Garantiza que todo el procesamiento y almacenamiento de datos cumpla con las leyes alemanas de protección de datos, abordando las preocupaciones sobre la seguridad y privacidad de los datos.
 - **Seguridad del conocimiento de la empresa**: Evita la filtración de información confidencial de la empresa gestionando los datos de forma segura bajo el control de la organización.
-
 
 ### Implementación y casos de uso:
 

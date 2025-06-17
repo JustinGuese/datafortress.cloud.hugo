@@ -1,7 +1,7 @@
 ---
 date: "2024-07-14"
 draft: false
-title: "DokuChat"
+title: "DocumentChat"
 description: "Unsere AI SaaS-Anwendung, die es Benutzern ermöglicht, mit ihren E-Mails und Dokumenten zu chatten."
 icon: "fas fa-users"  # fontawesome icon pack : https://fontawesome.com/icons/
 
@@ -9,12 +9,12 @@ icon: "fas fa-users"  # fontawesome icon pack : https://fontawesome.com/icons/
 ######################### banner #####################
 banner:
   title: "Doku-Chat.de – AI Dokumenten-Chat"
-  image: "images/products/dokuchat.webp"
+  image: "images/products/DocumentChat.webp"
   content : "Unsere AI SaaS-Anwendung, die es Benutzern ermöglicht, mit ihren E-Mails und Dokumenten zu chatten."
   button:
     enable : true
     label : "Kostenlos ausprobieren"
-    link : "https://doku-chat.de/"
+    link : "https://document-chat.com/"
   background_class: "bg-light"
 
 
@@ -37,6 +37,7 @@ Vektordatenbanken: Verwendet Vektordatenbanken, um Unternehmenswissen sicher zu 
 Kontextuelles Verständnis: Die AI-Modelle sind darauf trainiert, den Kontext zu verstehen, um genauere und relevantere Antworten zu liefern, was die Benutzererfahrung und Effizienz verbessert."
 
 ---
+
 ### Doku-Chat: Sichere, AI-gesteuerte Plattform für den Chat mit Dokumenten und E-Mails
 
 Um Unternehmen eine sichere, AI-gesteuerte Plattform zu bieten, die es Benutzern ermöglicht, mit ihren E-Mails und Dokumenten zu chatten, die Produktivität zu steigern und die Einhaltung deutscher Datenschutzgesetze zu gewährleisten.

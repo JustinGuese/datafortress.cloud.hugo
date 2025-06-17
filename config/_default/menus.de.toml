@@ -61,10 +61,10 @@ isMenuLarge = true
 
 [[main]]
 parent = "Produkte"
-name = "DokuChat"
+name = "DocumentChat"
 pre = "<i class='dropdown-icon fas fa-users'></i>"
 post = "<small class='dropdown-subtitle'>KI SaaS-Anwendung, die es Benutzern ermöglicht, mit ihren E-Mails und Dokumenten zu chatten</small>"
-url = "/products/dokuchat"
+url = "/products/DocumentChat"
 weight = 1
 
 [[main]]
@@ -147,8 +147,8 @@ weight = 4
 
 # footer menu middle
 [[footer_middle]]
-name = "DokuChat"
-url = "/products/dokuchat"
+name = "DocumentChat"
+url = "/products/DocumentChat"
 weight = 1
 
 [[footer_middle]]

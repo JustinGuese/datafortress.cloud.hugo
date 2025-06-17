@@ -1,59 +1,64 @@
 ---
 about_this_product:
   background_class: ''
-  content: 'Doku-Chat est notre propre application SaaS IA de pointe conçue pour révolutionner
+  content:
+    "Doku-Chat est notre propre application SaaS IA de pointe conçue pour révolutionner
     la façon dont les entreprises interagissent avec leurs emails et documents. Issue
-    du besoin d''une alternative sécurisée et conforme aux réglementations aux chatbots
+    du besoin d'une alternative sécurisée et conforme aux réglementations aux chatbots
     IA généraux comme ChatGPT, Doku-Chat garantit la confidentialité des connaissances
-    de l''entreprise tout en offrant des interactions puissantes basées sur l''IA.
+    de l'entreprise tout en offrant des interactions puissantes basées sur l'IA.
     En exploitant des modèles IA hébergés en Allemagne et des bases de données vectorielles,
     Doku-Chat empêche les fuites de données et respecte les strictes réglementations
     sur la protection des données.
 
-    '
+    "
   enable: false
   features:
-  - content: 'Modèles IA hébergés en Allemagne : Doku-Chat utilise des modèles IA
-      hébergés en Allemagne, garantissant la conformité aux réglementations locales
-      relatives à la protection des données (telles que le RGPD). Bases de données
-      vectorielles : Utilise des bases de données vectorielles pour stocker et gérer
-      en toute sécurité les connaissances de l''entreprise, empêchant tout accès ou
-      fuite non autorisé à des données.
+    - content:
+        "Modèles IA hébergés en Allemagne : Doku-Chat utilise des modèles IA
+        hébergés en Allemagne, garantissant la conformité aux réglementations locales
+        relatives à la protection des données (telles que le RGPD). Bases de données
+        vectorielles : Utilise des bases de données vectorielles pour stocker et gérer
+        en toute sécurité les connaissances de l'entreprise, empêchant tout accès ou
+        fuite non autorisé à des données.
 
-      '
-    icon: fas fa-tty
-    title: Interaction sécurisée avec l'IA
-  - content: 'Chat avec Documents et Emails : Permet aux utilisateurs d''interagir
-      avec leurs emails et documents via une interface conversationnelle, optimisant
-      les workflows et rendant l''information plus accessible.  Compréhension Contextuelle :
-      Les modèles IA sont entraînés à comprendre le contexte, fournissant des réponses
-      plus précises et pertinentes, améliorant ainsi l''expérience utilisateur et
-      l''efficacité.
+        "
+      icon: fas fa-tty
+      title: Interaction sécurisée avec l'IA
+    - content:
+        "Chat avec Documents et Emails : Permet aux utilisateurs d'interagir
+        avec leurs emails et documents via une interface conversationnelle, optimisant
+        les workflows et rendant l'information plus accessible.  Compréhension Contextuelle :
+        Les modèles IA sont entraînés à comprendre le contexte, fournissant des réponses
+        plus précises et pertinentes, améliorant ainsi l'expérience utilisateur et
+        l'efficacité.
 
-      '
-    icon: fas fa-sync
-    title: Productivité améliorée
+        "
+      icon: fas fa-sync
+      title: Productivité améliorée
   title: Améliorer l'interaction avec les documents et les emails grâce à Doku-Chat
 banner:
   background_class: gris clair
   button:
     enable: true
     label: Essayez gratuitement
-    link: https://doku-chat.de/
-  content: 'Notre application SaaS d''IA permettant aux utilisateurs de discuter avec
+    link: https://document-chat.com/
+  content:
+    "Notre application SaaS d'IA permettant aux utilisateurs de discuter avec
     leurs e-mails et documents.
 
-    '
-  image: images/products/dokuchat.webp
+    "
+  image: images/products/DocumentChat.webp
   title: 'Doku-Chat.de – Chat de documents IA
 
     '
 date: '2024-07-14'
-description: हमारा एआई आधारित SaaS एप्लीकेशन जिससे यूजर्स अपने ईमेल और दस्तावेजों
+description:
+  हमारा एआई आधारित SaaS एप्लीकेशन जिससे यूजर्स अपने ईमेल और दस्तावेजों
   से चैट कर सकेंगे।
 draft: false
 icon: fas fa-users
 title: डोकुचैट
-
 ---
+
 ### डोकू-चैट: दस्तावेज़ों और ईमेल के साथ चैट करने के लिए सुरक्षित, एआई-संचालित प्लेटफ़ॉर्मव्यवसायों को एक सुरक्षित, एआई-संचालित प्लेटफ़ॉर्म प्रदान करने के लिए, जो उपयोगकर्ताओं को उनके ईमेल और दस्तावेजों के साथ चैट करने की अनुमति देता है, उत्पादकता में वृद्धि करता है और जर्मन डेटा संरक्षण कानूनों का अनुपालन सुनिश्चित करता है।### मुख्य विशेषताएँ और लाभ:#### सुरक्षित एआई इंटरैक्शन:- **जर्मनी में होस्ट किए गए एआई मॉडल**: डोकू-चैट जर्मनी में होस्ट किए गए एआई मॉडल का उपयोग करता है, जिससे स्थानीय डेटा सुरक्षा नियमों (जैसे GDPR) का अनुपालन सुनिश्चित होता है।- **वेक्टर डेटाबेस**: कंपनी के ज्ञान को सुरक्षित रूप से संग्रहीत और प्रबंधित करने के लिए वेक्टर डेटाबेस का उपयोग करता है, जिससे किसी भी अनधिकृत डेटा एक्सेस या रिसाव को रोका जा सके।#### बढ़ी हुई उत्पादकता:- **दस्तावेज़ों और ईमेल के साथ चैट**: उपयोगकर्ताओं को उनके ईमेल और दस्तावेजों के साथ संवादी इंटरफ़ेस के माध्यम से बातचीत करने में सक्षम बनाता है, कार्यप्रवाह को सुव्यवस्थित करता है और सूचना को अधिक सुलभ बनाता है।- **संदर्भगत समझ**: एआई मॉडल को संदर्भ को समझने के लिए प्रशिक्षित किया गया है, जिससे अधिक सटीक और प्रासंगिक प्रतिक्रियाएँ मिलती हैं, जिससे उपयोगकर्ता अनुभव और दक्षता में वृद्धि होती है।#### स्केलेबल आर्किटेक्चर:- **पायथन माइक्रोसर्विस आर्किटेक्चर**: एक मजबूत पायथन माइक्रोसर्विस आर्किटेक्चर पर बनाया गया है, डोकू-चैट विभिन्न कार्यभारों को संभालने के लिए विश्वसनीयता और स्केलेबिलिटी सुनिश्चित करता है।- **ऑटोस्केलिंग**: मांग के आधार पर संसाधनों को स्वचालित रूप से समायोजित करता है, बिना किसी मैनुअल हस्तक्षेप के लगातार प्रदर्शन सुनिश्चित करता है।#### डेटा गोपनीयता और अनुपालन:- **जर्मन होस्टिंग आवश्यकताओं का अनुपालन**: यह सुनिश्चित करता है कि सभी डेटा प्रोसेसिंग और भंडारण जर्मन डेटा संरक्षण कानूनों का अनुपालन करते हैं, डेटा सुरक्षा और गोपनीयता के बारे में चिंताओं को दूर करते हैं।- **कंपनी ज्ञान सुरक्षा**: संगठन के नियंत्रण में डेटा को सुरक्षित रूप से प्रबंधित करके संवेदनशील कंपनी की जानकारी के रिसाव को रोकता है।### कार्यान्वयन और उपयोग के मामले:#### परिनियोजन:- **सीमलेस एकीकरण**: डोकू-चैट मौजूदा आईटी ढांचों में आसानी से एकीकृत किया जा सकता है, इसके लिए न्यूनतम सेटअप और कॉन्फ़िगरेशन की आवश्यकता होती है।- **उपयोगकर्ता ऑनबोर्डिंग**: त्वरित ऑनबोर्डिंग के लिए एक उपयोगकर्ता-अनुकूल इंटरफ़ेस प्रदान करता है, जिससे कर्मचारी तुरंत अपने दस्तावेज़ों और ईमेल के साथ बातचीत शुरू कर सकते हैं।#### उपयोग के परिदृश्य:- **ग्राहक सहायता**: ग्राहक सहायता टीम डोकू-चैट का उपयोग पिछले ईमेल और दस्तावेजों से जानकारी को जल्दी प्राप्त करने और पुनः प्राप्त करने के लिए कर सकती है, जिससे प्रतिक्रिया समय और सेवा गुणवत्ता में सुधार होता है।- **आंतरिक सहयोग**: टीम साझा दस्तावेजों और ईमेल के साथ एआई चैट इंटरफ़ेस के माध्यम से अधिक प्रभावी ढंग से सहयोग कर सकती है, यह सुनिश्चित करते हुए कि सभी को प्रासंगिक जानकारी तक पहुँच हो।- **डेटा विश्लेषण**: विश्लेषक अंतर्दृष्टि निकालने और रिपोर्ट तैयार करने के लिए बड़ी मात्रा में दस्तावेजों और ईमेल को क्वेरी कर सकते हैं, जिससे डेटा विश्लेषण प्रक्रिया सुव्यवस्थित होती है।### उपयोगकर्ता अनुभव:- **सहज इंटरफ़ेस**: संवादी इंटरफ़ेस को सहज डिजाइन किया गया है, जिससे सीखने की अवधि कम हो जाती है और उपयोगकर्ता एआई की क्षमताओं का पूरा लाभ उठा सकते हैं।- **सटीकता और प्रासंगिकता**: उपयोगकर्ता प्रश्नों के संदर्भ और बारीकियों को समझकर, डोकू-चैट सटीक और प्रासंगिक प्रतिक्रियाएँ प्रदान करता है, जिससे निर्णय लेने और उत्पादकता में वृद्धि होती है।### परिणाम और प्रभाव:- **उत्पादकता में वृद्धि**: कर्मचारी अपने दस्तावेज़ों और ईमेल को अधिक कुशलता से एक्सेस और इंटरैक्ट कर सकते हैं क्योंकि व्यवसायों में उत्पादकता में महत्वपूर्ण वृद्धि होती है।- **बढ़ी हुई सुरक्षा**: जर्मनी में सभी डेटा को प्रोसेस और स्टोर करके, डोकू-चैट डेटा उल्लंघन के जोखिम को कम करता है और स्थानीय नियमों का अनुपालन सुनिश्चित करता है।- **सहयोग में सुधार**: टीमों को बेहतर संचार और सहयोग से लाभ होता है, क्योंकि प्रासंगिक जानकारी एआई चैट इंटरफ़ेस के माध्यम से आसानी से उपलब्ध होती है।- **लागत दक्षता**: ऑटोस्केलिंग आर्किटेक्चर इष्टतम संसाधन उपयोग सुनिश्चित करता है, उच्च प्रदर्शन बनाए रखते हुए परिचालन लागत को कम करता है।### निष्कर्ष:डोकू-चैट व्यवसायों के लिए अपने दस्तावेज़ और ईमेल इंटरैक्शन को बढ़ाने के लिए एक सुरक्षित, स्केलेबल और कुशल समाधान प्रदान करता है। जर्मनी में होस्ट किए गए एआई मॉडल और एक ऑटोस्केलिंग पायथन माइक्रोसर्विस आर्किटेक्चर का उपयोग करके, डोकू-चैट डेटा संरक्षण नियमों का अनुपालन सुनिश्चित करते हुए शक्तिशाली एआई-संचालित क्षमताओं को प्रदान करता है। यह नवीन प्लेटफ़ॉर्म न केवल उत्पादकता को बढ़ावा देता है, बल्कि डेटा सुरक्षा में भी सुधार करता है, जिससे यह आधुनिक व्यवसायों के लिए एक अमूल्य उपकरण बन जाता है।

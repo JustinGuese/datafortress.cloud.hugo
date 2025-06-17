@@ -60,10 +60,10 @@ isMenuLarge = true
 
 [[main]]
 parent = "产品"
-name = "DokuChat"
+name = "DocumentChat"
 pre = "<i class='dropdown-icon fas fa-users'></i>"
 post = "<small class='dropdown-subtitle'>AI SaaS 应用程序，允许用户与他们的电子邮件和文档聊天</small>"
-url = "/products/dokuchat"
+url = "/products/DocumentChat"
 weight = 1
 
 [[main]]
@@ -145,8 +145,8 @@ weight = 4
 
 # footer menu middle
 [[footer_middle]]
-name = "DokuChat"
-url = "/products/dokuchat"
+name = "DocumentChat"
+url = "/products/DocumentChat"
 weight = 1
 
 [[footer_middle]]

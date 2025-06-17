@@ -63,7 +63,7 @@ parent = "उत्पाद"
 name = "डोकूचैट"
 pre = "<i class='dropdown-icon fas fa-users'></i>"
 post = "<small class='dropdown-subtitle'>उपयोगकर्ताओं को उनके ईमेल और दस्तावेज़ों के साथ चैट करने की अनुमति देने के लिए एआई सास एप्लिकेशन</small>"
-url = "/products/dokuchat"
+url = "/products/DocumentChat"
 weight = 1
 
 [[main]]
@@ -146,7 +146,7 @@ weight = 4
 # footer menu middle
 [[footer_middle]]
 name = "डोकूचैट"
-url = "/products/dokuchat"
+url = "/products/DocumentChat"
 weight = 1
 
 [[footer_middle]]
