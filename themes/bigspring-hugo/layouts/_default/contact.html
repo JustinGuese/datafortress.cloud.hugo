@@ -1,19 +1,17 @@
 {{ define "main" }}
 
-{{ partial "page-header.html" .}}
-
-<section class="section">
+<!-- Futuristic contact hero -->
+<section class="section contact-hero animated-gradient-bg fade-in-up" style="position: relative; z-index:1;">
   <div class="container">
-    <div class="row gy-5">
-      <div class="col-lg-6">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6 fade-in-left">
         <div class="content">
           {{ .Content }}
-          
-          <a id="book_meeting_button" class="btn btn-primary btn-sm mt-2 text-white" href="https://calendly.com/justin-guese/15min" target="_blank">Book a meeting with Calendly</a>
+          <a id="book_meeting_button" class="btn btn-primary btn-sm mt-2 text-white magnetic" href="https://calendly.com/justin-guese/15min" target="_blank">Book a meeting with Calendly</a>
         </div>
       </div>
-      <div class="col-lg-6">
-        <form method="POST" class="row g-4" action="{{site.Params.contact_form_action | safeURL}}">
+      <div class="col-lg-6 fade-in-right">
+        <form method="POST" class="row g-4 contact-form-card" action="{{site.Params.contact_form_action | safeURL}}">
           <div class="col-lg-6">
             <label class="mb-1" for="fname">{{ i18n "fname"}} <span class="text-danger">*</span></label>
             <input class="form-control shadow-none" type="text" name="first_name" placeholder="{{ i18n `fname`}}" required>
@@ -31,12 +29,13 @@
             <textarea class="form-control shadow-none" name="message" rows="4" placeholder="{{i18n `message`}}"></textarea>
           </div>
           <div class="col-lg-12">
-            <button class="btn btn-primary btn-sm mt-2" type="submit">{{ i18n "send"}}</button>
+            <button class="btn btn-primary btn-sm mt-2 magnetic" type="submit">{{ i18n "send"}}</button>
           </div>
         </form>
       </div>
     </div>
   </div>
 </section>
+
 
 {{ end }}

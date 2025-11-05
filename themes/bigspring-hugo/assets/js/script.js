@@ -398,6 +398,121 @@
         });
       });
 
+      // ============================================
+      // HOMEPAGE ENHANCEMENTS: PARALLAX + TILT 3D
+      // ============================================
+      // Layered parallax on banner elements for subtle depth
+      if (banner) {
+        const bannerH1 = banner.querySelector("h1");
+        const bannerP = banner.querySelector("p");
+        const bannerBtn = banner.querySelector(".btn");
+        const bannerImg = banner.querySelector(".floating, img, picture");
+
+        if (bannerH1) {
+          gsap.to(bannerH1, {
+            yPercent: -8,
+            ease: "none",
+            scrollTrigger: {
+              trigger: banner,
+              start: "top bottom",
+              end: "bottom top",
+              scrub: true,
+            },
+          });
+        }
+        if (bannerP) {
+          gsap.to(bannerP, {
+            yPercent: -5,
+            ease: "none",
+            scrollTrigger: {
+              trigger: banner,
+              start: "top bottom",
+              end: "bottom top",
+              scrub: true,
+            },
+          });
+        }
+        if (bannerBtn) {
+          gsap.to(bannerBtn, {
+            yPercent: -3,
+            ease: "none",
+            scrollTrigger: {
+              trigger: banner,
+              start: "top bottom",
+              end: "bottom top",
+              scrub: true,
+            },
+          });
+        }
+        if (bannerImg) {
+          gsap.to(bannerImg, {
+            yPercent: -12,
+            ease: "none",
+            scrollTrigger: {
+              trigger: banner,
+              start: "top bottom",
+              end: "bottom top",
+              scrub: true,
+            },
+          });
+        }
+      }
+
+      // Subtle parallax on feature cards
+      gsap.utils.toArray(".feature-card").forEach((el) => {
+        gsap.to(el, {
+          yPercent: -6,
+          ease: "none",
+          scrollTrigger: {
+            trigger: el,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true,
+          },
+        });
+      });
+
+      // Cursor-based 3D tilt for interactive elements
+      // Explicitly target feature cards and other card-3d elements
+      const tiltElements = document.querySelectorAll('.feature-card, .card-3d, .tilt');
+      tiltElements.forEach((el) => {
+        const maxTilt = 8; // degrees - slightly more pronounced for feature cards
+        const damp = 0.12; // smoothing duration - faster response
+
+        // Use a single event listener per element
+        el.addEventListener('mousemove', function (e) {
+          const rect = el.getBoundingClientRect();
+          const relX = e.clientX - rect.left;
+          const relY = e.clientY - rect.top;
+          const px = (relX / rect.width) * 2 - 1;   // -1 .. 1
+          const py = (relY / rect.height) * 2 - 1;  // -1 .. 1
+          const rotateY = px * maxTilt;
+          const rotateX = -py * maxTilt;
+
+          // Use immediate render to avoid conflicts with scroll animations
+          gsap.to(el, {
+            rotateX: rotateX,
+            rotateY: rotateY,
+            transformPerspective: 1000,
+            transformOrigin: 'center center',
+            duration: damp,
+            ease: 'power2.out',
+            overwrite: true // Ensure we overwrite any conflicting transforms
+          });
+        });
+
+        el.addEventListener('mouseleave', function () {
+          gsap.to(el, {
+            rotateX: 0,
+            rotateY: 0,
+            transformPerspective: 1000,
+            duration: 0.6,
+            ease: 'power3.out',
+            overwrite: true
+          });
+        });
+      });
+
       // Banner entrance animation
       const banner = document.querySelector(".banner");
       if (banner) {
@@ -455,6 +570,63 @@
         });
       };
       checkViewport();
+
+      // ============================================
+      // CONTACT PAGE EFFECTS
+      // ============================================
+      const contactHero = document.querySelector('.contact-hero');
+      if (contactHero) {
+        // Subtle parallax on contact hero content
+        const contactContainer = contactHero.querySelector('.container');
+        if (contactContainer) {
+          gsap.to(contactContainer, {
+            yPercent: -10,
+            ease: 'none',
+            scrollTrigger: {
+              trigger: contactHero,
+              start: 'top bottom',
+              end: 'bottom top',
+              scrub: true,
+            }
+          });
+        }
+
+        // 3D tilt on the contact form card following cursor
+        const formCard = contactHero.querySelector('.contact-form-card');
+        if (formCard) {
+          const maxTilt = 6; // degrees
+          const damp = 0.15; // smoothing
+
+          formCard.addEventListener('mousemove', function (e) {
+            const rect = formCard.getBoundingClientRect();
+            const relX = e.clientX - rect.left;
+            const relY = e.clientY - rect.top;
+            const px = (relX / rect.width) * 2 - 1;   // -1 .. 1
+            const py = (relY / rect.height) * 2 - 1;  // -1 .. 1
+            const rotateY = px * maxTilt;
+            const rotateX = -py * maxTilt;
+
+            gsap.to(formCard, {
+              rotateX: rotateX,
+              rotateY: rotateY,
+              transformPerspective: 800,
+              transformOrigin: 'center',
+              duration: damp,
+              ease: 'power2.out'
+            });
+          });
+
+          formCard.addEventListener('mouseleave', function () {
+            gsap.to(formCard, {
+              rotateX: 0,
+              rotateY: 0,
+              transformPerspective: 800,
+              duration: 0.6,
+              ease: 'power3.out'
+            });
+          });
+        }
+      }
     } else {
       // Fallback: Use Intersection Observer for scroll animations if GSAP is not available
       const observerOptions = {
