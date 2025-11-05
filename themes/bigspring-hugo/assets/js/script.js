@@ -705,6 +705,25 @@
         });
       }, 2000);
     }
+
+    // Initialize 3D hero if available (desktop-only checks)
+    (function initHero3DIfAvailable(){
+      try {
+        const heroMount = document.getElementById('hero3d');
+        const coarse = window.matchMedia && window.matchMedia('(pointer:coarse)').matches;
+        const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        // Allow on coarse pointers too (tablets/touch), but hero3d will auto-scale quality
+        if (heroMount && window.THREE && !reduce) {
+          console.log('hero3d: initializing');
+          if (typeof window.initHero3D === 'function') { window.initHero3D(heroMount); }
+          else { console.log('hero3d: init function not found'); }
+        } else {
+          if (!heroMount) console.log('hero3d: mount not found');
+          if (!window.THREE) console.log('hero3d: THREE not loaded');
+          if (reduce) console.log('hero3d: disabled due to prefers-reduced-motion');
+        }
+      } catch (e) {}
+    })();
   }
   
   // Make all content visible immediately (fallback)
