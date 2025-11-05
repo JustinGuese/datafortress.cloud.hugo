@@ -1,0 +1,59 @@
+// Interactive hover headline effects (global)
+
+.hover-headline {
+  display: inline-block;
+  position: relative;
+  line-height: 1.1;
+  letter-spacing: 0.06em;
+  perspective: 800px;
+
+  .char {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1),
+                text-shadow 0.35s ease,
+                color 0.35s ease;
+    will-change: transform;
+    transform-origin: center bottom;
+  }
+
+  // space character sizing
+  .char.space {
+    width: 0.45em;
+    transform: none !important;
+  }
+
+  // subtle default shadow for depth
+  &.with-shadow .char {
+    text-shadow: 0 8px 18px rgba(0,0,0,0.25);
+  }
+
+  // hover wave: alternate characters move at different magnitudes
+  &:hover .char:nth-child(odd) {
+    transform: translateY(-6px) rotateX(8deg) rotateY(-4deg);
+  }
+  &:hover .char:nth-child(even) {
+    transform: translateY(-2px) rotateX(4deg) rotateY(3deg);
+  }
+
+  // underline sweep on hover
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    width: 0;
+    background: linear-gradient(90deg, #0AA8A7, #376f92);
+    transition: width 0.45s ease;
+  }
+  &:hover::after { width: 100%; }
+}
+
+// Variant for very large headlines
+.hover-headline.lg {
+  letter-spacing: 0.08em;
+  .char { transition-duration: 0.45s; }
+}
+
+
