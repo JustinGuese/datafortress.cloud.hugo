@@ -1,7 +1,7 @@
 // start header style
 .navigation {
   background-color: transparent;
-  padding: 10px 0;
+  padding: 15px 0;
   transition: 0.15s ease-out;
   position: relative;
   z-index: 9999;
@@ -190,11 +190,7 @@
   }
 
   @media (min-width: 992px) {
-    .navbar { position: relative; }
-
     .navbar .dropdown-menu {
-      position: absolute;
-      top: calc(100% + 8px);
       display: block;
       height: 0;
       visibility: hidden;
@@ -204,7 +200,7 @@
       transform: translateX(-50%);
       border-radius: 5px;
       background-color: transparent;
-      z-index: 10000;
+      z-index: 1;
 
       &::after {
         position: absolute;

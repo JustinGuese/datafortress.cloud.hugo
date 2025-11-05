@@ -159,16 +159,11 @@ body {
 
 main,
 section,
+.navigation,
 .banner,
 .container {
   position: relative;
   z-index: 1;
-}
-
-// Ensure the top navigation always stacks above hero/banner
-.navigation {
-  position: relative;
-  z-index: 10001;
 }
 
 // Scroll Reveal Animations
@@ -198,15 +193,6 @@ section,
   transform: translateY(0) translateX(0) scale(1) !important;
   visibility: visible !important;
 }
-
-// Hero 3D canvas layering
-.hero3d-canvas {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-}
-.banner > .container { position: relative; z-index: 1; }
 
 // Ensure main content is visible
 main,
