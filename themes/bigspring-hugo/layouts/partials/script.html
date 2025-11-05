@@ -30,13 +30,6 @@
   integrity="{{ $scripts.Data.Integrity }}"
   src="{{ $scripts.RelPermalink }}"></script>
 
-<!-- hero3d module: inline-built and exposed globally -->
-{{ $hero := resources.Get "js/hero3d.js" }}
-{{ if hugo.IsProduction }}
-{{ $hero = $hero | minify | fingerprint }}
-{{ end }}
-<script crossorigin="anonymous" {{ if hugo.IsProduction }} integrity="{{ $hero.Data.Integrity }}"{{ end }} type="application/javascript">{{ $hero.Content | safeJS }}</script>
-
 
 <!-- font family -->
 {{$pf:= site.Params.variables.font_primary}}
