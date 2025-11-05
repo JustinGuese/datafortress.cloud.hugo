@@ -189,7 +189,7 @@
         el.classList.add('with-shadow');
       });
     })();
-    // Initialize Particles.js
+    // Initialize Particles.js for header/global (if present)
     if (typeof particlesJS !== "undefined" && document.getElementById("particles-js")) {
       particlesJS("particles-js", {
       particles: {
@@ -253,7 +253,7 @@
         },
       },
       interactivity: {
-        detect_on: "canvas",
+        detect_on: "window",
         events: {
           onhover: {
             enable: true,
@@ -292,6 +292,27 @@
         },
       },
       retina_detect: true,
+      });
+    }
+
+    // Initialize a second, brighter particle layer for the hero (if present)
+    if (typeof particlesJS !== "undefined" && document.getElementById("particles-hero")) {
+      particlesJS("particles-hero", {
+        particles: {
+          number: { value: 100, density: { enable: true, value_area: 700 } },
+          color: { value: "#38E8E6" },
+          shape: { type: "circle", stroke: { width: 0, color: "#000000" } },
+          opacity: { value: 0.5, random: false },
+          size: { value: 3, random: true },
+          line_linked: { enable: true, distance: 140, color: "#38E8E6", opacity: 0.35, width: 1 },
+          move: { enable: true, speed: 1.2, random: true, straight: false, out_mode: "out" }
+        },
+        interactivity: {
+          detect_on: "window",
+          events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: true, mode: "repulse" }, resize: true },
+          modes: { grab: { distance: 160, line_linked: { opacity: 0.6 } }, repulse: { distance: 180, duration: 0.3 } }
+        },
+        retina_detect: true
       });
     }
 

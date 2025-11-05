@@ -19,6 +19,11 @@
 {{ end }}
 {{ end }}
 
+{{/* Conditionally include particles.js for homepage/when enabled */}}
+{{ if or site.Params.enable_particles .IsHome }}
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" crossorigin="anonymous"></script>
+{{ end }}
+
 <!-- main script X-->
 {{ $scripts = $scripts | append (resources.Get "js/script.js") }}
 {{ $scripts = $scripts | resources.Concat "js/scripts.js" }}
