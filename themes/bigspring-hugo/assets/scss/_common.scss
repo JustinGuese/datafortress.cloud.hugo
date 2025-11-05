@@ -87,6 +87,50 @@ a:hover {
   }
 }
 
+// Minimal, spacious styling for product pages
+.product-page {
+  // increase vertical rhythm slightly
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+
+  @include tablet {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+  }
+
+  // make content breathe
+  .content > * + * {
+    margin-top: 0.9rem;
+  }
+
+  // tone down glass effect for a more serious look
+  .glass-card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  }
+
+  // product feature cards: consistent spacing and minimal typography
+  .product-feature-card {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .display-3 {
+      line-height: 1;
+    }
+
+    h2 {
+      margin-bottom: 0.25rem;
+    }
+
+    .content {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
 .bg-cover {
   background-size: cover;
   background-position: center center;
