@@ -17,16 +17,16 @@
 	<!-- cache partial only in production -->
 	{{ if hugo.IsProduction }}
 	{{ partialCached "preloader.html" . }}
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5G9F7KK"
-		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
+	<!-- Google Tag Manager removed -->
 	{{ else }}
 	{{ partial "preloader.html" . }}
 	{{ end }}
 	
 	<!-- header (don't cache it) -->
 	{{ partial "header.html" . }}
+
+	<!-- Global Particles Background -->
+	<div id="particles-js"></div>
 
 	<main>
 		{{ block "main" . }}{{ end }}
