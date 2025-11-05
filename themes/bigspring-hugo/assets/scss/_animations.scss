@@ -142,13 +142,13 @@
 }
 
 // Particle Background Container
-#particles-js {
-  position: fixed;
+#particles-js,
+#particles-hero {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  z-index: 1; // sit above banner background overlay, below content
   pointer-events: none;
 }
 
@@ -157,13 +157,10 @@ body {
   position: relative;
 }
 
-main,
-section,
-.navigation,
-.banner,
-.container {
+// Ensure only banner content sits above particles; avoid lifting all sections
+.banner > .container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 // Scroll Reveal Animations
