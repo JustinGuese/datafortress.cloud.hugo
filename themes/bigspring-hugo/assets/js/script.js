@@ -168,7 +168,7 @@
           el.classList.remove('holographic');
           el.style.webkitTextFillColor = '';
           el.style.background = '';
-          el.style.color = '#fff';
+          el.style.color = 'var(--color-white)';
         }
 
         const text = el.textContent;
