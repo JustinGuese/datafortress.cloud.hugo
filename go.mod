@@ -27,5 +27,5 @@ require (
 	github.com/gethugothemes/hugo-modules/shortcodes/table-of-contents v0.0.0-20230731033118-be0c1c964f76 // indirect
 	github.com/gethugothemes/hugo-modules/tab v0.0.0-20230731033118-be0c1c964f76 // indirect
 	github.com/gethugothemes/hugo-modules/videos v0.0.0-20230731033118-be0c1c964f76 // indirect
-	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20003 // indirect
+	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 // indirect
 )

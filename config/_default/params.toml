@@ -14,6 +14,10 @@ logo_text = "DataFortress.cloud"
 # theme-mode
 theme_switcher = true
 theme_default = "system" # available options [light/dark/system]
+# site-wide feature toggles (default enabled)
+enable_animations = true
+enable_particles = true
+enable_hero3d = true
 # Main Sections
 mainSections = ["blog"]
 # contact form action
