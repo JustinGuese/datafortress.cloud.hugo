@@ -158,6 +158,37 @@
 
   // Wait for GSAP and ScrollTrigger to be available
   function initAnimations() {
+    // Setup interactive hover headlines (split into spans) regardless of GSAP availability
+    (function setupHoverHeadlines() {
+      const nodes = document.querySelectorAll('.hover-headline');
+      nodes.forEach((el) => {
+        if (el.querySelector('.char')) return; // already processed
+        // If element has holographic gradient text, remove it to avoid transparent spans
+        if (el.classList.contains('holographic')) {
+          el.classList.remove('holographic');
+          el.style.webkitTextFillColor = '';
+          el.style.background = '';
+          el.style.color = '#fff';
+        }
+
+        const text = el.textContent;
+        const frag = document.createDocumentFragment();
+        for (let i = 0; i < text.length; i++) {
+          const span = document.createElement('span');
+          span.className = 'char';
+          if (text[i] === ' ') {
+            span.classList.add('space');
+            span.textContent = '\u00A0'; // non-breaking space for consistent width
+          } else {
+            span.textContent = text[i];
+          }
+          frag.appendChild(span);
+        }
+        el.textContent = '';
+        el.appendChild(frag);
+        el.classList.add('with-shadow');
+      });
+    })();
     // Initialize Particles.js
     if (typeof particlesJS !== "undefined" && document.getElementById("particles-js")) {
       particlesJS("particles-js", {
@@ -267,6 +298,9 @@
     // Initialize GSAP ScrollTrigger
     if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
       gsap.registerPlugin(ScrollTrigger);
+
+      // Query shared elements early for reuse below
+      const banner = document.querySelector(".banner");
 
       // Fade in up animations
       gsap.utils.toArray(".fade-in-up").forEach((element) => {
@@ -514,9 +548,12 @@
       });
 
       // Banner entrance animation
-      const banner = document.querySelector(".banner");
       if (banner) {
-        const h1 = banner.querySelector("h1");
+        // Ensure homepage h1 has hover-headline class
+        const h1 = banner.querySelector('h1');
+        if (h1 && !h1.classList.contains('hover-headline')) {
+          h1.classList.add('hover-headline', 'lg');
+        }
         const p = banner.querySelector("p");
         const btn = banner.querySelector(".btn");
         

@@ -6,7 +6,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-auto text-center">
-        <h1 class="mb-4 pb-2 holographic">{{ .title | markdownify }}</h1>
+        <h1 class="mb-4 pb-2 holographic hover-headline">{{ .title | markdownify }}</h1>
         <p class="mb-4 fade-in-up" style="animation-delay: 0.2s;">{{ .content | markdownify }}</p>
         <div class="mb-5 fade-in-up" style="animation-delay: 0.4s;">
           {{ if .button.enable }}
