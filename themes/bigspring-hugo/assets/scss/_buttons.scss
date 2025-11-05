@@ -57,6 +57,23 @@
   }
 }
 
+// Improve vertical spacing between text blocks and the next button
+// Applies when a button follows common text elements
+.content + .btn,
+p + .btn,
+.lead + .btn,
+h2 + .btn,
+h3 + .btn,
+h4 + .btn {
+  margin-top: 1rem;
+}
+
+// Slightly larger spacing inside major sections and banner areas
+.section .btn,
+.banner .btn {
+  margin-top: 0.75rem;
+}
+
 .btn-outline-primary {
   color: $color-primary;
   border-color: $color-primary;

@@ -1,22 +1,25 @@
 {{define "main"}}
 
-<section class="section">
+<!-- Particles Background -->
+<div id="particles-js"></div>
+
+<section class="section animated-gradient-bg fade-in-up" style="position: relative; z-index: 1;">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 col-md-10">
         <p class="h6 opacity-50 mb-1">{{i18n `lets_meet`}}</p>
-        <h1 class="h2 mb-0 text-primary">{{.Title | markdownify}}</h1>
-        <div class="content border-top pt-5 mt-5">
+        <h1 class="h2 mb-0 holographic fade-in-up">{{.Title | markdownify}}</h1>
+        <div class="content border-top pt-5 mt-5 fade-in-up" style="animation-delay: 0.15s;">
           {{.Content}}
         </div>
         <hr class="my-5">
         <div class="row">
           <div class="col-6 text-center text-md-start">
             {{with .NextInSection }} 
-            <a href="{{.RelPermalink}}" class="d-inline-block text-reset is-hoverable shadow-none">
+            <a href="{{.RelPermalink}}" class="d-inline-block text-reset is-hoverable shadow-none glass-card card-3d magnetic fade-in-left">
               {{ $title:= .Title }}
               {{ with .Params.logo }}
-              <div class="rounded-2" style="background:#f9f9f9">
+              <div class="rounded-2">
                 {{ partial "image" (dict "Src" . "Alt" $title "Size" "x100")}}
               </div>
               {{end}}
@@ -27,9 +30,9 @@
           </div>
           <div class="col-6 text-center text-md-end">
             {{with .PrevInSection }}
-            <a href="{{.RelPermalink}}" class="d-inline-block text-reset is-hoverable shadow-none">
+            <a href="{{.RelPermalink}}" class="d-inline-block text-reset is-hoverable shadow-none glass-card card-3d magnetic fade-in-right">
               {{with .Params.logo}}
-              <div class="rounded-2" style="background:#f9f9f9">
+              <div class="rounded-2">
                 {{ partial "image.html" (dict "Src" . "Alt" "image" "Size" "x100") }}
               </div>
               {{end}}
@@ -48,19 +51,19 @@
 {{with site.GetPage "portfolio"}}
 {{ if .Params.call_to_action.enable }}
 {{ with .Params.call_to_action }}
-<section class="section pt-0">
+<section class="section pt-0 fade-in-up">
   <div class="container">
     <div class="row g-6 align-items-center justify-content-center text-md-left">
-      <div class="col-lg-4 col-md-5 mb-4 mb-md-0 text-center">
-        {{ partial "image" (dict "Src" .image "Alt" "call to action image" "Class" "img-fluid w-100") }}
+      <div class="col-lg-4 col-md-5 mb-4 mb-md-0 text-center fade-in-left">
+        {{ partial "image" (dict "Src" .image "Alt" "call to action image" "Class" "img-fluid w-100 floating") }}
       </div>
       <div class="col-lg-4">
         <div class="ps-0 ps-lg-5 text-center text-lg-start">
-          <h2 class="section-title h3">{{ .title | markdownify }}</h2>
-          {{with .content }}<p class="mb-4">{{ . | markdownify }}</p>{{ end }}
+          <h2 class="section-title h3 holographic fade-in-up">{{ .title | markdownify }}</h2>
+          {{with .content }}<p class="mb-4 fade-in-up" style="animation-delay: 0.15s;">{{ . | markdownify }}</p>{{ end }}
           {{ if .button.enable }}
           {{ with .button }}
-          <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a>
+          <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn btn-primary magnetic fade-in-up" style="animation-delay: 0.3s;">{{ .label }}</a>
           {{ end }}
           {{ end }}
         </div>
