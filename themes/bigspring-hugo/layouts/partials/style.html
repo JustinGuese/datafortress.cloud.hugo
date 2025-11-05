@@ -1,24 +1,21 @@
-<!-- DNS preconnect -->
+<!-- DNS preconnect (trimmed to essentials) -->
 <meta http-equiv="x-dns-prefetch-control" content="on" />
-<link rel="preconnect" href="//ajax.googleapis.com" />
-<link
-  rel="preconnect"
-  href="https://fonts.gstatic.com"
-  crossorigin="anonymous" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
 <link rel="preconnect" href="https://use.fontawesome.com" crossorigin />
+<link rel="dns-prefetch" href="https://use.fontawesome.com" />
+{{/* Add the following when corresponding features are enabled */}}
+{{ if or site.Params.enable_animations .IsHome }}
 <link rel="preconnect" href="//cdnjs.cloudflare.com" />
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+{{ end }}
+{{ if or site.Params.enable_particles .IsHome }}
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+{{ end }}
+{{/* Analytics preconnects (kept if analytics partials are active) */}}
 <link rel="preconnect" href="//www.googletagmanager.com" />
 <link rel="preconnect" href="//www.google-analytics.com" />
-<link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-<link rel="dns-prefetch" href="https://use.fontawesome.com" />
-<link rel="dns-prefetch" href="//ajax.googleapis.com" />
-<link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
-<link rel="dns-prefetch" href="//www.googletagmanager.com" />
-<link rel="dns-prefetch" href="//www.google-analytics.com" />
-<link rel="dns-prefetch" href="//fonts.googleapis.com" />
-<link rel="dns-prefetch" href="//connect.facebook.net" />
-<link rel="dns-prefetch" href="//platform.linkedin.com" />
-<link rel="dns-prefetch" href="//platform.twitter.com" />
 
 <!-- plugins + stylesheet -->
 {{ $styles := slice }}

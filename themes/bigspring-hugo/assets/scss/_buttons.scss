@@ -30,11 +30,78 @@
   background: $color-primary;
   color: $white;
   border-color: $color-primary;
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+  }
+  
+  &:hover::before {
+    width: 300px;
+    height: 300px;
+  }
+  
+  &:hover {
+    box-shadow: 0 0 20px rgba($color-primary, 0.6), 0 0 40px rgba($color-primary, 0.4), 0 0 60px rgba($color-primary, 0.2);
+    transform: translateY(-2px);
+  }
+}
+
+// Improve vertical spacing between text blocks and the next button
+// Applies when a button follows common text elements
+.content + .btn,
+p + .btn,
+.lead + .btn,
+h2 + .btn,
+h3 + .btn,
+h4 + .btn {
+  margin-top: 1rem;
+}
+
+// Slightly larger spacing inside major sections and banner areas
+.section .btn,
+.banner .btn {
+  margin-top: 0.75rem;
 }
 
 .btn-outline-primary {
   color: $color-primary;
   border-color: $color-primary;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba($color-primary, 0.2), transparent);
+    transition: left 0.5s;
+  }
+  
+  &:hover::before {
+    left: 100%;
+  }
+  
+  &:hover {
+    background: $color-primary;
+    color: $white;
+    box-shadow: 0 0 15px rgba($color-primary, 0.5), 0 0 30px rgba($color-primary, 0.3);
+    transform: translateY(-2px);
+  }
 }
 
 .btn-secondary {
@@ -67,6 +134,18 @@
 .btn-link {
   color: $color-primary;
   text-decoration: none;
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, $color-primary, $color-secondary);
+    transition: width 0.3s ease;
+  }
 
   i,
   svg {
@@ -74,6 +153,7 @@
     margin-left: 5px;
     margin-bottom: 1px;
     transition: 0.2s ease;
+    filter: drop-shadow(0 0 3px rgba($color-primary, 0.5));
   }
 
   &:active,
@@ -82,9 +162,14 @@
   &.active {
     color: $color-primary;
 
+    &::after {
+      width: 100%;
+    }
+
     i,
     svg {
       margin-left: 10px;
+      filter: drop-shadow(0 0 8px rgba($color-primary, 0.8));
     }
   }
 }

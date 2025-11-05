@@ -1,0 +1,112 @@
+// Contact page - futuristic mind-blowing styling
+
+// Hero with animated grid lines overlay
+.contact-hero {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 30px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 30px
+    );
+    transform: translateZ(0);
+    animation: contactGridDrift 20s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  // darker overlay to improve contrast
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 30%, rgba(0,0,0,0.25), transparent 45%),
+                linear-gradient(180deg, rgba(0,0,0,0.40), rgba(0,0,0,0.15));
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  > .container { position: relative; z-index: 1; }
+}
+
+@keyframes contactGridDrift {
+  0% { background-position: 0 0, 0 0; }
+  50% { background-position: 120px 120px, -120px -120px; }
+  100% { background-position: 0 0, 0 0; }
+}
+
+// Form card with subtle 3D and gradient accent border
+.contact-form-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+
+  // animated gradient border
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(270deg, #0AA8A7, #376f92, #5a9fd4, #376f92, #0AA8A7);
+    background-size: 300% 300%;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    // Use 'subtract' for -webkit-mask-composite to match 'exclude' in mask-composite (see MDN docs)
+    -webkit-mask-composite: subtract;
+            mask-composite: exclude;
+    animation: gradientShift 12s ease infinite;
+    z-index: -1;
+  }
+
+  // subtle tilt on hover
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  transform-style: preserve-3d;
+  &:hover { transform: rotateX(3deg) rotateY(-3deg) translateY(-4px); }
+
+  .form-control {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: $white;
+  }
+
+  .form-control:focus {
+    border-color: rgba(10, 168, 167, 0.7);
+    box-shadow: 0 0 0 0.2rem rgba(10, 168, 167, 0.15);
+    background: rgba(255, 255, 255, 0.12);
+    color: $white;
+  }
+
+  label { color: rgba(255, 255, 255, 0.85); }
+}
+
+// Minimal divider for contact page
+.contact-divider { opacity: 0.6; }
+
+// Contact info blocks if present
+.contact-info {
+  .info-item {
+    position: relative;
+    padding: 1rem 0;
+  }
+}
+
+
