@@ -70,7 +70,8 @@
     background: linear-gradient(270deg, #0AA8A7, #376f92, #5a9fd4, #376f92, #0AA8A7);
     background-size: 300% 300%;
     -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
+    // Use 'subtract' for -webkit-mask-composite to match 'exclude' in mask-composite (see MDN docs)
+    -webkit-mask-composite: subtract;
             mask-composite: exclude;
     animation: gradientShift 12s ease infinite;
     z-index: -1;
