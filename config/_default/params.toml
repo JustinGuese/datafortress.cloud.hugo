@@ -103,27 +103,27 @@ content = "This site uses cookies. By continuing to use this website, you agree 
 button = "I Accept"
 
 ############################# social site ########################
-[[social]]
+[[params.social]]
 title = "facebook"
 icon = "fab fa-facebook" # fontawesome icon pack : https://fontawesome.com/icons/
 link = "https://www.facebook.com/datafortress.cloud"
 
-# [[social]]
+# [[params.social]]
 # title = "twitter"
 # icon = "fab fa-twitter" # fontawesome icon pack : https://fontawesome.com/icons/
 # link = "#!"
 
-# [[social]]
+# [[params.social]]
 # title = "instagram"
 # icon = "fab fa-instagram" # fontawesome icon pack : https://fontawesome.com/icons/
 # link = "#!"
 
-[[social]]
+[[params.social]]
 title = "github"
 icon = "fab fa-github" # fontawesome icon pack : https://fontawesome.com/icons/
 link = "https://github.com/JustinGuese"
 
-[[social]]
+[[params.social]]
 title = "linkedin"
 icon = "fab fa-linkedin" # fontawesome icon pack : https://fontawesome.com/icons/
 link = "https://www.linkedin.com/company/49084538"

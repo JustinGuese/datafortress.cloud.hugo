@@ -1,0 +1,23 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container">
+    <h1 class="h3 title mb-4">{{ .Title }}</h1>
+    <div class="row gx-md-5 gy-6">
+      {{ range .Pages }}
+        <div class="col-lg-4 col-md-6 pb-4">
+          <div class="card bg-transparent border-0">
+            {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-2 mb-4" "Size" "460x") }}
+            <div class="fw-500 mb-2"><i class="far fa-calendar-alt text-dark me-1"></i> {{ time.Format ":date_long" .PublishDate }}</div>
+            <div class="card-body p-0">
+              <h3 class="h5"><a href="{{ .Permalink }}" title="{{ .Title }}" class="text-dark d-inline-block">{{ .Title }}</a></h3>
+              <p class="mb-4">{{ .Summary }}</p>
+              <a href="{{ .Permalink }}" class="btn btn-sm btn-primary btn-sm">{{ i18n `read_more` }}</a>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+

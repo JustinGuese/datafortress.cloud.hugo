@@ -1,2 +1,14 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container">
+    <h1 class="h3 title mb-4">{{ .Title }}</h1>
+    <ul>
+      {{ range .Data.Terms.Alphabetical }}
+        <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}
 <!-- Redirect to homepage -->
 <script>window.location.replace("{{ site.BaseURL | relLangURL }}");</script>
