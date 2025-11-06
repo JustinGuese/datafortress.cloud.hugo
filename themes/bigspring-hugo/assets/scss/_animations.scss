@@ -43,12 +43,12 @@
   background: radial-gradient(circle at 20% 30%, rgba(0,0,0,0.25), transparent 40%),
               linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.15));
   pointer-events: none;
-  z-index: 0;
+  z-index: 0; // Below particles, above background
 }
 
 .banner.animated-gradient-bg > .container {
   position: relative;
-  z-index: 1;
+  z-index: 3; // Above particles-hero (z-index: 2)
 }
 
 // Glassmorphism Effect
@@ -141,15 +141,34 @@
   animation: shimmer 3s infinite;
 }
 
-// Particle Background Container
-#particles-js,
+// Particles: global container fixed behind content
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; // behind content
+  pointer-events: none;
+  canvas { display: block; width: 100% !important; height: 100% !important; }
+}
+
+// Particles: hero-local container sits inside banner, below its content
 #particles-hero {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  z-index: 1; // sit above banner background overlay, below content
+  z-index: 2; // Above ::after overlay (z-index: 0), below .banner > .container (z-index: 2, but particles render first)
   pointer-events: none;
+  canvas { 
+    display: block; 
+    width: 100% !important; 
+    height: 100% !important;
+    opacity: 1 !important; // Ensure canvas is fully visible
+  }
 }
 
 // Ensure content is above particles
@@ -160,7 +179,7 @@ body {
 // Ensure only banner content sits above particles; avoid lifting all sections
 .banner > .container {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 // Scroll Reveal Animations

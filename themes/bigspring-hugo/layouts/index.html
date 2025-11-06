@@ -3,7 +3,9 @@
 <!-- banner -->
 {{ with .Params.banner }}
 <section class="banner animated-gradient-bg" style="position: relative; z-index: 1;">
-  <div class="container" style="position: relative; z-index: 2;">
+  <!-- Local particles container for hero -->
+  <div id="particles-hero" aria-hidden="true"></div>
+  <div class="container" style="position: relative; z-index: 3;">
     <div class="row">
       <div class="col-lg-10 mx-auto text-center">
         <h1 class="mb-4 pb-2 holographic hover-headline">{{ .title | markdownify }}</h1>

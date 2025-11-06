@@ -153,6 +153,84 @@
   });
 
   // ============================================
+  // PARTICLES: define globally so we can call anytime
+  // ============================================
+  function shouldEnableParticles(){
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return false;
+    return true;
+  }
+
+  function initParticles(){
+    if (!shouldEnableParticles()) return;
+    if (typeof particlesJS === "undefined") {
+      var checkParticles = setInterval(function() {
+        if (typeof particlesJS !== "undefined") {
+          clearInterval(checkParticles);
+          setTimeout(initParticles, 100);
+        }
+      }, 100);
+      setTimeout(function() { clearInterval(checkParticles); }, 5000);
+      return;
+    }
+
+    var heroContainer = document.getElementById("particles-hero");
+    if (heroContainer && !heroContainer.dataset.initialized) {
+      try {
+        particlesJS("particles-hero", {
+          particles: {
+            number: { value: 85, density: { enable: true, value_area: 800 } },
+            color: { value: "#9FE7F5" },
+            shape: { type: "circle", stroke: { width: 0, color: "#000000" } },
+            opacity: { value: 0.8 },
+            size: { value: 3.5, random: true, anim: { enable: false } },
+            line_linked: { enable: true, distance: 140, color: "#8BE1F0", opacity: 0.6, width: 1 },
+            move: { enable: true, speed: 0.7, direction: "none", random: true, straight: false, out_mode: "out", bounce: false, attract: { enable: false, rotateX: 600, rotateY: 1200 } }
+          },
+          interactivity: { detect_on: "window", events: { onhover: { enable: false }, onclick: { enable: false }, resize: true }, modes: { grab: { distance: 140, line_linked: { opacity: 0.5 } }, bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 }, repulse: { distance: 200, duration: 0.4 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } } },
+          retina_detect: true,
+        });
+        setTimeout(function(){
+          if (!heroContainer.querySelector('canvas')) {
+            console.warn('particles-hero canvas missing, retrying');
+            heroContainer.removeAttribute('data-initialized');
+            setTimeout(initParticles, 200);
+          }
+        }, 200);
+        heroContainer.dataset.initialized = "true";
+        console.log("Particles initialized in particles-hero");
+      } catch (e) { console.error("Error initializing particles-hero:", e); }
+    }
+
+    var globalContainer = document.getElementById("particles-js");
+    if (globalContainer && !globalContainer.dataset.initialized) {
+      try {
+        particlesJS("particles-js", {
+          particles: {
+            number: { value: 85, density: { enable: true, value_area: 800 } },
+            color: { value: "#9FE7F5" },
+            shape: { type: "circle", stroke: { width: 0, color: "#000000" } },
+            opacity: { value: 0.8 },
+            size: { value: 3.5, random: true, anim: { enable: false } },
+            line_linked: { enable: true, distance: 140, color: "#8BE1F0", opacity: 0.6, width: 1 },
+            move: { enable: true, speed: 0.7, direction: "none", random: true, straight: false, out_mode: "out", bounce: false, attract: { enable: false, rotateX: 600, rotateY: 1200 } }
+          },
+          interactivity: { detect_on: "window", events: { onhover: { enable: false }, onclick: { enable: false }, resize: true }, modes: { grab: { distance: 140, line_linked: { opacity: 0.5 } }, bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 }, repulse: { distance: 200, duration: 0.4 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } } },
+          retina_detect: true,
+        });
+        setTimeout(function(){
+          if (!globalContainer.querySelector('canvas')) {
+            console.warn('particles-js canvas missing, retrying');
+            globalContainer.removeAttribute('data-initialized');
+            setTimeout(initParticles, 200);
+          }
+        }, 200);
+        globalContainer.dataset.initialized = "true";
+        console.log("Particles initialized in particles-js");
+      } catch (e) { console.error("Error initializing particles-js:", e); }
+    }
+  }
+
+  // ============================================
   // FUTURISTIC ANIMATIONS
   // ============================================
 
@@ -203,101 +281,7 @@
         el.classList.add('with-shadow');
       });
     })();
-    // Initialize Particles.js for header/global (if present)
-    function shouldEnableParticles(){
-      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return false;
-      if (window.innerWidth < 768) return false; // tablet and up
-      return true;
-    }
-    function initParticles(){
-      if (typeof particlesJS === "undefined") return;
-      if (!document.getElementById("particles-js")) return;
-      if (!shouldEnableParticles()) return;
-      if (window.__particlesInit) return; // avoid double init
-      particlesJS("particles-js", {
-      particles: {
-        number: {
-          value: 50,
-          density: {
-            enable: true,
-            value_area: 800,
-          },
-        },
-        color: {
-          value: "#0AA8A7",
-        },
-        shape: {
-          type: "circle",
-          stroke: {
-            width: 0,
-            color: "#000000",
-          },
-        },
-        opacity: { value: 0.35 },
-        size: {
-          value: 3,
-          random: true,
-          anim: { enable: false },
-        },
-        line_linked: {
-          enable: true,
-          distance: 150,
-          color: "#0AA8A7",
-          opacity: 0.28,
-          width: 1,
-        },
-        move: {
-          enable: true,
-          speed: 0.7,
-          direction: "none",
-          random: true,
-          straight: false,
-          out_mode: "out",
-          bounce: false,
-          attract: {
-            enable: false,
-            rotateX: 600,
-            rotateY: 1200,
-          },
-        },
-      },
-      interactivity: {
-        detect_on: "window",
-        events: {
-          onhover: { enable: false },
-          onclick: { enable: false },
-          resize: true,
-        },
-        modes: {
-          grab: {
-            distance: 140,
-            line_linked: {
-              opacity: 0.5,
-            },
-          },
-          bubble: {
-            distance: 400,
-            size: 40,
-            duration: 2,
-            opacity: 8,
-            speed: 3,
-          },
-          repulse: {
-            distance: 200,
-            duration: 0.4,
-          },
-          push: {
-            particles_nb: 4,
-          },
-          remove: {
-            particles_nb: 2,
-          },
-        },
-      },
-      retina_detect: true,
-      });
-      window.__particlesInit = true;
-    }
+    // Particles functions are defined globally above
 
     // Initialize GSAP ScrollTrigger
     if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
@@ -761,10 +745,29 @@
   // Make content visible immediately on load
   makeContentVisible();
   
+  // Safe caller that waits until initParticles is defined
+  function callInitParticles() {
+    if (typeof initParticles === "function") {
+      initParticles();
+      return;
+    }
+    setTimeout(callInitParticles, 100);
+  }
+  
+  // Initialize particles early (doesn't depend on GSAP)
+  // Try immediately, then with delays to catch deferred script loading
+  callInitParticles();
+  setTimeout(callInitParticles, 500);
+  setTimeout(callInitParticles, 1500);
+  setTimeout(callInitParticles, 3000);
+  
   // Initialize animations when DOM and GSAP are ready
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", function() {
       makeContentVisible();
+      
+      // Try particles again on DOM ready
+      callInitParticles();
       
       // Wait for GSAP to load
       var checkGSAP = setInterval(function() {
@@ -776,11 +779,8 @@
             } else {
               setTimeout(initAnimations, 150);
             }
-            if (window.requestIdleCallback) {
-              requestIdleCallback(initParticles, { timeout: 1200 });
-            } else {
-              setTimeout(initParticles, 400);
-            }
+            // Try particles again after GSAP loads
+            callInitParticles();
           }, 100);
         }
       }, 100);
@@ -791,15 +791,8 @@
         if (typeof gsap === "undefined") {
           initAnimations();
         }
-        if (window.requestIdleCallback) {
-          requestIdleCallback(initParticles, { timeout: 1200 });
-        } else {
-          setTimeout(initParticles, 400);
-        }
-        // Fallback trigger: ensure particles appear if idle callback didn't fire
-        setTimeout(function(){
-          if (!window.__particlesInit) initParticles();
-        }, 2000);
+        // Final attempt for particles
+        callInitParticles();
       }, 3000);
     });
   } else {
@@ -811,11 +804,8 @@
         clearInterval(checkGSAP);
         setTimeout(function(){
           initAnimations();
-          if (window.requestIdleCallback) {
-            requestIdleCallback(initParticles, { timeout: 1200 });
-          } else {
-            setTimeout(initParticles, 400);
-          }
+          // Try particles again
+          callInitParticles();
         }, 100);
       }
     }, 100);
@@ -823,15 +813,8 @@
     setTimeout(function() {
       clearInterval(checkGSAP);
       initAnimations();
-      if (window.requestIdleCallback) {
-        requestIdleCallback(initParticles, { timeout: 1200 });
-      } else {
-        setTimeout(initParticles, 400);
-      }
-      // Fallback trigger: ensure particles appear if idle callback didn't fire
-      setTimeout(function(){
-        if (!window.__particlesInit) initParticles();
-      }, 2000);
+      // Final attempt for particles
+      callInitParticles();
     }, 3000);
   }
 })();
