@@ -3,7 +3,7 @@
   "use strict";
 
   // gallery slider
-  new Swiper(".gallery-slider", {
+  if (document.querySelector(".gallery-slider")) new Swiper(".gallery-slider", {
     slidesPerView: 1,
     loop: true,
     autoHeight: true,
@@ -93,7 +93,7 @@
   });
 
   //slider
-  new Swiper(".single-slider", {
+  if (document.querySelector(".single-slider")) new Swiper(".single-slider", {
     loop: true,
     autoplay: true,
     pagination: {
@@ -103,7 +103,7 @@
   });
 
   // brandCarousel init
-  new Swiper(".brand-carousel", {
+  if (document.querySelector(".brand-carousel")) new Swiper(".brand-carousel", {
     spaceBetween: 0,
     speed: 1000,
     loop: true,
@@ -131,7 +131,7 @@
   });
 
   // testimonial-carousel init
-  new Swiper(".testimonial-carousel", {
+  if (document.querySelector(".testimonial-carousel")) new Swiper(".testimonial-carousel", {
     spaceBetween: 70,
     speed: 600,
     loop: true,
@@ -171,30 +171,53 @@
           el.style.color = 'var(--color-white)';
         }
 
-        const text = el.textContent;
+        const text = el.textContent || '';
         const frag = document.createDocumentFragment();
-        for (let i = 0; i < text.length; i++) {
-          const span = document.createElement('span');
-          span.className = 'char';
-          if (text[i] === ' ') {
-            span.classList.add('space');
-            span.textContent = '\u00A0'; // non-breaking space for consistent width
-          } else {
-            span.textContent = text[i];
+
+        // Split into words, keep spaces so we can re-insert them explicitly
+        const parts = text.split(/(\s+)/);
+        parts.forEach((part) => {
+          if (part.trim() === '') {
+            // whitespace part → render as a dedicated space element
+            const space = document.createElement('span');
+            space.className = 'space';
+            space.textContent = '\u00A0';
+            frag.appendChild(space);
+            return;
           }
-          frag.appendChild(span);
-        }
+
+          // word part → wrap letters in a .word container to avoid mid-word wraps
+          const word = document.createElement('span');
+          word.className = 'word';
+          for (let i = 0; i < part.length; i++) {
+            const ch = document.createElement('span');
+            ch.className = 'char';
+            ch.textContent = part[i];
+            word.appendChild(ch);
+          }
+          frag.appendChild(word);
+        });
+
         el.textContent = '';
         el.appendChild(frag);
         el.classList.add('with-shadow');
       });
     })();
     // Initialize Particles.js for header/global (if present)
-    if (typeof particlesJS !== "undefined" && document.getElementById("particles-js")) {
+    function shouldEnableParticles(){
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return false;
+      if (window.innerWidth < 768) return false; // tablet and up
+      return true;
+    }
+    function initParticles(){
+      if (typeof particlesJS === "undefined") return;
+      if (!document.getElementById("particles-js")) return;
+      if (!shouldEnableParticles()) return;
+      if (window.__particlesInit) return; // avoid double init
       particlesJS("particles-js", {
       particles: {
         number: {
-          value: 80,
+          value: 50,
           density: {
             enable: true,
             value_area: 800,
@@ -210,36 +233,22 @@
             color: "#000000",
           },
         },
-        opacity: {
-          value: 0.3,
-          random: true,
-          anim: {
-            enable: true,
-            speed: 1,
-            opacity_min: 0.1,
-            sync: false,
-          },
-        },
+        opacity: { value: 0.35 },
         size: {
           value: 3,
           random: true,
-          anim: {
-            enable: true,
-            speed: 2,
-            size_min: 0.1,
-            sync: false,
-          },
+          anim: { enable: false },
         },
         line_linked: {
           enable: true,
           distance: 150,
           color: "#0AA8A7",
-          opacity: 0.2,
+          opacity: 0.28,
           width: 1,
         },
         move: {
           enable: true,
-          speed: 1,
+          speed: 0.7,
           direction: "none",
           random: true,
           straight: false,
@@ -255,14 +264,8 @@
       interactivity: {
         detect_on: "window",
         events: {
-          onhover: {
-            enable: true,
-            mode: "grab",
-          },
-          onclick: {
-            enable: true,
-            mode: "push",
-          },
+          onhover: { enable: false },
+          onclick: { enable: false },
           resize: true,
         },
         modes: {
@@ -293,27 +296,7 @@
       },
       retina_detect: true,
       });
-    }
-
-    // Initialize a second, brighter particle layer for the hero (if present)
-    if (typeof particlesJS !== "undefined" && document.getElementById("particles-hero")) {
-      particlesJS("particles-hero", {
-        particles: {
-          number: { value: 100, density: { enable: true, value_area: 700 } },
-          color: { value: "#38E8E6" },
-          shape: { type: "circle", stroke: { width: 0, color: "#000000" } },
-          opacity: { value: 0.5, random: false },
-          size: { value: 3, random: true },
-          line_linked: { enable: true, distance: 140, color: "#38E8E6", opacity: 0.35, width: 1 },
-          move: { enable: true, speed: 1.2, random: true, straight: false, out_mode: "out" }
-        },
-        interactivity: {
-          detect_on: "window",
-          events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: true, mode: "repulse" }, resize: true },
-          modes: { grab: { distance: 160, line_linked: { opacity: 0.6 } }, repulse: { distance: 180, duration: 0.3 } }
-        },
-        retina_detect: true
-      });
+      window.__particlesInit = true;
     }
 
     // Initialize GSAP ScrollTrigger
@@ -787,7 +770,18 @@
       var checkGSAP = setInterval(function() {
         if (typeof gsap !== "undefined") {
           clearInterval(checkGSAP);
-          setTimeout(initAnimations, 100);
+          setTimeout(function(){
+            if (window.requestIdleCallback) {
+              requestIdleCallback(initAnimations, { timeout: 700 });
+            } else {
+              setTimeout(initAnimations, 150);
+            }
+            if (window.requestIdleCallback) {
+              requestIdleCallback(initParticles, { timeout: 1200 });
+            } else {
+              setTimeout(initParticles, 400);
+            }
+          }, 100);
         }
       }, 100);
       
@@ -797,6 +791,15 @@
         if (typeof gsap === "undefined") {
           initAnimations();
         }
+        if (window.requestIdleCallback) {
+          requestIdleCallback(initParticles, { timeout: 1200 });
+        } else {
+          setTimeout(initParticles, 400);
+        }
+        // Fallback trigger: ensure particles appear if idle callback didn't fire
+        setTimeout(function(){
+          if (!window.__particlesInit) initParticles();
+        }, 2000);
       }, 3000);
     });
   } else {
@@ -806,13 +809,29 @@
     var checkGSAP = setInterval(function() {
       if (typeof gsap !== "undefined") {
         clearInterval(checkGSAP);
-        setTimeout(initAnimations, 100);
+        setTimeout(function(){
+          initAnimations();
+          if (window.requestIdleCallback) {
+            requestIdleCallback(initParticles, { timeout: 1200 });
+          } else {
+            setTimeout(initParticles, 400);
+          }
+        }, 100);
       }
     }, 100);
     
     setTimeout(function() {
       clearInterval(checkGSAP);
       initAnimations();
+      if (window.requestIdleCallback) {
+        requestIdleCallback(initParticles, { timeout: 1200 });
+      } else {
+        setTimeout(initParticles, 400);
+      }
+      // Fallback trigger: ensure particles appear if idle callback didn't fire
+      setTimeout(function(){
+        if (!window.__particlesInit) initParticles();
+      }, 2000);
     }, 3000);
   }
 })();

@@ -49,6 +49,12 @@
   &:hover::before {
     width: 300px;
     height: 300px;
+    
+    @include mobile {
+      // Constrain on mobile to prevent overflow
+      width: 200px;
+      height: 200px;
+    }
   }
   
   &:hover {
