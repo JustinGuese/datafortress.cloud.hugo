@@ -775,9 +775,202 @@
     });
   }
   
+  // Lazy-load Three.js and render an interactive 3D object in #contact-3d
+  function initContact3D() {
+    var container = document.getElementById('contact-3d');
+    if (!container) {
+      console.log('Contact 3D: container not found');
+      return;
+    }
+    if (container.dataset.initialized) {
+      console.log('Contact 3D: already initialized');
+      return;
+    }
+
+    // Ensure container has dimensions
+    var checkDimensions = function() {
+      var width = container.clientWidth || container.offsetWidth;
+      var height = container.clientHeight || container.offsetHeight;
+      if (width === 0 || height === 0) {
+        console.log('Contact 3D: container has no dimensions, retrying...', width, height);
+        setTimeout(checkDimensions, 100);
+        return;
+      }
+      startScene();
+    };
+
+    function startScene() {
+      try {
+        console.log('Contact 3D: Starting scene...');
+        var width = container.clientWidth || container.offsetWidth || 800;
+        var height = container.clientHeight || container.offsetHeight || 600;
+        
+        if (width === 0 || height === 0) {
+          console.error('Contact 3D: Container has zero dimensions');
+          return;
+        }
+
+        var scene = new THREE.Scene();
+        var camera = new THREE.PerspectiveCamera(55, width / height, 0.1, 1000);
+        camera.position.z = 8;
+
+        var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(width, height);
+        renderer.setPixelRatio(Math.min(2, window.devicePixelRatio || 1));
+        renderer.domElement.style.width = '100%';
+        renderer.domElement.style.height = '100%';
+        renderer.domElement.style.display = 'block';
+        container.appendChild(renderer.domElement);
+
+        // Enhanced lighting for better visibility
+        var ambient = new THREE.AmbientLight(0x66e0ff, 0.8);
+        scene.add(ambient);
+        var dir1 = new THREE.DirectionalLight(0x00d1ff, 1.2);
+        dir1.position.set(3, 4, 5);
+        scene.add(dir1);
+        var dir2 = new THREE.DirectionalLight(0x9FE7F5, 0.6);
+        dir2.position.set(-3, -2, 3);
+        scene.add(dir2);
+
+        // Multiple layers for depth: outer wireframe, inner wireframe, and points
+        var outerGeo = new THREE.IcosahedronGeometry(2.5, 1);
+        var outerWire = new THREE.MeshBasicMaterial({ 
+          color: 0x00d1ff, 
+          wireframe: true, 
+          transparent: true, 
+          opacity: 0.8 
+        });
+        var outerMesh = new THREE.Mesh(outerGeo, outerWire);
+        scene.add(outerMesh);
+
+        var innerGeo = new THREE.IcosahedronGeometry(1.8, 1);
+        var innerWire = new THREE.MeshBasicMaterial({ 
+          color: 0x9FE7F5, 
+          wireframe: true, 
+          transparent: true, 
+          opacity: 0.7 
+        });
+        var innerMesh = new THREE.Mesh(innerGeo, innerWire);
+        scene.add(innerMesh);
+
+        // Points cloud - larger and brighter
+        var pointsGeo = new THREE.IcosahedronGeometry(2.0, 2);
+        var pointsMat = new THREE.PointsMaterial({ 
+          color: 0x9FE7F5, 
+          size: 0.08, 
+          transparent: true, 
+          opacity: 1.0 
+        });
+        var points = new THREE.Points(pointsGeo, pointsMat);
+        scene.add(points);
+
+        // Store references for animation
+        var meshes = [outerMesh, innerMesh, points];
+        var baseRotation = { x: 0, y: 0 };
+
+        // Drag to rotate
+        var isDown = false, lastX = 0, lastY = 0;
+        function onDown(e){ 
+          e.preventDefault();
+          isDown = true; 
+          lastX = (e.touches? e.touches[0].clientX: e.clientX); 
+          lastY = (e.touches? e.touches[0].clientY: e.clientY); 
+        }
+        function onUp(){ isDown = false; }
+        function onMove(e){
+          if(!isDown) return;
+          e.preventDefault();
+          var x = (e.touches? e.touches[0].clientX: e.clientX);
+          var y = (e.touches? e.touches[0].clientY: e.clientY);
+          baseRotation.y += (x - lastX) * 0.005;
+          baseRotation.x += (y - lastY) * 0.005;
+          lastX = x; lastY = y;
+        }
+        renderer.domElement.style.pointerEvents = 'auto';
+        renderer.domElement.style.cursor = 'grab';
+        renderer.domElement.addEventListener('mousedown', onDown);
+        renderer.domElement.addEventListener('mouseup', onUp);
+        renderer.domElement.addEventListener('mouseleave', onUp);
+        renderer.domElement.addEventListener('mousemove', onMove);
+        renderer.domElement.addEventListener('touchstart', onDown, {passive:false});
+        renderer.domElement.addEventListener('touchend', onUp, {passive:false});
+        renderer.domElement.addEventListener('touchmove', onMove, {passive:false});
+
+        // Animate with smooth rotation
+        function animate(){
+          requestAnimationFrame(animate);
+          
+          // Auto-rotate
+          baseRotation.y += 0.002;
+          baseRotation.x += 0.001;
+          
+          // Apply rotation to all meshes
+          meshes.forEach(function(m) {
+            m.rotation.y = baseRotation.y;
+            m.rotation.x = baseRotation.x;
+          });
+          
+          renderer.render(scene, camera);
+        }
+        animate();
+
+        // Resize handling
+        function onResize(){
+          var w = container.clientWidth || container.offsetWidth || width;
+          var h = container.clientHeight || container.offsetHeight || height;
+          if (w > 0 && h > 0) {
+            camera.aspect = w / h;
+            camera.updateProjectionMatrix();
+            renderer.setSize(w, h);
+          }
+        }
+        window.addEventListener('resize', onResize);
+
+        container.dataset.initialized = 'true';
+        console.log('Contact 3D: Scene initialized successfully');
+      } catch (e) {
+        console.error('Contact 3D init failed:', e);
+        console.error('Stack:', e.stack);
+      }
+    }
+
+    // Load THREE if needed
+    if (typeof THREE === 'undefined') {
+      console.log('Contact 3D: Loading Three.js...');
+      var script = document.createElement('script');
+      // Use jsDelivr CDN which is more reliable
+      script.src = 'https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.min.js';
+      script.crossOrigin = 'anonymous';
+      script.onload = function() {
+        console.log('Contact 3D: Three.js loaded successfully');
+        setTimeout(checkDimensions, 100);
+      };
+      script.onerror = function() {
+        console.error('Contact 3D: Failed to load Three.js from jsDelivr, trying unpkg...');
+        // Fallback to unpkg
+        var fallbackScript = document.createElement('script');
+        fallbackScript.src = 'https://unpkg.com/three@0.152.0/build/three.min.js';
+        fallbackScript.crossOrigin = 'anonymous';
+        fallbackScript.onload = function() {
+          console.log('Contact 3D: Three.js loaded from unpkg');
+          setTimeout(checkDimensions, 100);
+        };
+        fallbackScript.onerror = function() {
+          console.error('Contact 3D: All CDN sources failed. Three.js not available.');
+        };
+        document.head.appendChild(fallbackScript);
+      };
+      document.head.appendChild(script);
+    } else {
+      console.log('Contact 3D: Three.js already available');
+      setTimeout(checkDimensions, 100);
+    }
+  }
+
   // Make content visible immediately on load
   makeContentVisible();
   removeNestedScrollbars();
+  initContact3D();
   
   // Safe caller that waits until initParticles is defined
   function callInitParticles() {
@@ -803,6 +996,7 @@
       
       // Try particles again on DOM ready
       callInitParticles();
+      initContact3D();
       
       // Wait for GSAP to load
       var checkGSAP = setInterval(function() {
@@ -822,6 +1016,7 @@
             }
             // Try particles again after GSAP loads
             callInitParticles();
+            initContact3D();
           }, 100);
         }
       }, 100);
@@ -835,12 +1030,14 @@
         removeNestedScrollbars();
         // Final attempt for particles
         callInitParticles();
+        initContact3D();
       }, 3000);
     });
   } else {
     // DOM already loaded
     makeContentVisible();
     removeNestedScrollbars();
+    initContact3D();
     
     var checkGSAP = setInterval(function() {
       if (typeof gsap !== "undefined") {
@@ -850,6 +1047,7 @@
           removeNestedScrollbars();
           // Try particles again
           callInitParticles();
+          initContact3D();
         }, 100);
       }
     }, 100);
@@ -860,6 +1058,7 @@
       removeNestedScrollbars();
       // Final attempt for particles
       callInitParticles();
+      initContact3D();
     }, 3000);
   }
 })();
