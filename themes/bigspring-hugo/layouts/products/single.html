@@ -2,7 +2,9 @@
 
 {{with .Params.banner}}
 <section class="section product-page animated-gradient-bg fade-in-up {{with .background_class}}{{.}} {{end}}" style="position: relative; z-index: 1;">
-  <div class="container">
+  <!-- Local particles container for product hero -->
+  <div id="particles-hero" aria-hidden="true"></div>
+  <div class="container" style="position: relative; z-index: 3;">
     <div class="row align-items-center justify-content-center">
       <div class="col-lg-5 col-md-10 mb-5 mb-lg-0">
         <div class="pe-0 pe-lg-5 text-center text-lg-start">
