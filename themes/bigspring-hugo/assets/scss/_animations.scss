@@ -283,7 +283,14 @@ section.scale-in {
   background-clip: text;
   animation: holographic 3s linear infinite;
   color: #0AA8A7; // Fallback color for browsers that don't support background-clip
-  display: inline-block; // Ensure it works properly
+  display: inline-block; // default
+  
+  // On small screens allow headings to wrap to avoid right-side clipping
+  @include mobile {
+    display: inline;
+    white-space: normal;
+    word-break: break-word;
+  }
 }
 
 // Magnetic Hover Effect (for buttons and links)
@@ -423,6 +430,10 @@ section.scale-in {
 .section-title {
   position: relative;
   display: inline-block;
+  max-width: 100%;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
   
   &::after {
     content: '';
@@ -437,6 +448,11 @@ section.scale-in {
   
   &.visible::after {
     width: 100%;
+  }
+
+  // Ensure long titles wrap on small screens
+  @include mobile {
+    display: inline; // allow natural wrapping
   }
 }
 

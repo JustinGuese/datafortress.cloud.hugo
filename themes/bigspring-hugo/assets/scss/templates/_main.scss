@@ -1,6 +1,73 @@
 // banner
 .banner {
-  padding: 48px 0 0;
+  padding: 48px 0 12px;
+  overflow-x: hidden; // Prevent horizontal overflow
+  position: relative;
+
+  @include mobile {
+    padding: 32px 0 16px;
+    
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.3;
+      margin-bottom: 1rem !important;
+      padding-bottom: 0.5rem !important;
+    }
+    
+    p {
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem !important;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    
+    .btn {
+      margin: 0.25rem !important;
+      padding: 0.625rem 1.25rem;
+      font-size: 0.9rem;
+      white-space: normal;
+      display: inline-block;
+      max-width: 100%;
+    }
+    
+    .floating,
+    .floating img,
+    .floating picture {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem auto 0;
+      padding: 0 0.5rem;
+      display: block;
+    }
+  }
+  
+  @include mobile-xs {
+    padding: 24px 0 16px;
+    
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem !important;
+    }
+    
+    p {
+      font-size: 0.875rem;
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+    }
+    
+    .btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+      width: auto;
+      max-width: 100%;
+    }
+    
+    .floating,
+    .floating img,
+    .floating picture {
+      padding: 0 0.25rem;
+    }
+  }
 }
 
 // feature-card
@@ -115,6 +182,7 @@
 .has-video {
   position: relative;
   text-align: center;
+  overflow: hidden; // Prevent overflow from hover effects
 
   .video-loader-btn {
     border: 0;
@@ -127,6 +195,11 @@
     color: $white;
     background-color: transparent;
     z-index: 1;
+
+    @include mobile {
+      width: calc(100% - 2rem);
+      left: 1rem;
+    }
 
     &::before {
       position: absolute;
@@ -159,6 +232,13 @@
       margin-top: -3px;
       transform: translate(-50%, -50%) scale(0.16);
 
+      @include mobile {
+        // Constrain base size on mobile to avoid horizontal overflow
+        left: 0;
+        width: 100%;
+        transform: translate(0, -50%) scale(0.16);
+      }
+
       @include tablet {
         transform: translate(-50%, -50%) scale(0.2);
       }
@@ -190,6 +270,11 @@
         left: -15px;
         transform: translate(0%, 0%) scale(1);
         @extend .rounded-2;
+        
+        @include mobile {
+          left: 0;
+          width: 100%;
+        }
       }
 
       &::before {
@@ -218,9 +303,12 @@
 
 // how-it-works
 .how-it-works {
+  overflow: hidden; // Prevent overflow from absolute positioned elements
+  
   .block {
     z-index: 1;
     position: relative;
+    overflow: hidden; // Constrain absolute children
 
     &::after {
       position: absolute;
@@ -234,6 +322,10 @@
 
       @include desktop {
         display: none;
+      }
+      
+      @include mobile {
+        display: none; // Hide on mobile to prevent overflow
       }
     }
 
@@ -256,6 +348,10 @@
         @include desktop {
           display: none;
         }
+        
+        @include mobile {
+          display: none; // Hide on mobile to prevent overflow
+        }
       }
     }
 
@@ -267,6 +363,10 @@
         @include desktop {
           right: auto;
           left: -50px;
+        }
+        
+        @include mobile {
+          display: none; // Hide on mobile to prevent overflow
         }
       }
     }
@@ -282,6 +382,10 @@
       right: -50px;
       background-color: $light;
       z-index: 1;
+      
+      @include mobile {
+        display: none; // Hide on mobile to prevent overflow
+      }
     }
   }
 
@@ -295,12 +399,20 @@
       left: -50px;
       background-color: $white;
       z-index: 1;
+      
+      @include mobile {
+        display: none; // Hide on mobile to prevent overflow
+      }
     }
 
     &.has-bg-light .section-title::before {
       background-color: $light;
       left: auto;
       right: -50px;
+      
+      @include mobile {
+        display: none; // Hide on mobile to prevent overflow
+      }
     }
   }
 }

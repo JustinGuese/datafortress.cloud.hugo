@@ -7,6 +7,12 @@
   letter-spacing: 0.06em;
   perspective: 800px;
 
+  // Keep each word together to prevent awkward mid-word line breaks
+  .word {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
   .char {
     display: inline-block;
     position: relative;
@@ -54,6 +60,21 @@
 .hover-headline.lg {
   letter-spacing: 0.08em;
   .char { transition-duration: 0.45s; }
+}
+
+
+// Mobile overrides to prevent right-edge clipping on small screens
+@include mobile {
+  .hover-headline {
+    display: inline; // allow natural wrapping in flow
+    max-width: 100%;
+
+    .word {
+      white-space: normal; // permit wrapping of long words
+      word-break: break-word;
+      overflow-wrap: anywhere;
+    }
+  }
 }
 
 
