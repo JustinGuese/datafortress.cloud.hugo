@@ -3,6 +3,9 @@
   padding: 48px 0 12px;
   overflow-x: hidden; // Prevent horizontal overflow
   position: relative;
+  
+  // Ensure content sits above hero particles
+  > .container { position: relative; z-index: 3; }
 
   @include mobile {
     padding: 32px 0 16px;
