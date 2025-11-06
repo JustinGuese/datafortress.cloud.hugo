@@ -742,8 +742,42 @@
     });
   }
 
+  // Remove nested scrollbars from content containers
+  function removeNestedScrollbars() {
+    // Find all elements that might have overflow-y set
+    var selectors = [
+      '.content',
+      '.container',
+      '.row',
+      '[class*="col-"]',
+      'section .content',
+      '.product-page .content',
+      '.portfolio .content'
+    ];
+    
+    selectors.forEach(function(selector) {
+      var elements = document.querySelectorAll(selector);
+      elements.forEach(function(el) {
+        // Skip swiper elements and modals
+        if (el.closest('.swiper') || el.closest('.modal') || el.closest('.dropdown-menu')) {
+          return;
+        }
+        // Remove inline overflow-y styles
+        if (el.style.overflowY === 'auto' || el.style.overflowY === 'scroll') {
+          el.style.overflowY = 'visible';
+        }
+        // Remove max-height that could cause scrolling
+        var maxHeight = window.getComputedStyle(el).maxHeight;
+        if (maxHeight && maxHeight !== 'none' && maxHeight !== '0px') {
+          el.style.maxHeight = 'none';
+        }
+      });
+    });
+  }
+  
   // Make content visible immediately on load
   makeContentVisible();
+  removeNestedScrollbars();
   
   // Safe caller that waits until initParticles is defined
   function callInitParticles() {
@@ -765,6 +799,7 @@
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", function() {
       makeContentVisible();
+      removeNestedScrollbars();
       
       // Try particles again on DOM ready
       callInitParticles();
@@ -775,9 +810,15 @@
           clearInterval(checkGSAP);
           setTimeout(function(){
             if (window.requestIdleCallback) {
-              requestIdleCallback(initAnimations, { timeout: 700 });
+              requestIdleCallback(function() {
+                initAnimations();
+                removeNestedScrollbars();
+              }, { timeout: 700 });
             } else {
-              setTimeout(initAnimations, 150);
+              setTimeout(function() {
+                initAnimations();
+                removeNestedScrollbars();
+              }, 150);
             }
             // Try particles again after GSAP loads
             callInitParticles();
@@ -791,6 +832,7 @@
         if (typeof gsap === "undefined") {
           initAnimations();
         }
+        removeNestedScrollbars();
         // Final attempt for particles
         callInitParticles();
       }, 3000);
@@ -798,12 +840,14 @@
   } else {
     // DOM already loaded
     makeContentVisible();
+    removeNestedScrollbars();
     
     var checkGSAP = setInterval(function() {
       if (typeof gsap !== "undefined") {
         clearInterval(checkGSAP);
         setTimeout(function(){
           initAnimations();
+          removeNestedScrollbars();
           // Try particles again
           callInitParticles();
         }, 100);
@@ -813,6 +857,7 @@
     setTimeout(function() {
       clearInterval(checkGSAP);
       initAnimations();
+      removeNestedScrollbars();
       // Final attempt for particles
       callInitParticles();
     }, 3000);
