@@ -3,6 +3,39 @@ body {
   overflow-x: hidden;
 }
 
+// Prevent nested scrollbars - only the main page should scroll
+// Remove any overflow-y: auto/scroll from content containers
+.container,
+.row,
+.row > [class*="col-"],
+.content,
+.section > .container,
+.section .container,
+.section .row,
+.section .row > [class*="col-"],
+.section .content,
+div[class*="col-"]:not([class*="btn"]):not([class*="icon"]):not([class*="social"]),
+main,
+section .content,
+.product-page .content,
+.portfolio .content {
+  overflow-y: visible !important;
+  overflow-x: hidden !important;
+}
+
+// Remove max-height constraints that could cause scrolling
+.container,
+.row,
+.row > [class*="col-"],
+.content,
+.section .content,
+div[class*="col-"]:not([class*="btn"]):not([class*="icon"]):not([class*="social"]),
+section .content,
+.product-page .content {
+  max-height: none !important;
+}
+
+
 .preloader {
   z-index: 9898989 !important;
   background-color: $body-bg;
@@ -479,6 +512,11 @@ form label {
 
 // content style
 .content {
+  // Ensure content never has its own scrollbar
+  overflow-y: visible !important;
+  overflow-x: hidden !important;
+  max-height: none !important;
+  
   * {
     word-break: break-word;
     overflow-wrap: break-word;
