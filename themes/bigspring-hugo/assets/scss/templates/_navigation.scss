@@ -6,6 +6,12 @@
   position: relative;
   z-index: 9999;
   font-family: $font-secondary;
+  overflow: visible;
+  max-height: none;
+
+  .container {
+    overflow: visible !important;
+  }
 
   // constrain logo size
   .navbar-brand img {
