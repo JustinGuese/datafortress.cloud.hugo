@@ -1,0 +1,711 @@
+{{define "main"}}
+<div class="landing-page">
+
+<!-- Hero Section with Video -->
+{{with .Params.banner}}
+<section class="section landing-hero animated-gradient-bg fade-in-up" style="position: relative; z-index: 1; min-height: 90vh; display: flex; align-items: center;">
+  <!-- Local particles container for hero -->
+  <div id="particles-hero" aria-hidden="true"></div>
+  
+  <div class="container" style="position: relative; z-index: 3;">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-10 col-xl-8 text-center">
+        <h1 class="section-title h1 holographic fade-in-up mb-4" style="font-size: 3.5rem; font-weight: 700; line-height: 1.2; text-shadow: 2px 2px 8px rgba(0,0,0,0.3);">{{ .title | markdownify }}</h1>
+        <p class="lead mb-5 fade-in-up" style="animation-delay: 0.15s; font-size: 1.5rem; text-shadow: 1px 1px 4px rgba(0,0,0,0.3);">{{ .content | markdownify }}</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3 mb-4 fade-in-up" style="animation-delay: 0.3s;">
+          {{if .button_primary.enable}}
+          {{with .button_primary}}
+          <a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary btn-lg magnetic px-5 py-3 cta-pulse" style="font-size: 1.25rem; font-weight: 600; box-shadow: 0 10px 30px rgba(10, 168, 167, 0.4); transition: all 0.3s ease;">
+            <i class="fas fa-calendar-check me-2"></i>{{ .label }} <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+          {{end}}
+          {{end}}
+          {{if .button_secondary.enable}}
+          {{with .button_secondary}}
+          <a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-outline-primary btn-lg magnetic px-5 py-3" style="font-size: 1.25rem; font-weight: 600; border-width: 2px;">
+            <i class="fas fa-rocket me-2"></i>{{ .label }}
+          </a>
+          {{end}}
+          {{end}}
+        </div>
+        <p class="text-center mb-5 fade-in-up" style="animation-delay: 0.4s; font-size: 0.95rem; opacity: 0.9;">
+          <i class="fas fa-clock text-warning me-1"></i> <strong>Limited slots available this week</strong> • Free 15-minute consultation • No obligation
+        </p>
+        {{if .video}}
+        <div class="fade-in-up" style="animation-delay: 0.45s;">
+          <div class="has-video rounded-3 shadow-lg glass-card" style="max-width: 800px; margin: 0 auto; position: relative;">
+            {{if hasPrefix .video "http"}}
+            <!-- YouTube/External Video -->
+            <div class="video-loader">
+              <button type="button" aria-label="video play button" class="video-loader-btn rounded-3 magnetic" data-src="{{.video}}">
+                <i class="fas fa-play icon-glow" style="font-size: 3rem;"></i>
+              </button>
+              {{if .video_thumbnail}}
+              {{ partial "image" (dict "Src" .video_thumbnail "Alt" "Watch introduction video" "Size" "800x" "Class" "w-100 video-thumb rounded-3") }}
+              {{end}}
+            </div>
+            {{else}}
+            <!-- Local Video File -->
+            <div class="position-relative" style="padding-top: 56.25%; background: #000; border-radius: 1rem; overflow: hidden;">
+              {{ partial "video" (dict "Src" .video "Controls" "true" "Class" "position-absolute top-0 start-0 w-100 h-100" "Width" "100%" "Height" "100%") }}
+            </div>
+            {{end}}
+          </div>
+        </div>
+        {{end}}
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+<!-- /Hero Section -->
+
+<!-- Trust Bar -->
+{{with .Params.trust_bar}}
+{{if .enable}}
+<section class="section py-4 fade-in-up bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-3 text-center text-lg-start mb-3 mb-lg-0">
+        <p class="mb-0 text-muted small fw-bold">{{.title | markdownify}}</p>
+      </div>
+      <div class="col-lg-9">
+        <div class="swiper brand-carousel">
+          <div class="swiper-wrapper">
+            {{range .logos}}
+            <div class="swiper-slide brand-item d-flex align-items-center justify-content-center scale-in">
+              {{ partial "image" (dict "Src" . "Alt" "Client logo" "Size" "x40") }}
+            </div>
+            {{end}}
+          </div>
+        </div>
+      </div>
+    </div>
+    {{if .compliance_text}}
+    <div class="row mt-3">
+      <div class="col-12 text-center">
+        <p class="mb-0 small text-muted">{{.compliance_text | markdownify}}</p>
+      </div>
+    </div>
+    {{end}}
+  </div>
+</section>
+{{end}}
+{{end}}
+<!-- /Trust Bar -->
+
+<!-- Animated Metrics Counter -->
+{{with .Params.metrics}}
+{{if .enable}}
+<section class="section fade-in-up">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-title h3 fade-in-up">{{.title | markdownify}}</h2>
+        {{if .content}}<p class="fade-in-up" style="animation-delay: 0.15s;">{{.content | markdownify}}</p>{{end}}
+      </div>
+    </div>
+    <div class="row g-4" style="margin-left: 0 !important; margin-right: 0 !important; --bs-gutter-x: 0 !important;">
+      {{range .items}}
+      <div class="col-lg-3 col-md-6 fade-in-up">
+        <div class="px-4 py-5 rounded-3 glass-card text-center h-100 card-3d is-hoverable">
+          <div class="display-4 mb-3">
+            <i class="{{.icon}} text-primary icon-glow"></i>
+          </div>
+          <div class="metric-value h2 mb-2 fw-bold" data-target="{{.stat}}">{{.stat}}</div>
+          <p class="mb-0 text-muted">{{.label | markdownify}}</p>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}
+<!-- /Animated Metrics Counter -->
+
+<!-- CTA After Metrics -->
+<section class="section py-4 fade-in-up" style="background: linear-gradient(135deg, #0AA8A7 0%, #376f92 100%);">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8 text-center text-lg-start mb-3 mb-lg-0">
+        <h3 class="h4 mb-0 text-white fw-bold">Ready to See These Results for Your Enterprise?</h3>
+        <p class="mb-0 text-white-50 small">Book your free strategy call and discover how we can transform your data infrastructure.</p>
+      </div>
+      <div class="col-lg-4 text-center text-lg-end">
+        <a href="https://cal.com/datafortress-justin/15min" target="_blank" class="btn btn-light btn-lg magnetic cta-pulse" style="font-weight: 600; box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
+          <i class="fas fa-calendar-check me-2"></i>Book Free Call Now
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /CTA After Metrics -->
+
+<!-- Case Studies Section with Videos -->
+{{with .Params.case_studies}}
+{{if .enable}}
+<section class="section bg-light fade-in-up">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-title h3 fade-in-up">{{.title | markdownify}}</h2>
+        {{if .content}}<p class="fade-in-up" style="animation-delay: 0.15s;">{{.content | markdownify}}</p>{{end}}
+      </div>
+    </div>
+    <div class="row g-5">
+      {{range $index, $case := .items}}
+      <div class="col-lg-{{if eq (len $.Params.case_studies.items) 1}}12{{else if eq (len $.Params.case_studies.items) 2}}6{{else}}4{{end}} fade-in-up" style="animation-delay: {{mul $index 0.1}}s;">
+        <div class="h-100 rounded-3 glass-card overflow-hidden card-3d is-hoverable">
+          {{if $case.video}}
+          <div class="position-relative" style="height: 250px; overflow: hidden;">
+            {{if hasPrefix $case.video "http"}}
+            <!-- YouTube/External Video -->
+            <div class="has-video rounded-top video-loader" style="height: 100%;">
+              <button type="button" aria-label="Play case study video" class="video-loader-btn rounded-top magnetic" data-src="{{$case.video}}">
+                <i class="fas fa-play icon-glow"></i>
+              </button>
+              {{if $case.video_thumbnail}}
+              {{ partial "image" (dict "Src" $case.video_thumbnail "Alt" $case.title "Size" "600x" "Class" "w-100 h-100 video-thumb") }}
+              {{else}}
+              <div class="w-100 h-100 bg-primary d-flex align-items-center justify-content-center">
+                <i class="fas fa-video text-white" style="font-size: 3rem;"></i>
+              </div>
+              {{end}}
+            </div>
+            {{else}}
+            <!-- Local Video File -->
+            <div class="w-100 h-100 rounded-top overflow-hidden bg-dark">
+              {{ partial "video" (dict "Src" $case.video "Controls" "true" "Class" "w-100 h-100" "Width" "100%" "Height" "100%") }}
+            </div>
+            {{end}}
+          </div>
+          {{end}}
+          <div class="p-4">
+            <h3 class="h4 mb-3">{{$case.title | markdownify}}</h3>
+            {{if $case.challenge}}
+            <div class="mb-3">
+              <strong class="text-muted small">Challenge:</strong>
+              <p class="mb-0 small">{{$case.challenge | markdownify}}</p>
+            </div>
+            {{end}}
+            {{if $case.solution}}
+            <div class="mb-3">
+              <strong class="text-muted small">Solution:</strong>
+              <p class="mb-0 small">{{$case.solution | markdownify}}</p>
+            </div>
+            {{end}}
+            {{if $case.results}}
+            <div class="mb-3">
+              <strong class="text-primary small">Results:</strong>
+              <p class="mb-0 small fw-bold">{{$case.results | markdownify}}</p>
+            </div>
+            {{end}}
+            {{if $case.cta.enable}}
+            {{with $case.cta}}
+            <a href="{{.link | safeURL}}" class="btn btn-sm btn-outline-primary magnetic mt-2">{{.label}}</a>
+            {{end}}
+            {{end}}
+            <div class="mt-3 pt-3 border-top">
+              <a href="https://cal.com/datafortress-justin/15min" target="_blank" class="btn btn-primary btn-sm w-100 magnetic" style="font-weight: 600;">
+                <i class="fas fa-calendar-alt me-1"></i> Get Similar Results
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{end}}
+    </div>
+    <!-- CTA After Case Studies -->
+    <div class="row mt-5">
+      <div class="col-lg-10 mx-auto">
+        <div class="glass-card rounded-3 p-4 text-center" style="background: linear-gradient(135deg, rgba(10, 168, 167, 0.1) 0%, rgba(55, 111, 146, 0.1) 100%); border: 2px solid rgba(10, 168, 167, 0.3);">
+          <h3 class="h4 mb-3">Want Results Like These?</h3>
+          <p class="mb-4">Join VW, BMW, Porsche, and Atruvia in transforming your data infrastructure. Book your free strategy call today.</p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="https://cal.com/datafortress-justin/15min" target="_blank" class="btn btn-primary btn-lg magnetic cta-pulse" style="font-weight: 600; box-shadow: 0 5px 20px rgba(10, 168, 167, 0.3);">
+              <i class="fas fa-calendar-check me-2"></i>Book Free Strategy Call
+            </a>
+            <a href="#contact-form-mid" class="btn btn-outline-primary btn-lg magnetic" style="font-weight: 600; border-width: 2px;">
+              <i class="fas fa-envelope me-2"></i>Get in Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}
+<!-- /Case Studies Section -->
+
+<!-- Mid-Page Contact Form -->
+{{with .Params.contact_form_mid}}
+{{if .enable}}
+<section id="contact-form-mid" class="section fade-in-up">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="glass-card rounded-3 p-5" style="background: linear-gradient(135deg, rgba(10, 168, 167, 0.05) 0%, rgba(55, 111, 146, 0.05) 100%); border: 2px solid rgba(10, 168, 167, 0.2);">
+          <div class="text-center mb-4">
+            <div class="mb-3">
+              <i class="fas fa-rocket text-primary" style="font-size: 3rem;"></i>
+            </div>
+            <h2 class="section-title h3 fade-in-up mb-3">{{.title | markdownify}}</h2>
+            {{if .content}}<p class="fade-in-up mb-4" style="animation-delay: 0.15s; font-size: 1.1rem;">{{.content | markdownify}}</p>{{end}}
+            <div class="alert alert-info d-inline-flex align-items-center mb-4" style="background: rgba(10, 168, 167, 0.1); border-color: rgba(10, 168, 167, 0.3);">
+              <i class="fas fa-gift me-2"></i>
+              <span><strong>Free 15-minute consultation</strong> • No obligation • Tailored for enterprise leaders</span>
+            </div>
+          </div>
+          <form method="POST" class="row g-4 contact-form-card" action="{{site.Params.contact_form_action | safeURL}}">
+            <input type="hidden" name="source" value="enterprise-landing-mid">
+            <div class="col-lg-6">
+              <label class="mb-1" for="fname-mid">{{ i18n "fname"}} <span class="text-danger">*</span></label>
+              <input class="form-control shadow-none" type="text" name="first_name" id="fname-mid" placeholder="{{ i18n `fname`}}" required>
+            </div>
+            <div class="col-lg-6">
+              <label class="mb-1" for="lname-mid">{{ i18n "lname"}} <span class="text-danger">*</span></label>
+              <input class="form-control shadow-none" type="text" name="last_name" id="lname-mid" placeholder="{{ i18n `lname`}}" required>
+            </div>
+            <div class="col-lg-6">
+              <label class="mb-1" for="email-mid">{{i18n "email"}} <span class="text-danger">*</span></label>
+              <input class="form-control shadow-none" type="email" name="email_address" id="email-mid" placeholder="{{i18n `email`}}" required>
+            </div>
+            <div class="col-lg-6">
+              <label class="mb-1" for="company-mid">Company</label>
+              <input class="form-control shadow-none" type="text" name="company" id="company-mid" placeholder="Your Company">
+            </div>
+            <div class="col-lg-12">
+              <label class="mb-1" for="phone-mid">Phone</label>
+              <input class="form-control shadow-none" type="tel" name="phone" id="phone-mid" placeholder="Your Phone Number">
+            </div>
+            <div class="col-lg-12">
+              <button class="btn btn-primary btn-lg magnetic w-100 cta-pulse" type="submit" style="font-weight: 600; font-size: 1.1rem; padding: 1rem; box-shadow: 0 5px 20px rgba(10, 168, 167, 0.3);">
+                <i class="fas fa-paper-plane me-2"></i>{{.button_label | default (i18n "send")}} <i class="fas fa-arrow-right ms-2"></i>
+              </button>
+            </div>
+            <div class="col-lg-12 text-center mt-3">
+              <p class="text-muted small mb-2">or</p>
+              <a class="btn btn-outline-primary btn-lg magnetic" href="https://cal.com/datafortress-justin/15min" target="_blank" style="font-weight: 600; border-width: 2px;">
+                <i class="fas fa-calendar-alt me-2"></i>Book a Meeting Instead
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}
+<!-- /Mid-Page Contact Form -->
+
+<!-- Comparison Table -->
+{{with .Params.comparison_table}}
+{{if .enable}}
+<section class="section bg-light fade-in-up">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-title h3 fade-in-up">{{.title | markdownify}}</h2>
+        {{if .content}}<p class="fade-in-up" style="animation-delay: 0.15s;">{{.content | markdownify}}</p>{{end}}
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="glass-card rounded-3 overflow-hidden">
+          <div class="table-responsive">
+            <table class="table table-hover mb-0">
+              <thead class="bg-primary text-white">
+                <tr>
+                  <th scope="col" class="border-0">{{.column_1_label | default "Feature"}}</th>
+                  <th scope="col" class="border-0 text-center">{{.column_2_label | default "Legacy Systems"}}</th>
+                  <th scope="col" class="border-0 text-center">{{.column_3_label | default "DataFortress Solutions"}}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{range .rows}}
+                <tr>
+                  <td class="fw-bold">{{.feature | markdownify}}</td>
+                  <td class="text-center text-muted">{{.legacy | markdownify}}</td>
+                  <td class="text-center text-primary fw-bold">{{.datafortress | markdownify}}</td>
+                </tr>
+                {{end}}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}
+<!-- /Comparison Table -->
+
+<!-- CTA After Comparison -->
+<section class="section py-5 fade-in-up" style="background: linear-gradient(135deg, #0AA8A7 0%, #376f92 100%);">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="h3 text-white mb-3 fw-bold">See the Difference for Yourself</h2>
+        <p class="text-white-50 mb-4 lead">Ready to cut costs by 40% and accelerate processes by 60%+?</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="https://cal.com/datafortress-justin/15min" target="_blank" class="btn btn-light btn-lg magnetic cta-pulse" style="font-weight: 600; font-size: 1.1rem; padding: 1rem 2rem; box-shadow: 0 5px 25px rgba(0,0,0,0.3);">
+            <i class="fas fa-calendar-check me-2"></i>Book Free Strategy Call
+          </a>
+          <a href="#contact-form-mid" class="btn btn-outline-light btn-lg magnetic" style="font-weight: 600; border-width: 2px; padding: 1rem 2rem;">
+            <i class="fas fa-envelope me-2"></i>Get Started Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /CTA After Comparison -->
+
+<!-- Services Section -->
+{{with .Params.services}}
+{{if .enable}}
+<section class="section fade-in-up">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-title h3 fade-in-up">{{.title | markdownify}}</h2>
+        {{if .content}}<p class="fade-in-up" style="animation-delay: 0.15s;">{{.content | markdownify}}</p>{{end}}
+      </div>
+    </div>
+    <div class="row g-4">
+      {{range $index, $service := .items}}
+      <div class="col-lg-4 fade-in-up" style="animation-delay: {{mul $index 0.1}}s;">
+        <div class="px-4 py-5 rounded-3 glass-card h-100 card-3d is-hoverable">
+          <div class="display-3 mb-4">
+            <i class="{{$service.icon}} text-primary icon-glow"></i>
+          </div>
+          <h3 class="h4 mb-3">{{$service.title | markdownify}}</h3>
+          <div class="content mb-4">{{$service.content | markdownify}}</div>
+          <a href="https://cal.com/datafortress-justin/15min" target="_blank" class="btn btn-primary btn-sm w-100 magnetic" style="font-weight: 600;">
+            <i class="fas fa-calendar-alt me-1"></i> Learn More
+          </a>
+        </div>
+      </div>
+      {{end}}
+    </div>
+    <!-- CTA After Services -->
+    <div class="row mt-5">
+      <div class="col-lg-10 mx-auto">
+        <div class="text-center glass-card rounded-3 p-5" style="background: linear-gradient(135deg, rgba(10, 168, 167, 0.1) 0%, rgba(55, 111, 146, 0.1) 100%);">
+          <h3 class="h3 mb-3">Which Service Do You Need?</h3>
+          <p class="lead mb-4">Let's discuss your specific requirements in a free 15-minute consultation.</p>
+          <a href="https://cal.com/datafortress-justin/15min" target="_blank" class="btn btn-primary btn-lg magnetic cta-pulse" style="font-weight: 600; font-size: 1.1rem; padding: 1rem 2.5rem; box-shadow: 0 5px 25px rgba(10, 168, 167, 0.4);">
+            <i class="fas fa-calendar-check me-2"></i>Schedule Your Free Consultation
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}
+<!-- /Services Section -->
+
+<!-- FAQ Section -->
+{{with .Params.faq}}
+{{if .enable}}
+<section class="section bg-light fade-in-up">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-title h3 fade-in-up">{{.title | markdownify}}</h2>
+        {{if .content}}<p class="fade-in-up" style="animation-delay: 0.15s;">{{.content | markdownify}}</p>{{end}}
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="accordion" id="faqAccordion">
+          {{range $index, $item := .items}}
+          <div class="accordion-item glass-card border-0 mb-3 rounded-3">
+            <h2 class="accordion-header" id="faqHeading{{$index}}">
+              <button class="accordion-button {{if ne $index 0}}collapsed{{end}} rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse{{$index}}" aria-expanded="{{if eq $index 0}}true{{else}}false{{end}}" aria-controls="faqCollapse{{$index}}">
+                {{$item.question | markdownify}}
+              </button>
+            </h2>
+            <div id="faqCollapse{{$index}}" class="accordion-collapse collapse {{if eq $index 0}}show{{end}}" aria-labelledby="faqHeading{{$index}}" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                {{$item.answer | markdownify}}
+              </div>
+            </div>
+          </div>
+          {{end}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}
+<!-- /FAQ Section -->
+
+<!-- Final Contact Form -->
+{{with .Params.contact_form_final}}
+{{if .enable}}
+<section id="contact-form-final" class="section fade-in-up">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="glass-card rounded-3 p-5">
+          <div class="text-center mb-4">
+            <div class="mb-3">
+              <i class="fas fa-envelope-open-text text-primary" style="font-size: 3rem;"></i>
+            </div>
+            <h2 class="section-title h3 fade-in-up mb-3">{{.title | markdownify}}</h2>
+            {{if .content}}<p class="fade-in-up mb-4" style="animation-delay: 0.15s; font-size: 1.1rem;">{{.content | markdownify}}</p>{{end}}
+            <div class="alert alert-info d-inline-flex align-items-center mb-4" style="background: rgba(10, 168, 167, 0.1); border-color: rgba(10, 168, 167, 0.3);">
+              <i class="fas fa-gift me-2"></i>
+              <span><strong>Free 15-minute consultation</strong> • No obligation • Tailored for enterprise leaders</span>
+            </div>
+          </div>
+          <form method="POST" class="row g-4 contact-form-card" action="{{site.Params.contact_form_action | safeURL}}">
+            <input type="hidden" name="source" value="enterprise-landing-final">
+            <div class="col-lg-6">
+              <label class="mb-1" for="fname-final">{{ i18n "fname"}} <span class="text-danger">*</span></label>
+              <input class="form-control shadow-none" type="text" name="first_name" id="fname-final" placeholder="{{ i18n `fname`}}" required>
+            </div>
+            <div class="col-lg-6">
+              <label class="mb-1" for="lname-final">{{ i18n "lname"}} <span class="text-danger">*</span></label>
+              <input class="form-control shadow-none" type="text" name="last_name" id="lname-final" placeholder="{{ i18n `lname`}}" required>
+            </div>
+            <div class="col-lg-12">
+              <label class="mb-1" for="email-final">{{i18n "email"}} <span class="text-danger">*</span></label>
+              <input class="form-control shadow-none" type="email" name="email_address" id="email-final" placeholder="{{i18n `email`}}" required>
+            </div>
+            <div class="col-lg-6">
+              <label class="mb-1" for="company-final">Company</label>
+              <input class="form-control shadow-none" type="text" name="company" id="company-final" placeholder="Your Company">
+            </div>
+            <div class="col-lg-6">
+              <label class="mb-1" for="phone-final">Phone</label>
+              <input class="form-control shadow-none" type="tel" name="phone" id="phone-final" placeholder="Your Phone Number">
+            </div>
+            <div class="col-lg-12">
+              <label class="mb-1" for="message-final">{{i18n "message"}}</label>
+              <textarea class="form-control shadow-none" name="message" id="message-final" rows="4" placeholder="{{i18n `message`}}"></textarea>
+            </div>
+            <div class="col-lg-12">
+              <button class="btn btn-primary btn-lg magnetic w-100 cta-pulse" type="submit" style="font-weight: 600; font-size: 1.1rem; padding: 1rem; box-shadow: 0 5px 20px rgba(10, 168, 167, 0.3);">
+                <i class="fas fa-paper-plane me-2"></i>{{.button_label | default (i18n "send")}} <i class="fas fa-arrow-right ms-2"></i>
+              </button>
+            </div>
+            <div class="col-lg-12 text-center mt-3">
+              <p class="text-muted small mb-2">or</p>
+              <a class="btn btn-outline-primary btn-lg magnetic" href="https://cal.com/datafortress-justin/15min" target="_blank" style="font-weight: 600; border-width: 2px;">
+                <i class="fas fa-calendar-alt me-2"></i>Book a Meeting Instead
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}
+<!-- /Final Contact Form -->
+
+<!-- Final CTA Section -->
+{{with .Params.final_cta}}
+{{if .enable}}
+<section class="section animated-gradient-bg fade-in-up">
+  <div class="container">
+    <div class="row align-items-center justify-content-center text-center">
+      <div class="col-lg-8">
+        <h2 class="section-title h2 holographic fade-in-up mb-4">{{ .title | markdownify }}</h2>
+        {{with .content }}<p class="mb-4 fade-in-up" style="animation-delay: 0.15s; font-size: 1.25rem;">{{ . | markdownify }}</p>{{ end }}
+        <div class="alert alert-warning d-inline-block mb-4 fade-in-up" style="animation-delay: 0.2s; background: rgba(255, 193, 7, 0.1); border-color: rgba(255, 193, 7, 0.3);">
+          <i class="fas fa-exclamation-triangle me-2"></i>
+          <strong>Limited availability this week</strong> - Book now to secure your free consultation slot
+        </div>
+        {{ if .button.enable }}
+        {{ with .button }}
+        <div class="d-flex flex-wrap justify-content-center gap-3 fade-in-up" style="animation-delay: 0.3s;">
+          <a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary btn-lg magnetic cta-pulse px-5 py-3" style="font-weight: 600; font-size: 1.2rem; box-shadow: 0 10px 40px rgba(10, 168, 167, 0.5);">
+            <i class="fas fa-calendar-check me-2"></i>{{ .label }} <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+          <a href="#contact-form-final" class="btn btn-outline-light btn-lg magnetic px-5 py-3" style="font-weight: 600; border-width: 2px; font-size: 1.2rem;">
+            <i class="fas fa-envelope me-2"></i>Send Message Instead
+          </a>
+        </div>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}
+<!-- /Final CTA Section -->
+
+<!-- Sticky Floating CTA Button -->
+<div id="sticky-cta" class="sticky-cta-button fade-in-up" style="display: none; position: fixed; bottom: 30px; right: 30px; z-index: 9999;">
+  <div class="position-relative">
+    <a href="https://cal.com/datafortress-justin/15min" target="_blank" class="btn btn-primary btn-lg magnetic rounded-circle shadow-lg cta-pulse" style="width: 75px; height: 75px; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 40px rgba(10, 168, 167, 0.5); animation: pulse-ring 2s infinite;" title="Book Free Strategy Call">
+      <i class="fas fa-calendar-check" style="font-size: 1.75rem;"></i>
+    </a>
+    <span class="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-danger" style="font-size: 0.7rem; padding: 0.25rem 0.5rem; white-space: nowrap;">
+      Free Call
+    </span>
+  </div>
+</div>
+
+<style>
+/* Landing page specific styles */
+.landing-hero h1,
+.landing-hero .lead,
+.landing-hero p {
+  color: #fff !important;
+}
+
+/* CTA Pulse Animation */
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 10px 40px rgba(10, 168, 167, 0.5), 0 0 0 0 rgba(10, 168, 167, 0.7);
+  }
+  50% {
+    box-shadow: 0 10px 40px rgba(10, 168, 167, 0.5), 0 0 0 10px rgba(10, 168, 167, 0);
+  }
+  100% {
+    box-shadow: 0 10px 40px rgba(10, 168, 167, 0.5), 0 0 0 0 rgba(10, 168, 167, 0);
+  }
+}
+
+@keyframes cta-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 5px 20px rgba(10, 168, 167, 0.3);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(10, 168, 167, 0.5);
+  }
+}
+
+.cta-pulse {
+  animation: cta-pulse 2s ease-in-out infinite;
+}
+
+.cta-pulse:hover {
+  animation: none;
+  transform: scale(1.05);
+}
+
+/* Responsive improvements for landing page */
+@media (max-width: 991px) {
+  .landing-hero h1 {
+    font-size: 2.5rem !important;
+  }
+  .landing-hero .lead {
+    font-size: 1.25rem !important;
+  }
+  #sticky-cta {
+    bottom: 20px;
+    right: 20px;
+  }
+  #sticky-cta .btn {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  #sticky-cta .btn i {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .landing-hero h1 {
+    font-size: 2rem !important;
+  }
+  .landing-hero .lead {
+    font-size: 1.1rem !important;
+  }
+}
+
+/* Ensure video thumbnails are responsive */
+.video-thumb {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+/* Force media to be responsive */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+</style>
+
+<script>
+// Animated counter for metrics
+document.addEventListener('DOMContentLoaded', function() {
+  // Counter animation
+  const counters = document.querySelectorAll('.metric-value');
+  const animateCounter = (counter) => {
+    const target = counter.getAttribute('data-target');
+    const isPercentage = target.includes('%');
+    const isPlus = target.includes('+');
+    const numericValue = parseFloat(target.replace(/[^0-9.]/g, ''));
+    
+    if (isNaN(numericValue)) {
+      counter.textContent = target;
+      return;
+    }
+    
+    let current = 0;
+    const increment = numericValue / 50;
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= numericValue) {
+        counter.textContent = (isPlus ? '+' : '') + numericValue + (isPercentage ? '%' : '');
+        clearInterval(timer);
+      } else {
+        counter.textContent = (isPlus ? '+' : '') + Math.floor(current) + (isPercentage ? '%' : '');
+      }
+    }, 30);
+  };
+  
+  // Intersection Observer for counters
+  const observerOptions = {
+    threshold: 0.5,
+    rootMargin: '0px'
+  };
+  
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+        entry.target.classList.add('counted');
+        animateCounter(entry.target);
+      }
+    });
+  }, observerOptions);
+  
+  counters.forEach(counter => {
+    counterObserver.observe(counter);
+  });
+  
+  // Sticky CTA button
+  const stickyCTA = document.getElementById('sticky-cta');
+  if (stickyCTA) {
+    const showStickyCTA = () => {
+      if (window.scrollY > 500) {
+        stickyCTA.style.display = 'block';
+      } else {
+        stickyCTA.style.display = 'none';
+      }
+    };
+    
+    window.addEventListener('scroll', showStickyCTA);
+    showStickyCTA();
+  }
+});
+</script>
+
+</div><!-- /.landing-page -->
+{{end}}

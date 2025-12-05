@@ -44,3 +44,63 @@ $font-icon: '{{.font_icon | default "Font Awesome 6 Free"}}';
 @import 'animations';
 @import 'contact';
 @import 'headlines';
+
+// Global overflow guard - use clip to avoid creating scroll containers
+// overflow-x: hidden can cause overflow-y: auto which creates vertical scrollbars
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: clip; // clip prevents scroll container creation
+  overflow-y: scroll; // always show main scrollbar to prevent layout shift
+}
+
+body {
+  width: 100%;
+  overflow: visible; // no scrollbars on body - let html handle it
+}
+
+// Prevent scrollbars on content containers - use visible, not hidden
+main,
+section,
+.section,
+.container,
+.row {
+  max-width: 100%;
+  overflow: visible !important; // force no scrollbars
+}
+
+// Swiper needs overflow hidden for its functionality
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+// Landing page: remove Bootstrap row negative margins to prevent overflow
+.landing-page {
+  width: 100%;
+  overflow: visible !important; // no scrollbars on landing page wrapper
+}
+
+.landing-page .row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.landing-page .row > * {
+  padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
+  padding-right: calc(var(--bs-gutter-x) * 0.5) !important;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
