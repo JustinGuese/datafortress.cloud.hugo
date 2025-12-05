@@ -3,8 +3,8 @@ date: '2020-07-12T17:02:17+02:00'
 draft: false
 image: images/legal.webp
 title: मुद्रण
-
 ---
+
 <a id="mail" href="mailto:info@datafortress.cloud">info@dat<!--...-->afortress.cloud</a>
 
 सीईओ: जस्टिन गुसे
@@ -13,7 +13,7 @@ title: मुद्रण
 
 गेओर्गेनस्ट्रैस 13
 
-86152 ऑग्सबर्ग
+82064 ऑग्सबर्ग
 
 जर्मनी
 

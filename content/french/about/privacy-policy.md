@@ -3,8 +3,8 @@ date: '2020-07-12T17:02:17+02:00'
 draft: false
 image: images/legal.webp
 title: Politique de confidentialité
-
 ---
+
 # Politique de confidentialité
 
 Nous sommes très heureux que vous vous intéressiez à notre entreprise. La protection des données est d'une priorité particulièrement élevée pour la direction de DataFortress.cloud. L'utilisation des pages Internet de DataFortress.cloud est possible sans aucune indication de données personnelles ; cependant, si un sujet de données souhaite utiliser des services spécifiques via notre site web, le traitement de données personnelles pourrait devenir nécessaire. Si le traitement de données personnelles est nécessaire et qu'il n'existe pas de base légale pour un tel traitement, nous obtenons généralement le consentement de la personne concernée.
@@ -14,7 +14,7 @@ Le traitement de données personnelles, telles que le nom, l'adresse, l'adresse 
 En tant que responsable du traitement, DataFortress.cloud a mis en œuvre de nombreuses mesures techniques et organisationnelles pour garantir la protection la plus complète des données personnelles traitées via ce site web. Cependant, les transmissions de données basées sur Internet peuvent en principe comporter des failles de sécurité, de sorte qu'une protection absolue ne peut pas être garantie. Pour cette raison, chaque sujet de données est libre de nous transmettre des données personnelles par d'autres moyens, par exemple par téléphone.
 
 1. Définitions
-La déclaration de protection des données de DataFortress.cloud est basée sur les termes utilisés par le législateur européen pour l'adoption du Règlement Général sur la Protection des Données (RGPD). Notre déclaration de protection des données doit être lisible et compréhensible pour le grand public, ainsi que pour nos clients et partenaires commerciaux. Pour garantir cela, nous aimerions d'abord expliquer la terminologie utilisée.
+   La déclaration de protection des données de DataFortress.cloud est basée sur les termes utilisés par le législateur européen pour l'adoption du Règlement Général sur la Protection des Données (RGPD). Notre déclaration de protection des données doit être lisible et compréhensible pour le grand public, ainsi que pour nos clients et partenaires commerciaux. Pour garantir cela, nous aimerions d'abord expliquer la terminologie utilisée.
 
 Dans cette déclaration de protection des données, nous utilisons, entre autres, les termes suivants :
 
@@ -52,18 +52,18 @@ k) Consentement
 Le consentement du sujet de données est toute indication libre, spécifique, informée et sans ambiguïté des souhaits du sujet de données par laquelle il ou elle, par une déclaration ou par un acte clair et positif, signifie son accord au traitement de données personnelles le concernant ou la concernant.
 
 2. Nom et adresse du responsable du traitement
-Le responsable du traitement aux fins du Règlement Général sur la Protection des Données (RGPD), d'autres lois sur la protection des données applicables dans les États membres de l'Union européenne et d'autres dispositions relatives à la protection des données est :
+   Le responsable du traitement aux fins du Règlement Général sur la Protection des Données (RGPD), d'autres lois sur la protection des données applicables dans les États membres de l'Union européenne et d'autres dispositions relatives à la protection des données est :
 
-DataFortress.cloud UG  
-Georgenstraße 13  
-86152 Augsbourg  
+DataFortress.cloud GmbH  
+Gewerbestraße 13  
+82064 Straßlach-Dingharting  
 Allemagne  
-DE345185498  
+DE345185498
 
-HRB 36456  
+HRB 36456
 
 Email : <a id="mail" href="mailto:info@datafortress.cloud">info@dat<!--...-->afortress.cloud</a>  
-Site Web : https://www.datafortress.cloud  
+Site Web : https://www.datafortress.cloud
 
 ## Cookies
 
