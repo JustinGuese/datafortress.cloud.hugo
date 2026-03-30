@@ -1,10 +1,10 @@
 ---
 title: "Weaponizing Volatility: The Synthesized Hyper-Convexity Engine (SHCE)"
-bg_image: "images/blog/datacenter.jpg"
+bg_image: "images/blog/convexity-engine.png"
 date: 2026-03-30T06:30:46+02:00
 author: "Justin Guese"
 description: "Discover the SHCE strategy: A quantitative framework using AI sentiment and gamma cascades to exploit the mathematical rebalancing of 3x leveraged ETFs like TQQQ."
-image: "images/blog/datacenter.jpg"
+image: "images/blog/convexity-engine.png"
 categories:
 - Quant
 tags: ["quant", "trading", "python"]
