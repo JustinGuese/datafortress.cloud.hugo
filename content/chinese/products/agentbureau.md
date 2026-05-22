@@ -13,8 +13,8 @@ banner:
   content : "精英 B2B AI 机构平台，专注于为需要代理系统真正落地的企业部署生产就绪的多智能体工作流、定制化 LLM 微调和运营自动化。"
   button:
     enable : true
-    label : "咨询"
-    link : "/zh/contact/"
+    label : "访问网站"
+    link : "https://agentbureau.de/"
   background_class: "bg-light"
 
 

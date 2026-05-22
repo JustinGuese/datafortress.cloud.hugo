@@ -13,8 +13,8 @@ banner:
   content : "创新的 IoT 软硬件解决方案，专为 WiFi 信号检测、环境感知和智能基础设施指标而设计——适用于商业传感器套件不满足需求的部署场景。"
   button:
     enable : true
-    label : "咨询"
-    link : "/zh/contact/"
+    label : "访问网站"
+    link : "https://wifisensebox.com/"
   background_class: "bg-light"
 
 

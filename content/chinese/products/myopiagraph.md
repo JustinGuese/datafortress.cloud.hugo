@@ -12,8 +12,8 @@ banner:
   content : "它旨在为许多医生提供一种成本和时间有效的全面近视分析，从而为许多儿童提供最佳的近视管理。"
   button:
     enable : true
-    label : "免费试用"
-    link : "/contact"
+    label : "访问网站"
+    link : "https://myopiagraph.com/"
   background_class: "bg-light"
 
 ######################### 关于此产品 #####################

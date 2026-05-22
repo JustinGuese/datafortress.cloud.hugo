@@ -36,8 +36,8 @@ banner:
   background_class: gris clair
   button:
     enable: true
-    label: Essayez gratuitement
-    link: /contact
+    label: Visiter le site web
+    link: https://myopiagraph.com/
   content: 'Il a été développé pour fournir une analyse complète de la myopie rentable
     et rapide, permettant une gestion optimale de la myopie pour de nombreux médecins
     et ainsi pour de nombreux enfants.
