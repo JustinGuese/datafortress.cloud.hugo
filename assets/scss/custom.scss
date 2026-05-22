@@ -20,6 +20,38 @@ typebot-bubble {
 
 // Brand carousel: render as a static flex row pre-init so logos are always
 // visible (Swiper's init was leaving slides at zero width).
+// Any section using the dark-gradient background needs light text. The theme
+// applies the bg but leaves text default-dark, producing invisible content
+// on contact, portfolio, products, etc. Force light contrast on the whole subtree.
+.animated-gradient-bg {
+  color: #fff;
+
+  h1, h2, h3, h4, h5, h6,
+  p, li, a, label, span, blockquote, figcaption,
+  .section-title, .content, .holographic {
+    color: #fff !important;
+  }
+
+  a:not(.btn) {
+    color: #aeeaea !important;
+    text-decoration: underline;
+  }
+  a:not(.btn):hover { color: #ffffff !important; }
+
+  .text-muted, small, .small { color: rgba(255,255,255,.7) !important; }
+  hr, .border-top, .border-bottom { border-color: rgba(255,255,255,.15) !important; }
+
+  // form controls inside dark hero stay readable
+  .form-control,
+  input.form-control,
+  textarea.form-control {
+    background: rgba(255,255,255,.95) !important;
+    color: #222 !important;
+    border-color: rgba(255,255,255,.4) !important;
+  }
+  .form-control::placeholder { color: #6c757d !important; }
+}
+
 .brand-strip {
   overflow: hidden;
   .brand-strip-inner {
