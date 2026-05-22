@@ -13,8 +13,8 @@ banner:
   content : "Plateforme d'agence d'IA B2B d'élite axée sur le déploiement de flux de travail multi-agents prêts pour la production, le fine-tuning de LLM personnalisé et l'automatisation opérationnelle pour les entreprises qui ont besoin que les systèmes agentiques soient réellement opérationnels."
   button:
     enable : true
-    label : "S'informer"
-    link : "/fr/contact/"
+    label : "Visiter le site web"
+    link : "https://agentbureau.de/"
   background_class: "bg-light"
 
 

@@ -13,8 +13,8 @@ banner:
   content : "An innovative IoT hardware-software solution engineered for WiFi signal detection, environmental sensing, and smart infrastructure metrics — built for deployments where commercial sensor packages don't fit."
   button:
     enable : true
-    label : "Inquire"
-    link : "/contact/"
+    label : "Visit WiFiSenseBox"
+    link : "https://wifisensebox.com/"
   background_class: "bg-light"
 
 

@@ -13,8 +13,8 @@ banner:
   content : "Eine innovative IoT-Hardware-Software-Lösung für WiFi-Signalerkennung, Umgebungssensorik und Metriken für intelligente Infrastruktur – entwickelt für Einsätze, bei denen kommerzielle Sensorpakete nicht ausreichen."
   button:
     enable : true
-    label : "Anfragen"
-    link : "/de/contact/"
+    label : "Website besuchen"
+    link : "https://wifisensebox.com/"
   background_class: "bg-light"
 
 

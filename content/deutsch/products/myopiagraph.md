@@ -13,8 +13,8 @@ banner:
   content : "Es wurde entwickelt, um eine kostengünstige und zeiteffiziente umfassende Myopie-Analyse bereitzustellen, um ein optimales Myopie-Management für viele Ärzte und somit für viele Kinder zu ermöglichen."
   button:
     enable : true
-    label : "Kostenlos ausprobieren"
-    link : "/contact"
+    label : "Website besuchen"
+    link : "https://myopiagraph.com/"
   background_class: "bg-light"
 
 

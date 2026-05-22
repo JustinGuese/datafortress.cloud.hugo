@@ -9,7 +9,8 @@
           <h1 class="section-title h2 text-white">{{ .title | markdownify }}</h1>
           <p class="mb-5 text-white-50" style="font-size:1.05rem;">{{ .content | markdownify }}</p>
           {{ if .button.enable }}{{ with .button }}
-          <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a>
+          {{ $external := or (hasPrefix .link "http://") (hasPrefix .link "https://") }}
+          <a href="{{ if $external }}{{ .link | safeURL }}{{ else }}{{ .link | relLangURL }}{{ end }}" title="{{ .label }}" class="btn btn-primary"{{ if $external }} target="_blank" rel="noopener"{{ end }}>{{ .label }}</a>
           {{ end }}{{ end }}
         </div>
       </div>

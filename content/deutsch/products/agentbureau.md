@@ -13,8 +13,8 @@ banner:
   content : "Elite B2B KI-Agentur-Plattform mit Fokus auf produktionsreife Multi-Agenten-Workflows, individuelles LLM-Feintuning und betriebliche Automatisierung für Unternehmen, die agentische Systeme tatsächlich produktiv einsetzen wollen."
   button:
     enable : true
-    label : "Anfragen"
-    link : "/de/contact/"
+    label : "Website besuchen"
+    link : "https://agentbureau.de/"
   background_class: "bg-light"
 
 

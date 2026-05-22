@@ -13,8 +13,8 @@ banner:
   content : "It was developed to provide a cost and time effective comprehensive myopia analysis to enable optimal myopia management for many physicians and thus for many children."
   button:
     enable : true
-    label : "Try it for Free"
-    link : "/contact"
+    label : "Visit Myopiagraph"
+    link : "https://myopiagraph.com/"
   background_class: "bg-light"
 
 

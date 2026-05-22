@@ -13,8 +13,8 @@ banner:
   content : "Una solución innovadora de hardware y software de IoT diseñada para la detección de señales WiFi, detección ambiental y métricas de infraestructura inteligente, creada para despliegues donde los paquetes de sensores comerciales no encajan."
   button:
     enable : true
-    label : "Consultar"
-    link : "/es/contact/"
+    label : "Visitar sitio web"
+    link : "https://wifisensebox.com/"
   background_class: "bg-light"
 
 

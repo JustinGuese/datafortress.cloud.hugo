@@ -13,8 +13,8 @@ banner:
   content : "Elite B2B AI agency platform focused on deploying production-ready multi-agent workflows, custom LLM fine-tuning, and operational automation for enterprises that need agentic systems to actually ship."
   button:
     enable : true
-    label : "Inquire"
-    link : "/contact/"
+    label : "Visit AgentBureau"
+    link : "https://agentbureau.de/"
   background_class: "bg-light"
 
 
