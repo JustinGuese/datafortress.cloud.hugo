@@ -1,13 +1,13 @@
 ---
 ####################### Banner #########################
 banner:
-  title : "From Dusty Data to Revenue Gold"
+  title : "Enterprise-Grade Infrastructure for the AI Era"
   image : "images/banner-art.svg"
   imagetwo: "images/justin-guese-bg-removed.png"
-  content : "Data Engineering, DevOps (K8s, OS), AI <br> We’re Here to Help"
+  content : "Scaling secure, high-performance Data Engineering and DevOps for the world's most demanding industries — from automotive giants to BaFin-compliant banking networks. Certified AWS Solutions Architect bridging on-premise Kubernetes/OpenShift with autonomous agentic workflows."
   button:
     enable : true
-    label : "Free 15 minute consultation"
+    label : "Book an Architecture Review"
     link : "contact/"
 
 
@@ -17,7 +17,6 @@ clients_logo_slider:
   title: "Trusted by the world's best companies"
   logos:
   - "images/client-logo/bmw.png"
-  - "images/client-logo/volksbank.png"
   - "images/client-logo/volksbank.png"
   - "images/client-logo/hpe-small.png"
   - "images/client-logo/porsche-holding.png"
@@ -31,11 +30,9 @@ clients_logo_slider:
 ##################### Feature ##########################
 feature:
   enable : true
-  title : "Many companies struggle to unlock the potential of their data"
+  title : "Three pillars. Petabytes of data. Zero room for downtime."
   content : "
-That's where we come in.
-While AWS and public clouds can be costly and are often restricted by German finance and healthcare regulations, we offer secure Kubernetes hosting solutions.
-With a proven track record working with enterprises like VW, HPE, Porsche, and major banks, we can transform your data into valuable revenue."
+We architect mission-critical systems across three disciplines: <strong>BaFin-compliant Kubernetes/OpenShift</strong> for regulated industries, <strong>petabyte-scale data engineering</strong> spanning 60+ countries, and <strong>agentic AI</strong> that runs autonomously on-premise. Public cloud is often too costly — and frequently off-limits under German finance and healthcare regulations. We bridge that gap for VW, HPE, BMW, Porsche, and Germany's largest banking network."
   button:
     enable : true
     label : "Free 15-minute consultation"
@@ -76,6 +73,17 @@ intro_video:
 service:
   enable : true
   service_item:
+  # service item loop — Atruvia 120-min war story (headline case)
+  - title : "The 120-Minute BaFin Rescue: Stopping a Cross-Datacenter Vault Failure at Atruvia"
+    images:
+    - "images/client-logo/atruvia.png"
+    - "images/client-logo/volksbank.png"
+    content : "A HashiCorp Vault synchronization error caused a secret mismatch between two of Atruvia's data centers — live, high-velocity banking transactions from Data Center A were writing directly into the Data Center B production database. Under BaFin regulations, the engineering team had a definitive 2-hour window before a mandatory federal outage report would be triggered.
+<br/><br/>
+Using OpenShift container-native orchestration, we froze rollouts, killed misconfigured pods, and ran custom reconciliation scripts to rewrite database state — completing with minutes to spare and <strong>zero data loss</strong>. To make sure it could never repeat, we redesigned the architecture with an Istio Service Mesh configuration featuring geographic locking and strict service-to-service authorization on egress gateways, enforcing network-level isolation even if the secrets layer fails.
+<br/><br/>
+This is the case we get called for: high-stakes, regulated, no margin for error."
+
   # service item loop
   - title : "Enterprise Solution Architecture: Revolutionizing Data Flow in VW’s Sampling Process with HPE"
     images:
@@ -165,10 +173,10 @@ tools_intregrate:
 ##################### Call to action #####################
 call_to_action:
   enable : true
-  title : "Ready to get started?"
-  content : "Contact us for a free 15-minute consultation and tell us about your data/cloud challenges."
+  title : "I don't just write code. I build fortresses for your data."
+  content : "Inquire for high-complexity freelance engagements, architectural reviews, or AI integration strategies. Based in Munich, Germany — available globally."
   button:
     enable : true
-    label : "Contact Us"
+    label : "Book an Architecture Review"
     link : "contact/"
 ---

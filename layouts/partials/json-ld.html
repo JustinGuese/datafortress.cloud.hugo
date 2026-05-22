@@ -1,0 +1,184 @@
+{{- /* Organization schema on every page */ -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "DataFortress.cloud",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
+  "description": "{{ .Site.Params.metadata.description }}",
+  "sameAs": [
+    "https://www.linkedin.com/company/49084538",
+    "https://github.com/JustinGuese",
+    "https://www.facebook.com/datafortress.cloud"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Straßlach-Dingharting",
+    "addressCountry": "DE"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "telephone": "+49 160 1136770",
+    "email": "info@datafortress.cloud"
+  }
+}
+</script>
+
+{{- /* Article schema for blog posts */ -}}
+{{- if eq .Type "post" -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Summary | htmlEscape }}",
+  "image": "{{ with .Params.image }}{{ $.Site.BaseURL }}{{ . }}{{ end }}",
+  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Params.author }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DataFortress.cloud",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}"
+    }
+  }
+}
+</script>
+{{- end -}}
+
+{{- /* Person schema for author pages */ -}}
+{{- if eq .Type "author" -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ .Title }}",
+  "description": "{{ .Summary | htmlEscape }}",
+  "url": "{{ .Permalink }}",
+  "sameAs": [
+    "https://www.linkedin.com/in/justin-guese/",
+    "https://github.com/JustinGuese",
+    "https://www.facebook.com/guese.justin/"
+  ],
+  "knowsAbout": ["Data Engineering", "Kubernetes", "DevOps", "Agentic AI", "LLMs", "Cloud Architecture"],
+  "jobTitle": "Data Engineer, DevOps Specialist, Agentic AI Architect"
+}
+</script>
+{{- end -}}
+
+{{- /* BreadcrumbList for single pages */ -}}
+{{- if and (ne .Type "post") (ne .Type "author") (not .IsHome) }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ .Site.BaseURL }}"
+    }
+    {{- if eq .Type "portfolio" }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Portfolio",
+      "item": "{{ .Site.BaseURL }}portfolio/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+    {{- else if eq .Type "products" }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Products",
+      "item": "{{ .Site.BaseURL }}products/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+    {{- else if in .RelPermalink "/services/" }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "{{ .Site.BaseURL }}services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+    {{- else }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{- end -}}
+
+{{- /* FAQPage schema for FAQ page */ -}}
+{{- if and .File (eq .File.BaseFileName "faq") -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{- range $index, $faq := .Params.faq_list }}
+    {{- if gt $index 0 }},{{ end }}
+    {
+      "@type": "Question",
+      "name": "{{ $faq.title }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ $faq.content | htmlEscape }}"
+      }
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{- end -}}
+
+{{- /* Service schema for service pages */ -}}
+{{- if in .RelPermalink "/services/" -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "{{ .Title }}",
+  "description": "{{ .Summary | htmlEscape }}",
+  "provider": {
+    "@type": "Organization",
+    "name": "DataFortress.cloud",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Germany"
+  },
+  "url": "{{ .Permalink }}"
+}
+</script>
+{{- end -}}

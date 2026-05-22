@@ -1,0 +1,24 @@
+{{ $title := .Title | default site.Title }}
+{{ $desc := .Params.description | default site.Params.metadata.description }}
+{{ $image := .Params.image | default site.Params.metadata.image }}
+{{ $defaultImage := site.Params.metadata.image | default "images/logo.png" }}
+{{ $ogImage := $image | default $defaultImage }}
+{{ $author := .Params.author | default site.Params.metadata.author }}
+
+<meta name="description" content="{{ $desc }}">
+<meta name="author" content="{{ $author }}">
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:image" content="{{ $ogImage | absURL }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:type" content="{{ if in (slice "post" "posts" "blog" "blogs") .Section }}article{{ else }}website{{ end }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $desc }}">
+<meta name="twitter:image" content="{{ $ogImage | absURL }}">
+

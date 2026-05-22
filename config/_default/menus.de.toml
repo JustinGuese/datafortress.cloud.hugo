@@ -6,6 +6,30 @@ weight = 1
 
 [[main]]
 weight = 2
+name = "Services"
+url = "/services"
+hasChildren = true
+
+[[main]]
+parent = "Services"
+name = "Data Engineering & Analytics"
+url = "/services/data-engineering-analytics"
+weight = 1
+
+[[main]]
+parent = "Services"
+name = "Cloud-Infrastruktur & DevOps"
+url = "/services/cloud-infrastructure-devops"
+weight = 2
+
+[[main]]
+parent = "Services"
+name = "Agentic AI & Automatisierung"
+url = "/services/agentic-ai-automation"
+weight = 3
+
+[[main]]
+weight = 3
 name = "Portfolio"
 hasChildren = true
 
@@ -61,25 +85,33 @@ isMenuLarge = true
 
 [[main]]
 parent = "Produkte"
+name = "AgentBureau"
+pre = "<i class='dropdown-icon fas fa-briefcase'></i>"
+post = "<small class='dropdown-subtitle'>B2B KI-Agentur-Plattform für Multi-Agent-Workflows</small>"
+url = "/products/agentbureau"
+weight = 1
+
+[[main]]
+parent = "Produkte"
 name = "DocumentChat"
 pre = "<i class='dropdown-icon fas fa-users'></i>"
-post = "<small class='dropdown-subtitle'>KI SaaS-Anwendung, die es Benutzern ermöglicht, mit ihren E-Mails und Dokumenten zu chatten</small>"
+post = "<small class='dropdown-subtitle'>KI SaaS-Anwendung für Dokumentenanalyse</small>"
 url = "/products/DocumentChat"
-weight = 1
+weight = 2
 
 [[main]]
 parent = "Produkte"
 name = "Myopiagraph"
 pre = "<i class='dropdown-icon fas fa-eye'></i>"
-post = "<small class='dropdown-subtitle'>Myopiagraph ist eine Gesundheitssoftware für das Myopie-Management</small>"
+post = "<small class='dropdown-subtitle'>Gesundheitssoftware für das Myopie-Management</small>"
 url = "/products/myopiagraph"
-weight = 2
+weight = 3
 
 [[main]]
 parent = "Produkte"
 name = "AI Investing Bots"
 pre = "<i class='dropdown-icon fas fa-chart-bar'></i>"
-post = "<small class='dropdown-subtitle'>AI Investing Bots ist eine Website, die unsere Handelsideen und Anlagestrategien veröffentlicht.</small>"
+post = "<small class='dropdown-subtitle'>Handelsideen und Anlagestrategien</small>"
 url = "/products/aiinvestingbots"
 weight = 4
 
@@ -87,8 +119,8 @@ weight = 4
 parent = "Produkte"
 name = "Alle Produkte anzeigen"
 pre = "<i class='dropdown-icon text-primary fas fa-arrow-right'></i>"
-url = "/Produkte"
-weight = 5
+url = "/products"
+weight = 10
 
 [[main]]
 weight = 13
