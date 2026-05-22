@@ -12,11 +12,11 @@ logo_webp = true
 # logo text will only show when logo is missing.
 logo_text = "DataFortress.cloud"
 # theme-mode
-theme_switcher = true
-theme_default = "system" # available options [light/dark/system]
+theme_switcher = false
+theme_default = "light" # available options [light/dark/system]
 # site-wide feature toggles (default enabled)
-enable_animations = true
-enable_particles = true
+enable_animations = false
+enable_particles = false
 enable_hero3d = true
 # Main Sections
 mainSections = ["blog"]
@@ -55,10 +55,9 @@ crisp_website_id = "4453c713-998c-44d9-8968-96ad05471989" # replace this code wi
 
 # seo meta data for OpenGraph / Twitter Card
 [metadata]
-keywords = ["Data Engineering", "Data", "Kubernetes", "Hosting in Germany", "Managed Kubernetes", "Jupyter Notebook", "ETL Pipelines"]
-description = "DataFortress.cloud (GmbH) specializes in delivering scalable data engineering, cloud infrastructure, and Kubernetes solutions for enterprise customers. We provide customized services, including cloud migration, DevOps integration, Kubernetes orchestration, and secure data pipeline management. With expertise in multi-cloud and hybrid environments, we help businesses optimize performance, ensure security, and achieve cost efficiency. Trusted by enterprises across industries, DataFortress.cloud is your partner in transforming IT infrastructure for the modern cloud era."
-author = "DataFortress.cloud"
-image = "images/logo.png"                           # this image will be used as fallback if a page has no image of its own
+description = "Enterprise-grade infrastructure for the AI era. BaFin-compliant OpenShift & Kubernetes, petabyte-scale data engineering, and on-premise agentic AI for automotive, banking, and healthcare. Trusted by VW, BMW, Porsche, HPE, and Germany's largest banking network."
+author = "Justin Güse — DataFortress.cloud"
+image = "images/about.jpg"                           # this image will be used as fallback if a page has no image of its own
 
 # matomo tracking: see https://matomo.org/
 # matomo tracking module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/matomo-analytics

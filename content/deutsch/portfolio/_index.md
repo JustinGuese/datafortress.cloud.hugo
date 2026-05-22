@@ -1,22 +1,17 @@
 ---
 title: "Portfolio"
-subtitle: "Read our Portfolio"
-# meta description
-description: "Read our Portfolio"
+subtitle: "Unser Portfolio"
+description: "Unser Portfolio"
 draft: false
-# content section
 section: "portfolio"
 
-
-# call_to_action
 call_to_action:
   enable : true
   image : "images/vector.svg"
-  title : "Do you have something similar in mind?"
-  content : "Contact us for a free 15-minute consultation and tell us about your data/cloud challenges."
+  title : "Haben Sie etwas Ähnliches im Sinn?"
+  content : "Kontaktieren Sie uns für ein kostenloses 15-minütiges Beratungsgespräch und erzählen Sie uns von Ihren Daten-/Cloud-Herausforderungen."
   button:
     enable : true
-    label : "Contact Us"
+    label : "Kontakt"
     link : "contact/"
 ---
-

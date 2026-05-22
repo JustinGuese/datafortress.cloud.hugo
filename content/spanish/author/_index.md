@@ -1,9 +1,6 @@
 ---
-description: Leer los últimos artículos del blog del autor
+title: "Autor"
+subtitle: ""
+description: "Lea las últimas publicaciones del blog del autor"
 draft: false
-subtitle: ''
-title: Autor
-
 ---
-
-

@@ -1,0 +1,53 @@
+{{ define "main" }}
+
+<section class="section contact-hero animated-gradient-bg" style="position: relative; z-index:1;">
+  <div class="container" style="position: relative; z-index: 3;">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <div class="content">
+          {{ .Content }}
+          <button type="button"
+                  id="book_meeting_button"
+                  class="btn btn-primary btn-sm mt-2 text-white"
+                  data-cal-link="datafortress-justin/30min"
+                  data-cal-namespace="30min"
+                  data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>
+            <i class="fas fa-calendar-alt me-2"></i>Book a meeting (opens in popup)
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <form method="POST" class="row g-4 contact-form-card" action="{{site.Params.contact_form_action | safeURL}}">
+          <div class="col-lg-6">
+            <label class="mb-1" for="fname">{{ i18n "fname"}} <span class="text-danger">*</span></label>
+            <input class="form-control shadow-none" type="text" name="first_name" placeholder="{{ i18n `fname`}}" required>
+          </div>
+          <div class="col-lg-6">
+            <label class="mb-1" for="fname">{{ i18n "lname"}} <span class="text-danger">*</span></label>
+            <input class="form-control shadow-none" type="text" name="last_name" placeholder="{{ i18n `lname`}}" required>
+          </div>
+          <div class="col-lg-12">
+            <label class="mb-1" for="email">{{i18n "email"}} <span class="text-danger">*</span></label>
+            <input class="form-control shadow-none" type="email" name="email_address" placeholder="{{i18n `email`}}" required>
+          </div>
+          <div class="col-lg-12">
+            <label class="mb-1" for="email">{{i18n "message"}}</label>
+            <textarea class="form-control shadow-none" name="message" rows="4" placeholder="{{i18n `message`}}"></textarea>
+          </div>
+          <div class="col-lg-12">
+            <button class="btn btn-primary btn-sm mt-2" type="submit">{{ i18n "send"}}</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cal.com embed (popup on data-cal-link buttons) -->
+<script type="text/javascript">
+(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "30min", {origin:"https://app.cal.com"});
+Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+</script>
+
+{{ end }}

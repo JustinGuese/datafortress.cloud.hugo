@@ -1,0 +1,64 @@
+# DataFortress.cloud
+
+> Enterprise infrastructure consultancy run by Justin Güse. BaFin-compliant Kubernetes/OpenShift, petabyte-scale data engineering, and on-premise agentic AI for automotive, banking, and healthcare. Trusted by VW, BMW, Porsche, HPE, and Germany's largest cooperative banking network (120+ banks). Based in Bavaria, Germany. AWS Certified Solutions Architect — Professional.
+
+## Core Services
+
+- [Cloud Infrastructure & DevOps](https://datafortress.cloud/services/cloud-infrastructure-devops/): BaFin-compliant Kubernetes / OpenShift on-premise and hybrid, HashiCorp Vault, Istio service mesh, ArgoCD GitOps for German banking and regulated industries.
+- [Data Engineering & Analytics](https://datafortress.cloud/services/data-engineering-analytics/): Trino, data lakes, data warehouses, ETL at petabyte scale. VW sampling-process pipeline, BMW worldwide backup (100PB+), Atruvia banking network DWH.
+- [Agentic AI & ML Engineering](https://datafortress.cloud/services/agentic-ai-automation/): Production multi-agent LangGraph systems, custom LLM fine-tuning on Kubernetes GPUs, 100% on-premise deployments for clients with data residency constraints.
+
+## Flagship Case Studies
+
+- [Atruvia — DevOps Modernization & Banking Platform Engineering](https://datafortress.cloud/portfolio/atruvia-devops-modernization/): Multi-year DevOps engagement for Germany's 120+ cooperative banks. Jenkins → GitLab CI migration, Java Spring Boot microservices on OpenShift, Finanzamt (federal tax authority) integration layer, Istio service mesh with geographic locking, HashiCorp Vault.
+- [Atruvia / Volksbank Data Warehouse](https://datafortress.cloud/portfolio/atruvia--volksbank-data-warehouse/): 45% cost reduction across 120+ German cooperative banks. Trino + object-storage migration.
+- [VW / HPE Solution Architecture](https://datafortress.cloud/portfolio/vw-hpe-solution-architecture/): 64% faster time-to-market on VW sampling-process pipeline.
+- [BMW Worldwide VM Backup](https://datafortress.cloud/portfolio/bmw-worldwide-backup-solution/): 100PB+ replicated across 60+ countries.
+- [Google Research / TimesFM Open-Source Contribution](https://datafortress.cloud/portfolio/google-timesfm/): CI/CD + Python Poetry modernization merged upstream.
+
+## In-House Products
+
+- [AgentBureau](https://datafortress.cloud/products/agentbureau/): B2B AI agency arm — production multi-agent workflows, custom LLM fine-tuning, on-premise LLM deployments.
+- [DocumentChat](https://datafortress.cloud/products/DocumentChat/): SaaS for chatting with documents and emails.
+- [Myopiagraph](https://datafortress.cloud/products/myopiagraph/): Healthcare software for myopia management.
+- [AI Investing Bots](https://datafortress.cloud/products/aiinvestingbots/): Algorithmic trading strategies.
+- [NaviCareNow](https://datafortress.cloud/products/navicarenow/): Healthcare patient-navigation platform.
+- [PsychDiary](https://datafortress.cloud/products/psychdiary/): AI mental-health journaling.
+- [Tiledom](https://datafortress.cloud/products/tiledom/): Tile-based dashboard platform.
+- [WiFiSenseBox](https://datafortress.cloud/products/wifisensebox/): IoT signal detection + environmental sensing.
+
+## Open-Source & Ecosystem Contributions
+
+- Google Research / TimesFM (time-series foundation model)
+- Pandas (foundational Python data library)
+- Hetzner Cloud CSI Driver (Kubernetes storage)
+- Bitnami Helm Charts (industry-standard K8s deploys)
+- Microsoft / Winget-pkgs (Windows package manager)
+- Anthropic Open-Source Program participant
+
+## Engagement Model
+
+- **Discovery Call** — free, 1 hour. If no fit, we refer someone better.
+- **Hourly Consulting** — €190 / hr. Architecture reviews, audits, design sessions. 1-hour minimum, no retainer.
+- **Fixed-Scope Engagement** — from €15K. 1–3 week deep-dive with written deliverable, or fractional architect retainer.
+- **Free 1-hour Architecture Review** offer: "In 60 minutes I'll find €100K+ in compliance risk, cloud waste, or scaling headroom — or I walk."
+
+## Key Pages
+
+- [Homepage](https://datafortress.cloud/)
+- [About Justin Güse](https://datafortress.cloud/about/)
+- [Recognition & Open Source](https://datafortress.cloud/recognition/)
+- [All Case Studies](https://datafortress.cloud/case-studies/)
+- [Portfolio](https://datafortress.cloud/portfolio/)
+- [Services](https://datafortress.cloud/services/)
+- [Blog](https://datafortress.cloud/blog/)
+- [FAQ](https://datafortress.cloud/about/faq/)
+- [Contact / Book a Review](https://datafortress.cloud/contact/)
+
+## Contact
+
+- Email: info@datafortress.cloud
+- Phone: +49 160 1136770
+- Location: Straßlach-Dingharting, Bavaria, Germany
+- LinkedIn: https://www.linkedin.com/in/justin-guese/
+- GitHub: https://github.com/JustinGuese

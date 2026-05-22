@@ -1,0 +1,99 @@
+{{ define "main" }}
+
+<!-- hero band (gradient, just the title) -->
+<section class="section animated-gradient-bg" style="position: relative; z-index: 1;">
+  <div class="container" style="position: relative; z-index: 3;">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10 text-center">
+        <p class="h6 text-white-50 mb-2" style="letter-spacing:.12em; text-transform:uppercase; font-size:.78rem;">Case Study</p>
+        <h1 class="h2 text-white mb-0">{{ .Title | markdownify }}</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- body content on light background -->
+<section class="section" style="background:#ffffff;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="content portfolio-content">{{ .Content }}</div>
+        <hr class="my-5">
+        <div class="row">
+          <div class="col-6 text-center text-md-start">
+            {{ with .NextInSection }}
+            <a href="{{ .RelPermalink }}" class="d-inline-block text-reset text-decoration-none">
+              {{ $title := .Title }}
+              {{ with .Params.logo }}
+              <div class="rounded-2 mb-2">
+                {{ partial "image" (dict "Src" . "Alt" $title "Size" "x80") }}
+              </div>
+              {{ end }}
+              <p class="mt-2 mb-0 text-muted small">{{ i18n `prev_case` }}</p>
+              <p class="h6 mb-0">{{ .Title }}</p>
+            </a>
+            {{ end }}
+          </div>
+          <div class="col-6 text-center text-md-end">
+            {{ with .PrevInSection }}
+            <a href="{{ .RelPermalink }}" class="d-inline-block text-reset text-decoration-none">
+              {{ with .Params.logo }}
+              <div class="rounded-2 mb-2">
+                {{ partial "image" (dict "Src" . "Alt" "image" "Size" "x80") }}
+              </div>
+              {{ end }}
+              <p class="mt-2 mb-0 text-muted small">{{ i18n `next_case` }}</p>
+              <p class="h6 mb-0">{{ .Title }}</p>
+            </a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.portfolio-content {
+  color: #222;
+}
+.portfolio-content h1,
+.portfolio-content h2,
+.portfolio-content h3,
+.portfolio-content h4,
+.portfolio-content h5,
+.portfolio-content h6 {
+  color: #0aa8a7;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.portfolio-content h2 { font-size: 1.6rem; }
+.portfolio-content h3 { font-size: 1.3rem; }
+.portfolio-content p, .portfolio-content li { color: #333; line-height: 1.65; }
+.portfolio-content a { color: #0aa8a7; }
+.portfolio-content strong { color: #111; }
+.portfolio-content hr { border-color: #e5e7eb; }
+.portfolio-content img { max-width: 100%; height: auto; border-radius: .5rem; margin: 1.5rem 0; }
+.portfolio-content ul, .portfolio-content ol { padding-left: 1.4rem; }
+</style>
+
+<!-- CTA -->
+<section class="section animated-gradient-bg">
+  <div class="container">
+    <div class="row align-items-center justify-content-center text-center">
+      <div class="col-md-8">
+        <h2 class="section-title text-white mb-3">Have a project like this?</h2>
+        <p class="mb-4 text-white-50">In 60 minutes I'll find €100K+ in compliance risk, cloud waste, or scaling headroom — or I tell you so and walk away.</p>
+        <button type="button" class="btn btn-primary" data-cal-link="datafortress-justin/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book a free 1-hr architecture review</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ar);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "30min", {origin:"https://app.cal.com"});
+Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+</script>
+
+{{ end }}

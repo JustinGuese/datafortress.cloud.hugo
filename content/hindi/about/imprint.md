@@ -1,22 +1,22 @@
 ---
-date: '2020-07-12T17:02:17+02:00'
+title: 'छाप (Imprint)'
+date: 2020-07-12T17:02:17+02:00
 draft: false
-image: images/legal.webp
-title: मुद्रण
+image: 'images/legal.webp'
 ---
 
-<a id="mail" href="mailto:info@datafortress.cloud">info@dat<!--...-->afortress.cloud</a>
+<a id="mail" href="mailto:info@datafortress.cloud">info@datafortress.cloud</a>
 
-सीईओ: जस्टिन गुसे
+सीईओ (CEO): Justin Güse
 
-डेटाफोर्ट्रेस.क्लाउड जीएमबीएच
+DataFortress.cloud GmbH
 
-गेओर्गेनस्ट्रैस 13
+Gewerbestraße 13
 
-82064 ऑग्सबर्ग
+82064 Straßlach-Dingharting
 
 जर्मनी
 
 DE345185498
 
-एचआरबी 36456
+HRB 36456

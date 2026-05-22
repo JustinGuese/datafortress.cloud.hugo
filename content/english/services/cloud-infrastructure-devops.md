@@ -25,34 +25,37 @@ We specialize in bridging secure, on-premise Kubernetes and OpenShift environmen
 
 ---
 
-## The "Ticking Clock" Rescue: A Banking War Story
+## DevOps Modernization at Atruvia
 
-**The Crisis (Atruvia)**: During a critical infrastructure sync, a **HashiCorp Vault synchronization error** caused an architectural secret mismatch. This led to a catastrophic "split-brain" state where applications in Data Center A began writing live, high-velocity transactions directly into the Data Center B production database without authorization.
+> Full case study: [**Atruvia — DevOps Modernization & Banking Platform Engineering**](/portfolio/atruvia-devops-modernization/)
 
-**The Ticking Clock**: Under strict **BaFin regulations**, the engineering team had a definitive **2-hour window** before a mandatory federal government outage report was triggered. Such a report would have initiated a full federal audit and significant reputational damage.
+Multi-year engagement at Atruvia, the IT backbone for 120+ German cooperative banks (Volksbank network). The work spanned three threads:
 
-**The Resolution**: Utilizing OpenShift and Kubernetes container-native orchestration, we executed a "freeze-and-reconcile" strategy:
-1. **Immediate Lockdown**: Instantly killed all misconfigured pods and locked egress gateways via Istio.
-2. **Data Integrity**: Ran customized data reconciliation scripts to identify and rewrite database states, ensuring zero data loss.
-3. **Recovery**: Restored the secrets management layer and validated all transaction logs with minutes to spare.
+1. **Jenkins → GitLab CI migration.** Hundreds of pipelines lifted into pipeline-as-code with auditable promotion gates, signed artifacts, and deploy approvals routed through the same Git workflow as the source.
+2. **Java Spring Boot microservices on OpenShift.** Refactored monolithic banking services into discrete Spring Boot services with proper service boundaries, health probes, and Helm-managed deploys. Every service ships with observability, distributed tracing, and BaFin-friendly audit logging baked in.
+3. **Finanzamt integration layer.** Engineered the secure communication layer between core banking systems and the German Finanzamt (federal tax authority) reporting endpoints — pipelines, credential handling via HashiCorp Vault, retry semantics, and reconciliation tooling, all auditable end-to-end.
 
-**The Permanent Prevention**: We redesigned the entire architecture using an extended **Istio Service Mesh** configuration with geographic locking and strict service-to-service authorization rules on egress gateways, ensuring network-level isolation even if the secrets layer fails again.
+**The architectural pattern** that holds it together: an **Istio Service Mesh** with geographic locking and strict service-to-service authorization on egress gateways. Cross-datacenter traffic is a deliberate, authorized act — not an accident of routing. Defense-in-depth across the secrets, mesh, identity, and application layers means a failure in any single layer doesn't compromise the system.
+
+This is the kind of work that's boring on purpose: deploy frequency up, lead time down, and a platform that holds up under regulatory review.
 
 ---
 
 ## Technical Stack
 
 - **Container Orchestration**: Kubernetes, OpenShift, Helm, ArgoCD, Tekton.
+- **CI/CD**: GitLab CI, Jenkins, GitHub Actions — including Jenkins-to-GitLab migrations at scale.
+- **Application Stack**: Java Spring Boot, Python, Go — productionized on container platforms.
 - **Cloud Providers**: AWS (Certified Architect), GCP, Azure, Hetzner Cloud.
 - **Security & Compliance**: HashiCorp Vault, Istio Service Mesh, BaFin/GDPR Hardening.
 - **Infrastructure-as-Code**: Terraform, Ansible, HCL.
 
 ---
 
-## Ready to Secure Your Infrastructure?
+## Ready to Modernize Your Platform?
 
-[**Book an Architecture Review**](https://cal.com/datafortress-justin/15min)  
-*Get a high-level assessment of your current security posture and orchestration efficiency.*
+[**Book an Architecture Review**](https://cal.com/datafortress-justin/15min)
+*Get a high-level assessment of your current platform, CI/CD posture, and orchestration efficiency.*
 
 ---
 

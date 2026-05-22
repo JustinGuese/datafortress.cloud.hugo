@@ -5,21 +5,19 @@ description: "Enterprise-grade infrastructure architect specializing in OpenShif
 
 # Technical Outlier & AI Architect
 
-**"When the biggest bank in Germany has 120 minutes to save its data, I’m the one on the call."**
+**"I build the boring, auditable platforms that German banks, automotive giants, and regulated healthcare systems actually trust in production."**
 
 I architect mission-critical systems for global enterprises and contribute to the core infrastructure of the modern cloud. My work bridges the gap between **BaFin-regulated financial environments** and cutting-edge **autonomous agentic workflows**.
 
 ---
 
-## The "Ticking Clock" Rescue: A Banking War Story
+## DevOps Modernization at Atruvia (Volksbank / 120+ German Banks)
 
 At Atruvia — the IT backbone powering Volksbank and Germany's largest cooperative banking network — I designed and operated the DevOps and platform infrastructure that financial institutions depend on daily.
 
-**The Crisis**: During a critical infrastructure sync, a **HashiCorp Vault synchronization error** caused an architectural secret mismatch, leading applications to write live, high-velocity transactions directly into production databases without authorization.
+The work spanned **Jenkins-to-GitLab CI migrations** across hundreds of pipelines, **Java Spring Boot microservices on OpenShift** with proper service boundaries and audit-grade observability, and the **secure Finanzamt (federal tax authority) integration layer** between core banking systems and government reporting endpoints.
 
-**The Ticking Clock**: Under strict **BaFin regulations**, we had a definitive **2-hour window** before a mandatory federal government outage report was triggered.
-
-**The Resolution**: Utilizing OpenShift and Kubernetes container-native orchestration, I mitigated the failure within the window, ensuring zero data loss and total regulatory compliance. We then redesigned the architecture using an extended **Istio Service Mesh** configuration with geographic locking to ensure network-level isolation even if the secrets layer fails.
+Underneath it sits a defense-in-depth architecture: an **Istio Service Mesh** with geographic locking, **HashiCorp Vault** for secrets, strict service-to-service authorization on egress gateways, and BaFin-aware promotion gates baked into every pipeline. The point isn't heroics — it's that the platform is boring on purpose, every day, under audit.
 
 ---
 
@@ -57,7 +55,7 @@ DataFortress.cloud bridges all three.
 
 ### **Infrastructure Authority**
 - High-availability Kubernetes/OpenShift on-prem or hybrid cloud
-- Petabyte-scale data replication and disaster recovery
+- Petabyte-scale data replication and multi-region resilience engineering
 - BaFin, GDPR, VDA compliance architecture
 - Cost-optimized cloud migrations (40%+ savings typical)
 

@@ -3,4 +3,41 @@ typebot-bubble {
   visibility: hidden !important;
 }
 
+// Disable scroll-triggered entrance choreography globally.
+// IntersectionObserver-based fades cause off-canvas content when JS lags
+// or doesn't fire above-the-fold, and 50+ entrance animations on one page
+// reads as template-y / janky on mid-range hardware. Premium consultancy
+// sites move less, not more. Keep the gradient + floating image animations
+// (they're separate classes); strip the entrance choreography.
+.fade-in-up,
+.fade-in-left,
+.fade-in-right,
+.scale-in {
+  transform: none !important;
+  opacity: 1 !important;
+  animation: none !important;
+}
+
+// Brand carousel: render as a static flex row pre-init so logos are always
+// visible (Swiper's init was leaving slides at zero width).
+.brand-strip {
+  overflow: hidden;
+  .brand-strip-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    min-height: 50px;
+  }
+  .brand-item {
+    flex: 0 0 auto;
+    width: auto !important;
+    opacity: 1 !important;
+    min-height: 35px;
+    img { max-height: 45px; width: auto; opacity: 1 !important; filter: grayscale(20%); }
+    img:hover { filter: grayscale(0%); }
+  }
+}
+
 

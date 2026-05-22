@@ -1,318 +1,318 @@
 ---
-title: 'Privacy Policy'
+title: '隐私政策'
 date: 2020-07-12T17:02:17+02:00
 draft: false
 image: 'images/legal.webp'
 ---
 
-# Privacy Policy
+# 隐私政策
 
-We are very delighted that you have shown interest in our enterprise. Data protection is of a particularly high priority for the management of the DataFortress.cloud. The use of the Internet pages of the DataFortress.cloud is possible without any indication of personal data; however, if a data subject wants to use special enterprise services via our website, processing of personal data could become necessary. If the processing of personal data is necessary and there is no statutory basis for such processing, we generally obtain consent from the data subject.
+我们非常高兴您对我们的企业表现出兴趣。对于 DataFortress.cloud 的管理层来说，数据保护具有极高的优先级。使用 DataFortress.cloud 的网页无需指明任何个人数据；但是，如果数据主体希望通过我们的网站使用特殊的企业服务，则处理个人数据可能会变得必要。如果处理个人数据是必要的且没有此类处理的法定依据，我们通常会获得数据主体的同意。
 
-The processing of personal data, such as the name, address, e-mail address, or telephone number of a data subject shall always be in line with the General Data Protection Regulation (GDPR), and in accordance with the country-specific data protection regulations applicable to the DataFortress.cloud. By means of this data protection declaration, our enterprise would like to inform the general public of the nature, scope, and purpose of the personal data we collect, use and process. Furthermore, data subjects are informed, by means of this data protection declaration, of the rights to which they are entitled.
+个人数据（如数据主体的姓名、地址、电子邮件地址或电话号码）的处理应始终符合《通用数据保护条例》（GDPR），并符合适用于 DataFortress.cloud 的国家特定数据保护规定。通过这份数据保护声明，我们的企业希望告知公众我们收集、使用和处理的个人数据的性质、范围和目的。此外，数据主体通过这份数据保护声明被告知他们享有的权利。
 
-As the controller, the DataFortress.cloud has implemented numerous technical and organizational measures to ensure the most complete protection of personal data processed through this website. However, Internet-based data transmissions may in principle have security gaps, so absolute protection may not be guaranteed. For this reason, every data subject is free to transfer personal data to us via alternative means, e.g. by telephone.
+作为控制者，DataFortress.cloud 实施了许多技术和组织措施，以确保通过本网站处理的个人数据得到最完整的保护。但是，基于互联网的数据传输原则上可能存在安全漏洞，因此无法保证绝对保护。出于这个原因，每个数据主体都可以自由地通过替代方式（例如电话）向我们传输个人数据。
 
-1. Definitions
-   The data protection declaration of the DataFortress.cloud is based on the terms used by the European legislator for the adoption of the General Data Protection Regulation (GDPR). Our data protection declaration should be legible and understandable for the general public, as well as our customers and business partners. To ensure this, we would like to first explain the terminology used.
+1. 定义
+DataFortress.cloud 的数据保护声明基于欧洲立法者通过《通用数据保护条例》（GDPR）时使用的术语。我们的数据保护声明应当对公众以及我们的客户和业务合作伙伴来说是易读且易懂的。为确保这一点，我们首先想解释所使用的术语。
 
-In this data protection declaration, we use, inter alia, the following terms:
+在本数据保护声明中，我们尤其使用以下术语：
 
-a) Personal data
-Personal data means any information relating to an identified or identifiable natural person (“data subject”). An identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.
+a) 个人数据
+个人数据是指与已识别或可识别的自然人（“数据主体”）相关的任何信息。可识别的自然人是指可以被直接或间接识别的人，特别是通过参考诸如姓名、识别号码、位置数据、在线识别码等标识符，或者通过参考该自然人的身体、生理、遗传、心理、经济、文化或社会身份的一个或多个特定因素。
 
-b) Data subject
-Data subject is any identified or identifiable natural person, whose personal data is processed by the controller responsible for the processing.
+b) 数据主体
+数据主体是指任何已被识别或可识别的自然人，其个人数据由负责处理的控制者处理。
 
-c) Processing
-Processing is any operation or set of operations which is performed on personal data or on sets of personal data, whether or not by automated means, such as collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction.
+c) 处理
+处理是指对个人数据或个人数据集进行的任何操作或一组操作，无论是否通过自动化手段，例如收集、记录、组织、结构化、存储、调整或更改、检索、咨询、使用、通过传输披露、传播或以其他方式提供、排列或组合、限制、擦除或销毁。
 
-d) Restriction of processing
-Restriction of processing is the marking of stored personal data with the aim of limiting their processing in the future.
+d) 限制处理
+限制处理是指标记存储的个人数据，目的是限制其未来的处理。
 
-e) Profiling
-Profiling means any form of automated processing of personal data consisting of the use of personal data to evaluate certain personal aspects relating to a natural person, in particular to analyse or predict aspects concerning that natural person’s performance at work, economic situation, health, personal preferences, interests, reliability, behaviour, location or movements.
+e) 画像 (Profiling)
+画像是指任何形式的个人数据自动化处理，由使用个人数据来评估与自然人相关的某些个人方面组成，特别是分析或预测与该自然人在工作中的表现、经济状况、健康、个人偏好、兴趣、可靠性、行为、位置或移动相关的方面。
 
-f) Pseudonymisation
-Pseudonymisation is the processing of personal data in such a manner that the personal data can no longer be attributed to a specific data subject without the use of additional information, provided that such additional information is kept separately and is subject to technical and organisational measures to ensure that the personal data are not attributed to an identified or identifiable natural person.
+f) 假名化 (Pseudonymisation)
+假名化是指以这样一种方式处理个人数据，使得个人数据在没有使用额外信息的情况下不再能归属于特定的数据主体，前提是此类额外信息被单独保存，并受到技术和组织措施的约束，以确保个人数据不归属于已识别或可识别的自然人。
 
-g) Controller or controller responsible for the processing
-Controller or controller responsible for the processing is the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data; where the purposes and means of such processing are determined by Union or Member State law, the controller or the specific criteria for its nomination may be provided for by Union or Member State law.
+g) 控制者或负责处理的控制者
+控制者或负责处理的控制者是指单独或共同确定个人数据处理目的和手段的自然人或法人、公共机构、机构或其他团体；如果此类处理的目的和手段由欧盟或成员国法律确定，则控制者或其提名的特定标准可由欧盟或成员国法律提供。
 
-h) Processor
-Processor is a natural or legal person, public authority, agency or other body which processes personal data on behalf of the controller.
+h) 处理者
+处理者是指代表控制者处理个人数据的自然人或法人、公共机构、机构或其他团体。
 
-i) Recipient
-Recipient is a natural or legal person, public authority, agency or another body, to which the personal data are disclosed, whether a third party or not. However, public authorities which may receive personal data in the framework of a particular inquiry in accordance with Union or Member State law shall not be regarded as recipients; the processing of those data by those public authorities shall be in compliance with the applicable data protection rules according to the purposes of the processing.
+i) 接收者
+接收者是指向其披露个人数据的自然人或法人、公共机构、机构或其他团体，无论是否为第三方。但是，根据欧盟或成员国法律在特定查询框架内可能接收个人数据的公共机构不应被视为接收者；这些公共机构对这些数据的处理应符合根据处理目的适用的数据保护规则。
 
-j) Third party
-Third party is a natural or legal person, public authority, agency or body other than the data subject, controller, processor and persons who, under the direct authority of the controller or processor, are authorised to process personal data.
+j) 第三方
+第三方是指数据主体、控制者、处理者以及在控制者或处理者直接授权下被授权处理个人数据的人员以外的自然人或法人、公共机构、机构或团体。
 
-k) Consent
-Consent of the data subject is any freely given, specific, informed and unambiguous indication of the data subject’s wishes by which he or she, by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her.
+k) 同意
+数据主体的同意是指数据主体意愿的任何自由给予的、具体的、知情的且明确的指示，通过声明或明确的肯定行动，表示同意处理与其相关的个人数据。
 
-2. Name and Address of the controller
-   Controller for the purposes of the General Data Protection Regulation (GDPR), other data protection laws applicable in Member states of the European Union and other provisions related to data protection is:
+2. 控制者的名称和地址
+就《通用数据保护条例》（GDPR）、在欧盟成员国适用的其他数据保护法律以及与数据保护相关的其他规定而言，控制者是：
 
 DataFortress.cloud GmbH
 Gewerbestraße 13
 82064 Straßlach-Dingharting
-Germany
+德国
 DE345185498
 
 HRB 36456
 
-Email: <a id="mail" href="mailto:info@datafortress.cloud">info@dat<!--...-->afortress.cloud</a>
-Website: https://www.datafotress.cloud
+电子邮件：<a id="mail" href="mailto:info@datafortress.cloud">info@datafortress.cloud</a>
+网站：https://www.datafortress.cloud
 
-## Cookies
+## Cookie
 
-The Internet pages of the DataFortress.cloud use cookies. Cookies are text files that are stored in a computer system via an Internet browser.
+DataFortress.cloud 的网页使用 Cookie。Cookie 是通过互联网浏览器存储在计算机系统中的文本文件。
 
-| Cookie              | Description                                                                                                                                                                                                                                                                                                                   | Duration | Type        |
+| Cookie | 描述 | 期限 | 类型 |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ----------- |
-| \_ga                | This cookie is installed by Google Analytics. The cookie is used to calculate visitor, session, campaign data and keep track of site usage for the site's analytics report. The cookies store information anonymously and assign a randomly generated number to identify unique visitors.                                     | 2 years  | Analytics   |
-| \_gid               | This cookie is installed by Google Analytics. The cookie is used to store information of how visitors use a website and helps in creating an analytics report of how the wbsite is doing. The data collected including the number visitors, the source where they have come from, and the pages viisted in an anonymous form. | 1 day    | Analytics   |
-| \_gat               | This cookies is installed by Google Universal Analytics to throttle the request rate to limit the colllection of data on high traffic sites.                                                                                                                                                                                  | 1 minute | Performance |
-| CookieScriptConsent | Needed to track cookie choice                                                                                                                                                                                                                                                                                                 | 1 day    | Performance |
+| \_ga | 此 Cookie 由 Google Analytics 安装。该 Cookie 用于计算访客、会话、活动数据，并跟踪网站使用情况以生成网站分析报告。Cookie 匿名存储信息，并分配一个随机生成的数字来识别唯一访客。 | 2 年 | 分析型 |
+| \_gid | 此 Cookie 由 Google Analytics 安装。该 Cookie 用于存储访客如何使用网站的信息，并有助于创建关于网站运行情况的分析报告。收集的数据包括访客数量、来源以及以匿名形式访问的页面。 | 1 天 | 分析型 |
+| \_gat | 此 Cookie 由 Google Universal Analytics 安装，用于限制请求率，以限制在高流量网站上的数据收集。 | 1 分钟 | 性能型 |
+| CookieScriptConsent | 需要用于跟踪 Cookie 选择 | 1 天 | 性能型 |
 
-Many Internet sites and servers use cookies. Many cookies contain a so-called cookie ID. A cookie ID is a unique identifier of the cookie. It consists of a character string through which Internet pages and servers can be assigned to the specific Internet browser in which the cookie was stored. This allows visited Internet sites and servers to differentiate the individual browser of the dats subject from other Internet browsers that contain other cookies. A specific Internet browser can be recognized and identified using the unique cookie ID.
+许多网站和服务器使用 Cookie。许多 Cookie 包含所谓的 Cookie ID。Cookie ID 是 Cookie 的唯一标识符。它由一个字符串组成，通过该字符串，网页和服务器可以分配给存储该 Cookie 的特定互联网浏览器。这允许访问过的网页和服务器将数据主体的个人浏览器与包含其他 Cookie 的其他互联网浏览器区分开来。可以使用唯一的 Cookie ID 识别和识别特定的互联网浏览器。
 
-Through the use of cookies, the DataFortress.cloud can provide the users of this website with more user-friendly services that would not be possible without the cookie setting.
+通过使用 Cookie，DataFortress.cloud 可以为本网站的用户提供更人性化的服务，如果没有 Cookie 设置，这些服务将是不可能的。
 
-By means of a cookie, the information and offers on our website can be optimized with the user in mind. Cookies allow us, as previously mentioned, to recognize our website users. The purpose of this recognition is to make it easier for users to utilize our website. The website user that uses cookies, e.g. does not have to enter access data each time the website is accessed, because this is taken over by the website, and the cookie is thus stored on the user’s computer system. Another example is the cookie of a shopping cart in an online shop. The online store remembers the articles that a customer has placed in the virtual shopping cart via a cookie.
+通过 Cookie，可以根据用户的利益优化我们网站上的信息和优惠。如前所述，Cookie 允许我们识别我们的网站用户。这种识别的目的是使用户更容易使用我们的网站。例如，使用 Cookie 的网站用户不必在每次访问网站时输入访问数据，因为这是由网站接管的，因此 Cookie 存储在用户的计算机系统中。另一个例子是网上商店购物车的 Cookie。在线商店通过 Cookie 记住客户放入虚拟购物车的物品。
 
-The data subject may, at any time, prevent the setting of cookies through our website by means of a corresponding setting of the Internet browser used, and may thus permanently deny the setting of cookies. Furthermore, already set cookies may be deleted at any time via an Internet browser or other software programs. This is possible in all popular Internet browsers. If the data subject deactivates the setting of cookies in the Internet browser used, not all functions of our website may be entirely usable.
+数据主体可以随时通过所使用的互联网浏览器的相应设置来防止通过我们的网站设置 Cookie，并从而永久拒绝设置 Cookie。此外，已经设置的 Cookie 可以随时通过互联网浏览器或其他软件程序删除。这在所有流行的互联网浏览器中都是可能的。如果数据主体在所使用的互联网浏览器中停用 Cookie 设置，则我们网站的所有功能可能无法完全使用。
 
-4. Collection of general data and information
-   The website of the DataFortress.cloud collects a series of general data and information when a data subject or automated system calls up the website. This general data and information are stored in the server log files. Collected may be (1) the browser types and versions used, (2) the operating system used by the accessing system, (3) the website from which an accessing system reaches our website (so-called referrers), (4) the sub-websites, (5) the date and time of access to the Internet site, (6) an Internet protocol address (IP address), (7) the Internet service provider of the accessing system, and (8) any other similar data and information that may be used in the event of attacks on our information technology systems.
+4. 一般数据和信息的收集
+当数据主体或自动化系统访问网站时，DataFortress.cloud 的网站会收集一系列一般数据和信息。这些一般数据和信息存储在服务器日志文件中。收集的可能是 (1) 使用的浏览器类型和版本，(2) 访问系统使用的操作系统，(3) 访问系统到达我们网站的网站（所谓的引荐来源），(4) 子网站，(5) 访问互联网网站的日期和时间，(6) 互联网协议地址（IP 地址），(7) 访问系统的互联网服务提供商，以及 (8) 在我们的信息技术系统受到攻击时可能使用的任何其他类似数据和信息。
 
-When using these general data and information, the DataFortress.cloud does not draw any conclusions about the data subject. Rather, this information is needed to (1) deliver the content of our website correctly, (2) optimize the content of our website as well as its advertisement, (3) ensure the long-term viability of our information technology systems and website technology, and (4) provide law enforcement authorities with the information necessary for criminal prosecution in case of a cyber-attack. Therefore, the DataFortress.cloud analyzes anonymously collected data and information statistically, with the aim of increasing the data protection and data security of our enterprise, and to ensure an optimal level of protection for the personal data we process. The anonymous data of the server log files are stored separately from all personal data provided by a data subject.
+使用这些一般数据和信息时，DataFortress.cloud 不会得出关于数据主体的任何结论。相反，需要这些信息是为了 (1) 正确交付我们网站的内容，(2) 优化我们网站的内容及其广告，(3) 确保我们的信息技术系统和网站技术的长期可行性，以及 (4) 在发生网络攻击时为执法部门提供刑事起诉所需的必要信息。因此，DataFortress.cloud 对匿名收集的数据和信息进行统计分析，目的是提高我们企业的数据保护和数据安全性，并确保我们处理的个人数据得到最佳保护。服务器日志文件的匿名数据与数据主体提供的所有个人数据分开存储。
 
-5. Subscription to our newsletters
-   On the website of the DataFortress.cloud, users are given the opportunity to subscribe to our enterprise’s newsletter. The input mask used for this purpose determines what personal data are transmitted, as well as when the newsletter is ordered from the controller.
+5. 订阅我们的新闻通讯
+在 DataFortress.cloud 的网站上，用户有机会订阅我们企业的新闻通讯。用于此目的的输入掩码决定了传输哪些个人数据，以及何时向控制者订购新闻通讯。
 
-The DataFortress.cloud informs its customers and business partners regularly by means of a newsletter about enterprise offers. The enterprise’s newsletter may only be received by the data subject if (1) the data subject has a valid e-mail address and (2) the data subject registers for the newsletter shipping. A confirmation e-mail will be sent to the e-mail address registered by a data subject for the first time for newsletter shipping, for legal reasons, in the double opt-in procedure. This confirmation e-mail is used to prove whether the owner of the e-mail address as the data subject is authorized to receive the newsletter.
+DataFortress.cloud 定期通过新闻通讯向其客户和业务合作伙伴通报企业优惠。只有在以下情况下，数据主体才能收到企业的新闻通讯：(1) 数据主体拥有有效的电子邮件地址，且 (2) 数据主体注册发送新闻通讯。出于法律原因，双重确认 (double opt-in) 流程将向数据主体首次注册的电子邮件地址发送一封确认电子邮件。此确认电子邮件用于证明该电子邮件地址的所有者作为数据主体是否有权接收新闻通讯。
 
-During the registration for the newsletter, we also store the IP address of the computer system assigned by the Internet service provider (ISP) and used by the data subject at the time of the registration, as well as the date and time of the registration. The collection of this data is necessary in order to understand the (possible) misuse of the e-mail address of a data subject at a later date, and it therefore serves the aim of the legal protection of the controller.
+在注册新闻通讯期间，我们还会存储由互联网服务提供商 (ISP) 分配并由数据主体在注册时使用的计算机系统的 IP 地址，以及注册的日期和时间。收集这些数据是为了在以后了解数据主体电子邮件地址被（可能）滥用的情况，因此它符合控制者法律保护的目标。
 
-The personal data collected as part of a registration for the newsletter will only be used to send our newsletter. In addition, subscribers to the newsletter may be informed by e-mail, as long as this is necessary for the operation of the newsletter service or a registration in question, as this could be the case in the event of modifications to the newsletter offer, or in the event of a change in technical circumstances. There will be no transfer of personal data collected by the newsletter service to third parties. The subscription to our newsletter may be terminated by the data subject at any time. The consent to the storage of personal data, which the data subject has given for shipping the newsletter, may be revoked at any time. For the purpose of revocation of consent, a corresponding link is found in each newsletter. It is also possible to unsubscribe from the newsletter at any time directly on the website of the controller, or to communicate this to the controller in a different way.
+作为新闻通讯注册的一部分收集的个人数据仅用于发送我们的新闻通讯。此外，新闻通讯的订阅者可能会通过电子邮件收到通知，只要这对于新闻通讯服务的运行或相关注册是必要的，例如在新闻通讯报价发生修改或技术情况发生变化的情况下。新闻通讯服务收集的个人数据不会转移给第三方。数据主体可以随时终止对我们新闻通讯的订阅。数据主体为发送新闻通讯而给予的个人数据存储同意可以随时撤销。为了撤销同意，每份新闻通讯中都有一个相应的链接。也可以随时直接在控制者的网站上退订新闻通讯，或以其他方式与控制者沟通。
 
-6. Newsletter-Tracking
-   The newsletter of the DataFortress.cloud contains so-called tracking pixels. A tracking pixel is a miniature graphic embedded in such e-mails, which are sent in HTML format to enable log file recording and analysis. This allows a statistical analysis of the success or failure of online marketing campaigns. Based on the embedded tracking pixel, the DataFortress.cloud may see if and when an e-mail was opened by a data subject, and which links in the e-mail were called up by data subjects.
+6. 新闻通讯跟踪
+DataFortress.cloud 的新闻通讯包含所谓的跟踪像素。跟踪像素是嵌入此类电子邮件中的缩微图形，这些电子邮件以 HTML 格式发送，以便进行日志文件记录和分析。这允许对在线营销活动的成功或失败进行统计分析。基于嵌入的跟踪像素，DataFortress.cloud 可以查看数据主体是否打开了电子邮件以及何时打开，以及数据主体调用了电子邮件中的哪些链接。
 
-Such personal data collected in the tracking pixels contained in the newsletters are stored and analyzed by the controller in order to optimize the shipping of the newsletter, as well as to adapt the content of future newsletters even better to the interests of the data subject. These personal data will not be passed on to third parties. Data subjects are at any time entitled to revoke the respective separate declaration of consent issued by means of the double-opt-in procedure. After a revocation, these personal data will be deleted by the controller. The DataFortress.cloud automatically regards a withdrawal from the receipt of the newsletter as a revocation.
+新闻通讯中包含的跟踪像素中收集的此类个人数据由控制者存储和分析，以优化新闻通讯的发送，并使未来新闻通讯的内容更好地适应数据主体的利益。这些个人数据不会传递给第三方。数据主体有权随时撤销通过双重确认流程发布的相应单独同意声明。撤销后，这些个人数据将被控制者删除。DataFortress.cloud 自动将退订新闻通讯视为撤销。
 
-7. Contact possibility via the website
-   The website of the DataFortress.cloud contains information that enables a quick electronic contact to our enterprise, as well as direct communication with us, which also includes a general address of the so-called electronic mail (e-mail address). If a data subject contacts the controller by e-mail or via a contact form, the personal data transmitted by the data subject are automatically stored. Such personal data transmitted on a voluntary basis by a data subject to the data controller are stored for the purpose of processing or contacting the data subject. There is no transfer of this personal data to third parties.
+7. 通过网站联系的可能性
+DataFortress.cloud 的网站包含能够快速与我们企业进行电子联系以及与我们直接沟通的信息，其中还包括所谓的电子邮件 (e-mail address) 的通用地址。如果数据主体通过电子邮件或通过联系表单联系控制者，则数据主体传输的个人数据将被自动存储。数据主体自愿传输给数据控制者的此类个人数据将被存储，用于处理或联系数据主体的目的。这些个人数据不会转移给第三方。
 
-8. Comments function in the blog on the website
-   The DataFortress.cloud offers users the possibility to leave individual comments on individual blog contributions on a blog, which is on the website of the controller. A blog is a web-based, publicly-accessible portal, through which one or more people called bloggers or web-bloggers may post articles or write down thoughts in so-called blogposts. Blogposts may usually be commented by third parties.
+8. 网站博客中的评论功能
+DataFortress.cloud 为用户提供了在控制者网站上的博客中对单个博客文章发表个人评论的可能性。博客是一个基于网络的、公众可以访问的门户，一个或多个人（称为博主或网络博主）可以通过它发布文章或在所谓的博客文章中写下想法。博客文章通常可以由第三方评论。
 
-If a data subject leaves a comment on the blog published on this website, the comments made by the data subject are also stored and published, as well as information on the date of the commentary and on the user’s (pseudonym) chosen by the data subject. In addition, the IP address assigned by the Internet service provider (ISP) to the data subject is also logged. This storage of the IP address takes place for security reasons, and in case the data subject violates the rights of third parties, or posts illegal content through a given comment. The storage of these personal data is, therefore, in the own interest of the data controller, so that he can exculpate in the event of an infringement. This collected personal data will not be passed to third parties, unless such a transfer is required by law or serves the aim of the defense of the data controller.
+如果数据主体在访问本网站发布的博客时留下评论，则数据主体发表的评论、评论日期以及数据主体选择的用户（化名）信息也将被存储和发布。此外，互联网服务提供商 (ISP) 分配给数据主体的 IP 地址也会被记录。存储 IP 地址是出于安全原因，以及在数据主体通过给定评论侵犯第三方权利或发布非法内容的情况下。因此，存储这些个人数据符合数据控制者的自身利益，以便他在发生侵权行为时可以免责。这些收集的个人数据不会传递给第三方，除非法律要求此类转移或符合数据控制者的辩护目标。
 
-9. Subscription to comments in the blog on the website
-   The comments made in the blog of the DataFortress.cloud may be subscribed to by third parties. In particular, there is the possibility that a commenter subscribes to the comments following his comments on a particular blog post.
+9. 订阅网站博客中的评论
+DataFortress.cloud 博客中的评论可以由第三方订阅。特别是，评论者可以订阅他在特定博客文章发表评论后的后续评论。
 
-If a data subject decides to subscribe to the option, the controller will send an automatic confirmation e-mail to check the double opt-in procedure as to whether the owner of the specified e-mail address decided in favor of this option. The option to subscribe to comments may be terminated at any time.
+如果数据主体决定订阅该选项，控制者将发送一封自动确认电子邮件，以通过双重确认流程检查指定的电子邮件地址所有者是否决定支持此选项。订阅评论的选项可以随时终止。
 
-10. Routine erasure and blocking of personal data
-    The data controller shall process and store the personal data of the data subject only for the period necessary to achieve the purpose of storage, or as far as this is granted by the European legislator or other legislators in laws or regulations to which the controller is subject to.
+10. 个人数据的常规擦除和封锁
+数据控制者处理和存储数据主体的个人数据仅限于实现存储目的所需的期限，或者在欧洲立法者或其他立法者在控制者受约束的法律或法规中授予的范围内。
 
-If the storage purpose is not applicable, or if a storage period prescribed by the European legislator or another competent legislator expires, the personal data are routinely blocked or erased in accordance with legal requirements.
+如果存储目的不适用，或者欧洲立法者或其他主管立法者规定的存储期限届满，个人数据将根据法律要求常规封锁或擦除。
 
-11. Rights of the data subject
-    a) Right of confirmation
-    Each data subject shall have the right granted by the European legislator to obtain from the controller the confirmation as to whether or not personal data concerning him or her are being processed. If a data subject wishes to avail himself of this right of confirmation, he or she may, at any time, contact any employee of the controller.
+11. 数据主体的权利
+a) 确认权
+每个数据主体都享有欧洲立法者授予的权利，即从控制者处获得关于是否正在处理涉及他或她的个人数据的确认。如果数据主体希望行使此确认权，他或她可以随时联系控制者的任何员工。
 
-b) Right of access
-Each data subject shall have the right granted by the European legislator to obtain from the controller free information about his or her personal data stored at any time and a copy of this information. Furthermore, the European directives and regulations grant the data subject access to the following information:
+b) 访问权
+每个数据主体都享有欧洲立法者授予的权利，即随时从控制者处免费获取有关其存储的个人数据的信息以及这些信息的副本。此外，欧洲指令和条例授予数据主体访问以下信息的权利：
 
-the purposes of the processing;
-the categories of personal data concerned;
-the recipients or categories of recipients to whom the personal data have been or will be disclosed, in particular recipients in third countries or international organisations;
-where possible, the envisaged period for which the personal data will be stored, or, if not possible, the criteria used to determine that period;
-the existence of the right to request from the controller rectification or erasure of personal data, or restriction of processing of personal data concerning the data subject, or to object to such processing;
-the existence of the right to lodge a complaint with a supervisory authority;
-where the personal data are not collected from the data subject, any available information as to their source;
-the existence of automated decision-making, including profiling, referred to in Article 22(1) and (4) of the GDPR and, at least in those cases, meaningful information about the logic involved, as well as the significance and envisaged consequences of such processing for the data subject.
-Furthermore, the data subject shall have a right to obtain information as to whether personal data are transferred to a third country or to an international organisation. Where this is the case, the data subject shall have the right to be informed of the appropriate safeguards relating to the transfer.
+处理目的；
+涉及的个人数据类别；
+已经或将要向其披露个人数据的接收者或接收者类别，特别是第三国或国际组织的接收者；
+在可能的情况下，预计存储个人数据的期限，如果不可能，则为确定该期限的标准；
+是否存在要求控制者更正或擦除个人数据，或限制处理涉及数据主体的个人数据，或反对处理的权利；
+向监管机构提出投诉的权利；
+如果个人数据不是从数据主体那里收集的，则为有关其来源的任何可用信息；
+是否存在《通用数据保护条例》(GDPR) 第 22(1) 条和第 (4) 条所述的自动化决策，包括画像，以及至少在这些情况下，有关所涉及逻辑的有意义信息，以及此类处理对数据主体的意义和预期后果。
+此外，数据主体应有权获得有关个人数据是否转移到第三国或国际组织的信息。如果是这种情况，数据主体应有权获知与转移相关的适当保障措施。
 
-If a data subject wishes to avail himself of this right of access, he or she may, at any time, contact any employee of the controller.
+如果数据主体希望行使此访问权，他或她可以随时联系控制者的任何员工。
 
-c) Right to rectification
-Each data subject shall have the right granted by the European legislator to obtain from the controller without undue delay the rectification of inaccurate personal data concerning him or her. Taking into account the purposes of the processing, the data subject shall have the right to have incomplete personal data completed, including by means of providing a supplementary statement.
+c) 更正权
+每个数据主体都享有欧洲立法者授予的权利，即要求控制者立即更正涉及他或她的不准确个人数据。考虑到处理的目的，数据主体应有权要求完善不完整的个人数据，包括通过提供补充声明的方式。
 
-If a data subject wishes to exercise this right to rectification, he or she may, at any time, contact any employee of the controller.
+如果数据主体希望行使此更正权，他或她可以随时联系控制者的任何员工。
 
-d) Right to erasure (Right to be forgotten)
-Each data subject shall have the right granted by the European legislator to obtain from the controller the erasure of personal data concerning him or her without undue delay, and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies, as long as the processing is not necessary:
+d) 擦除权（被遗忘权）
+每个数据主体都享有欧洲立法者授予的权利，即要求控制者立即擦除涉及他或她的个人数据，并且只要处理不是必要的，在下列理由之一适用的情况下，控制者有义务立即擦除个人数据：
 
-The personal data are no longer necessary in relation to the purposes for which they were collected or otherwise processed.
-The data subject withdraws consent to which the processing is based according to point (a) of Article 6(1) of the GDPR, or point (a) of Article 9(2) of the GDPR, and where there is no other legal ground for the processing.
-The data subject objects to the processing pursuant to Article 21(1) of the GDPR and there are no overriding legitimate grounds for the processing, or the data subject objects to the processing pursuant to Article 21(2) of the GDPR.
-The personal data have been unlawfully processed.
-The personal data must be erased for compliance with a legal obligation in Union or Member State law to which the controller is subject.
-The personal data have been collected in relation to the offer of information society services referred to in Article 8(1) of the GDPR.
-If one of the aforementioned reasons applies, and a data subject wishes to request the erasure of personal data stored by the DataFortress.cloud, he or she may, at any time, contact any employee of the controller. An employee of DataFortress.cloud shall promptly ensure that the erasure request is complied with immediately.
+个人数据对于收集或以其他方式处理的目的而言不再必要。
+数据主体撤销了根据 GDPR 第 6(1) 条 (a) 点或第 9(2) 条 (a) 点进行处理所依据的同意，且处理没有其他法律依据。
+数据主体根据 GDPR 第 21(1) 条反对处理，且处理没有优先的合法理由，或者数据主体根据 GDPR 第 21(2) 条反对处理。
+个人数据被非法处理。
+为了履行控制者受约束的欧盟或成员国法律规定的法律义务，必须擦除个人数据。
+个人数据的收集与 GDPR 第 8(1) 条所述的信息社会服务提供有关。
+如果上述理由之一适用，且数据主体希望要求擦除 DataFortress.cloud 存储的个人数据，他或她可以随时联系控制者的任何员工。DataFortress.cloud 的员工应立即确保立即满足擦除请求。
 
-Where the controller has made personal data public and is obliged pursuant to Article 17(1) to erase the personal data, the controller, taking account of available technology and the cost of implementation, shall take reasonable steps, including technical measures, to inform other controllers processing the personal data that the data subject has requested erasure by such controllers of any links to, or copy or replication of, those personal data, as far as processing is not required. An employees of the DataFortress.cloud will arrange the necessary measures in individual cases.
+如果控制者已将个人数据公开，并根据第 17(1) 条有义务擦除个人数据，则控制者应考虑到可用技术和实施成本，采取合理措施，包括技术措施，通知处理个人数据的其他控制者，数据主体已要求这些控制者擦除指向这些个人数据的任何链接，或这些个人数据的副本或复制品，只要处理不是必需的。DataFortress.cloud 的员工将在个别情况下安排必要的措施。
 
-e) Right of restriction of processing
-Each data subject shall have the right granted by the European legislator to obtain from the controller restriction of processing where one of the following applies:
+e) 限制处理权
+在下列情况之一适用的情况下，每个数据主体都享有欧洲立法者授予的从控制者处获得处理限制的权利：
 
-The accuracy of the personal data is contested by the data subject, for a period enabling the controller to verify the accuracy of the personal data.
-The processing is unlawful and the data subject opposes the erasure of the personal data and requests instead the restriction of their use instead.
-The controller no longer needs the personal data for the purposes of the processing, but they are required by the data subject for the establishment, exercise or defence of legal claims.
-The data subject has objected to processing pursuant to Article 21(1) of the GDPR pending the verification whether the legitimate grounds of the controller override those of the data subject.
-If one of the aforementioned conditions is met, and a data subject wishes to request the restriction of the processing of personal data stored by the DataFortress.cloud, he or she may at any time contact any employee of the controller. The employee of the DataFortress.cloud will arrange the restriction of the processing.
+数据主体对个人数据的准确性提出异议，其期限应使控制者能够验证个人数据的准确性。
+处理是非法的，数据主体反对擦除个人数据，并要求限制其使用。
+控制者不再需要个人数据用于处理目的，但数据主体需要这些数据来建立、行使或捍卫法律主张。
+数据主体已根据 GDPR 第 21(1) 条反对处理，目前正在等待验证控制者的合法理由是否优先于数据主体的理由。
+如果满足上述条件之一，且数据主体希望要求限制 DataFortress.cloud 存储的个人数据的处理，他或她可以随时联系控制者的任何员工。DataFortress.cloud 的员工将安排限制处理。
 
-f) Right to data portability
-Each data subject shall have the right granted by the European legislator, to receive the personal data concerning him or her, which was provided to a controller, in a structured, commonly used and machine-readable format. He or she shall have the right to transmit those data to another controller without hindrance from the controller to which the personal data have been provided, as long as the processing is based on consent pursuant to point (a) of Article 6(1) of the GDPR or point (a) of Article 9(2) of the GDPR, or on a contract pursuant to point (b) of Article 6(1) of the GDPR, and the processing is carried out by automated means, as long as the processing is not necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller.
+f) 数据可移植权
+每个数据主体都享有欧洲立法者授予的权利，以结构化、常用且机器可读的格式接收提供给控制者的涉及他或她的个人数据。他或她应有权将这些数据传输给另一个控制者，而不受提供个人数据的控制者的阻碍，只要处理是基于 GDPR 第 6(1) 条 (a) 点或第 9(2) 条 (a) 点的同意，或是基于 GDPR 第 6(1) 条 (b) 点的合同，且处理是通过自动化手段进行的，只要处理对于执行为了公共利益或行使授予控制者的官方权力而执行的任务不是必需的。
 
-Furthermore, in exercising his or her right to data portability pursuant to Article 20(1) of the GDPR, the data subject shall have the right to have personal data transmitted directly from one controller to another, where technically feasible and when doing so does not adversely affect the rights and freedoms of others.
+此外，在行使 GDPR 第 20(1) 条规定的数据可移植权时，数据主体应有权在技术可行且不影响他人权利和自由的情况下，要求将个人数据直接从一个控制者传输到另一个控制者。
 
-In order to assert the right to data portability, the data subject may at any time contact any employee of the DataFortress.cloud.
+为了主张数据可移植权，数据主体可以随时联系 DataFortress.cloud 的任何员工。
 
-g) Right to object
-Each data subject shall have the right granted by the European legislator to object, on grounds relating to his or her particular situation, at any time, to processing of personal data concerning him or her, which is based on point (e) or (f) of Article 6(1) of the GDPR. This also applies to profiling based on these provisions.
+g) 反对权
+每个数据主体都享有欧洲立法者授予的权利，可以在任何时候根据与其特定情况相关的理由，反对根据 GDPR 第 6(1) 条 (e) 或 (f) 点处理涉及他或她的个人数据。这也适用于基于这些条款的画像。
 
-The DataFortress.cloud shall no longer process the personal data in the event of the objection, unless we can demonstrate compelling legitimate grounds for the processing which override the interests, rights and freedoms of the data subject, or for the establishment, exercise or defence of legal claims.
+如果发生反对，DataFortress.cloud 将不再处理个人数据，除非我们能证明处理有压倒数据主体利益、权利和自由的迫切合法理由，或者为了建立、行使或捍卫法律主张。
 
-If the DataFortress.cloud processes personal data for direct marketing purposes, the data subject shall have the right to object at any time to processing of personal data concerning him or her for such marketing. This applies to profiling to the extent that it is related to such direct marketing. If the data subject objects to the DataFortress.cloud to the processing for direct marketing purposes, the DataFortress.cloud will no longer process the personal data for these purposes.
+如果 DataFortress.cloud 为了直接营销目的处理个人数据，数据主体应有权随时反对为了此类营销而处理涉及他或她的个人数据。这适用于与此类直接营销相关的画像。如果数据主体反对 DataFortress.cloud 为了直接营销目的进行处理，则 DataFortress.cloud 将不再为此类目的处理个人数据。
 
-In addition, the data subject has the right, on grounds relating to his or her particular situation, to object to processing of personal data concerning him or her by the DataFortress.cloud for scientific or historical research purposes, or for statistical purposes pursuant to Article 89(1) of the GDPR, unless the processing is necessary for the performance of a task carried out for reasons of public interest.
+此外，数据主体有权根据与其特定情况相关的理由，反对 DataFortress.cloud 为了科学或历史研究目的，或者为了符合 GDPR 第 89(1) 条的统计目的而处理涉及他或她的个人数据，除非处理对于执行由于公共利益原因而执行的任务是必要的。
 
-In order to exercise the right to object, the data subject may contact any employee of the DataFortress.cloud. In addition, the data subject is free in the context of the use of information society services, and notwithstanding Directive 2002/58/EC, to use his or her right to object by automated means using technical specifications.
+为了行使反对权，数据主体可以联系 DataFortress.cloud 的任何员工。此外，在利用信息社会服务的情况下，尽管有 2002/58/EC 指令，数据主体仍可以自由使用技术规范通过自动化手段行使反对权。
 
-h) Automated individual decision-making, including profiling
-Each data subject shall have the right granted by the European legislator not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects concerning him or her, or similarly significantly affects him or her, as long as the decision (1) is not is necessary for entering into, or the performance of, a contract between the data subject and a data controller, or (2) is not authorised by Union or Member State law to which the controller is subject and which also lays down suitable measures to safeguard the data subject’s rights and freedoms and legitimate interests, or (3) is not based on the data subject’s explicit consent.
+h) 自动化个人决策，包括画像
+每个数据主体都享有欧洲立法者授予的权利，不受仅基于自动化处理（包括画像）的决策的约束，只要该决策对他或她产生法律影响，或类似地对他或她产生显著影响，除非该决策 (1) 对于数据主体与数据控制者之间签订或履行合同是必要的，或 (2) 控制者受约束的欧盟或成员国法律授权，且该法律还规定了保护数据主体权利、自由和合法利益的适当措施，或 (3) 基于数据主体的明确同意。
 
-If the decision (1) is necessary for entering into, or the performance of, a contract between the data subject and a data controller, or (2) it is based on the data subject’s explicit consent, the DataFortress.cloud shall implement suitable measures to safeguard the data subject’s rights and freedoms and legitimate interests, at least the right to obtain human intervention on the part of the controller, to express his or her point of view and contest the decision.
+如果决策 (1) 对于数据主体与数据控制者之间签订或履行合同是必要的，或者 (2) 基于数据主体的明确同意，则 DataFortress.cloud 应实施适当措施以保障数据主体的权利、自由和合法利益，至少包括从控制者处获得人工干预、表达他或她的观点并对决策提出异议的权利。
 
-If the data subject wishes to exercise the rights concerning automated individual decision-making, he or she may, at any time, contact any employee of the DataFortress.cloud.
+如果数据主体希望行使与自动化个人决策相关的权利，他或她可以随时联系 DataFortress.cloud 的任何员工。
 
-i) Right to withdraw data protection consent
-Each data subject shall have the right granted by the European legislator to withdraw his or her consent to processing of his or her personal data at any time.
+i) 撤销数据保护同意的权利
+每个数据主体都享有欧洲立法者授予的权利，可以随时撤销对其个人数据处理的同意。
 
-If the data subject wishes to exercise the right to withdraw the consent, he or she may, at any time, contact any employee of the DataFortress.cloud.
+如果数据主体希望行使撤销同意的权利，他或她可以随时联系 DataFortress.cloud 的任何员工。
 
-12. Data protection provisions about the application and use of Facebook
-    On this website, the controller has integrated components of the enterprise Facebook. Facebook is a social network.
+12. 关于 Facebook 应用和使用的数据保护条款
+在本网站上，控制者集成了 Facebook 企业的组件。Facebook 是一个社交网络。
 
-A social network is a place for social meetings on the Internet, an online community, which usually allows users to communicate with each other and interact in a virtual space. A social network may serve as a platform for the exchange of opinions and experiences, or enable the Internet community to provide personal or business-related information. Facebook allows social network users to include the creation of private profiles, upload photos, and network through friend requests.
+社交网络是互联网上的社交聚会场所，一个在线社区，通常允许用户彼此交流并在虚拟空间中互动。社交网络可以作为意见和经验交流的平台，或者使互联网社区能够提供个人或与商业相关的信息。Facebook 允许社交网络用户创建私人档案、上传照片并通过好友请求进行联络。
 
-The operating company of Facebook is Facebook, Inc., 1 Hacker Way, Menlo Park, CA 94025, United States. If a person lives outside of the United States or Canada, the controller is the Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Ireland.
+Facebook 的运营公司是 Facebook, Inc., 1 Hacker Way, Menlo Park, CA 94025, United States。如果一个人居住在美国或加拿大境外，则控制者是 Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Ireland。
 
-With each call-up to one of the individual pages of this Internet website, which is operated by the controller and into which a Facebook component (Facebook plug-ins) was integrated, the web browser on the information technology system of the data subject is automatically prompted to download display of the corresponding Facebook component from Facebook through the Facebook component. An overview of all the Facebook Plug-ins may be accessed under https://developers.facebook.com/docs/plugins/. During the course of this technical procedure, Facebook is made aware of what specific sub-site of our website was visited by the data subject.
+每次调用由控制者运营且集成了 Facebook 组件（Facebook 插件）的本互联网网站的各个页面时，数据主体信息技术系统上的网络浏览器都会自动提示通过 Facebook 组件从 Facebook 下载相应 Facebook 组件的显示。所有 Facebook 插件的概览可以在 https://developers.facebook.com/docs/plugins/ 下访问。在此技术过程中，Facebook 会获知数据主体访问了我们网站的哪个具体子站点。
 
-If the data subject is logged in at the same time on Facebook, Facebook detects with every call-up to our website by the data subject—and for the entire duration of their stay on our Internet site—which specific sub-site of our Internet page was visited by the data subject. This information is collected through the Facebook component and associated with the respective Facebook account of the data subject. If the data subject clicks on one of the Facebook buttons integrated into our website, e.g. the “Like” button, or if the data subject submits a comment, then Facebook matches this information with the personal Facebook user account of the data subject and stores the personal data.
+如果数据主体同时登录了 Facebook，则 Facebook 在数据主体每次调用我们的网站时——以及在他们留在我们互联网网站的整个期间——都会检测到数据主体访问了我们互联网页面的哪个具体子站点。此信息通过 Facebook 组件收集，并与数据主体的相应 Facebook 账户相关联。如果数据主体点击集成在我们网站上的 Facebook 按钮之一（例如“赞”按钮），或者如果数据主体提交评论，则 Facebook 会将此信息与数据主体的个人 Facebook 用户账户匹配并存储个人数据。
 
-Facebook always receives, through the Facebook component, information about a visit to our website by the data subject, whenever the data subject is logged in at the same time on Facebook during the time of the call-up to our website. This occurs regardless of whether the data subject clicks on the Facebook component or not. If such a transmission of information to Facebook is not desirable for the data subject, then he or she may prevent this by logging off from their Facebook account before a call-up to our website is made.
+只要数据主体在调用我们网站时同时登录了 Facebook，Facebook 总是通过 Facebook 组件收到有关数据主体访问我们网站的信息。无论数据主体是否点击 Facebook 组件，都会发生这种情况。如果数据主体不希望向 Facebook 传输此类信息，则他或她可以在调用我们的网站之前退出其 Facebook 账户来防止这种情况。
 
-The data protection guideline published by Facebook, which is available at https://facebook.com/about/privacy/, provides information about the collection, processing and use of personal data by Facebook. In addition, it is explained there what setting options Facebook offers to protect the privacy of the data subject. In addition, different configuration options are made available to allow the elimination of data transmission to Facebook. These applications may be used by the data subject to eliminate a data transmission to Facebook.
+Facebook 发布的数据保护指南可在 https://facebook.com/about/privacy/ 获得，其中提供了有关 Facebook 收集、处理和使用个人数据的信息。此外，那里还解释了 Facebook 提供的保护数据主体隐私的设置选项。此外，还提供了不同的配置选项，以允许消除向 Facebook 的数据传输。数据主体可以使用这些应用程序来消除向 Facebook 的数据传输。
 
-13. Data protection provisions about the application and use of functions of the Amazon Partner program
-    On this website, the controller has integrated Amazon components as a participant in the Amazon partner program. The Amazon components were created by Amazon with the aim to mediate customers through advertisements on various websites of the Amazon group, in particular Amazon.co.uk, Local.Amazon.co.uk, Amazon.de, BuyVIP.com, Amazon.de, Amazon.it and Amazon.es in return for the payment of a commission. By using the Amazon components, the controller may generate advertising revenue.
+13. 关于 Amazon Partner 计划功能应用和使用的数据保护条款
+作为 Amazon Partner 计划的参与者，控制者在本网站上集成了 Amazon 组件。Amazon 组件由 Amazon 创建，旨在通过在 Amazon 集团的各个网站（特别是 Amazon.co.uk、Local.Amazon.co.uk、Amazon.de、BuyVIP.com、Amazon.it 和 Amazon.es）上的广告介导客户，以换取支付佣金。通过使用 Amazon 组件，控制者可以产生广告收入。
 
-The operating company of this Amazon component is Amazon EU S.à.r.l, 5 Rue Plaetis, L-2338 Luxembourg, Luxembourg.
+此 Amazon 组件的运营公司是 Amazon EU S.à.r.l, 5 Rue Plaetis, L-2338 Luxembourg, Luxembourg。
 
-Amazon sets a cookie the information technology system of the data subject. The definition of cookies is explained above. With each single call-up to one of the individual pages of this Internet website, which is operated by the controller and in which an Amazon component was integrated, the Internet browser on the information technology system of the data subject will automatically submit data for the purpose of online advertising and the settlement of commissions to Amazon through the respective Amazon component. During the course of this technical procedure, Amazon receives personal information that is used to trace the origin of orders from Amazon, and as a result, to allow the accounting of a commission. Among other things, Amazon may understand that the data subject has clicked on an affiliate link on our website.
+Amazon 在数据主体的信息技术系统上设置 Cookie。Cookie 的定义已在上面解释。每次调用由控制者运营且集成了 Amazon 组件的本互联网网站的各个页面时，数据主体信息技术系统上的互联网浏览器将通过相应的 Amazon 组件自动向 Amazon 提交数据，用于在线广告和佣金结算的目的。在此技术过程中，Amazon 收到个人信息，这些信息用于追踪来自 Amazon 的订单来源，并因此允许计算佣金。除此之外，Amazon 可以了解到数据主体点击了我们网站上的附属链接。
 
-The data subject may, as stated above, prevent the setting of cookies through our website at any time by means of a corresponding adjustment of the web browser used, and thus permanently deny the setting of cookies. Such an adjustment to the Internet browser used would also prevent Amazon from setting a cookie on the information technology system of the data subject. In addition, cookies already in use by Amazon may be deleted at anytime via a web browser or other software programs.
+如上所述，数据主体可以随时通过所使用的网络浏览器的相应调整来防止通过我们的网站设置 Cookie，并从而永久拒绝设置 Cookie。对所使用的互联网浏览器的这种调整也将防止 Amazon 在数据主体的信息技术系统上设置 Cookie。此外，Amazon 已经使用的 Cookie 可以随时通过网络浏览器或其他软件程序删除。
 
-Further information and the actual data protection provisions of Amazon may be retrieved under https://www.amazon.de/gp/help/customer/display.html?nodeId=3312401&language=en_GB.
+有关 Amazon 的更多信息和实际数据保护条款，请访问 https://www.amazon.de/gp/help/customer/display.html?nodeId=3312401&language=en_GB。
 
-14. Data protection provisions about the application and use of Google Analytics (with anonymization function)
-    On this website, the controller has integrated the component of Google Analytics (with the anonymizer function). Google Analytics is a web analytics service. Web analytics is the collection, gathering, and analysis of data about the behavior of visitors to websites. A web analysis service collects, inter alia, data about the website from which a person has come (the so-called referrer), which sub-pages were visited, or how often and for what duration a sub-page was viewed. Web analytics are mainly used for the optimization of a website and in order to carry out a cost-benefit analysis of Internet advertising.
+14. 关于 Google Analytics（带匿名功能）应用和使用的数据保护条款
+在本网站上，控制者集成了 Google Analytics（带匿名功能）组件。Google Analytics 是一项网络分析服务。网络分析是对网站访问者行为数据的收集、汇总和分析。网络分析服务收集的数据包括一个人来自哪个网站（所谓的引荐来源）、访问了哪些子页面，或者查看子页面的频率和持续时间。网络分析主要用于网站优化以及为了进行互联网广告的成本效益分析。
 
-The operator of the Google Analytics component is Google Ireland Limited, Gordon House, Barrow Street, Dublin, D04 E5W5, Ireland.
+Google Analytics 组件的运营商是 Google Ireland Limited, Gordon House, Barrow Street, Dublin, D04 E5W5, Ireland。
 
-For the web analytics through Google Analytics the controller uses the application "\_gat. \_anonymizeIp". By means of this application the IP address of the Internet connection of the data subject is abridged by Google and anonymised when accessing our websites from a Member State of the European Union or another Contracting State to the Agreement on the European Economic Area.
+对于通过 Google Analytics 进行的网络分析，控制者使用应用程序“\_gat. \_anonymizeIp”。通过此应用程序，Google 会在从欧盟成员国或欧洲经济区协议的其他缔约国访问我们的网站时缩短并匿名化数据主体互联网连接的 IP 地址。
 
-The purpose of the Google Analytics component is to analyze the traffic on our website. Google uses the collected data and information, inter alia, to evaluate the use of our website and to provide online reports, which show the activities on our websites, and to provide other services concerning the use of our Internet site for us.
+Google Analytics 组件的目的是分析我们网站上的流量。Google 使用收集的数据和信息，除其他外，评估我们网站的使用情况，并提供在线报告，显示我们网站上的活动，并为我们提供有关我们互联网网站使用情况的其他服务。
 
-Google Analytics places a cookie on the information technology system of the data subject. The definition of cookies is explained above. With the setting of the cookie, Google is enabled to analyze the use of our website. With each call-up to one of the individual pages of this Internet site, which is operated by the controller and into which a Google Analytics component was integrated, the Internet browser on the information technology system of the data subject will automatically submit data through the Google Analytics component for the purpose of online advertising and the settlement of commissions to Google. During the course of this technical procedure, the enterprise Google gains knowledge of personal information, such as the IP address of the data subject, which serves Google, inter alia, to understand the origin of visitors and clicks, and subsequently create commission settlements.
+Google Analytics 在数据主体的信息技术系统上放置一个 Cookie。Cookie 的定义已在上面解释。通过设置 Cookie，Google 能够分析我们网站的使用情况。每次调用由控制者运营且集成了 Google Analytics 组件的本互联网网站的各个页面时，数据主体信息技术系统上的互联网浏览器将通过 Google Analytics 组件自动向 Google 提交数据，用于在线广告和向 Google 结算佣金的目的。在此技术过程中，Google 企业获知了个人信息，例如数据主体的 IP 地址，这有助于 Google 了解访问者和点击的来源，并随后创建佣金结算。
 
-The cookie is used to store personal information, such as the access time, the location from which the access was made, and the frequency of visits of our website by the data subject. With each visit to our Internet site, such personal data, including the IP address of the Internet access used by the data subject, will be transmitted to Google in the United States of America. These personal data are stored by Google in the United States of America. Google may pass these personal data collected through the technical procedure to third parties.
+Cookie 用于存储个人信息，例如访问时间、访问地点以及数据主体访问我们网站的频率。每次访问我们的互联网网站时，此类个人数据（包括数据主体使用的互联网连接的 IP 地址）将被传输到位于美利坚合众国的 Google。这些个人数据由 Google 存储在美利坚合众国。Google 可能会将通过此技术过程收集的此类个人数据传递给第三方。
 
-The data subject may, as stated above, prevent the setting of cookies through our website at any time by means of a corresponding adjustment of the web browser used and thus permanently deny the setting of cookies. Such an adjustment to the Internet browser used would also prevent Google Analytics from setting a cookie on the information technology system of the data subject. In addition, cookies already in use by Google Analytics may be deleted at any time via a web browser or other software programs.
+如上所述，数据主体可以随时通过所使用的网络浏览器的相应调整来防止通过我们的网站设置 Cookie，并从而永久拒绝设置 Cookie。对所使用的互联网浏览器的这种调整也将防止 Google Analytics 在数据主体的信息技术系统上设置 Cookie。此外，Google Analytics 已经使用的 Cookie 可以随时通过网络浏览器或其他软件程序删除。
 
-In addition, the data subject has the possibility of objecting to a collection of data that are generated by Google Analytics, which is related to the use of this website, as well as the processing of this data by Google and the chance to preclude any such. For this purpose, the data subject must download a browser add-on under the link https://tools.google.com/dlpage/gaoptout and install it. This browser add-on tells Google Analytics through a JavaScript, that any data and information about the visits of Internet pages may not be transmitted to Google Analytics. The installation of the browser add-ons is considered an objection by Google. If the information technology system of the data subject is later deleted, formatted, or newly installed, then the data subject must reinstall the browser add-ons to disable Google Analytics. If the browser add-on was uninstalled by the data subject or any other person who is attributable to their sphere of competence, or is disabled, it is possible to execute the reinstallation or reactivation of the browser add-ons.
+此外，数据主体可以反对收集由 Google Analytics 生成的与使用本网站相关的此类数据，以及 Google 对此类数据的处理，并有机会阻止此类收集。为此，数据主体必须在链接 https://tools.google.com/dlpage/gaoptout 下下载浏览器加载项并进行安装。此浏览器加载项通过 JavaScript 告诉 Google Analytics，有关访问互联网页面的任何数据和信息不得传输给 Google Analytics。Google 将浏览器加载项的安装视为反对。如果数据主体的信息技术系统后来被删除、格式化或重新安装，则数据主体必须重新安装浏览器加载项以禁用 Google Analytics。如果浏览器加载项被数据主体或属于其职权范围的任何其他人卸载，或者被禁用，则可以执行浏览器加载项的重新安装或重新激活。
 
-Further information and the applicable data protection provisions of Google may be retrieved under https://www.google.com/intl/en/policies/privacy/ and under http://www.google.com/analytics/terms/us.html. Google Analytics is further explained under the following Link https://www.google.com/analytics/.
+有关 Google 的更多信息和适用的数据保护条款，请访问 https://www.google.com/intl/zh-CN/policies/privacy/ 和 http://www.google.com/analytics/terms/cn.html。Google Analytics 在以下链接 https://www.google.com/analytics/ 中有进一步解释。
 
-15. Data protection provisions about the application and use of Google-AdWords
-    On this website, the controller has integrated Google AdWords. Google AdWords is a service for Internet advertising that allows the advertiser to place ads in Google search engine results and the Google advertising network. Google AdWords allows an advertiser to pre-define specific keywords with the help of which an ad on Google’s search results only then displayed, when the user utilizes the search engine to retrieve a keyword-relevant search result. In the Google Advertising Network, the ads are distributed on relevant web pages using an automatic algorithm, taking into account the previously defined keywords.
+15. 关于 Google-AdWords 应用和使用的数据保护条款
+在本网站上，控制者集成了 Google AdWords。Google AdWords 是一项互联网广告服务，允许广告商在 Google 搜索引擎结果和 Google 广告网络中投放广告。Google AdWords 允许广告商预先定义特定的关键词，只有当用户利用搜索引擎检索与关键词相关的搜索结果时，Google 搜索结果上的广告才会显示。在 Google 广告网络中，广告使用自动算法并考虑到预先定义的关键词分布在相关的网页上。
 
-The operating company of Google AdWords is Google Ireland Limited, Gordon House, Barrow Street, Dublin, D04 E5W5, Ireland.
+Google AdWords 的运营公司是 Google Ireland Limited, Gordon House, Barrow Street, Dublin, D04 E5W5, Ireland。
 
-The purpose of Google AdWords is the promotion of our website by the inclusion of relevant advertising on the websites of third parties and in the search engine results of the search engine Google and an insertion of third-party advertising on our website.
+Google AdWords 的目的是通过在第三方网站上和 Google 搜索引擎的结果中包含相关广告以及在我们网站上插入第三方广告来推广我们的网站。
 
-If a data subject reaches our website via a Google ad, a conversion cookie is filed on the information technology system of the data subject through Google. The definition of cookies is explained above. A conversion cookie loses its validity after 30 days and is not used to identify the data subject. If the cookie has not expired, the conversion cookie is used to check whether certain sub-pages, e.g, the shopping cart from an online shop system, were called up on our website. Through the conversion cookie, both Google and the controller can understand whether a person who reached an AdWords ad on our website generated sales, that is, executed or canceled a sale of goods.
+如果数据主体通过 Google 广告访问我们的网站，则 Google 会在数据主体的信息技术系统上放置一个转换 Cookie。Cookie 的定义已在上面解释。转换 Cookie 在 30 天后失效，不用于识别数据主体。如果 Cookie 未过期，则转换 Cookie 用于检查我们网站上的某些子页面（例如在线商店系统的购物车）是否被调用。通过转换 Cookie，Google 和控制者都可以了解通过我们网站上的 AdWords 广告访问的人是否产生了销售，即执行或取消了商品销售。
 
-The data and information collected through the use of the conversion cookie is used by Google to create visit statistics for our website. These visit statistics are used in order to determine the total number of users who have been served through AdWords ads to ascertain the success or failure of each AdWords ad and to optimize our AdWords ads in the future. Neither our company nor other Google AdWords advertisers receive information from Google that could identify the data subject.
+通过使用转换 Cookie 收集的数据和信息由 Google 用于为我们的网站创建访问统计数据。这些访问统计数据用于确定通过 AdWords 广告获得服务的用户总数，以确定每个 AdWords 广告的成功或失败，并在未来优化我们的 AdWords 广告。我们公司和其他 Google AdWords 广告商都不会从 Google 收到可以识别数据主体的信息。
 
-The conversion cookie stores personal information, e.g. the Internet pages visited by the data subject. Each time we visit our Internet pages, personal data, including the IP address of the Internet access used by the data subject, is transmitted to Google in the United States of America. These personal data are stored by Google in the United States of America. Google may pass these personal data collected through the technical procedure to third parties.
+转换 Cookie 存储个人信息，例如数据主体访问的互联网页面。每次访问我们的互联网页面时，个人数据（包括数据主体使用的互联网连接的 IP 地址）都会传输到位于美利坚合众国的 Google。这些个人数据由 Google 存储在美利坚合众国。Google 可能会将通过此技术过程收集的此类个人数据传递给第三方。
 
-The data subject may, at any time, prevent the setting of cookies by our website, as stated above, by means of a corresponding setting of the Internet browser used and thus permanently deny the setting of cookies. Such a setting of the Internet browser used would also prevent Google from placing a conversion cookie on the information technology system of the data subject. In addition, a cookie set by Google AdWords may be deleted at any time via the Internet browser or other software programs.
+如上所述，数据主体可以随时通过所使用的互联网浏览器的相应设置来防止通过我们的网站设置 Cookie，并从而永久拒绝设置 Cookie。对所使用的互联网浏览器的这种设置也将防止 Google 在数据主体的信息技术系统上放置转换 Cookie。此外，由 Google AdWords 设置的 Cookie 可以随时通过互联网浏览器或其他软件程序删除。
 
-The data subject has a possibility of objecting to the interest based advertisement of Google. Therefore, the data subject must access from each of the browsers in use the link www.google.de/settings/ads and set the desired settings.
+数据主体可以反对 Google 基于兴趣的广告。因此，数据主体必须从所使用的每个浏览器中访问链接 www.google.de/settings/ads 并设置所需的设置。
 
-Further information and the applicable data protection provisions of Google may be retrieved under https://www.google.com/intl/en/policies/privacy/.
+有关 Google 的更多信息和适用的数据保护条款，请访问 https://www.google.com/intl/zh-CN/policies/privacy/。
 
-16. Data protection provisions about the application and use of Instagram
-    On this website, the controller has integrated components of the service Instagram. Instagram is a service that may be qualified as an audiovisual platform, which allows users to share photos and videos, as well as disseminate such data in other social networks.
+16. 关于 Instagram 应用和使用的数据保护条款
+在本网站上，控制者集成了 Instagram 服务的组件。Instagram 是一项可以被定性为视听平台的业务，它允许用户分享照片和视频，并在其他社交网络中传播此类数据。
 
-The operating company of the services offered by Instagram is Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2 Ireland.
+Instagram 提供的服务运营公司是 Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2 Ireland。
 
-With each call-up to one of the individual pages of this Internet site, which is operated by the controller and on which an Instagram component (Insta button) was integrated, the Internet browser on the information technology system of the data subject is automatically prompted to the download of a display of the corresponding Instagram component of Instagram. During the course of this technical procedure, Instagram becomes aware of what specific sub-page of our website was visited by the data subject.
+每次调用由控制者运营且集成了 Instagram 组件（Insta 按钮）的本互联网网站的各个页面时，数据主体信息技术系统上的互联网浏览器都会自动提示从 Instagram 下载相应 Instagram 组件的显示。在此技术过程中，Instagram 会获知数据主体访问了我们网站的哪个具体子页面。
 
-If the data subject is logged in at the same time on Instagram, Instagram detects with every call-up to our website by the data subject—and for the entire duration of their stay on our Internet site—which specific sub-page of our Internet page was visited by the data subject. This information is collected through the Instagram component and is associated with the respective Instagram account of the data subject. If the data subject clicks on one of the Instagram buttons integrated on our website, then Instagram matches this information with the personal Instagram user account of the data subject and stores the personal data.
+如果数据主体同时登录了 Instagram，则 Instagram 在数据主体每次调用我们的网站时——以及在他们留在我们互联网网站的整个期间——都会检测到数据主体访问了我们互联网页面的哪个具体子页面。此信息通过 Instagram 组件收集，并与数据主体的相应 Instagram 账户相关联。如果数据主体点击集成在我们网站上的 Instagram 按钮之一，则 Instagram 会将此信息与数据主体的个人 Instagram 用户账户匹配并存储个人数据。
 
-Instagram receives information via the Instagram component that the data subject has visited our website provided that the data subject is logged in at Instagram at the time of the call to our website. This occurs regardless of whether the person clicks on the Instagram button or not. If such a transmission of information to Instagram is not desirable for the data subject, then he or she can prevent this by logging off from their Instagram account before a call-up to our website is made.
+只要数据主体在调用我们网站时登录了 Instagram，Instagram 就会通过 Instagram 组件收到有关数据主体访问我们网站的信息。无论该人是否点击 Instagram 按钮，都会发生这种情况。如果数据主体不希望向 Instagram 传输此类信息，则他或她可以在调用我们的网站之前退出其 Instagram 账户来防止这种情况。
 
-Further information and the applicable data protection provisions of Instagram may be retrieved under https://help.instagram.com/155833707900388 and https://www.instagram.com/about/legal/privacy/.
+有关 Instagram 的更多信息和适用的数据保护条款，请访问 https://help.instagram.com/155833707900388 和 https://www.instagram.com/about/legal/privacy/。
 
-17. Data protection provisions about the application and use of LinkedIn
-    The controller has integrated components of the LinkedIn Corporation on this website. LinkedIn is a web-based social network that enables users with existing business contacts to connect and to make new business contacts. Over 400 million registered people in more than 200 countries use LinkedIn. Thus, LinkedIn is currently the largest platform for business contacts and one of the most visited websites in the world.
+17. 关于 LinkedIn 应用和使用的数据保护条款
+控制者在本网站上集成了 LinkedIn Corporation 的组件。LinkedIn 是一个基于网络的社交网络，使拥有现有业务联系的用户能够建立联系并建立新的业务联系。超过 200 个国家/地区的 4 亿多注册用户使用 LinkedIn。因此，LinkedIn 目前是最大的业务联系平台，也是世界上访问量最大的网站之一。
 
-The operating company of LinkedIn is LinkedIn Corporation, 2029 Stierlin Court Mountain View, CA 94043, UNITED STATES. For privacy matters outside of the UNITED STATES LinkedIn Ireland, Privacy Policy Issues, Wilton Plaza, Wilton Place, Dublin 2, Ireland, is responsible.
+LinkedIn 的运营公司是 LinkedIn Corporation, 2029 Stierlin Court Mountain View, CA 94043, UNITED STATES。对于美国境外的隐私事务，由 LinkedIn Ireland, Privacy Policy Issues, Wilton Plaza, Wilton Place, Dublin 2, Ireland 负责。
 
-With each call-up to one of the individual pages of this Internet site, which is operated by the controller and on which a LinkedIn component (LinkedIn plug-in) was integrated, the Internet browser on the information technology system of the data subject is automatically prompted to the download of a display of the corresponding LinkedIn component of LinkedIn. Further information about the LinkedIn plug-in may be accessed under https://developer.linkedin.com/plugins. During the course of this technical procedure, LinkedIn gains knowledge of what specific sub-page of our website was visited by the data subject.
+每次调用由控制者运营且集成了 LinkedIn 组件（LinkedIn 插件）的本互联网网站的各个页面时，数据主体信息技术系统上的互联网浏览器都会自动提示从 LinkedIn 下载相应 LinkedIn 组件的显示。有关 LinkedIn 插件的更多信息，请访问 https://developer.linkedin.com/plugins。在此技术过程中，LinkedIn 会获知数据主体访问了我们网站的哪个具体子页面。
 
-If the data subject is logged in at the same time on LinkedIn, LinkedIn detects with every call-up to our website by the data subject—and for the entire duration of their stay on our Internet site—which specific sub-page of our Internet page was visited by the data subject. This information is collected through the LinkedIn component and associated with the respective LinkedIn account of the data subject. If the data subject clicks on one of the LinkedIn buttons integrated on our website, then LinkedIn assigns this information to the personal LinkedIn user account of the data subject and stores the personal data.
+如果数据主体同时登录了 LinkedIn，则 LinkedIn 在数据主体每次调用我们的网站时——以及在他们留在我们互联网网站的整个期间——都会检测到数据主体访问了我们互联网页面的哪个具体子页面。此信息通过 LinkedIn 组件收集，并与数据主体的相应 LinkedIn 账户相关联。如果数据主体点击集成在我们网站上的 LinkedIn 按钮之一，则 LinkedIn 会将此信息分配给数据主体的个人 LinkedIn 用户账户并存储个人数据。
 
-LinkedIn receives information via the LinkedIn component that the data subject has visited our website, provided that the data subject is logged in at LinkedIn at the time of the call-up to our website. This occurs regardless of whether the person clicks on the LinkedIn button or not. If such a transmission of information to LinkedIn is not desirable for the data subject, then he or she may prevent this by logging off from their LinkedIn account before a call-up to our website is made.
+只要数据主体在调用我们网站时登录了 LinkedIn，LinkedIn 就会通过 LinkedIn 组件收到有关数据主体访问我们网站的信息。无论该人是否点击 LinkedIn 按钮，都会发生这种情况。如果数据主体不希望向 LinkedIn 传输此类信息，则他或她可以在调用我们的网站之前退出其 LinkedIn 账户来防止这种情况。
 
-LinkedIn provides under https://www.linkedin.com/psettings/guest-controls the possibility to unsubscribe from e-mail messages, SMS messages and targeted ads, as well as the ability to manage ad settings. LinkedIn also uses affiliates such as Eire, Google Analytics, BlueKai, DoubleClick, Nielsen, Comscore, Eloqua, and Lotame. The setting of such cookies may be denied under https://www.linkedin.com/legal/cookie-policy. The applicable privacy policy for LinkedIn is available under https://www.linkedin.com/legal/privacy-policy. The LinkedIn Cookie Policy is available under https://www.linkedin.com/legal/cookie-policy.
+LinkedIn 在 https://www.linkedin.com/psettings/guest-controls 下提供了退订电子邮件消息、短信和定向广告以及管理广告设置的可能性。LinkedIn 还使用 Eire、Google Analytics、BlueKai、DoubleClick、Nielsen、Comscore、Eloqua 和 Lotame 等关联公司。此类 Cookie 的设置可以在 https://www.linkedin.com/legal/cookie-policy 下拒绝。LinkedIn 的适用隐私政策可在 https://www.linkedin.com/legal/privacy-policy 获得。LinkedIn Cookie 政策可在 https://www.linkedin.com/legal/cookie-policy 获得。
 
-18. Data protection provisions about the application and use of YouTube
-    On this website, the controller has integrated components of YouTube. YouTube is an Internet video portal that enables video publishers to set video clips and other users free of charge, which also provides free viewing, review and commenting on them. YouTube allows you to publish all kinds of videos, so you can access both full movies and TV broadcasts, as well as music videos, trailers, and videos made by users via the Internet portal.
+18. 关于 YouTube 应用和使用的数据保护条款
+在本网站上，控制者集成了 YouTube 的组件。YouTube 是一个互联网视频门户，允许视频发布者免费发布视频剪辑，也允许其他用户免费观看、评论这些视频。YouTube 允许您发布各种视频，因此您可以访问完整的电影、电视节目、音乐视频、预告片以及用户通过互联网门户制作的视频。
 
-The operating company of YouTube is Google Ireland Limited, Gordon House, Barrow Street, Dublin, D04 E5W5, Ireland.
+YouTube 的运营公司是 Google Ireland Limited, Gordon House, Barrow Street, Dublin, D04 E5W5, Ireland。
 
-With each call-up to one of the individual pages of this Internet site, which is operated by the controller and on which a YouTube component (YouTube video) was integrated, the Internet browser on the information technology system of the data subject is automatically prompted to download a display of the corresponding YouTube component. Further information about YouTube may be obtained under https://www.youtube.com/yt/about/en/. During the course of this technical procedure, YouTube and Google gain knowledge of what specific sub-page of our website was visited by the data subject.
+每次调用由控制者运营且集成了 YouTube 组件（YouTube 视频）的本互联网网站的各个页面时，数据主体信息技术系统上的互联网浏览器都会自动提示下载相应 YouTube 组件的显示。有关 YouTube 的更多信息，请访问 https://www.youtube.com/yt/about/zh-CN/。在此技术过程中，YouTube 和 Google 会获知数据主体访问了我们网站的哪个具体子页面。
 
-If the data subject is logged in on YouTube, YouTube recognizes with each call-up to a sub-page that contains a YouTube video, which specific sub-page of our Internet site was visited by the data subject. This information is collected by YouTube and Google and assigned to the respective YouTube account of the data subject.
+如果数据主体登录了 YouTube，则 YouTube 在每次调用包含 YouTube 视频的子页面时，都会识别出数据主体访问了我们互联网网站的哪个具体子页面。此信息由 YouTube 和 Google 收集，并分配给数据主体的相应 YouTube 账户。
 
-YouTube and Google will receive information through the YouTube component that the data subject has visited our website, if the data subject at the time of the call to our website is logged in on YouTube; this occurs regardless of whether the person clicks on a YouTube video or not. If such a transmission of this information to YouTube and Google is not desirable for the data subject, the delivery may be prevented if the data subject logs off from their own YouTube account before a call-up to our website is made.
+如果在调用我们网站时数据主体已登录 YouTube，则 YouTube 和 Google 将通过 YouTube 组件收到有关数据主体访问我们网站的信息；无论该人是否点击 YouTube 视频，都会发生这种情况。如果数据主体不希望向 YouTube 和 Google 传输此类信息，则如果在调用我们的网站之前，数据主体退出其自身的 YouTube 账户，则可以防止此类传输。
 
-YouTube’s data protection provisions, available at https://www.google.com/intl/en/policies/privacy/, provide information about the collection, processing and use of personal data by YouTube and Google.
+YouTube 的数据保护条款可在 https://www.google.com/intl/zh-CN/policies/privacy/ 获得，其中提供了有关 YouTube 和 Google 收集、处理和使用个人数据的信息。
 
-19. Legal basis for the processing
-    Art. 6(1) lit. a GDPR serves as the legal basis for processing operations for which we obtain consent for a specific processing purpose. If the processing of personal data is necessary for the performance of a contract to which the data subject is party, as is the case, for example, when processing operations are necessary for the supply of goods or to provide any other service, the processing is based on Article 6(1) lit. b GDPR. The same applies to such processing operations which are necessary for carrying out pre-contractual measures, for example in the case of inquiries concerning our products or services. Is our company subject to a legal obligation by which processing of personal data is required, such as for the fulfillment of tax obligations, the processing is based on Art. 6(1) lit. c GDPR. In rare cases, the processing of personal data may be necessary to protect the vital interests of the data subject or of another natural person. This would be the case, for example, if a visitor were injured in our company and his name, age, health insurance data or other vital information would have to be passed on to a doctor, hospital or other third party. Then the processing would be based on Art. 6(1) lit. d GDPR. Finally, processing operations could be based on Article 6(1) lit. f GDPR. This legal basis is used for processing operations which are not covered by any of the abovementioned legal grounds, if processing is necessary for the purposes of the legitimate interests pursued by our company or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require protection of personal data. Such processing operations are particularly permissible because they have been specifically mentioned by the European legislator. He considered that a legitimate interest could be assumed if the data subject is a client of the controller (Recital 47 Sentence 2 GDPR).
+19. 处理的法律依据
+GDPR 第 6(1) 条 (a) 点作为处理操作的法律依据，我们为特定的处理目的获得同意。如果为了履行数据主体作为当事人的合同而必须处理个人数据，例如，当为了供应商品或提供任何其他服务而必须进行处理操作时，处理基于 GDPR 第 6(1) 条 (b) 点。这同样适用于执行合同前措施所必需的处理操作，例如在有关我们产品或服务的询问的情况下。如果我们的公司承担了法律义务，根据该义务需要处理个人数据（例如为了履行纳税义务），则处理基于 GDPR 第 6(1) 条 (c) 点。在极少数情况下，为了保护数据主体或另一个自然人的切身利益，可能需要处理个人数据。例如，如果访客在我们公司受伤，其姓名、年龄、医疗保险数据或其他切身信息必须传递给医生、医院或其他第三方，情况就会是这样。那么处理将基于 GDPR 第 6(1) 条 (d) 点。最后，处理操作可以基于 GDPR 第 6(1) 条 (f) 点。如果为了追求我们公司或第三方的合法利益而必须进行处理，除非这些利益被需要保护个人数据的数据主体的利益或基本权利和自由所覆盖，则上述任何法律依据都未涵盖的处理操作将使用此法律依据。此类处理操作是被特别允许的，因为欧洲立法者特别提到了它们。他认为，如果数据主体是控制者的客户，则可以假定存在合法利益（GDPR 序言第 47 条第 2 句）。
 
-20. The legitimate interests pursued by the controller or by a third party
-    Where the processing of personal data is based on Article 6(1) lit. f GDPR our legitimate interest is to carry out our business in favor of the well-being of all our employees and the shareholders.
+20. 控制者或第三方追求的合法利益
+如果个人数据的处理基于 GDPR 第 6(1) 条 (f) 点，我们的合法利益是开展我们的业务，以造福于我们所有的员工和股东。
 
-21. Period for which the personal data will be stored
-    The criteria used to determine the period of storage of personal data is the respective statutory retention period. After expiration of that period, the corresponding data is routinely deleted, as long as it is no longer necessary for the fulfillment of the contract or the initiation of a contract.
+21. 个人数据存储期限
+确定个人数据存储期限的标准是相应的法定保留期。在该期限届满后，只要相应的数据不再是履行合同或启动合同所必需的，就会常规地将其删除。
 
-22. Provision of personal data as statutory or contractual requirement; Requirement necessary to enter into a contract; Obligation of the data subject to provide the personal data; possible consequences of failure to provide such data
-    We clarify that the provision of personal data is partly required by law (e.g. tax regulations) or can also result from contractual provisions (e.g. information on the contractual partner). Sometimes it may be necessary to conclude a contract that the data subject provides us with personal data, which must subsequently be processed by us. The data subject is, for example, obliged to provide us with personal data when our company signs a contract with him or her. The non-provision of the personal data would have the consequence that the contract with the data subject could not be concluded. Before personal data is provided by the data subject, the data subject must contact any employee. The employee clarifies to the data subject whether the provision of the personal data is required by law or contract or is necessary for the conclusion of the contract, whether there is an obligation to provide the personal data and the consequences of non-provision of the personal data.
+22. 提供个人数据作为法定或合同要求；签订合同所必需的要求；数据主体提供个人数据的义务；未能提供此类数据可能产生的后果
+我们澄清，提供个人数据部分是法律要求的（例如税收法规），也可能产生自合同规定（例如有关合同伙伴的信息）。有时，为了签订合同，数据主体可能需要向我们提供个人数据，这些数据随后必须由我们处理。例如，当我们的公司与数据主体签订合同时，数据主体有义务向我们提供个人数据。不提供个人数据将导致无法与数据主体签订合同。在数据主体提供个人数据之前，数据主体必须联系任何员工。该员工向数据主体说明提供个人数据是法律或合同要求的，还是签订合同所必需的，是否有提供个人数据的义务，以及不提供个人数据的后果。
 
-23. Existence of automated decision-making
-    As a responsible company, we do not use automatic decision-making or profiling.
+23. 自动化决策的存在
+作为一家负责任的公司，我们不使用自动决策或画像。
 
-This Privacy Policy has been generated by the Privacy Policy Generator of the DGD – Your External DPO that was developed in cooperation with German Lawyers from WILDE BEUGER SOLMECKE, Cologne.
+本隐私政策由 DGD – 您的外部 DPO 的隐私政策生成器生成，该生成器是与科隆 WILDE BEUGER SOLMECKE 的德国律师合作开发的。

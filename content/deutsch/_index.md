@@ -1,63 +1,69 @@
 ---
 ####################### Banner #########################
 banner:
-  title : "Technical Outlier & AI Architect 🚀"
+  title : "Enterprise-Grade Infrastruktur für die KI-Ära"
   image : "images/banner-art.svg"
   imagetwo: "images/justin-guese-bg-removed.png"
-  content : "Skalierung sicherer, hochperformanter Data Engineering-, DevOps- und Agentic-AI-Lösungen für die anspruchsvollsten Branchen der Welt – von Automobilgiganten bis hin zu hochregulierten Bankennetzwerken.<br><br><small>Zertifizierter AWS Cloud Solution Architect und Data Engineer mit Hintergrund in Computational Neuroscience. Spezialisiert auf die Verbindung sicherer On-Premise-Kubernetes/OpenShift-Umgebungen mit modernsten autonomen Workflows.</small>"
+  content : "Skalierung von sicherer, hochperformanter Dateninfrastruktur und DevOps für die anspruchsvollsten Branchen weltweit — von Automobilgiganten bis hin zu BaFin-regulierten Bankennetzwerken. Zertifizierter AWS Solutions Architect, der On-Premise Kubernetes/OpenShift mit autonomen KI-Workflows verbindet."
   button:
     enable : true
-    label : "Architektur-Review buchen"
-    link : "https://cal.com/datafortress-justin/15min"
+    label : "Architecture Review buchen"
+    link : "contact/"
 
 
 ########################## Clients Logo Slider #########################
 clients_logo_slider:
   enable : true
-  title: "Vertraut von globalen Giganten"
+  title: "Vertrauen von weltweit führenden Unternehmen"
   logos:
-  - "images/client-logo/atruvia.png"
+  - "images/client-logo/bmw.png"
+  - "images/client-logo/volksbank.png"
+  - "images/client-logo/hpe-small.png"
   - "images/client-logo/porsche-holding.png"
   - "images/client-logo/vw.png"
-  - "images/client-logo/bmw.png"
-  - "images/client-logo/hpe-small.png"
-  - "images/client-logo/volksbank.png"
+  - "images/client-logo/atruvia.png"
+  - "images/client-logo/buchinger-wilhelmi.png"
+  - "images/client-logo/ottoai.png"
+  - "images/client-logo/summai.png"
 
 
 ##################### Feature ##########################
 feature:
   enable : true
-  title : "Kernpfeiler der Expertise"
-  content : "Ich schreibe nicht nur Code; ich baue Festungen für Ihre Daten. Von gehärteter Sicherheit für reguliertes Banking bis zur nächsten Grenze der Agentic AI."
+  title : "Drei Säulen. Petabytes an Daten. Null Toleranz für Ausfälle."
+  content : "
+Wir entwickeln geschäftskritische Systeme in drei Disziplinen: <strong>BaFin-konformes Kubernetes/OpenShift</strong> für regulierte Industrien, <strong>Petabyte-Scale Data Engineering</strong> in über 60 Ländern und <strong>Agentische KI</strong>, die autonom On-Premise läuft. Public Clouds sind oft zu teuer — und unter deutschen Finanz- und Gesundheitsregulierungen häufig untersagt. Wir schließen diese Lücke für VW, HPE, BMW, Porsche und Deutschlands größte Bankennetzwerke."
   button:
     enable : true
-    label : "Alle Services erkunden"
-    link : "services/"
+    label : "15 Min. kostenlose Beratung"
+    link : "contact/"
   feature_item:
-  - name : "Cloud-Infrastruktur & DevOps"
-    icon : "fa fa-server"
-    content : "Orchestrierungs-Spezialisten: Hochverfügbares On-Premise- und Hybrid-Kubernetes/OpenShift. Gehärtete Sicherheit: BaFin-konforme CI/CD, VPC-Isolation und Multi-Rechenzentrums-Guardrails. [Mehr erfahren →](/services/cloud-infrastructure-devops/)"
-
-  - name : "Data Engineering & Analytics"
+  # feature item loop
+  - name : "Big Data"
     icon : "fa fa-database"
-    content : "Massiver Maßstab: Petabyte-Datenreplikation über 60+ Länder hinweg. Moderne Data Stacks: Distribuierte Engines mit Trino/Starburst, Hive und MinIO. [Mehr erfahren →](/services/data-engineering-analytics/)"
-
-  - name : "Agentic AI & Automatisierung"
+    content : "Data Warehousing, Data Lakes, Data Marts, ETL-Pipelines und Trino/Hadoop. Wir können jede Art von Daten verarbeiten!"
+    
+  # feature item loop
+  - name : "Cloud/Kubernetes"
+    icon : "fa fa-cloud"
+    content : "Kubernetes auf Bare-Metal und in der (Hybrid-)Cloud. Sie sind sich unsicher? Sprechen wir darüber!"
+    
+  # feature item loop
+  - name : "KI/ML"
     icon : "fas fa-robot"
-    content : "Die nächste Grenze: Multi-Agent-Frameworks (LangGraph/LangChain), die über statisches RAG hinausgehen. Private KI: 100% sichere, lokale LLM-Plattformen für proprietäre Daten. [Mehr erfahren →](/services/agentic-ai-automation/)"
-
-  - name : "Compliance-First Strategie"
-    icon : "fas fa-shield-halved"
-    content : "Sichere Übertragung hochsensibler Gesundheitsdaten und Finanzbücher in Cloud-Umgebungen (GDPR & BaFin-Konformität). [Sprechen wir darüber →](/contact/)"
+    content : "EU-konforme und skalierbare KI-Lösungen. ML Ops zur Skalierung Ihrer KI-Workloads."
+    
+  # feature item loop
+  - name : "End-to-End Services"
+    icon : "far fa-thumbs-up"
+    content : "Wir bieten umfassende Services von der Beratung über Architektur bis hin zur Implementierung."
       
-      
-
       
 ######################### Intro Video #####################
 intro_video:
   enable: true
   title: "DataFortress.cloud in 60 Sekunden"
-  content: "Aufbau hochperformanter Infrastruktur für das KI-Zeitalter."
+  content: "Weil ein Video manchmal mehr sagt als tausend Worte."
   video_url: "https://www.youtube.com/embed/eEWvARX0FT0"
   video_thumbnail: "images/video-popup.png"
 
@@ -67,93 +73,82 @@ intro_video:
 service:
   enable : true
   service_item:
-  # service item loop
-  - title : "Fallstudie: Die 120-Minuten-Banken-Rettung (Atruvia)"
+  # service item loop — Atruvia DevOps Case
+  - title : "DevOps-Modernisierung bei Atruvia: Spring Boot Microservices, Jenkins → GitLab, Finanzamt-Integration"
     images:
     - "images/client-logo/atruvia.png"
     - "images/client-logo/volksbank.png"
-    content : "**Die Krise:** Ein HashiCorp Vault Synchronisationsfehler verursachte ein Missverhältnis bei den architektonischen Secrets, was dazu führte, dass Anwendungen in Rechenzentrum A Live-Transaktionen direkt in die Produktionsdatenbank von Rechenzentrum B schrieben. Unter strengen BaFin-Vorschriften hatten wir ein definitives 2-Stunden-Fenster, bevor ein obligatorischer Bundesbericht ausgelöst wurde.
+    content : "Mehrjährige DevOps-Beauftragung bei Atruvia, dem IT-Rückgrat für über 120 deutsche Genossenschaftsbanken. Wir leiteten die Migration von Jenkins zu GitLab CI über hunderte von Pipelines hinweg, refaktorierten monolithische Dienste in Java Spring Boot Microservices auf OpenShift und entwickelten die sichere Kommunikationsschicht zwischen Kernbanksystemen und den Meldeendpunkten des deutschen Finanzamts.
 <br/><br/>
-**Die Lösung:** Nutzung der nativen Container-Orchestrierung von OpenShift und Kubernetes, um Rollouts einzufrieren, falsch konfigurierte Pods zu beenden und maßgeschneiderte Datenabgleichsskripte mit null Datenverlust auszuführen – wenige Minuten vor Ablauf der Frist.
+Jede Komponente ist von Grund auf BaFin-konform konzipiert — Pipeline-as-Code mit prüfbaren Promotion-Gates, Secrets-gesteuerte Deployments über HashiCorp Vault und ein Istio Service Mesh, das eine strikte Service-to-Service-Autorisierung über Rechenzentren hinweg erzwingt. Das Ergebnis: höhere Deployment-Frequenz, kürzere Vorlaufzeiten und eine Plattform, die jeder regulatorischen Prüfung standhält.
 <br/><br/>
-**Die permanente Prävention:** Neugestaltung der Architektur unter Verwendung einer erweiterten Istio-Service-Mesh-Konfiguration mit geografischer Sperrung und strengen Autorisierungsregeln für Egress-Gateways."
-    button:
-      enable : true
-      label : "Vollständige Fallstudie lesen"
-      link : "/portfolio/atruvia--volksbank-data-warehouse/"
-      
-  # service item loop
-  - title : "Fallstudie: Globale Flotten-Synchronisation (HPE / BMW)"
-    images:
-    - "images/client-logo/bmw.png"
-    - "images/client-logo/hpe-small.png"
-    content : "**Die Herausforderung:** Etablierung globaler Ausrichtung und Echtzeit-Datencompliance über massive Data Lakes hinweg für einen der weltweit führenden Automobilgiganten.
-<br/><br/>
-**Das Ergebnis:** Programmierung und Bereitstellung einer Petabyte-Datenreplikations-Pipeline, die gleichzeitig in mehr als 60 Ländern aktiv ist und Hochverfügbarkeit sowie globale Systemkonformität gewährleistet."
-    button:
-      enable : true
-      label : "Vollständige Fallstudie lesen"
-      link : "/portfolio/bmw-worldwide-backup-solution/"
-      
-  # service item loop
-  - title : "Open Source Impact & Technische Autorität"
-    images:
-    - "images/client-logo/googleresearch.jpg"
-    content : "Wir nutzen nicht nur Infrastruktur; wir helfen, sie aufzubauen. Direkte Beiträge zu den Kernwerkzeugen, auf die sich die Branche verlässt:
-<br/><br/>
-- **Google Research (TimesFM):** Beitrag zum SOTA Time Series Foundation Model.
-- **Hetzner Cloud:** Aufbau und Beitrag zum primären Kubernetes CSI Storage-Treiber.
-- **Pandas:** Direkte technische Beiträge zur grundlegenden Bibliothek für globale Data Science.
-- **Anthropic:** Finanziert durch das Anthropic OpenSource-Programm."
-    button:
-      enable : true
-      label : "Technischen Fußabdruck ansehen"
-      link : "/recognition/"
+Dies ist die Art von Arbeit, für die wir gerufen werden: risikoreich, reguliert und so konstruiert, dass sie im Betrieb „langweilig“ (reibungslos) ist."
 
   # service item loop
-  - title : "Product Foundry: Aigentic Vibes Ecosystem"
+  - title : "Enterprise Solution Architecture: Revolutionierung des Datenflusses bei VW mit HPE"
     images:
-    - "images/service-1.png"
-    content : "Wir bauen und warten Live-Produkte im Produktionsmaßstab, die unsere architektonischen Theorien in der realen Welt beweisen:
+    - "images/client-logo/vw.png"
+    - "images/client-logo/hpe-small.png"
+    - "images/service-3.png"
+    content : "In Zusammenarbeit mit HPE und VW haben wir eine hochmoderne Lösungsarchitektur entworfen, die den Materialbemusterungsprozess transformiert hat. Durch die Integration einer SaaS-Plattform in die komplexe Systemlandschaft von VW konnten wir die Markteinführung neuer Fahrzeugmodelle beschleunigen.
 <br/><br/>
-- **AgentBureau:** Elite B2B KI-Agentur-Plattform für Multi-Agent-Workflows.
-- **DocumentChat:** Enterprise-KI-RAG-Assistent für Big-Data-Dokumentenanalyse.
-- **PsychDiary:** KI-gestützter Begleiter für emotionales Tracking.
-- **Quant Trading:** Hochleistungssysteme mit automatisierten Prognosemodellen."
-    button:
-      enable : true
-      label : "Die Foundry erkunden"
-      link : "/products/"
+Unsere Lösung setzte auf eine modulare Microservices-Architektur, die einen sicheren und konformen Datentransfer ermöglichte. Ergebnis: Eine Reduzierung der Durchlaufzeiten und Fehlerquoten um 64%, bei gleichzeitiger Einhaltung strenger VDA-Standards."
+      
+  # service item loop
+  - title : "Data Engineering: Transformation des Datenmanagements für Atruvia und Volksbank"
+    images:
+    - "images/client-logo/volksbank.png"
+    - "images/client-logo/volksbank.png"
+    - "images/client-logo/atruvia.png"
+    content : "In Zusammenarbeit mit Atruvia, dem IT-Dienstleister der Volksbanken, haben wir eine teure Hadoop-basierte Infrastruktur durch ein modernes Open-Source Data Warehouse ersetzt. Auf Basis von Trino und S3-Autoscaling-Clustern verarbeitet diese BaFin-konforme Architektur riesige Mengen an Finanzdaten von Millionen von Kunden und bietet gleichzeitig eine außergewöhnliche Performance bei reduzierten Kosten.
+<br/><br/>
+Durch den Entwurf einer Microservice-Architektur und die Bereitstellung benutzerfreundlicher Analyseumgebungen haben wir die Teams von Atruvia in die Lage versetzt, große Datensätze ohne komplexe Konfigurationen nahtlos zu analysieren. Unsere Lösung verbesserte nicht nur die Skalierbarkeit und Datenperformance, sondern stellte auch die Einhaltung regulatorischer Vorschriften sicher und positionierte Atruvia für zukünftiges Wachstum. Dieses Projekt zeigt unsere Fähigkeit, innovative, kosteneffiziente Datenarchitekturen zu liefern, die den höchsten Branchenstandards entsprechen."
+      
+  # service item loop
+  - title : "Open Source: Optimierung von Googles TimesFM mit CI/CD"
+    images:
+    - "images/client-logo/googleresearch.jpg"
+    content : "Als Teil meiner Open-Source-Beiträge zu Googles TimesFM (einem SOTA-Modell für Zeitreihen-Vorhersagen) habe ich die Entwicklungs- und Deployment-Prozesse optimiert.
+<br/><br/>
+Durch die Integration von GitHub Actions für automatisierte Test- und Deployment-Workflows sowie die Einführung von Python Poetry für das Abhängigkeitsmanagement wurde das Projekt für Nutzer und Entwickler weltweit zugänglicher und produktiver gemacht."
+      
+  # service item loop
+  - title : "Enterprise Solution Architecture: Globale VM-Backup-Lösung für BMW / HPE"
+    images:
+    - "images/client-logo/bmw.png"
+    content : "In Partnerschaft mit BMW und HPE haben wir eine skalierbare und kosteneffiziente Backup-Lösung für hunderte Petabytes an Daten entworfen.
+<br/><br/>
+Durch eine hybride Multi-Cloud-Strategie konnten wir Public-Cloud-Speicher nahtlos mit On-Premise HPE-Deduplizierungsservern integrieren. Das System bietet 99,95% Verfügbarkeit und ermöglicht BMW ein flexibles globales Wachstum bei minimierten Speicherkosten."
        
        
 ################### Testimonials ########################
 testimonials:
-  enable: true
-  title: "Vertraut von führenden Unternehmen"
-  content: "Echte Ergebnisse aus echten Enterprise-Engagements"
+  enable: false
+  title: "Vertrauen von führenden Unternehmen"
+  content: ""
   
   testimonials_quotes:
-  - quote: "OpenShift, GitLab CI/CD, HashiCorp Vault, Kubernetes im Bankenmaßstab – Justin kennt diesen Stack in- und auswendig und liefert unter Compliance-Bedingungen, mit denen die meisten Ingenieure nie zu tun haben."
-    name: "Platform Engineering Lead"
-    designation: "Atruvia (120+ deutsche Banken)"
+  - quote: "Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs dolor faucibus"
+    name: "Ryder Stewart"
+    designation: "Lynch, Marquardt"
     image: "images/avatar/02.jpg"
 
-  - quote: "Wir haben unsere Data-Warehouse-Kosten um 45 % gesenkt und Abfragen laufen 3x schneller. Nicht nur Infrastruktur – der gesamte Ansatz, wie wir über Daten denken, hat sich geändert."
-    name: "Data Engineering Lead"
-    designation: "Automobil-OEM (60+ Länder)"
+  - quote: "Conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor faucibus"
+    name: "Kade Kim"
+    designation: "Champlin Group"
     image: "images/avatar/03.jpg"
 
-  - quote: "Kubernetes fühlte sich unmöglich an, bis wir jemanden hatten, der es tatsächlich erklären konnte. Justin hat nicht nur die Infrastruktur betrieben – er hat uns beigebracht, sie zu beherrschen."
-    name: "CTO"
-    designation: "Healthcare / SaaS"
+  - quote: "Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor"
+    name: "David Cameron"
+    designation: "CEO, Nexuspay"
     image: "images/avatar/04.jpg"
         
 
 ################### tools_intregrate ########################
 tools_intregrate:
   enable : true
-  title : "Technisches Verzeichnis & Core Stack"
-  content: "Sprachen: Python, Go, Rust, Java, TypeScript, HCL. <br> Cloud & Infra: Kubernetes, OpenShift, Helm, ArgoCD, AWS, GCP, Azure. <br> Data Layers: Trino, Kafka, PostgreSQL, MinIO, Hadoop."
+  title : "Integration aller Tools, die Ihr Team liebt"
+  content: "Von Public Cloud Providern bis hin zu einfachen Excel-Tabellen — wir integrieren jede Datenquelle."
   image : "images/screenshot.svg"
 
   tools:
@@ -166,6 +161,7 @@ tools_intregrate:
     - "images/tools/docker.png"
     - "images/tools/kubernetes.jpg"
     - "images/tools/trino-logo.png"
+    - "images/tools/excel.jpeg"
     - "images/tools/linux.png"
     - "images/tools/google-cloud-logo-3.png"
     - "images/tools/python.svg.png"
@@ -175,10 +171,10 @@ tools_intregrate:
 ##################### Call to action #####################
 call_to_action:
   enable : true
-  title : "Ich schreibe nicht nur Code; ich baue Festungen für Ihre Daten."
-  content : "Anfragen für hochkomplexe Freelance-Engagements, Architektur-Review-Verträge oder KI-Integrationsstrategien. Sitz in München, Deutschland (Weltweit verfügbar)."
+  title : "Ich schreibe nicht nur Code. Ich baue Festungen für Ihre Daten."
+  content : "Anfragen für komplexe Freelance-Projekte, Architektur-Reviews oder KI-Strategien. Sitz in München, weltweit verfügbar."
   button:
     enable : true
-    label : "Architektur-Review buchen"
-    link : "https://cal.com/datafortress-justin/15min"
+    label : "Architecture Review buchen"
+    link : "contact/"
 ---

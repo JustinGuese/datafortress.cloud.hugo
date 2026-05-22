@@ -1,11 +1,35 @@
 # main menu
 [[main]]
-name = "मुख्य पृष्ठ"
+name = "होम"
 url = ""
 weight = 1
 
 [[main]]
 weight = 2
+name = "सेवाएं"
+url = "/services"
+hasChildren = true
+
+[[main]]
+parent = "सेवाएं"
+name = "डेटा इंजीनियरिंग और एनालिटिक्स"
+url = "/services/data-engineering-analytics"
+weight = 1
+
+[[main]]
+parent = "सेवाएं"
+name = "क्लाउड इन्फ्रास्ट्रक्चर और DevOps"
+url = "/services/cloud-infrastructure-devops"
+weight = 2
+
+[[main]]
+parent = "सेवाएं"
+name = "एजेंटिक AI और स्वचालन"
+url = "/services/agentic-ai-automation"
+weight = 3
+
+[[main]]
+weight = 3
 name = "पोर्टफोलियो"
 hasChildren = true
 
@@ -17,39 +41,40 @@ weight = 1
 
 [[main]]
 parent = "पोर्टफोलियो"
-name = "वीडब्ल्यू / एचपीई: समाधान वास्तुकला"
+name = "VW / HPE: समाधान आर्किटेक्चर"
 url = "/portfolio/vw-hpe-solution-architecture"
 weight = 2
 
 [[main]]
 parent = "पोर्टफोलियो"
-name = "गूगल टाइम्सएफएम – ओपनसोर्स योगदान"
+name = "Google TimesFM – ओपनसोर्स योगदान"
 url = "/portfolio/google-timesfm"
 weight = 3
 
 [[main]]
 parent = "पोर्टफोलियो"
-name = "अत्रुविया / स्पार्कसे / वोल्क्सबैंक – डेटा वेयरहाउस"
+name = "Atruvia / Volksbank – डेटा वेयरहाउस"
 url = "/portfolio/atruvia--volksbank-data-warehouse"
 weight = 4
 
 [[main]]
 parent = "पोर्टफोलियो"
-name = "बीएमडब्ल्यू / एचपीई: वीएम के लिए विश्वव्यापी बैकअप समाधान"
+name = "BMW / HPE: VMs के लिए विश्वव्यापी बैकअप समाधान"
 url = "/portfolio/bmw-worldwide-backup-solution"
 weight = 5
 
 [[main]]
 parent = "पोर्टफोलियो"
-name = "क्लिनिक बुचिंगर विल्हेल्मी - मेडिकल डेटा वेयरहाउस"
+name = "布兴格威尔赫尔米诊所 - चिकित्सा डेटा वेयरहाउस"
 url = "/portfolio/clinic-buchinger-wilhelmi-data-warehouse"
 weight = 6
 
 [[main]]
 parent = "पोर्टफोलियो"
-name = "वियोस इन्वेस्टमेंट्स – ट्रेडिंग इन्फ्रास्ट्रक्चर"
+name = "Vios इन्वेस्टमेंट – ट्रेडिंग इन्फ्रास्ट्रक्चर"
 url = "/portfolio/vios-investments-trading-infrastructure"
 weight = 7
+
 
 [[main]]
 weight = 6
@@ -60,34 +85,74 @@ isMenuLarge = true
 
 [[main]]
 parent = "उत्पाद"
-name = "डोकूचैट"
-pre = "<i class='dropdown-icon fas fa-users'></i>"
-post = "<small class='dropdown-subtitle'>उपयोगकर्ताओं को उनके ईमेल और दस्तावेज़ों के साथ चैट करने की अनुमति देने के लिए एआई सास एप्लिकेशन</small>"
-url = "/products/DocumentChat"
+name = "AgentBureau"
+pre = "<i class='dropdown-icon fas fa-robot'></i>"
+post = "<small class='dropdown-subtitle'>कुलीन B2B AI एजेंसी प्लेटफॉर्म — प्रोडक्शन-ग्रेड मल्टी-एजेंट वर्कफ़्लो और कस्टम LLM फाइन-ट्यूनिंग।</small>"
+url = "/products/agentbureau"
 weight = 1
 
 [[main]]
 parent = "उत्पाद"
-name = "मायोपियाग्राफ"
-pre = "<i class='dropdown-icon fas fa-eye'></i>"
-post = "<small class='dropdown-subtitle'>मायोपियाग्राफ मायोपिया प्रबंधन के लिए एक स्वास्थ्य सेवा सॉफ्टवेयर है</small>"
-url = "/products/myopiagraph"
+name = "DocumentChat"
+pre = "<i class='dropdown-icon fas fa-users'></i>"
+post = "<small class='dropdown-subtitle'>आपके ईमेल और दस्तावेज़ों के साथ चैट करने के लिए AI SaaS एप्लिकेशन।</small>"
+url = "/products/DocumentChat"
 weight = 2
 
 [[main]]
 parent = "उत्पाद"
-name = "एआई निवेश बॉट्स"
+name = "Myopiagraph"
+pre = "<i class='dropdown-icon fas fa-eye'></i>"
+post = "<small class='dropdown-subtitle'>मायोपिया प्रबंधन के लिए स्वास्थ्य सेवा सॉफ्टवेयर।</small>"
+url = "/products/myopiagraph"
+weight = 3
+
+[[main]]
+parent = "उत्पाद"
+name = "AI Investing Bots"
 pre = "<i class='dropdown-icon fas fa-chart-bar'></i>"
-post = "<small class='dropdown-subtitle'>एआई निवेश बॉट्स हमारी व्यापारिक विचारों और निवेश रणनीतियों को प्रकाशित करने वाली वेबसाइट है।</small>"
+post = "<small class='dropdown-subtitle'>एल्गोरिथमिक AI बॉट्स से व्यापार विचार और निवेश रणनीतियां।</small>"
 url = "/products/aiinvestingbots"
 weight = 4
+
+[[main]]
+parent = "उत्पाद"
+name = "NaviCareNow"
+pre = "<i class='dropdown-icon fas fa-hospital'></i>"
+post = "<small class='dropdown-subtitle'>रोगियों को तेजी से देखभाल से जोड़ने वाला स्वास्थ्य सेवा नेविगेशन प्लेटफॉर्म।</small>"
+url = "/products/navicarenow"
+weight = 5
+
+[[main]]
+parent = "उत्पाद"
+name = "PsychDiary"
+pre = "<i class='dropdown-icon fas fa-brain'></i>"
+post = "<small class='dropdown-subtitle'>AI-सहायता प्राप्त मानसिक स्वास्थ्य जर्नलिंग और नैदानिक साथी।</small>"
+url = "/products/psychdiary"
+weight = 6
+
+[[main]]
+parent = "उत्पाद"
+name = "Tiledom"
+pre = "<i class='dropdown-icon fas fa-th'></i>"
+post = "<small class='dropdown-subtitle'>मॉड्यूलर टाइल-आधारित सामग्री/डैशबोर्ड प्लेटफॉर्म।</small>"
+url = "/products/tiledom"
+weight = 7
+
+[[main]]
+parent = "उत्पाद"
+name = "WiFiSenseBox"
+pre = "<i class='dropdown-icon fas fa-wifi'></i>"
+post = "<small class='dropdown-subtitle'>सिग्नल डिटेक्शन और पर्यावरणीय सेंसिंग के लिए IoT हार्डवेयर-सॉफ्टवेयर समाधान।</small>"
+url = "/products/wifisensebox"
+weight = 8
 
 [[main]]
 parent = "उत्पाद"
 name = "सभी उत्पाद देखें"
 pre = "<i class='dropdown-icon text-primary fas fa-arrow-right'></i>"
 url = "/products"
-weight = 5
+weight = 9
 
 [[main]]
 weight = 13
@@ -101,13 +166,13 @@ hasChildren = true
 
 [[main]]
 parent = "के बारे में"
-name = "सामान्य प्रश्न"
+name = "FAQ"
 url = "/about/faq"
 weight = 1
 
 [[main]]
 parent = "के बारे में"
-name = "छाप"
+name = "छाप (Imprint)"
 url = "/about/imprint"
 weight = 2
 
@@ -118,7 +183,7 @@ url = "/about/privacy-policy"
 weight = 3
 
 [[main]]
-name = "संपर्क करें"
+name = "संपर्क"
 url = "/contact"
 weight = 30
 
@@ -129,53 +194,79 @@ url = "/about/privacy-policy"
 weight = 1
 
 [[footer_left]]
-name = "संपर्क करें"
+name = "संपर्क"
 url = "/contact"
 weight = 2
 
 [[footer_left]]
-name = "छाप"
+name = "छाप (Imprint)"
 url = "/about/imprint"
 weight = 3
 
 [[footer_left]]
-name = "सामान्य प्रश्न"
+name = "FAQ"
 url = "/about/faq"
 weight = 4
 
+
 # footer menu middle
 [[footer_middle]]
-name = "डोकूचैट"
-url = "/products/DocumentChat"
+name = "AgentBureau"
+url = "/products/agentbureau"
 weight = 1
 
 [[footer_middle]]
-name = "मायोपियाग्राफ"
-url = "/products/myopiagraph"
+name = "DocumentChat"
+url = "/products/DocumentChat"
 weight = 2
 
 [[footer_middle]]
-name = "एआई निवेश बॉट्स"
+name = "Myopiagraph"
+url = "/products/myopiagraph"
+weight = 3
+
+[[footer_middle]]
+name = "AI Investing Bots"
 url = "/products/aiinvestingbots"
 weight = 4
 
+[[footer_middle]]
+name = "NaviCareNow"
+url = "/products/navicarenow"
+weight = 5
+
+[[footer_middle]]
+name = "PsychDiary"
+url = "/products/psychdiary"
+weight = 6
+
+[[footer_middle]]
+name = "Tiledom"
+url = "/products/tiledom"
+weight = 7
+
+[[footer_middle]]
+name = "WiFiSenseBox"
+url = "/products/wifisensebox"
+weight = 8
+
 # footer menu right
 [[footer_right]]
-name = "वीडब्ल्यू / एचपीई: समाधान वास्तुकला"
+name = "VW / HPE: समाधान आर्किटेक्चर"
 url = "/portfolio/vw-hpe-solution-architecture"
 weight = 2
 
 [[footer_right]]
-name = "गूगल टाइम्सएफएम – ओपनसोर्स योगदान"
+name = "Google TimesFM – ओपनसोर्स योगदान"
 url = "/portfolio/google-timesfm"
 weight = 3
 
 [[footer_right]]
-name = "अत्रुविया / स्पार्कसे / वोल्क्सबैंक – डेटा वेयरहाउस"
+name = "Atruvia / Volksbank – डेटा वेयरहाउस"
 url = "/portfolio/atruvia--volksbank-data-warehouse"
 weight = 4
 
 [[footer_right]]
-name = "बीएमडब्ल्यू / एचपीई: वीएम के लिए विश्वव्यापी बैकअप समाधान"
+name = "BMW / HPE: VMs के लिए विश्वव्यापी बैकअप समाधान"
 url = "/portfolio/bmw-worldwide-backup-solution"
 weight = 5

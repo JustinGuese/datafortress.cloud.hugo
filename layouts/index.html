@@ -3,22 +3,48 @@
 <!-- banner -->
 {{ with .Params.banner }}
 <section class="banner animated-gradient-bg" style="position: relative; z-index: 1;">
-  <!-- Local particles container for hero -->
-  <div id="particles-hero" aria-hidden="true"></div>
   <div class="container" style="position: relative; z-index: 3;">
     <div class="row">
       <div class="col-lg-10 mx-auto text-center">
-        <h1 class="mb-4 pb-2 text-white">{{ .title | markdownify }}</h1>
-        <p class="mb-4 fade-in-up" style="animation-delay: 0.2s;">{{ .content | markdownify }}</p>
-        <div class="mb-5 fade-in-up" style="animation-delay: 0.4s;">
-          {{ if .button.enable }}
-          {{ with .button }}
-          <a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-outline-primary m-2 magnetic">{{ .label }}</a>
-          {{ end }}
-          {{ end }}
+
+        <!-- trusted-by mini strip (above the fold) -->
+        <div class="mb-4" style="opacity:.95;">
+          <div style="font-size:.7rem; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.7); margin-bottom:.6rem;">Trusted by</div>
+          <div class="d-flex flex-wrap justify-content-center align-items-center" style="gap:1.4rem; color:#fff; font-weight:700; font-size:.92rem; opacity:.92;">
+            <span>VW</span><span>·</span><span>BMW</span><span>·</span><span>Porsche</span><span>·</span><span>HPE</span><span>·</span><span>Atruvia (120+ banks)</span>
+          </div>
         </div>
-        <!-- {{ partial "image" (dict "Src" .image "Alt" "banner image" "Size" "750x") }} -->
-        <div class="fade-in-up floating" style="animation-delay: 0.6s;">
+
+        <h1 class="mb-4 pb-2 text-white">{{ .title | markdownify }}</h1>
+        <p class="mb-4 text-white-50" style="font-size:1.1rem; max-width:780px; margin-left:auto; margin-right:auto;">{{ .content | markdownify }}</p>
+
+        <!-- specificity offer -->
+        <p class="mb-4 text-white" style="font-weight:600; font-size:1.02rem; max-width:780px; margin-left:auto; margin-right:auto;">
+          In 60 minutes I'll find €100K+ in compliance risk, cloud waste, or scaling headroom — or I walk.
+        </p>
+
+        <!-- hero proof-numbers -->
+        <div class="row justify-content-center text-white mb-4 g-2" style="max-width:780px; margin-left:auto; margin-right:auto;">
+          <div class="col-4">
+            <div style="font-size:1.6rem; font-weight:800; line-height:1;">120+</div>
+            <div style="font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; opacity:.85;">German banks served<br>(Atruvia network)</div>
+          </div>
+          <div class="col-4" style="border-left:1px solid rgba(255,255,255,.25); border-right:1px solid rgba(255,255,255,.25);">
+            <div style="font-size:1.6rem; font-weight:800; line-height:1;">100 PB+</div>
+            <div style="font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; opacity:.85;">Replicated for VW / BMW / HPE</div>
+          </div>
+          <div class="col-4">
+            <div style="font-size:1.6rem; font-weight:800; line-height:1;">5+</div>
+            <div style="font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; opacity:.85;">Core OSS contributions</div>
+          </div>
+        </div>
+        <!-- /hero proof-numbers -->
+
+        <div class="mb-5">
+          <button type="button" class="btn btn-primary m-2" data-cal-link="datafortress-justin/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book a free 1-hr architecture review</button>
+          <a href="/case-studies/" title="See selected case studies" class="btn btn-outline-light m-2">See selected case studies →</a>
+        </div>
+        <div class="floating">
         {{ partial "image" (dict "Src" .imagetwo "Alt" "second banner image" "Size" "750x") }}
         </div>
       </div>
@@ -31,17 +57,17 @@
 <!-- clients_logo_slider -->
 {{ if .Params.clients_logo_slider.enable }}
 {{ with .Params.clients_logo_slider }}
-<section class="section overflow-hidden fade-in-up">
+<section class="section overflow-hidden" style="background:#ffffff;">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center mb-5">
-        <h2 class="h6 section-title">{{.title | markdownify}}</h2>
+        <h2 class="h6 section-title" style="color:#222;">{{.title | markdownify}}</h2>
       </div>
       <div class="col-12">
-        <div class="swiper brand-carousel">
-          <div class="swiper-wrapper">
+        <div class="brand-strip">
+          <div class="brand-strip-inner">
             {{ range .logos }}
-            <div class="swiper-slide brand-item d-flex align-items-center justify-content-center scale-in">
+            <div class="brand-item d-flex align-items-center justify-content-center">
               {{ partial "image" (dict "Src" . "Alt" "Brands logo" "Size" "x35") }}
             </div>
             {{ end }}
@@ -181,42 +207,73 @@
 {{ end }}
 <!-- /intro_video -->
 
-<!-- service -->
+<!-- service: tabbed case-study showcase -->
 {{ with .Params.service }}
 {{ if .enable }}
-{{ range $i,$p := .service_item }}
-<section class="section {{if modBool $i 2}}bg-light {{end}} fade-in-up">
+<section class="section bg-light">
   <div class="container">
-    <div class="row align-items-center gy-5">
-      <div class="col-lg-6 {{if modBool $i 2}}order-lg-0{{end}} order-1 {{if modBool $i 2}}fade-in-left{{else}}fade-in-right{{end}}">
-        <div class="pe-0 pe-lgy-5">
-          <h2 class="section-title h3">{{ .title | markdownify }}</h2>
+    <div class="row mb-4">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-title h3 mb-2">Selected client case studies</h2>
+        <p class="text-muted">Click a logo to read the war story. Each is a real engagement — clients named with permission where possible.</p>
+      </div>
+    </div>
+
+    <!-- tab nav: logo grid -->
+    <div class="d-flex flex-wrap justify-content-center mb-4 case-study-tabs" role="tablist" style="gap:.75rem;">
+      {{ range $i,$p := .service_item }}
+      <button type="button"
+              class="btn {{if eq $i 0}}btn-primary active{{else}}btn-outline-secondary{{end}} case-study-tab"
+              data-cs-target="cs-{{ $i }}"
+              role="tab"
+              aria-selected="{{if eq $i 0}}true{{else}}false{{end}}"
+              style="font-size:.85rem; font-weight:600;">
+        {{ .title | plainify | truncate 36 }}
+      </button>
+      {{ end }}
+    </div>
+
+    <!-- tab panels -->
+    {{ range $i,$p := .service_item }}
+    <div id="cs-{{ $i }}" class="case-study-panel" {{if ne $i 0}}style="display:none;"{{end}} role="tabpanel">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6 order-1 order-lg-0">
+          <h3 class="h4 mb-3">{{ .title | markdownify }}</h3>
           <p class="mb-4">{{ .content | markdownify }}</p>
-          {{ if .button.enable }}
-          {{ with .button }}
-          <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn-link magnetic">{{ .label }} <i class="fas fa-arrow-right"></i></a>
-          {{ end }}
+          {{ if .button.enable }}{{ with .button }}
+          <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn-link">{{ .label }} <i class="fas fa-arrow-right"></i></a>
+          {{ end }}{{ end }}
+        </div>
+        <div class="col-lg-6 order-0 order-lg-1">
+          {{ $title:= .title }}
+          {{ with index .images 0 }}
+          {{ partial "image" (dict "Src" . "Alt" $title) }}
           {{ end }}
         </div>
       </div>
-      <div class="col-lg-6 {{if modBool $i 2}}order-lg-1{{end}} order-0 {{if modBool $i 2}}fade-in-right{{else}}fade-in-left{{end}}">
-        {{$cl := gt (len .images) 1}}
-        {{if $cl}}<div class="swiper single-slider card-3d">{{end}}
-          {{if $cl}}<div class="swiper-wrapper">{{end}}
-            {{ $title:= .title }}
-            {{ range .images }}
-            <div class="swiper-slide">
-              {{ partial "image" (dict "Src" . "Alt" $title) }}
-            </div>
-            {{ end }}
-          {{if $cl}}</div>{{end}}
-          {{if $cl}}<div class="swiper-pagination"></div>{{end}}
-        {{if $cl}}</div>{{end}}
-      </div>
     </div>
+    {{ end }}
   </div>
 </section>
-{{ end }}
+<script>
+(function(){
+  document.querySelectorAll('.case-study-tab').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var target = btn.getAttribute('data-cs-target');
+      document.querySelectorAll('.case-study-tab').forEach(function(b){
+        b.classList.remove('btn-primary','active');
+        b.classList.add('btn-outline-secondary');
+        b.setAttribute('aria-selected','false');
+      });
+      btn.classList.remove('btn-outline-secondary');
+      btn.classList.add('btn-primary','active');
+      btn.setAttribute('aria-selected','true');
+      document.querySelectorAll('.case-study-panel').forEach(function(p){ p.style.display='none'; });
+      var t = document.getElementById(target); if(t) t.style.display='block';
+    });
+  });
+})();
+</script>
 {{ end }}
 {{ end }}
 <!-- /service -->
@@ -283,20 +340,139 @@
 {{ end }}
 <!-- /tools_intregrate -->
 
+<!-- featured testimonial -->
+<section class="section" style="background:#f7f9fa;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <figure class="p-4 p-md-5 rounded-3 shadow-sm" style="background:#ffffff; border-left:4px solid var(--primary-color,#0aa8a7);">
+          <i class="fas fa-quote-left text-primary mb-3" style="font-size:1.6rem; opacity:.4;"></i>
+          <blockquote class="mb-4" style="font-size:1.2rem; font-weight:500; color:#222; line-height:1.55; background:transparent;">
+            "Justin built the trading infrastructure that lets us sleep at night. He's that rare engineer who understands both the wire-level details and the business risk — the kind of work that quietly compounds for years."
+          </blockquote>
+          <figcaption class="d-flex align-items-center gap-3" style="gap:.9rem;">
+            <div style="width:48px; height:48px; border-radius:50%; background:linear-gradient(135deg,#0aa8a7,#066b6b); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:1.05rem;">PL</div>
+            <div>
+              <div style="font-weight:700; color:#222;">Peter Lindberg</div>
+              <div style="font-size:.88rem; color:#6c757d;">Engineering Lead, Vios Investments</div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /featured testimonial -->
+
+<!-- pricing transparency -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-title h3 mb-2">Transparent pricing</h2>
+        <p class="text-muted">No SAP-style "request a quote." Three engagement tiers. You know what you're paying before we start.</p>
+      </div>
+    </div>
+    <div class="row gy-4 justify-content-center">
+      <div class="col-md-4">
+        <div class="p-4 bg-white rounded-3 h-100 text-center shadow-sm">
+          <div class="text-uppercase text-muted mb-2" style="font-size:.75rem; letter-spacing:.1em; font-weight:700;">Discovery Call</div>
+          <div class="mb-2" style="font-size:1.8rem; font-weight:800; color:var(--primary-color,#0aa8a7);">Free</div>
+          <p class="text-muted small mb-0">A 1-hour conversation. If there's no fit, I tell you and refer someone better.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white rounded-3 h-100 text-center shadow-sm" style="border:2px solid var(--primary-color,#0aa8a7); position:relative;">
+          <div style="position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:var(--primary-color,#0aa8a7); color:#fff; padding:2px 10px; border-radius:10px; font-size:.7rem; font-weight:700; letter-spacing:.06em;">MOST COMMON</div>
+          <div class="text-uppercase text-muted mb-2" style="font-size:.75rem; letter-spacing:.1em; font-weight:700;">Hourly Consulting</div>
+          <div class="mb-2" style="font-size:1.8rem; font-weight:800; color:var(--primary-color,#0aa8a7);">€190 / hr</div>
+          <p class="text-muted small mb-0">Architecture reviews, code audits, BaFin / GDPR design sessions. Billed in 1-hour blocks, no minimum retainer.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white rounded-3 h-100 text-center shadow-sm">
+          <div class="text-uppercase text-muted mb-2" style="font-size:.75rem; letter-spacing:.1em; font-weight:700;">Fixed-Scope Engagement</div>
+          <div class="mb-2" style="font-size:1.8rem; font-weight:800; color:var(--primary-color,#0aa8a7);">From €15K</div>
+          <p class="text-muted small mb-0">1–3 week deep-dive with written deliverable, or longer fractional-architect retainer. Quoted per scope.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /pricing transparency -->
+
+<!-- how we work -->
+<section class="section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-title h3">How we work</h2>
+        <p class="text-muted">Three steps. Fixed-price discovery. No open-ended retainers unless you ask for one.</p>
+      </div>
+    </div>
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <div class="p-4 bg-white rounded-2 h-100 glass-card">
+          <div class="mb-3" style="font-size:2rem; font-weight:800; color:var(--primary-color,#0aa8a7);">01</div>
+          <h4 class="h5 mb-2">Discovery Call</h4>
+          <p class="mb-0 text-muted small">A 1-hour conversation. Your stack, your constraints, the goal. We leave with a sharp problem statement — or we tell you this isn't a fit and refer someone better.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white rounded-2 h-100 glass-card">
+          <div class="mb-3" style="font-size:2rem; font-weight:800; color:var(--primary-color,#0aa8a7);">02</div>
+          <h4 class="h5 mb-2">Fixed-Price Audit</h4>
+          <p class="mb-0 text-muted small">A scoped 1–3 week deep-dive: architecture review, risk register, cost-optimization roadmap, compliance gap analysis. You get a written deliverable you can act on — with or without us.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white rounded-2 h-100 glass-card">
+          <div class="mb-3" style="font-size:2rem; font-weight:800; color:var(--primary-color,#0aa8a7);">03</div>
+          <h4 class="h5 mb-2">Engagement</h4>
+          <p class="mb-0 text-muted small">If we both want to keep going: fixed-scope implementation, embedded staff-augmentation, or fractional architect retainer. We own the outcome — not just the design doc.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /how we work -->
+
+<!-- featured engagement strip -->
+<section class="section" style="background:#ffffff;">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-title h3 mb-2" style="color:#222;">Featured engagement</h2>
+        <p class="text-muted">Architecture deep-dives from real, named client engagements.</p>
+      </div>
+    </div>
+    <div class="row gy-4">
+      <div class="col-md-6 mx-auto">
+        <a href="/portfolio/atruvia-devops-modernization/" class="d-block p-4 bg-white rounded-3 shadow-sm text-decoration-none" style="border-left:3px solid var(--primary-color,#0aa8a7);">
+          <div class="text-uppercase text-muted mb-2" style="font-size:.7rem; letter-spacing:.1em; font-weight:700;">Case study · Banking · DevOps</div>
+          <h3 class="h5 mb-2" style="color:#222;">Atruvia DevOps Modernization: Spring Boot Microservices, Jenkins → GitLab, Finanzamt Integration</h3>
+          <p class="text-muted mb-2" style="font-size:.92rem;">Multi-year DevOps engagement at the IT backbone of Germany's 120+ cooperative banks. Pipeline modernization, microservice refactoring on OpenShift, and the secure Finanzamt reporting layer — engineered to be boring under audit.</p>
+          <span class="text-primary" style="font-weight:600; font-size:.9rem;">Read the case study →</span>
+        </a>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="/case-studies/" class="btn-link text-primary" style="font-weight:600;">All case studies <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+<!-- /featured engagement strip -->
+
 <!-- call to action -->
 {{ with .Params.call_to_action }}
 {{ if .enable }}
-<section class="section animated-gradient-bg fade-in-up">
+<section class="section animated-gradient-bg">
   <div class="container">
     <div class="row align-items-center justify-content-center text-center">
-      <div class="col-lgy-5 col-md-7">
-        <h2 class="section-title text-white fade-in-up">{{ .title | markdownify }}</h2>
-        {{with .content }}<p class="mb-4 fade-in-up" style="animation-delay: 0.2s;">{{ . | markdownify }}</p>{{ end }}
-        {{ if .button.enable }}
-        {{ with .button }}
-        <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn btn-primary magnetic fade-in-up" style="animation-delay: 0.4s;">{{ .label }}</a>
-        {{ end }}
-        {{ end }}
+      <div class="col-lgy-5 col-md-8">
+        <h2 class="section-title text-white">{{ .title | markdownify }}</h2>
+        {{with .content }}<p class="mb-4 text-white-50">{{ . | markdownify }}</p>{{ end }}
+        <button type="button" class="btn btn-primary" data-cal-link="datafortress-justin/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book a free 1-hr architecture review</button>
       </div>
     </div>
   </div>
@@ -304,5 +480,51 @@
 {{ end }}
 {{ end }}
 <!-- /call to action -->
+
+<!-- scroll-triggered mini-CTA -->
+<div id="scroll-cta" style="position:fixed; bottom:20px; right:20px; z-index:9999; background:#0aa8a7; color:#fff; padding:.85rem 1.2rem; border-radius:.6rem; box-shadow:0 8px 24px rgba(0,0,0,.18); cursor:pointer; transform:translateY(120%); opacity:0; transition:transform .3s ease, opacity .3s ease; max-width:300px; font-size:.92rem; font-weight:600;"
+     data-cal-link="datafortress-justin/30min"
+     data-cal-namespace="30min"
+     data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+     role="button"
+     aria-label="Book a free 1-hour architecture review">
+  <button type="button" id="scroll-cta-close" aria-label="Dismiss" style="position:absolute; top:4px; right:8px; background:none; border:none; color:rgba(255,255,255,.85); font-size:1rem; cursor:pointer; padding:0;">×</button>
+  <div style="line-height:1.3;"><i class="fas fa-bolt me-1"></i> Free 1-hr architecture review<br><span style="font-weight:400; font-size:.82rem; opacity:.9;">€100K+ in findings — or I walk.</span></div>
+</div>
+<script>
+(function(){
+  var cta = document.getElementById('scroll-cta');
+  if(!cta) return;
+  var dismissed = false;
+  try { dismissed = sessionStorage.getItem('df_scroll_cta_dismissed') === '1'; } catch(e){}
+  if(dismissed) { cta.style.display='none'; return; }
+  var shown = false;
+  function onScroll(){
+    if(shown) return;
+    var h = document.documentElement;
+    var p = (h.scrollTop || document.body.scrollTop) / ((h.scrollHeight || document.body.scrollHeight) - h.clientHeight);
+    if(p > 0.3){
+      shown = true;
+      cta.style.transform='translateY(0)';
+      cta.style.opacity='1';
+      window.removeEventListener('scroll', onScroll);
+    }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  document.getElementById('scroll-cta-close').addEventListener('click', function(e){
+    e.stopPropagation();
+    cta.style.transform='translateY(120%)';
+    cta.style.opacity='0';
+    try { sessionStorage.setItem('df_scroll_cta_dismissed','1'); } catch(e){}
+  });
+})();
+</script>
+
+<!-- Cal.com embed (popup on data-cal-link buttons) -->
+<script type="text/javascript">
+(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "30min", {origin:"https://app.cal.com"});
+Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+</script>
 
 {{ end }}

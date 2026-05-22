@@ -35,19 +35,19 @@ hasChildren = true
 
 [[main]]
 parent = "Portfolio"
-name = "All"
+name = "Alle"
 url = "/portfolio"
 weight = 1
 
 [[main]]
 parent = "Portfolio"
-name = "VW / HPE: Solution Architecture"
+name = "VW / HPE: Lösungsarchitektur"
 url = "/portfolio/vw-hpe-solution-architecture"
 weight = 2
 
 [[main]]
 parent = "Portfolio"
-name = "Google TimesFM – Opensource contribution"
+name = "Google TimesFM – Open-Source-Beitrag"
 url = "/portfolio/google-timesfm"
 weight = 3
 
@@ -59,19 +59,19 @@ weight = 4
 
 [[main]]
 parent = "Portfolio"
-name = "BMW / HPE: Worldwide backup solution for VMs"
+name = "BMW / HPE: Weltweite Backup-Lösung für VMs"
 url = "/portfolio/bmw-worldwide-backup-solution"
 weight = 5
 
 [[main]]
 parent = "Portfolio"
-name = "Clinic Buchinger Wilhelmi - Medical Data Warehouse"
+name = "Klinik Buchinger Wilhelmi - Medizinisches Data Warehouse"
 url = "/portfolio/clinic-buchinger-wilhelmi-data-warehouse"
 weight = 6
 
 [[main]]
 parent = "Portfolio"
-name = "Vios Investments – Trading Infrastructure"
+name = "Vios Investments – Handelsinfrastruktur"
 url = "/portfolio/vios-investments-trading-infrastructure"
 weight = 7
 
@@ -86,8 +86,8 @@ isMenuLarge = true
 [[main]]
 parent = "Produkte"
 name = "AgentBureau"
-pre = "<i class='dropdown-icon fas fa-briefcase'></i>"
-post = "<small class='dropdown-subtitle'>B2B KI-Agentur-Plattform für Multi-Agent-Workflows</small>"
+pre = "<i class='dropdown-icon fas fa-robot'></i>"
+post = "<small class='dropdown-subtitle'>Elite B2B KI-Agentur-Plattform — produktionsreife Multi-Agenten-Workflows & individuelles LLM-Feintuning.</small>"
 url = "/products/agentbureau"
 weight = 1
 
@@ -95,7 +95,7 @@ weight = 1
 parent = "Produkte"
 name = "DocumentChat"
 pre = "<i class='dropdown-icon fas fa-users'></i>"
-post = "<small class='dropdown-subtitle'>KI SaaS-Anwendung für Dokumentenanalyse</small>"
+post = "<small class='dropdown-subtitle'>KI-SaaS-Anwendung, um mit Ihren E-Mails und Dokumenten zu chatten.</small>"
 url = "/products/DocumentChat"
 weight = 2
 
@@ -103,7 +103,7 @@ weight = 2
 parent = "Produkte"
 name = "Myopiagraph"
 pre = "<i class='dropdown-icon fas fa-eye'></i>"
-post = "<small class='dropdown-subtitle'>Gesundheitssoftware für das Myopie-Management</small>"
+post = "<small class='dropdown-subtitle'>Gesundheitssoftware für das Myopie-Management.</small>"
 url = "/products/myopiagraph"
 weight = 3
 
@@ -111,16 +111,48 @@ weight = 3
 parent = "Produkte"
 name = "AI Investing Bots"
 pre = "<i class='dropdown-icon fas fa-chart-bar'></i>"
-post = "<small class='dropdown-subtitle'>Handelsideen und Anlagestrategien</small>"
+post = "<small class='dropdown-subtitle'>Handelsideen und Anlagestrategien von algorithmischen KI-Bots.</small>"
 url = "/products/aiinvestingbots"
 weight = 4
+
+[[main]]
+parent = "Produkte"
+name = "NaviCareNow"
+pre = "<i class='dropdown-icon fas fa-hospital'></i>"
+post = "<small class='dropdown-subtitle'>Plattform für medizinische Navigation, die Patienten schneller zur Versorgung führt.</small>"
+url = "/products/navicarenow"
+weight = 5
+
+[[main]]
+parent = "Produkte"
+name = "PsychDiary"
+pre = "<i class='dropdown-icon fas fa-brain'></i>"
+post = "<small class='dropdown-subtitle'>KI-gestütztes Tagebuch für mentale Gesundheit und klinischer Begleiter.</small>"
+url = "/products/psychdiary"
+weight = 6
+
+[[main]]
+parent = "Produkte"
+name = "Tiledom"
+pre = "<i class='dropdown-icon fas fa-th'></i>"
+post = "<small class='dropdown-subtitle'>Modulare, kachelbasierte Content-/Dashboard-Plattform.</small>"
+url = "/products/tiledom"
+weight = 7
+
+[[main]]
+parent = "Produkte"
+name = "WiFiSenseBox"
+pre = "<i class='dropdown-icon fas fa-wifi'></i>"
+post = "<small class='dropdown-subtitle'>IoT-Hardware-Software-Lösung für Signalerkennung & Umgebungssensorik.</small>"
+url = "/products/wifisensebox"
+weight = 8
 
 [[main]]
 parent = "Produkte"
 name = "Alle Produkte anzeigen"
 pre = "<i class='dropdown-icon text-primary fas fa-arrow-right'></i>"
 url = "/products"
-weight = 10
+weight = 9
 
 [[main]]
 weight = 13
@@ -146,7 +178,7 @@ weight = 2
 
 [[main]]
 parent = "Über uns"
-name = "Datenschutzerklärung"
+name = "Datenschutz"
 url = "/about/privacy-policy"
 weight = 3
 
@@ -157,7 +189,7 @@ weight = 30
 
 # footer menu left
 [[footer_left]]
-name = "Privatsphäre"
+name = "Datenschutz"
 url = "/about/privacy-policy"
 weight = 1
 
@@ -179,28 +211,53 @@ weight = 4
 
 # footer menu middle
 [[footer_middle]]
+name = "AgentBureau"
+url = "/products/agentbureau"
+weight = 1
+
+[[footer_middle]]
 name = "DocumentChat"
 url = "/products/DocumentChat"
-weight = 1
+weight = 2
 
 [[footer_middle]]
 name = "Myopiagraph"
 url = "/products/myopiagraph"
-weight = 2
+weight = 3
 
 [[footer_middle]]
 name = "AI Investing Bots"
 url = "/products/aiinvestingbots"
 weight = 4
 
+[[footer_middle]]
+name = "NaviCareNow"
+url = "/products/navicarenow"
+weight = 5
+
+[[footer_middle]]
+name = "PsychDiary"
+url = "/products/psychdiary"
+weight = 6
+
+[[footer_middle]]
+name = "Tiledom"
+url = "/products/tiledom"
+weight = 7
+
+[[footer_middle]]
+name = "WiFiSenseBox"
+url = "/products/wifisensebox"
+weight = 8
+
 # footer menu right
 [[footer_right]]
-name = "VW / HPE: Solution Architecture"
+name = "VW / HPE: Lösungsarchitektur"
 url = "/portfolio/vw-hpe-solution-architecture"
 weight = 2
 
 [[footer_right]]
-name = "Google TimesFM – Opensource contribution"
+name = "Google TimesFM – Open-Source-Beitrag"
 url = "/portfolio/google-timesfm"
 weight = 3
 
@@ -210,6 +267,6 @@ url = "/portfolio/atruvia--volksbank-data-warehouse"
 weight = 4
 
 [[footer_right]]
-name = "BMW / HPE: Worldwide backup solution for VMs"
+name = "BMW / HPE: Weltweite Backup-Lösung für VMs"
 url = "/portfolio/bmw-worldwide-backup-solution"
 weight = 5

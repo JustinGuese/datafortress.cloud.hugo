@@ -1,7 +1,7 @@
 ---
-description: Lire tous les derniers articles de blog
+title: "Dernières Nouvelles"
+subtitle: "Lisez tous les derniers articles du blog"
+# meta description
+description: "Lisez tous les derniers articles du blog"
 draft: false
-subtitle: Lire tous les derniers articles de blog
-title: Dernières nouvelles
-
 ---

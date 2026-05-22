@@ -1,22 +1,17 @@
 ---
-call_to_action:
-  button:
-    enable: true
-    label: Contactez-nous
-    link: contact/
-  content: 'Contactez-nous pour une consultation gratuite de 15 minutes et parlez-nous
-    de vos défis liés aux données/au cloud.
-
-    '
-  enable: true
-  image: images/vector.svg
-  title: Avez-vous quelque chose de similaire en tête ?
-description: Lee nuestro Portafolio
+title: "Portfolio"
+subtitle: "Vea nuestro portfolio"
+description: "Vea nuestro portfolio"
 draft: false
-section: Portafolio
-subtitle: Consulta nuestro Portafolio
-title: Portafolio
+section: "portfolio"
 
+call_to_action:
+  enable : true
+  image : "images/vector.svg"
+  title : "¿Tiene algo parecido en mente?"
+  content : "Contáctenos para una consulta gratuita de 15 minutos y háblenos de sus desafíos de datos/nube."
+  button:
+    enable : true
+    label : "Contáctenos"
+    link : "contact/"
 ---
-
-

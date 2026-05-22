@@ -53,7 +53,126 @@
 </script>
 {{- end -}}
 
-{{- /* Person schema for author pages */ -}}
+{{- /* Person schema on homepage and author pages */ -}}
+{{- if .IsHome -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Justin Güse",
+  "url": "{{ .Site.BaseURL }}",
+  "image": "{{ .Site.BaseURL }}images/justin-guese-bg-removed.png",
+  "jobTitle": "Enterprise Infrastructure Architect, Data Engineer, Agentic AI Specialist",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "DataFortress.cloud",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Straßlach-Dingharting",
+    "addressRegion": "Bavaria",
+    "addressCountry": "DE"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/justin-guese/",
+    "https://github.com/JustinGuese"
+  ],
+  "knowsAbout": [
+    "OpenShift",
+    "Kubernetes",
+    "HashiCorp Vault",
+    "BaFin compliance",
+    "Petabyte-scale data engineering",
+    "Trino",
+    "Agentic AI",
+    "LangGraph",
+    "On-premise LLM fine-tuning",
+    "Istio Service Mesh",
+    "AWS Solutions Architecture"
+  ]
+}
+</script>
+{{- end -}}
+
+{{- /* Homepage: emit Service schema for each of the three pillars + FAQPage */ -}}
+{{- if .IsHome -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "BaFin-Compliant Kubernetes & OpenShift Engineering",
+      "serviceType": "Cloud Infrastructure & DevOps Consulting",
+      "description": "On-premise and hybrid Kubernetes/OpenShift architecture for German banking, healthcare, and automotive — BaFin-compliant, audit-ready, defense-in-depth with HashiCorp Vault and Istio service mesh.",
+      "provider": { "@type": "Organization", "name": "DataFortress.cloud", "url": "{{ .Site.BaseURL }}" },
+      "areaServed": { "@type": "Country", "name": "Germany" },
+      "url": "{{ .Site.BaseURL }}services/cloud-infrastructure-devops/"
+    },
+    {
+      "@type": "Service",
+      "name": "Petabyte-Scale Data Engineering",
+      "serviceType": "Data Engineering & Analytics Consulting",
+      "description": "Trino, data lakes, data warehouses, and ETL pipelines at petabyte scale. Trusted by VW, BMW, HPE, and Germany's largest banking network spanning 120+ banks and 60+ countries.",
+      "provider": { "@type": "Organization", "name": "DataFortress.cloud", "url": "{{ .Site.BaseURL }}" },
+      "areaServed": { "@type": "Country", "name": "Germany" },
+      "url": "{{ .Site.BaseURL }}services/data-engineering-analytics/"
+    },
+    {
+      "@type": "Service",
+      "name": "On-Premise Agentic AI & LLM Engineering",
+      "serviceType": "Agentic AI Consulting",
+      "description": "Production multi-agent systems with LangGraph, custom LLM fine-tuning on Kubernetes-managed GPUs, and 100% on-premise deployments for regulated industries that cannot send data to public APIs.",
+      "provider": { "@type": "Organization", "name": "DataFortress.cloud", "url": "{{ .Site.BaseURL }}" },
+      "areaServed": { "@type": "Country", "name": "Germany" },
+      "url": "{{ .Site.BaseURL }}services/ai-ml-engineering/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you work on-premise or only in public cloud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both. A large share of our work is 100% on-premise Kubernetes/OpenShift for clients in regulated industries (BaFin-supervised banking, healthcare, automotive) where public cloud is either too costly or not permitted. We also architect AWS, GCP, Hetzner, and hybrid deployments where the constraints allow it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you BaFin- and GDPR-aware?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We have run BaFin-supervised infrastructure for Germany's largest cooperative banking network and survived reportable-event windows under 2-hour federal deadlines. Defense-in-depth, audit trails, data residency, and on-premise deployments are core to how we work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does pricing work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Engagements start with a free 1-hour discovery call. If there's fit, we propose a fixed-price 1-3 week audit with a written deliverable. Implementation engagements are scoped fixed-price or fractional architect retainer — no open-ended retainers unless you ask for one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you fine-tune LLMs on private data without sending it to public APIs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We run fine-tuning workloads on Kubernetes-managed GPU clusters fully on-premise for clients whose data cannot leave the building. This includes the orchestration, evaluation harnesses, and ongoing model lifecycle management."
+      }
+    }
+  ]
+}
+</script>
+{{- end -}}
+
 {{- if eq .Type "author" -}}
 <script type="application/ld+json">
 {

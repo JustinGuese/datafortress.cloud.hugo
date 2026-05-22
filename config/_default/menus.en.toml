@@ -6,6 +6,30 @@ weight = 1
 
 [[main]]
 weight = 2
+name = "Services"
+url = "/services"
+hasChildren = true
+
+[[main]]
+parent = "Services"
+name = "Data Engineering & Analytics"
+url = "/services/data-engineering-analytics"
+weight = 1
+
+[[main]]
+parent = "Services"
+name = "Cloud Infrastructure & DevOps"
+url = "/services/cloud-infrastructure-devops"
+weight = 2
+
+[[main]]
+parent = "Services"
+name = "Agentic AI & Automation"
+url = "/services/agentic-ai-automation"
+weight = 3
+
+[[main]]
+weight = 3
 name = "Portfolio"
 hasChildren = true
 
@@ -61,34 +85,75 @@ isMenuLarge = true
 
 [[main]]
 parent = "Products"
+name = "View All Products"
+pre = "<i class='dropdown-icon text-primary fas fa-arrow-right'></i>"
+url = "/products"
+weight = -1
+
+[[main]]
+parent = "Products"
+name = "AgentBureau"
+pre = "<i class='dropdown-icon fas fa-robot'></i>"
+post = "<small class='dropdown-subtitle'>Elite B2B AI agency platform — production-grade multi-agent workflows & custom LLM fine-tuning.</small>"
+url = "/products/agentbureau"
+weight = 1
+
+[[main]]
+parent = "Products"
 name = "DocumentChat"
 pre = "<i class='dropdown-icon fas fa-users'></i>"
-post = "<small class='dropdown-subtitle'>AI SaaS application to allow users to chat with their emails and documents</small>"
+post = "<small class='dropdown-subtitle'>AI SaaS application to chat with your emails and documents.</small>"
 url = "/products/DocumentChat"
-weight = 1
+weight = 2
 
 [[main]]
 parent = "Products"
 name = "Myopiagraph"
 pre = "<i class='dropdown-icon fas fa-eye'></i>"
-post = "<small class='dropdown-subtitle'>Myopiagraph is a healthcare software for Myopia management</small>"
+post = "<small class='dropdown-subtitle'>Healthcare software for Myopia management.</small>"
 url = "/products/myopiagraph"
-weight = 2
+weight = 3
 
 [[main]]
 parent = "Products"
 name = "AI Investing Bots"
 pre = "<i class='dropdown-icon fas fa-chart-bar'></i>"
-post = "<small class='dropdown-subtitle'>AI Investing Bots is a website publishing our trade ideas and investment strategies.</small>"
+post = "<small class='dropdown-subtitle'>Trade ideas and investment strategies from algorithmic AI bots.</small>"
 url = "/products/aiinvestingbots"
 weight = 4
 
 [[main]]
 parent = "Products"
-name = "View All Products"
-pre = "<i class='dropdown-icon text-primary fas fa-arrow-right'></i>"
-url = "/products"
+name = "NaviCareNow"
+pre = "<i class='dropdown-icon fas fa-hospital'></i>"
+post = "<small class='dropdown-subtitle'>Healthcare navigation platform connecting patients to care faster.</small>"
+url = "/products/navicarenow"
 weight = 5
+
+[[main]]
+parent = "Products"
+name = "PsychDiary"
+pre = "<i class='dropdown-icon fas fa-brain'></i>"
+post = "<small class='dropdown-subtitle'>AI-assisted mental health journaling and clinical companion.</small>"
+url = "/products/psychdiary"
+weight = 6
+
+[[main]]
+parent = "Products"
+name = "Tiledom"
+pre = "<i class='dropdown-icon fas fa-th'></i>"
+post = "<small class='dropdown-subtitle'>Modular tile-based content/dashboard platform.</small>"
+url = "/products/tiledom"
+weight = 7
+
+[[main]]
+parent = "Products"
+name = "WiFiSenseBox"
+pre = "<i class='dropdown-icon fas fa-wifi'></i>"
+post = "<small class='dropdown-subtitle'>IoT hardware-software solution for signal detection & environmental sensing.</small>"
+url = "/products/wifisensebox"
+weight = 8
+
 
 [[main]]
 weight = 13
@@ -147,19 +212,44 @@ weight = 4
 
 # footer menu middle
 [[footer_middle]]
+name = "AgentBureau"
+url = "/products/agentbureau"
+weight = 1
+
+[[footer_middle]]
 name = "DocumentChat"
 url = "/products/DocumentChat"
-weight = 1
+weight = 2
 
 [[footer_middle]]
 name = "Myopiagraph"
 url = "/products/myopiagraph"
-weight = 2
+weight = 3
 
 [[footer_middle]]
 name = "AI Investing Bots"
 url = "/products/aiinvestingbots"
 weight = 4
+
+[[footer_middle]]
+name = "NaviCareNow"
+url = "/products/navicarenow"
+weight = 5
+
+[[footer_middle]]
+name = "PsychDiary"
+url = "/products/psychdiary"
+weight = 6
+
+[[footer_middle]]
+name = "Tiledom"
+url = "/products/tiledom"
+weight = 7
+
+[[footer_middle]]
+name = "WiFiSenseBox"
+url = "/products/wifisensebox"
+weight = 8
 
 # footer menu right
 [[footer_right]]

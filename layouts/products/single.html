@@ -1,0 +1,103 @@
+{{ define "main" }}
+
+{{ with .Params.banner }}
+<section class="section product-page animated-gradient-bg {{ with .background_class }}{{ . }} {{ end }}" style="position: relative; z-index: 1;">
+  <div class="container" style="position: relative; z-index: 3;">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-5 col-md-10 mb-5 mb-lg-0">
+        <div class="pe-0 pe-lg-5 text-center text-lg-start">
+          <h1 class="section-title h2 text-white">{{ .title | markdownify }}</h1>
+          <p class="mb-5 text-white-50" style="font-size:1.05rem;">{{ .content | markdownify }}</p>
+          {{ if .button.enable }}{{ with .button }}
+          <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a>
+          {{ end }}{{ end }}
+        </div>
+      </div>
+      <div class="col-lg-7 text-center">
+        {{ partial "image" (dict "Src" .image "Alt" .Title "Class" "rounded-2 shadow") }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.about_this_product }}
+<section class="section product-page {{ with .background_class }}{{ . }} {{ end }}" style="background:#ffffff;">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-7 mb-4 text-center mx-auto">
+        <h2 class="section-title h3" style="color:#222;">{{ .title | markdownify }}</h2>
+        <div class="content mb-5" style="color:#333;">
+          {{ .content | markdownify }}
+        </div>
+      </div>
+    </div>
+    <div class="row gy-6 g-5">
+      {{ range .features }}
+      <div class="col-lg-6">
+        <div class="px-5 px-lg-6 py-5 rounded-3 product-feature-card" style="background:#f7f9fa; border:1px solid #eef1f3;">
+          <div class="display-3 mb-3">
+            <i class="{{ .icon }} text-primary"></i>
+          </div>
+          <h2 class="h4 mb-2" style="color:#222;">{{ .title | markdownify }}</h2>
+          <div class="content" style="color:#333;">{{ .content | markdownify }}</div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ if .Content }}
+<section class="section product-page" style="background:#ffffff;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="content product-content border-top pt-5">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<style>
+.product-content { color: #222; }
+.product-content h1, .product-content h2, .product-content h3,
+.product-content h4, .product-content h5, .product-content h6 {
+  color: #0aa8a7;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.product-content h2 { font-size: 1.6rem; }
+.product-content h3 { font-size: 1.3rem; }
+.product-content p, .product-content li { color: #333; line-height: 1.65; }
+.product-content a { color: #0aa8a7; }
+.product-content strong { color: #111; }
+.product-content hr { border-color: #e5e7eb; }
+.product-content img { max-width: 100%; height: auto; border-radius: .5rem; margin: 1.5rem 0; }
+.product-content ul, .product-content ol { padding-left: 1.4rem; }
+</style>
+
+<!-- CTA -->
+<section class="section animated-gradient-bg">
+  <div class="container">
+    <div class="row align-items-center justify-content-center text-center">
+      <div class="col-md-8">
+        <h2 class="section-title text-white mb-3">Interested in this product?</h2>
+        <p class="mb-4 text-white-50">Book a free 1-hour conversation — we'll figure out fit fast.</p>
+        <button type="button" class="btn btn-primary" data-cal-link="datafortress-justin/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Book a free intro call</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ar);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "30min", {origin:"https://app.cal.com"});
+Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+</script>
+
+{{ end }}

@@ -1,22 +1,17 @@
 ---
-call_to_action:
-  button:
-    enable: true
-    label: Contactez-nous
-    link: contact/
-  content: 'Contactez-nous pour une consultation gratuite de 15 minutes et parlez-nous
-    de vos défis liés aux données/au cloud.
-
-    '
-  enable: true
-  image: images/vector.svg
-  title: Avez-vous quelque chose de similaire en tête ?
-description: 查看我们的作品集
+title: "项目案例"
+subtitle: "查看我们的项目案例"
+description: "查看我们的项目案例"
 draft: false
-section: 投资组合
-subtitle: 查看我们的作品集
-title: 作品集
+section: "portfolio"
 
+call_to_action:
+  enable : true
+  image : "images/vector.svg"
+  title : "您有类似的想法吗？"
+  content : "联系我们进行 15 分钟的免费咨询，告诉我们您在数据/云方面的挑战。"
+  button:
+    enable : true
+    label : "联系我们"
+    link : "contact/"
 ---
-
-

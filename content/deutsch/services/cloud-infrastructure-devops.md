@@ -24,19 +24,19 @@ Wir sind spezialisiert auf die Verbindung sicherer On-Premise-Kubernetes- und Op
 - **Mitwirkungs-Einfluss**: Wir nutzen nicht nur Werkzeuge; wir bauen sie. Mitwirkender am **Hetzner Cloud CSI-Driver** und den **Bitnami Helm Charts**.
 
 ---
+## DevOps-Modernisierung bei Atruvia
 
-## Die "Ticking Clock"-Rettung: Eine Banken-War-Story
+> Vollständige Fallstudie: [**Atruvia — DevOps-Modernisierung & Banking Platform Engineering**](/de/portfolio/atruvia-devops-modernization/)
 
-**Die Krise (Atruvia)**: Während eines kritischen Infrastruktur-Syncs verursachte ein **HashiCorp Vault Synchronisationsfehler** ein Missverhältnis bei den architektonischen Secrets. Dies führte zu einem katastrophalen "Split-Brain"-Zustand, in dem Anwendungen in Rechenzentrum A begannen, Live-Transaktionen mit hoher Geschwindigkeit direkt in die Produktionsdatenbank von Rechenzentrum B zu schreiben, ohne autorisiert zu sein.
+Mehrjähriges Engagement bei Atruvia, dem IT-Rückgrat für über 120 deutsche Genossenschaftsbanken (Volksbanken-Netzwerk). Die Arbeit umfasste drei Schwerpunkte:
 
-**Die Ticking Clock**: Unter strengen **BaFin-Vorschriften** hatten wir ein definitives **2-Stunden-Fenster**, bevor ein obligatorischer Bundesbericht ausgelöst wurde. Ein solcher Bericht hätte eine vollständige Bundesprüfung und einen erheblichen Reputationsschaden nach sich gezogen.
+1. **Jenkins → GitLab CI Migration.** Hunderte von Pipelines wurden in Pipeline-as-Code überführt – mit prüfbaren Promotion-Gates, signierten Artefakten und Deployment-Genehmigungen, die über denselben Git-Workflow wie der Quellcode laufen.
+2. **Java Spring Boot Microservices auf OpenShift.** Refactoring monolithischer Bankdienste in diskrete Spring Boot Services mit sauberen Service-Grenzen, Health-Probes und Helm-basierten Deployments. Jeder Dienst wird mit integrierter Observability, verteiltem Tracing und BaFin-konformem Audit-Logging ausgeliefert.
+3. **Finanzamt-Integrationsschicht.** Entwicklung der sicheren Kommunikationsschicht zwischen Kernbanksystemen und den Meldeendpunkten des deutschen Finanzamts – Pipelines, Credential-Handling über HashiCorp Vault, Retry-Semantik und Reconciliation-Tooling, alles End-to-End prüfbar.
 
-**Die Lösung**: Unter Nutzung der nativen Container-Orchestrierung von OpenShift und Kubernetes führten wir eine "Freeze-and-Reconcile"-Strategie durch:
-1. **Sofortiger Lockdown**: Alle falsch konfigurierten Pods wurden sofort beendet und die Egress-Gateways über Istio gesperrt.
-2. **Datenintegrität**: Maßgeschneiderte Datenabgleichsskripte wurden ausgeführt, um Datenbankzustände zu identifizieren und neu zu schreiben, wobei **null Datenverlust** gewährleistet wurde.
-3. **Wiederherstellung**: Die Secrets-Management-Ebene wurde wiederhergestellt und alle Transaktionsprotokolle wurden wenige Minuten vor Ablauf der Frist validiert.
+**Das Architekturmuster**, das alles zusammenhält: ein **Istio Service Mesh** mit geografischer Sperrung und strikter Service-zu-Service-Autorisierung an Egress-Gateways. Rechenzentrumübergreifender Datenverkehr ist ein bewusster, autorisierter Akt — kein Zufall des Routings. Defense-in-Depth über die Secrets-, Mesh-, Identitäts- and Anwendungsschichten hinweg bedeutet, dass ein Fehler in einer einzelnen Schicht das System nicht gefährdet.
 
-**Die permanente Prävention**: Wir haben die gesamte Architektur unter Verwendung einer erweiterten **Istio-Service-Mesh**-Konfiguration mit geografischer Sperrung und strengen Autorisierungsregeln für Egress-Gateways neu konzipiert, um eine Isolierung auf Netzwerkebene zu gewährleisten, selbst wenn die Secrets-Ebene erneut ausfällt.
+Dies ist die Art von Arbeit, die absichtlich „langweilig“ ist: höhere Deployment-Frequenz, kürzere Vorlaufzeiten und eine Plattform, die jeder regulatorischen Prüfung standhält.
 
 ---
 

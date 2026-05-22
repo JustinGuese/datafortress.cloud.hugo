@@ -2,13 +2,13 @@
   translation: 阅读更多
   
 - id: read_case_study
-  translation: 阅读完整的案例研究
+  translation: 阅读完整案例研究
   
 - id: view_product
   translation: 查看产品
 
 - id: send
-  translation: 发信息
+  translation: 发送消息
 
 - id: category
   translation: 类别
@@ -17,22 +17,22 @@
   translation: 标签
 
 - id: by
-  translation: 经过
+  translation: 作者
 
 - id: min_read
-  translation: 最小读取
+  translation: 分钟阅读
 
 - id: admin
-  translation: 行政
+  translation: 管理员
 
 - id: lets_meet
-  translation: 咱们见面吧
+  translation: 预约会议
 
 - id: prev_case
-  translation: 以前的
+  translation: 上一个案例
 
 - id: next_case
-  translation: 下一个
+  translation: 下一个案例
 
 - id: apply_for_position
   translation: 申请职位
@@ -41,25 +41,25 @@
   translation: 查看所有职位
 
 - id: apply_now
-  translation: 现在申请
+  translation: 立即申请
 
 - id: share_this_job
-  translation: "分享这份工作:"
+  translation: "分享此职位："
 
 - id: other_jobs
-  translation: 其他工作
+  translation: 其他职位
 
 - id: all_jobs
-  translation: 所有工作
+  translation: 所有职位
   
 - id: fname
-  translation: 名
+  translation: 名字
   
 - id: full_name
   translation: 全名
   
 - id: lname
-  translation: 姓
+  translation: 姓氏
   
 - id: email
   translation: 电子邮件地址
@@ -68,25 +68,25 @@
   translation: 网站
   
 - id: organization_size
-  translation: 组织规模*
+  translation: 组织规模 (员工人数)*
   
 - id: region
   translation: 地区*
   
 - id: message
-  translation: 信息
+  translation: 消息
   
 - id: submit_now
-  translation: 现在提交
+  translation: 立即提交
   
 - id: get_demo
   translation: 获取演示
   
 - id: cv_note
-  translation: 仅允许 doc、pdf 文件且文件大小将小于 2MB
+  translation: 仅允许 doc, pdf 文件，且文件大小需小于 2MB
   
 - id: upload_cv
   translation: 上传简历
   
 - id: search_faq
-  translation: 单击并搜索常见问题解答..
+  translation: 点击并搜索常见问题解答

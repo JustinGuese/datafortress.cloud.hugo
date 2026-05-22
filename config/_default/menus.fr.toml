@@ -6,6 +6,30 @@ weight = 1
 
 [[main]]
 weight = 2
+name = "Services"
+url = "/services"
+hasChildren = true
+
+[[main]]
+parent = "Services"
+name = "Ingénierie des données & Analytique"
+url = "/services/data-engineering-analytics"
+weight = 1
+
+[[main]]
+parent = "Services"
+name = "Infrastructure Cloud & DevOps"
+url = "/services/cloud-infrastructure-devops"
+weight = 2
+
+[[main]]
+parent = "Services"
+name = "IA Agentique & Automatisation"
+url = "/services/agentic-ai-automation"
+weight = 3
+
+[[main]]
+weight = 3
 name = "Portfolio"
 hasChildren = true
 
@@ -23,7 +47,7 @@ weight = 2
 
 [[main]]
 parent = "Portfolio"
-name = "Google TimesFM – Contribution open source"
+name = "Google TimesFM – Contribution Open Source"
 url = "/portfolio/google-timesfm"
 weight = 3
 
@@ -35,13 +59,13 @@ weight = 4
 
 [[main]]
 parent = "Portfolio"
-name = "BMW / HPE : Solution de sauvegarde mondiale pour VMs"
+name = "BMW / HPE : Solution de sauvegarde mondiale pour VM"
 url = "/portfolio/bmw-worldwide-backup-solution"
 weight = 5
 
 [[main]]
 parent = "Portfolio"
-name = "Clinique Buchinger Wilhelmi - Entrepôt de données médicales"
+name = "Clinic Buchinger Wilhelmi - Entrepôt de données médicales"
 url = "/portfolio/clinic-buchinger-wilhelmi-data-warehouse"
 weight = 6
 
@@ -50,6 +74,7 @@ parent = "Portfolio"
 name = "Vios Investments – Infrastructure de trading"
 url = "/portfolio/vios-investments-trading-infrastructure"
 weight = 7
+
 
 [[main]]
 weight = 6
@@ -60,34 +85,74 @@ isMenuLarge = true
 
 [[main]]
 parent = "Produits"
+name = "AgentBureau"
+pre = "<i class='dropdown-icon fas fa-robot'></i>"
+post = "<small class='dropdown-subtitle'>Plateforme d'agence d'IA B2B d'élite — flux de travail multi-agents de production et fine-tuning de LLM personnalisé.</small>"
+url = "/products/agentbureau"
+weight = 1
+
+[[main]]
+parent = "Produits"
 name = "DocumentChat"
 pre = "<i class='dropdown-icon fas fa-users'></i>"
-post = "<small class='dropdown-subtitle'>Application SaaS AI permettant aux utilisateurs de discuter avec leurs emails et documents</small>"
+post = "<small class='dropdown-subtitle'>Application SaaS d'IA pour discuter avec vos e-mails et documents.</small>"
 url = "/products/DocumentChat"
-weight = 1
+weight = 2
 
 [[main]]
 parent = "Produits"
 name = "Myopiagraph"
 pre = "<i class='dropdown-icon fas fa-eye'></i>"
-post = "<small class='dropdown-subtitle'>Myopiagraph est un logiciel de santé pour la gestion de la myopie</small>"
+post = "<small class='dropdown-subtitle'>Logiciel de santé pour la gestion de la myopie.</small>"
 url = "/products/myopiagraph"
-weight = 2
+weight = 3
 
 [[main]]
 parent = "Produits"
-name = "Bots d'investissement AI"
+name = "AI Investing Bots"
 pre = "<i class='dropdown-icon fas fa-chart-bar'></i>"
-post = "<small class='dropdown-subtitle'>Bots d'investissement AI est un site web publiant nos idées de trading et stratégies d'investissement.</small>"
+post = "<small class='dropdown-subtitle'>Idées de trading et stratégies d'investissement provenant de bots d'IA algorithmiques.</small>"
 url = "/products/aiinvestingbots"
 weight = 4
+
+[[main]]
+parent = "Produits"
+name = "NaviCareNow"
+pre = "<i class='dropdown-icon fas fa-hospital'></i>"
+post = "<small class='dropdown-subtitle'>Plateforme de navigation de santé connectant les patients aux soins plus rapidement.</small>"
+url = "/products/navicarenow"
+weight = 5
+
+[[main]]
+parent = "Produits"
+name = "PsychDiary"
+pre = "<i class='dropdown-icon fas fa-brain'></i>"
+post = "<small class='dropdown-subtitle'>Journalisation de santé mentale assistée par IA et compagnon clinique.</small>"
+url = "/products/psychdiary"
+weight = 6
+
+[[main]]
+parent = "Produits"
+name = "Tiledom"
+pre = "<i class='dropdown-icon fas fa-th'></i>"
+post = "<small class='dropdown-subtitle'>Plateforme de contenu/tableau de bord modulaire basée sur des tuiles.</small>"
+url = "/products/tiledom"
+weight = 7
+
+[[main]]
+parent = "Produits"
+name = "WiFiSenseBox"
+pre = "<i class='dropdown-icon fas fa-wifi'></i>"
+post = "<small class='dropdown-subtitle'>Solution matérielle-logicielle IoT pour la détection de signaux et environnementale.</small>"
+url = "/products/wifisensebox"
+weight = 8
 
 [[main]]
 parent = "Produits"
 name = "Voir tous les produits"
 pre = "<i class='dropdown-icon text-primary fas fa-arrow-right'></i>"
 url = "/products"
-weight = 5
+weight = 9
 
 [[main]]
 weight = 13
@@ -107,13 +172,13 @@ weight = 1
 
 [[main]]
 parent = "À propos"
-name = "Mentions légales"
+name = "Mentions Légales"
 url = "/about/imprint"
 weight = 2
 
 [[main]]
 parent = "À propos"
-name = "Politique de confidentialité"
+name = "Politique de Confidentialité"
 url = "/about/privacy-policy"
 weight = 3
 
@@ -124,7 +189,7 @@ weight = 30
 
 # footer menu left
 [[footer_left]]
-name = "Politique de confidentialité"
+name = "Politique de Confidentialité"
 url = "/about/privacy-policy"
 weight = 1
 
@@ -134,7 +199,7 @@ url = "/contact"
 weight = 2
 
 [[footer_left]]
-name = "Mentions légales"
+name = "Mentions Légales"
 url = "/about/imprint"
 weight = 3
 
@@ -143,21 +208,47 @@ name = "FAQ"
 url = "/about/faq"
 weight = 4
 
+
 # footer menu middle
+[[footer_middle]]
+name = "AgentBureau"
+url = "/products/agentbureau"
+weight = 1
+
 [[footer_middle]]
 name = "DocumentChat"
 url = "/products/DocumentChat"
-weight = 1
+weight = 2
 
 [[footer_middle]]
 name = "Myopiagraph"
 url = "/products/myopiagraph"
-weight = 2
+weight = 3
 
 [[footer_middle]]
-name = "Bots d'investissement AI"
+name = "AI Investing Bots"
 url = "/products/aiinvestingbots"
 weight = 4
+
+[[footer_middle]]
+name = "NaviCareNow"
+url = "/products/navicarenow"
+weight = 5
+
+[[footer_middle]]
+name = "PsychDiary"
+url = "/products/psychdiary"
+weight = 6
+
+[[footer_middle]]
+name = "Tiledom"
+url = "/products/tiledom"
+weight = 7
+
+[[footer_middle]]
+name = "WiFiSenseBox"
+url = "/products/wifisensebox"
+weight = 8
 
 # footer menu right
 [[footer_right]]
@@ -166,7 +257,7 @@ url = "/portfolio/vw-hpe-solution-architecture"
 weight = 2
 
 [[footer_right]]
-name = "Google TimesFM – Contribution open source"
+name = "Google TimesFM – Contribution Open Source"
 url = "/portfolio/google-timesfm"
 weight = 3
 
@@ -176,6 +267,6 @@ url = "/portfolio/atruvia--volksbank-data-warehouse"
 weight = 4
 
 [[footer_right]]
-name = "BMW / HPE : Solution de sauvegarde mondiale pour VMs"
+name = "BMW / HPE : Solution de sauvegarde mondiale pour VM"
 url = "/portfolio/bmw-worldwide-backup-solution"
 weight = 5

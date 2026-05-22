@@ -1,13 +1,13 @@
 ---
-date: '2020-07-12T17:02:17+02:00'
+title: 'Mentions Légales'
+date: 2020-07-12T17:02:17+02:00
 draft: false
-image: images/legal.webp
-title: Imprimerie
+image: 'images/legal.webp'
 ---
 
-<a id="mail" href="mailto:info@datafortress.cloud">info@dat<!--...-->afortress.cloud</a>
+<a id="mail" href="mailto:info@datafortress.cloud">info@datafortress.cloud</a>
 
-Président-directeur général : Justin Güse
+CEO: Justin Güse
 
 DataFortress.cloud GmbH
 

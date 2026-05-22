@@ -1,22 +1,17 @@
 ---
-call_to_action:
-  button:
-    enable: true
-    label: Contactez-nous
-    link: contact/
-  content: 'Contactez-nous pour une consultation gratuite de 15 minutes et parlez-nous
-    de vos défis liés aux données/au cloud.
-
-    '
-  enable: true
-  image: images/vector.svg
-  title: Avez-vous quelque chose de similaire en tête ?
-description: हमारे पोर्टफोलियो को देखें
+title: "पोर्टफोलियो"
+subtitle: "हमारा पोर्टफोलियो पढ़ें"
+description: "हमारा पोर्टफोलियो पढ़ें"
 draft: false
-section: पोर्टफोलियो
-subtitle: हमारा पोर्टफोलियो देखें
-title: पोर्टफोलियो
+section: "portfolio"
 
+call_to_action:
+  enable : true
+  image : "images/vector.svg"
+  title : "क्या आपके मन में कुछ ऐसा ही है?"
+  content : "निःशुल्क 15 मिनट के परामर्श के लिए हमसे संपर्क करें और हमें अपनी डेटा/क्लाउड चुनौतियों के बारे में बताएं।"
+  button:
+    enable : true
+    label : "संपर्क करें"
+    link : "contact/"
 ---
-
-

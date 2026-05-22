@@ -1,0 +1,49 @@
+<!-- DNS preconnect (trimmed to essentials) -->
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="preconnect" href="https://use.fontawesome.com" crossorigin />
+<link rel="dns-prefetch" href="https://use.fontawesome.com" />
+<link rel="preconnect" href="//www.googletagmanager.com" />
+<link rel="preconnect" href="//www.google-analytics.com" />
+<link rel="preconnect" href="https://app.cal.com" crossorigin />
+
+<!-- plugins + stylesheet -->
+{{ $styles := slice }}
+{{ range site.Params.plugins.css }}
+  {{ if findRE "^http" .link }}
+    <link
+      crossorigin="anonymous"
+      media="all"
+      rel="stylesheet"
+      href="{{ .link | relURL }}"
+      {{ .attributes | safeHTMLAttr }} />
+  {{ else }}
+    {{ $styles = $styles | append (resources.Get .link) }}
+  {{ end }}
+{{ end }}
+{{ $styles := $styles | append (resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS) }}
+{{ $styles := $styles | resources.Concat "/css/style.css" }}
+
+{{ if and hugo.IsProduction site.Params.purge_css }}
+  {{ $styles = $styles | resources.PostCSS | fingerprint "sha256" }}
+  {{ $styles = $styles | resources.PostProcess }}
+{{ end }}
+
+<!-- Critical above-the-fold CSS inlined to kill LCP-blocking download -->
+<style>
+  html,body{margin:0;padding:0;background:#fff;color:#222;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  .banner{padding:6rem 1rem 4rem;text-align:center;color:#fff;background:linear-gradient(135deg,#0aa8a7 0%,#066b6b 50%,#022d3a 100%)}
+  .banner h1{font-size:2.4rem;font-weight:800;margin:0 0 1rem;color:#fff;line-height:1.15}
+  .container{max-width:1140px;margin:0 auto;padding:0 1rem}
+  .btn{display:inline-block;padding:.75rem 1.5rem;border-radius:.4rem;text-decoration:none;font-weight:600;border:1px solid transparent;cursor:pointer}
+  .btn-primary{background:#0aa8a7;color:#fff}
+  .btn-outline-light{border-color:rgba(255,255,255,.6);color:#fff;background:transparent}
+  .text-white{color:#fff!important}
+  .text-white-50{color:rgba(255,255,255,.85)!important}
+</style>
+
+<!-- Non-blocking stylesheet load -->
+<link rel="preload" href="{{ $styles.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ $styles.RelPermalink }}"></noscript>

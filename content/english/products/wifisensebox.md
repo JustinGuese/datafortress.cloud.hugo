@@ -9,7 +9,7 @@ icon: "fas fa-wifi"
 ######################### banner #####################
 banner:
   title: "WiFiSenseBox — IoT for Signal Detection & Environmental Sensing"
-  image: "images/products/DocumentChat.webp"
+  image: "images/products/wifisensebox-product.jpg"
   content : "An innovative IoT hardware-software solution engineered for WiFi signal detection, environmental sensing, and smart infrastructure metrics — built for deployments where commercial sensor packages don't fit."
   button:
     enable : true

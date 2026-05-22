@@ -1,19 +1,19 @@
 ---
-date: '2020-07-12T17:02:17+02:00'
+title: '印记'
+date: 2020-07-12T17:02:17+02:00
 draft: false
-image: images/legal.webp
-title: 印记
+image: 'images/legal.webp'
 ---
 
-<a id="mail" href="mailto:info@datafortress.cloud">info@dat<!--...-->afortress.cloud</a>
+<a id="mail" href="mailto:info@datafortress.cloud">info@datafortress.cloud</a>
 
-首席执行官：Justin Güse
+首席执行官: Justin Güse
 
 DataFortress.cloud GmbH
 
 Gewerbestraße 13
 
-82064 奥格斯堡
+82064 Straßlach-Dingharting
 
 德国
 

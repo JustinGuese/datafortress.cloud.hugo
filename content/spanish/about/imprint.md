@@ -1,11 +1,11 @@
 ---
-date: '2020-07-12T17:02:17+02:00'
+title: 'Aviso Legal'
+date: 2020-07-12T17:02:17+02:00
 draft: false
-image: images/legal.webp
-title: Impronta
+image: 'images/legal.webp'
 ---
 
-<a id="mail" href="mailto:info@datafortress.cloud">info@dat<!--...-->afortress.cloud</a>
+<a id="mail" href="mailto:info@datafortress.cloud">info@datafortress.cloud</a>
 
 CEO: Justin Güse
 
@@ -13,7 +13,7 @@ DataFortress.cloud GmbH
 
 Gewerbestraße 13
 
-82064 Straßlach-Dinghartingo
+82064 Straßlach-Dingharting
 
 Alemania
 

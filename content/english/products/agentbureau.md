@@ -9,7 +9,7 @@ icon: "fas fa-robot"
 ######################### banner #####################
 banner:
   title: "AgentBureau — Production-Grade Multi-Agent Systems for B2B"
-  image: "images/products/DocumentChat.webp"
+  image: "images/products/agentbureau-logo.webp"
   content : "Elite B2B AI agency platform focused on deploying production-ready multi-agent workflows, custom LLM fine-tuning, and operational automation for enterprises that need agentic systems to actually ship."
   button:
     enable : true
