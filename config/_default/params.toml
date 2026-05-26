@@ -28,6 +28,8 @@ demo_form_action = "https://formspree.io/mknvkdpr" # demo form works with [https
 career_form_action = "https://formspree.io/mknvkdpr"
 # google tag manager, see https://developers.google.com/tag-manager/
 google_tag_manager = "GTM-5G9F7KK" # example: G-XXXXXXXXXX
+# Meta Pixel / Dataset ID (Events Manager). Leave empty to disable.
+meta_pixel_id = "564082712809157"
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
 custom_script = ""
 # copyright

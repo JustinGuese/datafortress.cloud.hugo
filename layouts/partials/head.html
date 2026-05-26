@@ -38,6 +38,59 @@
 <!-- google analytics -->
 {{ template "_internal/google_analytics.html" . }}
 
+<!-- Meta Pixel -->
+{{ with site.Params.meta_pixel_id }}
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '{{ . }}');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={{ . }}&ev=PageView&noscript=1"/></noscript>
+{{ end }}
+
+<!-- DataFortress conversion tracking (Meta + GA) -->
+<script>
+(function(){
+  function fireLead(source, extra){
+    extra = extra || {};
+    try { if (window.fbq) fbq('track', 'Lead', Object.assign({source: source}, extra)); } catch(e){}
+    try { if (window.gtag) gtag('event', 'generate_lead', Object.assign({source: source}, extra)); } catch(e){}
+  }
+  function fireContact(source){
+    try { if (window.fbq) fbq('track', 'Contact', {source: source}); } catch(e){}
+    try { if (window.gtag) gtag('event', 'schedule', {source: source}); } catch(e){}
+  }
+  document.addEventListener('DOMContentLoaded', function(){
+    // Contact form submit -> Lead
+    document.querySelectorAll('form.contact-form-card').forEach(function(form){
+      form.addEventListener('submit', function(){ fireLead('contact_form'); });
+    });
+    // Cal.com popup button click -> Contact
+    document.addEventListener('click', function(ev){
+      var el = ev.target.closest('[data-cal-link]');
+      if (el) fireContact(el.getAttribute('data-cal-link') || 'cal_popup');
+    });
+  });
+  // Cal.com bookingSuccessful postMessage -> Lead (high intent)
+  window.addEventListener('message', function(ev){
+    var d = ev && ev.data;
+    if (!d) return;
+    var type = (typeof d === 'string') ? d : d.type;
+    if (type === 'bookingSuccessful' || (d.action && d.action === 'bookingSuccessful')) {
+      var payload = (d.data || d.payload || {});
+      fireLead('cal_booking_successful', {
+        value: payload.price || payload.amount || undefined,
+        currency: payload.currency || undefined
+      });
+    }
+  });
+})();
+</script>
+
 <!-- matomo analytics -->
 {{ partialCached "matomo-analytics.html" . }}
 
