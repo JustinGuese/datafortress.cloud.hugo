@@ -1,0 +1,56 @@
+# Linktree links — rendered at /links/ by layouts/_default/linktree.html
+# Add / remove / reorder a link by editing this list. `desc` and `emoji` optional.
+
+[[link]]
+emoji = "🏰"
+title = "DataFortress Homepage"
+desc  = ""
+url   = "https://datafortress.cloud/"
+
+[[link]]
+emoji = "⚡"
+title = "S2-MoE LLM"
+desc  = "7.1x less energy with same quality LLM"
+url   = "https://huggingface.co/spaces/guestros/s2-moe-demo"
+
+[[link]]
+emoji = "🧠"
+title = "PsychDiary App"
+desc  = "AI Diary"
+url   = "https://psychdiaryapp.com/"
+
+[[link]]
+emoji = "👁️"
+title = "Myopiagraph"
+desc  = "Medical App"
+url   = "https://myopiagraph.com/"
+
+[[link]]
+emoji = "📄"
+title = "DocumentChat App"
+desc  = "AI RAG"
+url   = "https://document-chat.com/"
+
+[[link]]
+emoji = "✉️"
+title = "Contact"
+desc  = ""
+url   = "https://datafortress.cloud/contact/"
+
+[[link]]
+emoji = "📅"
+title = "Book a Meeting"
+desc  = ""
+url   = "https://cal.com/datafortress-justin/30min"
+
+[[link]]
+emoji = "📸"
+title = "Instagram"
+desc  = ""
+url   = "https://www.instagram.com/guestros/"
+
+[[link]]
+emoji = "💼"
+title = "LinkedIn"
+desc  = ""
+url   = "https://www.linkedin.com/in/justin-guese/"

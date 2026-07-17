@@ -1,0 +1,240 @@
+{{/*
+  Standalone "linktree" page — deliberately does NOT use {{ define "main" }},
+  so Hugo renders it directly WITHOUT the theme baseof.html shell (no site
+  header / nav / footer / particles). Selected via front matter `layout: 'linktree'`.
+  Links come from data/links.toml -> site.Data.links.link
+*/}}
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default `en-US` }}">
+<head>
+  {{ partial "head.html" . }}
+  {{ if hugo.IsProduction }}
+  {{ partialCached "style.html" . }}
+  {{ else }}
+  {{ partial "style.html" . }}
+  {{ end }}
+  <style>
+    /* page-scoped: keeps the linktree layout isolated from the rest of the site */
+    html, body { min-height: 100%; }
+    body.linktree-page {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: clamp(2rem, 6vh, 4rem) 1.25rem 3rem;
+    }
+    /* interactive particle-constellation background, behind all content */
+    #lt-particles {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .linktree {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 380px;
+      text-align: center;
+    }
+    .linktree__avatar {
+      width: 104px;
+      height: 104px;
+      margin: 0 auto 1.1rem;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+      background: rgba(255, 255, 255, 0.06);
+    }
+    .linktree__avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    body.linktree-page .linktree__title {
+      font-size: 1.35rem !important;
+      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin: 0 0 0.25rem;
+    }
+    body.linktree-page .linktree__subtitle {
+      margin: 0 0 1.6rem;
+      font-size: 0.85rem !important;
+      opacity: 0.72;
+    }
+    .linktree__list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .linktree-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      width: 100%;
+      padding: 0.7rem 0.95rem;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      text-decoration: none !important;
+      color: #fff !important;
+      text-align: left;
+      transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+    }
+    .linktree-btn:hover,
+    .linktree-btn:focus-visible {
+      background: rgba(255, 255, 255, 0.16);
+      border-color: rgba(174, 234, 234, 0.7);
+      transform: translateY(-2px);
+      color: #fff !important;
+    }
+    .linktree-btn__emoji {
+      flex: 0 0 auto;
+      font-size: 1.15rem;
+      line-height: 1;
+      width: 1.5rem;
+      text-align: center;
+    }
+    .linktree-btn__body { min-width: 0; }
+    .linktree-btn__title { font-weight: 600; font-size: 0.9rem; }
+    .linktree-btn__desc {
+      display: block;
+      margin-top: 0.1rem;
+      font-size: 0.72rem;
+      opacity: 0.68;
+    }
+    .linktree__foot {
+      margin-top: 1.8rem;
+      font-size: 0.72rem;
+      opacity: 0.6;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .linktree-btn { transition: none; }
+      .linktree-btn:hover, .linktree-btn:focus-visible { transform: none; }
+    }
+  </style>
+</head>
+<body class="animated-gradient-bg linktree-page">
+  <canvas id="lt-particles" aria-hidden="true"></canvas>
+  <main class="linktree">
+    <div class="linktree__avatar">
+      {{ partial "image.html" (dict "Src" "images/justin-guese-bg-removed.png" "Alt" "Justin Güse" "Size" "208x208 Fill" "Command" "Fill" "Context" . "Loading" "eager") }}
+    </div>
+
+    {{ with .Title }}<h1 class="linktree__title">{{ . }}</h1>{{ end }}
+    {{ with .Params.subtitle }}<p class="linktree__subtitle">{{ . }}</p>{{ end }}
+
+    <nav class="linktree__list" aria-label="Links">
+      {{ range site.Data.links.link }}
+      <a class="linktree-btn" href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+        {{ with .emoji }}<span class="linktree-btn__emoji" aria-hidden="true">{{ . }}</span>{{ end }}
+        <span class="linktree-btn__body">
+          <span class="linktree-btn__title">{{ .title }}</span>
+          {{ with .desc }}<span class="linktree-btn__desc">{{ . }}</span>{{ end }}
+        </span>
+      </a>
+      {{ end }}
+    </nav>
+
+    <p class="linktree__foot">© {{ now.Year }} {{ site.Title }}</p>
+  </main>
+
+  <script>
+  (function () {
+    var canvas = document.getElementById('lt-particles');
+    if (!canvas || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var ctx = canvas.getContext('2d');
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var w, h, particles, raf;
+    var mouse = { x: -9999, y: -9999 };
+    var TEAL = '10,168,167';       // brand color_primary
+    var LIGHT = '174,234,234';     // brand light-teal
+
+    function size() {
+      w = canvas.clientWidth; h = canvas.clientHeight;
+      canvas.width = w * dpr; canvas.height = h * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      var count = Math.min(90, Math.round((w * h) / 14000));
+      particles = [];
+      for (var i = 0; i < count; i++) {
+        particles.push({
+          x: Math.random() * w,
+          y: Math.random() * h,
+          vx: (Math.random() - 0.5) * 0.35,
+          vy: (Math.random() - 0.5) * 0.35,
+          r: Math.random() * 1.6 + 0.8
+        });
+      }
+    }
+
+    function step() {
+      ctx.clearRect(0, 0, w, h);
+      for (var i = 0; i < particles.length; i++) {
+        var p = particles[i];
+        // cursor repulsion
+        var dx = p.x - mouse.x, dy = p.y - mouse.y;
+        var d2 = dx * dx + dy * dy;
+        if (d2 < 14000) {
+          var f = (14000 - d2) / 14000 * 0.9;
+          var d = Math.sqrt(d2) || 1;
+          p.vx += (dx / d) * f * 0.4;
+          p.vy += (dy / d) * f * 0.4;
+        }
+        p.x += p.vx; p.y += p.vy;
+        p.vx *= 0.985; p.vy *= 0.985;
+        // clamp drift speed
+        p.vx = Math.max(-0.9, Math.min(0.9, p.vx));
+        p.vy = Math.max(-0.9, Math.min(0.9, p.vy));
+        // wrap around edges
+        if (p.x < -20) p.x = w + 20; else if (p.x > w + 20) p.x = -20;
+        if (p.y < -20) p.y = h + 20; else if (p.y > h + 20) p.y = -20;
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(' + LIGHT + ',0.65)';
+        ctx.fill();
+      }
+      // link nearby particles
+      for (var a = 0; a < particles.length; a++) {
+        for (var b = a + 1; b < particles.length; b++) {
+          var pa = particles[a], pb = particles[b];
+          var lx = pa.x - pb.x, ly = pa.y - pb.y;
+          var ld2 = lx * lx + ly * ly;
+          if (ld2 < 12000) {
+            var alpha = (1 - ld2 / 12000) * 0.35;
+            ctx.strokeStyle = 'rgba(' + TEAL + ',' + alpha + ')';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(pa.x, pa.y);
+            ctx.lineTo(pb.x, pb.y);
+            ctx.stroke();
+          }
+        }
+      }
+      raf = requestAnimationFrame(step);
+    }
+
+    function onMove(e) {
+      var t = e.touches ? e.touches[0] : e;
+      mouse.x = t.clientX; mouse.y = t.clientY;
+    }
+    function onLeave() { mouse.x = -9999; mouse.y = -9999; }
+
+    window.addEventListener('resize', size);
+    window.addEventListener('mousemove', onMove, { passive: true });
+    window.addEventListener('touchmove', onMove, { passive: true });
+    window.addEventListener('mouseout', onLeave);
+    window.addEventListener('touchend', onLeave);
+
+    size();
+    step();
+  })();
+  </script>
+</body>
+</html>
