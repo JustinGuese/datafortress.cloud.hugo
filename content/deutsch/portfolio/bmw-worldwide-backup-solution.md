@@ -1,10 +1,9 @@
 ---
-date: "2024-08-14"
+date: '2024-08-14'
 draft: false
-title: "BMW / HPE: Weltweite Backup-Lösung für VMs"
-logo: "images/client-logo/bmw.png"
+title: 'BMW / HPE: Weltweite Backup-Lösung für VMs'
+logo: 'images/client-logo/bmw.png'
 ---
-
 
 > Lösungsarchitektur für das weltweite Backup-System von VM-basierten Systemen, einschließlich der Planung von Netzwerk-Routing-Beschränkungen in AWS/Google Cloud/Azure.
 
@@ -40,11 +39,12 @@ Forschung, Vergleich und Implementierung einer umfassenden Backup-Strategie, die
 #### Vergleich der Cloud-Anbieter:
 
 Vergleich führender Cloud-Speicheranbieter (z.B. AWS, Google Cloud, Microsoft Azure) mit Fokus auf:
+
 - Bandbreitenlimits
 - Schreibgeschwindigkeiten der Festplatten
 - Kosten pro Petabyte Speicher
 - Datenredundanz und Zuverlässigkeitsmerkmale  
-Die Machbarkeit dieser Anbieter zur effektiven Bewältigung der Backup-Bedürfnisse von BMW bewertet.
+  Die Machbarkeit dieser Anbieter zur effektiven Bewältigung der Backup-Bedürfnisse von BMW bewertet.
 
 #### Entwicklung einer hybriden Backup-Lösung:
 
@@ -80,4 +80,4 @@ Die Machbarkeit dieser Anbieter zur effektiven Bewältigung der Backup-Bedürfni
 
 Das Projekt führte zu einer hocheffizienten, skalierbaren und kosteneffizienten Backup-Lösung für BMWs weltweite VM-Systeme und Dateifreigabetools. Durch die Nutzung eines hybriden Ansatzes mit sowohl Cloud-Speicher als auch lokalen HPE-Deduplizierungsservern haben wir nicht nur die Erwartungen des Kunden erfüllt, sondern übertroffen, indem wir Datenzuverlässigkeit und erhebliche Kosteneinsparungen gewährleisteten.
 
-Erleben Sie unvergleichliche Datenzuverlässigkeit und Kosteneinsparungen mit unseren hybriden Backup-Lösungen—kontaktieren Sie uns jetzt, um Ihre Datenmanagementstrategie zu transformieren!
+Erleben Sie unvergleichliche Datenzuverlässigkeit und Kosteneinsparungen mit unseren hybriden Backup-Lösungen-kontaktieren Sie uns jetzt, um Ihre Datenmanagementstrategie zu transformieren!

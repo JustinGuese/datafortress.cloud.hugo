@@ -1,47 +1,44 @@
 ---
-date: "2026-01-15"
+date: '2026-01-15'
 draft: false
-title: "WiFiSenseBox"
-description: "Solución innovadora de hardware y software de IoT diseñada para la detección de señales, detección ambiental y métricas de infraestructura inteligente."
-icon: "fas fa-wifi"
-
+title: 'WiFiSenseBox'
+description: 'Solución innovadora de hardware y software de IoT diseñada para la detección de señales, detección ambiental y métricas de infraestructura inteligente.'
+icon: 'fas fa-wifi'
 
 ######################### banner #####################
 banner:
-  title: "WiFiSenseBox — IoT para detección de señales y detección ambiental"
-  image: "images/products/DocumentChat.webp"
-  content : "Una solución innovadora de hardware y software de IoT diseñada para la detección de señales WiFi, detección ambiental y métricas de infraestructura inteligente, creada para despliegues donde los paquetes de sensores comerciales no encajan."
+  title: 'WiFiSenseBox - IoT para detección de señales y detección ambiental'
+  image: 'images/products/DocumentChat.webp'
+  content: 'Una solución innovadora de hardware y software de IoT diseñada para la detección de señales WiFi, detección ambiental y métricas de infraestructura inteligente, creada para despliegues donde los paquetes de sensores comerciales no encajan.'
   button:
-    enable : true
-    label : "Visitar sitio web"
-    link : "https://wifisensebox.com/"
-  background_class: "bg-light"
-
+    enable: true
+    label: 'Visitar sitio web'
+    link: 'https://wifisensebox.com/'
+  background_class: 'bg-light'
 
 ######################### about this product #####################
 about_this_product:
   enable: true
-  title: "Hardware y Software de IoT diseñado de extremo a extremo"
-  content: "WiFiSenseBox es una plataforma de IoT creada a medida que combina firmware personalizado, radios de detección de señales y sensores ambientales con un pipeline de ingesta y análisis en la nube. Es el producto que se construye cuando los paquetes de sensores convencionales no pueden responder a la pregunta que usted necesita resolver."
-  background_class: ""
+  title: 'Hardware y Software de IoT diseñado de extremo a extremo'
+  content: 'WiFiSenseBox es una plataforma de IoT creada a medida que combina firmware personalizado, radios de detección de señales y sensores ambientales con un pipeline de ingesta y análisis en la nube. Es el producto que se construye cuando los paquetes de sensores convencionales no pueden responder a la pregunta que usted necesita resolver.'
+  background_class: ''
 
   features:
-  - title: "Detección de señales WiFi"
-    icon: "fas fa-wifi"
-    content: "Detección pasiva de sondas WiFi y análisis de presencia para la medición del tráfico peatonal, estimación de ocupación y métricas de infraestructura inteligente, sin recolección invasiva de datos personales."
+    - title: 'Detección de señales WiFi'
+      icon: 'fas fa-wifi'
+      content: 'Detección pasiva de sondas WiFi y análisis de presencia para la medición del tráfico peatonal, estimación de ocupación y métricas de infraestructura inteligente, sin recolección invasiva de datos personales.'
 
-  - title: "Detección ambiental"
-    icon: "fas fa-temperature-high"
-    content: "Paquetes de sensores múltiples para temperatura, humedad, calidad del aire y movimiento, calibrados y sincronizados en el tiempo en todos los despliegues."
+    - title: 'Detección ambiental'
+      icon: 'fas fa-temperature-high'
+      content: 'Paquetes de sensores múltiples para temperatura, humedad, calidad del aire y movimiento, calibrados y sincronizados en el tiempo en todos los despliegues.'
 
-  - title: "Arquitectura Edge + Cloud"
-    icon: "fas fa-cloud-upload-alt"
-    content: "Agregación y filtrado en el dispositivo con telemetría enviada a un pipeline de análisis respaldado por OpenObserve para consultas y alertas en menos de un segundo."
+    - title: 'Arquitectura Edge + Cloud'
+      icon: 'fas fa-cloud-upload-alt'
+      content: 'Agregación y filtrado en el dispositivo con telemetría enviada a un pipeline de análisis respaldado por OpenObserve para consultas y alertas en menos de un segundo.'
 
-  - title: "Diseñado para despliegues reales"
-    icon: "fas fa-tools"
-    content: "Carcasas reforzadas para campo, diagnósticos remotos y actualizaciones de firmware por aire, construido para sobrevivir años en el exterior sin visitas in situ."
-
+    - title: 'Diseñado para despliegues reales'
+      icon: 'fas fa-tools'
+      content: 'Carcasas reforzadas para campo, diagnósticos remotos y actualizaciones de firmware por aire, construido para sobrevivir años en el exterior sin visitas in situ.'
 ---
 
 ### WiFiSenseBox: cuando los sensores convencionales no son suficientes

@@ -1,16 +1,16 @@
 ---
-title: "Atruvia：DevOps 现代化、Spring Boot 微服务与联邦税务局 (Finanzamt) 集成"
-date: "2024-03-15"
+title: 'Atruvia：DevOps 现代化、Spring Boot 微服务与联邦税务局 (Finanzamt) 集成'
+date: '2024-03-15'
 draft: false
-logo: "images/client-logo/atruvia.png"
-image: "images/client-logo/atruvia.png"
-description: "在 Atruvia 开展的多年 DevOps 合作 —— Jenkins 到 GitLab CI 迁移、OpenShift 上的 Java Spring Boot 微服务，以及为德国最大的合作银行网络构建的安全联邦税务局集成层。"
-categories: ["金融 IT", "DevOps", "OpenShift", "Spring Boot"]
+logo: 'images/client-logo/atruvia.png'
+image: 'images/client-logo/atruvia.png'
+description: '在 Atruvia 开展的多年 DevOps 合作 -- Jenkins 到 GitLab CI 迁移、OpenShift 上的 Java Spring Boot 微服务，以及为德国最大的合作银行网络构建的安全联邦税务局集成层。'
+categories: ['金融 IT', 'DevOps', 'OpenShift', 'Spring Boot']
 ---
 
 ## 项目背景
 
-Atruvia 是德国合作银行网络的 IT 骨干 —— 为 **120 多家 Volksbanken 和 Raiffeisenbanken** 提供服务，覆盖数百万零售和企业客户。他们的平台团队运行着核心银行基础设施，必须每天通过 BaFin（德国联邦金融监管局）、BSI（德国联邦信息安全办公室）和监管机构的审查。
+Atruvia 是德国合作银行网络的 IT 骨干 -- 为 **120 多家 Volksbanken 和 Raiffeisenbanken** 提供服务，覆盖数百万零售和企业客户。他们的平台团队运行着核心银行基础设施，必须每天通过 BaFin（德国联邦金融监管局）、BSI（德国联邦信息安全办公室）和监管机构的审查。
 
 我作为 DevOps 和平台工程专家参与其中，负责三个相互交织的工作流：CI/CD 现代化、基于 OpenShift 的微服务重构，以及核心银行系统与德国联邦税务局 (Finanzamt) 之间的安全通信层。
 
@@ -18,7 +18,7 @@ Atruvia 是德国合作银行网络的 IT 骨干 —— 为 **120 多家 Volksba
 
 ## 1. Jenkins → GitLab CI 迁移
 
-Atruvia 的 CI 现状是一个成熟但复杂的 Jenkins 集群 —— 包含数百个管道、数十个共享库、插件泛滥，以及在受监管环境中难以持续的“机密挂载在 Master 节点上”的模式。
+Atruvia 的 CI 现状是一个成熟但复杂的 Jenkins 集群 -- 包含数百个管道、数十个共享库、插件泛滥，以及在受监管环境中难以持续的“机密挂载在 Master 节点上”的模式。
 
 迁移到 GitLab CI 是一个跨越多个季度的项目：
 
@@ -27,7 +27,7 @@ Atruvia 的 CI 现状是一个成熟但复杂的 Jenkins 集群 —— 包含数
 - **作为代码的晋升门禁。** Stage → pre-prod → prod 的晋升由显式的 YAML 定义，并与身份提供者 (IDP) 组绑定的审批规则关联。不再需要追溯“是谁点击了按钮”。
 - **基于 Vault 的机密管理。** 构建和部署时的机密按任务从 HashiCorp Vault 动态获取，并使用短期令牌。这使得构建日志中的机密泄露在架构上成为不可能，而不仅仅是一个愿景。
 
-迁移在没有“封版期”的情况下完成 —— 旧的 Jenkins 管道继续运行，同时并行验证等效的 GitLab 管道，然后按产品领域逐步切换。
+迁移在没有“封版期”的情况下完成 -- 旧的 Jenkins 管道继续运行，同时并行验证等效的 GitLab 管道，然后按产品领域逐步切换。
 
 ---
 
@@ -44,7 +44,7 @@ Atruvia 的 CI 现状是一个成熟但复杂的 Jenkins 集群 —— 包含数
 
 ## 3. 联邦税务局 (Finanzamt) 集成层
 
-德国银行对联邦税务局 (Finanzamt) 负有重要的申报义务 —— 包括利息申报、资本利得税申报、FATCA/CRS 信息交换以及一系列固定时间节点的结构化申报。
+德国银行对联邦税务局 (Finanzamt) 负有重要的申报义务 -- 包括利息申报、资本利得税申报、FATCA/CRS 信息交换以及一系列固定时间节点的结构化申报。
 
 我设计并实现了连接核心银行系统与税务局端点的安全集成层：
 
@@ -70,7 +70,7 @@ Atruvia 的 CI 现状是一个成熟但复杂的 Jenkins 集群 —— 包含数
 
 ## 为什么这很重要
 
-受监管银行业的 DevOps 现代化并非为了追随技术趋势，而是为了让平台变得“枯燥”（稳健）—— 交付快速、难以误配置、审计简单。技术选择（GitLab、OpenShift、Spring Boot、Istio、Vault）只是基础，纪律才是差异化的核心。
+受监管银行业的 DevOps 现代化并非为了追随技术趋势，而是为了让平台变得“枯燥”（稳健）-- 交付快速、难以误配置、审计简单。技术选择（GitLab、OpenShift、Spring Boot、Istio、Vault）只是基础，纪律才是差异化的核心。
 
 此类项目正是我的专长所在：高风险、受监管、跨年度，且通过工程化设计使其隐入幕后，助力业务快速前行。
 
@@ -80,7 +80,7 @@ Atruvia 的 CI 现状是一个成熟但复杂的 Jenkins 集群 —— 包含数
 
 - **服务：** [云基础设施与 DevOps (符合 BaFin 标准的 Kubernetes/OpenShift)](/zh/services/cloud-infrastructure-devops/)
 - **服务：** [数据工程与分析](/zh/services/data-engineering-analytics/)
-- **案例研究：** [Atruvia / Volksbank —— 数据仓库现代化](/zh/portfolio/atruvia--volksbank-data-warehouse/)
-- **关于：** [Justin Güse —— 企业基础设施架构师](/zh/about/)
+- **案例研究：** [Atruvia / Volksbank -- 数据仓库现代化](/zh/portfolio/atruvia--volksbank-data-warehouse/)
+- **关于：** [Justin Güse -- 企业基础设施架构师](/zh/about/)
 
-**正在评估我们的合作？** [预约 1 小时免费架构评审](/zh/contact/) —— 我将在 60 分钟内为您识别超过 10 万欧元的合规风险、云支出浪费或扩展瓶颈，否则我会如实相告。
+**正在评估我们的合作？** [预约 1 小时免费架构评审](/zh/contact/) -- 我将在 60 分钟内为您识别超过 10 万欧元的合规风险、云支出浪费或扩展瓶颈，否则我会如实相告。

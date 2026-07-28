@@ -4,7 +4,7 @@ banner:
   title : "Infrastructure de classe entreprise pour l'ère de l'IA"
   image : "images/banner-art.svg"
   imagetwo: "images/justin-guese-bg-removed.png"
-  content : "Mise à l'échelle de l'ingénierie des données et du DevOps sécurisés et performants pour les industries les plus exigeantes au monde — des géants de l'automobile aux réseaux bancaires conformes à la BaFin. Architecte de solutions AWS certifié faisant le pont entre Kubernetes/OpenShift sur site et les flux de travail agentiques autonomes."
+  content : "Mise à l'échelle de l'ingénierie des données et du DevOps sécurisés et performants pour les industries les plus exigeantes au monde - des géants de l'automobile aux réseaux bancaires conformes à la BaFin. Architecte de solutions AWS certifié faisant le pont entre Kubernetes/OpenShift sur site et les flux de travail agentiques autonomes."
   button:
     enable : true
     label : "Réserver une revue d'architecture"
@@ -32,7 +32,7 @@ feature:
   enable : true
   title : "Trois piliers. Pétaoctets de données. Zéro tolérance pour les temps d'arrêt."
   content : "
-Nous concevons des systèmes critiques à travers trois disciplines : <strong>Kubernetes/OpenShift conformes à la BaFin</strong> pour les industries réglementées, <strong>ingénierie des données à l'échelle du pétaoctet</strong> couvrant plus de 60 pays, et <strong>IA agentique</strong> fonctionnant de manière autonome sur site. Le cloud public est souvent trop coûteux — et fréquemment interdit par les réglementations allemandes en matière de finance et de santé. Nous comblons ce fossé pour VW, HPE, BMW, Porsche et le plus grand réseau bancaire d'Allemagne."
+Nous concevons des systèmes critiques à travers trois disciplines : <strong>Kubernetes/OpenShift conformes à la BaFin</strong> pour les industries réglementées, <strong>ingénierie des données à l'échelle du pétaoctet</strong> couvrant plus de 60 pays, et <strong>IA agentique</strong> fonctionnant de manière autonome sur site. Le cloud public est souvent trop coûteux - et fréquemment interdit par les réglementations allemandes en matière de finance et de santé. Nous comblons ce fossé pour VW, HPE, BMW, Porsche et le plus grand réseau bancaire d'Allemagne."
   button:
     enable : true
     label : "Consultation gratuite de 15 minutes"
@@ -73,7 +73,7 @@ intro_video:
 service:
   enable : true
   service_item:
-  # service item loop — Atruvia DevOps modernization (headline case)
+  # service item loop - Atruvia DevOps modernization (headline case)
   - title : "Modernisation DevOps chez Atruvia : Microservices Spring Boot, Jenkins → GitLab, Intégration Finanzamt"
     images:
     - "images/client-logo/atruvia.png"
@@ -174,7 +174,7 @@ tools_intregrate:
 call_to_action:
   enable : true
   title : "Je ne me contente pas d'écrire du code. Je construis des forteresses pour vos données."
-  content : "Contactez-nous pour des missions en freelance de haute complexité, des revues d'architecture ou des stratégies d'intégration de l'IA. Basé à Munich, Allemagne — disponible dans le monde entier."
+  content : "Contactez-nous pour des missions en freelance de haute complexité, des revues d'architecture ou des stratégies d'intégration de l'IA. Basé à Munich, Allemagne - disponible dans le monde entier."
   button:
     enable : true
     label : "Réserver une revue d'architecture"

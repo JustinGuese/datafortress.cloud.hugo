@@ -73,7 +73,7 @@ intro_video:
 service:
   enable : true
   service_item:
-  # service item loop — Atruvia DevOps modernization (headline case)
+  # service item loop - Atruvia DevOps modernization (headline case)
   - title : "Modernización de DevOps en Atruvia: Microservicios Spring Boot, Jenkins → GitLab, Integración con Finanzamt"
     images:
     - "images/client-logo/atruvia.png"

@@ -94,7 +94,7 @@ weight = -1
 parent = "Products"
 name = "AgentBureau"
 pre = "<i class='dropdown-icon fas fa-robot'></i>"
-post = "<small class='dropdown-subtitle'>Elite B2B AI agency platform — production-grade multi-agent workflows & custom LLM fine-tuning.</small>"
+post = "<small class='dropdown-subtitle'>Elite B2B AI agency platform - production-grade multi-agent workflows & custom LLM fine-tuning.</small>"
 url = "/products/agentbureau"
 weight = 1
 

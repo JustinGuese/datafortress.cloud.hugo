@@ -87,7 +87,7 @@ isMenuLarge = true
 parent = "产品"
 name = "AgentBureau"
 pre = "<i class='dropdown-icon fas fa-robot'></i>"
-post = "<small class='dropdown-subtitle'>精英 B2B AI 机构平台 —— 生产级多智能体工作流与定制化 LLM 微调。</small>"
+post = "<small class='dropdown-subtitle'>精英 B2B AI 机构平台 -- 生产级多智能体工作流与定制化 LLM 微调。</small>"
 url = "/products/agentbureau"
 weight = 1
 

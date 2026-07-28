@@ -1,7 +1,7 @@
 ---
-title: "Contactez-nous"
+title: 'Contactez-nous'
 subtitle: ''
-description: "Contactez DataFortress.cloud — Justin Güse — pour du Kubernetes conforme à la BaFin, de l'ingénierie de données à l'échelle du pétaoctet ou des missions d'IA agentique sur site. Audit gratuit d'une heure de votre infrastructure sur demande."
+description: "Contactez DataFortress.cloud - Justin Güse - pour du Kubernetes conforme à la BaFin, de l'ingénierie de données à l'échelle du pétaoctet ou des missions d'IA agentique sur site. Audit gratuit d'une heure de votre infrastructure sur demande."
 draft: false
 layout: 'contact'
 ---

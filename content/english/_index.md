@@ -5,7 +5,7 @@ banner:
   title : "Enterprise-Grade Infrastructure for the AI Era"
   image : "images/banner-art.svg"
   imagetwo: "images/justin-guese-bg-removed.png"
-  content : "Scaling secure, high-performance Data Engineering and DevOps for the world's most demanding industries — from automotive giants to BaFin-compliant banking networks. Certified AWS Solutions Architect bridging on-premise Kubernetes/OpenShift with autonomous agentic workflows."
+  content : "Scaling secure, high-performance Data Engineering and DevOps for the world's most demanding industries - from automotive giants to BaFin-compliant banking networks. Certified AWS Solutions Architect bridging on-premise Kubernetes/OpenShift with autonomous agentic workflows."
   button:
     enable : true
     label : "Book an Architecture Review"
@@ -33,7 +33,7 @@ feature:
   enable : true
   title : "Three pillars. Petabytes of data. Zero room for downtime."
   content : "
-We architect mission-critical systems across three disciplines: <strong>BaFin-compliant Kubernetes/OpenShift</strong> for regulated industries, <strong>petabyte-scale data engineering</strong> spanning 60+ countries, and <strong>agentic AI</strong> that runs autonomously on-premise. Public cloud is often too costly — and frequently off-limits under German finance and healthcare regulations. We bridge that gap for VW, HPE, BMW, Porsche, and Germany's largest banking network."
+We architect mission-critical systems across three disciplines: <strong>BaFin-compliant Kubernetes/OpenShift</strong> for regulated industries, <strong>petabyte-scale data engineering</strong> spanning 60+ countries, and <strong>agentic AI</strong> that runs autonomously on-premise. Public cloud is often too costly - and frequently off-limits under German finance and healthcare regulations. We bridge that gap for VW, HPE, BMW, Porsche, and Germany's largest banking network."
   button:
     enable : true
     label : "Book an Architecture Review"
@@ -74,14 +74,14 @@ intro_video:
 service:
   enable : true
   service_item:
-  # service item loop — Atruvia DevOps modernization (headline case)
+  # service item loop - Atruvia DevOps modernization (headline case)
   - title : "DevOps Modernization at Atruvia: Spring Boot Microservices, Jenkins → GitLab, Finanzamt Integration"
     images:
     - "images/client-logo/atruvia.png"
     - "images/client-logo/volksbank.png"
     content : "Multi-year DevOps engagement at Atruvia, the IT backbone for 120+ German cooperative banks. We led the migration from Jenkins to GitLab CI across hundreds of pipelines, refactored monolithic services into Java Spring Boot microservices on OpenShift, and engineered the secure communication layer between core banking systems and the German Finanzamt (federal tax authority) reporting endpoints.
 <br/><br/>
-Every component is BaFin-aware by design — pipeline-as-code with auditable promotion gates, secrets-driven deploys via HashiCorp Vault, and an Istio service mesh enforcing strict service-to-service authorization across data centers. The result: deploy frequency up, lead time down, and a platform that holds up under regulatory review.
+Every component is BaFin-aware by design - pipeline-as-code with auditable promotion gates, secrets-driven deploys via HashiCorp Vault, and an Istio service mesh enforcing strict service-to-service authorization across data centers. The result: deploy frequency up, lead time down, and a platform that holds up under regulatory review.
 <br/><br/>
 This is the kind of work we get called for: high-stakes, regulated, and engineered to be boring."
 
@@ -175,7 +175,7 @@ tools_intregrate:
 call_to_action:
   enable : true
   title : "I don't just write code. I build fortresses for your data."
-  content : "<strong>Free 1-hour infrastructure audit.</strong> If we don't surface at least €100K in cost savings, compliance risk, or scaling headroom — we tell you so, and walk away. Based in Munich, available globally for BaFin-regulated, automotive, healthcare, and agentic-AI engagements."
+  content : "<strong>Free 1-hour infrastructure audit.</strong> If we don't surface at least €100K in cost savings, compliance risk, or scaling headroom - we tell you so, and walk away. Based in Munich, available globally for BaFin-regulated, automotive, healthcare, and agentic-AI engagements."
   button:
     enable : true
     label : "Book an Architecture Review"

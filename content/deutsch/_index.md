@@ -4,7 +4,7 @@ banner:
   title : "Enterprise-Grade Infrastruktur für die KI-Ära"
   image : "images/banner-art.svg"
   imagetwo: "images/justin-guese-bg-removed.png"
-  content : "Skalierung von sicherer, hochperformanter Dateninfrastruktur und DevOps für die anspruchsvollsten Branchen weltweit — von Automobilgiganten bis hin zu BaFin-regulierten Bankennetzwerken. Zertifizierter AWS Solutions Architect, der On-Premise Kubernetes/OpenShift mit autonomen KI-Workflows verbindet."
+  content : "Skalierung von sicherer, hochperformanter Dateninfrastruktur und DevOps für die anspruchsvollsten Branchen weltweit - von Automobilgiganten bis hin zu BaFin-regulierten Bankennetzwerken. Zertifizierter AWS Solutions Architect, der On-Premise Kubernetes/OpenShift mit autonomen KI-Workflows verbindet."
   button:
     enable : true
     label : "Architecture Review buchen"
@@ -32,7 +32,7 @@ feature:
   enable : true
   title : "Drei Säulen. Petabytes an Daten. Null Toleranz für Ausfälle."
   content : "
-Wir entwickeln geschäftskritische Systeme in drei Disziplinen: <strong>BaFin-konformes Kubernetes/OpenShift</strong> für regulierte Industrien, <strong>Petabyte-Scale Data Engineering</strong> in über 60 Ländern und <strong>Agentische KI</strong>, die autonom On-Premise läuft. Public Clouds sind oft zu teuer — und unter deutschen Finanz- und Gesundheitsregulierungen häufig untersagt. Wir schließen diese Lücke für VW, HPE, BMW, Porsche und Deutschlands größte Bankennetzwerke."
+Wir entwickeln geschäftskritische Systeme in drei Disziplinen: <strong>BaFin-konformes Kubernetes/OpenShift</strong> für regulierte Industrien, <strong>Petabyte-Scale Data Engineering</strong> in über 60 Ländern und <strong>Agentische KI</strong>, die autonom On-Premise läuft. Public Clouds sind oft zu teuer - und unter deutschen Finanz- und Gesundheitsregulierungen häufig untersagt. Wir schließen diese Lücke für VW, HPE, BMW, Porsche und Deutschlands größte Bankennetzwerke."
   button:
     enable : true
     label : "15 Min. kostenlose Beratung"
@@ -73,14 +73,14 @@ intro_video:
 service:
   enable : true
   service_item:
-  # service item loop — Atruvia DevOps Case
+  # service item loop - Atruvia DevOps Case
   - title : "DevOps-Modernisierung bei Atruvia: Spring Boot Microservices, Jenkins → GitLab, Finanzamt-Integration"
     images:
     - "images/client-logo/atruvia.png"
     - "images/client-logo/volksbank.png"
     content : "Mehrjährige DevOps-Beauftragung bei Atruvia, dem IT-Rückgrat für über 120 deutsche Genossenschaftsbanken. Wir leiteten die Migration von Jenkins zu GitLab CI über hunderte von Pipelines hinweg, refaktorierten monolithische Dienste in Java Spring Boot Microservices auf OpenShift und entwickelten die sichere Kommunikationsschicht zwischen Kernbanksystemen und den Meldeendpunkten des deutschen Finanzamts.
 <br/><br/>
-Jede Komponente ist von Grund auf BaFin-konform konzipiert — Pipeline-as-Code mit prüfbaren Promotion-Gates, Secrets-gesteuerte Deployments über HashiCorp Vault und ein Istio Service Mesh, das eine strikte Service-to-Service-Autorisierung über Rechenzentren hinweg erzwingt. Das Ergebnis: höhere Deployment-Frequenz, kürzere Vorlaufzeiten und eine Plattform, die jeder regulatorischen Prüfung standhält.
+Jede Komponente ist von Grund auf BaFin-konform konzipiert - Pipeline-as-Code mit prüfbaren Promotion-Gates, Secrets-gesteuerte Deployments über HashiCorp Vault und ein Istio Service Mesh, das eine strikte Service-to-Service-Autorisierung über Rechenzentren hinweg erzwingt. Das Ergebnis: höhere Deployment-Frequenz, kürzere Vorlaufzeiten und eine Plattform, die jeder regulatorischen Prüfung standhält.
 <br/><br/>
 Dies ist die Art von Arbeit, für die wir gerufen werden: risikoreich, reguliert und so konstruiert, dass sie im Betrieb „langweilig“ (reibungslos) ist."
 
@@ -148,7 +148,7 @@ testimonials:
 tools_intregrate:
   enable : true
   title : "Integration aller Tools, die Ihr Team liebt"
-  content: "Von Public Cloud Providern bis hin zu einfachen Excel-Tabellen — wir integrieren jede Datenquelle."
+  content: "Von Public Cloud Providern bis hin zu einfachen Excel-Tabellen - wir integrieren jede Datenquelle."
   image : "images/screenshot.svg"
 
   tools:

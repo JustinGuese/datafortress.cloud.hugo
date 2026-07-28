@@ -1,47 +1,44 @@
 ---
-date: "2026-01-15"
+date: '2026-01-15'
 draft: false
-title: "AgentBureau"
-description: "Plataforma de agencia de IA B2B de élite que despliega flujos de trabajo multi-agente listos para producción, ajuste fino de LLM personalizados y automatización operativa."
-icon: "fas fa-robot"
-
+title: 'AgentBureau'
+description: 'Plataforma de agencia de IA B2B de élite que despliega flujos de trabajo multi-agente listos para producción, ajuste fino de LLM personalizados y automatización operativa.'
+icon: 'fas fa-robot'
 
 ######################### banner #####################
 banner:
-  title: "AgentBureau — Sistemas multi-agente de calidad de producción para B2B"
-  image: "images/products/DocumentChat.webp"
-  content : "Plataforma de agencia de IA B2B de élite centrada en el despliegue de flujos de trabajo multi-agente listos para producción, ajuste fino de LLM personalizados y automatización operativa para empresas que necesitan que los sistemas agentic se pongan en marcha realmente."
+  title: 'AgentBureau - Sistemas multi-agente de calidad de producción para B2B'
+  image: 'images/products/DocumentChat.webp'
+  content: 'Plataforma de agencia de IA B2B de élite centrada en el despliegue de flujos de trabajo multi-agente listos para producción, ajuste fino de LLM personalizados y automatización operativa para empresas que necesitan que los sistemas agentic se pongan en marcha realmente.'
   button:
-    enable : true
-    label : "Visitar sitio web"
-    link : "https://agentbureau.de/"
-  background_class: "bg-light"
-
+    enable: true
+    label: 'Visitar sitio web'
+    link: 'https://agentbureau.de/'
+  background_class: 'bg-light'
 
 ######################### about this product #####################
 about_this_product:
   enable: true
-  title: "Flujos de trabajo multi-agente, creados para ejecutarse en producción"
-  content: "AgentBureau es la división de agencia de DataFortress.cloud centrada exclusivamente en despliegues de IA agentic. La mayoría de las demostraciones de agentes mueren en la fase de prototipo. Nosotros construimos los que sobreviven al contacto con las cargas de trabajo reales de las empresas: observables, controlables, conscientes del cumplimiento e integrados con los sistemas que ya dirigen el negocio."
-  background_class: ""
+  title: 'Flujos de trabajo multi-agente, creados para ejecutarse en producción'
+  content: 'AgentBureau es la división de agencia de DataFortress.cloud centrada exclusivamente en despliegues de IA agentic. La mayoría de las demostraciones de agentes mueren en la fase de prototipo. Nosotros construimos los que sobreviven al contacto con las cargas de trabajo reales de las empresas: observables, controlables, conscientes del cumplimiento e integrados con los sistemas que ya dirigen el negocio.'
+  background_class: ''
 
   features:
-  - title: "Arquitecturas multi-agente"
-    icon: "fas fa-network-wired"
-    content: "Orquestación basada en LangGraph y LangChain con estado persistente, descomposición de tareas y patrones de supervisor-trabajador. Diseñado para flujos de trabajo de larga duración, no para prompts de un solo uso."
+    - title: 'Arquitecturas multi-agente'
+      icon: 'fas fa-network-wired'
+      content: 'Orquestación basada en LangGraph y LangChain con estado persistente, descomposición de tareas y patrones de supervisor-trabajador. Diseñado para flujos de trabajo de larga duración, no para prompts de un solo uso.'
 
-  - title: "Ajuste fino de LLM personalizados"
-    icon: "fas fa-sliders-h"
-    content: "Ajuste fino específico del dominio en corpus patentados, incluyendo entrenamiento totalmente on-premise en clústeres de GPU gestionados por Kubernetes para clientes que no pueden enviar datos a API externas."
+    - title: 'Ajuste fino de LLM personalizados'
+      icon: 'fas fa-sliders-h'
+      content: 'Ajuste fino específico del dominio en corpus patentados, incluyendo entrenamiento totalmente on-premise en clústeres de GPU gestionados por Kubernetes para clientes que no pueden enviar datos a API externas.'
 
-  - title: "Automatización Operativa"
-    icon: "fas fa-cogs"
-    content: "Agentes conectados a los sistemas que importan: ticketing, ERP, CRM, almacenes de documentos y herramientas internas. Construido con pistas de auditoría, puntos de control de humano en el bucle y rutas de reversión."
+    - title: 'Automatización Operativa'
+      icon: 'fas fa-cogs'
+      content: 'Agentes conectados a los sistemas que importan: ticketing, ERP, CRM, almacenes de documentos y herramientas internas. Construido con pistas de auditoría, puntos de control de humano en el bucle y rutas de reversión.'
 
-  - title: "Ingeniería orientada a la producción"
-    icon: "fas fa-shield-alt"
-    content: "Observabilidad, medidas de seguridad de costes, control de versiones de prompts, arneses de evaluación y despliegues que cumplen con BaFin/GDPR. La misma disciplina que aplicamos a la infraestructura bancaria, aplicada a los sistemas de agentes."
-
+    - title: 'Ingeniería orientada a la producción'
+      icon: 'fas fa-shield-alt'
+      content: 'Observabilidad, medidas de seguridad de costes, control de versiones de prompts, arneses de evaluación y despliegues que cumplen con BaFin/GDPR. La misma disciplina que aplicamos a la infraestructura bancaria, aplicada a los sistemas de agentes.'
 ---
 
 ### AgentBureau: donde la IA agentic se encuentra con la realidad de la producción

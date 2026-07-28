@@ -73,14 +73,14 @@ intro_video:
 service:
   enable : true
   service_item:
-  # service item loop — Atruvia DevOps modernization (headline case)
+  # service item loop - Atruvia DevOps modernization (headline case)
   - title : "Atruvia DevOps 现代化：Spring Boot 微服务、Jenkins → GitLab、Finanzamt 集成"
     images:
     - "images/client-logo/atruvia.png"
     - "images/client-logo/volksbank.png"
     content : "在 Atruvia（120 多家德国合作银行的 IT 支柱）开展的多年 DevOps 合作。我们领导了跨数百个管道从 Jenkins 到 GitLab CI 的迁移，将单体服务重构为运行在 OpenShift 上的 Java Spring Boot 微服务，并设计了核心银行 system 与德国联邦税务局 (Finanzamt) 申报端点之间的安全通信层。
 <br/><br/>
-每个组件在设计上都符合 BaFin 标准——采用具有可审计晋升门的“管道即代码”、通过 HashiCorp Vault 进行机密驱动的部署，以及在数据中心之间执行严格服务间授权的 Istio 服务网格。结果：部署频率提升，交付周期缩短，平台能够经受住监管审查。
+每个组件在设计上都符合 BaFin 标准--采用具有可审计晋升门的“管道即代码”、通过 HashiCorp Vault 进行机密驱动的部署，以及在数据中心之间执行严格服务间授权的 Istio 服务网格。结果：部署频率提升，交付周期缩短，平台能够经受住监管审查。
 <br/><br/>
 这正是我们被召集的原因：高风险、受监管，且通过工程化设计确保运行“枯燥”（稳健）。"
 
@@ -150,7 +150,7 @@ testimonials:
 tools_intregrate:
   enable : true
   title : "集成您团队喜爱的所有工具"
-  content: "从公有云提供商到简单的 Excel——我们可以处理并集成任何数据源。"
+  content: "从公有云提供商到简单的 Excel--我们可以处理并集成任何数据源。"
   image : "images/screenshot.svg"
 
   tools:

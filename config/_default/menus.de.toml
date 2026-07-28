@@ -87,7 +87,7 @@ isMenuLarge = true
 parent = "Produkte"
 name = "AgentBureau"
 pre = "<i class='dropdown-icon fas fa-robot'></i>"
-post = "<small class='dropdown-subtitle'>Elite B2B KI-Agentur-Plattform — produktionsreife Multi-Agenten-Workflows & individuelles LLM-Feintuning.</small>"
+post = "<small class='dropdown-subtitle'>Elite B2B KI-Agentur-Plattform - produktionsreife Multi-Agenten-Workflows & individuelles LLM-Feintuning.</small>"
 url = "/products/agentbureau"
 weight = 1
 

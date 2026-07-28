@@ -1,16 +1,16 @@
 ---
-title: "Atruvia: DevOps-Modernisierung, Spring Boot Microservices & Finanzamt-Integration"
-date: "2024-03-15"
+title: 'Atruvia: DevOps-Modernisierung, Spring Boot Microservices & Finanzamt-Integration'
+date: '2024-03-15'
 draft: false
-logo: "images/client-logo/atruvia.png"
-image: "images/client-logo/atruvia.png"
-description: "Mehrjährige DevOps-Beauftragung bei Atruvia — Jenkins-zu-GitLab-CI-Migration, Java Spring Boot Microservices auf OpenShift und die sichere Finanzamt-Integrationsschicht für Deutschlands größtes genossenschaftliches Bankennetzwerk."
-categories: ["Banking IT", "DevOps", "OpenShift", "Spring Boot"]
+logo: 'images/client-logo/atruvia.png'
+image: 'images/client-logo/atruvia.png'
+description: 'Mehrjährige DevOps-Beauftragung bei Atruvia - Jenkins-zu-GitLab-CI-Migration, Java Spring Boot Microservices auf OpenShift und die sichere Finanzamt-Integrationsschicht für Deutschlands größtes genossenschaftliches Bankennetzwerk.'
+categories: ['Banking IT', 'DevOps', 'OpenShift', 'Spring Boot']
 ---
 
 ## Die Beauftragung
 
-Atruvia ist das IT-Rückgrat des deutschen genossenschaftlichen Bankennetzwerks — **über 120 Volksbanken und Raiffeisenbanken**, die Millionen von Privat- und Firmenkunden betreuen. Das Plattform-Team betreibt die Kernbanken-Infrastruktur, die jeden Tag die Prüfungen von BaFin, BSI und Regulierungsbehörden bestehen muss.
+Atruvia ist das IT-Rückgrat des deutschen genossenschaftlichen Bankennetzwerks - **über 120 Volksbanken und Raiffeisenbanken**, die Millionen von Privat- und Firmenkunden betreuen. Das Plattform-Team betreibt die Kernbanken-Infrastruktur, die jeden Tag die Prüfungen von BaFin, BSI und Regulierungsbehörden bestehen muss.
 
 Ich war in den Bereichen DevOps und Platform Engineering in drei ineinandergreifenden Arbeitssträngen eingebunden: CI/CD-Modernisierung, Microservice-Refactoring auf OpenShift und die sichere Kommunikationsschicht zwischen dem Kernbanksystem und dem deutschen Finanzamt.
 
@@ -18,7 +18,7 @@ Ich war in den Bereichen DevOps und Platform Engineering in drei ineinandergreif
 
 ## 1. Jenkins → GitLab CI Migration
 
-Die CI-Landschaft von Atruvia bestand aus einer gewachsenen, komplexen Jenkins-Umgebung — hunderte von Pipelines, dutzende Shared Libraries, Plugin-Wildwuchs und das Muster von „Credentials-mounted-on-the-master“, das in einer regulierten Umgebung schlecht altert.
+Die CI-Landschaft von Atruvia bestand aus einer gewachsenen, komplexen Jenkins-Umgebung - hunderte von Pipelines, dutzende Shared Libraries, Plugin-Wildwuchs und das Muster von „Credentials-mounted-on-the-master“, das in einer regulierten Umgebung schlecht altert.
 
 Die Migration zu GitLab CI war ein Programm über mehrere Quartale:
 
@@ -27,7 +27,7 @@ Die Migration zu GitLab CI war ein Programm über mehrere Quartale:
 - **Promotion-Gates als Code.** Die Beförderung von Stage → Pre-Prod → Prod ist explizites YAML mit Genehmigungsregeln, die an Identitätsprovider-Gruppen gebunden sind. Keine Archäologie mehr nach dem Motto „Wer hat den Knopf gedrückt“.
 - **Vault-gesteuerte Credentials.** Secrets für Build und Deployment werden pro Job über HashiCorp Vault mit kurzlebigen Token abgerufen. Das Abfließen von Anmeldedaten in Build-Logs wird zu einer architektonischen Unmöglichkeit, nicht nur zu einer gehofften Richtlinie.
 
-Die Migration erfolgte ohne „Freeze-Periode“ — alte Jenkins-Pipelines liefen weiter, während die entsprechenden GitLab-Pipelines parallel validiert und dann ein Produktbereich nach dem anderen umgestellt wurde.
+Die Migration erfolgte ohne „Freeze-Periode“ - alte Jenkins-Pipelines liefen weiter, während die entsprechenden GitLab-Pipelines parallel validiert und dann ein Produktbereich nach dem anderen umgestellt wurde.
 
 ---
 
@@ -44,7 +44,7 @@ Ein großer Teil des Bankanwendungs-Stacks wurde von monolithischen Java-Dienste
 
 ## 3. Finanzamt-Integrationsschicht
 
-Deutsche Banken haben nicht triviale Meldepflichten gegenüber dem Finanzamt — Zinsmeldung, Kapitalertragssteuer-Meldung, FATCA/CRS-Austausch und eine lange Liste strukturierter Einreichungen zu festen Terminen.
+Deutsche Banken haben nicht triviale Meldepflichten gegenüber dem Finanzamt - Zinsmeldung, Kapitalertragssteuer-Meldung, FATCA/CRS-Austausch und eine lange Liste strukturierter Einreichungen zu festen Terminen.
 
 Ich habe die sichere Integrationsschicht entwickelt, die die Kernbanksysteme und die Endpunkte des Finanzamts verbindet:
 
@@ -60,7 +60,7 @@ Jedes Artefakt in diesem Pfad ist End-to-End prüfbar: der Quellcode, der Build,
 
 All dies basiert auf einem Defense-in-Depth-Muster, das jede Ebene als unabhängig betrachtet:
 
-- **Istio Service Mesh** mit geografischer Sperrung und strikter Service-zu-Service-Autorisierung an Egress-Gateways. Rechenzentrumübergreifender Datenverkehr ist ein bewusster, autorisierter Akt — niemals ein Unfall.
+- **Istio Service Mesh** mit geografischer Sperrung und strikter Service-zu-Service-Autorisierung an Egress-Gateways. Rechenzentrumübergreifender Datenverkehr ist ein bewusster, autorisierter Akt - niemals ein Unfall.
 - **HashiCorp Vault** als „Single Source of Truth“ für Secrets, mit Workload-Identity-gebundener Ausstellung.
 - **Workload Identity** auf der Anwendungsebene, sodass selbst eine Fehlkonfiguration des Routings keinen Zugriff ohne eine gültige Identität im SPIFFE-Stil gewährt.
 
@@ -70,7 +70,7 @@ Ein Fehler in einer einzelnen Ebene gefährdet nicht das System. Das ist die Eig
 
 ## Warum es wichtig ist
 
-DevOps-Modernisierung im regulierten Bankwesen geht nicht darum, Trends hinterherzulaufen. Es geht darum, die Plattform *langweilig* zu machen — schnell zu bespielen, schwer falsch zu konfigurieren, trivial zu prüfen. Die Technologiewahl (GitLab, OpenShift, Spring Boot, Istio, Vault) ist die Grundvoraussetzung. Die Disziplin ist der entscheidende Faktor.
+DevOps-Modernisierung im regulierten Bankwesen geht nicht darum, Trends hinterherzulaufen. Es geht darum, die Plattform _langweilig_ zu machen - schnell zu bespielen, schwer falsch zu konfigurieren, trivial zu prüfen. Die Technologiewahl (GitLab, OpenShift, Spring Boot, Istio, Vault) ist die Grundvoraussetzung. Die Disziplin ist der entscheidende Faktor.
 
 Diese Beauftragung ist die Art von Arbeit, für die ich gerufen werde: risikoreich, reguliert, mehrjährig und so konstruiert, dass sie in den Hintergrund tritt, damit sich das Geschäft bewegen kann.
 
@@ -80,7 +80,7 @@ Diese Beauftragung ist die Art von Arbeit, für die ich gerufen werde: risikorei
 
 - **Service:** [Cloud-Infrastruktur & DevOps (BaFin-konformes Kubernetes/OpenShift)](/de/services/cloud-infrastructure-devops/)
 - **Service:** [Data Engineering & Analytics](/de/services/data-engineering-analytics/)
-- **Fallstudie:** [Atruvia / Volksbank — Data Warehouse Modernisierung](/de/portfolio/atruvia--volksbank-data-warehouse/)
-- **Über uns:** [Justin Güse — Enterprise Infrastructure Architect](/de/about/)
+- **Fallstudie:** [Atruvia / Volksbank - Data Warehouse Modernisierung](/de/portfolio/atruvia--volksbank-data-warehouse/)
+- **Über uns:** [Justin Güse - Enterprise Infrastructure Architect](/de/about/)
 
-**Prüfen Sie uns für eine Zusammenarbeit?** [Buchen Sie eine kostenlose 1-stündige Architektur-Review](/de/contact/) — in 60 Minuten finde ich über 100.000 € an Compliance-Risiken, Cloud-Verschwendung oder Skalierungspotenzial, oder ich sage es Ihnen offen und wir gehen getrennte Wege.
+**Prüfen Sie uns für eine Zusammenarbeit?** [Buchen Sie eine kostenlose 1-stündige Architektur-Review](/de/contact/) - in 60 Minuten finde ich über 100.000 € an Compliance-Risiken, Cloud-Verschwendung oder Skalierungspotenzial, oder ich sage es Ihnen offen und wir gehen getrennte Wege.

@@ -1,7 +1,7 @@
 ---
-title: "Contáctenos"
+title: 'Contáctenos'
 subtitle: ''
-description: "Póngase en contacto con DataFortress.cloud — Justin Güse — para Kubernetes compatible con BaFin, ingeniería de datos a escala de petabytes o compromisos de IA agentic on-premise. Auditoría gratuita de infraestructura de 1 hora bajo petición."
+description: 'Póngase en contacto con DataFortress.cloud - Justin Güse - para Kubernetes compatible con BaFin, ingeniería de datos a escala de petabytes o compromisos de IA agentic on-premise. Auditoría gratuita de infraestructura de 1 hora bajo petición.'
 draft: false
 layout: 'contact'
 ---

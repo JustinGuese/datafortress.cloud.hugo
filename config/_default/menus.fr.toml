@@ -87,7 +87,7 @@ isMenuLarge = true
 parent = "Produits"
 name = "AgentBureau"
 pre = "<i class='dropdown-icon fas fa-robot'></i>"
-post = "<small class='dropdown-subtitle'>Plateforme d'agence d'IA B2B d'élite — flux de travail multi-agents de production et fine-tuning de LLM personnalisé.</small>"
+post = "<small class='dropdown-subtitle'>Plateforme d'agence d'IA B2B d'élite - flux de travail multi-agents de production et fine-tuning de LLM personnalisé.</small>"
 url = "/products/agentbureau"
 weight = 1
 

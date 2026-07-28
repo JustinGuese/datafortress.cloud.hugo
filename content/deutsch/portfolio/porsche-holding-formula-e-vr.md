@@ -1,9 +1,9 @@
 ---
-title: "Porsche Holding – Formula E VR Motion Seat"
-description: "Konzeption und Bau eines VR Motion Seat Erlebnisses für die Formula E, das durch Europa tourte – eine Kombination aus Hardware-Engineering, VR-Entwicklung und automobiler Markenaktivierung."
-date: "2018-06-01"
-image: "images/client-logo/porsche-holding.png"
-categories: ["Innovation", "VR / Immersive Tech", "Automotive"]
+title: 'Porsche Holding – Formula E VR Motion Seat'
+description: 'Konzeption und Bau eines VR Motion Seat Erlebnisses für die Formula E, das durch Europa tourte – eine Kombination aus Hardware-Engineering, VR-Entwicklung und automobiler Markenaktivierung.'
+date: '2018-06-01'
+image: 'images/client-logo/porsche-holding.png'
+categories: ['Innovation', 'VR / Immersive Tech', 'Automotive']
 draft: false
 ---
 
@@ -13,16 +13,16 @@ Bei der **Porsche Holding** (2016–2019) trug Justin Güse zu hochkarätigen In
 
 ## Die Herausforderung
 
-Die Porsche Holding benötigte ein immersives Erlebnis, das die Zuschauer in den Bann zieht und ihr Engagement für Elektromobilität und Motorsportinnovation vermittelt. Einfache statische Displays reichten an den Austragungsorten der Formula E nicht aus. Der Auftrag: Baue etwas, das die Zuschauer *direkt in das Auto* versetzt.
+Die Porsche Holding benötigte ein immersives Erlebnis, das die Zuschauer in den Bann zieht und ihr Engagement für Elektromobilität und Motorsportinnovation vermittelt. Einfache statische Displays reichten an den Austragungsorten der Formula E nicht aus. Der Auftrag: Baue etwas, das die Zuschauer _direkt in das Auto_ versetzt.
 
 ## Die Lösung
 
 Der VR Motion Seat kombinierte:
 
-- **Motion-Platform-Hardware** — pneumatische Sitzaktoren, die mit den physikalischen Ereignissen im Spiel synchronisiert wurden (Bremsen, Beschleunigen, Kurven-G-Kräfte).
-- **Oculus VR Integration** — maßgeschneiderte, auf Unity basierende Formula-E-Rennsimulation mit realistischen, telemetriegesteuerten Kameraerschütterungen und Spatial Audio.
-- **Robuste, eventtaugliche Technik** — entwickelt für den wiederholten täglichen Einsatz durch nicht-technisches Eventpersonal in mehreren europäischen Städten, mit Ferndiagnose und Schnell-Reset-Funktion.
-- **Datenintegration** — echte Formula-E-Telemetriedaten wurden zur Steuerung der Bewegungsparameter verwendet, was der Simulation ein authentisches Renngefühl verlieh, anstatt nur vorgefertigte Animationen abzuspielen.
+- **Motion-Platform-Hardware** - pneumatische Sitzaktoren, die mit den physikalischen Ereignissen im Spiel synchronisiert wurden (Bremsen, Beschleunigen, Kurven-G-Kräfte).
+- **Oculus VR Integration** - maßgeschneiderte, auf Unity basierende Formula-E-Rennsimulation mit realistischen, telemetriegesteuerten Kameraerschütterungen und Spatial Audio.
+- **Robuste, eventtaugliche Technik** - entwickelt für den wiederholten täglichen Einsatz durch nicht-technisches Eventpersonal in mehreren europäischen Städten, mit Ferndiagnose und Schnell-Reset-Funktion.
+- **Datenintegration** - echte Formula-E-Telemetriedaten wurden zur Steuerung der Bewegungsparameter verwendet, was der Simulation ein authentisches Renngefühl verlieh, anstatt nur vorgefertigte Animationen abzuspielen.
 
 ## Ergebnisse
 
@@ -37,6 +37,7 @@ Dieses Projekt liegt an der Schnittstelle von Hardware-Engineering, Echtzeit-3D-
 ---
 
 **Verwandte Arbeiten:**
+
 - [Data Engineering bei Atruvia / Volksbank](/de/portfolio/atruvia--volksbank-data-warehouse/)
 - [Enterprise DevOps & Kubernetes](/de/services/kubernetes-devops/)
 - [VW / HPE Lösungsarchitektur](/de/portfolio/vw-hpe-solution-architecture/)

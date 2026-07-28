@@ -1,6 +1,6 @@
 # DataFortress.cloud
 
-> Enterprise infrastructure consultancy run by Justin Güse. BaFin-compliant Kubernetes/OpenShift, petabyte-scale data engineering, and on-premise agentic AI for automotive, banking, and healthcare. Trusted by VW, BMW, Porsche, HPE, and Germany's largest cooperative banking network (120+ banks). Based in Bavaria, Germany. AWS Certified Solutions Architect — Professional.
+> Enterprise infrastructure consultancy run by Justin Güse. BaFin-compliant Kubernetes/OpenShift, petabyte-scale data engineering, and on-premise agentic AI for automotive, banking, and healthcare. Trusted by VW, BMW, Porsche, HPE, and Germany's largest cooperative banking network (120+ banks). Based in Bavaria, Germany. AWS Certified Solutions Architect - Professional.
 
 ## Core Services
 
@@ -10,7 +10,7 @@
 
 ## Flagship Case Studies
 
-- [Atruvia — DevOps Modernization & Banking Platform Engineering](https://datafortress.cloud/portfolio/atruvia-devops-modernization/): Multi-year DevOps engagement for Germany's 120+ cooperative banks. Jenkins → GitLab CI migration, Java Spring Boot microservices on OpenShift, Finanzamt (federal tax authority) integration layer, Istio service mesh with geographic locking, HashiCorp Vault.
+- [Atruvia - DevOps Modernization & Banking Platform Engineering](https://datafortress.cloud/portfolio/atruvia-devops-modernization/): Multi-year DevOps engagement for Germany's 120+ cooperative banks. Jenkins → GitLab CI migration, Java Spring Boot microservices on OpenShift, Finanzamt (federal tax authority) integration layer, Istio service mesh with geographic locking, HashiCorp Vault.
 - [Atruvia / Volksbank Data Warehouse](https://datafortress.cloud/portfolio/atruvia--volksbank-data-warehouse/): 45% cost reduction across 120+ German cooperative banks. Trino + object-storage migration.
 - [VW / HPE Solution Architecture](https://datafortress.cloud/portfolio/vw-hpe-solution-architecture/): 64% faster time-to-market on VW sampling-process pipeline.
 - [BMW Worldwide VM Backup](https://datafortress.cloud/portfolio/bmw-worldwide-backup-solution/): 100PB+ replicated across 60+ countries.
@@ -18,7 +18,7 @@
 
 ## In-House Products
 
-- [AgentBureau](https://datafortress.cloud/products/agentbureau/): B2B AI agency arm — production multi-agent workflows, custom LLM fine-tuning, on-premise LLM deployments.
+- [AgentBureau](https://datafortress.cloud/products/agentbureau/): B2B AI agency arm - production multi-agent workflows, custom LLM fine-tuning, on-premise LLM deployments.
 - [DocumentChat](https://datafortress.cloud/products/DocumentChat/): SaaS for chatting with documents and emails.
 - [Myopiagraph](https://datafortress.cloud/products/myopiagraph/): Healthcare software for myopia management.
 - [AI Investing Bots](https://datafortress.cloud/products/aiinvestingbots/): Algorithmic trading strategies.
@@ -38,10 +38,10 @@
 
 ## Engagement Model
 
-- **Discovery Call** — free, 1 hour. If no fit, we refer someone better.
-- **Hourly Consulting** — €190 / hr. Architecture reviews, audits, design sessions. 1-hour minimum, no retainer.
-- **Fixed-Scope Engagement** — from €15K. 1–3 week deep-dive with written deliverable, or fractional architect retainer.
-- **Free 1-hour Architecture Review** offer: "In 60 minutes I'll find €100K+ in compliance risk, cloud waste, or scaling headroom — or I walk."
+- **Discovery Call** - free, 1 hour. If no fit, we refer someone better.
+- **Hourly Consulting** - €190 / hr. Architecture reviews, audits, design sessions. 1-hour minimum, no retainer.
+- **Fixed-Scope Engagement** - from €15K. 1–3 week deep-dive with written deliverable, or fractional architect retainer.
+- **Free 1-hour Architecture Review** offer: "In 60 minutes I'll find €100K+ in compliance risk, cloud waste, or scaling headroom - or I walk."
 
 ## Key Pages
 

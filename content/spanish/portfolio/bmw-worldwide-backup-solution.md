@@ -4,8 +4,8 @@ logo: images/client-logo/bmw.png
 title: 'BMW / HPE: Solución de respaldo mundial para máquinas virtuales (VM).
 
   '
-
 ---
+
 > Arquitectura de la solución para el sistema de copia de seguridad mundial de sistemas basados en VM, incluyendo la planificación de las limitaciones de enrutamiento de la red en AWS/Google Cloud/Azure.
 
 {{< image title="BMW / HPE: Solución de copia de seguridad mundial para VM" w="50%" o="webp q100" p="center" c="img-fluid shadow rounded-1" src="images/client-logo/bmw.png" alt="texto alternativo" >}}
@@ -40,11 +40,12 @@ Investigar, comparar e implementar una estrategia de copia de seguridad integral
 #### Comparación de Proveedores de Nube:
 
 Se compararon los principales proveedores de almacenamiento en la nube (por ejemplo, AWS, Google Cloud, Microsoft Azure) enfocándose en:
+
 - Límites de ancho de banda
 - Velocidades de escritura en disco
 - Costo por petabyte de almacenamiento
 - Características de redundancia y fiabilidad de datos
-Se evaluó la viabilidad de estos proveedores para manejar las necesidades de copia de seguridad de BMW de manera eficaz.
+  Se evaluó la viabilidad de estos proveedores para manejar las necesidades de copia de seguridad de BMW de manera eficaz.
 
 #### Desarrollo de la Solución de Copia de Seguridad Híbrida:
 
@@ -80,4 +81,4 @@ Se evaluó la viabilidad de estos proveedores para manejar las necesidades de co
 
 El proyecto culminó en una solución de copia de seguridad altamente eficiente, escalable y rentable para los sistemas de VM y herramientas de uso compartido de archivos de BMW en todo el mundo. Al aprovechar un enfoque híbrido que combina almacenamiento en la nube y servidores de deduplicación HPE locales, no solo se cumplieron sino que superamos las expectativas del cliente, asegurando la fiabilidad de los datos y ahorros significativos de costes.
 
-¡Desbloquea una fiabilidad de datos y ahorros de costos sin precedentes con nuestras soluciones de copia de seguridad híbridas—¡contáctanos ahora para transformar tu estrategia de gestión de datos!
+¡Desbloquea una fiabilidad de datos y ahorros de costos sin precedentes con nuestras soluciones de copia de seguridad híbridas-¡contáctanos ahora para transformar tu estrategia de gestión de datos!

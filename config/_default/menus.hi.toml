@@ -87,7 +87,7 @@ isMenuLarge = true
 parent = "उत्पाद"
 name = "AgentBureau"
 pre = "<i class='dropdown-icon fas fa-robot'></i>"
-post = "<small class='dropdown-subtitle'>कुलीन B2B AI एजेंसी प्लेटफॉर्म — प्रोडक्शन-ग्रेड मल्टी-एजेंट वर्कफ़्लो और कस्टम LLM फाइन-ट्यूनिंग।</small>"
+post = "<small class='dropdown-subtitle'>कुलीन B2B AI एजेंसी प्लेटफॉर्म - प्रोडक्शन-ग्रेड मल्टी-एजेंट वर्कफ़्लो और कस्टम LLM फाइन-ट्यूनिंग।</small>"
 url = "/products/agentbureau"
 weight = 1
 

@@ -2,32 +2,32 @@
 author: 贾斯汀·格斯
 bg_image: images/index2-1-1280x720.webp
 categories:
-- 计算机视觉
-- 大数据
-- 机器学习
+  - 计算机视觉
+  - 大数据
+  - 机器学习
 date: '2022-06-08T07:10:46+02:00'
-description: 使用 MTCNN 进行人脸检测——人脸提取的快速指南
+description: 使用 MTCNN 进行人脸检测--人脸提取的快速指南
 image: images/index2-1-1280x720.webp
 tags:
-- Face Detection
-- Neuronal Networks
-- MTCNN
-- Big Data
-- Machine Learning
+  - Face Detection
+  - Neuronal Networks
+  - MTCNN
+  - Big Data
+  - Machine Learning
 title: 使用 MTCNN 进行人脸检测
 type: post
-
 ---
+
 MTCNN 是一种由 [Github 用户 ipacz](https://github.com/ipazc/mtcnn) 编写的 Python (pip) 库，它实现了论文 [Zhang, Kaipeng 等人，“使用多任务级联卷积网络的联合人脸检测和对齐”。IEEE 信号处理快讯 23.10 (2016): 1499–1503。Crossref. Web](https://arxiv.org/abs/1604.02878)。
 
 本文中，他们提出了一种深度级联多任务框架，利用不同“子模型”的特征来增强它们的相关性。
 
-尽管 S3FD 在 GPU 上运行仍然更快，但 MTCNN 在 CPU 上运行速度相当快——但这将是另一个主题。
+尽管 S3FD 在 GPU 上运行仍然更快，但 MTCNN 在 CPU 上运行速度相当快--但这将是另一个主题。
 
 本文使用了以下两个来源的代码，请查看它们，它们也很有趣：
 
-* [https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/](https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/)
-* [https://www.kaggle.com/timesler/fast-mtcnn-detector-55-fps-at-full-resolution](https://www.kaggle.com/timesler/fast-mtcnn-detector-55-fps-at-full-resolution)
+- [https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/](https://machinelearningmastery.com/how-to-perform-face-detection-with-classical-and-deep-learning-methods-in-python-with-keras/)
+- [https://www.kaggle.com/timesler/fast-mtcnn-detector-55-fps-at-full-resolution](https://www.kaggle.com/timesler/fast-mtcnn-detector-55-fps-at-full-resolution)
 
 <br>
 
@@ -143,7 +143,6 @@ for key, value in result['keypoints'].items():
 
 完整的代码如下：
 
-
 ```python
 # 描绘带有检测对象的图像
 def draw_facebox(filename, result_list):
@@ -192,9 +191,9 @@ def draw_facebox(filename, result_list):
 
 我们到底在谈论什么？如果您正在运行上面的代码，它将花费大约一秒钟，这意味着我们将每秒处理大约一张图片。如果您在 GPU 上运行 MTCNN 并使用加速版本，它将达到每秒 60-100 张图片/帧的速度。这是一个高达 **100 倍** 的提升！
 
-例如，如果您要从电影中提取所有面部，其中您每秒提取 10 个面部（电影的每一秒平均大约有 24 帧，所以每隔一帧），它将是 10 * 60（秒）* 120（分钟）= 72,000 帧。
+例如，如果您要从电影中提取所有面部，其中您每秒提取 10 个面部（电影的每一秒平均大约有 24 帧，所以每隔一帧），它将是 10 _ 60（秒）_ 120（分钟）= 72,000 帧。
 
-这意味着如果处理一帧需要一秒钟，它将花费 72,000 * 1（秒）= 72,000 秒 / 60 秒 = 1,200 分钟 = **20 小时**
+这意味着如果处理一帧需要一秒钟，它将花费 72,000 \* 1（秒）= 72,000 秒 / 60 秒 = 1,200 分钟 = **20 小时**
 
 使用加速版 MTCNN，这项任务将需要 72,000（帧）/ 100（帧/秒）= 720 秒 = **12 分钟**！
 
@@ -244,7 +243,6 @@ device=device
 ```
 
 (图片输出省略)
-
 
 上述图像显示了在 NVIDIA Tesla P100 上运行代码的输出，因此，根据源材料、GPU 和处理器，您可能会体验到更好的或更差的性能。
 

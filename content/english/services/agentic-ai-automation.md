@@ -1,19 +1,20 @@
 ---
-title: "Agentic AI & Intelligent Automation"
-description: "Custom Multi-Agent Frameworks, private local LLMs, and production-grade ML pipelines."
+title: 'Agentic AI & Intelligent Automation'
+description: 'Custom Multi-Agent Frameworks, private local LLMs, and production-grade ML pipelines.'
 ---
 
 # Agentic AI & Intelligent Automation
 
 **Moving Beyond Static RAG to Autonomous Action.**
 
-We design and deploy custom Multi-Agent Frameworks and task-driven autonomous agents that move far beyond simple document search. We specialize in bringing AI into production—securely, privately, and at scale.
+We design and deploy custom Multi-Agent Frameworks and task-driven autonomous agents that move far beyond simple document search. We specialize in bringing AI into production-securely, privately, and at scale.
 
 ---
 
 ## Core Capabilities
 
 ### **The Next Frontier: Agentic Frameworks**
+
 - **Autonomous Workflows**: Designing custom Multi-Agent Frameworks via **LangGraph** and **LangChain** that execute complex, multi-step tasks.
 - **On-Premise & Local AI**: Deploying 100% private, secure, local LLM platforms tailored for proprietary data protection.
 - **Agentic RAG**: Advanced retrieval systems with source verification and iterative reasoning loops.
@@ -21,6 +22,7 @@ We design and deploy custom Multi-Agent Frameworks and task-driven autonomous ag
 - **Autonomous Browsing & Coding**: Deploying fully local agents that can think, browse, and code natively within your infrastructure (e.g., **AgenticSeek**).
 
 ### **Production Machine Learning**
+
 - **High-Throughput Pipelines**: Building scalable ML pipelines in Python using TensorFlow and Keras (e.g., medical forecasting, automated trading).
 - **MLOps & Hardened Infrastructure**: Running ML workloads on Kubernetes/OpenShift with dedicated GPU orchestration and VPC isolation.
 - **Contributor Influence**: Contributed directly to **Google Research's TimesFM** (time-series foundation model) and financed by the **Anthropic OpenSource Program**.
@@ -29,7 +31,7 @@ We design and deploy custom Multi-Agent Frameworks and task-driven autonomous ag
 
 ## The Product Foundry: Proving Theories in Production
 
-We don’t just consult on AI—we build and maintain live, production-scale products under the **Aigentic Vibes** umbrella.
+We don’t just consult on AI-we build and maintain live, production-scale products under the **Aigentic Vibes** umbrella.
 
 - **AgentBureau**: An elite B2B AI agency platform focusing on deploying production-ready multi-agent workflows, custom LLM fine-tuning, and operational automation.
 - **DocumentChat**: An enterprise-grade AI RAG assistant designed for high-accuracy analysis of massive document sets with verified source citations.
@@ -52,10 +54,11 @@ We don’t just consult on AI—we build and maintain live, production-scale pro
 ## Deploy Your AI Fortress
 
 [**Book an AI Integration Strategy Call**](https://cal.com/datafortress-justin/15min)  
-*Discuss your use case for autonomous agents and private LLM deployments.*
+_Discuss your use case for autonomous agents and private LLM deployments._
 
 ---
 
 ## See Also
+
 - [**Cloud Infrastructure & DevOps**](/services/cloud-infrastructure-devops/)
 - [**Data Engineering & Analytics**](/services/data-engineering-analytics/)

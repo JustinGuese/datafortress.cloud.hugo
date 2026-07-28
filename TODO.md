@@ -1,6 +1,6 @@
 Good catch. My internal "cite everything" mode got a bit too enthusiastic for a Markdown file. GitHub isn't exactly going to render those as academic footnotes.
 
-Here is the clean, high-performance version of your **README.md**—free of citation markers and ready for your profile.
+Here is the clean, high-performance version of your **README.md**-free of citation markers and ready for your profile.
 
 ```markdown
 # Justin Güse | Technical Outlier & AI Architect 🚀
@@ -96,7 +96,7 @@ Here is the blueprint for your homepage sections:
 ## **1. Hero Section: The Value Proposition**
 
 **Headline:** Enterprise-Grade Infrastructure for the AI Era.
-**Sub-headline:** Scaling secure, high-performance Data Engineering and DevOps solutions for the world’s most demanding industries—from automotive giants to regulated banking.
+**Sub-headline:** Scaling secure, high-performance Data Engineering and DevOps solutions for the world’s most demanding industries-from automotive giants to regulated banking.
 
 - [cite_start]**Core Identity:** Freelance Data Engineer and DevOps Specialist focusing on **Kubernetes/OpenShift** on-premise and hybrid clouds[cite: 35, 41].
 - [cite_start]**The "Genius" Hook:** Certified **AWS Cloud Solution Architect** with a background in **Computational Neuroscience**[cite: 35, 47, 79].
@@ -138,7 +138,7 @@ A high-visibility logo or list section featuring the heavy hitters you’ve arch
 
 > **"When the biggest bank in Germany has 120 minutes to save its data, I’m the one on the call."**
 
-- A brief summary of resolving a critical **HashiCorp Vault** cross-datacenter failure within the strict 2-hour **BaFin** reporting window—ensuring zero data loss and total regulatory compliance.
+- A brief summary of resolving a critical **HashiCorp Vault** cross-datacenter failure within the strict 2-hour **BaFin** reporting window-ensuring zero data loss and total regulatory compliance.
 
 ---
 

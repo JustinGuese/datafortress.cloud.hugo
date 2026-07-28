@@ -2,7 +2,7 @@
 title: 'Contact Us'
 subtitle: ''
 # meta description
-description: "Contact DataFortress.cloud — Justin Güse — for BaFin-compliant Kubernetes, petabyte-scale data engineering, or on-premise agentic AI engagements. Free 1-hour infrastructure audit on request."
+description: 'Contact DataFortress.cloud - Justin Güse - for BaFin-compliant Kubernetes, petabyte-scale data engineering, or on-premise agentic AI engagements. Free 1-hour infrastructure audit on request.'
 draft: false
 layout: 'contact'
 ---

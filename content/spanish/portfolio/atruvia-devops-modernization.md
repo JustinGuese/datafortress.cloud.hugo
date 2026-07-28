@@ -1,11 +1,11 @@
 ---
-title: "Atruvia: Modernización de DevOps, Microservicios Spring Boot e Integración con Finanzamt"
-date: "2024-03-15"
+title: 'Atruvia: Modernización de DevOps, Microservicios Spring Boot e Integración con Finanzamt'
+date: '2024-03-15'
 draft: false
-logo: "images/client-logo/atruvia.png"
-image: "images/client-logo/atruvia.png"
-description: "Colaboración de DevOps de varios años en Atruvia — migración de Jenkins a GitLab CI, microservicios Java Spring Boot en OpenShift y la capa de integración segura con el Finanzamt para la red de banca cooperativa más grande de Alemania."
-categories: ["Banking IT", "DevOps", "OpenShift", "Spring Boot"]
+logo: 'images/client-logo/atruvia.png'
+image: 'images/client-logo/atruvia.png'
+description: 'Colaboración de DevOps de varios años en Atruvia - migración de Jenkins a GitLab CI, microservicios Java Spring Boot en OpenShift y la capa de integración segura con el Finanzamt para la red de banca cooperativa más grande de Alemania.'
+categories: ['Banking IT', 'DevOps', 'OpenShift', 'Spring Boot']
 ---
 
 ## El Compromiso
@@ -70,7 +70,7 @@ Un fallo en cualquier capa no compromete el sistema. Esa es la propiedad que bus
 
 ## Por qué es Importante
 
-La modernización de DevOps en la banca regulada no se trata de seguir tendencias. Se trata de hacer que la plataforma sea *aburrida*: rápida para realizar envíos, difícil de configurar mal, trivial de auditar. Las opciones tecnológicas (GitLab, OpenShift, Spring Boot, Istio, Vault) son el punto de partida. La disciplina es el diferenciador.
+La modernización de DevOps en la banca regulada no se trata de seguir tendencias. Se trata de hacer que la plataforma sea _aburrida_: rápida para realizar envíos, difícil de configurar mal, trivial de auditar. Las opciones tecnológicas (GitLab, OpenShift, Spring Boot, Istio, Vault) son el punto de partida. La disciplina es el diferenciador.
 
 Este compromiso es el tipo de trabajo por el que me llaman: alto riesgo, regulado, plurianual y diseñado para desaparecer en el fondo para que el negocio pueda moverse.
 
@@ -80,7 +80,7 @@ Este compromiso es el tipo de trabajo por el que me llaman: alto riesgo, regulad
 
 - **Servicio:** [Infraestructura de nube y DevOps (Kubernetes/OpenShift conforme a BaFin)](/es/services/cloud-infrastructure-devops/)
 - **Servicio:** [Ingeniería de datos y análisis](/es/services/data-engineering-analytics/)
-- **Caso de estudio:** [Atruvia / Volksbank — Modernización del almacén de datos](/es/portfolio/atruvia--volksbank-data-warehouse/)
-- **Acerca de:** [Justin Güse — Arquitecto de infraestructura empresarial](/es/about/)
+- **Caso de estudio:** [Atruvia / Volksbank - Modernización del almacén de datos](/es/portfolio/atruvia--volksbank-data-warehouse/)
+- **Acerca de:** [Justin Güse - Arquitecto de infraestructura empresarial](/es/about/)
 
 **¿Nos está evaluando para un compromiso?** [Reserve una revisión de arquitectura gratuita de 1 hora](/es/contact/): en 60 minutos encontraré más de 100 000 € en riesgos de cumplimiento, desperdicio en la nube o margen de escalabilidad, o se lo diré y me marcharé.

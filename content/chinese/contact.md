@@ -1,7 +1,7 @@
 ---
-title: "联系我们"
+title: '联系我们'
 subtitle: ''
-description: "联系 DataFortress.cloud — Justin Güse — 咨询符合 BaFin 标准的 Kubernetes、PB 级数据工程或本地代理 AI 合作。可申请免费 1 小时基础设施审计。"
+description: '联系 DataFortress.cloud - Justin Güse - 咨询符合 BaFin 标准的 Kubernetes、PB 级数据工程或本地代理 AI 合作。可申请免费 1 小时基础设施审计。'
 draft: false
 layout: 'contact'
 ---

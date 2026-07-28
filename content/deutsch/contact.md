@@ -1,7 +1,7 @@
 ---
-title: "Kontakt"
+title: 'Kontakt'
 subtitle: ''
-description: "Kontaktieren Sie DataFortress.cloud — Justin Güse — für BaFin-konformes Kubernetes, Datentechnik im Petabyte-Bereich oder Agentische KI-Einsätze vor Ort. Kostenloses 1-stündiges Infrastruktur-Audit auf Anfrage."
+description: 'Kontaktieren Sie DataFortress.cloud - Justin Güse - für BaFin-konformes Kubernetes, Datentechnik im Petabyte-Bereich oder Agentische KI-Einsätze vor Ort. Kostenloses 1-stündiges Infrastruktur-Audit auf Anfrage.'
 draft: false
 layout: 'contact'
 ---

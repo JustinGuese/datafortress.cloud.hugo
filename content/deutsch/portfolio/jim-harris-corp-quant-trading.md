@@ -1,9 +1,9 @@
 ---
-title: "Jim Harris Corp – Echtzeit-Quant-Trading-Infrastruktur"
-description: "Aufbau eines Echtzeit-Aktienvorhersage- und automatisierten Handelssystems unter Verwendung von Kafka, RabbitMQ und TensorFlow für ein US-amerikanisches quantitatives Handelsunternehmen."
-date: "2022-03-01"
-image: "images/service-3.png"
-categories: ["Quant Finance", "Data Engineering", "AI/ML"]
+title: 'Jim Harris Corp – Echtzeit-Quant-Trading-Infrastruktur'
+description: 'Aufbau eines Echtzeit-Aktienvorhersage- und automatisierten Handelssystems unter Verwendung von Kafka, RabbitMQ und TensorFlow für ein US-amerikanisches quantitatives Handelsunternehmen.'
+date: '2022-03-01'
+image: 'images/service-3.png'
+categories: ['Quant Finance', 'Data Engineering', 'AI/ML']
 draft: false
 ---
 
@@ -19,21 +19,21 @@ Quantitativer Handel im großen Stil erfordert eine Infrastruktur, die die meist
 
 ### Echtzeit-Datenpipeline
 
-- **Apache Kafka** — Multi-Broker, Multi-Partition-Cluster, der Live-Tick-Daten von mehreren Marktfeeds gleichzeitig konsumiert. Sub-100ms End-to-End-Latenz vom Börsenfeed bis zum Feature-Vektor.
-- **RabbitMQ** — Entkoppeltes Message-Routing zwischen den Pipeline-Stufen: Datennormalisierung, Feature-Engineering, Modellinferenz und Ordermanagement.
-- **Eigene Connectoren** — Adapter für proprietäre Broker-APIs und Drittanbieter von Marktdaten.
+- **Apache Kafka** - Multi-Broker, Multi-Partition-Cluster, der Live-Tick-Daten von mehreren Marktfeeds gleichzeitig konsumiert. Sub-100ms End-to-End-Latenz vom Börsenfeed bis zum Feature-Vektor.
+- **RabbitMQ** - Entkoppeltes Message-Routing zwischen den Pipeline-Stufen: Datennormalisierung, Feature-Engineering, Modellinferenz und Ordermanagement.
+- **Eigene Connectoren** - Adapter für proprietäre Broker-APIs und Drittanbieter von Marktdaten.
 
 ### Prediction Engine
 
-- **TensorFlow** — LSTM- und Transformer-basierte Modelle, trainiert auf mehrjährigen Tick- und Orderbuchdaten zur Vorhersage der Preisrichtung in kurzen Zeiträumen.
-- **Feature Engineering Pipeline** — Echtzeit-Berechnung von über 150 technischen und mikrostrukturellen Indikatoren aus Roh-Tick-Streams.
-- **Model Serving** — TensorFlow Serving mit GPU-beschleunigter Inferenz; Modell-Hot-Swap ohne Ausfallzeiten.
+- **TensorFlow** - LSTM- und Transformer-basierte Modelle, trainiert auf mehrjährigen Tick- und Orderbuchdaten zur Vorhersage der Preisrichtung in kurzen Zeiträumen.
+- **Feature Engineering Pipeline** - Echtzeit-Berechnung von über 150 technischen und mikrostrukturellen Indikatoren aus Roh-Tick-Streams.
+- **Model Serving** - TensorFlow Serving mit GPU-beschleunigter Inferenz; Modell-Hot-Swap ohne Ausfallzeiten.
 
 ### Ausführungsinfrastruktur
 
-- **Kubernetes-gehostet** — Alle Pipeline-Komponenten sind containerisiert und für Fehlertoleranz und horizontale Skalierung orchestriert.
-- **Dead-Letter-Queues + Alerting** — Prometheus/Grafana-Dashboards mit PagerDuty-Alarmen für Pipeline-Anomalien.
-- **Backtesting-Harness** — Identische Pipeline, die gegen historische Daten abgespielt wird, um Strategien vor dem Live-Einsatz zu validieren.
+- **Kubernetes-gehostet** - Alle Pipeline-Komponenten sind containerisiert und für Fehlertoleranz und horizontale Skalierung orchestriert.
+- **Dead-Letter-Queues + Alerting** - Prometheus/Grafana-Dashboards mit PagerDuty-Alarmen für Pipeline-Anomalien.
+- **Backtesting-Harness** - Identische Pipeline, die gegen historische Daten abgespielt wird, um Strategien vor dem Live-Einsatz zu validieren.
 
 ## Ergebnisse
 
@@ -48,6 +48,7 @@ Dieses Engagement demonstriert, dass das Engineering von DataFortress.cloud weit
 ---
 
 **Verwandte Arbeiten:**
+
 - [Vios Investments – Handelsinfrastruktur](/de/portfolio/vios-investments-trading-infrastructure/)
 - [Agentische KI & LLMs](/de/services/agentic-ai-llms/)
 - [Data Engineering Services](/de/services/data-engineering/)

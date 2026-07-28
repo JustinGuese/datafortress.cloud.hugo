@@ -58,7 +58,7 @@ crisp_website_id = "4453c713-998c-44d9-8968-96ad05471989" # replace this code wi
 # seo meta data for OpenGraph / Twitter Card
 [metadata]
 description = "Enterprise-grade infrastructure for the AI era. BaFin-compliant OpenShift & Kubernetes, petabyte-scale data engineering, and on-premise agentic AI for automotive, banking, and healthcare. Trusted by VW, BMW, Porsche, HPE, and Germany's largest banking network."
-author = "Justin Güse — DataFortress.cloud"
+author = "Justin Güse - DataFortress.cloud"
 image = "images/about.jpg"                           # this image will be used as fallback if a page has no image of its own
 
 # matomo tracking: see https://matomo.org/

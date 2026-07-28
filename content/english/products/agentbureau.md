@@ -1,47 +1,44 @@
 ---
-date: "2026-01-15"
+date: '2026-01-15'
 draft: false
-title: "AgentBureau"
-description: "Elite B2B AI agency platform deploying production-ready multi-agent workflows, custom LLM fine-tuning, and operational automation."
-icon: "fas fa-robot"
-
+title: 'AgentBureau'
+description: 'Elite B2B AI agency platform deploying production-ready multi-agent workflows, custom LLM fine-tuning, and operational automation.'
+icon: 'fas fa-robot'
 
 ######################### banner #####################
 banner:
-  title: "AgentBureau — Production-Grade Multi-Agent Systems for B2B"
-  image: "images/products/agentbureau-logo.webp"
-  content : "Elite B2B AI agency platform focused on deploying production-ready multi-agent workflows, custom LLM fine-tuning, and operational automation for enterprises that need agentic systems to actually ship."
+  title: 'AgentBureau - Production-Grade Multi-Agent Systems for B2B'
+  image: 'images/products/agentbureau-logo.webp'
+  content: 'Elite B2B AI agency platform focused on deploying production-ready multi-agent workflows, custom LLM fine-tuning, and operational automation for enterprises that need agentic systems to actually ship.'
   button:
-    enable : true
-    label : "Visit AgentBureau"
-    link : "https://agentbureau.de/"
-  background_class: "bg-light"
-
+    enable: true
+    label: 'Visit AgentBureau'
+    link: 'https://agentbureau.de/'
+  background_class: 'bg-light'
 
 ######################### about this product #####################
 about_this_product:
   enable: true
-  title: "Multi-Agent Workflows, Built to Run in Production"
-  content: "AgentBureau is the agency arm of DataFortress.cloud focused exclusively on agentic AI deployments. Most agent demos die in the prototype phase. We build the ones that survive contact with real enterprise workloads — observable, controllable, compliance-aware, and integrated with the systems that already run the business."
-  background_class: ""
+  title: 'Multi-Agent Workflows, Built to Run in Production'
+  content: 'AgentBureau is the agency arm of DataFortress.cloud focused exclusively on agentic AI deployments. Most agent demos die in the prototype phase. We build the ones that survive contact with real enterprise workloads - observable, controllable, compliance-aware, and integrated with the systems that already run the business.'
+  background_class: ''
 
   features:
-  - title: "Multi-Agent Architectures"
-    icon: "fas fa-network-wired"
-    content: "LangGraph and LangChain-based orchestration with persistent state, task decomposition, and supervisor-worker patterns. Designed for long-running workflows, not single-shot prompts."
+    - title: 'Multi-Agent Architectures'
+      icon: 'fas fa-network-wired'
+      content: 'LangGraph and LangChain-based orchestration with persistent state, task decomposition, and supervisor-worker patterns. Designed for long-running workflows, not single-shot prompts.'
 
-  - title: "Custom LLM Fine-Tuning"
-    icon: "fas fa-sliders-h"
-    content: "Domain-specific fine-tuning on proprietary corpora — including fully on-premise training on Kubernetes-managed GPU clusters for clients who cannot send data to external APIs."
+    - title: 'Custom LLM Fine-Tuning'
+      icon: 'fas fa-sliders-h'
+      content: 'Domain-specific fine-tuning on proprietary corpora - including fully on-premise training on Kubernetes-managed GPU clusters for clients who cannot send data to external APIs.'
 
-  - title: "Operational Automation"
-    icon: "fas fa-cogs"
-    content: "Agents wired into the systems that matter: ticketing, ERP, CRM, document stores, and internal tooling. Built with audit trails, human-in-the-loop checkpoints, and rollback paths."
+    - title: 'Operational Automation'
+      icon: 'fas fa-cogs'
+      content: 'Agents wired into the systems that matter: ticketing, ERP, CRM, document stores, and internal tooling. Built with audit trails, human-in-the-loop checkpoints, and rollback paths.'
 
-  - title: "Production-First Engineering"
-    icon: "fas fa-shield-alt"
-    content: "Observability, cost guardrails, prompt versioning, evaluation harnesses, and BaFin/GDPR-aware deployments. The same discipline we apply to banking infrastructure, applied to agent systems."
-
+    - title: 'Production-First Engineering'
+      icon: 'fas fa-shield-alt'
+      content: 'Observability, cost guardrails, prompt versioning, evaluation harnesses, and BaFin/GDPR-aware deployments. The same discipline we apply to banking infrastructure, applied to agent systems.'
 ---
 
 ### AgentBureau: Where Agentic AI Meets Production Reality
@@ -51,7 +48,7 @@ AgentBureau is the B2B AI agency platform under DataFortress.cloud. We deploy mu
 #### What We Deliver
 
 - **Production multi-agent workflows** built on LangGraph with persistent state, task-driven planning, and human-in-the-loop oversight.
-- **Custom fine-tuned models** — including 100% on-premise fine-tuning for clients with strict data residency requirements.
+- **Custom fine-tuned models** - including 100% on-premise fine-tuning for clients with strict data residency requirements.
 - **Operational automation** that integrates with existing enterprise systems rather than replacing them.
 - **Local LLM deployments** for regulated industries where sending data to public APIs is not an option.
 

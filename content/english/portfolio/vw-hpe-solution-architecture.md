@@ -1,10 +1,9 @@
 ---
-date: "2024-08-14"
+date: '2024-08-14'
 draft: false
-title: "VW/HPE: Solution Architecture data flow of sampling report data"
-logo: "images/client-logo/vw.png"
+title: 'VW/HPE: Solution Architecture data flow of sampling report data'
+logo: 'images/client-logo/vw.png'
 ---
-
 
 > Integration of a new software into the existing enterprise material sampling process, improving the speed to market of new models and reducing the time spent on the sampling process in general.
 
@@ -45,4 +44,4 @@ The implemented system now handles 30,000 sampling processes from suppliers worl
 ### Conclusion:
 
 This project successfully demonstrated our ability to design and implement complex solution architectures that meet rigorous compliance and security standards while significantly improving operational efficiency. Our collaboration with HPE and Volkswagen highlights our expertise in integrating cutting-edge technologies to deliver impactful business outcomes.
-Discover how to seamlessly integrate complex data flows into your enterprise landscape—schedule your free consultation today!
+Discover how to seamlessly integrate complex data flows into your enterprise landscape-schedule your free consultation today!
