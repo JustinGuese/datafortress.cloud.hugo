@@ -1,10 +1,10 @@
 ---
 title: 'Same Answer, 1/32 of the Work: Adding a Sparse Mixture-of-Experts FFN to SpikingBrain (a 5B Brain-Inspired Model)'
-bg_image: 'images/blog/algorithm.jpg'
+bg_image: 'images/blog/s2moe-vs-dense.png'
 date: 2026-07-30T09:10:00+02:00
 author: 'Justin Guese'
 description: 'I rebuilt the feed-forward layer of SpikingBrain 2.0 as a Top-1 sparse Mixture-of-Experts. Same quality at 1/32 the FFN compute, 2.71x fewer block FLOPs at their 5B shape - and the one result a second random seed deleted.'
-image: 'images/blog/algorithm.jpg'
+image: 'images/blog/s2moe-vs-dense.png'
 categories:
   - Machine Learning
 

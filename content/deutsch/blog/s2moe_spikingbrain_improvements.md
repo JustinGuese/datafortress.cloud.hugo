@@ -1,10 +1,10 @@
 ---
 title: 'Gleiche Antwort, 1/32 der Arbeit: Ein sparsames Mixture-of-Experts FFN zu SpikingBrain (ein 5B gehirninspiriertes Modell) hinzufügen'
-bg_image: 'images/blog/algorithm.jpg'
+bg_image: 'images/blog/s2moe-vs-dense.png'
 date: 2026-07-30T09:10:00+02:00
 author: 'Justin Guese'
 description: 'Ich habe die Feed-Forward-Schicht von SpikingBrain 2.0 als Top-1 sparsames Mixture-of-Experts neu aufgebaut. Gleiche Qualität bei 1/32 der FFN-Berechnung, 2,71x weniger Block-FLOPs bei ihrer 5B-Form - und das eine Ergebnis, das ein zweiter Zufallssamen löschte.'
-image: 'images/blog/algorithm.jpg'
+image: 'images/blog/s2moe-vs-dense.png'
 categories:
   - Machine Learning
 

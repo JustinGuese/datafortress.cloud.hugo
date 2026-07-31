@@ -1,10 +1,10 @@
 ---
 title: 'La misma respuesta, 1/32 del trabajo: Añadiendo una FFN Mixture-of-Experts dispersa a SpikingBrain (un modelo inspirado en el cerebro de 5B)'
-bg_image: 'images/blog/algorithm.jpg'
+bg_image: 'images/blog/s2moe-vs-dense.png'
 date: 2026-07-30T09:10:00+02:00
 author: 'Justin Guese'
 description: 'Reconstruí la capa feed-forward de SpikingBrain 2.0 como una Mixture-of-Experts dispersa Top-1. Misma calidad con 1/32 del cómputo FFN, 2.71x menos FLOPs de bloque en su forma de 5B - y el resultado que una segunda semilla aleatoria eliminó.'
-image: 'images/blog/algorithm.jpg'
+image: 'images/blog/s2moe-vs-dense.png'
 categories:
   - Machine Learning
 

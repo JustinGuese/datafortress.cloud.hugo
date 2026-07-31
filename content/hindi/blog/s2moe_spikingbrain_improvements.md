@@ -1,10 +1,10 @@
 ---
 title: 'एक ही उत्तर, 1/32 काम: SpikingBrain (एक 5B ब्रेन-इंस्पायर्ड मॉडल) में एक Sparse Mixture-of-Experts FFN जोड़ना'
-bg_image: 'images/blog/algorithm.jpg'
+bg_image: 'images/blog/s2moe-vs-dense.png'
 date: 2026-07-30T09:10:00+02:00
 author: 'Justin Guese'
 description: 'मैंने SpikingBrain 2.0 की feed-forward layer को एक Top-1 sparse Mixture-of-Experts के रूप में फिर से बनाया। 1/32 FFN compute पर समान गुणवत्ता, उनके 5B shape पर 2.71x कम block FLOPs - और एक परिणाम जो दूसरे random seed ने हटा दिया।'
-image: 'images/blog/algorithm.jpg'
+image: 'images/blog/s2moe-vs-dense.png'
 categories:
   - Machine Learning
 
