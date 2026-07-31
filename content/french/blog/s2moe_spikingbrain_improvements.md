@@ -1,20 +1,20 @@
 ---
-title: 'Même résultat, 1/32 du travail : Ajout d'une FFN Mixture-of-Experts Sparse à SpikingBrain (un modèle Brain-Inspired de 5B)'
-bg_image: 'images/blog/algorithm.jpg'
+title: "Même résultat, 1/32 du travail : Ajout d'une FFN Mixture-of-Experts Sparse à SpikingBrain (un modèle Brain-Inspired de 5B)"
+bg_image: "images/blog/algorithm.jpg"
 date: 2026-07-30T09:10:00+02:00
-author: 'Justin Guese'
-description: 'J'ai reconstruit la couche feed-forward de SpikingBrain 2.0 en tant que Mixture-of-Experts Top-1 sparse. Même qualité à 1/32 du calcul FFN, 2.71x moins de block FLOPs à leur forme 5B - et l'un des résultats qu'une deuxième graine aléatoire a supprimé.'
-image: 'images/blog/algorithm.jpg'
+author: "Justin Guese"
+description: "J'ai reconstruit la couche feed-forward de SpikingBrain 2.0 en tant que Mixture-of-Experts Top-1 sparse. Même qualité à 1/32 du calcul FFN, 2.71x moins de block FLOPs à leur forme 5B - et l'un des résultats qu'une deuxième graine aléatoire a supprimé."
+image: "images/blog/algorithm.jpg"
 categories:
   - Machine Learning
 
 tags:
   [
-    'mixture of experts',
-    'model efficiency',
-    'spikingbrain',
-    'cuda kernels',
-    'open source',
+    "mixture of experts",
+    "model efficiency",
+    "spikingbrain",
+    "cuda kernels",
+    "open source",
   ]
 type: post
 ---
