@@ -2,6 +2,12 @@
 # Add / remove / reorder a link by editing this list. `desc` and `emoji` optional.
 
 [[link]]
+emoji = "⚡"
+title = "S2-MoE patch to CASIA/BICLab Beijing's 5B SpikingBrain 2.0"
+desc  = "Same answer, 1/32 the active FFN compute/energy"
+url   = "https://datafortress.cloud/blog/s2moe_spikingbrain_improvements/"
+
+[[link]]
 emoji = "🏰"
 title = "DataFortress Homepage"
 desc  = ""
