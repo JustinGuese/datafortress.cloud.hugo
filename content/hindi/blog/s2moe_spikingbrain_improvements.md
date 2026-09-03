@@ -31,13 +31,13 @@ type: post
 
 **बत्तीस में से एक का श्रम।**
 
-यही पूरा विचार है। बाकी यह पोस्ट है कि जब मैंने इसे सही तरीके से मापा तो क्या हुआ — यह भी सहित कि एक परिणाम जिसे मुझे कचरे में डालना पड़ा।
+यही पूरा विचार है। बाकी यह पोस्ट है कि जब मैंने इसे सही तरीके से मापा तो क्या हुआ - यह भी सहित कि एक परिणाम जिसे मुझे कचरे में डालना पड़ा।
 
 ## Mixture-of-Experts मॉडल क्या है?
 
 एक सामान्य neural network में, हर input सभी parameters से गुजरता है। यह एक विशाल function है, और यह हर बार पूरी तरह से execute होता है।
 
-एक **Mixture-of-Experts (MoE)** मॉडल उस बड़े function को कई छोटे में विभाजित करता है — "experts" — और एक **router** सामने रखता है। Router प्रत्येक शब्द को देखता है और चुनता है कि कौन सा expert इसे संभालेगा।
+एक **Mixture-of-Experts (MoE)** मॉडल उस बड़े function को कई छोटे में विभाजित करता है - "experts" - और एक **router** सामने रखता है। Router प्रत्येक शब्द को देखता है और चुनता है कि कौन सा expert इसे संभालेगा।
 
 **Top-1 routing** के साथ, प्रति शब्द बिल्कुल एक expert चलता है। दो नहीं, एक blend नहीं। एक।
 
@@ -60,7 +60,7 @@ type: post
 चार mechanisms, [अपने research repo](https://github.com/JustinGuese/S2-MoE-llm) से लिए गए और उनके block में port किए गए:
 
 - **एक Top-1 routed pool of experts** dense feed-forward layer की जगह।
-- **एक always-on shared core** — एक छोटा expert जो हर शब्द से गुजरता है, routed one के साथ।
+- **एक always-on shared core** - एक छोटा expert जो हर शब्द से गुजरता है, routed one के साथ।
 - **एक grouped-GEMM CUDA kernel**, क्योंकि इसके बिना पूरी चीज धीमी है (नीचे इस पर अधिक)।
 - **एक dense-to-MoE upcycler**, ताकि expert pool को उनके _मौजूदा trained weights_ से बनाया जा सकता है, न कि scratch से retrain की आवश्यकता के बजाय।
 
@@ -70,7 +70,7 @@ type: post
 
 यह मुख्य measurement है।
 
-**matched parameter count** पर — sparse model के लिए 77.8M बनाम dense control के लिए 77.7M, 0.2% अलग — sparse model **same validation perplexity** तक पहुंचता है **1/32 feed-forward compute** चलाते हुए।
+**matched parameter count** पर - sparse model के लिए 77.8M बनाम dense control के लिए 77.7M, 0.2% अलग - sparse model **same validation perplexity** तक पहुंचता है **1/32 feed-forward compute** चलाते हुए।
 
 यह **32× accuracy per unit of active compute** है।
 
@@ -80,7 +80,7 @@ type: post
 
 ## उनके 5B scale पर यह क्या लायक है
 
-Compute claims tensor shapes द्वारा निर्धारित किए जाते हैं, training द्वारा नहीं — तो उन्हें SpikingBrain के real 5B block dimensions पर directly measure किया जा सकता है random weights के साथ, लगभग बीस मिनट में एक single RTX 4090 पर।
+Compute claims tensor shapes द्वारा निर्धारित किए जाते हैं, training द्वारा नहीं - तो उन्हें SpikingBrain के real 5B block dimensions पर directly measure किया जा सकता है random weights के साथ, लगभग बीस मिनट में एक single RTX 4090 पर।
 
 `hidden_size 2560`, `intermediate_size 9728`, bf16, parameter-matched, batch 8 × sequence 512 पर:
 
@@ -91,7 +91,7 @@ Compute claims tensor shapes द्वारा निर्धारित क�
 | Sparse MoE, 32 experts    | 84.5        | 0.412    | 133.7        | 324,344     |
 | Sparse MoE, 64 experts    | 82.3        | 0.414    | 123.7        | 299,053     |
 
-**2.71× कम FLOPs per block। 1.62× कम energy per token**। आधी से भी कम power draw — 299 W के विरुद्ध 134 W।
+**2.71× कम FLOPs per block। 1.62× कम energy per token**। आधी से भी कम power draw - 299 W के विरुद्ध 134 W।
 
 ## 1/32 32× overall में क्यों नहीं बदलता है
 
@@ -99,7 +99,7 @@ Compute claims tensor shapes द्वारा निर्धारित क�
 
 **हमेशा-on parts shrink नहीं होते।** Attention अभी भी हर शब्द पर चलता है। Router हर शब्द पर चलता है। Shared core हर शब्द पर चलता है।
 
-एक component को optimize करना केवल उस component के share को save कर सकता है। एक बार जब feed-forward layer लगभग free हो जाता है, तो हर चीज और floor बन जाती है — और आप feed-forward sparsity क्या कर सकती है की ceiling को मार चुके हैं।
+एक component को optimize करना केवल उस component के share को save कर सकता है। एक बार जब feed-forward layer लगभग free हो जाता है, तो हर चीज और floor बन जाती है - और आप feed-forward sparsity क्या कर सकती है की ceiling को मार चुके हैं।
 
 अगर आप इस post से एक number अपने काम के लिए लेते हैं, तो वह एक लें। यह आपको बताता है कि इस layer को optimize करना कब बंद करें और किसी अन्य को देखने जाएं।
 
@@ -117,7 +117,7 @@ power-limited या event-driven hardware पर, यह trade invert होत
 
 यह हिस्सा है जो मैं किसी अन्य engineer को सबसे अधिक लेना चाहता हूं।
 
-obvious implementation Python में experts पर loops करता है — एक iteration, एक kernel launch प्रत्येक। यह overhead fixed per expert है, तो यह आपकी saving जितनी तेजी से बढ़ता है।
+obvious implementation Python में experts पर loops करता है - एक iteration, एक kernel launch प्रत्येक। यह overhead fixed per expert है, तो यह आपकी saving जितनी तेजी से बढ़ता है।
 
 **Measured on its own, naive sparse layer हर expert count पर dense से धीमा था।** FLOP saving paper पर existed और बिल्कुल कहीं और नहीं।
 
@@ -128,7 +128,7 @@ Fix: tokens को उनके assigned expert द्वारा contiguous bl
 | Forward vs Python loop | 2.27× | 4.60× | 8.29× | **12.75×** |
 | Training step vs loop  | 1.85× | 3.99× | 6.34× | **9.95×**  |
 
-और यह **bit-exact** है — outputs पर zero के विरुद्ध maximum absolute difference, और दोनों weight gradients पर। यह pure overhead removal है, एक approximation नहीं।
+और यह **bit-exact** है - outputs पर zero के विरुद्ध maximum absolute difference, और दोनों weight gradients पर। यह pure overhead removal है, एक approximation नहीं।
 
 **एक efficient architecture इसके kernel के बिना सिर्फ एक slower architecture है।** FLOP count एक promise है; kernel है यह पaidजा जाता है या नहीं।
 
@@ -136,7 +136,7 @@ Fix: tokens को उनके assigned expert द्वारा contiguous bl
 
 पता होना चाहिए अगर आप कभी इस op को touch करते हैं: **`torch._grouped_mm` degenerate group splits पर deadlock करता है।**
 
-जब expert occupancy uneven है, आप zero-width segments मिलते हैं। इन्हें kernel को feed करें और यह hang होता है — GPU idle, एक CPU core spinning, कोई error नहीं, कोई timeout नहीं। यह बिल्कुल एक slow training step जैसा दिखता है जब तक आप notice नहीं करते यह छह घंटे से slow है।
+जब expert occupancy uneven है, आप zero-width segments मिलते हैं। इन्हें kernel को feed करें और यह hang होता है - GPU idle, एक CPU core spinning, कोई error नहीं, कोई timeout नहीं। यह बिल्कुल एक slow training step जैसा दिखता है जब तक आप notice नहीं करते यह छह घंटे से slow है।
 
 Empty groups को call से पहले compact करना mathematically identical है और trigger को पूरी तरह remove करता है।
 
@@ -144,15 +144,15 @@ Empty groups को call से पहले compact करना mathematically
 
 दो अलग-अलग claims यहां हैं जो constantly muddled होते हैं, तो आइए उन्हें separate करें।
 
-**FLOPs per token किसी भी batch size पर 1/32 पर रहता है।** प्रत्येक शब्द कितने भी शब्द flight में हों, बिल्कुल एक expert से गुजरता है। ऊपर table batch 8 पर measure किया गया था — ये पहले से ही batched numbers हैं।
+**FLOPs per token किसी भी batch size पर 1/32 पर रहता है।** प्रत्येक शब्द कितने भी शब्द flight में हों, बिल्कुल एक expert से गुजरता है। ऊपर table batch 8 पर measure किया गया था - ये पहले से ही batched numbers हैं।
 
-**Batch size के साथ क्या collapse होता है वह expert _residency_ है** — केवल active experts को memory में loaded रखने की ability। Batch 1 पर आप 32 में से एक expert को touch करते हैं और बाकी को skip कर सकते हैं। Batch 64 पर, experts touched का _union_ pool के अधिकांश को cover करता है:
+**Batch size के साथ क्या collapse होता है वह expert _residency_ है** - केवल active experts को memory में loaded रखने की ability। Batch 1 पर आप 32 में से एक expert को touch करते हैं और बाकी को skip कर सकते हैं। Batch 64 पर, experts touched का _union_ pool के अधिकांश को cover करता है:
 
 | Batch size     | 1     | 32    | 64    |
 | -------------- | ----- | ----- | ----- |
 | Union sparsity | 96.9% | 39.7% | 14.1% |
 
-तो expert offloading और event-driven weight gating **single-stream propositions** हैं। compute और energy reductions नहीं हैं — ये batching के तहत hold करते हैं।
+तो expert offloading और event-driven weight gating **single-stream propositions** हैं। compute और energy reductions नहीं हैं - ये batching के तहत hold करते हैं।
 
 यह distinction ही क्यों है "contextual sparsity" methods production serving stacks तक पहुंचने में fail रहे हैं, और क्यों यह आपके द्वारा claim करने वाले दो में से कौन सा precise होने के लिए भुगतान करता है।
 
@@ -160,7 +160,7 @@ Empty groups को call से पहले compact करना mathematically
 
 अब uncomfortable part।
 
-मेरे पास भी एक **quality** win था। sparse model ने अपने dense control को 2.1% perplexity से beat किया — 58.99 बनाम 60.27। अच्छा number। यह write-up में गया।
+मेरे पास भी एक **quality** win था। sparse model ने अपने dense control को 2.1% perplexity से beat किया - 58.99 बनाम 60.27। अच्छा number। यह write-up में गया।
 
 फिर मैंने error bars के लिए एक और seed run किया।
 
@@ -170,19 +170,19 @@ Win vanished। दूसरा seed: **58.52 बनाम 58.54।** एक dea
 
 दोनों seeds के across gap −1.1% है ±1.05 percentage-point spread के साथ। Parity से indistinguishable।
 
-**Lesson generalizes: आपके baseline में भी variance है।** एक single-seed comparison आपके method को measure नहीं करता — यह दोनों models' luck को measure करता है। मैंने पहले से ही rule लिख दिया था ("one seed, anything under a couple of percent conclusion नहीं है") और 2.1% बिल्कुल line पर बैठा, जो precisely है जहां ऐसे rules decorative होना बंद करते हैं।
+**Lesson generalizes: आपके baseline में भी variance है।** एक single-seed comparison आपके method को measure नहीं करता - यह दोनों models' luck को measure करता है। मैंने पहले से ही rule लिख दिया था ("one seed, anything under a couple of percent conclusion नहीं है") और 2.1% बिल्कुल line पर बैठा, जो precisely है जहां ऐसे rules decorative होना बंद करते हैं।
 
-Core result — parity 1/32 compute पर — कभी affected नहीं हुआ था। एक bonus lose करना main course को remove नहीं करता। लेकिन 2.1% चला गया और यह वापस नहीं आ रहा है।
+Core result - parity 1/32 compute पर - कभी affected नहीं हुआ था। एक bonus lose करना main course को remove नहीं करता। लेकिन 2.1% चला गया और यह वापस नहीं आ रहा है।
 
 ## और क्या काम नहीं किया
 
 mechanisms में से दो ने अपने keep को earn नहीं किया, और इसे report करना किसी और को discover करने के लिए cheaper है।
 
-**Spiking activations identical compute पर 2.8% perplexity cost करते हैं।** Binary 0/1 activations genuine activation sparsity produce करते हैं — लेकिन एक dense GPU kernel इसे cash नहीं कर सकता। तो इस hardware पर यह एक pure quality cost है। इसका value event-driven neuromorphic chips के साथ compatibility है, जो एक real argument है, सिर्फ accuracy या GPU-efficiency एक नहीं।
+**Spiking activations identical compute पर 2.8% perplexity cost करते हैं।** Binary 0/1 activations genuine activation sparsity produce करते हैं - लेकिन एक dense GPU kernel इसे cash नहीं कर सकता। तो इस hardware पर यह एक pure quality cost है। इसका value event-driven neuromorphic chips के साथ compatibility है, जो एक real argument है, सिर्फ accuracy या GPU-efficiency एक नहीं।
 
-**Sleep phase एक shared core के आगे inert है।** यह training के दौरान expert pool को restructure करता है — duplicates को merge करना, pruning, regrowing। Result: −0.28% perplexity 5.2% extra training time के लिए। Logs explain क्यों: सभी दस cycles के across इसने nothing merge किया। **Always-on shared core ठीक वही redundancy absorb करता है जो merging exist करना चाहता है।** दो mechanisms same job करना, तो दूसरा कुछ नहीं left करता है।
+**Sleep phase एक shared core के आगे inert है।** यह training के दौरान expert pool को restructure करता है - duplicates को merge करना, pruning, regrowing। Result: −0.28% perplexity 5.2% extra training time के लिए। Logs explain क्यों: सभी दस cycles के across इसने nothing merge किया। **Always-on shared core ठीक वही redundancy absorb करता है जो merging exist करना चाहता है।** दो mechanisms same job करना, तो दूसरा कुछ नहीं left करता है।
 
-**यहां तक कि shared core एक trade है, free win नहीं** — यह 52% अधिक active feed-forward compute के लिए 2.5% perplexity को buy करता है। Worth यह है अगर आप quality optimize कर रहे हैं, compute optimize नहीं कर रहे।
+**यहां तक कि shared core एक trade है, free win नहीं** - यह 52% अधिक active feed-forward compute के लिए 2.5% perplexity को buy करता है। Worth यह है अगर आप quality optimize कर रहे हैं, compute optimize नहीं कर रहे।
 
 ## उनके released setup में दो bugs
 
@@ -196,10 +196,10 @@ mechanisms में से दो ने अपने keep को earn नह�
 
 सबसे interesting चीज़ मैंने build की वह MoE नहीं है। यह एक diagnostic है **उनके** architecture के लिए।
 
-उनका sparse linear attention 4 state partitions में से 2 pick करता है प्रति शब्द, balanced usage की तरफ एक auxiliary loss द्वारा trained। यह loss केवल training के दौरान run होता है। **कुछ भी guarantee नहीं करता है कि balance released weights में survived** — और न ही किसी भी तरीके से यह fail कर सकता है perplexity या benchmark scores में show होता है:
+उनका sparse linear attention 4 state partitions में से 2 pick करता है प्रति शब्द, balanced usage की तरफ एक auxiliary loss द्वारा trained। यह loss केवल training के दौरान run होता है। **कुछ भी guarantee नहीं करता है कि balance released weights में survived** - और न ही किसी भी तरीके से यह fail कर सकता है perplexity या benchmark scores में show होता है:
 
-- **Usage collapse** — कुछ partitions picks का अधिकांश लेते हैं, तो expanded state effectively smaller है configured से और इसके memory cost advertised से कम buy करते हैं।
-- **Input-independence** — usage overall balanced दिखता है, लेकिन हर शब्द same pair pick करता है। Histogram perfect दिखता है जब routing कोई information carry नहीं करता।
+- **Usage collapse** - कुछ partitions picks का अधिकांश लेते हैं, तो expanded state effectively smaller है configured से और इसके memory cost advertised से कम buy करते हैं।
+- **Input-independence** - usage overall balanced दिखता है, लेकिन हर शब्द same pair pick करता है। Histogram perfect दिखता है जब routing कोई information carry नहीं करता।
 
 इसे measure करने में एक trap है। Model को `trust_remote_code=True` के साथ load करना **checkpoint directory में bundled** modelling code को import करता है, repository में copy नहीं। Repository के module को patch करें और आप कुछ measure करेंगे जो model कभी call नहीं करता, और एक confident-looking table of nothing मिलेगा।
 
@@ -223,14 +223,14 @@ Entropy of 1.0 का मतलब perfectly balanced। 16.7% share का म�
 
 - **कुछ भी 5B पर trained नहीं किया गया है या उनके checkpoints पर।** Quality work ≤146M parameters पर है, scratch से। 5B numbers block-level और shape-determined हैं।
 - **Quality results एक से दो seeds हैं।** एक पहले से ही collapse किया। Directions findings हैं; magnitudes provisional हैं।
-- **Quality edge long training budgets पर reverses होता है** — एक fixed budget में −5.15% advantage 4× budget पर +2.4% बन गया। [मैंने separately वह लिख दिया।](/blog/s2moe_budget_dependent_benchmarking/) SpikingBrain उस point के far past train करता है।
+- **Quality edge long training budgets पर reverses होता है** - एक fixed budget में −5.15% advantage 4× budget पर +2.4% बन गया। [मैंने separately वह लिख दिया।](/blog/s2moe_budget_dependent_benchmarking/) SpikingBrain उस point के far past train करता है।
 - **GPU पर Energy really FLOPs over latency है।** Power architectures के across बहुत कम vary होता है, तो defendable framing serving cost per token है, raw joules नहीं। Real event-driven energy accounting neuromorphic silicon की जरूरत है जिसे मैंने measure नहीं किया है।
 
 ## क्या hold करता है
 
 - **Matched-parameter parity 1/32 active feed-forward compute पर।** 32× accuracy per unit of active compute।
 - **2.71× कम block FLOPs और 1.62× कम energy per token** उनके real 5B block shape पर, random weights से।
-- **Grouped-GEMM kernel वह है जो इसे real बनाता है** — bit-exact, naive loop के 12.75× तक faster। इसके बिना sparse model dense से धीमा है।
+- **Grouped-GEMM kernel वह है जो इसे real बनाता है** - bit-exact, naive loop के 12.75× तक faster। इसके बिना sparse model dense से धीमा है।
 - **एक ceiling जानने लायक है:** feed-forward sparsity केवल कभी आपको feed-forward share save कर सकती है। इसके बाद always-on parts floor हैं।
 - **एक validated diagnostic** SpikingBrain के अपने partition routing के लिए, जो healthy वापस आया।
 
@@ -240,10 +240,10 @@ Entropy of 1.0 का मतलब perfectly balanced। 16.7% share का म�
 हां, और एक predictable amount से। Top-1 routing pool size जो भी हो, प्रति token एक expert run करता है, तो feed-forward compute `1/n_experts` एक parameter-matched dense layer का है। 32 experts पर यह 1/32 पर measure किया गया, जो once always-on parts count होने के बाद 2.71× कम FLOPs block के लिए बन जाता है।
 
 **क्या sparse MoE model एक dense एक से तेजी है?**
-जरूरी नहीं है, और यहां यह नहीं था — 324k tokens/sec बनाम dense के लिए 446k। कम FLOPs same नहीं है lower latency के रूप में। Win FLOPs और power draw (134 W vs 299 W) में था, throughput नहीं।
+जरूरी नहीं है, और यहां यह नहीं था - 324k tokens/sec बनाम dense के लिए 446k। कम FLOPs same नहीं है lower latency के रूप में। Win FLOPs और power draw (134 W vs 299 W) में था, throughput नहीं।
 
 **क्या MoE sparsity batched serving में survive करता है?**
-Compute saving करता है — हर token अभी भी batch size कुछ भी हो एक expert traverse करता है। जो survive नहीं करता है वह expert _residency_ है: batch के across experts touched का union 96.9% sparse batch 1 पर 14.1% batch 64 पर जाता है, तो expert offloading एक single-stream technique है।
+Compute saving करता है - हर token अभी भी batch size कुछ भी हो एक expert traverse करता है। जो survive नहीं करता है वह expert _residency_ है: batch के across experts touched का union 96.9% sparse batch 1 पर 14.1% batch 64 पर जाता है, तो expert offloading एक single-stream technique है।
 
 **क्या spiking activations accuracy improve करते हैं?**
 इस measurement में नहीं। वे 2.8% perplexity cost करते हैं identical compute पर। Benefit event-driven neuromorphic hardware के साथ compatibility है, accuracy या GPU efficiency नहीं।
@@ -252,7 +252,7 @@ Compute saving करता है — हर token अभी भी batch size 
 एक से अधिक, और यह post cautionary tale है। एक 2.1% advantage दूसरे seed पर disappear किया क्योंकि _dense baseline_ एक bad seed draw किया था। Single-seed comparisons luck measure करते हैं, method नहीं।
 
 **क्या आप एक existing dense model को एक Mixture-of-Experts में convert कर सकते हैं?**
-हां — यही है upcycler करता है। यह प्रत्येक expert को trained dense feed-forward weights के slices से initialize करता है, न कि scratch से। यह एक weight-initialisation bridge है और quality recover करने के लिए अभी भी continued training की जरूरत है; यह एक free conversion नहीं है।
+हां - यही है upcycler करता है। यह प्रत्येक expert को trained dense feed-forward weights के slices से initialize करता है, न कि scratch से। यह एक weight-initialisation bridge है और quality recover करने के लिए अभी भी continued training की जरूरत है; यह एक free conversion नहीं है।
 
 ## इसे Reproduce करें
 
@@ -280,4 +280,4 @@ Related reading यहाँ: [why the energy win grows with expert count](/blog
 
 Background: [Switch Transformer](https://arxiv.org/abs/2101.03961) Top-1 routing पर, [DeepSeekMoE](https://arxiv.org/abs/2401.06066) shared experts पर, [Drop-Upcycling](https://arxiv.org/abs/2502.19261) dense-to-MoE conversion पर।
 
-अगर एक number यहाँ experiment log में repo में disagree करता है, log जीता है — एक issue open करें।
+अगर एक number यहाँ experiment log में repo में disagree करता है, log जीता है - एक issue open करें।

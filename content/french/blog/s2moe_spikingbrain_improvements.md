@@ -31,13 +31,13 @@ Même atelier. Même 32 spécialistes sur la masse salariale. Même qualité de 
 
 **Un trente-deuxième du travail.**
 
-C'est toute l'idée. Le reste de ce post concerne ce qui s'est passé quand j'ai mesuré correctement — y compris le résultat unique que j'ai dû jeter à la poubelle.
+C'est toute l'idée. Le reste de ce post concerne ce qui s'est passé quand j'ai mesuré correctement - y compris le résultat unique que j'ai dû jeter à la poubelle.
 
 ## Qu'est-ce qu'un modèle Mixture-of-Experts ?
 
 Dans un réseau de neurones normal, chaque entrée traverse chaque paramètre. C'est une immense fonction unique, et tout s'exécute à chaque fois.
 
-Un modèle **Mixture-of-Experts (MoE)** divise cette grande fonction en plusieurs petites — les « experts » — et place un **routeur** devant. Le routeur regarde chaque mot et décide quel expert le traite.
+Un modèle **Mixture-of-Experts (MoE)** divise cette grande fonction en plusieurs petites - les « experts » - et place un **routeur** devant. Le routeur regarde chaque mot et décide quel expert le traite.
 
 Avec le **routage Top-1**, exactement un expert s'exécute par mot. Pas deux, pas un mélange. Un.
 
@@ -60,7 +60,7 @@ Ainsi, une couche feed-forward MoE sparse n'est pas une idée concurrente à la 
 Quatre mécanismes, tirés de [mon propre dépôt de recherche](https://github.com/JustinGuese/S2-MoE-llm) et portés dans leur bloc :
 
 - **Un pool d'experts routé Top-1** remplaçant la couche feed-forward dense.
-- **Un noyau partagé toujours actif** — un petit expert que chaque mot traverse, aux côtés de celui routé.
+- **Un noyau partagé toujours actif** - un petit expert que chaque mot traverse, aux côtés de celui routé.
 - **Un noyau CUDA grouped-GEMM**, car sans lui tout est plus lent (plus d'informations ci-dessous).
 - **Un upcycler dense-vers-MoE**, pour que le pool d'experts puisse être construit à partir de leurs _poids déjà entraînés_ plutôt que de nécessiter un réentraînement à partir de zéro.
 
@@ -70,7 +70,7 @@ Tout est caché derrière une clé de configuration absente de l'ensemble de leu
 
 Voici la mesure principale.
 
-Au **nombre de paramètres équivalent** — 77,8 M pour le modèle sparse contre 77,7 M pour un contrôle dense, 0,2 % d'écart — le modèle sparse atteint **la même perplexité de validation** tout en utilisant **1/32 du calcul feed-forward.**
+Au **nombre de paramètres équivalent** - 77,8 M pour le modèle sparse contre 77,7 M pour un contrôle dense, 0,2 % d'écart - le modèle sparse atteint **la même perplexité de validation** tout en utilisant **1/32 du calcul feed-forward.**
 
 C'est **32× la précision par unité de calcul actif.**
 
@@ -80,7 +80,7 @@ C'est la proposition MoE sparse fonctionnant exactement comme annoncée : la cap
 
 ## Ce que cela vaut à leur échelle 5B
 
-Les revendications de calcul sont déterminées par les formes de tenseur, pas par l'entraînement — elles peuvent donc être mesurées directement aux vraies dimensions de bloc de SpikingBrain 5B avec des poids aléatoires, en environ vingt minutes sur une RTX 4090 unique.
+Les revendications de calcul sont déterminées par les formes de tenseur, pas par l'entraînement - elles peuvent donc être mesurées directement aux vraies dimensions de bloc de SpikingBrain 5B avec des poids aléatoires, en environ vingt minutes sur une RTX 4090 unique.
 
 À `hidden_size 2560`, `intermediate_size 9728`, bf16, parameter-matched, batch 8 × sequence 512 :
 
@@ -91,7 +91,7 @@ Les revendications de calcul sont déterminées par les formes de tenseur, pas p
 | Sparse MoE, 32 experts    | 84.5        | 0.412    | 133.7        | 324,344     |
 | Sparse MoE, 64 experts    | 82.3        | 0.414    | 123.7        | 299,053     |
 
-**2.71× moins de FLOPs par bloc. 1.62× moins d'énergie par token. Moins de la moitié de la consommation électrique** — 134 W contre 299 W.
+**2.71× moins de FLOPs par bloc. 1.62× moins d'énergie par token. Moins de la moitié de la consommation électrique** - 134 W contre 299 W.
 
 ## Pourquoi 1/32 ne se transforme pas en 32× globalement
 
@@ -99,7 +99,7 @@ Regardez ce tableau à nouveau. Le calcul feed-forward a chuté 32×, mais l'ens
 
 **Les parties toujours actives ne se réduisent pas.** L'attention s'exécute toujours sur chaque mot. Le routeur s'exécute sur chaque mot. Le noyau partagé s'exécute sur chaque mot.
 
-L'optimisation d'un composant ne peut vous faire économiser que la part de ce composant dans le total. Une fois que la couche feed-forward est presque gratuite, tout le reste devient le plancher — et vous avez atteint le plafond de ce que la sparsité feed-forward peut faire.
+L'optimisation d'un composant ne peut vous faire économiser que la part de ce composant dans le total. Une fois que la couche feed-forward est presque gratuite, tout le reste devient le plancher - et vous avez atteint le plafond de ce que la sparsité feed-forward peut faire.
 
 Si vous retenez un seul chiffre de ce post pour votre propre travail, retenez celui-ci. Il vous dit quand arrêter d'optimiser cette couche et regarder une autre.
 
@@ -117,7 +117,7 @@ Sur un matériel limité en puissance ou event-driven, ce commerce s'inverse et 
 
 C'est la partie que j'aimerais le plus qu'un autre ingénieur retienne.
 
-L'implémentation évidente boucle sur les experts en Python — une itération, un lancement de noyau chacun. Cet overhead est fixe par expert, donc il augmente exactement aussi vite que votre économie.
+L'implémentation évidente boucle sur les experts en Python - une itération, un lancement de noyau chacun. Cet overhead est fixe par expert, donc il augmente exactement aussi vite que votre économie.
 
 **Mesuré seul, la couche sparse naïve était plus lente que dense à chaque nombre d'experts.** L'économie FLOP existait sur papier et absolument nulle part ailleurs.
 
@@ -128,7 +128,7 @@ Le correctif : triez les tokens par expert assigné en blocs contigus et lancez 
 | Forward vs Python loop | 2.27× | 4.60× | 8.29× | **12.75×** |
 | Training step vs loop  | 1.85× | 3.99× | 6.34× | **9.95×**  |
 
-Et c'est **bit-exact** — différence absolue maximale de zéro par rapport à la boucle, sur les résultats et les deux gradients de poids. C'est du pur retrait de surcharge, pas une approximation.
+Et c'est **bit-exact** - différence absolue maximale de zéro par rapport à la boucle, sur les résultats et les deux gradients de poids. C'est du pur retrait de surcharge, pas une approximation.
 
 **Une architecture efficace sans son noyau est juste une architecture plus lente.** Le nombre de FLOP est une promesse ; le noyau est de savoir si elle est payée.
 
@@ -136,7 +136,7 @@ Et c'est **bit-exact** — différence absolue maximale de zéro par rapport à 
 
 Utile à savoir si vous touchez jamais à cette op : **`torch._grouped_mm` fait un deadlock sur les divisions de groupe dégénérées.**
 
-Quand l'occupation des experts est inégale, vous obtenez des segments de largeur zéro. Alimentez-les au noyau et il se fige — GPU inactif, un cœur CPU qui tourne, pas d'erreur, pas d'expiration. Cela ressemble exactement à une étape d'entraînement lente jusqu'à ce que vous remarquiez que c'est lent depuis six heures.
+Quand l'occupation des experts est inégale, vous obtenez des segments de largeur zéro. Alimentez-les au noyau et il se fige - GPU inactif, un cœur CPU qui tourne, pas d'erreur, pas d'expiration. Cela ressemble exactement à une étape d'entraînement lente jusqu'à ce que vous remarquiez que c'est lent depuis six heures.
 
 Le compactage des groupes vides avant l'appel est mathématiquement identique et élimine complètement le déclencheur.
 
@@ -144,15 +144,15 @@ Le compactage des groupes vides avant l'appel est mathématiquement identique et
 
 Deux revendications différentes ici qui se mélangent constamment, alors séparons-les.
 
-**FLOPs par token restent à 1/32 à n'importe quelle taille de batch.** Chaque mot traverse exactement un expert quel que soit le nombre de mots en vol. Le tableau ci-dessus a été mesuré au batch 8 — ce sont déjà des chiffres en lot.
+**FLOPs par token restent à 1/32 à n'importe quelle taille de batch.** Chaque mot traverse exactement un expert quel que soit le nombre de mots en vol. Le tableau ci-dessus a été mesuré au batch 8 - ce sont déjà des chiffres en lot.
 
-**Ce qui s'effondre avec la taille du batch est la résidence des experts** — la capacité à garder seulement les experts actifs chargés en mémoire. Au batch 1 vous touchez un expert sur 32 et pouvez sauter le reste. Au batch 64, l'_union_ des experts touchés couvre la plupart du pool :
+**Ce qui s'effondre avec la taille du batch est la résidence des experts** - la capacité à garder seulement les experts actifs chargés en mémoire. Au batch 1 vous touchez un expert sur 32 et pouvez sauter le reste. Au batch 64, l'_union_ des experts touchés couvre la plupart du pool :
 
 | Batch size     | 1     | 32    | 64    |
 | -------------- | ----- | ----- | ----- |
 | Union sparsity | 96.9% | 39.7% | 14.1% |
 
-Ainsi, la déchargement des experts et la pondération des portes event-driven sont **des propositions single-stream.** Les réductions de calcul et d'énergie ne le sont pas — elles se maintiennent sous le batching.
+Ainsi, la déchargement des experts et la pondération des portes event-driven sont **des propositions single-stream.** Les réductions de calcul et d'énergie ne le sont pas - elles se maintiennent sous le batching.
 
 Cette distinction est pourquoi les méthodes « contextual sparsity » n'arrivent pas à atteindre les piles de service en production, et pourquoi cela vaut la peine d'être précis sur lequel des deux vous revendiquez.
 
@@ -160,7 +160,7 @@ Cette distinction est pourquoi les méthodes « contextual sparsity » n'arriven
 
 Maintenant la partie inconfortable.
 
-J'avais aussi une victoire de **qualité**. Le modèle sparse a battu son contrôle dense par 2,1 % de perplexité — 58,99 contre 60,27. Beau chiffre. C'est entré dans la rédaction.
+J'avais aussi une victoire de **qualité**. Le modèle sparse a battu son contrôle dense par 2,1 % de perplexité - 58,99 contre 60,27. Beau chiffre. C'est entré dans la rédaction.
 
 Puis j'ai lancé une graine de plus pour obtenir des barres d'erreur.
 
@@ -170,19 +170,19 @@ Voici ce qui s'est réellement passé. Le **dense baseline** s'est déplacé de 
 
 Sur les deux graines, l'écart est −1,1 % avec une propagation de ±1,05 points de pourcentage. Indiscernable de la parité.
 
-**La leçon se généralise : votre baseline a aussi de la variance.** Une comparaison à une seule graine ne mesure pas votre méthode — elle mesure la chance des deux modèles. J'avais même écrit la règle à l'avance (« une graine, tout ce qui est inférieur à quelques pour cent n'est pas une conclusion ») et 2,1 % s'assis juste sur la ligne, ce qui est précisément où de telles règles cessent d'être décoratives.
+**La leçon se généralise : votre baseline a aussi de la variance.** Une comparaison à une seule graine ne mesure pas votre méthode - elle mesure la chance des deux modèles. J'avais même écrit la règle à l'avance (« une graine, tout ce qui est inférieur à quelques pour cent n'est pas une conclusion ») et 2,1 % s'assis juste sur la ligne, ce qui est précisément où de telles règles cessent d'être décoratives.
 
-Le résultat principal — parité à 1/32 du calcul — n'a jamais été affecté. Perdre un bonus n'enlève pas le plat principal. Mais le 2,1 % est parti et il ne revient pas.
+Le résultat principal - parité à 1/32 du calcul - n'a jamais été affecté. Perdre un bonus n'enlève pas le plat principal. Mais le 2,1 % est parti et il ne revient pas.
 
 ## Ce d'autre qui n'a pas fonctionné
 
 Deux des quatre mécanismes n'ont pas justifié leur présence, et le rapporter c'est moins cher que d'avoir quelqu'un d'autre le découvrir.
 
-**Les activations spiking coûtent 2,8 % de perplexité au calcul identique.** Les activations binaires 0/1 produisent une véritable sparsité d'activation — mais un noyau GPU dense ne peut pas l'encaisser. Donc sur ce matériel c'est un coût de qualité pur. Sa valeur est la compatibilité avec les puces neuromorphes event-driven, ce qui est un argument réel, juste pas un argument de précision ou d'efficacité GPU.
+**Les activations spiking coûtent 2,8 % de perplexité au calcul identique.** Les activations binaires 0/1 produisent une véritable sparsité d'activation - mais un noyau GPU dense ne peut pas l'encaisser. Donc sur ce matériel c'est un coût de qualité pur. Sa valeur est la compatibilité avec les puces neuromorphes event-driven, ce qui est un argument réel, juste pas un argument de précision ou d'efficacité GPU.
 
-**La phase de sommeil est inerte à côté d'un noyau partagé.** Elle restructure le pool d'experts pendant l'entraînement — fusionnant les doublons, élagage, repousse. Résultat : −0,28 % de perplexité pour 5,2 % de temps d'entraînement supplémentaire. Les journaux expliquent pourquoi : sur les dix cycles, il n'a fusionné rien. **Le noyau partagé toujours actif absorbe exactement la redondance pour laquelle la fusion existe pour supprimer.** Deux mécanismes faisant le même travail, donc le second n'a rien à faire.
+**La phase de sommeil est inerte à côté d'un noyau partagé.** Elle restructure le pool d'experts pendant l'entraînement - fusionnant les doublons, élagage, repousse. Résultat : −0,28 % de perplexité pour 5,2 % de temps d'entraînement supplémentaire. Les journaux expliquent pourquoi : sur les dix cycles, il n'a fusionné rien. **Le noyau partagé toujours actif absorbe exactement la redondance pour laquelle la fusion existe pour supprimer.** Deux mécanismes faisant le même travail, donc le second n'a rien à faire.
 
-**Même le noyau partagé est un compromis, pas une victoire gratuite** — il achète 2,5 % de perplexité pour 52 % plus de calcul feed-forward actif. Cela en vaut la peine si vous optimisez la qualité, pas si vous optimisez le calcul.
+**Même le noyau partagé est un compromis, pas une victoire gratuite** - il achète 2,5 % de perplexité pour 52 % plus de calcul feed-forward actif. Cela en vaut la peine si vous optimisez la qualité, pas si vous optimisez le calcul.
 
 ## Deux bugs dans leur configuration distribuée
 
@@ -196,10 +196,10 @@ En suivant leurs propres notes d'installation sur une machine propre, deux chose
 
 La chose la plus intéressante que j'ai construite n'est pas le MoE. C'est un diagnostic pour **leur** architecture.
 
-Leur attention linéaire sparse choisit 2 des 4 partitions d'état par mot, entraîné vers une utilisation équilibrée par une perte auxiliaire. Cette perte s'exécute seulement pendant l'entraînement. **Rien ne garantit que l'équilibre a survécu dans les poids publiés** — et non plus de la façon dont cela peut échouer ne montre dans la perplexité ou les scores de benchmark :
+Leur attention linéaire sparse choisit 2 des 4 partitions d'état par mot, entraîné vers une utilisation équilibrée par une perte auxiliaire. Cette perte s'exécute seulement pendant l'entraînement. **Rien ne garantit que l'équilibre a survécu dans les poids publiés** - et non plus de la façon dont cela peut échouer ne montre dans la perplexité ou les scores de benchmark :
 
-- **Effondrement d'utilisation** — quelques partitions prennent la plupart des choix, donc l'état étendu est effectivement plus petit que configuré et son coût mémoire achète moins que annoncé.
-- **Input-indépendance** — l'utilisation regarde équilibrée globalement, mais chaque mot choisit la _même_ paire. L'histogramme regarde parfait tandis que le routage n'apporte aucune information du tout.
+- **Effondrement d'utilisation** - quelques partitions prennent la plupart des choix, donc l'état étendu est effectivement plus petit que configuré et son coût mémoire achète moins que annoncé.
+- **Input-indépendance** - l'utilisation regarde équilibrée globalement, mais chaque mot choisit la _même_ paire. L'histogramme regarde parfait tandis que le routage n'apporte aucune information du tout.
 
 Il y a un piège à mesurer cela. Le chargement du modèle avec `trust_remote_code=True` importe le code de modélisation **groupé dans le répertoire du checkpoint**, pas la copie dans le référentiel. Patcher le module du référentiel et vous mesurerez quelque chose que le modèle n'appelle jamais, et obtenez une table de rien qui regarde confident.
 
@@ -223,14 +223,14 @@ Tout ce qui précède, borné :
 
 - **Rien n'a été entraîné à 5B ou sur leurs checkpoints.** Le travail de qualité est à ≤146M paramètres, à partir de zéro. Les chiffres 5B sont au niveau du bloc et déterminés par la forme.
 - **Les résultats de qualité sont une à deux graines.** Une a déjà échoué. Les directions sont des conclusions ; les magnitudes sont provisoires.
-- **L'avantage de qualité s'inverse avec les budgets d'entraînement longs** — un avantage −5,15 % à un budget fixe est devenu +2,4 % à 4× le budget. [J'ai écrit cela séparément](/blog/s2moe_budget_dependent_benchmarking/). SpikingBrain s'entraîne bien au-delà de ce point.
+- **L'avantage de qualité s'inverse avec les budgets d'entraînement longs** - un avantage −5,15 % à un budget fixe est devenu +2,4 % à 4× le budget. [J'ai écrit cela séparément](/blog/s2moe_budget_dependent_benchmarking/). SpikingBrain s'entraîne bien au-delà de ce point.
 - **L'énergie sur un GPU est vraiment FLOPs sur latence.** La puissance varie peu selon les architectures, donc le cadrage défendable est le coût de service par token, pas les joules bruts. L'accounting réelle d'énergie event-driven a besoin de silicium neuromorphe que je n'ai pas mesuré.
 
 ## Ce qui tient
 
 - **Parité parameter-matched à 1/32 du calcul feed-forward actif.** 32× la précision par unité de calcul actif.
 - **2.71× moins de block FLOPs et 1.62× moins d'énergie par token** à la vraie forme de bloc 5B, à partir de poids aléatoires.
-- **Le noyau grouped-GEMM est ce qui le rend réel** — bit-exact, jusqu'à 12,75× plus rapide que la boucle naïve. Sans lui le modèle sparse est plus lent que dense.
+- **Le noyau grouped-GEMM est ce qui le rend réel** - bit-exact, jusqu'à 12,75× plus rapide que la boucle naïve. Sans lui le modèle sparse est plus lent que dense.
 - **Un plafond à savoir :** la sparsité feed-forward ne peut vous faire économiser que la part feed-forward. Après cela, les parties toujours actives sont le plancher.
 - **Un diagnostic validé** pour le propre routage de partition de SpikingBrain, qui est revenu sain.
 
@@ -240,10 +240,10 @@ Tout ce qui précède, borné :
 Oui, et d'une montant prévisible. Le routage Top-1 exécute un expert par token quelle que soit la taille du pool, donc le calcul feed-forward est `1/n_experts` d'une couche dense parameter-matched. À 32 experts, cela est mesuré à 1/32, ce qui devient 2,71× moins de FLOPs pour l'ensemble du bloc une fois les parties toujours actives comptées.
 
 **Un modèle MoE sparse est-il plus rapide qu'un modèle dense ?**
-Pas nécessairement, et ici ça ne l'était pas — 324k tokens/sec contre 446k pour dense. Moins de FLOPs n'est pas la même chose que latence inférieure. La victoire était en FLOPs et consommation électrique (134 W vs 299 W), pas débit.
+Pas nécessairement, et ici ça ne l'était pas - 324k tokens/sec contre 446k pour dense. Moins de FLOPs n'est pas la même chose que latence inférieure. La victoire était en FLOPs et consommation électrique (134 W vs 299 W), pas débit.
 
 **La sparsité MoE survit-elle au service batched ?**
-Le calcul économisant le fait — chaque token traverse toujours un expert quelle que soit la taille du batch. Ce qui ne survit pas est la résidence des experts : l'union des experts touchés sur un batch va de 96,9 % sparse au batch 1 à 14,1 % au batch 64, donc le déchargement des experts est une technique single-stream.
+Le calcul économisant le fait - chaque token traverse toujours un expert quelle que soit la taille du batch. Ce qui ne survit pas est la résidence des experts : l'union des experts touchés sur un batch va de 96,9 % sparse au batch 1 à 14,1 % au batch 64, donc le déchargement des experts est une technique single-stream.
 
 **Les activations spiking améliorent-elles la précision ?**
 Non dans cette mesure. Elles coûtent 2,8 % de perplexité au calcul identique. L'avantage est la compatibilité avec le matériel neuromorphe event-driven, pas la précision ou l'efficacité GPU.
@@ -252,7 +252,7 @@ Non dans cette mesure. Elles coûtent 2,8 % de perplexité au calcul identique. 
 Plus d'une, et ce post en est le conte cautionnaire. Un avantage de 2,1 % a disparu sur la deuxième graine parce que le _dense baseline_ avait tiré une mauvaise graine. Les comparaisons single-seed mesurent la chance, pas la méthode.
 
 **Pouvez-vous convertir un modèle dense existant en Mixture-of-Experts ?**
-Oui — c'est ce que l'upcycler fait. Il initialise chaque expert à partir de tranches des poids feed-forward dense entraînés plutôt qu'à partir de zéro. C'est un pont d'initialisation de poids et a toujours besoin d'un entraînement continu pour récupérer la qualité ; ce n'est pas une conversion gratuite.
+Oui - c'est ce que l'upcycler fait. Il initialise chaque expert à partir de tranches des poids feed-forward dense entraînés plutôt qu'à partir de zéro. C'est un pont d'initialisation de poids et a toujours besoin d'un entraînement continu pour récupérer la qualité ; ce n'est pas une conversion gratuite.
 
 ## Reproduisez-le
 
@@ -280,4 +280,4 @@ Lectures connexes ici : [pourquoi la victoire énergétique grandit avec le nomb
 
 Arrière-plan : [Switch Transformer](https://arxiv.org/abs/2101.03961) sur le routage Top-1, [DeepSeekMoE](https://arxiv.org/abs/2401.06066) sur les experts partagés, [Drop-Upcycling](https://arxiv.org/abs/2502.19261) sur la conversion dense-vers-MoE.
 
-Si un chiffre ici n'est pas d'accord avec le journal d'expériences dans le repo, le journal gagne — ouvrez une issue.
+Si un chiffre ici n'est pas d'accord avec le journal d'expériences dans le repo, le journal gagne - ouvrez une issue.
