@@ -1,10 +1,10 @@
 ---
 title: '96 Times Per Word, the GPU Stops and Waits: Fixing the MoE Layer in a 58,000-Star Teaching Repo'
-bg_image: 'images/blog/algorithm.jpg'
+bg_image: 'images/blog/minmind.png'
 date: 2026-09-03T12:11:00+02:00
 author: 'Justin Guese'
 description: "minimind's Mixture-of-Experts layer halts the GPU 96 times per forward pass to ask the CPU a bookkeeping question. I cut it to 8, bit-identically. Plus: the approach that lost, the benchmark table where none of the differences are real, and every claim I had to shrink."
-image: 'images/blog/algorithm.jpg'
+image: 'images/blog/minmind.png'
 categories:
   - Machine Learning
 
@@ -344,8 +344,8 @@ print(sum('sync' in str(r.message).lower() for r in w))   # -> 24
 - **The approach that lost:** [moe-grouped-dispatch branch](https://github.com/JustinGuese/minimind/tree/moe-grouped-dispatch)
 - **Upstream:** [jingyaogong/minimind](https://github.com/jingyaogong/minimind)
 
-The sorted-dispatch pattern came out of my own MoE research repo, [S2-MoE-llm](https://github.com/JustinGuese/S2-MoE-llm) ([DOI 10.5281/zenodo.20846758](https://doi.org/10.5281/zenodo.20846758)) - though I want to be precise about that, because it would be easy to overstate. This is not "porting my improvements to a second repo." The routed expert pool, the shared core and the dense-to-MoE upcycler had no slot in minimind, which already has top-1 routing and an auxiliary loss. The one component that transferred directly - the grouped-GEMM kernel - is the component that **failed its own kill gate**. What actually transferred was the _method_: pre-registered thresholds, bit-exactness gates, and a refusal to quote a laptop benchmark as a general result.
+- **My MoE research repo:** [S2-MoE-llm](https://github.com/JustinGuese/S2-MoE-llm) ([DOI 10.5281/zenodo.20846758](https://doi.org/10.5281/zenodo.20846758))
 
-Related reading: [the SpikingBrain MoE port](/blog/s2moe_spikingbrain_improvements/), where a 2.1% quality win evaporated on the second random seed - the lesson that made me suspicious of my own 2× here.
+Related reading: [the SpikingBrain MoE port](/blog/s2moe_spikingbrain_improvements/), where a 2.1% quality win evaporated on the second random seed. That is the lesson that made me distrust my own 2× here, rent a proper machine, and find out it was 1.4×.
 
 If a number in this post disagrees with the linked PRs, the PRs win - open an issue.
